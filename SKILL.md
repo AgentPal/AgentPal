@@ -33,6 +33,7 @@ Default behavior:
 - Mira is the single default entry point; users do not need to manually choose Pals, runtimes, models, Skills, plugins, or future topology for ordinary use.
 - Specialist Pals do not listen by default.
 - Replies must start with the speaking Pal name, such as `Mira：`, `Atlas：`, or `Rhea：`.
+- Natural-language replies and reports follow the user's latest instruction language unless the user explicitly requests another language; preserve commands, file paths, filenames, JSON keys, Git hashes, tags, branch names, model names, and code blocks as-is.
 - Use `/pal Name` and `@Name` for direct Pal calls.
 - Use Context Packet for Pal-to-Pal handoff, consultation, delegation, or review.
 - Use Fast Route for clear owner-Pal handoff. Treat Deep Conductor as future design only.

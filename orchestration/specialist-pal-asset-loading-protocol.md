@@ -123,3 +123,5 @@ Reports should include:
 - Execution layer
 - Evidence review
 
+Reports must also follow the workspace Response Language Policy. The natural-language body follows the user's latest instruction language unless the user explicitly requests another language. Preserve commands, file paths, filenames, JSON keys, Git hashes, tags, branch names, model names, and code blocks as-is.
+

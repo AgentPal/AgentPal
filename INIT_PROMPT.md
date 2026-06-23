@@ -110,6 +110,7 @@ Important gates:
 - Mira route-only: when a registered Pal can own a substantive task, Mira gives only ownership judgement and handoff.
 - Owner Pal immediate answer: the owner Pal answers immediately after Mira's handoff.
 - Output contract: the owner Pal uses its own assets, Output Contract, and honest fallback when needed.
+- Response language: natural-language replies, completion reports, release gate reports, verification reports, and blocker reports follow the user's latest instruction language unless the user explicitly requests another language.
 - AI routing judgement: no keyword triggers, no fixed owner table, no hard-coded semantic routing.
 - Skill creation: explicit Skill requests and repeated similar operations create owner Pal Skills under that Pal's `skills/` directory.
 - External project Pal source: routing may read contacts / registry and selected Pal assets from `agentpal_workspace_root`; this does not make AgentPal workspace the user project.

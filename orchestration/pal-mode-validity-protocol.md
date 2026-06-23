@@ -42,6 +42,7 @@ A valid specialist Pal response must:
 5. If no relevant specialist asset exists, state fallback method.
 6. If no Pal asset or fallback is used, label the result as Codex generic answer, not Pal answer.
 7. Include a light work-method statement in the first specialist block.
+8. Follow the Response Language Policy from `orchestration/runtime-response-gate.md`: the natural-language body follows the user's latest instruction language unless the user explicitly requests another language.
 
 Work-method statement examples:
 
@@ -61,6 +62,7 @@ These are invalid:
 - claiming a missing Skill, Knowledge Card, Runbook, or Workflow was used
 - specialist Pal omits the work-method statement
 - specialist Pal does not follow the Output Contract
+- specialist Pal writes the completion report, release gate report, verification report, or blocker report in a different natural language from the user's latest instruction language without an explicit language request
 - Mira route for an owned task is more than 2 short sentences
 - Mira route includes owned work body
 
@@ -122,4 +124,3 @@ Mira 遇到属于某个 Pal 职责的任务时，最多说两句，只判断归�
 Use `templates/pal-mode-validity/pal-mode-validity-check-template.md`.
 
 Use `templates/asset-usage-proof/asset-usage-proof-template.md` for complex tasks, evals, and internal reports.
-

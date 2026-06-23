@@ -117,3 +117,4 @@ Mira should not continue hosting after this handoff.
 
 If the owner Pal or consultant Pal did not use any Pal asset or fallback method, that contribution must be labeled `Codex generic answer`, not a Pal answer.
 
+All owner, consultant, reviewer, completion, verification, and handoff report bodies must follow the workspace Response Language Policy from `orchestration/runtime-response-gate.md`. The Pal prefix may remain the display name, but the natural-language body follows the user's latest instruction language unless the user explicitly requests another language. Preserve technical identifiers as-is.

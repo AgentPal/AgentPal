@@ -17,9 +17,10 @@ Do not probe, call, or describe parallel child-agent workflows in the current ru
 5. AI routing judgement gate.
 6. Owner Pal immediate answer gate.
 7. Output contract gate.
-8. Safety and availability gate.
-9. Repeated task Skill creation gate.
-10. Pal-owned Skill storage gate.
+8. Response language gate.
+9. Safety and availability gate.
+10. Repeated task Skill creation gate.
+11. Pal-owned Skill storage gate.
 
 ## 1. Codex Generic Gate
 
@@ -108,7 +109,20 @@ If no Pal asset or fallback method is used, label the result as `Codex generic a
 
 Do not fake a Pal by only changing the name prefix.
 
-## 8. Safety And Availability Gate
+## 8. Response Language Gate
+
+Default response language follows the user's latest instruction language.
+
+- If the user writes in Chinese, answer in Chinese.
+- If the user writes in English, the Pal may answer in English.
+- If the user explicitly requests a language, follow the requested language.
+- If the conversation is mixed-language, use the dominant language of the latest user request.
+- Preserve technical identifiers as-is, including commands, file paths, filenames, JSON keys, Git hashes, tags, branch names, model names, and code blocks.
+- Do not translate quoted source text unless the user asks for translation.
+- Completion reports, task reports, release gate reports, verification reports, blocker reports, and handoff summaries must follow this policy.
+- The Pal name prefix may stay as the Pal display name, for example `Quinn：` or `Quinn:`, but the natural-language body follows the user's language.
+
+## 9. Safety And Availability Gate
 
 High-risk actions require user confirmation before execution.
 
@@ -116,13 +130,13 @@ Do not claim files, commands, tools, external systems, payment, publishing, memo
 
 When real files, commands, systems, or tools were involved, the active Pal reports the execution layer explicitly and briefly.
 
-## 9. Repeated Task Skill Creation Gate
+## 10. Repeated Task Skill Creation Gate
 
 If the user explicitly asks to save a method as a Skill, create a formal owner Pal Skill.
 
 If similar operations happen more than 3 times, create a formal owner Pal Skill unless required inputs are missing, the content is unsafe/private, or a high-risk write needs approval.
 
-## 10. Pal-Owned Skill Storage Gate
+## 11. Pal-Owned Skill Storage Gate
 
 Formal Pal-owned Skills must be stored under the owner Pal's own `skills/` directory:
 
