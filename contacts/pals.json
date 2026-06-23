@@ -1,0 +1,212 @@
+{
+  "schema": "agentpal.contacts.v0.1",
+  "generated_for": "agentpal-workspace",
+  "default_receiver": "mira-main",
+  "ordinary_messages_go_to": "Mira",
+  "specialist_pals_do_not_listen_by_default": true,
+  "registered_pals": [
+    {
+      "id": "mira-main",
+      "display_name": "Mira",
+      "directory_name": "Mira-main",
+      "path": "pals/Mira-main",
+      "role": "main-secretary",
+      "type": "pal-pack",
+      "is_main_pal": true,
+      "aliases": [
+        "Mira",
+        "mira",
+        "米拉"
+      ],
+      "direct_call": "/pal Mira",
+      "discoverable": true,
+      "contactable": true,
+      "allowed_modes": [
+        "consult",
+        "delegate",
+        "handoff",
+        "review",
+        "joint_work"
+      ]
+    },
+    {
+      "id": "atlas-developer",
+      "display_name": "Atlas",
+      "directory_name": "Atlas-developer",
+      "path": "pals/Atlas-developer",
+      "role": "developer",
+      "type": "pal-pack",
+      "is_main_pal": false,
+      "aliases": [
+        "Atlas",
+        "atlas",
+        "阿特拉斯"
+      ],
+      "direct_call": "/pal Atlas",
+      "discoverable": true,
+      "contactable": true,
+      "allowed_modes": [
+        "consult",
+        "delegate",
+        "handoff",
+        "review",
+        "joint_work"
+      ]
+    },
+    {
+      "id": "vega-research",
+      "display_name": "Vega",
+      "directory_name": "Vega-research",
+      "path": "pals/Vega-research",
+      "role": "research",
+      "type": "pal-pack",
+      "is_main_pal": false,
+      "aliases": [
+        "Vega",
+        "vega",
+        "维加"
+      ],
+      "direct_call": "/pal Vega",
+      "discoverable": true,
+      "contactable": true,
+      "allowed_modes": [
+        "consult",
+        "delegate",
+        "handoff",
+        "review",
+        "joint_work"
+      ]
+    },
+    {
+      "id": "rhea-system",
+      "display_name": "Rhea",
+      "directory_name": "Rhea-system",
+      "path": "pals/Rhea-system",
+      "role": "system",
+      "type": "pal-pack",
+      "is_main_pal": false,
+      "aliases": [
+        "Rhea",
+        "rhea",
+        "瑞亚"
+      ],
+      "direct_call": "/pal Rhea",
+      "discoverable": true,
+      "contactable": true,
+      "allowed_modes": [
+        "consult",
+        "delegate",
+        "handoff",
+        "review",
+        "joint_work"
+      ]
+    },
+    {
+      "id": "quinn-quality",
+      "display_name": "Quinn",
+      "directory_name": "Quinn-quality",
+      "path": "pals/Quinn-quality",
+      "role": "quality",
+      "type": "pal-pack",
+      "is_main_pal": false,
+      "aliases": [
+        "Quinn",
+        "quinn",
+        "昆恩"
+      ],
+      "direct_call": "/pal Quinn",
+      "discoverable": true,
+      "contactable": true,
+      "allowed_modes": [
+        "consult",
+        "delegate",
+        "handoff",
+        "review",
+        "joint_work"
+      ]
+    },
+    {
+      "id": "morgan-document",
+      "display_name": "Morgan",
+      "directory_name": "Morgan-document",
+      "path": "pals/Morgan-document",
+      "role": "document",
+      "type": "pal-pack",
+      "is_main_pal": false,
+      "aliases": [
+        "Morgan",
+        "morgan",
+        "摩根"
+      ],
+      "direct_call": "/pal Morgan",
+      "discoverable": true,
+      "contactable": true,
+      "allowed_modes": [
+        "consult",
+        "delegate",
+        "handoff",
+        "review",
+        "joint_work"
+      ]
+    },
+    {
+      "id": "harper-writing",
+      "display_name": "Harper",
+      "directory_name": "Harper-writing",
+      "path": "pals/Harper-writing",
+      "role": "writing",
+      "type": "pal-pack",
+      "is_main_pal": false,
+      "aliases": [
+        "Harper",
+        "harper",
+        "哈珀"
+      ],
+      "direct_call": "/pal Harper",
+      "discoverable": true,
+      "contactable": true,
+      "allowed_modes": [
+        "consult",
+        "delegate",
+        "handoff",
+        "review",
+        "joint_work"
+      ]
+    },
+    {
+      "id": "nova-product",
+      "display_name": "Nova",
+      "directory_name": "Nova-product",
+      "path": "pals/Nova-product",
+      "role": "product",
+      "type": "pal-pack",
+      "is_main_pal": false,
+      "aliases": [
+        "Nova",
+        "nova",
+        "诺瓦"
+      ],
+      "direct_call": "/pal Nova",
+      "discoverable": true,
+      "contactable": true,
+      "allowed_modes": [
+        "consult",
+        "delegate",
+        "handoff",
+        "review",
+        "joint_work"
+      ]
+    }
+  ],
+  "not_contacts": [
+    "skills",
+    "tools",
+    "models",
+    "mcp",
+    "plugins",
+    "external-agents",
+    "knowledge-packs",
+    "persona-packs",
+    "raw-repositories"
+  ]
+}

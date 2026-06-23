@@ -1,0 +1,220 @@
+{
+  "schema": "agentpal.pal-subagent-map.v0.1",
+  "future_design_only": true,
+  "active_in_agentpal_v0_1_runtime": false,
+  "notice": "Future design only. Not active in AgentPal v0.1 runtime. 未来设计，仅作规划参考，不属于 AgentPal v0.1 当前运行行为。",
+  "runtime": "codex",
+  "mode": "future-design-only",
+  "description": "Future design map for possible child workflow roles. Not active in AgentPal v0.1 runtime.",
+  "not_a_route_map": true,
+  "pal_discovery_source_of_truth": [
+    "contacts/pals.json",
+    "registry/pal.index.json",
+    "registry/pal-subagent-map.json"
+  ],
+  "future_max_parallel_child_workflows": 3,
+  "items": [
+    {
+      "pal_id": "mira-main",
+      "display_name": "Mira",
+      "directory_name": "Mira-main",
+      "role": "main-secretary",
+      "future_child_workflow_role": "coordinator / secretary summarizer",
+      "must_read": [
+        "pals/Mira-main/PAL.md",
+        "pals/Mira-main/core/routing-protocol.md",
+        "pals/Mira-main/core/pal-dispatch-protocol.md",
+        "orchestration/codex-subagent-mode-protocol.md"
+      ],
+      "may_read": [
+        "orchestration/subagent-result-collection-protocol.md",
+        "orchestration/subagent-fallback-policy.md",
+        "registry/pal-subagent-map.json"
+      ],
+      "output_contract": "pals/Mira-main/core/reporting-protocol.md",
+      "response_fingerprint": null,
+      "future_mode": "coordinator-only",
+      "permissions": "read-only coordination; do not act as a specialist subagent",
+      "future_child_workflow_suitable": false,
+      "max_parallel_instances": 0
+    },
+    {
+      "pal_id": "atlas-developer",
+      "display_name": "Atlas",
+      "directory_name": "Atlas-developer",
+      "role": "developer",
+      "future_child_workflow_role": "owner / consultant",
+      "must_read": [
+        "pals/Atlas-developer/PAL.md",
+        "pals/Atlas-developer/SKILL.md",
+        "pals/Atlas-developer/pal.json",
+        "response-fingerprints/Atlas.md",
+        "pals/Atlas-developer/core/output-contract.md"
+      ],
+      "may_read": [
+        "pals/Atlas-developer/core/",
+        "pals/Atlas-developer/skills/",
+        "orchestration/subagent-result-collection-protocol.md"
+      ],
+      "output_contract": "pals/Atlas-developer/core/output-contract.md",
+      "response_fingerprint": "response-fingerprints/Atlas.md",
+      "future_mode": "child-workflow",
+      "permissions": "workspace-scoped read-only by default; may edit only when task explicitly authorizes implementation",
+      "future_child_workflow_suitable": true,
+      "max_parallel_instances": 1
+    },
+    {
+      "pal_id": "nova-product",
+      "display_name": "Nova",
+      "directory_name": "Nova-product",
+      "role": "product",
+      "future_child_workflow_role": "owner / consultant",
+      "must_read": [
+        "pals/Nova-product/PAL.md",
+        "pals/Nova-product/SKILL.md",
+        "pals/Nova-product/pal.json",
+        "response-fingerprints/Nova.md",
+        "pals/Nova-product/core/output-contract.md"
+      ],
+      "may_read": [
+        "pals/Nova-product/core/",
+        "pals/Nova-product/skills/",
+        "orchestration/subagent-result-collection-protocol.md"
+      ],
+      "output_contract": "pals/Nova-product/core/output-contract.md",
+      "response_fingerprint": "response-fingerprints/Nova.md",
+      "future_mode": "child-workflow",
+      "permissions": "read-only product judgment and planning",
+      "future_child_workflow_suitable": true,
+      "max_parallel_instances": 1
+    },
+    {
+      "pal_id": "quinn-quality",
+      "display_name": "Quinn",
+      "directory_name": "Quinn-quality",
+      "role": "quality",
+      "future_child_workflow_role": "reviewer",
+      "must_read": [
+        "pals/Quinn-quality/PAL.md",
+        "pals/Quinn-quality/SKILL.md",
+        "pals/Quinn-quality/pal.json",
+        "response-fingerprints/Quinn.md",
+        "pals/Quinn-quality/core/output-contract.md"
+      ],
+      "may_read": [
+        "pals/Quinn-quality/core/",
+        "pals/Quinn-quality/skills/",
+        "orchestration/subagent-result-collection-protocol.md"
+      ],
+      "output_contract": "pals/Quinn-quality/core/output-contract.md",
+      "response_fingerprint": "response-fingerprints/Quinn.md",
+      "future_mode": "child-workflow",
+      "permissions": "read-only quality, risk, and acceptance review",
+      "future_child_workflow_suitable": true,
+      "max_parallel_instances": 1
+    },
+    {
+      "pal_id": "rhea-system",
+      "display_name": "Rhea",
+      "directory_name": "Rhea-system",
+      "role": "system",
+      "future_child_workflow_role": "owner / consultant",
+      "must_read": [
+        "pals/Rhea-system/PAL.md",
+        "pals/Rhea-system/SKILL.md",
+        "pals/Rhea-system/pal.json",
+        "response-fingerprints/Rhea.md",
+        "pals/Rhea-system/core/output-contract.md"
+      ],
+      "may_read": [
+        "pals/Rhea-system/core/",
+        "pals/Rhea-system/skills/",
+        "orchestration/subagent-permission-boundary.md"
+      ],
+      "output_contract": "pals/Rhea-system/core/output-contract.md",
+      "response_fingerprint": "response-fingerprints/Rhea.md",
+      "future_mode": "child-workflow",
+      "permissions": "read-only by default; no system modification without explicit approval",
+      "future_child_workflow_suitable": true,
+      "max_parallel_instances": 1
+    },
+    {
+      "pal_id": "vega-research",
+      "display_name": "Vega",
+      "directory_name": "Vega-research",
+      "role": "research",
+      "future_child_workflow_role": "consultant",
+      "must_read": [
+        "pals/Vega-research/PAL.md",
+        "pals/Vega-research/SKILL.md",
+        "pals/Vega-research/pal.json",
+        "response-fingerprints/Vega.md",
+        "pals/Vega-research/core/output-contract.md"
+      ],
+      "may_read": [
+        "pals/Vega-research/core/",
+        "pals/Vega-research/skills/",
+        "pals/Vega-research/knowledge/",
+        "pals/Vega-research/learning/"
+      ],
+      "output_contract": "pals/Vega-research/core/output-contract.md",
+      "response_fingerprint": "response-fingerprints/Vega.md",
+      "future_mode": "child-workflow",
+      "permissions": "read-only research; no external network unless approved",
+      "future_child_workflow_suitable": true,
+      "max_parallel_instances": 1
+    },
+    {
+      "pal_id": "morgan-document",
+      "display_name": "Morgan",
+      "directory_name": "Morgan-document",
+      "role": "document",
+      "future_child_workflow_role": "owner / consultant",
+      "must_read": [
+        "pals/Morgan-document/PAL.md",
+        "pals/Morgan-document/SKILL.md",
+        "pals/Morgan-document/pal.json",
+        "response-fingerprints/Morgan.md",
+        "pals/Morgan-document/core/output-contract.md"
+      ],
+      "may_read": [
+        "pals/Morgan-document/core/",
+        "pals/Morgan-document/skills/",
+        "pals/Morgan-document/knowledge/",
+        "pals/Morgan-document/learning/"
+      ],
+      "output_contract": "pals/Morgan-document/core/output-contract.md",
+      "response_fingerprint": "response-fingerprints/Morgan.md",
+      "future_mode": "child-workflow",
+      "permissions": "read-only document planning by default; no file moves or deletes without approval",
+      "future_child_workflow_suitable": true,
+      "max_parallel_instances": 1
+    },
+    {
+      "pal_id": "harper-writing",
+      "display_name": "Harper",
+      "directory_name": "Harper-writing",
+      "role": "writing",
+      "future_child_workflow_role": "consultant",
+      "must_read": [
+        "pals/Harper-writing/PAL.md",
+        "pals/Harper-writing/SKILL.md",
+        "pals/Harper-writing/pal.json",
+        "response-fingerprints/Harper.md",
+        "pals/Harper-writing/core/output-contract.md"
+      ],
+      "may_read": [
+        "pals/Harper-writing/core/",
+        "pals/Harper-writing/skills/",
+        "pals/Harper-writing/knowledge/",
+        "pals/Harper-writing/learning/"
+      ],
+      "output_contract": "pals/Harper-writing/core/output-contract.md",
+      "response_fingerprint": "response-fingerprints/Harper.md",
+      "future_mode": "child-workflow",
+      "permissions": "read-only writing and editing; no external sending without approval",
+      "future_child_workflow_suitable": true,
+      "max_parallel_instances": 1
+    }
+  ]
+}

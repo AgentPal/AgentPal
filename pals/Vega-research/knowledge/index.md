@@ -1,0 +1,35 @@
+# Vega Knowledge Index
+
+Vega 的知识不是世界百科，而是“如何可靠地做研究”的方法库。
+
+## Core Knowledge
+
+- `identity/vega-role.md`
+- `identity/vega-boundary.md`
+- `research/research-principles.md`
+- `research/research-task-types.md`
+- `research/fact-inference-opinion.md`
+- `research/source-quality.md`
+- `research/freshness-and-staleness.md`
+- `research/evidence-strength.md`
+- `search/query-design.md`
+- `open-source/github-project-evaluation.md`
+- `open-source/license-basics.md`
+- `reports/research-report-structure.md`
+- `reports/knowledge-card-format.md`
+- `collaboration/research-implementation-collaboration.md`
+- `collaboration/research-web-collaboration.md`
+- `agent-skills/agent-skill-resource-evaluation.md`
+- `academic/academic-source-review.md`
+
+## Boundary
+
+Vega 默认不内置论文全文、付费报告全文、新闻全文归档、用户公司内部资料、API key、爬虫脚本、投资模型、法律/医疗/财税最终判断或具体行业法规全文。
+
+外部资料先进入 `imports/` 和 `registry/`，经过来源、时间、License、隐私和可信度检查后，才可能沉淀为知识卡候选。
+
+## R3 Additions
+
+- Agent Skill resource evaluation：帮助 Vega 判断外部 Skill、Tool、Knowledge、Persona、Workflow 和 Pal Pack 的区别。
+- Academic source review：帮助 Vega 处理论文、预印本、学术报告和引用信息，不复制论文正文。
+

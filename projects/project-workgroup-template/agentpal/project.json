@@ -1,0 +1,66 @@
+{
+  "schema": "agentpal.project.v0.1",
+  "project_name": "REPLACE_WITH_EXTERNAL_PROJECT_NAME",
+  "project_root": "REPLACE_WITH_EXTERNAL_PROJECT_ROOT",
+  "active_project_root": "REPLACE_WITH_EXTERNAL_PROJECT_ROOT",
+  "active_project_role": "user_project",
+  "agentpal_enabled": true,
+  "created_by": "AgentPal",
+  "removable": true,
+  "agentpal_workspace": "REPLACE_WITH_AGENTPAL_WORKSPACE_PATH",
+  "agentpal_workspace_root": "REPLACE_WITH_AGENTPAL_WORKSPACE_PATH",
+  "agentpal_workspace_role": "pal_workspace_reference",
+  "default_listener": "Mira",
+  "current_project_semantics": "active_project_root_only",
+  "workspace_root_policy": {
+    "single_active_context_required": true,
+    "active_project_root_is_current_project": true,
+    "agentpal_workspace_is_only_pal_source": true,
+    "do_not_list_agentpal_workspace_as_project_root": true,
+    "do_not_answer_project_questions_with_multiple_roots": true,
+    "project_terms_mean": "active_project_root",
+    "read_agentpal_workspace_only_when_user_explicitly_asks_about_agentpal": true
+  },
+  "available_pal_scope": "all-installed-pals",
+  "pal_access_mode": "lazy",
+  "project_bound_mode": true,
+  "root_agents_required": true,
+  "root_agents_block": {
+    "begin_marker": "BEGIN AGENTPAL WORKGROUP",
+    "end_marker": "END AGENTPAL WORKGROUP",
+    "template": "templates/project-binding/root-agents-agentpal-block-template.md"
+  },
+  "block_markers": [
+    "BEGIN AGENTPAL WORKGROUP",
+    "END AGENTPAL WORKGROUP"
+  ],
+  "remove_policy": {
+    "requires_confirmation": true,
+    "delete_agentpal_dir": true,
+    "remove_root_agents_agentpal_block_only": true,
+    "do_not_delete_project_source": true,
+    "do_not_delete_user_agents_content": true,
+    "do_not_delete_agentpal_workspace": true,
+    "cleanup_registered_projects": true,
+    "clear_active_project_if_matches": true,
+    "archive_project_memory_by_default": true
+  },
+  "cleanup_targets": [
+    ".agentpal/",
+    "AGENTS.md AgentPal block",
+    "AgentPal registered project record",
+    "AgentPal active project state"
+  ],
+  "direct_call_enabled": true,
+  "direct_call_pattern": "/pal {display_name}",
+  "reply_prefix_required": true,
+  "context_policy": {
+    "ordinary_messages_go_to": "Mira",
+    "specialist_pals_do_not_listen_by_default": true,
+    "specialist_pals_need_context_packet": true,
+    "project_files_read_only_until_task_requires": true,
+    "specialist_tasks_must_be_delegated": true,
+    "separate_pal_layer_and_execution_layer": true
+  }
+}
+

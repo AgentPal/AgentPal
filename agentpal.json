@@ -1,0 +1,380 @@
+{
+  "schema": "agentpal.workspace.v0.1",
+  "id": "agentpal-workspace",
+  "name": "AgentPal",
+  "type": "agentpal-workspace",
+  "version": "0.1.0",
+  "agentpal_layer_definition": {
+    "is_pal_layer": true,
+    "is_agent_layer": false,
+    "is_multi_agent_runtime": false,
+    "is_execution_layer": false,
+    "description": "AgentPal provides Pal identity, knowledge, skills, context, memory, output contracts, routing coordination, review, summary, and learning instructions for an existing Agent runtime."
+  },
+  "active_runtime_mode": "simple-pal-mode-only",
+  "runtime_policy": {
+    "current_mode": "simple-pal-mode-only",
+    "simple_pal_mode_only": true,
+    "do_not_probe_parallel_agent_tools": true,
+    "do_not_call_parallel_agent_tools": true,
+    "do_not_call_external_agent_runtimes": true,
+    "do_not_show_mode_metadata_to_user": true,
+    "allowed_current_paths": [
+      "mira-direct-answer",
+      "simple-pal-owner-handoff",
+      "direct-pal-call",
+      "codex-generic-answer",
+      "clarification",
+      "safety-confirmation"
+    ]
+  },
+  "compatible_runtime_types": [
+    "codex-workspace",
+    "claude-code-workspace",
+    "codewhale-workspace",
+    "gemini-cli-workspace",
+    "markdown-json-capable-agent-runtime"
+  ],
+  "default_pal": {
+    "display_name": "Mira",
+    "id": "mira-main",
+    "path": "pals/Mira-main"
+  },
+  "pals_dir": "pals",
+  "default_listener": "Mira",
+  "ordinary_messages_go_to": "Mira",
+  "direct_call": {
+    "enabled": true,
+    "patterns": [
+      "/pal {name}",
+      "@{name}"
+    ]
+  },
+  "pal_access_mode": "lazy",
+  "specialist_pals_do_not_listen_by_default": true,
+  "pal_contact_source_of_truth": {
+    "protocol": "orchestration/pal-contact-source-of-truth-protocol.md",
+    "source_files": [
+      "contacts/pals.json",
+      "contacts/PAL_CONTACTS.md",
+      "contacts/mention-aliases.md",
+      "registry/pal.index.json",
+      "registry/pal.index.md"
+    ],
+    "individual_pal_packs_must_not_hardcode_other_pal_identities": true,
+    "collaborators_resolved_from_current_contacts_registry": true
+  },
+  "semantic_routing_policy": "ai-judged-case-by-case",
+  "pal_capability_reference": {
+    "not_a_route_map": true,
+    "selection_rule": "Mira judges the owner Pal case-by-case from user goal, context, constraints, risk, available Pal assets, and requested output.",
+    "non_binding_examples_only": true,
+    "items": [
+      {
+        "pal_id": "mira-main",
+        "display_name": "Mira",
+        "perspective": "intake, secretary work, coordination, context packet, summary, project workgroup coordination",
+        "non_binding": true
+      },
+      {
+        "pal_id": "atlas-developer",
+        "display_name": "Atlas",
+        "perspective": "development-oriented perspective",
+        "non_binding": true
+      },
+      {
+        "pal_id": "vega-research",
+        "display_name": "Vega",
+        "perspective": "research and evidence-oriented perspective",
+        "non_binding": true
+      },
+      {
+        "pal_id": "rhea-system",
+        "display_name": "Rhea",
+        "perspective": "local system and environment-oriented perspective",
+        "non_binding": true
+      },
+      {
+        "pal_id": "quinn-quality",
+        "display_name": "Quinn",
+        "perspective": "quality, risk, evidence, and acceptance-oriented perspective",
+        "non_binding": true
+      },
+      {
+        "pal_id": "morgan-document",
+        "display_name": "Morgan",
+        "perspective": "document and file-workflow-oriented perspective",
+        "non_binding": true
+      },
+      {
+        "pal_id": "harper-writing",
+        "display_name": "Harper",
+        "perspective": "writing and communication-oriented perspective",
+        "non_binding": true
+      },
+      {
+        "pal_id": "nova-product",
+        "display_name": "Nova",
+        "perspective": "product and decision-oriented perspective",
+        "non_binding": true
+      }
+    ]
+  },
+  "active_pal_policy": {
+    "default_active_pal": "Mira",
+    "mira_routes_and_stops": true,
+    "specialist_pal_takes_over_after_handoff": true,
+    "owner_pal_must_answer_immediately_after_handoff": true,
+    "execution_layer_reported_by_active_pal": true,
+    "mira_returns_when": [
+      "user_calls_/pal_Mira",
+      "user_asks_for_mira_summary",
+      "active_pal_hands_back_to_mira"
+    ]
+  },
+  "reply_policy": {
+    "speaking_pal_prefix_required": true,
+    "welcome_message_language": "user_current_language",
+    "welcome_message_must_use_user_current_language": true,
+    "normal_intro_omit_execution_layer": true,
+    "chinese_welcome_first_sentence": "Mira：我是米拉，是你的专属秘书。",
+    "examples": [
+      "Mira：",
+      "Atlas：",
+      "Rhea："
+    ],
+    "mira_summary_labels_specialist_advice": true,
+    "no_runtime_mode_metadata_in_normal_answers": true
+  },
+  "routing_policy": {
+    "specialist_tasks_may_be_delegated_after_ai_judgement": true,
+    "mira_route_only_when_owner_selected": true,
+    "mira_owner_routing_max_output": "max 2 short sentences",
+    "mira_must_not_provide_owned_work_body_after_handoff": true,
+    "mira_forbidden_owner_route_outputs": [
+      "owned work body"
+    ],
+    "semantic_routing_policy": "ai-judged-case-by-case",
+    "hardcoded_semantic_routes_allowed": false,
+    "requires_context_packet": true,
+    "default_mode_for_owned_route": "handoff",
+    "owned_tasks_require_owner_pal_when_handed_off": true,
+    "pal_capability_reference_is_not_route_map": true
+  },
+  "runtime_response_gate": {
+    "protocol": "orchestration/runtime-response-gate.md",
+    "ai_routing_judgement_protocol": "orchestration/ai-routing-judgement-protocol.md",
+    "must_run_before_every_answer": true,
+    "codex_generic_gate": {
+      "enabled": true,
+      "required_prefix": "Codex generic answer:",
+      "must_not_use_pal_prefix": true,
+      "explicit_triggers_only": true
+    },
+    "explicit_pal_command_gate": {
+      "enabled": true,
+      "patterns": [
+        "/pal {name}",
+        "@{name}"
+      ],
+      "deterministic": true
+    },
+    "mira_specialist_blocker": {
+      "enabled": true,
+      "mira_must_not_provide_specialist_body_after_handoff": true,
+      "allowed_mira_specialist_output": "case-specific owner judgment and handoff only"
+    },
+    "ai_routing_judgement_gate": {
+      "enabled": true,
+      "policy": "ai-judged-case-by-case",
+      "pal_capability_reference_is_not_route_map": true,
+      "fixed_pal_set_required_by_semantic_shape": false
+    },
+    "owner_pal_immediate_response_gate": {
+      "enabled": true,
+      "owner_pal_must_answer_immediately": true
+    },
+    "output_contract_gate": {
+      "enabled": true,
+      "fake_pal_response_fails": true
+    },
+    "pal_owned_skill_storage_gate": {
+      "enabled": true,
+      "explicit_user_request_creates_formal_owner_pal_skill": true,
+      "similar_operations_over_3_create_formal_owner_pal_skill": true,
+      "destination": "pals/<Owner-Pal-Directory>/skills/<skill-id>/SKILL.md",
+      "update_index": "pals/<Owner-Pal-Directory>/skills/index.md",
+      "forbidden_destinations": [
+        "~/.codex/skills",
+        ".codex/skills",
+        "~/.codewhale/skills",
+        ".codewhale/skills",
+        "plugin folders",
+        "external tool folders",
+        "external project source directories"
+      ]
+    }
+  },
+  "specialist_learning_policy": {
+    "mira_should_not_own_specialist_learning": true,
+    "domain_learning_belongs_to_the_specialist_pal": true,
+    "fallback_allowed_when_assets_missing": true,
+    "fallback_must_report_knowledge_gap": true,
+    "repeated_task_candidate_trigger": "similar operations > 3 create a formal owner Pal Skill",
+    "learning_directory_name": "learning",
+    "explicit_user_request_creates_formal_owner_pal_skill": true,
+    "formal_skill_destination": "pals/<Owner-Pal-Directory>/skills/<skill-id>/SKILL.md",
+    "formal_skill_index": "pals/<Owner-Pal-Directory>/skills/index.md"
+  },
+  "specialist_asset_loading": {
+    "protocol": "orchestration/specialist-pal-asset-loading-protocol.md",
+    "levels": [
+      "Level 0 identity",
+      "Level 1 indexes",
+      "Level 2 relevant assets",
+      "Level 3 fallback method"
+    ]
+  },
+  "pal_mode_validity": {
+    "protocol": "orchestration/pal-mode-validity-protocol.md",
+    "mode_statement": "/pal Name enters Pal work mode",
+    "not_independent_agent_process": true,
+    "valid_pal_response_requires": [
+      "response_fingerprint",
+      "output_contract",
+      "work_method_statement",
+      "minimum_asset_loading",
+      "asset_or_fallback_method"
+    ],
+    "pal_response_must_use_output_contract": true,
+    "specialist_pal_must_include_fallback_if_no_asset_is_used": true,
+    "codex_generic_request_must_not_use_pal_prefix": true,
+    "allow_codex_generic_answer": false,
+    "fallback_if_no_asset": true,
+    "asset_usage_proof_required_for_complex_tasks": true,
+    "codex_generic_answer_label": "Codex generic answer",
+    "specialist_pal_response_must_use_at_least_one_asset_or_fallback_method": true,
+    "mira_must_not_provide_specialist_answers_herself_after_handoff": true
+  },
+  "multi_pal_dispatch_policy": {
+    "requires_owner_pal_when_multi_pal_is_chosen": true,
+    "consultant_pals_are_chosen_case_by_case": true,
+    "reviewer_pals_are_chosen_case_by_case": true,
+    "requires_execution_layer_when_real_actions_are_involved": true,
+    "final_summary_by_default": "Mira",
+    "fixed_pal_set_required_by_semantic_shape": false,
+    "modes": [
+      "single-owner consult",
+      "sequential handoff",
+      "same-response owner answer",
+      "execution with owner Pal"
+    ]
+  },
+  "future_design": {
+    "agent_runtime_orchestration": {
+      "active_in_v0_1_runtime": false,
+      "documentation": "docs/future-agent-orchestration.md",
+      "purpose": "Reserved for a later design that may coordinate Codex child workflows, non-Pal runtimes, MCP-hosted agents, or remote agent services."
+    },
+    "codex_subagent_mode": {
+      "active_in_v0_1_runtime": false,
+      "future_design_only": true,
+      "docs": [
+        "docs/09-codex-subagent-mode.md",
+        "orchestration/codex-subagent-mode-protocol.md",
+        "registry/pal-subagent-map.json",
+        "registry/pal-subagent-map.md"
+      ]
+    }
+  },
+  "official_bundled_pals": [
+    "mira-main",
+    "atlas-developer",
+    "vega-research",
+    "rhea-system",
+    "quinn-quality",
+    "morgan-document",
+    "harper-writing",
+    "nova-product"
+  ],
+  "project_workgroup": {
+    "enabled": true,
+    "binding_dir": ".agentpal",
+    "default_project_listener": "Mira",
+    "root_agents_required": true,
+    "root_agents_block_begin": "BEGIN AGENTPAL WORKGROUP",
+    "root_agents_block_end": "END AGENTPAL WORKGROUP",
+    "project_lookup_order": [
+      "codex_list_projects_tool_if_available",
+      "codex_known_projects",
+      "workspace_roots",
+      "agentpal_registered_external_projects",
+      "recent_project_records",
+      "user_provided_path",
+      "ask_user_for_path"
+    ],
+    "codex_project_list_first": true,
+    "list_projects_first_if_available": true,
+    "workspace_roots_first": true,
+    "context_isolation_policy": {
+      "single_active_context_required": true,
+      "agentpal_workspace_mode_label": "AgentPal Workspace",
+      "agentpal_workspace_chinese_label": "AgentPal 工作区",
+      "active_project_root_role": "active_user_project",
+      "agentpal_workspace_root_role": "pal_workspace_reference",
+      "current_project_semantics": "active_project_root_only",
+      "do_not_list_agentpal_workspace_as_project_root": true
+    },
+    "remove_workgroup_policy": {
+      "enabled": true,
+      "requires_confirmation": true,
+      "delete_agentpal_dir": true,
+      "remove_root_agents_agentpal_block_only": true,
+      "write_deactivation_marker_when_root_agents_empty_or_missing": true,
+      "deactivation_marker_template": "templates/project-binding/agentpal-removed-agents-template.md",
+      "current_thread_loaded_context_warning_required": true,
+      "recommend_new_thread_after_removal": true,
+      "do_not_delete_project_source": true,
+      "do_not_delete_user_agents_content": true,
+      "cleanup_registered_projects": true,
+      "clear_active_project_if_matches": true,
+      "archive_project_memory_by_default": true
+    }
+  },
+  "reporting_policy": {
+    "separate_pal_layer_and_execution_layer": true,
+    "codex_execution_layer_label": "当前 Codex 执行层",
+    "active_pal_reports_execution_layer": true,
+    "detailed_layer_report_only_when_real_modification_or_user_asks": true,
+    "do_not_mention_execution_layer_in_normal_introduction": true
+  },
+  "capabilities": [
+    "pal-discovery",
+    "pal-contact-source-of-truth",
+    "pal-indexing",
+    "ai-routing-judgement",
+    "context-packet",
+    "specialist-pal-asset-loading",
+    "pal-mode-validity",
+    "runtime-response-gate",
+    "response-fingerprint",
+    "output-contract",
+    "asset-usage-proof",
+    "specialist-fallback-learning",
+    "project-workgroup",
+    "pal-owned-skill-storage",
+    "memory-writeback",
+    "solution-reasoning",
+    "verification"
+  ],
+  "compatible_runtimes": [
+    "codex",
+    "claude-code",
+    "codewhale",
+    "gemini-cli",
+    "deepseek-tui",
+    "markdown-json-capable-runtime"
+  ],
+  "license": "MIT"
+}
+

@@ -1,0 +1,24 @@
+# Runtime and private memory
+memory/user/*
+memory/projects/*
+memory/runtime/*
+state/*
+reports/task-reports/*
+reports/verification-reports/*
+reports/user-reports/*
+pals/*/state/*
+pals/*/reports/*
+pals/*/memory/*.local.md
+contacts/collaboration-memory.md
+imports/raw/*
+
+# Keep release-safe README and templates
+!memory/user/README.md
+!memory/projects/README.md
+!memory/runtime/README.md
+!state/README.md
+!reports/**/README.md
+!pals/*/state/README.md
+!pals/*/memory/README.md
+!imports/raw/README.md
+

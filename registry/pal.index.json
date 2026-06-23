@@ -1,0 +1,229 @@
+{
+  "schema": "agentpal.pal-index.v0.1",
+  "workspace": "agentpal-workspace",
+  "default_receiver": "mira-main",
+  "ordinary_messages_go_to": "Mira",
+  "specialist_pals_do_not_listen_by_default": true,
+  "items": [
+    {
+      "id": "mira-main",
+      "display_name": "Mira",
+      "directory_name": "Mira-main",
+      "path": "pals/Mira-main",
+      "role": "main-secretary",
+      "type": "pal-pack",
+      "is_main_pal": true,
+      "aliases": [
+        "Mira",
+        "mira",
+        "米拉"
+      ],
+      "direct_call": "/pal Mira",
+      "core_capabilities": [
+        "identity",
+        "context",
+        "task-loop",
+        "dispatch",
+        "collaboration",
+        "handoff",
+        "mention",
+        "resource-ingestion",
+        "resource-indexing",
+        "tool-learning",
+        "verification",
+        "memory",
+        "skill-growth",
+        "solution-reasoning",
+        "reporting",
+        "runtime-awareness",
+        "model-routing",
+        "skill-plugin-discovery",
+        "capability-profiling",
+        "multi-pal-coordination",
+        "project-workgroup",
+        "secretary",
+        "daily-briefing",
+        "weekly-summary",
+        "context-briefing",
+        "meeting-notes",
+        "action-items",
+        "project-status-summary",
+        "multi-pal-summary",
+        "execution-result-explainer",
+        "user-intent-clarification"
+      ]
+    },
+    {
+      "id": "atlas-developer",
+      "display_name": "Atlas",
+      "directory_name": "Atlas-developer",
+      "path": "pals/Atlas-developer",
+      "role": "developer",
+      "type": "pal-pack",
+      "is_main_pal": false,
+      "aliases": [
+        "Atlas",
+        "atlas",
+        "阿特拉斯"
+      ],
+      "direct_call": "/pal Atlas",
+      "core_capabilities": [
+        "requirements",
+        "coding-task-handoff",
+        "debugging",
+        "repository-handoff",
+        "code-review",
+        "test-planning",
+        "architecture-review",
+        "evidence-review"
+      ]
+    },
+    {
+      "id": "vega-research",
+      "display_name": "Vega",
+      "directory_name": "Vega-research",
+      "path": "pals/Vega-research",
+      "role": "research",
+      "type": "pal-pack",
+      "is_main_pal": false,
+      "aliases": [
+        "Vega",
+        "vega",
+        "维加"
+      ],
+      "direct_call": "/pal Vega",
+      "core_capabilities": [
+        "research-planning",
+        "source-quality",
+        "evidence-tables",
+        "github-comparison",
+        "competitor-analysis",
+        "citation-summary",
+        "uncertainty-check"
+      ]
+    },
+    {
+      "id": "rhea-system",
+      "display_name": "Rhea",
+      "directory_name": "Rhea-system",
+      "path": "pals/Rhea-system",
+      "role": "system",
+      "type": "pal-pack",
+      "is_main_pal": false,
+      "aliases": [
+        "Rhea",
+        "rhea",
+        "瑞亚"
+      ],
+      "direct_call": "/pal Rhea",
+      "core_capabilities": [
+        "system-task-intake",
+        "environment-diagnosis",
+        "runtime-setup",
+        "app-installation",
+        "permission-risk-review",
+        "failure-recovery",
+        "maintenance-reporting"
+      ]
+    },
+    {
+      "id": "quinn-quality",
+      "display_name": "Quinn",
+      "directory_name": "Quinn-quality",
+      "path": "pals/Quinn-quality",
+      "role": "quality",
+      "type": "pal-pack",
+      "is_main_pal": false,
+      "aliases": [
+        "Quinn",
+        "quinn",
+        "昆恩"
+      ],
+      "direct_call": "/pal Quinn",
+      "core_capabilities": [
+        "acceptance-criteria",
+        "evidence-audit",
+        "risk-assessment",
+        "regression-plan",
+        "release-gate",
+        "test-case-design",
+        "rollback-readiness"
+      ]
+    },
+    {
+      "id": "morgan-document",
+      "display_name": "Morgan",
+      "directory_name": "Morgan-document",
+      "path": "pals/Morgan-document",
+      "role": "document",
+      "type": "pal-pack",
+      "is_main_pal": false,
+      "aliases": [
+        "Morgan",
+        "morgan",
+        "摩根"
+      ],
+      "direct_call": "/pal Morgan",
+      "core_capabilities": [
+        "file-organization",
+        "document-processing",
+        "spreadsheet-planning",
+        "pdf-planning",
+        "batch-naming",
+        "metadata-indexing",
+        "file-privacy-risk"
+      ]
+    },
+    {
+      "id": "harper-writing",
+      "display_name": "Harper",
+      "directory_name": "Harper-writing",
+      "path": "pals/Harper-writing",
+      "role": "writing",
+      "type": "pal-pack",
+      "is_main_pal": false,
+      "aliases": [
+        "Harper",
+        "harper",
+        "哈珀"
+      ],
+      "direct_call": "/pal Harper",
+      "core_capabilities": [
+        "writing-intake",
+        "audience-tone",
+        "outline",
+        "drafting",
+        "rewrite-edit",
+        "email-message",
+        "style-guide",
+        "communication-risk"
+      ]
+    },
+    {
+      "id": "nova-product",
+      "display_name": "Nova",
+      "directory_name": "Nova-product",
+      "path": "pals/Nova-product",
+      "role": "product",
+      "type": "pal-pack",
+      "is_main_pal": false,
+      "aliases": [
+        "Nova",
+        "nova",
+        "诺瓦"
+      ],
+      "direct_call": "/pal Nova",
+      "core_capabilities": [
+        "idea-intake",
+        "problem-definition",
+        "scenario-mapping",
+        "scope-boundary",
+        "mvp-slicing",
+        "prd",
+        "prioritization",
+        "developer-handoff"
+      ]
+    }
+  ]
+}
+
