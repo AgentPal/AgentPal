@@ -1,6 +1,6 @@
 # AgentPal
 
-AgentPal is a Pal Workspace and Pal Pack standard practice for agent runtimes.
+AgentPal is a Pal Team and Pal Pack standard practice for agent runtimes.
 
 AgentPal gives every agent a Pal.
 
@@ -31,6 +31,11 @@ A Pal is a portable working companion made of identity, knowledge, skills, memor
 
 The name Pal means a memorable working companion, not a tool name. In AgentPal, a Pal helps the current runtime understand the user's goal, load the right context, shape a Task Package, use relevant Skills or fallback methods, and check whether the result is actually complete.
 
+Learn more about Pal:
+
+- [Why Pal?](docs/01-concepts/07-why-pal.md)
+- [Pal Teams and Deep Conductor](docs/05-orchestration-methodology/11-pal-teams-and-deep-conductor.md)
+
 ## What Works Today
 
 AgentPal v0.1.0-rc.1 currently provides:
@@ -53,10 +58,10 @@ AgentPal v0.1.0-rc.1 currently provides:
 
 Use this when you open the AgentPal Workspace directly in Codex.
 
-1. Open the AgentPal Workspace in Codex.
+1. Create a new Codex project with the AgentPal directory.
 2. Open [`prompts/codex/initialize-agentpal-workspace.md`](prompts/codex/initialize-agentpal-workspace.md).
 3. Copy the whole prompt.
-4. Paste it into Codex to initialize AgentPal.
+4. Paste it into the AgentPal project conversation in Codex to initialize AgentPal.
 5. Start ordinary messages with Mira, or call a specialist with `/pal Name`.
 
 Codex prompt files now live under [`prompts/codex/`](prompts/codex/). Codex workspace initialization does not require `AGENTPAL_HOME`.
