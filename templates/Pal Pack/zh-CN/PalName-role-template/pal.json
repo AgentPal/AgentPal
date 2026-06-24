@@ -1,0 +1,71 @@
+{
+  "schema": "agentpal.pal-pack.v0.1",
+  "id": "pal-id",
+  "name": "PalName",
+  "display_name": "PalName / 角色 Pal",
+  "directory_name": "PalName-role",
+  "role": "role",
+  "direct_call": "/pal PalName",
+  "aliases": [
+    "PalName",
+    "palname",
+    "中文别名"
+  ],
+  "version": "0.1.0",
+  "type": "pal-pack",
+  "description": "用一句话说明这个 Pal 的职责、领域和主要输出。",
+  "formal_skill_count": 0,
+  "formal_skills": [],
+  "license": "MIT",
+  "entry": {
+    "skill": "SKILL.md",
+    "pal": "PAL.md",
+    "agent": "AGENTS.md"
+  },
+  "collaboration": {
+    "discoverable": true,
+    "contactable": true,
+    "collaboration_enabled": true,
+    "handoff_enabled": true,
+    "can_be_added_to_pal_contacts": true,
+    "accept_consult": true,
+    "accept_delegate": true,
+    "accept_handoff": true,
+    "accept_joint_work": true,
+    "allow_discovering_other_pals": true,
+    "allow_adding_other_pals_to_contacts": false,
+    "allow_consulting_other_pals": true,
+    "allow_delegating_to_other_pals": true,
+    "allow_handoff_to_other_pals": true,
+    "allow_joint_work_with_other_pals": true,
+    "allowed_modes": [
+      "consult",
+      "delegate",
+      "handoff",
+      "joint_work"
+    ],
+    "requires_user_approval_for_sensitive_context": true
+  },
+  "resource_policy": {
+    "allow_unstructured_imports": true,
+    "do_not_modify_imported_packages_by_default": true,
+    "generate_indexes": true,
+    "third_party_resources_keep_original_license": true
+  },
+  "compatible_runtimes": [
+    "codex",
+    "agentpal"
+  ],
+  "agentpal_workspace_defaults": {
+    "ordinary_messages_go_to": "Mira",
+    "specialist_pals_do_not_listen_by_default": true
+  },
+  "runtime_awareness": {
+    "detect_current_runtime": true,
+    "detect_current_model": true,
+    "detect_reasoning_strength": true,
+    "detect_runtime_skills_plugins_mcp": true,
+    "refresh_on_runtime_change": true
+  }
+}
+

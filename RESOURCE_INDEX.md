@@ -86,6 +86,9 @@ For user-facing documentation, start with `docs/README.md`. For root-level relea
 
 | Path | Purpose |
 | --- | --- |
+| `prompts/codex/initialize-agentpal-workspace.md` | Codex AgentPal Workspace initialization prompt |
+| `prompts/codex/remove-agentpal-current-project.md` | remove AgentPal binding from the current external Codex project |
+| `prompts/codex/remove-agentpal-workspace-from-codex.md` | stop using AgentPal Workspace in Codex without deleting files |
 | `prompts/claude-code/install-agentpal-current-project.md` | one-prompt Claude Code project install from inside `<your-project>` |
 | `prompts/claude-code/remove-agentpal-current-project.md` | remove AgentPal binding from a Claude Code project |
 | `prompts/claude-code/verify-agentpal-current-project.md` | verify Claude Code project binding and `settings.local.json` |

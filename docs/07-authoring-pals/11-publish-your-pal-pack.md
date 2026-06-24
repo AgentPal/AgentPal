@@ -30,6 +30,47 @@ Only after the directory is a valid Pal Pack, update:
 
 These files are the source of truth for Pal discovery.
 
+For normal users, the recommended path is to run [`../../prompts/add-pal-to-agentpal.md`](../../prompts/add-pal-to-agentpal.md) from the AgentPal Workspace after copying the completed Pal Pack into `pals/<Name-role>/`.
+
+### Where To Run The Registration Prompt
+
+Run the registration prompt in the AgentPal Workspace, not in the external project where you normally use AgentPal.
+
+Codex:
+
+1. Open the AgentPal directory as its own Codex project.
+2. Copy the finished Pal Pack into `pals/<Name-role>/`.
+3. Open [`../../prompts/add-pal-to-agentpal.md`](../../prompts/add-pal-to-agentpal.md).
+4. Copy the prompt block.
+5. Paste it into the AgentPal project conversation.
+6. After registration succeeds, smoke-test with `/pal Name`.
+
+Claude Code:
+
+1. Open a terminal in the AgentPal Workspace:
+
+   ```text
+   cd <path-to-AgentPal>
+   claude
+   ```
+
+2. Copy the finished Pal Pack into `pals/<Name-role>/`.
+3. Paste the full [`../../prompts/add-pal-to-agentpal.md`](../../prompts/add-pal-to-agentpal.md) prompt into that Claude Code session.
+4. Reinitialize any external project session if it still has the old Pal list.
+
+Generic CLI Agent:
+
+1. Open the CLI agent from the AgentPal Workspace:
+
+   ```text
+   cd <path-to-AgentPal>
+   <your-cli-agent>
+   ```
+
+2. Copy the finished Pal Pack into `pals/<Name-role>/`.
+3. Paste the full registration prompt into that session.
+4. The agent should scan only `pals/`, validate the Pal Pack, and update contacts / registry.
+
 ## Do Not Register
 
 - ordinary Skills

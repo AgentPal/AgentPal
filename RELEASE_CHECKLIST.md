@@ -63,6 +63,8 @@ Use this checklist before publishing AgentPal v0.1.0-rc.1 as a public MIT GitHub
 ## Project Install Prompts
 
 - [ ] `prompts/claude-code/install-agentpal-current-project.md` exists.
+- [ ] `prompts/codex/remove-agentpal-current-project.md` exists.
+- [ ] `prompts/codex/remove-agentpal-workspace-from-codex.md` exists.
 - [ ] `prompts/claude-code/remove-agentpal-current-project.md` exists.
 - [ ] `prompts/claude-code/verify-agentpal-current-project.md` exists.
 - [ ] `prompts/generic-cli-agent/install-agentpal-current-project.md` exists.

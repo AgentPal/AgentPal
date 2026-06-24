@@ -16,6 +16,8 @@ These files are Markdown instructions, not programs. They do not install depende
 
 - `join-external-project-workgroup.md`: AgentPal-led external project binding from an AgentPal Workspace session.
 - `remove-agentpal-workgroup.md`: AgentPal-led external project binding removal.
+- `codex/remove-agentpal-current-project.md`: Codex project-local AgentPal binding removal.
+- `codex/remove-agentpal-workspace-from-codex.md`: stop using AgentPal Workspace in Codex without deleting files.
 - `claude-code/remove-agentpal-current-project.md`: Claude Code project-local removal.
 - `generic-cli-agent/remove-agentpal-current-project.md`: generic CLI project-local removal.
 
@@ -44,6 +46,14 @@ Keep local machine paths in project-local files such as `.agentpal/project.json`
 - `initialize-agentpal.md`: legacy-compatible workspace initialization prompt.
 - `rebuild-mira-main-pal.md`: repair Mira public files only when damaged.
 - `test-ai-routing-judgement.md`: manual routing judgement regression prompt.
+
+Run Pal registration and index refresh prompts from the AgentPal Workspace itself:
+
+- In Codex, open the AgentPal directory as its own Codex project, then paste `add-pal-to-agentpal.md` or `refresh-pal-index.md` into that AgentPal project conversation.
+- In Claude Code, open a terminal in `<path-to-AgentPal>`, run `claude`, then paste the maintenance prompt there.
+- In another CLI agent, open the CLI agent from `<path-to-AgentPal>`, then paste the maintenance prompt there.
+
+Most users use AgentPal from an external project directory. That is normal for day-to-day work, but Pal registration changes the AgentPal Workspace files, so it should be done in the AgentPal Workspace unless the current runtime has explicit read/write access to that path.
 
 ## Future / Deprecated-For-Current-Use
 

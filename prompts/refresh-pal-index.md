@@ -2,7 +2,13 @@
 
 Use this prompt when you want Mira or the current runtime to rebuild the Pal index.
 
-Initialization should automatically detect valid Pal Packs under `pals/` and refresh contacts / registry when needed. Users do not need to see this maintenance action in the first welcome message.
+Normal initialization reads the current contacts / registry files. Use this maintenance prompt when Pal Pack changes need to be reflected in contacts / registry. Users do not need to see this maintenance action in the first welcome message.
+
+Run this prompt from the AgentPal Workspace:
+
+- Codex: open AgentPal as its own Codex project, then paste this prompt into the AgentPal project conversation.
+- Claude Code: `cd <path-to-AgentPal>`, run `claude`, then paste this prompt.
+- Generic CLI Agent: `cd <path-to-AgentPal>`, start the CLI agent, then paste this prompt.
 
 ```text
 Refresh the AgentPal Pal index.
@@ -111,4 +117,3 @@ After refresh, report:
 - invalid candidates
 - whether JSON validation passed
 ```
-

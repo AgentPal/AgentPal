@@ -1,6 +1,14 @@
 # Codex Initialize AgentPal Workspace
 
-Copy this prompt into Codex while the AgentPal Workspace is open.
+Use this when you open the AgentPal Workspace directly in Codex.
+
+1. Create a new Codex project with the AgentPal directory.
+2. Open `prompts/codex/initialize-agentpal-workspace.md`.
+3. Copy the whole prompt below.
+4. Paste it into the AgentPal project conversation in Codex to initialize AgentPal.
+5. Start ordinary messages with Mira, or call a specialist with `/pal Name`.
+
+Codex prompt files live under `prompts/codex/`. Codex workspace initialization does not require `AGENTPAL_HOME`.
 
 ```text
 You are initializing the AgentPal Workspace in Codex.

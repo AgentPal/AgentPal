@@ -124,6 +124,22 @@ This is a generic compatibility path. AgentPal does not claim every CLI Agent ha
 
 More: [`docs/04-runtime-guides/03-use-with-generic-cli-agent.md`](docs/04-runtime-guides/03-use-with-generic-cli-agent.md)
 
+## Create Your Own Pal
+
+AgentPal includes standard Pal Pack templates under [`templates/Pal Pack/`](<templates/Pal Pack/>). Copy a template, rename it for your Pal, fill in the identity, output contract, knowledge, Skills, examples, and public-safe placeholders, then place the finished Pal Pack under [`pals/`](pals/). After the Pal is registered through AgentPal contacts and registry, you can use it like the bundled Pals.
+
+Available template sets:
+
+- [`templates/Pal Pack/zh-CN/`](<templates/Pal Pack/zh-CN/>)
+- [`templates/Pal Pack/en-US/`](<templates/Pal Pack/en-US/>)
+
+To register a copied Pal Pack, run [`prompts/add-pal-to-agentpal.md`](prompts/add-pal-to-agentpal.md) from the AgentPal Workspace:
+
+- Codex: open the AgentPal directory as its own Codex project, then paste the prompt into the AgentPal project conversation.
+- Claude Code or another CLI agent: open a terminal in `<path-to-AgentPal>`, start the CLI agent there, then paste the prompt.
+
+Most users run AgentPal from an external project during daily work. Pal registration edits AgentPal's own `contacts/` and `registry/` files, so do the registration step in the AgentPal Workspace, then reinitialize the external project session if it still shows the old Pal list.
+
 ## Official Pals
 
 | Pal | Responsibility | Direct call |

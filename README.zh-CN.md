@@ -126,6 +126,22 @@ Claude Code 路径会写入项目本地绑定文件，并可能更新 `.claude/s
 
 详见：[`docs/04-runtime-guides/03-use-with-generic-cli-agent.md`](docs/04-runtime-guides/03-use-with-generic-cli-agent.md)
 
+## 创建你自己的 Pal
+
+AgentPal 在 [`templates/Pal Pack/`](<templates/Pal Pack/>) 下提供标准 Pal Pack 模板。你可以复制模板目录，改成自己的 Pal 名称，补充身份、输出契约、知识、Skills、示例和 public-safe 占位文件，然后把完成后的 Pal Pack 放入 [`pals/`](pals/) 目录。注册到 AgentPal contacts / registry 后，就可以像官方 Pal 一样使用。
+
+当前模板：
+
+- [`templates/Pal Pack/zh-CN/`](<templates/Pal Pack/zh-CN/>)
+- [`templates/Pal Pack/en-US/`](<templates/Pal Pack/en-US/>)
+
+注册复制好的 Pal Pack 时，在 AgentPal 工作区执行 [`prompts/add-pal-to-agentpal.md`](prompts/add-pal-to-agentpal.md)：
+
+- Codex：把 AgentPal 目录作为 Codex 项目打开，然后把注册提示词粘贴到 AgentPal 项目对话中执行。
+- Claude Code 或其它 CLI Agent：在终端进入 `<path-to-AgentPal>`，从这个目录启动 CLI Agent，然后粘贴注册提示词执行。
+
+日常使用 AgentPal 时，用户通常是在自己的外部项目目录中工作；这是正常的。但 Pal 注册会修改 AgentPal 自身的 `contacts/` 和 `registry/` 文件，所以注册步骤应回到 AgentPal 工作区执行。注册完成后，如果外部项目会话仍显示旧 Pal 列表，再重新初始化该项目会话。
+
 ## 官方 Pal
 
 | Pal | 职责 | 直接调用 |
