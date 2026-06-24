@@ -80,21 +80,10 @@ Use this when you want to connect AgentPal to an existing user project in Claude
    ```
 
 2. Open [`prompts/claude-code/install-agentpal-current-project.md`](prompts/claude-code/install-agentpal-current-project.md).
-3. Find this line:
-
-   ```text
-   AGENTPAL_HOME = <replace-with-your-AgentPal-path>
-   ```
-
-4. Replace `<replace-with-your-AgentPal-path>` with your local AgentPal repository path, for example:
-
-   ```text
-   AGENTPAL_HOME = D:/Tools/AgentPal
-   AGENTPAL_HOME = /Users/you/AgentPal
-   ```
-
-5. Copy the whole prompt file.
-6. Paste it into Claude Code.
+3. Copy the whole prompt file without editing it.
+4. Paste it into Claude Code.
+5. When Claude Code asks for your AgentPal Workspace path, enter the local path to the AgentPal directory, for example `<path-to-AgentPal>`.
+6. Let Claude Code create or update the project-local binding files.
 
 The Claude Code path updates project-local binding files and may update `.claude/settings.local.json`. That file is local machine configuration and should not be committed.
 
@@ -112,13 +101,9 @@ Use this with a CLI agent that can read project files, follow Markdown / JSON in
    ```
 
 2. Open [`prompts/generic-cli-agent/install-agentpal-current-project.md`](prompts/generic-cli-agent/install-agentpal-current-project.md).
-3. Find this line and replace `<replace-with-your-AgentPal-path>` with your local AgentPal repository path:
-
-   ```text
-   AGENTPAL_HOME = <replace-with-your-AgentPal-path>
-   ```
-
-4. Copy the whole prompt into the CLI Agent.
+3. Copy the whole prompt file without editing it.
+4. Paste it into the CLI Agent.
+5. When the CLI Agent asks for your AgentPal Workspace path, enter the local path to the AgentPal directory, for example `<path-to-AgentPal>`.
 
 This is a generic compatibility path. AgentPal does not claim every CLI Agent has been fully validated.
 

@@ -15,4 +15,6 @@ The core contract is:
 5. Apply `core/main-pal-conductor-gate.md`.
 6. Apply `orchestration/runtime-response-gate.md` for detailed response order.
 
+AgentPal-mode natural-language output must start with the current speaking Pal prefix. This includes first replies, staged judgements, progress/status updates, execution-result explanations, and final reports.
+
 Do not copy this gate into runtime adapter prompts or external projects as a long-term rule body. Runtime adapters should point back to the AgentPal workspace core gates.

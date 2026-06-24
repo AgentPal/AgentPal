@@ -7,19 +7,14 @@ Use these prompts when a Markdown/JSON-capable CLI Agent is already running insi
 - `install-agentpal-current-project.md`: project-first AgentPal binding for generic CLI Agents.
 - `remove-agentpal-current-project.md`: project-local AgentPal binding removal.
 
-## AGENTPAL_HOME
+## AgentPal Workspace Path
 
-Before pasting the install prompt, replace this line:
+The install prompt is copy-paste ready. Do not edit it before pasting.
 
-```text
-AGENTPAL_HOME = <replace-with-your-AgentPal-path>
-```
-
-with the real AgentPal Workspace path for your machine, for example:
+When the CLI agent runs the prompt, it asks for the local AgentPal Workspace path unless you already provided a clear path in the current conversation. Enter the path to your AgentPal directory, for example:
 
 ```text
-AGENTPAL_HOME = D:/Tools/AgentPal
-AGENTPAL_HOME = /Users/you/AgentPal
+<path-to-AgentPal>
 ```
 
 The path is used only to connect the current project to the AgentPal Workspace. Do not commit private local paths in public repository files.

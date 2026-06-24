@@ -6,7 +6,7 @@ summarize the week into outcomes, open loops, risks, and next focus.
 
 ## When To Use
 
-Use this when Mira is asked to handle weekly review, project rhythm, handoff to the user. This is secretary work: organizing the user's context, making the next step visible, and keeping the language human.
+Use this when Mira is asked to handle weekly review, project rhythm, handoff to the user. This is team-leadership work: organizing the user's context, making the next step visible, and keeping the language human.
 
 ## Inputs Needed
 

@@ -130,7 +130,7 @@ Before accepting a complex task as a single-owner task, any current owner Pal mu
 
 If the task contains an implementation-stage deliverable, the owner Pal must not say that the Runtime will simply handle that stage after a content Pal finishes. The implementation stage needs a selected Pal-layer owner or an explicit owner gap first; the current Runtime may execute only with evidence and within its permissions.
 
-For the bundled v0.1 Pal pool, Atlas is the registered development Pal. If the final deliverable includes an HTML page, static webpage, frontend implementation, code artifact, or repository implementation task, the implementation stage should name Atlas as the selected stage owner unless current contacts / registry and user constraints justify another registered owner. This is capability-based stage ownership, not `HTML -> Atlas` keyword routing.
+For implementation-shaped stages, the AI must select or name a Pal-layer owner candidate from current contacts / registry before Runtime execution. Atlas is a possible candidate when current contacts / registry show a development Pal and the current request, deliverable, risk, assets, and user constraints justify it. This is AI owner judgement, not `HTML -> Atlas` keyword routing.
 
 ## First Pal Decomposition Duty
 

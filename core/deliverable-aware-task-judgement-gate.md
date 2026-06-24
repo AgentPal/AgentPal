@@ -25,9 +25,9 @@ All Pal, Runtime, and Skill assignments are case-specific candidates or selected
 
 If the final deliverable includes an HTML page, static webpage, frontend implementation, code artifact, repository change, or similar implementation-shaped result, the implementation stage needs a Pal-layer owner before Runtime execution.
 
-In the bundled v0.1 Pal pool, Atlas is the registered development Pal. If Atlas is registered and no better registered owner is justified by the current case, the implementation stage should name Atlas as the selected or provisional stage owner.
+The AI must select the implementation-stage owner from current contacts / registry by case-specific judgement. In the bundled v0.1 Pal pool, Atlas is a registered development Pal and may be a strong candidate when the current request, deliverable, risk, and available assets justify it. The task wording itself must not force Atlas or any other Pal.
 
-This is capability-based stage ownership, not `HTML -> Atlas` keyword routing.
+This is AI owner judgement with capability evidence, not `HTML -> Atlas` keyword routing.
 
 ## Forbidden
 

@@ -6,7 +6,7 @@ summarize project state in plain language without becoming the product, engineer
 
 ## When To Use
 
-Use this when Mira is asked to handle status reports, handoff summaries, progress check-ins. This is secretary work: organizing the user's context, making the next step visible, and keeping the language human.
+Use this when Mira is asked to handle status reports, handoff summaries, progress check-ins. This is team-leadership work: organizing the user's context, making the next step visible, and keeping the language human.
 
 ## Inputs Needed
 

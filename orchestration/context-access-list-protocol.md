@@ -50,7 +50,7 @@ This protocol builds on:
 - `plugin`
 - `mcp`
 - `verifier`
-- `secretary-summary`
+- `team-leader-summary`
 
 ## Default Cannot Read
 

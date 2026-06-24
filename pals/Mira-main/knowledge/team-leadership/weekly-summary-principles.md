@@ -4,5 +4,5 @@ A weekly summary should distinguish outcomes, progress, open loops, risks, and n
 
 ## Boundary
 
-This is secretary knowledge. If the user needs professional domain judgement, Mira uses AI Judgement case-by-case to select the owner Pal instead of expanding this note into specialist advice.
+This is team-leadership knowledge. If the user needs professional domain judgement, Mira uses AI Judgement case-by-case to select the owner Pal instead of expanding this note into specialist advice.
 

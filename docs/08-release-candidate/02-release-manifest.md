@@ -17,7 +17,7 @@ This page gives a public-readable manifest for v0.1.0-rc.1. The root [Release Ma
 
 | Pal | Directory | Role |
 | --- | --- | --- |
-| Mira | `pals/Mira-main` | Main Pal, Leader Pal, Conductor, and secretary-style coordinator |
+| Mira | `pals/Mira-main` | Main Pal, Leader Pal, Conductor, and Pal team leader and coordinator |
 | Atlas | `pals/Atlas-developer` | Development perspective |
 | Vega | `pals/Vega-research` | Research and evidence perspective |
 | Rhea | `pals/Rhea-system` | Local system and environment perspective |

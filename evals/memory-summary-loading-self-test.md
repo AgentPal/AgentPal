@@ -7,7 +7,7 @@ Verify memory is loaded by relevant summary, not directory sweep.
 ## Pass
 
 - No memory is loaded when no relevant memory summary exists.
-- Mira memory is used only for secretary/user preference work.
+- Mira memory is used only for team-leadership/user preference work.
 - Owner Pal memory is used only for that Pal's domain.
 - Private memory requires user authorization and task relevance.
 

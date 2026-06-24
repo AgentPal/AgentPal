@@ -30,11 +30,10 @@ claude
 
 Then paste `claude-code/install-agentpal-current-project.md`.
 
-Before pasting a project-first install prompt, replace the `AGENTPAL_HOME` line with your AgentPal Workspace path, for example:
+For Claude Code and generic CLI agents, the project-first install prompts are copy-paste ready. Do not edit the prompt before pasting. The runtime asks for the local AgentPal Workspace path during installation unless you already provided a clear path in the conversation. Enter a path such as:
 
 ```text
-AGENTPAL_HOME = D:/Tools/AgentPal
-AGENTPAL_HOME = /Users/you/AgentPal
+<path-to-AgentPal>
 ```
 
 Keep local machine paths in project-local files such as `.agentpal/project.json` or `.claude/settings.local.json`; do not commit private local configuration.

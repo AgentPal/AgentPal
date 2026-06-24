@@ -8,19 +8,14 @@ Use these prompts when Claude Code is already running inside the target user pro
 - `remove-agentpal-current-project.md`: project-local AgentPal binding removal.
 - `verify-agentpal-current-project.md`: project-local verification prompt.
 
-## AGENTPAL_HOME
+## AgentPal Workspace Path
 
-Before pasting the install prompt, replace this line:
+The install prompt is copy-paste ready. Do not edit it before pasting.
 
-```text
-AGENTPAL_HOME = <replace-with-your-AgentPal-path>
-```
-
-with the real AgentPal Workspace path for your machine, for example:
+When Claude Code runs the prompt, it asks for the local AgentPal Workspace path unless you already provided a clear path in the current conversation. Enter the path to your AgentPal directory, for example:
 
 ```text
-AGENTPAL_HOME = D:/Tools/AgentPal
-AGENTPAL_HOME = /Users/you/AgentPal
+<path-to-AgentPal>
 ```
 
 Claude Code may also need `.claude/settings.local.json` to include the AgentPal Workspace path under `permissions.additionalDirectories`. That file is local machine configuration and should not be committed.

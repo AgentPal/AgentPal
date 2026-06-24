@@ -82,21 +82,10 @@ Codex 的初始化 prompt 现在统一放在 [`prompts/codex/`](prompts/codex/) 
    ```
 
 2. 打开 [`prompts/claude-code/install-agentpal-current-project.md`](prompts/claude-code/install-agentpal-current-project.md)。
-3. 找到这一行：
-
-   ```text
-   AGENTPAL_HOME = <replace-with-your-AgentPal-path>
-   ```
-
-4. 把 `<replace-with-your-AgentPal-path>` 替换为你本机 AgentPal 仓库路径，例如：
-
-   ```text
-   AGENTPAL_HOME = D:/Tools/AgentPal
-   AGENTPAL_HOME = /Users/you/AgentPal
-   ```
-
-5. 复制整篇 prompt 文件。
-6. 粘贴到 Claude Code 中执行。
+3. 不需要提前修改 prompt，直接复制整篇 prompt 文件。
+4. 粘贴到 Claude Code 中执行。
+5. Claude Code 提示你输入 AgentPal Workspace 路径时，输入你本机 AgentPal 目录路径，例如 `<path-to-AgentPal>`。
+6. 让 Claude Code 创建或更新当前项目里的本地绑定文件。
 
 Claude Code 路径会写入项目本地绑定文件，并可能更新 `.claude/settings.local.json`。这个文件是本机配置，不应该提交。
 
@@ -114,13 +103,9 @@ Claude Code 路径会写入项目本地绑定文件，并可能更新 `.claude/s
    ```
 
 2. 打开 [`prompts/generic-cli-agent/install-agentpal-current-project.md`](prompts/generic-cli-agent/install-agentpal-current-project.md)。
-3. 找到这一行，并把 `<replace-with-your-AgentPal-path>` 替换为你本机 AgentPal 仓库路径：
-
-   ```text
-   AGENTPAL_HOME = <replace-with-your-AgentPal-path>
-   ```
-
-4. 复制整篇 prompt 到 CLI Agent 中执行。
+3. 不需要提前修改 prompt，直接复制整篇 prompt 文件。
+4. 粘贴到 CLI Agent 中执行。
+5. CLI Agent 提示你输入 AgentPal Workspace 路径时，输入你本机 AgentPal 目录路径，例如 `<path-to-AgentPal>`。
 
 这是通用兼容路径。AgentPal 不承诺所有 CLI Agent 都已经完整验证。
 

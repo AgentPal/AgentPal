@@ -1,1 +1,1 @@
-# Repeated Tasks`r`n`r`nTrack repeated secretary tasks such as daily briefings, weekly summaries, meeting notes, action follow-ups, context summaries, project status summaries, and execution result explanations.`r`n
+# Repeated Tasks`r`n`r`nTrack repeated team-leadership tasks such as daily briefings, weekly summaries, meeting notes, action follow-ups, context summaries, project status summaries, and execution result explanations.`r`n

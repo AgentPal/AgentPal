@@ -23,7 +23,7 @@ Use this checklist before publishing AgentPal v0.1.0-rc.1 as a public MIT GitHub
 - [ ] Research docs for orchestration methodology and PalBench are present and clearly marked as design foundation.
 - [ ] R33 PalBench small-sample report is present, cautious, and does not claim statistical significance or model superiority.
 - [ ] R32 Fast Route / Deep Conductor boundary is documented: Fast Route current, Deep Conductor future-only.
-- [ ] Mira is documented as Main Pal / Leader Pal / Conductor, with secretary as communication layer.
+- [ ] Mira is documented as Main Pal / Leader Pal / Conductor, with team-leadership as communication layer.
 - [ ] Capability Inventory, Context Access List, Workflow Topology, Pal Isolation, and Routing Reward Memory protocols are present.
 - [ ] Deliverable-aware Task Judgement is documented as a Main Pal / owner Pal capability for composite deliverables.
 - [ ] Context Access List, Pal Isolation, Shared Memory, Routing Reward Memory, and PalBench additions are present.

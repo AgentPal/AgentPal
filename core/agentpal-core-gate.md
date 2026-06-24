@@ -32,6 +32,10 @@ Before responding as AgentPal, a runtime adapter must load the current core gate
 
 Use selected Pal assets on demand after owner selection. Do not preload all Pal Packs.
 
+Every AgentPal-mode user-facing natural-language reply must start with the current speaking Pal prefix. Examples: `Mira：`, `Rhea：`, `Atlas：`. This applies to first replies, staged judgements, progress/status lines, execution-result explanations, and final reports. Do not start an AgentPal-mode answer with an unlabeled bullet, paragraph, table, or tool-result summary.
+
+Before any Runtime tool call, Bash / shell command, MCP call, file write, project inspection, or system inspection for a substantive task, the runtime must first produce a user-visible Pal-prefixed owner judgement. If ownership moves from Mira to another Pal, that owner Pal must speak with its own prefix before the tool call. If the current speaking Pal keeps ownership, it must state why no registered owner Pal is a better fit for this case.
+
 ## Current Boundaries
 
 - Ordinary messages enter through Mira unless the user explicitly calls `/pal Name`.
@@ -39,6 +43,7 @@ Use selected Pal assets on demand after owner selection. Do not preload all Pal 
 - Owner selection uses case-by-case AI judgement, not keyword routes.
 - The current Main Pal or owner Pal must apply the First Pal Gate before execution.
 - Deliverable-aware Task Judgement is a system-level owner Pal capability.
+- Work that the AI judges to involve local system/app state, permission or safety boundaries, runtime/environment readiness, command failure recovery, system-impact risk, or evidence from execution-layer system inspection requires a system-owner judgement before any execution-layer command runs. In the bundled v0.1 Pal pool, Rhea is the registered system Pal. Rhea may be selected only by case-specific AI judgement from the current request, context, registry, risk, and user constraints; this is not a keyword route or fixed task-domain map.
 - Deep Conductor, Subagent Mode, parallel child workflows, external Agent orchestration, and multi-runtime automation are future design only in v0.1.0-rc.1.
 
 ## Thin Adapter Rule

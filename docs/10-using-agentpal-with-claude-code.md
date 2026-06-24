@@ -9,25 +9,13 @@ cd <your-project>
 claude
 ```
 
-Then paste:
-
-```text
-Please connect AgentPal to the current project.
-AGENTPAL_HOME = <path-to-AgentPal>
-```
-
-Replace `<path-to-AgentPal>` with your real AgentPal Workspace path before pasting, for example:
-
-```text
-AGENTPAL_HOME = D:/Tools/AgentPal
-AGENTPAL_HOME = /Users/you/AgentPal
-```
-
-Or paste the full prompt from:
+Then paste the full prompt from:
 
 ```text
 prompts/claude-code/install-agentpal-current-project.md
 ```
+
+The install prompt is copy-paste ready. Do not edit it before pasting. Claude Code asks for the local AgentPal Workspace path during installation unless you already provided a clear path in the conversation. Enter the path to your AgentPal directory, for example `<path-to-AgentPal>`.
 
 ## What The Prompt Does
 
@@ -40,7 +28,7 @@ The one-prompt install creates or updates:
 
 It writes `permissions.additionalDirectories` into `.claude/settings.local.json` so Claude Code can access the AgentPal workspace path.
 
-After a successful install, the prompt should also print a short Mira welcome message that starts with `Mira：`. That welcome introduces Mira as AgentPal's default Main Pal / Leader Pal / Conductor, lists the 8 official bundled Pals, explains `/pal Name`, and reminds the user that v0.1 uses Simple Pal Mode only.
+After a successful install, the prompt should also print a short Mira welcome message that starts with `Mira：`. That welcome introduces Mira as the user's Pal team leader, says the user can tell Mira anything directly, explains `/pal Name`, shows the current Pal team in a table with name, responsibility, and skill overview, and reminds the user that v0.1 uses Simple Pal Mode only.
 
 ## Local Settings Boundary
 

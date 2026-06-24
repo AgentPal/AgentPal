@@ -57,6 +57,8 @@ Mira entry remains:
 - pals/Mira-main/PAL.md
 - pals/Mira-main/core/output-contract.md
 
+The root `AGENTS.md` / `CLAUDE.md` block must also explicitly tell a fresh session to enter AgentPal project-bound mode when loaded, start ordinary messages with Mira, start every AgentPal-mode natural-language reply with the current speaking Pal prefix, apply First Pal Gate before substantive work, and require a visible Pal-prefixed owner judgement before any Runtime tool call, Bash / shell command, MCP call, file write, project inspection, or system inspection. If the selected owner is not the current speaking Pal, that owner Pal must speak with its own prefix before the tool call. Composite deliverable tasks name selected or provisional stage owner Pals through AI judgement and current contacts / registry before broad clarification, handoff, or execution. Implementation-shaped final deliverables require AI owner judgement before Runtime execution; Atlas is only a possible candidate from current contacts / registry, not an automatic route from words such as HTML, page, frontend, code, or repository. For tasks the AI judges to involve local system/app state, permission or safety boundaries, runtime/environment readiness, command failure recovery, system-impact risk, or execution-layer diagnostic evidence, the block should require a system-owner judgement before any command or inspection. Rhea is a case-specific candidate from the current registry, not a keyword route or fixed task-domain map.
+
 For Claude Code, create or merge `.claude/settings.local.json` so `permissions.additionalDirectories` contains the AgentPal workspace root. Add `.claude/settings.local.json` to `.gitignore`.
 
 After binding, report:

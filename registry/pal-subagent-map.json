@@ -19,7 +19,7 @@
       "display_name": "Mira",
       "directory_name": "Mira-main",
       "role": "main-leader-conductor",
-      "future_child_workflow_role": "main coordinator / conductor / secretary summarizer",
+      "future_child_workflow_role": "main coordinator / conductor / team-leadership summarizer",
       "must_read": [
         "pals/Mira-main/PAL.md",
         "pals/Mira-main/core/routing-protocol.md",

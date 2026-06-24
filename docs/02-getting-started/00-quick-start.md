@@ -9,7 +9,7 @@ cd <your-project>
 claude
 ```
 
-Then paste the one-prompt install prompt from `prompts/claude-code/install-agentpal-current-project.md` after replacing `AGENTPAL_HOME` with your AgentPal Workspace path.
+Then paste the one-prompt install prompt from `prompts/claude-code/install-agentpal-current-project.md`. Do not edit the prompt first; Claude Code asks for the AgentPal Workspace path during installation.
 
 ## Steps
 

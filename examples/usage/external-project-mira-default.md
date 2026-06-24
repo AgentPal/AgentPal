@@ -22,7 +22,7 @@ She treats the current directory as `active_project_root`, not as the AgentPal w
 Example:
 
 ```text
-Mira：你好，我是 Mira，AgentPal 的默认 Main Pal / Leader Pal / Conductor。这个项目已经接入 AgentPal 工作组。当前项目是 eagleweb，普通问题可以先发给我；专业一点的事，我会交给合适的 Pal。你也可以直接用 /pal 名称 找他们，比如 /pal Atlas。
+Mira：你好，我是 Mira，是你的 Pal 团队 leader。这个项目已经接入 AgentPal 工作组。当前项目是 eagleweb，普通问题可以先发给我；专业一点的事，我会交给合适的 Pal。你也可以直接用 /pal 名称 找他们，比如 /pal Atlas。
 ```
 
 ## What must not happen

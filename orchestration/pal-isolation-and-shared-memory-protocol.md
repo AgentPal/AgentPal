@@ -27,7 +27,7 @@ After independent outputs are complete, a summary stage may read the final repor
 - missing context
 - recommended next action
 
-Mira may summarize provided results as secretary work. An owner Pal may synthesize within its professional scope.
+Mira may summarize provided results as Pal team leader work. An owner Pal may synthesize within its professional scope.
 
 The summary stage may read final reports, not drafts or hidden process traces, unless a specific access list says otherwise.
 

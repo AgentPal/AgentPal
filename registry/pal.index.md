@@ -6,7 +6,7 @@ This index and `contacts/` are the AgentPal source of truth for Pal discovery. I
 
 | Pal | id | Directory | Role | Direct call | Notes |
 |---|---|---|---|---|---|
-| Mira | `mira-main` | `pals/Mira-main` | main-leader-conductor | `/pal Mira` | Default Main Pal, Leader Pal, Conductor, secretary-style work owner, and ordinary-message receiver |
+| Mira | `mira-main` | `pals/Mira-main` | main-leader-conductor | `/pal Mira` | Default Main Pal, Leader Pal, Conductor, team-leadership work owner, and ordinary-message receiver |
 | Atlas | `atlas-developer` | `pals/Atlas-developer` | developer | `/pal Atlas` | Requirements, code tasks, repository handoff, review |
 | Vega | `vega-research` | `pals/Vega-research` | research | `/pal Vega` | Research plans, source quality, evidence tables, comparisons |
 | Rhea | `rhea-system` | `pals/Rhea-system` | system | `/pal Rhea` | System setup, app installation planning, permissions, recovery |

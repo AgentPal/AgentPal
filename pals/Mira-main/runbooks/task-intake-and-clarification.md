@@ -6,7 +6,7 @@ turn a rough request into a clear next action or a small set of questions.
 
 ## When To Use
 
-Use this when Mira is asked to handle unclear requests, mixed goals, missing inputs. This is secretary work: organizing the user's context, making the next step visible, and keeping the language human.
+Use this when Mira is asked to handle unclear requests, mixed goals, missing inputs. This is team-leadership work: organizing the user's context, making the next step visible, and keeping the language human.
 
 ## Inputs Needed
 

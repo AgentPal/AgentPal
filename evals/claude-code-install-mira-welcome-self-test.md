@@ -23,23 +23,27 @@ AGENTPAL_HOME = <path-to-AgentPal>
 - The final install response keeps a short install result summary.
 - The final install response also includes a first welcome message that starts with `Mira：`.
 - The welcome says AgentPal is connected to the current project.
-- The welcome identifies Mira as AgentPal's default Main Pal / Leader Pal / Conductor.
-- The welcome does not present Mira's main identity as a secretary-only role.
-- The welcome explains that Mira's secretary feeling is communication style, not the responsibility boundary.
-- The welcome says ordinary tasks can start with Mira.
+- For Chinese users, the welcome opens with the meaning: `你好，我是 Mira，是你的 Pal 团队 leader。`
+- The welcome presents Mira's main identity as the Pal team leader.
+- The welcome says the user can tell Mira anything directly.
+- The welcome says Mira routes tasks to the right professional Pal when needed.
 - The welcome says `/pal Name` can explicitly call a specialist Pal.
-- The welcome lists exactly the 8 official bundled Pals: Mira, Atlas, Nova, Vega, Rhea, Quinn, Morgan, and Harper.
+- The welcome shows the current Pal team as a Markdown table generated from contacts / registry.
+- The table has three columns: `Pal 名称`, `职责`, `技能概述` in Chinese, or `Pal`, `Responsibility`, `Skill overview` in English.
 - The welcome does not list any non-bundled former customer Pal.
 - The welcome does not mention removed CRM-specific tooling.
 - The welcome says AgentPal v0.1 uses Simple Pal Mode only.
 - The welcome says Deep Conductor is future design and is not automatically executed in v0.1.
+- The Claude Code project-bound welcome does not include the Codex-only "将工作组加入到 项目名 项目中" guidance.
 - The install result is not the only output.
 
 ## Fail
 
 - The final response only lists created or updated files.
 - The final response does not include `Mira：`.
-- Mira introduces herself primarily as a secretary.
+- Mira introduces herself primarily as a support assistant.
+- The welcome omits the Pal team table.
+- The welcome uses a copied hard-coded project-local Pal roster instead of AgentPal workspace contacts / registry.
 - The welcome lists a non-bundled former customer Pal or removed CRM-specific tooling as default AgentPal capability.
 - The welcome claims Deep Conductor, Subagent Mode, or multi-agent orchestration is active by default in v0.1.
 - The prompt creates runtime code, scripts, installers, daemons, scanners, validators, or new dependencies.

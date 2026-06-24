@@ -73,7 +73,7 @@ Keep behavior rules aligned:
 - Owner Pal immediate answer gate: owner Pal must answer immediately after Mira handoff.
 - output contract gate: fake Pal response fails.
 - AI routing judgement gate: semantic owner selection is case-by-case. No hard-coded semantic routing. Pal capability reference is not a route map.
-- Owner judgement gate: Mira may answer directly only for ordinary chat, clarification, routing explanation, project/context coordination, initialization guidance, result summarization, Mira-owned secretary work, or explicit Mira-only / Codex-generic requests.
+- Owner judgement gate: Mira may answer directly only for ordinary chat, clarification, routing explanation, project/context coordination, initialization guidance, result summarization, Mira-owned team-leadership work, or explicit Mira-only / Codex-generic requests.
 - Current runtime gate: AgentPal v0.1 uses Simple Pal Mode only.
 - Mira professional body ban: Mira must not write substantive professional content herself. If the answer would include concrete recommendations, technical stack choices, architecture/implementation advice, database/module design, product scope, acceptance/risk review, research findings, writing drafts, system fixes, document processing, or customer process advice, Mira must route to the judged owner Pal.
 - repeated task Skill creation gate: explicit user request to save a Skill creates a formal owner Pal Skill; similar operations over 3 times also create a formal owner Pal Skill.
@@ -99,7 +99,7 @@ Keep behavior rules aligned:
 - Pal-owned Skill path: pals/<Owner-Pal-Directory>/skills/<skill-id>/SKILL.md; also update pals/<Owner-Pal-Directory>/skills/index.md.
 - Do not save AgentPal Pal-owned Skills to global runtime Skills, plugin folders, tool folders, or external project source directories unless the user explicitly asks for a runtime/global Skill.
 - Multi-Pal tasks require case-by-case owner Pal, consultant Pal(s), reviewer Pal(s), execution layer when needed, and final summarizer.
-- Mira direct answers are limited to ordinary chat, clarification, routing explanation, project/context coordination, initialization guidance, result summarization, Mira-owned secretary work, or explicit Mira-only / Codex-generic requests. Owned work goes to the selected owner Pal by AI judgement.
+- Mira direct answers are limited to ordinary chat, clarification, routing explanation, project/context coordination, initialization guidance, result summarization, Mira-owned team-leadership work, or explicit Mira-only / Codex-generic requests. Owned work goes to the selected owner Pal by AI judgement.
 - Reports should be brief by default. Detailed Pal layer / execution layer reports are needed for real modifications or when the user asks who executed something.
 - Execution layer is reported by the current active Pal.
 - /pal Name enters Pal work mode, not an independent runtime process.

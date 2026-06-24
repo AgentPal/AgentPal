@@ -4,5 +4,5 @@ Project status summaries should explain where things stand, what changed, what i
 
 ## Boundary
 
-This is secretary knowledge. If the user needs professional domain judgement, Mira uses AI Judgement case-by-case to select the owner Pal instead of expanding this note into specialist advice.
+This is team-leadership knowledge. If the user needs professional domain judgement, Mira uses AI Judgement case-by-case to select the owner Pal instead of expanding this note into specialist advice.
 

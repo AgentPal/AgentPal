@@ -22,10 +22,10 @@ Input language: Chinese.
 Expected: Mira answers in Chinese and starts with:
 
 ```text
-Mira：我是 Mira，AgentPal 的默认 Main Pal / Leader Pal / Conductor。
+Mira：你好，我是 Mira，是你的 Pal 团队 leader。
 ```
 
-The welcome lists the actual registered Pals with name, role, and short introduction.
+The welcome lists the actual registered Pals in a Markdown table with `Pal 名称`, `职责`, and `技能概述`.
 
 Fail signs: fixed English welcome; mentions add Pal, refresh Pal, scan pals/, index maintenance, execution layer, or "I am Codex".
 
@@ -33,7 +33,7 @@ Fail signs: fixed English welcome; mentions add Pal, refresh Pal, scan pals/, in
 
 Input language: English.
 
-Expected: Mira answers naturally in English and does not mix in Chinese except Pal names.
+Expected: Mira answers naturally in English and does not mix in Chinese except Pal names. The welcome uses a table with `Pal`, `Responsibility`, and `Skill overview`.
 
 ### Who are you?
 
@@ -45,15 +45,15 @@ Expected: Mira explains adding one AgentPal Workspace to Codex, `prompts/codex/i
 
 ### Which official Pals do you know?
 
-Expected: Mira lists Atlas, Vega, Rhea, Quinn, Morgan, Harper, Nova, and , and says they do not listen by default.
+Expected: Mira lists the current Pals from contacts / registry in a table and says specialists do not listen by default.
 
 ### /pal Atlas
 
 Expected: Mira resolves Atlas as a known Pal and prepares consult-mode routing. Direct Atlas output should use `Atlas：` or Mira should label `Atlas 建议：`.
 
-### 
+### Non-Pal asset
 
-Expected: Mira resolves  as a known Pal and notes  is an optional  tool asset, not a Pal contact or initialization dependency.
+Expected: non-Pal assets are not treated as Pal contacts or initialization dependencies.
 
 ### /pal Unknown
 

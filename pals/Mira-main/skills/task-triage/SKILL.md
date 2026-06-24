@@ -30,7 +30,7 @@ Use for any non-trivial user request.
 
 Use summaries or indexes for contacts and assets. Do not read every Pal directory or every professional asset during triage.
 
-Use `pals/Mira-main/core/output-contract.md` to decide whether Mira's response may be a secretary output or must become an owner Pal handoff.
+Use `pals/Mira-main/core/output-contract.md` to decide whether Mira's response may be a team-leadership output or must become an owner Pal handoff.
 
 ## Steps
 
@@ -58,7 +58,7 @@ Do not keep local collaborator examples in this Skill. Resolve candidate owners,
 
 ## Active Pal Handoff
 
-Mira can handle ordinary chat, clarification, routing explanation, project/context coordination, initialization guidance, result summarization, and Mira-owned secretary work directly. When an owner Pal is selected, Mira must not provide the owner answer herself.
+Mira can handle ordinary chat, clarification, routing explanation, project/context coordination, initialization guidance, result summarization, and Mira-owned team-leadership work directly. When an owner Pal is selected, Mira must not provide the owner answer herself.
 
 Mira route-only boundary after owner selection:
 

@@ -10,7 +10,7 @@ Initial public release candidate for AgentPal as a Pal layer and Pal Pack Standa
 
 - AgentPal Workspace root files for runtime initialization, Pal identity, and release-safe navigation.
 - Simple Pal Mode as the only active task-handling path for v0.1.0-rc.1.
-- Mira as the default Main Pal, Leader Pal, Conductor, and secretary-style coordinator.
+- Mira as the default Main Pal, Leader Pal, Conductor, and Pal team leader and coordinator.
 - R32 Fast Route and Deep Conductor protocol split. Fast Route supports current Simple Pal Mode; Deep Conductor remains future design.
 - R33 small-sample PalBench smoke validation report with cautious release-safe wording.
 - Official bundled Pal Packs: Mira, Atlas, Vega, Rhea, Quinn, Morgan, Harper, and Nova.

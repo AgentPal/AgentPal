@@ -10,8 +10,8 @@ Generated: 2026-06-24
 | Version | `v0.1.0-rc.1` |
 | Git tag | `v0.1.0-rc.1` |
 | Git commit hash observed for local tag | Verify with `git rev-list -n 1 v0.1.0-rc.1` before publishing. |
-| Git remote status observed | No remote output was available during the final documentation readiness pass. |
-| GitHub Release status observed | No online GitHub Release was created or verified during the final documentation readiness pass. |
+| Git remote status observed | `origin https://github.com/AgentPal/AgnetPal.git` is configured for fetch and push; no push was performed during the local gate. |
+| GitHub Release status observed | No online GitHub Release was created or verified during the local gate. |
 | License | MIT |
 | Release type | Public release candidate |
 | Runtime policy | Simple Pal Mode only |
@@ -47,7 +47,7 @@ Not included:
 
 | Pal | Directory | Role |
 | --- | --- | --- |
-| Mira | `pals/Mira-main` | Main Pal, Leader Pal, Conductor, and secretary-style coordinator |
+| Mira | `pals/Mira-main` | Main Pal, Leader Pal, Conductor, and Pal team leader and coordinator |
 | Atlas | `pals/Atlas-developer` | Development perspective |
 | Vega | `pals/Vega-research` | Research and evidence perspective |
 | Rhea | `pals/Rhea-system` | Local system and environment perspective |
@@ -65,12 +65,14 @@ Contacts / registry source of truth:
 
 ## Verification Summary
 
-R34 local checks:
+R38 local checks:
 
 - JSON parse check passed for root JSON, contacts / registry JSON, project template JSON, Pal `pal.json`, capability profile JSON, and JSON templates.
 - Official Pal directory count: 8.
 - Contacts count: 8.
 - Registry count: 8.
+- Codex, Claude Code, and Generic CLI thin binding checks passed.
+- Core gate propagation checks passed for `core/` shared gates.
 - No local absolute maintainer paths, attachment traces, temporary pasted text traces, or private maintenance-directory references were found in public release files.
 - No binary screenshot / archive / document artifacts were found in the release workspace.
 - No required runtime code, package manifest, installer, scanner, validator, daemon, or service entrypoint was found.
@@ -83,8 +85,8 @@ R34 local checks:
 The final release gate should observe local Git state only until maintainers explicitly publish:
 
 - local tag `v0.1.0-rc.1` must point at the final intended release commit
-- no configured remote was shown by `git remote -v`
-- no push was performed
+- remote `origin` is configured as `https://github.com/AgentPal/AgnetPal.git`
+- no push was performed during the local gate
 - no GitHub Release was created or verified
 
 If maintainers accept additional documentation changes after a local tag is created, they should create the final intended release commit, retag `v0.1.0-rc.1` if needed, then push the commit and tag before creating the GitHub Release.

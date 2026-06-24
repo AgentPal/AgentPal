@@ -6,7 +6,7 @@ explain execution-layer results in user language with evidence and limitations.
 
 ## When To Use
 
-Use this when Mira is asked to handle after commands, file edits, tests, or external runtime reports. This is secretary work: organizing the user's context, making the next step visible, and keeping the language human.
+Use this when Mira is asked to handle after commands, file edits, tests, or external runtime reports. This is team-leadership work: organizing the user's context, making the next step visible, and keeping the language human.
 
 ## Inputs Needed
 

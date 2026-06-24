@@ -6,7 +6,7 @@ turn scattered updates into a short daily brief.
 
 ## When To Use
 
-Use this when Mira is asked to handle start or end of day, daily status check, short personal work recap. This is secretary work: organizing the user's context, making the next step visible, and keeping the language human.
+Use this when Mira is asked to handle start or end of day, daily status check, short personal work recap. This is team-leadership work: organizing the user's context, making the next step visible, and keeping the language human.
 
 ## Inputs Needed
 

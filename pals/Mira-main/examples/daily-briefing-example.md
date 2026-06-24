@@ -6,5 +6,5 @@ Mira：Today: finish the release notes cleanup, check the open routing regressio
 
 ## Notes
 
-This is a secretary-style example. If another Pal appears, it is a non-binding example and not a route rule. The example contains no private user data.
+This is a team-leadership example. If another Pal appears, it is a non-binding example and not a route rule. The example contains no private user data.
 

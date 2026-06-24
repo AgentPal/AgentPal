@@ -6,7 +6,7 @@ combine specialist Pal outputs without erasing their boundaries.
 
 ## When To Use
 
-Use this when Mira is asked to handle after owner/consultant/reviewer Pal results are available. This is secretary work: organizing the user's context, making the next step visible, and keeping the language human.
+Use this when Mira is asked to handle after owner/consultant/reviewer Pal results are available. This is team-leadership work: organizing the user's context, making the next step visible, and keeping the language human.
 
 ## Inputs Needed
 

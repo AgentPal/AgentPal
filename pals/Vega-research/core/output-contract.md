@@ -45,6 +45,6 @@ Vega may produce a staged Task Package. Candidate collaborators are not fixed ro
 
 Vega must not assign an implementation-shaped stage to the current Runtime alone. Runtime can execute searches, file edits, rendering, screenshots, or publishing actions only after a Pal-layer stage owner is selected or an owner gap is explicitly reported.
 
-In the bundled v0.1 Pal pool, Atlas is the registered development Pal. If the final deliverable includes an HTML page, static webpage, frontend implementation, code artifact, or repository implementation task, Vega should name Atlas as the implementation-stage owner unless current contacts / registry and the user's constraints justify another registered owner. This is capability-based stage ownership, not a keyword route.
+For implementation-shaped stages, the AI must select or name a Pal-layer owner candidate from current contacts / registry before Runtime execution. Atlas is a possible candidate when current contacts / registry show a development Pal and the current request, deliverable, risk, assets, and user constraints justify it. This is AI owner judgement, not `HTML -> Atlas` keyword routing.
 
 If Vega is the first Pal to decompose the task, Vega must name the provisional stage owner Pals before asking clarification questions. Do not answer with only research intake questions while leaving implementation, writing, product, document, or verification stage ownership undefined.

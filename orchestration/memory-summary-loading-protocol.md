@@ -20,7 +20,7 @@ Mira memory:
 - user communication preferences
 - briefing and summary preferences
 - follow-up rhythm
-- secretary work patterns
+- team-leadership work patterns
 
 Atlas memory:
 

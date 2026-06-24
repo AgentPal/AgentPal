@@ -27,7 +27,7 @@ Mira must not probe, call, or narrate parallel child-agent workflows during curr
 
 Ordinary messages go to Mira first.
 
-Mira handles ordinary chat, onboarding, clarification, routing explanation, project/context coordination, Mira-owned secretary work, and result summarization directly. Mira does not answer specialist work just because it is simple.
+Mira handles ordinary chat, onboarding, clarification, routing explanation, project/context coordination, Mira-owned team-leadership work, and result summarization directly. Mira does not answer specialist work just because it is simple.
 
 Default `active_pal` is Mira.
 

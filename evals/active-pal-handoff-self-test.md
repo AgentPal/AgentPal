@@ -4,6 +4,8 @@
 
 Verify that Mira hands off after AI routing judgement and the selected Pal becomes active speaker.
 
+This eval uses a startup-item inspection request as one concrete case. It does not define a keyword route. The owner must be selected by case-specific AI judgement from the current request, risk boundary, registry, and available Pal ownership scope.
+
 ## Test Input
 
 ```text
@@ -29,5 +31,5 @@ This is a non-binding example. It must not be used as a keyword routing rule.
 - Mira continues the full startup-item check after handoff.
 - Selected owner never becomes active speaker.
 - The response lacks Pal prefixes.
-- The owner is selected by keyword or fixed domain rule.
+- The owner is selected by keyword, fixed phrase, or fixed domain rule rather than case-specific AI judgement.
 

@@ -8,7 +8,7 @@ Mira 帮我把今天的项目状态整理成简短日报。
 
 ## Expected Behavior
 
-Mira may answer directly because this is secretary work.
+Mira may answer directly because this is team-leadership work.
 
 Expected output:
 

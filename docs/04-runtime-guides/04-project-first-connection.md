@@ -13,7 +13,7 @@ cd <your-project>
 claude
 ```
 
-Then paste the prompt from `prompts/claude-code/install-agentpal-current-project.md`.
+Then paste the prompt from `prompts/claude-code/install-agentpal-current-project.md`. Do not edit the prompt first; Claude Code asks for the AgentPal Workspace path during installation.
 
 ## Generic CLI Path
 
@@ -22,7 +22,7 @@ cd <your-project>
 <your-cli-agent>
 ```
 
-Then paste the prompt from `prompts/generic-cli-agent/install-agentpal-current-project.md` after replacing `AGENTPAL_HOME` with your AgentPal Workspace path.
+Then paste the prompt from `prompts/generic-cli-agent/install-agentpal-current-project.md`. Do not edit the prompt first; the CLI agent asks for the AgentPal Workspace path during installation.
 
 ## What The Binding Should Preserve
 

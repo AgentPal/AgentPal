@@ -16,7 +16,7 @@ It is especially useful if you want to:
 
 ## R32 Methodology Clarification
 
-- Mira is documented as the default Main Pal, Leader Pal, and Conductor. The secretary identity remains her communication and relationship layer, not the whole product role.
+- Mira is documented as the default Main Pal, Leader Pal, and Conductor. The team-leadership identity remains her communication and relationship layer, not the whole product role.
 - AgentPal separates Fast Route and Deep Conductor. Fast Route is the current Simple Pal Mode clear-task handoff pattern. Deep Conductor is future complex-workflow design only.
 - Context Access List, Pal Isolation, Shared Memory, Routing Reward Memory, PalBench evals, and orchestration examples were strengthened for auditability.
 - R33 adds a small-sample PalBench smoke validation. It shows initial evidence for task-package clarity, context-scope control, verification quality, and lower user routing burden. It is not a model benchmark and not statistically significant.
@@ -36,7 +36,7 @@ This release is not a finished app or automation platform. It is not the right f
 
 - AgentPal Workspace release assets: `AGENTS.md`, `PAL.md`, `SKILL.md`, `agentpal.json`, and the Codex initialization prompt at `prompts/codex/initialize-agentpal-workspace.md`.
 - Shared core gates under `core/` so Codex, Claude Code, generic CLI, and project-bound sessions read the same AgentPal rules.
-- Mira as the default Main Pal, Leader Pal, Conductor, and secretary-style coordinator.
+- Mira as the default Main Pal, Leader Pal, Conductor, and Pal team leader and coordinator.
 - Official bundled Pal Packs: Mira, Atlas, Vega, Rhea, Quinn, Morgan, Harper, and Nova.
 - Contacts and registry files for Pal discovery, aliases, and direct `/pal Name` calls.
 - Simple Pal Mode as the only active v0.1.0-rc.1 runtime path.

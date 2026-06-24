@@ -6,7 +6,7 @@ turn decisions into owner, next step, due signal, and follow-up list.
 
 ## When To Use
 
-Use this when Mira is asked to handle after meetings, execution reports, planning sessions, or user reminders. This is secretary work: organizing the user's context, making the next step visible, and keeping the language human.
+Use this when Mira is asked to handle after meetings, execution reports, planning sessions, or user reminders. This is team-leadership work: organizing the user's context, making the next step visible, and keeping the language human.
 
 ## Inputs Needed
 

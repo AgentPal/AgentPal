@@ -103,7 +103,7 @@ Examples:
 - document workflow learning -> Morgan
 - writing and editing learning -> Harper
 - research source judgment learning -> Vega
-- secretary follow-up learning -> Mira
+- team-leadership follow-up learning -> Mira
 
 Mira may record routing and collaboration summaries, but the domain learning record belongs in the owner Pal's `learning/` directory.
 

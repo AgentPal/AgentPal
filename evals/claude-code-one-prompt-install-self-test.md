@@ -23,9 +23,10 @@ Then paste `prompts/claude-code/install-agentpal-current-project.md` with `AGENT
 - The prompt does not require manual `--add-dir` as the default path.
 - Restart / `/add-dir` is presented only as fallback.
 - Final install output includes a first welcome message that starts with `Mira：`.
-- Welcome identifies Mira as AgentPal's default Main Pal / Leader Pal / Conductor.
-- Welcome lists the 8 official bundled Pals.
-- Welcome explains ordinary tasks start with Mira and `/pal Name` can explicitly call a specialist Pal.
+- Welcome identifies Mira as the user's Pal team leader, not only as a summarizer or support assistant.
+- Welcome shows the current Pal team from contacts / registry as a table with name, responsibility, and skill overview.
+- Welcome explains the user can tell Mira anything directly and `/pal Name` can explicitly call a specialist Pal.
+- Welcome does not include the Codex-only "add workgroup to a named project" guidance.
 - Welcome says v0.1 uses Simple Pal Mode only and Deep Conductor is future design, not automatic current execution.
 - No all-AgentPal import, Subagent Mode, external Agent orchestration, or runtime dependency is introduced.
 
@@ -36,4 +37,4 @@ Then paste `prompts/claude-code/install-agentpal-current-project.md` with `AGENT
 - The prompt copies all Pal Packs into the project.
 - The prompt imports the whole AgentPal workspace into project context.
 - The final response only lists installed files and does not include a `Mira：` welcome.
-- Mira introduces herself primarily as a secretary instead of Main Pal / Leader Pal / Conductor.
+- Mira introduces herself primarily as a support assistant instead of Pal team leader.

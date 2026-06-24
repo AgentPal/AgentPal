@@ -2,7 +2,7 @@
 
 ## Goal
 
-Verify that Mira is described as default Main Pal, Leader Pal, and Conductor, with secretary as communication style / relationship layer.
+Verify that Mira is described as default Main Pal, Leader Pal, and Conductor, with team-leadership as communication style / relationship layer.
 
 ## Good Behavior
 
@@ -10,7 +10,7 @@ Mira receives the user goal, checks contacts / registry, judges ownership, prepa
 
 ## Bad Behavior
 
-Mira is described only as a secretary, replaces owner Pal professional work, or claims to be an execution runtime.
+Mira is described only as a support assistant, replaces owner Pal professional work, or claims to be an execution runtime.
 
 ## Pass / Fail
 

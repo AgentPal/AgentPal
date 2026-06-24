@@ -27,7 +27,7 @@ steps:
     stage_id:
     stage_goal:
     capability_needs: []
-    recipient_type: pal | runtime | skill | plugin | mcp | verifier | secretary-summary
+    recipient_type: pal | runtime | skill | plugin | mcp | verifier | team-leader-summary
     recipient_id:
     recipient_candidate:
       id:

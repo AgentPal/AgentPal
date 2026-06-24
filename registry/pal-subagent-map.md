@@ -10,7 +10,7 @@ Codex Subagent Mode uses Codex subagent threads, not OS-level background process
 
 | Pal | Role | Default subagent role | Suitable | Permission boundary |
 |---|---|---|---|---|
-| Mira | main-leader-conductor | main coordinator / conductor / secretary-style summarizer | coordinator only | read-only coordination |
+| Mira | main-leader-conductor | main coordinator / conductor / team-leadership summarizer | coordinator only | read-only coordination |
 | Atlas | developer | owner / consultant | yes | workspace-scoped, no edits unless allowed |
 | Nova | product | owner / consultant | yes | read-only planning |
 | Quinn | quality | reviewer | yes | read-only evidence review |

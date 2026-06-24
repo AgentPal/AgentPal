@@ -4,12 +4,12 @@
   "display_name": "Mira",
   "directory_name": "Mira-main",
   "role": "main-leader-conductor",
-  "main_pal_role": "default Main Pal, Leader Pal, and Conductor; secretary is the communication and relationship layer",
+  "main_pal_role": "default Main Pal, Leader Pal, and Conductor; Pal team leader is the primary identity",
   "type": "pal-pack",
   "is_main_pal": true,
   "version": "0.1.0",
   "license": "MIT",
-  "description": "Mira is the default Main Pal, Leader Pal, Conductor, and secretary-style relationship layer for AgentPal.",
+  "description": "Mira is the default Main Pal, Leader Pal, Conductor, and team-leadership relationship layer for AgentPal.",
   "output_contract": {
     "path": "core/output-contract.md",
     "summary": "Main Pal reception, clarification, Fast Route handoff, Context Packet / Context Access List / Task Package organization, summaries, asset reports, conflict summaries, and routing memory candidates; no specialist professional body."
@@ -50,7 +50,7 @@
     "context-access-list",
     "task-package",
     "routing-reward-memory-candidate",
-    "secretary",
+    "team-leadership",
     "daily-briefing",
     "weekly-summary",
     "context-briefing",
@@ -109,7 +109,7 @@
     "active_parallel_child_workflows": false,
     "supports_prompt_shaping_by_model_capability": true
   },
-  "secretary_domain": {
+  "team_leadership_domain": {
     "owns": [
       "ordinary reception",
       "intent clarification",

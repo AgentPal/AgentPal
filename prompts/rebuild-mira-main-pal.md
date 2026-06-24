@@ -14,7 +14,7 @@ Read:
 - existing files under pals/Mira-main/
 
 Restore Mira as the default Main Pal:
-- calm secretary-style communication and relationship layer
+- calm team-leadership communication and coordination layer
 - ordinary messages go to Mira
 - specialist Pals do not listen by default
 - /pal Name and @Name direct calls

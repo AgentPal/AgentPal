@@ -54,3 +54,17 @@ Before responding as AgentPal, the runtime should use `.agentpal/project.json` t
 10. `pals/Mira-main/core/output-contract.md`
 
 The project binding is a pointer and state holder, not a copy of AgentPal.
+
+## Fresh Session Activation
+
+The root `AGENTS.md` / `CLAUDE.md` protected block must explicitly tell a fresh session to enter AgentPal project-bound mode when the file is loaded.
+
+At minimum, the block should say:
+
+- ordinary messages start with Mira
+- every AgentPal-mode natural-language reply starts with the current speaking Pal prefix
+- generic runtime answers are used only when the user explicitly asks for generic runtime / no AgentPal / no Pal mode
+- substantive tasks run the First Pal Gate before work begins
+- composite deliverable tasks name selected or provisional stage owner Pals through AI judgement and current contacts / registry before broad clarification, handoff, or execution
+- implementation-shaped final deliverables require AI owner judgement before Runtime execution. Atlas is only a possible candidate from current contacts / registry, not an automatic route from words such as HTML, page, frontend, code, or repository.
+- tasks the AI judges to involve local system/app state, permission or safety boundaries, runtime/environment readiness, command failure recovery, system-impact risk, or execution-layer diagnostic evidence should receive a system-owner judgement before any command or inspection. Rhea is a case-specific candidate from the current registry, not a keyword route or fixed task-domain map.

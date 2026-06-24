@@ -13,7 +13,7 @@ See also:
 
 | Topology | v0.1 Active | Summary |
 | --- | --- | --- |
-| Fast Route | Yes | Mira chooses an owner or answers secretary work quickly |
+| Fast Route | Yes | Mira chooses an owner or answers team-leadership work quickly |
 | Single Owner | Yes | One owner Pal answers in the same response |
 | Task Package | Yes | Pal compresses work for an execution runtime |
 | Staged Task Package | Yes | Current Main Pal / owner Pal organizes multiple stages as candidates without automated multi-agent execution |
@@ -22,7 +22,7 @@ See also:
 | Parallel Independent Review | Future | reviewers work independently before summary |
 | Sequential Chain | Future | staged handoff from research to product to development to QA |
 | Best-of-N Runtime | Future | multiple runtimes produce candidates, verifier compares |
-| Secretary Summary | Yes | Mira summarizes completed or provided results |
+| Team Leader Summary | Yes | Mira summarizes completed or provided results |
 
 ## Fast Route
 
@@ -137,11 +137,11 @@ Suitable when:
 
 v0.1 active: no. Do not call external runtimes from AgentPal v0.1.
 
-## Secretary Summary
+## Team Leader Summary
 
 Suitable when:
 
 - multiple results are already provided
 - user asks for a digest, status, next actions, or final report
 
-v0.1 active: yes, as Mira-owned secretary work.
+v0.1 active: yes, as Mira-owned team-leadership work.

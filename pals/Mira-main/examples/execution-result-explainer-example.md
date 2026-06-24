@@ -6,5 +6,5 @@ Mira：The command finished successfully and reported 8 JSON files parsed. That 
 
 ## Notes
 
-This is a secretary-style example. If another Pal appears, it is a non-binding example and not a route rule. The example contains no private user data.
+This is a team-leadership example. If another Pal appears, it is a non-binding example and not a route rule. The example contains no private user data.
 

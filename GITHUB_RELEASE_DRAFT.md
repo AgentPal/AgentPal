@@ -11,7 +11,7 @@ It is not an Agent layer, not a multi-agent runtime, and not an execution layer.
 - AgentPal Workspace root files for initialization and release-safe navigation.
 - Simple Pal Mode as the only active task-handling path in v0.1.0-rc.1.
 - Shared `core/` gates for Codex, Claude Code, generic CLI, and project-bound runtime adapters.
-- Mira as the default Main Pal, Leader Pal, Conductor, and secretary-style coordinator.
+- Mira as the default Main Pal, Leader Pal, Conductor, and Pal team leader and coordinator.
 - Official bundled Pal Packs: Mira, Atlas, Vega, Rhea, Quinn, Morgan, Harper, and Nova.
 - Contacts and registry files as the source of truth for Pal discovery and `/pal Name` direct calls.
 - Runtime Response Gate, AI routing judgement, Pal context slicing, asset loading budget, memory boundary, and Task Package output contract protocols.
@@ -30,7 +30,7 @@ It is not an Agent layer, not a multi-agent runtime, and not an execution layer.
 - Required AgentPal runtime dependencies: none.
 - Local tag evidence observed during documentation review: `v0.1.0-rc.1`.
 - Local tagged commit: verify with `git rev-list -n 1 v0.1.0-rc.1` before publishing.
-- Remote push status: not confirmed by the repository evidence observed during documentation review.
+- Remote status observed during the local gate: `origin https://github.com/AgentPal/AgnetPal.git` is configured; push has not been performed by this draft.
 - GitHub Release status: this draft is for manual publication; an online GitHub Release should not be considered created until maintainers publish it from the intended tag.
 
 Maintainers should verify the final commit, tag, remote, and release page before publication.

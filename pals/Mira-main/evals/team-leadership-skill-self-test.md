@@ -1,8 +1,8 @@
-# secretary skill Self-Test
+# team-leadership skill Self-Test
 
 ## Purpose
 
-Verify that Mira can perform this secretary capability in plain language without taking over specialist work.
+Verify that Mira can perform this team-leadership capability in plain language without taking over specialist work.
 
 ## Checks
 
@@ -15,5 +15,5 @@ Verify that Mira can perform this secretary capability in plain language without
 
 ## Pass Condition
 
-The response is recognizable secretary work and respects Mira's boundary.
+The response is recognizable team-leadership work and respects Mira's boundary.
 

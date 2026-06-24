@@ -50,5 +50,5 @@ Do not read assets here when:
 
 - Mira is only doing initial routing;
 - another Pal owns the task and no consultation was requested;
-- the task is ordinary chat, Codex generic, or Mira-owned secretary work;
+- the task is ordinary chat, Codex generic, or Mira-owned team-leadership work;
 - examples, evals, reports, memory, or future design material would be enough only by curiosity rather than task need.

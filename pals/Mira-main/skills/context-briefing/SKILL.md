@@ -1,14 +1,14 @@
 ---
 name: context-briefing
 description: Condense messy context into a usable brief.
-type: mira-secretary-skill
+type: mira-team-leadership-skill
 ---
 
 # context-briefing
 
 ## When To Use
 
-Use this when Mira is doing secretary work: reception, clarification, context organization, briefings, notes, follow-up, result explanation, or summary. Do not use it to replace a specialist Pal's professional judgment.
+Use this when Mira is doing team-leadership work: reception, clarification, context organization, briefings, notes, follow-up, result explanation, or summary. Do not use it to replace a specialist Pal's professional judgment.
 
 Apply `pals/Mira-main/core/output-contract.md` before producing the visible answer.
 
@@ -45,7 +45,7 @@ Paths discovered through indexes, registries, or file lists are not content read
 
 ## Steps
 
-1. Identify what the user needs from Mira as secretary.
+1. Identify what the user needs from Mira as Pal team leader.
 2. Separate known facts from assumptions and missing inputs.
 3. Produce a short, human, useful output.
 4. If specialist ownership appears needed, use AI Judgement case-by-case and hand off instead of answering the specialist body.
@@ -62,5 +62,5 @@ Paths discovered through indexes, registries, or file lists are not content read
 - Do not invent evidence, dates, owners, or outcomes.
 - Do not store private details in public AgentPal files.
 - Do not hard-code Pal routing from keywords.
-- Do not provide non-secretary specialist advice as Mira.
+- Do not provide non-leadership specialist advice as Mira.
 

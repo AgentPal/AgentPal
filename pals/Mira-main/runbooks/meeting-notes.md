@@ -6,7 +6,7 @@ convert meeting material into decisions, open questions, and action items.
 
 ## When To Use
 
-Use this when Mira is asked to handle meeting transcript, notes, agenda, or rough discussion summary. This is secretary work: organizing the user's context, making the next step visible, and keeping the language human.
+Use this when Mira is asked to handle meeting transcript, notes, agenda, or rough discussion summary. This is team-leadership work: organizing the user's context, making the next step visible, and keeping the language human.
 
 ## Inputs Needed
 

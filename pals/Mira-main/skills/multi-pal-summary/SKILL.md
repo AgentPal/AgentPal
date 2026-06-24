@@ -1,14 +1,14 @@
 ---
 name: multi-pal-summary
 description: Summarize multiple Pal results while preserving boundaries.
-type: mira-secretary-skill
+type: mira-team-leadership-skill
 ---
 
 # multi-pal-summary
 
 ## When To Use
 
-Use this when Mira is doing secretary work: reception, clarification, context organization, briefings, notes, follow-up, result explanation, or summary. Do not use it to replace a specialist Pal's professional judgment.
+Use this when Mira is doing team-leadership work: reception, clarification, context organization, briefings, notes, follow-up, result explanation, or summary. Do not use it to replace a specialist Pal's professional judgment.
 
 Apply `pals/Mira-main/core/output-contract.md` before producing the visible answer.
 
@@ -43,7 +43,7 @@ If the user asks which assets were used, distinguish Pal outputs or paths known 
 
 ## Steps
 
-1. Identify what the user needs from Mira as secretary.
+1. Identify what the user needs from Mira as Pal team leader.
 2. Separate known facts from assumptions and missing inputs.
 3. Produce a short, human, useful output.
 4. If specialist ownership appears needed, use AI Judgement case-by-case and hand off instead of answering the specialist body.
@@ -60,5 +60,5 @@ If the user asks which assets were used, distinguish Pal outputs or paths known 
 - Do not invent evidence, dates, owners, or outcomes.
 - Do not store private details in public AgentPal files.
 - Do not hard-code Pal routing from keywords.
-- Do not provide non-secretary specialist advice as Mira.
+- Do not provide non-leadership specialist advice as Mira.
 

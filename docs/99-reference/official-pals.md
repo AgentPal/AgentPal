@@ -6,7 +6,7 @@ The official list below is a contacts and registry display, not a route map. Own
 
 | Pal | ID | Directory | Role | Direct call |
 | --- | --- | --- | --- | --- |
-| Mira | `mira-main` | `pals/Mira-main` | Main Pal, Leader Pal, Conductor, and secretary-style coordinator | `/pal Mira` |
+| Mira | `mira-main` | `pals/Mira-main` | Main Pal, Leader Pal, Conductor, and Pal team leader and coordinator | `/pal Mira` |
 | Atlas | `atlas-developer` | `pals/Atlas-developer` | Development perspective | `/pal Atlas` |
 | Vega | `vega-research` | `pals/Vega-research` | Research and evidence perspective | `/pal Vega` |
 | Rhea | `rhea-system` | `pals/Rhea-system` | Local system and environment perspective | `/pal Rhea` |

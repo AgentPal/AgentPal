@@ -9,25 +9,13 @@ cd <your-project>
 <your-cli-agent>
 ```
 
-Then paste:
-
-```text
-Please connect AgentPal to the current project.
-AGENTPAL_HOME = <path-to-AgentPal>
-```
-
-Replace `<path-to-AgentPal>` with your real AgentPal Workspace path before pasting, for example:
-
-```text
-AGENTPAL_HOME = D:/Tools/AgentPal
-AGENTPAL_HOME = /Users/you/AgentPal
-```
-
-Or paste the full prompt from:
+Then paste the full prompt from:
 
 ```text
 prompts/generic-cli-agent/install-agentpal-current-project.md
 ```
+
+The install prompt is copy-paste ready. Do not edit it before pasting. The CLI agent asks for the local AgentPal Workspace path during installation unless you already provided a clear path in the conversation. Enter the path to your AgentPal directory, for example `<path-to-AgentPal>`.
 
 ## What The Prompt Does
 
@@ -35,6 +23,8 @@ The generic one-prompt install creates or updates:
 
 - `.agentpal/`
 - `AGENTS.md`
+
+After a successful install, the prompt should also print a short Mira welcome message that starts with `Mira：`, introduces Mira as the user's Pal team leader, shows the current Pal team in a table with name, responsibility, and skill overview, and explains direct `/pal Name` calls.
 
 It does not depend on Claude Code `.claude/settings.local.json`.
 
