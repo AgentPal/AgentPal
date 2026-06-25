@@ -116,6 +116,33 @@ A practical multi-Pal flow looks like this:
 
 The goal is not to make the conversation look busy. The goal is to make complex work safer, clearer, and easier to verify.
 
+## Subagent and Multi-Agent Calls Are Runtime Capabilities
+
+Many agent runtimes may support subagents or multiple agents.
+
+For example, a runtime may split a larger task into several execution units:
+
+- one subagent checks documentation
+- one subagent checks code
+- one subagent runs tests
+- one subagent performs release checks
+- one subagent summarizes results
+
+That is an Agent Runtime capability.
+
+A Pal does not need to pretend to be those subagents. A Pal does not become an execution worker just because a runtime can run parallel work.
+
+The Pal-layer responsibility is different:
+
+> Decide whether subagents are useful, create clear Task Packages, control which context each execution unit may see, define the required output format and acceptance criteria, and review the returned results.
+
+In other words:
+
+- A Pal Team is responsible for how to understand, divide, frame, and verify the work.
+- Subagents or multi-agent runtimes are responsible for how to execute, parallelize, operate, and return evidence.
+
+The two layers can work together, but they are not the same thing.
+
 ## Deep Conductor
 
 Deep Conductor is AgentPal's future design for transparent orchestration of complex work.
