@@ -25,6 +25,8 @@ AgentPal is a Pal layer and Pal Pack Standard practice for Markdown/JSON-capable
 - [Capability Inventory minimal usable design](05-orchestration-methodology/capability-inventory-minimal-usable-design.md)
 - [PalBench Light Suite](../evals/palbench-light/README.md)
 - [PalBench Light suite plan](research/palbench-light-suite-plan.md)
+- [Runtime Adapter stability guide](04-runtime-guides/runtime-adapter-stability-guide.md)
+- [Runtime Adapter troubleshooting prompt cards](04-runtime-guides/runtime-adapter-troubleshooting-prompt-cards.md)
 - [Validation and evidence](06-validation-and-evidence/README.md)
 - [v0.1.0-rc.1 release candidate](08-release-candidate/README.md)
 - [v0.2 development plan](09-roadmap/v0.2-development-plan.md)
@@ -188,7 +190,7 @@ AgentPal is a Pal layer and Pal Pack Standard practice for Markdown/JSON-capable
 | [01-concepts](01-concepts/01-what-is-a-pal.md) | Pal, Pal Pack, Skill, Agent, Why Pal, Pal Team, multi-Pal collaboration, and Simple Pal Mode concepts |
 | [02-getting-started](02-getting-started/00-quick-start.md) | Opening AgentPal, initializing Mira, and calling a Pal |
 | [03-pal-pack-standard](03-pal-pack-standard/README.md) | Pal Pack structure, root files, import/export, public/private boundary, and checklist |
-| [04-runtime-guides](04-runtime-guides/00-runtime-compatibility.md) | Runtime compatibility, Codex, Claude Code, and future adapters |
+| [04-runtime-guides](04-runtime-guides/00-runtime-compatibility.md) | Runtime compatibility, Codex, Claude Code, thin binding stability, troubleshooting, and future adapters |
 | [05-orchestration-methodology](05-orchestration-methodology/README.md) | Fast Route, Task Package, Context Slicing, Asset Loading Budget, Pal Teams, evidence records, and future orchestration boundaries |
 | [06-palsmith](06-palsmith/README.md) | PalSmith v0.2 end-to-end productization path |
 | [06-collaboration](06-collaboration/00-collaboration-overview.md) | Contacts, mention protocol, Context Packets, handoff, and project workgroups |

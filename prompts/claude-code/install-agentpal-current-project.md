@@ -17,6 +17,13 @@ Do not ask me to edit this prompt. If the AgentPal Workspace path is not already
 
 After I provide the path, verify it by checking that it contains `agentpal.json`, `AGENTS.md`, `contacts/pals.json`, and `registry/pal.index.json`. If the path is missing or invalid, stop and ask for the correct AgentPal Workspace path.
 
+Post-install reminders:
+- The current project stores a thin binding only.
+- The current Pal list is read from the AgentPal workspace contacts / registry, not from copied project text.
+- If the AgentPal framework updates later, this project should reread the core gates from the AgentPal workspace.
+- Claude Code may need a restart or `/add-dir <AgentPal workspace root>` before the current session can read the workspace.
+- Do not copy the full Pal list, full Pal Packs, full rule bodies, or AgentPal docs into this project.
+
 Hard boundaries:
 - Do not scan the whole disk.
 - Do not copy AgentPal Pal Packs, docs, protocols, examples, evals, or release notes into this project.
@@ -73,6 +80,8 @@ For `.agentpal/project.json`, include at least:
 - read_core_from_agentpal_workspace: true
 - core_gate_paths
 - pal_source_of_truth
+
+Set `active_project_root` to the current external project. Do not set it to the AgentPal workspace root.
 
 For `.claude/settings.local.json`, merge with any existing valid JSON. Preserve unrelated settings. Add the AgentPal workspace root under `permissions.additionalDirectories`.
 

@@ -18,6 +18,8 @@ For v0.2 Capability Inventory work, see the [minimal usable design](docs/05-orch
 
 For v0.2 release regression work, see the [PalBench Light Suite](evals/palbench-light/README.md) and [suite plan](docs/research/palbench-light-suite-plan.md).
 
+For Runtime Adapter troubleshooting and thin binding stability, see the [stability guide](docs/04-runtime-guides/runtime-adapter-stability-guide.md) and [troubleshooting prompt cards](docs/04-runtime-guides/runtime-adapter-troubleshooting-prompt-cards.md).
+
 ## Why AgentPal?
 
 When users want agents to work better, they usually try one of two paths:

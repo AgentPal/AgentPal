@@ -37,17 +37,20 @@ Verify:
    - registry/pal.index.json
    - pals/Mira-main/PAL.md
    - pals/Mira-main/core/output-contract.md
-6. `CLAUDE.md` contains exactly one AgentPal block between:
+6. The AgentPal workspace contacts / registry are readable and are the Pal source of truth. If project files contain a copied roster, report it as stale or non-authoritative.
+7. `CLAUDE.md` contains exactly one AgentPal block between:
    - `<!-- BEGIN AGENTPAL WORKGROUP -->`
    - `<!-- END AGENTPAL WORKGROUP -->`
-7. `AGENTS.md` contains exactly one AgentPal block between the same markers.
-8. Both blocks point to AgentPal core gates and do not embed a full Pal roster or full protocols.
-9. `.claude/settings.local.json` exists and is valid JSON.
-10. `permissions.additionalDirectories` contains the AgentPal workspace path.
-11. `.gitignore` contains `.claude/settings.local.json`.
-12. `.agentpal/` does not contain copied full protocols, full Mira assets, release docs, examples, evals, or PalBench reports.
-13. The active mode is Simple Pal Mode only.
-14. Deep Conductor, Subagent Mode, and external Agent orchestration are not activated by the binding.
+8. `AGENTS.md` contains exactly one AgentPal block between the same markers.
+9. Both blocks point to AgentPal core gates and do not embed a full Pal roster or full protocols.
+10. `.claude/settings.local.json` exists and is valid JSON.
+11. `permissions.additionalDirectories` contains the AgentPal workspace path, merged with any unrelated existing entries.
+12. `.gitignore` contains `.claude/settings.local.json`.
+13. `.agentpal/` does not contain copied full protocols, full Mira assets, release docs, examples, evals, or PalBench reports.
+14. A Generic CLI binding, if present, has at least root `AGENTS.md` plus `.agentpal/project.json` and does not rely on Claude Code settings.
+15. No internal local paths, private user data, or credential-like values are exposed in public project instructions.
+16. The active mode is Simple Pal Mode only.
+17. Deep Conductor, Subagent Mode, and external Agent orchestration are not activated by the binding.
 
 Output a concise checklist:
 - pass / fail / warning

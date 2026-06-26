@@ -20,6 +20,8 @@ v0.2 Capability Inventory 见 [minimal usable design](docs/05-orchestration-meth
 
 v0.2 release regression 见 [PalBench Light Suite](evals/palbench-light/README.md) 和 [suite plan](docs/research/palbench-light-suite-plan.md)。
 
+Runtime Adapter 排障与 thin binding 稳定性见 [stability guide](docs/04-runtime-guides/runtime-adapter-stability-guide.md) 和 [troubleshooting prompt cards](docs/04-runtime-guides/runtime-adapter-troubleshooting-prompt-cards.md)。
+
 ## 为什么需要 AgentPal？
 
 用户想让 Agent 更好用时，通常会走两条路：

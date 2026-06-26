@@ -15,6 +15,10 @@ This removes only the AgentPal project binding. It must not delete:
 - the AgentPal workspace itself
 - any Pal Pack files
 
+Thin binding note:
+- A correct binding should not have copied full Pal lists, full protocols, full Mira assets, docs, examples, evals, or release material into this project.
+- If such copied material exists, report it separately and ask before removing anything that is not clearly inside the protected AgentPal block or `.agentpal/`.
+
 Before changing files, confirm the current project root and ask me to confirm removal.
 
 After confirmation:
@@ -26,6 +30,7 @@ After confirmation:
 6. Preserve all other Claude Code settings.
 7. If settings.local.json becomes empty or only contains empty permissions, ask whether to delete it.
 8. Do not modify `.claude/settings.json` unless I explicitly ask.
+9. Do not delete the AgentPal workspace or any user-authored project content.
 
 If `.claude/settings.local.json` is invalid JSON, stop and ask me how to proceed. Do not overwrite it.
 

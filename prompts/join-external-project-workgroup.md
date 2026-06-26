@@ -39,6 +39,13 @@ Do not copy:
 - release notes
 - PalBench reports
 
+After binding, remind the user that:
+- the external project stores only a thin binding;
+- Pal list refresh comes from the AgentPal workspace contacts / registry;
+- AgentPal framework updates are picked up by rereading the core gates from the workspace;
+- Claude Code may need restart or `/add-dir <AgentPal workspace root>` in an already-open session;
+- copied full rules or copied Pal rosters are stale binding smells, not stronger installation.
+
 The root `AGENTS.md` / `CLAUDE.md` block must point the runtime to current core gates in the AgentPal workspace:
 1. core/agentpal-core-gate.md
 2. core/first-pal-gate.md

@@ -121,6 +121,10 @@ Use:
 | `evals/palbench-light/task-index.md` | PalBench Light task index | R44 first 24 case index |
 | `evals/palbench-light/scoring-rubric.md` | PalBench Light scoring rubric | 0 / 1 / 2 release regression scoring |
 | `evals/palbench-light/palbench-light-suite-self-test.md` | PalBench Light suite self-test | R44 suite structure and boundary check |
+| `docs/04-runtime-guides/runtime-adapter-stability-guide.md` | Runtime Adapter stability guide | R45 thin binding stability and cross-project troubleshooting |
+| `docs/04-runtime-guides/runtime-adapter-troubleshooting-prompt-cards.md` | Runtime Adapter troubleshooting cards | R45 copyable bounded troubleshooting prompts |
+| `docs/04-runtime-guides/upgrade-existing-binding-to-thin-binding.md` | existing binding upgrade runbook | R45 upgrade path for old copied bindings |
+| `evals/runtime-adapters/runtime-adapter-regression-suite.md` | Runtime Adapter regression suite | R45 12-scenario adapter regression checklist |
 | `docs/05-orchestration-methodology/11-pal-teams-and-deep-conductor.md` | Pal Team, runtime-layer agent execution, and future Deep Conductor boundaries | Pal Team and orchestration questions |
 | `docs/06-validation-and-evidence/` | current PalBench and evidence interpretation | validation, PalBench, and evidence questions |
 | `docs/08-release-candidate/` | current v0.1.0-rc.1 release candidate notes | release candidate scope and evidence questions |
@@ -236,6 +240,14 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/runtime-adapters/no-stale-pal-list-in-project-binding-self-test.md` | stale Pal list self-test |
 | `evals/runtime-adapters/claude-code-thin-binding-self-test.md` | Claude Code thin binding self-test |
 | `evals/runtime-adapters/generic-cli-thin-binding-self-test.md` | Generic CLI thin binding self-test |
+| `docs/04-runtime-guides/runtime-adapter-stability-guide.md` | thin binding stability guide |
+| `docs/04-runtime-guides/runtime-adapter-troubleshooting-prompt-cards.md` | troubleshooting prompt cards |
+| `docs/04-runtime-guides/upgrade-existing-binding-to-thin-binding.md` | upgrade old bindings to thin binding |
+| `evals/runtime-adapters/runtime-adapter-regression-suite.md` | 12-scenario Runtime Adapter regression suite |
+| `examples/failures/runtime-opened-in-wrong-directory.md` | failure example for wrong working directory |
+| `examples/failures/stale-pal-list-after-agentpal-update.md` | failure example for stale Pal list |
+| `examples/failures/claude-settings-local-not-refreshed.md` | failure example for Claude Code session refresh |
+| `examples/failures/active-project-root-confused-with-agentpal-root.md` | failure example for root confusion |
 
 ## Mira Conductor References
 
@@ -268,6 +280,9 @@ Use the current docs directories as the public entry points. Archived research n
 
 - `docs/10-using-agentpal-with-claude-code.md`
 - `docs/11-using-agentpal-with-cli-agents.md`
+- `docs/04-runtime-guides/runtime-adapter-stability-guide.md`
+- `docs/04-runtime-guides/runtime-adapter-troubleshooting-prompt-cards.md`
+- `docs/04-runtime-guides/upgrade-existing-binding-to-thin-binding.md`
 
 ## Do Not Load By Default
 
