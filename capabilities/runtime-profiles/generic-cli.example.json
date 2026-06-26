@@ -7,6 +7,8 @@
   "source": "maintainer-example",
   "version": "0.1",
   "non_binding": true,
+  "used_for_judgement": true,
+  "must_not_be_used_for_routing": true,
   "capabilities": {
     "can_read_files": "runtime-dependent",
     "can_write_files": "runtime-dependent",

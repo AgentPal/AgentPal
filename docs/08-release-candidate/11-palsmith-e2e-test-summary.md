@@ -2,9 +2,9 @@
 
 Status: current for AgentPal PalSmith v0.2 planning.
 
-Source test copy: `J:\开发\test\1\PalSmith1`
+Source test copy: internal PalSmith test workspace.
 
-Source reports: `J:\开发\test\1\PalSmith1\docs\08-release-candidate\test-reports\`
+Source reports: internal PalSmith test reports, not copied into the public workspace.
 
 This summary records the R-AgentPal-11 PalSmith E2E result without copying test Pals, test teams, imports, exports, snapshots, or test-only registry / contacts entries into the formal AgentPal workspace.
 

@@ -12,6 +12,8 @@ PalSmith is the AI team builder and Pal asset governance Pal for AgentPal. It he
 
 Learn more about PalSmith: [What is PalSmith, and how can I operate it?](docs/01-concepts/09-What-is-PalSmith-how-can-I-operate-it.md)
 
+v0.2 development now focuses on productizing this path. Start from the [v0.2 development plan](docs/09-roadmap/v0.2-development-plan.md), the [v0.2 task pool](docs/09-roadmap/v0.2-task-pool.md), and the [PalSmith end-to-end productization plan](docs/06-palsmith/palsmith-end-to-end-productization.md).
+
 ## Why AgentPal?
 
 When users want agents to work better, they usually try one of two paths:
@@ -214,6 +216,7 @@ AgentPal is a Pal layer for existing runtimes. It does not require Python, Node.
 - [Pal Pack Standard](docs/03-pal-pack-standard/)
 - [Runtime Guides](docs/04-runtime-guides/)
 - [Orchestration Methodology](docs/05-orchestration-methodology/)
+- [v0.2 Roadmap](docs/09-roadmap/v0.2-development-plan.md)
 - [Validation and Evidence](docs/06-validation-and-evidence/)
 - [Authoring Pals](docs/07-authoring-pals/)
 - [Prompts](prompts/)

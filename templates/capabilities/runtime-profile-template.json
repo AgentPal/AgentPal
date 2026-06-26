@@ -7,6 +7,8 @@
   "source": "user-or-maintainer-provided",
   "version": "0.1",
   "non_binding": true,
+  "used_for_judgement": true,
+  "must_not_be_used_for_routing": true,
   "capabilities": {
     "can_read_files": null,
     "can_write_files": null,

@@ -14,6 +14,8 @@ PalSmith 是 AgentPal 的 AI 团队创建师，也是 Pal 资产治理 Pal。它
 
 详细了解 PalSmith：[PalSmith是什么，怎么使用？](docs/01-concepts/09-What-is-PalSmith-how-can-I-operate-it.md)
 
+v0.2 开发会重点产品化这条路径。可以从 [v0.2 development plan](docs/09-roadmap/v0.2-development-plan.md)、[v0.2 task pool](docs/09-roadmap/v0.2-task-pool.md) 和 [PalSmith end-to-end productization](docs/06-palsmith/palsmith-end-to-end-productization.md) 开始。
+
 ## 为什么需要 AgentPal？
 
 用户想让 Agent 更好用时，通常会走两条路：
@@ -145,6 +147,7 @@ AgentPal 在 [`templates/Pal Pack/`](<templates/Pal Pack/>) 下提供标准 Pal 
 | Nova | 产品与需求 | `/pal Nova` |
 | Vega | 调研与分析 | `/pal Vega` |
 | Rhea | 系统、环境与工具 | `/pal Rhea` |
+| PalSmith | Pal 创建、AI 团队创建、Pal 资产治理、体检、导入导出与发布准备 | `/pal PalSmith` |
 | Quinn | 质量、验证与发布检查 | `/pal Quinn` |
 | Morgan | 文档、Office、PDF 与文件工作 | `/pal Morgan` |
 | Harper | 写作、沟通与编辑 | `/pal Harper` |
@@ -208,6 +211,7 @@ AgentPal 是给现有 Runtime 使用的 Pal 层。实际文件操作、命令、
 - [Pal Pack 标准](docs/03-pal-pack-standard/)
 - [Runtime 指南](docs/04-runtime-guides/)
 - [调度方法论](docs/05-orchestration-methodology/)
+- [v0.2 路线图](docs/09-roadmap/v0.2-development-plan.md)
 - [验证与证据](docs/06-validation-and-evidence/)
 - [创建 Pal](docs/07-authoring-pals/)
 - [Prompts](prompts/)

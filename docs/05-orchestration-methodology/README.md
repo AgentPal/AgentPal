@@ -52,6 +52,7 @@ Future methodology extends this with workflow topology, Context Access Lists, is
 - [03 Context Slicing](03-context-slicing.md)
 - [04 Asset Loading Budget](04-asset-loading-budget.md)
 - [05 Capability Inventory](05-capability-inventory.md)
+- [Capability Inventory Minimal Usable Design](capability-inventory-minimal-usable-design.md)
 - [06 Runtime / Model / Skill Awareness](06-runtime-model-skill-awareness.md)
 - [07 Verification Result Record](07-verification-result-record.md)
 - [08 Routing Decision Record](08-routing-decision-record.md)

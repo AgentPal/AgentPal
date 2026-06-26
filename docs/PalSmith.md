@@ -20,7 +20,7 @@ v0.4 turns those capabilities into a more demonstrable user path: a 5-minute qui
 
 R16 v0.4-fix repairs the quality model. PalSmith quality inspection now asks whether the Pal can actually perform its declared job, not just whether expected files exist. Creation now starts from Pal name, responsibilities, goals, scenarios, user materials, and research needs, then builds a job expertise model before proposing files. User material ingestion must preserve source content, keep traceability, and classify material into knowledge, skill, workflow, runbook, template, eval, and governance assets instead of compressing everything into a short summary.
 
-R17 quality testing in `J:\开发\test\1\PalSmith1` showed that the repaired PalSmith flow can produce a test job Pal with source inventory, source coverage matrix, complete knowledge / skills / workflows / templates / evals, user material preservation, and a real task simulation. The formal AgentPal Workspace does not copy the test Pal or test reports; it keeps reusable release-safe learning through the source coverage template and long-material ingestion example.
+R17 quality testing in an internal test workspace showed that the repaired PalSmith flow can produce a test job Pal with source inventory, source coverage matrix, complete knowledge / skills / workflows / templates / evals, user material preservation, and a real task simulation. The formal AgentPal Workspace does not copy the test Pal or test reports; it keeps reusable release-safe learning through the source coverage template and long-material ingestion example.
 
 ## Delegation And Handoff
 

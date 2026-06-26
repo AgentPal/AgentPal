@@ -6,7 +6,7 @@ Scope: official AgentPal workspace P2 schema and source-lineage sync-back from R
 
 ## R10 Test Conclusion Summary
 
-R10 functional-depth testing in `J:\开发\test\1\PalSmith1` found no P0 or P1 blockers for the 9 default Pals. The default Pal set passed Level 2 role-task simulation, content-depth sampling, multi-Pal collaboration judgement, PalSmith-style job fitness review, source coverage sampling where present, JSON parsing, and no-code boundary checks.
+R10 functional-depth testing in an internal test workspace found no P0 or P1 blockers for the 9 default Pals. The default Pal set passed Level 2 role-task simulation, content-depth sampling, multi-Pal collaboration judgement, PalSmith-style job fitness review, source coverage sampling where present, JSON parsing, and no-code boundary checks.
 
 Remaining issues were P2:
 
@@ -61,8 +61,8 @@ These are documentation assets only. They record internal standards, PalSmith pr
 
 Do not copy:
 
-- `J:\开发\test\1\PalSmith1\pals\_test*`
-- `J:\开发\test\1\PalSmith1\pals\Mary-design`
+- internal test-only `_test*` Pal directories
+- internal test-only `Mary-design` Pal directory
 - test-only contacts or registry entries
 - `docs/08-release-candidate/test-reports/all-pals-functional-depth/` as official release content
 - temporary simulation outputs
@@ -77,4 +77,3 @@ Do not copy:
 - no-code boundary remains intact.
 - `git diff --check` passes.
 - R11 verification report is generated.
-

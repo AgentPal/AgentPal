@@ -131,7 +131,7 @@ AgentPal/pals/Luna-designer/
 
 ## 发布注意事项
 
-- 不要把私人用户记忆、真实项目状态、客户资料、密钥、Token、账号、内部开发记录放入公开 Pal Pack。
+- 不要把私人用户记忆、真实项目状态、客户资料、密钥、Token、账号、内部开发资料放入公开 Pal Pack。
 - `memory/`、`state/`、`reports/` 默认只放 README 或 `.gitkeep`。
 - 示例可以提到其它 Pal，但必须标明是非绑定示例。
 - Pal Pack 不维护其它 Pal 的固定名单。协作者应从当前 AgentPal `contacts/` / `registry/` 中解析。

@@ -52,5 +52,4 @@ This skill reviews evidence and writes a report. It does not create automation.
 
 ## Example
 
-"Runtime ran `git diff --check` in `J:\开发\AgentPal`; exit code 0; no whitespace errors; CRLF warnings only; no files changed by this command."
-
+"Runtime ran `git diff --check` in the AgentPal Workspace; exit code 0; no whitespace errors; CRLF warnings only; no files changed by this command."

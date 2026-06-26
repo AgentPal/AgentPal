@@ -12,6 +12,7 @@ AgentPal is a Pal layer and Pal Pack Standard practice for Markdown/JSON-capable
 - [Why Pal?](01-concepts/07-why-pal.md)
 - [Pal Teams, Multi-Pal Collaboration, and Deep Conductor](01-concepts/08-pal-teams-collaboration-and-deep-conductor.md)
 - [Quick start](02-getting-started/00-quick-start.md)
+- [Mira-first usage](02-getting-started/mira-first-usage.md)
 - [Use AgentPal with Claude Code](10-using-agentpal-with-claude-code.md)
 - [Use AgentPal with generic CLI agents](11-using-agentpal-with-cli-agents.md)
 - [Simple Pal Mode](01-concepts/05-simple-pal-mode.md)
@@ -21,6 +22,8 @@ AgentPal is a Pal layer and Pal Pack Standard practice for Markdown/JSON-capable
 - [Pal Teams and Deep Conductor](05-orchestration-methodology/11-pal-teams-and-deep-conductor.md)
 - [Validation and evidence](06-validation-and-evidence/README.md)
 - [v0.1.0-rc.1 release candidate](08-release-candidate/README.md)
+- [v0.2 development plan](09-roadmap/v0.2-development-plan.md)
+- [v0.2 task pool](09-roadmap/v0.2-task-pool.md)
 
 ## PalSmith Quick Links
 
@@ -31,6 +34,7 @@ AgentPal is a Pal layer and Pal Pack Standard practice for Markdown/JSON-capable
 - [PalSmith quickstart AI team](07-authoring-pals/15-palsmith-quickstart-ai-team.md)
 - [PalSmith demo script](07-authoring-pals/16-palsmith-demo-script.md)
 - [PalSmith v0.4 regression test plan](08-release-candidate/12-palsmith-v0.4-regression-test-plan.md)
+- [PalSmith end-to-end productization](06-palsmith/palsmith-end-to-end-productization.md)
 - [Pal import/export standard](03-pal-pack-standard/13-pal-import-export.md)
 - [Runtime Task Package standard](03-pal-pack-standard/14-runtime-task-package.md)
 - [No-code release checklist](08-release-candidate/05-no-code-release-checklist.md)
@@ -144,12 +148,14 @@ AgentPal is a Pal layer and Pal Pack Standard practice for Markdown/JSON-capable
 | [03-pal-pack-standard](03-pal-pack-standard/README.md) | Pal Pack structure, root files, import/export, public/private boundary, and checklist |
 | [04-runtime-guides](04-runtime-guides/00-runtime-compatibility.md) | Runtime compatibility, Codex, Claude Code, and future adapters |
 | [05-orchestration-methodology](05-orchestration-methodology/README.md) | Fast Route, Task Package, Context Slicing, Asset Loading Budget, Pal Teams, evidence records, and future orchestration boundaries |
+| [06-palsmith](06-palsmith/palsmith-end-to-end-productization.md) | PalSmith v0.2 end-to-end productization path |
 | [06-collaboration](06-collaboration/00-collaboration-overview.md) | Contacts, mention protocol, Context Packets, handoff, and project workgroups |
 | [06-validation-and-evidence](06-validation-and-evidence/README.md) | PalBench meaning, limits, observed benefits, and future validation design |
 | [07-authoring-pals](07-authoring-pals/README.md) | Designing, writing, testing, publishing, and governing Pal Packs with PalSmith |
 | [07-memory-and-learning](07-memory-and-learning/00-memory-overview.md) | User memory, project memory, skill memory, and repeated-task learning |
 | [08-release-and-maintenance](08-release-and-maintenance/00-release-process.md) | Release process, public-safety checks, versioning, and maintenance |
 | [08-release-candidate](08-release-candidate/README.md) | v0.1.0-rc.1 scope, manifest, public-safe audit summary, tag process, and known limitations |
+| [09-roadmap](09-roadmap/v0.2-development-plan.md) | v0.2 development plan and task pool |
 | [research](research/README.md) | Archived research notes only; not a primary docs entry point |
 | [99-reference](99-reference/glossary.md) | Glossary, file index, official Pals, FAQ, and known limitations |
 

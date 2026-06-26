@@ -2,7 +2,7 @@
 
 Status: R-DefaultPal-11 official P2 sync-back and light retest.
 Date: 2026-06-26.
-Workspace: `J:\开发\AgentPal`.
+Workspace: AgentPal Workspace.
 
 ## 1. 修复范围
 
@@ -129,7 +129,7 @@ Checked forbidden file patterns:
 
 Directory-name check found:
 
-- `J:\开发\AgentPal\imports\tools`
+- `imports/tools`
 
 This is the known documentation-resource path. R11 did not add a tool implementation directory or executable assets.
 
@@ -164,4 +164,3 @@ No files were staged or committed.
 Recommendation: yes, after this R11 P2 sync-back, AgentPal can enter release review / commit review.
 
 Reason: R11 acceptance checks pass, no P0/P1 blocker was found, and remaining issues are P2 or release-process review items.
-

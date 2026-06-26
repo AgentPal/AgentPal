@@ -86,6 +86,9 @@ Use:
 | `docs/` | user documentation and reference material | docs work or user questions |
 | `docs/01-concepts/07-why-pal.md` | why AgentPal uses the Pal concept between Skills and Agent teams | concept questions and onboarding |
 | `docs/05-orchestration-methodology/` | current AgentPal Pal orchestration methodology | methodology questions and docs navigation |
+| `docs/09-roadmap/` | v0.2 roadmap and task pool | v0.2 planning and development sequencing |
+| `docs/06-palsmith/palsmith-end-to-end-productization.md` | PalSmith v0.2 end-to-end user path | PalSmith creation and AI team productization work |
+| `docs/02-getting-started/mira-first-usage.md` | Mira-first user path | onboarding and daily-use examples |
 | `docs/05-orchestration-methodology/11-pal-teams-and-deep-conductor.md` | Pal Team, runtime-layer agent execution, and future Deep Conductor boundaries | Pal Team and orchestration questions |
 | `docs/06-validation-and-evidence/` | current PalBench and evidence interpretation | validation, PalBench, and evidence questions |
 | `docs/08-release-candidate/` | current v0.1.0-rc.1 release candidate notes | release candidate scope and evidence questions |
@@ -150,6 +153,7 @@ Use the current docs directories as the public entry points. Archived research n
 | Path | Purpose |
 | --- | --- |
 | `docs/05-orchestration-methodology/README.md` | current Pal Orchestration Methodology entry |
+| `docs/05-orchestration-methodology/capability-inventory-minimal-usable-design.md` | v0.2 minimal manual Capability Inventory profile design |
 | `docs/05-orchestration-methodology/00-methodology-overview.md` | current methodology overview |
 | `docs/05-orchestration-methodology/11-pal-teams-and-deep-conductor.md` | Pal Team and future Deep Conductor relationship |
 | `docs/06-validation-and-evidence/README.md` | current validation and PalBench entry |
@@ -172,6 +176,7 @@ Use the current docs directories as the public entry points. Archived research n
 | `templates/capabilities/` | profile templates |
 | `templates/research/` | PalBench result template |
 | `evals/palbench/` | PalBench evaluation drafts |
+| `evals/palbench-light/` | v0.2 PalBench Light regression suite |
 | `evals/orchestration/` | orchestration boundary and protocol self-tests |
 | `examples/orchestration/` | orchestration examples |
 
