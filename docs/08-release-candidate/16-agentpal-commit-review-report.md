@@ -44,7 +44,7 @@ The R12 path scan found 0 files in those blocked categories at baseline.
 
 Open release-operation risks:
 
-- `origin` is configured as `https://github.com/AgentPal/AgnetPal.git`; maintainers should confirm whether `AgnetPal` is intentional.
+- `origin` is configured as `https://github.com/AgentPal/AgentPal.git`; maintainers should confirm the target repository before publishing.
 - Local tags include both `v0.1.0-rc.1` and `v0.1.0-rc.2`; maintainers should choose the intended release tag strategy before publish work.
 - `v0.1.0-rc.1` in the manifest currently points to an older observed commit, so final tag position must be rechecked after the final release commit is created.
 - No GitHub Release was created or verified in this pass.

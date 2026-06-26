@@ -142,7 +142,7 @@ R09 local checks to record:
 - No online GitHub Release page was created or verified.
 - No commit, tag update, push, or publish was performed in R09.
 - Ignored local runtime outputs exist under `exports/`; maintainers should keep them out of release archives.
-- The current remote is `origin https://github.com/AgentPal/AgnetPal.git`; maintainers should confirm this spelling and target repository before pushing.
+- The current remote is `origin https://github.com/AgentPal/AgentPal.git`; maintainers should confirm this spelling and target repository before pushing.
 - The current local tag `v0.1.0-rc.1` exists, but maintainers must confirm it points to the final intended release commit after accepting R04-R09 changes.
 - PalSmith docs are now broad enough to be useful; future maintenance should prefer compact indexes and targeted edits over adding overlapping guides.
 

@@ -21,7 +21,7 @@ No P0/P1 blocker was found in the local checks for:
 Release-operation caveats remain:
 
 - The worktree is dirty and large.
-- `origin` is configured as `https://github.com/AgentPal/AgnetPal.git`; spelling must be confirmed.
+- `origin` is configured as `https://github.com/AgentPal/AgentPal.git`; target repository must be confirmed.
 - Local tags include both `v0.1.0-rc.1` and `v0.1.0-rc.2`; tag strategy must be confirmed.
 - No GitHub Release was created or verified by R12.
 - R12 did not stage, commit, tag, push, publish, or create release assets.

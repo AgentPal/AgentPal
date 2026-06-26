@@ -10,7 +10,7 @@ R14 reviewed the AgentPal Workspace release-prep state after R13 formal Skill as
 
 - Current branch observed earlier in R12/R13 flow: `master`.
 - Latest local commit in `git log --oneline -n 10`: `efcf4ef docs: clarify runtime subagent responsibilities`.
-- Remote: `origin https://github.com/AgentPal/AgnetPal.git`.
+- Remote: `origin https://github.com/AgentPal/AgentPal.git`.
 - Tags: `v0.1.0-rc.1`, `v0.1.0-rc.2`.
 - Dirty state before R14 report writes: 133 tracked modified files and 642 untracked files.
 - Dirty state after R14 report writes: `git status --short` emitted 598 rows; file-level evidence showed 133 tracked diff files and 646 untracked files. The row count differs because Git may collapse untracked directories in short status.
@@ -135,7 +135,7 @@ No JSON parse failure, no default Pal count mismatch, no formal Skill missing as
 
 ## 12. Maintainer Decisions Required
 
-- Confirm remote spelling `AgnetPal`.
+- Confirm the target repository.
 - Choose tag strategy for `v0.1.0-rc.1` / `v0.1.0-rc.2`.
 - Choose single commit versus split commit plan.
 - Review final staged diff.

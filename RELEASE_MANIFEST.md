@@ -47,7 +47,7 @@ Generated: 2026-06-25
 | Version | `v0.1.0-rc.1` |
 | Git tag | `v0.1.0-rc.1` |
 | Git commit hash observed for local tag | `b2db978ad816a74cb63ab05d48b19f12da4dcc1e` |
-| Git remote status observed | `origin https://github.com/AgentPal/AgnetPal.git` is configured for fetch and push; no push was performed during the local gate. |
+| Git remote status observed | `origin https://github.com/AgentPal/AgentPal.git` is configured for fetch and push; no push was performed during the local gate. |
 | GitHub Release status observed | No online GitHub Release was created or verified during the local gate. |
 | License | MIT |
 | Release type | Public release candidate |
@@ -148,7 +148,7 @@ R38 / R09 / R10 local checks:
 The final release gate should observe local Git state only until maintainers explicitly publish:
 
 - local tag `v0.1.0-rc.1` must point at the final intended release commit
-- remote `origin` is configured as `https://github.com/AgentPal/AgnetPal.git`
+- remote `origin` is configured as `https://github.com/AgentPal/AgentPal.git`
 - no push was performed during the local gate
 - no GitHub Release was created or verified
 - R12 did not stage, commit, tag, push, publish, or create a GitHub Release

@@ -123,7 +123,7 @@ Current-runtime evidence:
 Observed local Git evidence:
 
 - local tag `v0.1.0-rc.1` points to commit `b2db978ad816a74cb63ab05d48b19f12da4dcc1e`
-- remote `origin` is configured as `https://github.com/AgentPal/AgnetPal.git` for fetch and push
+- remote `origin` is configured as `https://github.com/AgentPal/AgentPal.git` for fetch and push
 - no push was performed during this pass
 - no online GitHub Release was created or verified during this pass
 - the working tree contains tracked modifications and untracked release-candidate assets that maintainers must review and stage intentionally
@@ -142,7 +142,7 @@ The remote URL spelling should be confirmed by maintainers before publishing.
 
 - The working tree is not clean; accepted release-candidate files still need maintainer staging and commit review.
 - The local tag predates the current uncommitted release-candidate changes unless maintainers retag after committing.
-- The configured remote URL contains `AgnetPal`; maintainers should confirm whether this spelling is intentional.
+- Maintainers should confirm the target repository before publishing.
 - No GitHub Release page was created or verified by this pass.
 - External links were not checked by an online link checker.
 

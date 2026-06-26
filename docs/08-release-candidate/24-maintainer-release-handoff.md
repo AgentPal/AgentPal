@@ -40,10 +40,10 @@ AgentPal v0.1.0-rc.1 is the documented release candidate line. The current local
 Observed remote:
 
 ```text
-origin = https://github.com/AgentPal/AgnetPal.git
+origin = https://github.com/AgentPal/AgentPal.git
 ```
 
-Maintainers must confirm whether `AgnetPal` is intentional before pushing.
+Maintainers must confirm the target repository before pushing.
 
 ## Tag Strategy
 
@@ -138,4 +138,3 @@ git push origin v0.1.0-rc.2
 ```
 
 Adjust tag commands based on the final tag strategy.
-

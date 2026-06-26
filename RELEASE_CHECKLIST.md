@@ -157,7 +157,7 @@ Use this section before entering `v0.2.0-rc.1` tag / push / GitHub Release work.
 - [ ] Local tag `v0.1.0-rc.1` points to the final intended release commit.
 - [ ] If no remote exists, create an empty GitHub repository before adding a remote.
 - [ ] Add or verify the intended remote.
-- [ ] Confirm whether the observed remote URL spelling `https://github.com/AgentPal/AgnetPal.git` is intentional.
+- [ ] Confirm the intended remote URL is `https://github.com/AgentPal/AgentPal.git`.
 - [ ] Confirm whether existing local tags `v0.1.0-rc.1` and `v0.1.0-rc.2` are both intentional before creating, moving, or publishing any release tag.
 - [ ] Review the full dirty worktree and stage only maintainer-approved release content.
 - [ ] Review `docs/08-release-candidate/22-dirty-worktree-stage-review.md` before staging.

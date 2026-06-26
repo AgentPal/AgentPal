@@ -10,7 +10,7 @@ This report classifies the current dirty worktree for human staging. It does not
 
 Observed commands:
 
-- `git remote -v`: `origin https://github.com/AgentPal/AgnetPal.git` for fetch and push.
+- `git remote -v`: `origin https://github.com/AgentPal/AgentPal.git` for fetch and push.
 - `git tag --list`: `v0.1.0-rc.1`, `v0.1.0-rc.2`.
 - `git log --oneline -n 10`: latest commit is `efcf4ef docs: clarify runtime subagent responsibilities`.
 - `git diff --name-only`: 133 tracked modified files before R14 report writes.
@@ -111,7 +111,7 @@ If they appear later, exclude them from release staging.
 
 Required human decisions:
 
-- Confirm whether remote spelling `https://github.com/AgentPal/AgnetPal.git` is intentional.
+- Confirm the intended remote URL is `https://github.com/AgentPal/AgentPal.git`.
 - Decide tag strategy for existing tags `v0.1.0-rc.1` and `v0.1.0-rc.2`.
 - Decide whether to stage all 9 default Pal asset additions as one release-prep commit or split them into themed commits.
 - Review any docs file with unusual or non-ASCII filename before staging.
@@ -140,4 +140,3 @@ Exclude:
 ## Need Maintainer Decision
 
 The worktree is suitable for maintainer stage review, but not for automatic staging. The next action is human selection of files, followed by staged diff review.
-

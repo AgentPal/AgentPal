@@ -11,7 +11,7 @@ AgentPal remains a Markdown / JSON / protocol Pal layer for existing agent runti
 - Official Pal task examples for all 9 bundled Pals, plus cross-Pal examples.
 - Minimal Capability Inventory profiles as manual AI judgement inputs.
 - PalBench Light as a 24-case qualitative release regression suite with scoring rubric.
-- Runtime Adapter stability guidance, troubleshooting prompt cards, upgrade notes, and regression coverage for thin project binding.
+- Runtime Adapter stability and troubleshooting guidance, prompt cards, upgrade notes, and regression coverage for thin project binding.
 - v0.2 readiness, capability summary, and integration matrix records.
 
 ## Current Status

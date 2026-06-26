@@ -31,7 +31,7 @@ Observed commands:
   - `b2e255e docs: add PalSmith governance docs and indexes`
   - `d2f4b61 docs: strengthen owner judgement and Mira onboarding`
   - `b2db978 refactor: centralize AgentPal core gates for runtime adapters`
-- `git remote -v`: `origin https://github.com/AgentPal/AgnetPal.git` for fetch and push.
+- `git remote -v`: `origin https://github.com/AgentPal/AgentPal.git` for fetch and push.
 - `git tag --list`: `v0.1.0-rc.1`, `v0.1.0-rc.2`.
 - `git diff --stat`: 133 tracked files changed, 2971 insertions, 2737 deletions before R12 report writes.
 - `git diff --check`: passed; Git emitted LF-to-CRLF working-copy warnings only.
@@ -74,5 +74,4 @@ Risk path counts:
 
 ## Baseline Judgement
 
-No P0/P1 release-content blocker was found in the baseline checks. The worktree is intentionally not clean and must not be treated as publish-ready until a maintainer reviews the staged scope. The configured remote spelling `AgnetPal` and the existence of both `v0.1.0-rc.1` and `v0.1.0-rc.2` are release-operation risks that require explicit maintainer confirmation before tag or GitHub Release work.
-
+No P0/P1 release-content blocker was found in the baseline checks. The worktree is intentionally not clean and must not be treated as publish-ready until a maintainer reviews the staged scope. The target repository and the existence of both `v0.1.0-rc.1` and `v0.1.0-rc.2` are release-operation risks that require explicit maintainer confirmation before tag or GitHub Release work.
