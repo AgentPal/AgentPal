@@ -4,13 +4,15 @@
 
 Current for AgentPal `v0.1.0-rc.1`.
 
-Pal import and export are Pal asset governance tasks. The official owner Pal is PalSmith (`/pal PalSmith`), while the host Runtime performs actual file operations and must return evidence.
+Pal import and export are Pal asset governance tasks. The official owner Pal is PalSmith (`/pal PalSmith`), while the current Agent Runtime performs actual file operations and must return evidence.
+
+AgentPal does not include a downloader, packer, scanner, validator, importer, exporter, installer, daemon, or CLI for Pal assets.
 
 ## Import Rule
 
 All external imports are untrusted by default and must enter staging before installation.
 
-Supported sources:
+Supported source types for a Runtime Task Package:
 
 - GitHub repository URL
 - GitHub repository subdirectory
@@ -21,43 +23,49 @@ Supported sources:
 - AgentPal internal Pal copy
 - project `.agentpal/pals`
 
-PalSmith must classify imports as Standard Pal Pack, Pal Team Pack, ordinary Skill, Knowledge Pack, Persona Pack, Tool Pack, Mixed Resource Pack, or Unknown Resource.
+PalSmith classifies imports as Standard Pal Pack, Pal Team Pack, ordinary Skill, Knowledge Pack, Persona Pack, Tool Pack, Mixed Resource Pack, or Unknown Resource.
 
-Only valid Pal Packs can enter `pals/`, contacts, and registry. Ordinary Skills, tools, models, plugins, MCP servers, external Agents, raw repositories, knowledge packs, and persona packs do not become Pal contacts.
+Only valid Pal Packs can enter `pals/`, contacts, and registry. Ordinary Skills, tools, models, plugins, MCP servers, external Agents, raw repositories, Knowledge Packs, and Persona Packs do not become Pal contacts.
 
-## Import Risk Checks
+## Pal Import Staging Task Package
 
-Before installation, check for executable scripts, install scripts, binaries, hidden directories, external links, `.env`, token/key/password strings, private memory, state, reports, logs, incompatible schema, overwrite attempts, Pal ID conflicts, unknown license, large files, submodules, and external dependencies.
+The staging task package tells the current runtime:
 
-Default recommendation:
+- source to read, copy, download, or extract
+- staging target
+- allowed read paths
+- allowed write paths
+- forbidden paths
+- files that must not be executed
+- risk checks
+- expected import report
+- confirmation questions
 
-- stage first
-- install to `pals/imported/` only after confirmation
-- do not import `memory / state / reports`
-- do not automatically add to contacts
-- isolate risk files
+The runtime must not execute imported scripts, directly install into formal `pals/`, automatically write contacts, automatically write registry, or import `memory/user/` and `memory/project/` into a public Pal Pack.
 
-## Export Types
+## Pal Install Task Package
 
-PalSmith supports five export modes:
+After staging review, PalSmith may generate an install task package. Installation still requires user confirmation.
 
-1. Clean Pack Export
-2. With Memory Export
-3. Template Export
-4. Team Export
-5. Backup Export
+Risk files such as scripts, executables, private memory, state, reports, logs, credentials, and repository metadata should be excluded or quarantined according to the task package. Registry and contacts writes remain separate task packages.
 
-Users must choose a mode before export. Clean Pack Export is the default recommendation for sharing or public release.
+## Registry And Contacts Update Task Packages
 
-## Clean Pack Export
+Registry updates require a standard Pal Pack and a JSON diff proposal.
+
+Contacts updates require a standard Pal Pack, discoverable/contactable collaboration flags, at least one allowed collaboration mode, and explicit confirmation.
+
+Ordinary Skills, Knowledge Packs, Tool Packs, raw repositories, and unknown resources must not enter contacts.
+
+## Clean Pal Export Task Package
 
 Clean Pack Export includes public-safe Pal files and excludes private runtime data.
 
 Include `PAL.md`, `SKILL.md`, `AGENTS.md`, `pal.json`, `README.md`, `CHANGELOG.md`, `LICENSE`, `identity/`, `core/`, `knowledge/`, `skills/`, `runbooks/`, `workflows/`, `evals/`, `export-manifest.json`, and `export-report.md`.
 
-Exclude `memory/user/`, `memory/project/`, `state/`, `reports/`, private reasoning logs, private contacts history, runtime private logs, user private files, `.env`, credentials, and tokens.
+Exclude `memory/user/`, `memory/project/`, `state/`, `reports/`, private reasoning logs, private contacts history, runtime private logs, user private files, `.env`, credentials, tokens, executable scripts, logs, cache, and temporary files.
 
-## With Memory Export
+## With Memory Export Task Package
 
 With Memory Export may include private memory, state, reports, and usage history. It requires strong confirmation and a follow-up question about which memory types to include.
 
@@ -65,4 +73,4 @@ Do not use With Memory Export for public sharing unless the user explicitly conf
 
 ## Export Manifest
 
-Each export plan should include an `export-manifest.json` with schema, export type, timestamps, Pal identity, source path, included and excluded sections, memory/state/report flags, private data risk, license, compatible runtimes, and checksum.
+Each export task package should request an `export-manifest.json` with schema, export type, timestamps, Pal identity, source path, included and excluded sections, memory/state/report flags, private data risk, license, compatible runtimes, and checksum or runtime evidence.

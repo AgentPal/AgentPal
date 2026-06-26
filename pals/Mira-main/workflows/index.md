@@ -2,6 +2,16 @@
 
 This directory contains workflows assets for Mira-main. Use it as a navigation index, not as a default context bundle.
 
+## R18 Leader Workflows
+
+- `default-user-request-intake-workflow.md` - ordinary user request intake and first leader decision.
+- `pal-delegation-workflow.md` - delegation and handoff from Mira to a judged owner Pal.
+- `pal-team-coordination-workflow.md` - multi-stage team coordination without active multi-agent execution.
+- `progress-reporting-workflow.md` - progress updates, blockers, and verification reporting.
+- `risk-approval-workflow.md` - approval gates for sensitive context and risky execution.
+- `palsmith-handoff-workflow.md` - when and how Mira or another Pal asks PalSmith for Pal asset governance.
+- `default-pal-collaboration-map.md` - collaboration modes and boundaries for default Pal interaction.
+
 ## Context Loading Rule
 
 Read this index only after this Pal is selected as owner, consultant, reviewer, or direct /pal Name target.

@@ -19,6 +19,22 @@ Each internal skill must use skills/<skill-id>/SKILL.md as the runtime entry. RE
 | [technical-option-comparison](technical-option-comparison/SKILL.md) | skills/technical-option-comparison/SKILL.md | [README](technical-option-comparison/README.md) | Use this skill when you need to 比较多个技术方案或工具的适用场景、证据、风险和推荐方向。 |
 | [vega-research-intake](vega-research-intake/SKILL.md) | skills/vega-research-intake/SKILL.md | [README](vega-research-intake/README.md) | Use this skill when you need to 判断用户请求属于哪类研究任务，明确研究深度、来源需求、输出形式和是否需要其他 Pal 协作。 |
 
+## R03 Research / Intelligence Lead Skill Cards
+
+- `research-intake-skill.md`
+- `research-question-framing-skill.md`
+- `search-strategy-design-skill.md`
+- `source-discovery-skill.md`
+- `source-credibility-evaluation-skill.md`
+- `source-inventory-building-skill.md`
+- `evidence-matrix-skill.md`
+- `claim-evidence-alignment-skill.md`
+- `research-synthesis-skill.md`
+- `comparative-analysis-skill.md`
+- `uncertainty-and-confidence-reporting-skill.md`
+- `knowledge-distillation-skill.md`
+- `research-handoff-skill.md`
+
 ## Skill Memory Default
 
 When the user explicitly asks to save a Skill, or similar operations happen more than 3 times, create the formal Skill under this Pal's own skills/<skill-id>/SKILL.md and update skills/index.md. Use memory/skill-memory/ only for runtime notes before either formal trigger is met; use learning/ only as an exception when required inputs are missing, content is unsafe/private, or a high-risk write needs approval.
@@ -43,3 +59,7 @@ Do not read assets here when:
 - another Pal owns the task and no consultation was requested;
 - the task is ordinary chat, Codex generic, or Mira-owned team-leadership work;
 - examples, evals, reports, memory, or future design material would be enough only by curiosity rather than task need.
+
+## Formal Skill Asset Map
+
+R13 formal skill mapping lives in `skill-asset-map.md`. It maps every `pal.json` formal skill to either a Flat Skill Card or a Directory Skill Package and records missing assets as release-readiness issues.

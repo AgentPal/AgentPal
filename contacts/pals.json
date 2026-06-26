@@ -13,6 +13,7 @@
       "role": "main-leader-conductor",
       "type": "pal-pack",
       "is_main_pal": true,
+      "no_runtime_code": true,
       "aliases": [
         "Mira",
         "mira",
@@ -34,9 +35,10 @@
       "display_name": "Atlas",
       "directory_name": "Atlas-developer",
       "path": "pals/Atlas-developer",
-      "role": "developer",
+      "role": "developer-implementation-lead",
       "type": "pal-pack",
       "is_main_pal": false,
+      "no_runtime_code": true,
       "aliases": [
         "Atlas",
         "atlas",
@@ -58,7 +60,9 @@
       "display_name": "Vega",
       "directory_name": "Vega-research",
       "path": "pals/Vega-research",
-      "role": "research",
+      "role": "research-intelligence-lead",
+      "description": "Research / Intelligence Lead for research intake, question framing, search plan design, source inventory, evidence matrix, synthesis, uncertainty reporting, knowledge distillation, and research handoff.",
+      "no_runtime_code": true,
       "type": "pal-pack",
       "is_main_pal": false,
       "aliases": [
@@ -82,7 +86,9 @@
       "display_name": "Rhea",
       "directory_name": "Rhea-system",
       "path": "pals/Rhea-system",
-      "role": "system",
+      "role": "system-runtime-safety-lead",
+      "description": "System / Runtime Safety Lead for runtime capability assessment, permission boundary review, no-code boundary audit, file safety, risk classification, approval gates, execution evidence review, release safety, rollback readiness, and incident review.",
+      "no_runtime_code": true,
       "type": "pal-pack",
       "is_main_pal": false,
       "aliases": [
@@ -102,11 +108,40 @@
       ]
     },
     {
+      "id": "palsmith-pal-governor",
+      "display_name": "PalSmith",
+      "directory_name": "PalSmith-pal-governor",
+      "path": "pals/PalSmith-pal-governor",
+      "role": "pal-asset-governor",
+      "type": "pal-pack",
+      "is_main_pal": false,
+      "no_runtime_code": true,
+      "aliases": [
+        "PalSmith",
+        "palsmith",
+        "Pal Smith"
+      ],
+      "direct_call": "/pal PalSmith",
+      "discoverable": true,
+      "contactable": true,
+      "allowed_modes": [
+        "consult",
+        "delegate",
+        "handoff",
+        "joint_work"
+      ],
+      "sensitive_context_requires_approval": true,
+      "memory_access_requires_approval": true,
+      "public_export_requires_privacy_check": true
+    },
+    {
       "id": "quinn-quality",
       "display_name": "Quinn",
       "directory_name": "Quinn-quality",
       "path": "pals/Quinn-quality",
-      "role": "quality",
+      "role": "quality-verification-lead",
+      "description": "Quality / Verification Lead for acceptance criteria, Definition of Done, test strategy, evidence review, false completion detection, regression gates, release quality gates, risk severity, not-run handling, quality reports, and cross-Pal review.",
+      "no_runtime_code": true,
       "type": "pal-pack",
       "is_main_pal": false,
       "aliases": [
@@ -130,7 +165,9 @@
       "display_name": "Morgan",
       "directory_name": "Morgan-document",
       "path": "pals/Morgan-document",
-      "role": "document",
+      "role": "document-file-workflow-lead",
+      "description": "Document / File Workflow Lead for document-role judgement, information architecture, source-material organization, content preservation, Markdown documentation, Office/PDF output task packages, file workflow design, document quality review, versioned documentation, release notes, privacy-sensitive document review, and document handoff.",
+      "no_runtime_code": true,
       "type": "pal-pack",
       "is_main_pal": false,
       "aliases": [
@@ -154,7 +191,9 @@
       "display_name": "Harper",
       "directory_name": "Harper-writing",
       "path": "pals/Harper-writing",
-      "role": "writing",
+      "role": "writing-content-craft-lead",
+      "description": "Writing / Content Craft Lead for writing-role judgement, writing intake, audience-and-goal-framing, style-and-voice-control, long-form-structure, short-form-social-content, copywriting-and-persuasion, narrative-storytelling, editing-and-rewriting, plain-language-clarity, brand-voice-consistency, content-preservation-in-writing, fact-boundary-and-claim-safety, content-quality-self-review, and cross-Pal content handoff.",
+      "no_runtime_code": true,
       "type": "pal-pack",
       "is_main_pal": false,
       "aliases": [
@@ -178,9 +217,10 @@
       "display_name": "Nova",
       "directory_name": "Nova-product",
       "path": "pals/Nova-product",
-      "role": "product",
+      "role": "product-strategy-lead",
       "type": "pal-pack",
       "is_main_pal": false,
+      "no_runtime_code": true,
       "aliases": [
         "Nova",
         "nova",

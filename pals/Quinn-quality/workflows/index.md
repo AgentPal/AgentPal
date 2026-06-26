@@ -1,23 +1,22 @@
-# Workflows Index
+# Quinn Workflows Index
 
-This directory contains workflows assets for Quinn-quality. Use it as a navigation index, not as a default context bundle.
+Status: R-DefaultPal-05.
+
+## R05 Workflows
+
+- `workflows/quality-request-intake-workflow.md`
+- `workflows/acceptance-criteria-workflow.md`
+- `workflows/evidence-review-workflow.md`
+- `workflows/regression-gate-workflow.md`
+- `workflows/release-quality-gate-workflow.md`
+- `workflows/cross-pal-quality-review-workflow.md`
+- `workflows/quality-reporting-workflow.md`
+- `workflows/collaboration-with-default-pals.md`
+
+## Legacy Workflows
+
+- `workflows/quality-gate-lifecycle/README.md`
 
 ## Context Loading Rule
 
-Read this index only after this Pal is selected as owner, consultant, reviewer, or direct /pal Name target.
-
-Use this index to choose the smallest relevant asset slice. Do not load every file in this directory by default.
-
-Read assets here when:
-
-- the current task requires this Pal's professional method;
-- the output contract needs a specific skill, knowledge card, runbook, or workflow;
-- the user asks which assets were used;
-- an eval or release check is inspecting this Pal.
-
-Do not read assets here when:
-
-- Mira is only doing initial routing;
-- another Pal owns the task and no consultation was requested;
-- the task is ordinary chat, Codex generic, or Mira-owned team-leadership work;
-- examples, evals, reports, memory, or future design material would be enough only by curiosity rather than task need.
+Use this index for Quinn-owned quality work only. Do not load every workflow by default.

@@ -1,23 +1,15 @@
-# Workflows Index
+# Harper Workflows Index
 
-This directory contains workflows assets for Harper-writing. Use it as a navigation index, not as a default context bundle.
+Harper workflows are repeatable no-code procedures for writing and content craft.
 
-## Context Loading Rule
+- [writing-request-intake-workflow](writing-request-intake-workflow.md)
+- [voice-extraction-workflow](voice-extraction-workflow.md)
+- [long-form-draft-workflow](long-form-draft-workflow.md)
+- [short-form-content-workflow](short-form-content-workflow.md)
+- [copywriting-workflow](copywriting-workflow.md)
+- [editing-rewriting-workflow](editing-rewriting-workflow.md)
+- [fact-boundary-review-workflow](fact-boundary-review-workflow.md)
+- [content-quality-review-workflow](content-quality-review-workflow.md)
+- [collaboration-with-default-pals](collaboration-with-default-pals.md)
 
-Read this index only after this Pal is selected as owner, consultant, reviewer, or direct /pal Name target.
-
-Use this index to choose the smallest relevant asset slice. Do not load every file in this directory by default.
-
-Read assets here when:
-
-- the current task requires this Pal's professional method;
-- the output contract needs a specific skill, knowledge card, runbook, or workflow;
-- the user asks which assets were used;
-- an eval or release check is inspecting this Pal.
-
-Do not read assets here when:
-
-- Mira is only doing initial routing;
-- another Pal owns the task and no consultation was requested;
-- the task is ordinary chat, Codex generic, or Mira-owned team-leadership work;
-- examples, evals, reports, memory, or future design material would be enough only by curiosity rather than task need.
+Use AI judgement before consult / delegate / handoff. Keep no_runtime_code.

@@ -21,6 +21,10 @@ This directory is the tutorial entry for creating your own Pal Pack. It assumes 
 11. [Add evals](10-add-evals.md)
 12. [Publish your Pal Pack](11-publish-your-pal-pack.md)
 13. [Use PalSmith](12-use-palsmith.md)
+14. [PalSmith end-to-end workflows](13-palsmith-end-to-end-workflows.md)
+15. [PalSmith Pal lifecycle](14-palsmith-pal-lifecycle.md)
+16. [PalSmith quickstart AI team](15-palsmith-quickstart-ai-team.md)
+17. [PalSmith demo script](16-palsmith-demo-script.md)
 
 ## Minimum Goal
 

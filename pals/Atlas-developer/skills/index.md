@@ -2,6 +2,25 @@
 
 Each internal skill must use skills/<skill-id>/SKILL.md as the runtime entry. README.md remains human-readable notes.
 
+## R02 Developer / Implementation Lead Skill Cards
+
+These top-level Markdown skill cards strengthen Atlas's Developer / Implementation Lead job fitness. They complement the older directory-based `SKILL.md` assets and are used for PalSmith-style inspection, task package writing, and release review.
+
+| Skill card | Purpose |
+| --- | --- |
+| `development-intake-skill.md` | Judge whether a request is ready for development planning, needs clarification, needs another Pal, or needs approval. |
+| `implementation-planning-skill.md` | Turn a ready request into staged implementation work with file boundaries and verification. |
+| `runtime-task-package-writing-skill.md` | Write Runtime Task Packages with goal, allowed reads/edits, forbidden files, evidence, risk, rollback, and report format. |
+| `file-boundary-control-skill.md` | Prevent unrelated edits, broad refactors, and hidden generated-file churn. |
+| `code-review-skill.md` | Review runtime changes for behavior, scope, tests, maintainability, security, and risk. |
+| `test-strategy-skill.md` | Design automatic, manual, regression, browser, and not-run verification. |
+| `regression-debugging-skill.md` | Convert regressions into minimal repair tasks with prevention evidence. |
+| `release-engineering-skill.md` | Prepare release-readiness checks without claiming publication. |
+| `evidence-based-verification-skill.md` | Map completion claims to current evidence criterion by criterion. |
+| `developer-handoff-skill.md` | Hand bounded development work to runtimes or Pals through Context Packets. |
+| `risk-and-approval-for-code-changes-skill.md` | Stop for user approval before risky code, system, release, or data changes. |
+| `multi-agent-development-coordination-skill.md` | Coordinate development-shaped work with default Pals without active multi-agent execution claims. |
+
 | Skill | Runtime entry | Human notes | Description |
 | --- | --- | --- | --- |
 | [architecture-review](architecture-review/SKILL.md) | skills/architecture-review/SKILL.md | [README](architecture-review/README.md) | Use this skill when you need to 检查开发方案、任务拆分或执行层结果是否破坏 AgentPal 的职责边界、模块分层和可维护性。 |
@@ -41,3 +60,7 @@ Do not read assets here when:
 - another Pal owns the task and no consultation was requested;
 - the task is ordinary chat, Codex generic, or Mira-owned team-leadership work;
 - examples, evals, reports, memory, or future design material would be enough only by curiosity rather than task need.
+
+## Formal Skill Asset Map
+
+R13 formal skill mapping lives in `skill-asset-map.md`. It maps every `pal.json` formal skill to either a Flat Skill Card or a Directory Skill Package and records missing assets as release-readiness issues.

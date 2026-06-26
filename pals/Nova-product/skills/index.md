@@ -1,43 +1,46 @@
 # Nova Skills Index
 
-Each internal skill must use skills/<skill-id>/SKILL.md as the runtime entry. README.md remains human-readable notes.
+Nova's skills are no-code Markdown assets for Product / Strategy Lead work.
 
-| Skill | Runtime entry | Human notes | Description |
-| --- | --- | --- | --- |
-| [acceptance-criteria-writer](acceptance-criteria-writer/SKILL.md) | skills/acceptance-criteria-writer/SKILL.md | [README](acceptance-criteria-writer/README.md) | Use this skill when you need to Create testable, observable acceptance criteria for product requirements, user stories, handoffs, and runtime tasks. |
-| [decision-log-writer](decision-log-writer/SKILL.md) | skills/decision-log-writer/SKILL.md | [README](decision-log-writer/README.md) | Use this skill when you need to Record product decisions, alternatives, rationale, assumptions, tradeoffs, and follow-up review points. |
-| [developer-handoff](developer-handoff/SKILL.md) | skills/developer-handoff/SKILL.md | [README](developer-handoff/README.md) | Use this skill when you need to Package product decisions into a clear handoff for suitable implementation collaborator, Codex, Claude Code, OpenHands, Gemini CLI, DeepSeek-TUI, or AgentPal runtime. |
-| [feature-prioritization](feature-prioritization/SKILL.md) | skills/feature-prioritization/SKILL.md | [README](feature-prioritization/README.md) | Use this skill when you need to Rank candidate features by user value, product stage, development cost, risk, dependencies, and AgentPal boundary impact. |
-| [idea-intake](idea-intake/SKILL.md) | skills/idea-intake/SKILL.md | [README](idea-intake/README.md) | Use this skill when you need to Classify an incoming user idea, feature request, product direction, project, automation request, Pal/Agent request, or development request before Nova chooses the next Skill. |
-| [mvp-slicing](mvp-slicing/SKILL.md) | skills/mvp-slicing/SKILL.md | [README](mvp-slicing/README.md) | Use this skill when you need to Choose the right first release shape: validation version, lightweight complete working version, complete platform version, or long-term productized version. |
-| [prd-writer](prd-writer/SKILL.md) | skills/prd-writer/SKILL.md | [README](prd-writer/README.md) | Use this skill when you need to Turn a defined product direction into a structured Product Requirements Document that can be reviewed, accepted, and handed off. |
-| [problem-definition](problem-definition/SKILL.md) | skills/problem-definition/SKILL.md | [README](problem-definition/README.md) | Use this skill when you need to Turn "I want a feature" into a clear problem statement that explains who has the problem, when it happens, what they do now, and why it is worth solving. |
-| [product-feedback-synthesis](product-feedback-synthesis/SKILL.md) | skills/product-feedback-synthesis/SKILL.md | [README](product-feedback-synthesis/README.md) | Use this skill when you need to Turn raw feedback, user comments, bug-like complaints, feature requests, and stakeholder opinions into themes, product signals, decisions, and next actions. |
-| [risk-and-assumption-review](risk-and-assumption-review/SKILL.md) | skills/risk-and-assumption-review/SKILL.md | [README](risk-and-assumption-review/README.md) | Use this skill when you need to Identify unvalidated assumptions, product risks, privacy/compliance issues, overbuild signals, technical uncertainty, and evidence gaps before development or release. |
-| [scope-and-boundary](scope-and-boundary/SKILL.md) | skills/scope-and-boundary/SKILL.md | [README](scope-and-boundary/README.md) | Use this skill when you need to Define what version one includes, what it excludes, what is deferred, and what would make the product overbuilt. |
-| [user-scenario-mapping](user-scenario-mapping/SKILL.md) | skills/user-scenario-mapping/SKILL.md | [README](user-scenario-mapping/README.md) | Use this skill when you need to Map who will use the product, when they need it, what they are trying to accomplish, and what must be true for them to switch. |
+## Current Formal Skills
 
-## Skill Memory Default
+Legacy foundational skill directories remain valid:
 
-When the user explicitly asks to save a Skill, or similar operations happen more than 3 times, create the formal Skill under this Pal's own skills/<skill-id>/SKILL.md and update skills/index.md. Use memory/skill-memory/ only for runtime notes before either formal trigger is met; use learning/ only as an exception when required inputs are missing, content is unsafe/private, or a high-risk write needs approval.
+- `idea-intake`
+- `problem-definition`
+- `user-scenario-mapping`
+- `scope-and-boundary`
+- `mvp-slicing`
+- `prd-writer`
+- `feature-prioritization`
+- `acceptance-criteria-writer`
+- `developer-handoff`
+- `decision-log-writer`
+- `risk-and-assumption-review`
+- `product-feedback-synthesis`
 
+Lead-level flat skills added for this round:
 
-## Context Loading Rule
+- [product-intake](product-intake-skill.md)
+- [problem-framing](problem-framing-skill.md)
+- [user-segment-persona](user-segment-persona-skill.md)
+- [jobs-to-be-done](jobs-to-be-done-skill.md)
+- [value-proposition](value-proposition-skill.md)
+- [requirements-discovery](requirements-discovery-skill.md)
+- [scope-control](scope-control-skill.md)
+- [prioritization](prioritization-skill.md)
+- [roadmap-planning](roadmap-planning-skill.md)
+- [prd-product-brief](prd-product-brief-skill.md)
+- [mvp-release-scope](mvp-release-scope-skill.md)
+- [product-metrics-feedback](product-metrics-feedback-skill.md)
+- [risk-assumption-mapping](risk-assumption-mapping-skill.md)
+- [go-to-market-alignment](go-to-market-alignment-skill.md)
+- [product-handoff](product-handoff-skill.md)
 
-Read this index only after this Pal is selected as owner, consultant, reviewer, or direct /pal Name target.
+## Required Judgement Anchors
 
-Use this index to choose the smallest relevant asset slice. Do not load every file in this directory by default.
+Use AI judgement before consult / delegate / handoff. Nova keeps the no_runtime_code boundary and only asks the Runtime to edit Markdown or JSON Pal assets when explicitly maintaining Nova.
 
-Read assets here when:
+## Formal Skill Asset Map
 
-- the current task requires this Pal's professional method;
-- the output contract needs a specific skill, knowledge card, runbook, or workflow;
-- the user asks which assets were used;
-- an eval or release check is inspecting this Pal.
-
-Do not read assets here when:
-
-- Mira is only doing initial routing;
-- another Pal owns the task and no consultation was requested;
-- the task is ordinary chat, Codex generic, or Mira-owned team-leadership work;
-- examples, evals, reports, memory, or future design material would be enough only by curiosity rather than task need.
+R13 formal skill mapping lives in `skill-asset-map.md`. It maps every `pal.json` formal skill to either a Flat Skill Card or a Directory Skill Package and records missing assets as release-readiness issues.

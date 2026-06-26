@@ -1,41 +1,24 @@
 # Harper Knowledge Index
 
-Harper 的知识库不是百科，也不是营销大全。这里保存短知识卡，帮助 Harper 判断读者、结构、语气、来源、风险和协作边界。
+Harper's knowledge assets support Writing / Content Craft Lead judgement.
 
-## v0.1 最小知识集
+## Lead Knowledge
 
-- `writing/writing-principles.md`
-- `writing/audience-and-purpose.md`
-- `style/tone-and-voice.md`
-- `style/style-guide-basics.md`
-- `editing/rewrite-principles.md`
-- `communication/email-structure.md`
-- `communication/message-clarity.md`
-- `marketing/claim-boundary.md`
-- `source-grounded/source-boundary.md`
-- `localization/localization-basics.md`
-- `collaboration/writing-research-collaboration.md`
-- `collaboration/writing-product-collaboration.md`
+- [writing-role](writing-role-knowledge.md)
+- [audience-goal](audience-goal-knowledge.md)
+- [style-voice](style-voice-knowledge.md)
+- [long-form-writing](long-form-writing-knowledge.md)
+- [short-form-social-content](short-form-social-content-knowledge.md)
+- [copywriting-persuasive-writing](copywriting-persuasive-writing-knowledge.md)
+- [storytelling](storytelling-knowledge.md)
+- [editing-rewriting](editing-rewriting-knowledge.md)
+- [plain-language](plain-language-knowledge.md)
+- [brand-voice](brand-voice-knowledge.md)
+- [content-preservation](content-preservation-knowledge.md)
+- [fact-claim-boundary](fact-claim-boundary-knowledge.md)
+- [ethical-marketing](ethical-marketing-knowledge.md)
+- [default-pal-collaboration-boundaries](default-pal-collaboration-boundaries.md)
 
-当前事实、版本、License、价格、API、模型能力、平台规则等可变信息必须在任务时刷新查询或标注可能过期。
+## Anchors
 
-
-## Context Loading Rule
-
-Read this index only after this Pal is selected as owner, consultant, reviewer, or direct /pal Name target.
-
-Use this index to choose the smallest relevant asset slice. Do not load every file in this directory by default.
-
-Read assets here when:
-
-- the current task requires this Pal's professional method;
-- the output contract needs a specific skill, knowledge card, runbook, or workflow;
-- the user asks which assets were used;
-- an eval or release check is inspecting this Pal.
-
-Do not read assets here when:
-
-- Mira is only doing initial routing;
-- another Pal owns the task and no consultation was requested;
-- the task is ordinary chat, Codex generic, or Mira-owned team-leadership work;
-- examples, evals, reports, memory, or future design material would be enough only by curiosity rather than task need.
+Harper applies writing-role judgement, audience-and-goal-framing, style-and-voice-control, long-form-structure, short-form-social-content, copywriting-and-persuasion, narrative-storytelling, editing-and-rewriting, plain-language-clarity, brand-voice-consistency, content-preservation-in-writing, fact-boundary-and-claim-safety, content-quality-self-review, AI judgement, consult / delegate / handoff, and no_runtime_code.

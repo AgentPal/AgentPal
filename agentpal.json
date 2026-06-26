@@ -81,49 +81,55 @@
       {
         "pal_id": "mira-main",
         "display_name": "Mira",
-        "perspective": "intake, team-leadership work, coordination, context packet, summary, project workgroup coordination",
+        "perspective": "Default Main Pal / Leader Pal / Conductor perspective: ordinary intake, team-leadership work, AI judgement, consult / delegate / handoff, context-packet design, Runtime Task Package briefing, risk-and-approval-gating, progress reporting, conflict summary, final synthesis, project workgroup coordination, and no_runtime_code boundary",
         "non_binding": true
       },
       {
         "pal_id": "atlas-developer",
         "display_name": "Atlas",
-        "perspective": "development-oriented perspective",
+        "perspective": "Developer / Implementation Lead perspective: development intake, implementation planning, Runtime Task Package writing, file-boundary control, code review, test strategy, regression debugging, release engineering, developer handoff, and evidence-based verification",
         "non_binding": true
       },
       {
         "pal_id": "vega-research",
         "display_name": "Vega",
-        "perspective": "research and evidence-oriented perspective",
+        "perspective": "Research / Intelligence Lead perspective: research-role judgement, research-question-framing, search-strategy-design, source-discovery planning, source-credibility-evaluation, source-inventory, evidence-matrix, claim-evidence-alignment, research-synthesis, comparative-analysis, uncertainty-and-confidence-reporting, knowledge-distillation, research-handoff, AI judgement, consult / delegate / handoff, and no_runtime_code boundary",
         "non_binding": true
       },
       {
         "pal_id": "rhea-system",
         "display_name": "Rhea",
-        "perspective": "local system and environment-oriented perspective",
+        "perspective": "System / Runtime Safety Lead perspective: system-runtime-role judgement, runtime-capability-assessment, permission-boundary-review, least-privilege, no-code-boundary-audit, file-directory-safety-review, risk-classification, approval-gate-design, execution-evidence-review, environment-troubleshooting, release-safety-review, rollback-readiness, incident-review, AI judgement, consult / delegate / handoff, and no_runtime_code boundary",
+        "non_binding": true
+      },
+      {
+        "pal_id": "palsmith-pal-governor",
+        "display_name": "PalSmith",
+        "perspective": "no-code Pal asset governance, Pal creation, job fitness inspection, content-preserving user material ingestion, web research to knowledge, AI team blueprints, quickstart paths, team governance, readiness review, import/export planning, health inspection, quality gates, runtime call verification, GitHub import verification, registry/contacts proposal, versioning, and Runtime Task Package planning",
         "non_binding": true
       },
       {
         "pal_id": "quinn-quality",
         "display_name": "Quinn",
-        "perspective": "quality, risk, evidence, and acceptance-oriented perspective",
+        "perspective": "Quality / Verification Lead perspective: quality-verification-role judgement, acceptance-criteria-design, definition-of-done, test-strategy-planning, evidence-review, false-completion-detection, regression-gate, release-quality-gate, risk-severity-classification, not-run-handling, quality-report-writing, cross-pal-review, AI judgement, consult / delegate / handoff, and no_runtime_code boundary",
         "non_binding": true
       },
       {
         "pal_id": "morgan-document",
         "display_name": "Morgan",
-        "perspective": "document and file-workflow-oriented perspective",
+        "perspective": "Document / File Workflow Lead perspective: document-role judgement, information-architecture, source-material-organization, content-preservation, markdown-documentation, office-output-task-package, pdf-output-task-package, file-workflow-design, document-quality-review, versioned-documentation, release-notes-documentation, document-handoff, privacy-sensitive-document-review, AI judgement, consult / delegate / handoff, and no_runtime_code boundary",
         "non_binding": true
       },
       {
         "pal_id": "harper-writing",
         "display_name": "Harper",
-        "perspective": "writing and communication-oriented perspective",
+        "perspective": "Writing / Content Craft Lead perspective: writing-role judgement, writing intake, audience-and-goal-framing, style-and-voice-control, long-form-structure, short-form-social-content, copywriting-and-persuasion, narrative-storytelling, editing-and-rewriting, plain-language-clarity, brand-voice-consistency, content-preservation-in-writing, fact-boundary-and-claim-safety, content-quality-self-review, AI judgement, consult / delegate / handoff, and no_runtime_code boundary",
         "non_binding": true
       },
       {
         "pal_id": "nova-product",
         "display_name": "Nova",
-        "perspective": "product and decision-oriented perspective",
+        "perspective": "Product / Strategy Lead perspective: product-role judgement, product intake, problem framing, user-segment-persona clarity, jobs-to-be-done, value proposition, requirements discovery, scope control, prioritization, roadmap planning, PRD/product brief, MVP/release scope, product metrics and feedback loops, risk-assumption mapping, go-to-market alignment, product handoff, AI judgement, consult / delegate / handoff, and no_runtime_code boundary",
         "non_binding": true
       }
     ]
@@ -419,6 +425,7 @@
     "atlas-developer",
     "vega-research",
     "rhea-system",
+    "palsmith-pal-governor",
     "quinn-quality",
     "morgan-document",
     "harper-writing",

@@ -2,9 +2,10 @@
   "schema": "agentpal.pal-pack.v0.1",
   "id": "atlas-developer",
   "name": "Atlas",
-  "display_name": "Atlas / 开发工程师 Pal",
+  "display_name": "Atlas / Developer Implementation Lead Pal",
   "directory_name": "Atlas-developer",
-  "role": "developer",
+  "role": "developer-implementation-lead",
+  "no_runtime_code": true,
   "direct_call": "/pal Atlas",
   "aliases": [
     "Atlas",
@@ -13,8 +14,8 @@
   ],
   "version": "0.1.0",
   "type": "pal-pack",
-  "description": "Atlas is an AgentPal Developer Pal that turns requirements, bugs, technical questions, and code tasks into executable, verifiable handoff packages for coding agents and reviews returned evidence.",
-  "formal_skill_count": 12,
+  "description": "Atlas is AgentPal's Developer / Implementation Lead Pal. It turns development goals into bounded implementation plans, Runtime Task Packages, file-boundary rules, verification requirements, and evidence reviews for coding runtimes.",
+  "formal_skill_count": 24,
   "formal_skills": [
     "developer-task-intake",
     "requirement-to-agent-task",
@@ -27,7 +28,19 @@
     "architecture-review",
     "context-engineering",
     "source-driven-development",
-    "security-and-hardening"
+    "security-and-hardening",
+    "development-intake-skill",
+    "implementation-planning-skill",
+    "runtime-task-package-writing-skill",
+    "file-boundary-control-skill",
+    "code-review-skill",
+    "test-strategy-skill",
+    "regression-debugging-skill",
+    "release-engineering-skill",
+    "evidence-based-verification-skill",
+    "developer-handoff-skill",
+    "risk-and-approval-for-code-changes-skill",
+    "multi-agent-development-coordination-skill"
   ],
   "license": "MIT",
   "entry": {
@@ -55,7 +68,19 @@
     "memory",
     "skill-growth",
     "solution-reasoning",
-    "reporting"
+    "reporting",
+    "developer-role",
+    "implementation-planning",
+    "runtime-task-package-writing",
+    "file-boundary-control",
+    "code-review",
+    "test-strategy",
+    "regression-debugging",
+    "release-engineering",
+    "evidence-based-verification",
+    "developer-handoff",
+    "risk-and-approval-for-code-changes",
+    "multi-agent-development-coordination"
   ],
   "collaboration": {
     "discoverable": true,
@@ -127,7 +152,35 @@
     "supports_multi_pal_dispatch": true,
     "supports_prompt_shaping_by_model_capability": true,
     "records_routing_decisions": true,
-    "requires_evidence_review": true
+    "requires_evidence_review": true,
+    "is_runtime_executor": false,
+    "runs_tests_directly": false,
+    "requires_runtime_evidence": true
+  },
+  "developer_job_fitness": {
+    "target_role": "Developer / Implementation Lead Pal",
+    "must_demonstrate": [
+      "development intake",
+      "implementation planning",
+      "Runtime Task Package writing",
+      "file-boundary control",
+      "code review",
+      "test strategy",
+      "regression debugging",
+      "release engineering",
+      "evidence-based verification",
+      "developer handoff",
+      "risk and approval for code changes",
+      "multi-agent development coordination",
+      "no-code AgentPal boundary"
+    ],
+    "must_not_claim": [
+      "runtime identity claim",
+      "direct test execution claim",
+      "direct code execution claim",
+      "keyword-based owner selection",
+      "Core-as-semantic-router claim"
+    ]
   }
 }
 

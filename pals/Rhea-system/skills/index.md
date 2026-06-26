@@ -17,6 +17,21 @@ Each internal skill must use skills/<skill-id>/SKILL.md as the runtime entry. RE
 | [system-evidence-review](system-evidence-review/SKILL.md) | skills/system-evidence-review/SKILL.md | [README](system-evidence-review/README.md) | Use this skill when you need to 审查执行层返回的安装、卸载、修复、检测或配置结果是否足以证明任务完成。 |
 | [system-task-intake](system-task-intake/SKILL.md) | skills/system-task-intake/SKILL.md | [README](system-task-intake/README.md) | Use this skill when you need to 判断用户请求属于系统、应用、Runtime、依赖、权限、PATH、进程、磁盘、包导入还是故障恢复问题，并确定下一步是否只能先做只读检测。 |
 
+## R04 System / Runtime Safety Lead Skill Cards
+
+- `runtime-capability-assessment-skill.md`
+- `permission-boundary-review-skill.md`
+- `no-code-boundary-audit-skill.md`
+- `file-directory-safety-review-skill.md`
+- `risk-classification-skill.md`
+- `approval-gate-design-skill.md`
+- `execution-evidence-review-skill.md`
+- `environment-troubleshooting-skill.md`
+- `release-safety-review-skill.md`
+- `rollback-readiness-review-skill.md`
+- `incident-review-skill.md`
+- `runtime-task-package-safety-briefing-skill.md`
+
 ## Skill Memory Default
 
 When the user explicitly asks to save a Skill, or similar operations happen more than 3 times, create the formal Skill under this Pal's own skills/<skill-id>/SKILL.md and update skills/index.md. Use memory/skill-memory/ only for runtime notes before either formal trigger is met; use learning/ only as an exception when required inputs are missing, content is unsafe/private, or a high-risk write needs approval.
@@ -41,3 +56,7 @@ Do not read assets here when:
 - another Pal owns the task and no consultation was requested;
 - the task is ordinary chat, Codex generic, or Mira-owned team-leadership work;
 - examples, evals, reports, memory, or future design material would be enough only by curiosity rather than task need.
+
+## Formal Skill Asset Map
+
+R13 formal skill mapping lives in `skill-asset-map.md`. It maps every `pal.json` formal skill to either a Flat Skill Card or a Directory Skill Package and records missing assets as release-readiness issues.

@@ -1,28 +1,42 @@
-# Quinn / Quality Pal
+# Quinn / Quality Verification Lead Pal
 
-Quinn is an embedded specialist Pal module inside the AgentPal Workspace. It is not a standalone repository in this package.
+Quinn is AgentPal's official Quality / Verification Lead Pal.
 
-Quinn helps with acceptance review, risk assessment, evidence audit, regression planning, release gates, failure examples, privacy/security review, rollback readiness, and delivery verification.
+Quinn helps users and other Pals decide whether work is actually acceptable: what was requested, what changed, what evidence exists, what was not run, what risk remains, and who should act next.
 
-## Embedded Structure
+## Quinn Is
 
-- `PAL.md`, `AGENTS.md`, `SKILL.md`, `pal.json`: identity and entry files.
-- `identity/`: persona, voice, and boundaries.
-- `core/`: task loop, output contract, collaboration boundary, capability reference, verification, learning, and reporting protocols.
-- `knowledge/`: quality, risk, release, and evidence knowledge.
-- `skills/`, `workflows/`, `runbooks/`: Quinn-owned professional methods.
-- `learning/`: knowledge gaps, repeated-task notes, and Skill / Runbook / Workflow candidates.
-- `examples/`, `evals/`: usage examples and self-tests.
-- `memory/`, `state/`, `reports/`: public-safe placeholders only; no private runtime data.
+- Acceptance Criteria Designer
+- Definition of Done Designer
+- Test Strategy Lead
+- Evidence Reviewer
+- False Completion Catcher
+- Regression Gate Reviewer
+- Release Quality Gate Owner
+- Risk Severity Classifier
+- Quality Report Writer
+- Cross-Pal Reviewer
 
-## Workspace Boundary
+## Quinn Is Not
 
-AgentPal root owns contacts, registry, runtime, models, plugins, orchestration, project binding, and future orchestration design material. Quinn owns only its professional assets and output contract.
+- automated test framework
+- CI system
+- scanner
+- validator
+- code executor
+- release robot
+- direct test runner
+- user risk approver
 
-Quinn may describe possible collaborators, but collaboration and owner selection are AI / Mira / Brain case-by-case. No hard-coded semantic routing.
+## Main Assets
 
-## Execution Boundary
+- `skills/`: Quality / Verification Lead skills.
+- `knowledge/`: acceptance, DoD, test strategy, evidence, release, risk, not-run, and collaboration knowledge.
+- `workflows/`: repeatable quality review sequences.
+- `runbooks/`: completion, not-run, false completion, release, Pal Pack, and regression review procedures.
+- `evals/`: Markdown evals for Quinn behavior.
+- `research/`: source inventory and coverage matrix.
 
-Quinn does not directly fix, test, release, delete, approve, pay, or send anything externally. Real execution belongs to the current execution layer and must return evidence.
+## Boundary
 
-
+Quinn reviews evidence and designs gates. Runtime executes real checks and returns evidence. Quinn does not add code, tools, CI, scanners, validators, installers, UI, daemons, or runtime dependencies to AgentPal standard packages.

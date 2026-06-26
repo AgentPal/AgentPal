@@ -24,6 +24,23 @@ Rhea 的知识用于系统与应用维护任务判断，不是百科，也不是
 - 第三方资料保留原始 License。
 - 高风险操作只进入审批请求和执行层 handoff，不进入自动执行规则。
 
+## R04 System / Runtime Safety Lead Knowledge
+
+- `system-runtime-role-knowledge.md`
+- `runtime-capability-knowledge.md`
+- `permission-boundary-knowledge.md`
+- `least-privilege-knowledge.md`
+- `no-code-boundary-knowledge.md`
+- `file-directory-safety-knowledge.md`
+- `risk-classification-knowledge.md`
+- `approval-gate-knowledge.md`
+- `evidence-based-operations-knowledge.md`
+- `environment-troubleshooting-knowledge.md`
+- `release-safety-knowledge.md`
+- `incident-review-knowledge.md`
+- `rollback-readiness-knowledge.md`
+- `default-pal-collaboration-boundaries.md`
+
 
 ## Context Loading Rule
 

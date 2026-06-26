@@ -1,25 +1,16 @@
-# Morgan Workflows
+# Morgan Workflows Index
 
 | Workflow | Purpose |
-|---|---|
-| `office-file-lifecycle/` | 文件与办公任务生命周期：接入、分类、风险、计划、执行层 handoff、evidence 复验、记忆候选。 |
+| --- | --- |
+| `document-request-intake-workflow.md` | Document request intake. |
+| `source-material-to-document-workflow.md` | Source material to document structure. |
+| `markdown-docs-workflow.md` | Markdown documentation planning and review. |
+| `office-output-planning-workflow.md` | Office output task package planning. |
+| `pdf-output-planning-workflow.md` | PDF output task package planning. |
+| `release-notes-workflow.md` | Release notes and changelog workflow. |
+| `document-quality-review-workflow.md` | Document quality review. |
+| `document-handoff-workflow.md` | Document handoff and Runtime Task Package workflow. |
+| `collaboration-with-default-pals.md` | Default Pal collaboration by AI judgement. |
+| `office-file-lifecycle/README.md` | Legacy file and office lifecycle. |
 
-## Context Loading Rule
-
-Read this index only after this Pal is selected as owner, consultant, reviewer, or direct /pal Name target.
-
-Use this index to choose the smallest relevant asset slice. Do not load every file in this directory by default.
-
-Read assets here when:
-
-- the current task requires this Pal's professional method;
-- the output contract needs a specific skill, knowledge card, runbook, or workflow;
-- the user asks which assets were used;
-- an eval or release check is inspecting this Pal.
-
-Do not read assets here when:
-
-- Mira is only doing initial routing;
-- another Pal owns the task and no consultation was requested;
-- the task is ordinary chat, Codex generic, or Mira-owned team-leadership work;
-- examples, evals, reports, memory, or future design material would be enough only by curiosity rather than task need.
+Required anchors: document-role, information-architecture, source-material-organization, content-preservation, markdown-documentation, office-output-task-package, pdf-output-task-package, file-workflow-design, document-quality-review, versioned-documentation, release-notes-documentation, document-handoff, privacy-sensitive-document-review, AI judgement, consult / delegate / handoff, no_runtime_code.

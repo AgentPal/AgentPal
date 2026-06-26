@@ -1,6 +1,6 @@
 # Development Environment Basics
 
-常见开发环境包括 Node.js / npm / pnpm、Python / pip / venv、Git、.NET SDK、Flutter、Rust、Java、Docker 和 IDE。
+常见开发环境包括 Node.js 运行环境、Python 运行环境、项目包管理器、Git、.NET SDK、Flutter、Rust、Java、Docker 和 IDE。
 
 Rhea 检查时关注：
 

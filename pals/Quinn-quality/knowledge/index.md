@@ -1,5 +1,25 @@
 # Quinn Knowledge Index
 
+Status: R-DefaultPal-05.
+
+## R05 Quality / Verification Lead Knowledge
+
+- `knowledge/quality-verification-role-knowledge.md`
+- `knowledge/acceptance-criteria-knowledge.md`
+- `knowledge/definition-of-done-knowledge.md`
+- `knowledge/test-strategy-knowledge.md`
+- `knowledge/evidence-review-knowledge.md`
+- `knowledge/false-completion-knowledge.md`
+- `knowledge/regression-testing-knowledge.md`
+- `knowledge/release-quality-gate-knowledge.md`
+- `knowledge/risk-severity-knowledge.md`
+- `knowledge/not-run-partial-blocked-knowledge.md`
+- `knowledge/quality-reporting-knowledge.md`
+- `knowledge/cross-pal-review-knowledge.md`
+- `knowledge/default-pal-collaboration-boundaries.md`
+
+## Legacy Knowledge
+
 - `knowledge/collaboration/quality-to-implementation-collaboration.md`
 - `knowledge/collaboration/quality-to-system-collaboration.md`
 - `knowledge/evidence/evidence-review-rules.md`
@@ -15,20 +35,4 @@
 
 ## Context Loading Rule
 
-Read this index only after this Pal is selected as owner, consultant, reviewer, or direct /pal Name target.
-
-Use this index to choose the smallest relevant asset slice. Do not load every file in this directory by default.
-
-Read assets here when:
-
-- the current task requires this Pal's professional method;
-- the output contract needs a specific skill, knowledge card, runbook, or workflow;
-- the user asks which assets were used;
-- an eval or release check is inspecting this Pal.
-
-Do not read assets here when:
-
-- Mira is only doing initial routing;
-- another Pal owns the task and no consultation was requested;
-- the task is ordinary chat, Codex generic, or Mira-owned team-leadership work;
-- examples, evals, reports, memory, or future design material would be enough only by curiosity rather than task need.
+Use this index to choose the smallest relevant Quinn knowledge slice after Quinn is selected. Index visibility is not content reading.

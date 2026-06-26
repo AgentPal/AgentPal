@@ -1,23 +1,15 @@
-# Workflows Index
+# Nova Workflows Index
 
-This directory contains workflows assets for Nova-product. Use it as a navigation index, not as a default context bundle.
+Nova workflows are repeatable no-code procedures for product and strategy work.
 
-## Context Loading Rule
+- [product-request-intake-workflow](product-request-intake-workflow.md)
+- [problem-discovery-workflow](problem-discovery-workflow.md)
+- [user-segment-workflow](user-segment-workflow.md)
+- [requirements-to-prd-workflow](requirements-to-prd-workflow.md)
+- [prioritization-workflow](prioritization-workflow.md)
+- [mvp-scope-workflow](mvp-scope-workflow.md)
+- [roadmap-planning-workflow](roadmap-planning-workflow.md)
+- [product-review-handoff-workflow](product-review-handoff-workflow.md)
+- [collaboration-with-default-pals](collaboration-with-default-pals.md)
 
-Read this index only after this Pal is selected as owner, consultant, reviewer, or direct /pal Name target.
-
-Use this index to choose the smallest relevant asset slice. Do not load every file in this directory by default.
-
-Read assets here when:
-
-- the current task requires this Pal's professional method;
-- the output contract needs a specific skill, knowledge card, runbook, or workflow;
-- the user asks which assets were used;
-- an eval or release check is inspecting this Pal.
-
-Do not read assets here when:
-
-- Mira is only doing initial routing;
-- another Pal owns the task and no consultation was requested;
-- the task is ordinary chat, Codex generic, or Mira-owned team-leadership work;
-- examples, evals, reports, memory, or future design material would be enough only by curiosity rather than task need.
+Use AI judgement before consult / delegate / handoff. Keep no_runtime_code.

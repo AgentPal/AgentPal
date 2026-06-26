@@ -1,41 +1,30 @@
 # Nova Knowledge Index
 
-Nova's knowledge is not a product-management encyclopedia. It is a compact execution support layer for turning ideas into product definitions, PRDs, acceptance criteria, and handoffs.
+Nova's knowledge assets support Product / Strategy Lead judgement.
 
-Minimum v0.1 knowledge cards:
+## Lead Knowledge
 
-- `product/product-thinking-principles.md`
-- `product/problem-vs-solution.md`
-- `users/user-scenario.md`
-- `scope/mvp-and-v1.md`
-- `requirements/prd-structure.md`
-- `requirements/acceptance-criteria.md`
-- `prioritization/priority-methods.md`
-- `risks/assumption-and-risk.md`
-- `handoff/product-to-developer.md`
-- `decision/decision-record.md`
-- `collaboration/product-to-implementation-collaboration.md`
-- `collaboration/product-to-writing-collaboration.md`
+- [product-role](product-role-knowledge.md)
+- [problem-framing](problem-framing-knowledge.md)
+- [user-segment-persona](user-segment-persona-knowledge.md)
+- [jobs-to-be-done](jobs-to-be-done-knowledge.md)
+- [value-proposition](value-proposition-knowledge.md)
+- [requirements-discovery](requirements-discovery-knowledge.md)
+- [scope-control](scope-control-knowledge.md)
+- [prioritization](prioritization-knowledge.md)
+- [roadmap](roadmap-knowledge.md)
+- [prd-product-brief](prd-product-brief-knowledge.md)
+- [mvp-release-scope](mvp-release-scope-knowledge.md)
+- [product-metrics-feedback](product-metrics-feedback-knowledge.md)
+- [risk-assumption](risk-assumption-knowledge.md)
+- [go-to-market-alignment](go-to-market-alignment-knowledge.md)
+- [product-handoff](product-handoff-knowledge.md)
+- [default-pal-collaboration-boundaries](default-pal-collaboration-boundaries.md)
 
-Facts that may change, including prices, APIs, model capabilities, software versions, licenses, policies, and market claims, require fresh source checks before use.
+## Legacy Knowledge
 
+Existing nested product, users, scope, requirements, prioritization, risks, handoff, decision, and collaboration knowledge remains as background support.
 
-## Context Loading Rule
+## Anchors
 
-Read this index only after this Pal is selected as owner, consultant, reviewer, or direct /pal Name target.
-
-Use this index to choose the smallest relevant asset slice. Do not load every file in this directory by default.
-
-Read assets here when:
-
-- the current task requires this Pal's professional method;
-- the output contract needs a specific skill, knowledge card, runbook, or workflow;
-- the user asks which assets were used;
-- an eval or release check is inspecting this Pal.
-
-Do not read assets here when:
-
-- Mira is only doing initial routing;
-- another Pal owns the task and no consultation was requested;
-- the task is ordinary chat, Codex generic, or Mira-owned team-leadership work;
-- examples, evals, reports, memory, or future design material would be enough only by curiosity rather than task need.
+Nova applies product-role judgement, product-intake, problem-framing, user-segment-persona, jobs-to-be-done, value-proposition, requirements-discovery, scope-control, prioritization, roadmap-planning, prd-product-brief, mvp-release-scope, product-metrics-feedback, risk-assumption-mapping, go-to-market-alignment, product-handoff, AI judgement, consult / delegate / handoff, and no_runtime_code.

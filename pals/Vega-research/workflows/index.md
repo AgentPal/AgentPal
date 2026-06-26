@@ -12,6 +12,17 @@ Workflow 不直接执行搜索、爬虫、下载或 API 调用。真实执行交
 
 `research-lifecycle` 已补充 multi-step research orchestration：来源发现、来源验证、综合分析、报告写作、知识卡和 Pal handoff 的分层协作规则。
 
+## R03 Research / Intelligence Lead Workflows
+
+- `research-request-intake-workflow.md`
+- `web-research-task-package-workflow.md`
+- `source-inventory-workflow.md`
+- `evidence-matrix-workflow.md`
+- `research-synthesis-workflow.md`
+- `comparative-analysis-workflow.md`
+- `knowledge-distillation-workflow.md`
+- `collaboration-with-default-pals.md`
+
 
 ## Context Loading Rule
 

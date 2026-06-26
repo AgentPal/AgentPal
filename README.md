@@ -49,6 +49,20 @@ AgentPal v0.1.0-rc.1 currently provides:
 - Task Package rules
 - Context Slicing
 - Asset Loading Budget
+- PalSmith as the official no-code Pal asset governance Pal for Pal creation, job fitness inspection, user material ingestion, web research to knowledge, import, export, health checks, versioning, and Runtime Task Package planning
+- PalSmith registered in AgentPal official Pal list, registry, and contacts
+- PalSmith task package and example indexes for no-code use
+- PalSmith v0.2 work-in-progress capabilities: Pal quality inspection, responsibility conflict detection, capability maps, team design, version governance, Eval Lab, and lifecycle workflow
+- PalSmith v0.3 work-in-progress capabilities: AI Team Builder, team governance, cross-Pal review, publish quality gate, runtime call verification, GitHub import verification, and quickstart AI team guide
+- PalSmith v0.4 work-in-progress capabilities: 5-minute quickstart path, AI team blueprints, demo script, readiness matrix, and regression test plan
+- PalSmith R16 v0.4-fix capabilities: job fitness quality inspection, content-preserving material ingestion, optional web research to knowledge, and PalSmith self-health review
+- Mira R18 Leader deepening assets: Main Pal job fitness, leader skills, knowledge, workflows, runbooks, evals, research inventory, and PalSmith-style review under `pals/Mira-main/`
+- Atlas R02 Developer deepening assets: Developer / Implementation Lead job fitness, Runtime Task Package writing, file-boundary control, code review, test strategy, release engineering, collaboration boundaries, research inventory, and evals under `pals/Atlas-developer/`
+- Vega R03 Research / Intelligence Lead deepening assets: research intake, question framing, search plan design, source inventory, evidence matrix, synthesis, uncertainty reporting, knowledge distillation, collaboration boundaries, research inventory, and evals under `pals/Vega-research/`
+- Rhea R04 System / Runtime Safety Lead deepening assets: runtime capability assessment, permission boundary, no-code boundary audit, file safety, risk classification, approval gates, execution evidence review, release safety, rollback readiness, incident review, research inventory, and evals under `pals/Rhea-system/`
+- Quinn R05 Quality / Verification Lead deepening assets: acceptance criteria, Definition of Done, test strategy, evidence review, false completion detection, regression gates, release quality gates, risk severity, not-run handling, quality reports, cross-Pal review, research inventory, and evals under `pals/Quinn-quality/`
+- Morgan R06 Document / File Workflow Lead deepening assets: document-role judgement, information architecture, source-material organization, content preservation, Markdown documentation, Office/PDF output task packages, file workflow design, document quality review, versioned documentation, release notes, privacy-sensitive document review, collaboration boundaries, research inventory, and evals under `pals/Morgan-document/`
+- Harper R07 Writing / Content Craft Lead deepening assets: writing goal clarification, audience and voice control, long-form structure, rewriting, editing, brand voice, copywriting, narrative, social content, content preservation, fact and claim boundaries, content quality self-review, collaboration boundaries, research inventory, and evals under `pals/Harper-writing/`
 - Codex, Claude Code, and Generic CLI Agent usage guides
 - PalBench small-sample validation
 
@@ -130,16 +144,22 @@ Most users run AgentPal from an external project during daily work. Pal registra
 | Pal | Responsibility | Direct call |
 | --- | --- | --- |
 | Mira | Main Pal / Leader / Conductor | `/pal Mira` |
-| Atlas | Development and engineering | `/pal Atlas` |
-| Nova | Product and requirements | `/pal Nova` |
-| Vega | Research and analysis | `/pal Vega` |
-| Rhea | System, environment, and tools | `/pal Rhea` |
-| PalSmith | Pal creation, governance, import/export, health checks, and versioning | `/pal PalSmith` |
-| Quinn | Quality, verification, and release checks | `/pal Quinn` |
-| Morgan | Documents, Office, PDF, and file work | `/pal Morgan` |
-| Harper | Writing, communication, and editing | `/pal Harper` |
+| Atlas | Developer / Implementation Lead, Runtime Task Packages, file boundaries, evidence review | `/pal Atlas` |
+| Nova | Product / Strategy Lead, product intake, problem framing, user segments, JTBD, value proposition, PRD, prioritization, roadmap, MVP/release scope, metrics, risk, GTM alignment, and product handoff | `/pal Nova` |
+| Vega | Research / Intelligence Lead, source inventory, evidence matrix, research synthesis, comparative analysis, uncertainty, and knowledge distillation | `/pal Vega` |
+| Rhea | System / Runtime Safety Lead, permission boundaries, no-code boundary, evidence review, release safety, rollback readiness, and incident review | `/pal Rhea` |
+| PalSmith | Pal creation, job fitness governance, material ingestion, research-to-knowledge, import/export, health checks, versioning, and Runtime Task Packages | `/pal PalSmith` |
+| Quinn | Quality / Verification Lead, acceptance criteria, Definition of Done, evidence review, false completion detection, regression gates, release quality gates, not-run handling, and cross-Pal review | `/pal Quinn` |
+| Morgan | Document / File Workflow Lead, information architecture, content preservation, Markdown docs, Office/PDF task packages, release notes, document quality, and safe file workflows | `/pal Morgan` |
+| Harper | Writing / Content Craft Lead, audience framing, voice, structure, rewriting, copywriting, narrative, social content, preservation, claim safety, and content self-review | `/pal Harper` |
 
-Mira is the default entry Pal. Specialist Pals do not listen by default; Mira routes to them when appropriate, or users can call them directly with `/pal Name`.
+Mira is the default entry Pal and Leader Pal. She handles first-contact intake, owner judgement, Context Packet shaping, risk approval framing, progress reporting, and final synthesis; specialist Pals still own their professional work and do not listen by default. Mira routes to them when appropriate, or users can call them directly with `/pal Name`.
+
+PalSmith is registered as `palsmith-pal-governor` at `pals/PalSmith-pal-governor` in `agentpal.json`, `registry/pal.index.json`, and `contacts/pals.json`.
+
+Use PalSmith directly with `/pal PalSmith ...`. PalSmith works through Runtime Task Packages and does not require Python, Node.js, Rust, a UI, or an installer.
+
+Start from [`docs/PalSmith.md`](docs/PalSmith.md), then use the [Runtime Task Package standard](docs/03-pal-pack-standard/14-runtime-task-package.md), [PalSmith end-to-end workflows](docs/07-authoring-pals/13-palsmith-end-to-end-workflows.md), [PalSmith Pal lifecycle](docs/07-authoring-pals/14-palsmith-pal-lifecycle.md), [PalSmith quickstart AI team](docs/07-authoring-pals/15-palsmith-quickstart-ai-team.md), [PalSmith demo script](docs/07-authoring-pals/16-palsmith-demo-script.md), and [PalSmith E2E test summary](docs/08-release-candidate/11-palsmith-e2e-test-summary.md) when preparing release-safe Pal work.
 
 ## How AgentPal Works
 
@@ -187,9 +207,10 @@ AgentPal is not:
 - an installer
 - a daemon or service
 - a marketplace
+- a built-in PalSmith CLI, scanner, validator, importer, or exporter
 - a replacement for Codex, Claude Code, OpenHands, or other runtimes
 
-AgentPal is a Pal layer for existing runtimes. The host runtime performs actual execution and must provide evidence for real actions.
+AgentPal is a Pal layer for existing runtimes. It does not require Python, Node.js, or Rust for ordinary use. The host runtime performs actual execution from Runtime Task Packages and must provide evidence for real actions.
 
 ## Documentation
 

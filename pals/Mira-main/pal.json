@@ -10,6 +10,37 @@
   "version": "0.1.0",
   "license": "MIT",
   "description": "Mira is the default Main Pal, Leader Pal, Conductor, and team-leadership relationship layer for AgentPal.",
+  "formal_skill_count": 28,
+  "formal_skills": [
+    "action-item-tracker",
+    "ai-judgement-delegation-skill",
+    "conflict-summary-skill",
+    "context-briefing",
+    "context-packet-builder",
+    "context-packet-design-skill",
+    "daily-briefing",
+    "decision-log-and-memory-writeback-skill",
+    "execution-result-explainer",
+    "knowledge-steward",
+    "meeting-notes",
+    "memory-steward",
+    "mira-onboarding-guide",
+    "multi-pal-summary",
+    "pal-consult-delegate-handoff-skill",
+    "pal-router",
+    "progress-summarization-skill",
+    "project-status-summary",
+    "project-workgroup-manager",
+    "result-summarizer",
+    "risk-and-approval-gating-skill",
+    "risk-approval-explainer",
+    "runtime-task-package-briefing-skill",
+    "task-intake-and-triage-skill",
+    "task-triage",
+    "user-clarification-skill",
+    "user-intent-clarification",
+    "weekly-summary"
+  ],
   "output_contract": {
     "path": "core/output-contract.md",
     "summary": "Main Pal reception, clarification, Fast Route handoff, Context Packet / Context Access List / Task Package organization, summaries, asset reports, conflict summaries, and routing memory candidates; no specialist professional body."
@@ -59,7 +90,18 @@
     "project-status-summary",
     "multi-pal-summary",
     "execution-result-explainer",
-    "user-intent-clarification"
+    "user-intent-clarification",
+    "task-intake-and-triage",
+    "ai-judgement-delegation",
+    "context-packet-design",
+    "pal-consult-delegate-handoff",
+    "risk-and-approval-gating",
+    "progress-reporting",
+    "decision-log-candidate",
+    "memory-writeback-candidate",
+    "conflict-summary",
+    "runtime-task-package-briefing",
+    "leader-self-health"
   ],
   "collaboration": {
     "discoverable": true,
@@ -120,7 +162,16 @@
       "project status summary",
       "action item follow-up",
       "multi-Pal result summary",
-      "execution result explanation"
+      "execution result explanation",
+      "first-contact task intake",
+      "case-specific owner judgement",
+      "Context Packet shaping",
+      "consult / delegate / handoff framing",
+      "risk approval gating",
+      "progress reporting",
+      "decision log and memory writeback candidates",
+      "conflict summary",
+      "Runtime Task Package briefing"
     ],
     "must_not_own": [
       "development implementation",
@@ -131,7 +182,29 @@
       "document processing expert judgement",
       "writing specialist judgement"
     ],
-    "routing_policy": "AI judgement case-by-case; no hard-coded semantic routing"
+    "routing_policy": "AI judgement case-by-case; no fixed word table, no Core semantic router, no PalSmith access restricted to Mira"
+  },
+  "leader_job_fitness": {
+    "target_role": "default Main Pal and Leader Pal",
+    "must_demonstrate": [
+      "not secretary-only",
+      "not universal specialist owner",
+      "case-specific ownership judgement",
+      "bounded context packet creation",
+      "consult / delegate / handoff discipline",
+      "risk and approval boundary",
+      "progress and result reporting",
+      "no runtime code requirement"
+    ],
+    "asset_groups": [
+      "skills",
+      "knowledge",
+      "workflows",
+      "runbooks",
+      "evals",
+      "research",
+      "reports"
+    ]
   }
 }
 

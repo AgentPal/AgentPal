@@ -22,6 +22,118 @@ AgentPal is a Pal layer and Pal Pack Standard practice for Markdown/JSON-capable
 - [Validation and evidence](06-validation-and-evidence/README.md)
 - [v0.1.0-rc.1 release candidate](08-release-candidate/README.md)
 
+## PalSmith Quick Links
+
+- [PalSmith overview](PalSmith.md)
+- [Use PalSmith](07-authoring-pals/12-use-palsmith.md)
+- [PalSmith end-to-end workflows](07-authoring-pals/13-palsmith-end-to-end-workflows.md)
+- [PalSmith Pal lifecycle](07-authoring-pals/14-palsmith-pal-lifecycle.md)
+- [PalSmith quickstart AI team](07-authoring-pals/15-palsmith-quickstart-ai-team.md)
+- [PalSmith demo script](07-authoring-pals/16-palsmith-demo-script.md)
+- [PalSmith v0.4 regression test plan](08-release-candidate/12-palsmith-v0.4-regression-test-plan.md)
+- [Pal import/export standard](03-pal-pack-standard/13-pal-import-export.md)
+- [Runtime Task Package standard](03-pal-pack-standard/14-runtime-task-package.md)
+- [No-code release checklist](08-release-candidate/05-no-code-release-checklist.md)
+- [PalSmith release-scope review](08-release-candidate/06-palsmith-release-scope-review.md)
+- [PalSmith E2E test summary](08-release-candidate/11-palsmith-e2e-test-summary.md)
+- [PalSmith Pal Pack](../pals/PalSmith-pal-governor/README.md)
+
+## Mira Leader Quick Links
+
+- [Mira Pal Pack](../pals/Mira-main/README.md)
+- [Mira leader skills](../pals/Mira-main/skills/index.md)
+- [Mira leader knowledge](../pals/Mira-main/knowledge/INDEX.md)
+- [Mira workflows](../pals/Mira-main/workflows/index.md)
+- [Mira runbooks](../pals/Mira-main/runbooks/INDEX.md)
+- [Mira evals](../pals/Mira-main/evals/README.md)
+- [Mira self-health report](../pals/Mira-main/reports/mira-self-health-report.md)
+- [PalSmith Mira Leader review](../pals/Mira-main/reports/palsmith-mira-leader-review.md)
+
+## Atlas Developer Quick Links
+
+- [Atlas Pal Pack](../pals/Atlas-developer/README.md)
+- [Atlas skills](../pals/Atlas-developer/skills/index.md)
+- [Atlas knowledge](../pals/Atlas-developer/knowledge/index.md)
+- [Atlas workflows](../pals/Atlas-developer/workflows/index.md)
+- [Atlas runbooks](../pals/Atlas-developer/runbooks/index.md)
+- [Atlas evals](../pals/Atlas-developer/evals/README.md)
+- [Atlas research inventory](../pals/Atlas-developer/research/source-inventory.md)
+- [Atlas Developer gap report](08-release-candidate/atlas-developer-gap-report.md)
+- [Atlas self-health report](08-release-candidate/atlas-self-health-report.md)
+
+## Vega Research Quick Links
+
+- [Vega Pal Pack](../pals/Vega-research/README.md)
+- [Vega skills](../pals/Vega-research/skills/index.md)
+- [Vega knowledge](../pals/Vega-research/knowledge/index.md)
+- [Vega workflows](../pals/Vega-research/workflows/index.md)
+- [Vega runbooks](../pals/Vega-research/runbooks/index.md)
+- [Vega evals](../pals/Vega-research/evals/README.md)
+- [Vega source inventory](../pals/Vega-research/research/source-inventory.md)
+- [Vega Research gap report](08-release-candidate/vega-research-gap-report.md)
+- [Vega self-health report](08-release-candidate/vega-self-health-report.md)
+
+## Rhea Safety Quick Links
+
+- [Rhea Pal Pack](../pals/Rhea-system/README.md)
+- [Rhea skills](../pals/Rhea-system/skills/index.md)
+- [Rhea knowledge](../pals/Rhea-system/knowledge/index.md)
+- [Rhea workflows](../pals/Rhea-system/workflows/index.md)
+- [Rhea runbooks](../pals/Rhea-system/runbooks/index.md)
+- [Rhea evals](../pals/Rhea-system/evals/README.md)
+- [Rhea source inventory](../pals/Rhea-system/research/source-inventory.md)
+- [Rhea System / Runtime gap report](08-release-candidate/rhea-system-runtime-gap-report.md)
+- [Rhea self-health report](08-release-candidate/rhea-self-health-report.md)
+
+## Quinn Quality Quick Links
+
+- [Quinn Pal Pack](../pals/Quinn-quality/README.md)
+- [Quinn skills](../pals/Quinn-quality/skills/index.md)
+- [Quinn knowledge](../pals/Quinn-quality/knowledge/index.md)
+- [Quinn workflows](../pals/Quinn-quality/workflows/index.md)
+- [Quinn runbooks](../pals/Quinn-quality/runbooks/index.md)
+- [Quinn evals](../pals/Quinn-quality/evals/README.md)
+- [Quinn source inventory](../pals/Quinn-quality/research/source-inventory.md)
+- [Quinn Quality / Verification gap report](08-release-candidate/quinn-quality-verification-gap-report.md)
+- [Quinn self-health report](08-release-candidate/quinn-self-health-report.md)
+
+## Morgan Document Workflow Quick Links
+
+- [Morgan Pal Pack](../pals/Morgan-document/README.md)
+- [Morgan skills](../pals/Morgan-document/skills/index.md)
+- [Morgan knowledge](../pals/Morgan-document/knowledge/index.md)
+- [Morgan workflows](../pals/Morgan-document/workflows/index.md)
+- [Morgan runbooks](../pals/Morgan-document/runbooks/index.md)
+- [Morgan evals](../pals/Morgan-document/evals/README.md)
+- [Morgan source inventory](../pals/Morgan-document/research/source-inventory.md)
+- [Morgan Document / File Workflow gap report](08-release-candidate/morgan-document-workflow-gap-report.md)
+- [Morgan self-health report](08-release-candidate/morgan-self-health-report.md)
+
+## Harper Writing / Content Craft Quick Links
+
+- [Harper Pal Pack](../pals/Harper-writing/README.md)
+- [Harper skills](../pals/Harper-writing/skills/index.md)
+- [Harper knowledge](../pals/Harper-writing/knowledge/index.md)
+- [Harper workflows](../pals/Harper-writing/workflows/index.md)
+- [Harper runbooks](../pals/Harper-writing/runbooks/index.md)
+- [Harper evals](../pals/Harper-writing/evals/README.md)
+- [Harper source inventory](../pals/Harper-writing/research/source-inventory.md)
+- [Harper Writing / Content Craft gap report](08-release-candidate/harper-writing-content-gap-report.md)
+- [Harper self-health report](08-release-candidate/harper-self-health-report.md)
+
+## Nova Product / Strategy Quick Links
+
+- [Nova Pal Pack](../pals/Nova-product/README.md)
+- [Nova skills](../pals/Nova-product/skills/index.md)
+- [Nova knowledge](../pals/Nova-product/knowledge/index.md)
+- [Nova workflows](../pals/Nova-product/workflows/index.md)
+- [Nova runbooks](../pals/Nova-product/runbooks/index.md)
+- [Nova evals](../pals/Nova-product/evals/README.md)
+- [Nova source inventory](../pals/Nova-product/research/source-inventory.md)
+- [Nova Product / Strategy gap report](08-release-candidate/nova-product-strategy-gap-report.md)
+- [Nova self-health report](08-release-candidate/nova-self-health-report.md)
+- [PalSmith Nova review](../pals/Nova-product/reports/palsmith-nova-product-strategy-review.md)
+
 ## Documentation Map
 
 | Area | Use it for |

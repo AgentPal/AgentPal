@@ -12,9 +12,10 @@ It is not an Agent layer, not a multi-agent runtime, and not an execution layer.
 - Simple Pal Mode as the only active task-handling path in v0.1.0-rc.1.
 - Shared `core/` gates for Codex, Claude Code, generic CLI, and project-bound runtime adapters.
 - Mira as the default Main Pal, Leader Pal, Conductor, and Pal team leader and coordinator.
-- Official bundled Pal Packs: Mira, Atlas, Vega, Rhea, Quinn, Morgan, Harper, and Nova.
+- Official bundled Pal Packs: Mira, Atlas, Vega, Rhea, PalSmith, Quinn, Morgan, Harper, and Nova.
 - Contacts and registry files as the source of truth for Pal discovery and `/pal Name` direct calls.
 - Runtime Response Gate, AI routing judgement, Pal context slicing, asset loading budget, memory boundary, and Task Package output contract protocols.
+- PalSmith as the official no-code Pal asset governance Pal, including Runtime Task Package planning, Pal creation/team creation workflows, import staging, clean export, with-memory export, health inspection, registry/contacts proposals, examples, and Markdown evals.
 - Thin project binding contracts that point external projects back to the AgentPal workspace instead of copying full rules.
 - Fast Route as the current clear-task handoff pattern, with Deep Conductor documented as future complex-workflow design only.
 - R33 small-sample PalBench smoke validation for observed workflow benefits.
@@ -28,12 +29,12 @@ It is not an Agent layer, not a multi-agent runtime, and not an execution layer.
 - Version: `v0.1.0-rc.1`.
 - Runtime path: Simple Pal Mode only.
 - Required AgentPal runtime dependencies: none.
-- Local tag evidence observed during documentation review: `v0.1.0-rc.1`.
-- Local tagged commit: verify with `git rev-list -n 1 v0.1.0-rc.1` before publishing.
+- Local tag evidence observed during documentation review: `v0.1.0-rc.1` and `v0.1.0-rc.2`.
+- Local tagged commit: verify the intended final tag with `git rev-list -n 1 <tag>` before publishing.
 - Remote status observed during the local gate: `origin https://github.com/AgentPal/AgnetPal.git` is configured; push has not been performed by this draft.
 - GitHub Release status: this draft is for manual publication; an online GitHub Release should not be considered created until maintainers publish it from the intended tag.
 
-Maintainers should verify the final commit, tag, remote, and release page before publication.
+Maintainers should verify the final commit, tag, remote, and release page before publication. R14 maintainer handoff says stage review and commit review can proceed, but publish-ready remains no until a maintainer manually stages, commits, confirms tag strategy, pushes, and creates the GitHub Release.
 
 ## R33 PalBench Boundary
 
@@ -50,6 +51,7 @@ In a six-sample smoke validation, AgentPal showed observed benefits for task cla
 ## Known Limitations
 
 - AgentPal does not include a desktop app, web UI, CLI runtime, daemon, scanner, validator, installer, or service.
+- PalSmith does not include an executable command layer, importer program, exporter program, UI, daemon, or required runtime dependency.
 - AgentPal does not execute filesystem, system, publishing, account, or automation actions by itself.
 - Host runtimes and user-controlled tools perform actual execution and must provide evidence.
 - Active multi-agent runtime behavior is not included.
@@ -58,6 +60,9 @@ In a six-sample smoke validation, AgentPal showed observed benefits for task cla
 - Exact token metering is not provided in v0.1.0-rc.1.
 - Pal Packs are working assets for a runtime, not independent agent processes.
 - Private user memory, private project state, customer data, secrets, credentials, internal development notes, and local absolute paths must not be published.
+- Native `/pal` runtime API behavior, live web fetch, and external link checking remain not-run unless maintainers verify them separately.
+- Confirm whether `origin https://github.com/AgentPal/AgnetPal.git` is the intended remote before publishing.
+- Existing local tags observed: `v0.1.0-rc.1` and `v0.1.0-rc.2`; choose the final tag strategy before release creation.
 
 ## Getting Started
 
@@ -65,7 +70,7 @@ In a six-sample smoke validation, AgentPal showed observed benefits for task cla
 2. For Codex, open the AgentPal directory and paste `prompts/codex/initialize-agentpal-workspace.md`.
 3. For Claude Code, start from `<your-project>` and paste `prompts/claude-code/install-agentpal-current-project.md` after replacing `AGENTPAL_HOME`.
 4. For a generic CLI Agent, start from `<your-project>` and paste `prompts/generic-cli-agent/install-agentpal-current-project.md` after replacing `AGENTPAL_HOME`.
-5. Start ordinary messages with Mira, or use `/pal Name` to call a registered Pal directly, for example `/pal Harper`.
+5. Start ordinary messages with Mira, or use `/pal Name` to call a registered Pal directly, for example `/pal Harper` or `/pal PalSmith`.
 
 ## Safety Notes
 

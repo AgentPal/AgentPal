@@ -13,7 +13,8 @@ Initial public release candidate for AgentPal as a Pal layer and Pal Pack Standa
 - Mira as the default Main Pal, Leader Pal, Conductor, and Pal team leader and coordinator.
 - R32 Fast Route and Deep Conductor protocol split. Fast Route supports current Simple Pal Mode; Deep Conductor remains future design.
 - R33 small-sample PalBench smoke validation report with cautious release-safe wording.
-- Official bundled Pal Packs: Mira, Atlas, Vega, Rhea, Quinn, Morgan, Harper, and Nova.
+- Official bundled Pal Packs: Mira, Atlas, Vega, Rhea, PalSmith, Quinn, Morgan, Harper, and Nova.
+- PalSmith as the official no-code Pal asset governance Pal, with Pal Pack files, docs, Runtime Task Package standard, task package templates, examples, Markdown evals, PalSmith delegation / handoff guidance, and release-scope review.
 - Contacts and registry files as the source of truth for Pal discovery, aliases, and direct `/pal Name` calls.
 - Runtime Response Gate, AI routing judgement rules, Pal context slicing, asset loading budget, memory summary loading, and Task Package output contract protocols.
 - AgentPal orchestration methodology, PalBench design, and future-oriented Capability Inventory / Context Access List / Pal Isolation / Shared Memory / Routing Reward Memory protocols.
@@ -34,6 +35,7 @@ Initial public release candidate for AgentPal as a Pal layer and Pal Pack Standa
 - Future Deep Conductor, capability inventory probing, routing memory writeback, and PalBench claims are design foundations, not active runtime behavior.
 - R32 clarifies the current/future boundary: Fast Route is current, Deep Conductor is future-only.
 - R33 PalBench observations are small-sample smoke evidence, not statistical benchmark claims and not underlying-model comparisons.
+- PalSmith is releaseable only as Markdown/JSON Pal governance content; it is not a command, tool package, UI, scanner, validator, installer, importer program, exporter program, daemon, or runtime dependency.
 - Private memory, private state, real reports, secrets, and internal development notes must not be published.
 - `claude --add-dir` is an optional fallback / advanced path; Claude Code users can start from `cd <your-project>` and use the one-prompt install.
 - Runtime adapter prompts should point to shared core gates rather than keeping independent copies of First Pal Gate, Deliverable-aware Task Judgement, or Pal roster rules.

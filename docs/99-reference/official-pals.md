@@ -1,6 +1,6 @@
 # Official Bundled Pals
 
-AgentPal v0.1.0-rc.1 includes Mira plus eight official bundled specialist Pal Packs.
+AgentPal v0.1.0-rc.1 includes nine official bundled Pal Packs: Mira plus eight specialists.
 
 The official list below is a contacts and registry display, not a route map. Owner selection is case-by-case AI judgement. Individual Pal Packs should not maintain hard-coded route maps for other Pals.
 

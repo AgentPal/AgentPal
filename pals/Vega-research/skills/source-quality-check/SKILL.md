@@ -42,7 +42,7 @@ Produce the structured output documented in README.md, but return it as a clean 
 
 Not a fit:
 - 无来源材料。
-- 用户要求忽略来源。
+- 用户要求无视来源。
 - 要求保存版权全文。
 
 Risk boundary:

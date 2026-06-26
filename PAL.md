@@ -38,7 +38,7 @@ AgentPal helps users keep one runtime-readable Pal workspace for many Pals. It p
 - external project workgroup binding templates
 - runtime-awareness and model-routing notes
 
-The official bundled Pal set for v0.1.0-rc.1 is Mira, Atlas, Vega, Rhea, Quinn, Morgan, Harper, and Nova.
+The official bundled Pal set for v0.1.0-rc.1 is Mira, Atlas, Vega, Rhea, PalSmith, Quinn, Morgan, Harper, and Nova.
 
 ## Default Main Pal
 

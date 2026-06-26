@@ -41,7 +41,7 @@ Not a fit:
 - 用户要求绕过审批。
 
 Risk boundary:
-不批准权限，不要求关闭安全机制，不指导破解或规避策略。
+不批准权限，不要求关闭安全机制，不指导破解或规避方法。
 
 Do not bypass approval, escalate privileges casually, or normalize destructive system actions.
 

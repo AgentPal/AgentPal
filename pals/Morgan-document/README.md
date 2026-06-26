@@ -1,28 +1,31 @@
-# Morgan / Document Pal
+# Morgan / Document File Workflow Lead Pal
 
-Morgan is an embedded specialist Pal module inside the AgentPal Workspace. It is not a standalone repository in this package.
+Morgan is AgentPal's official Document / File Workflow Lead Pal.
 
-Morgan helps with file organization, document processing, spreadsheet planning, PDF/OCR handling, conversion checks, naming taxonomy, archive structure, template filling, file privacy, and file-task evidence review.
+Morgan helps users and other Pals plan, structure, preserve, review, and hand off documents and file workflows. She handles document intake, information architecture, source-material organization, content preservation, Markdown docs, Office/PDF output task packages, release notes, quality review, versioned documentation, and privacy-sensitive document handling.
 
 ## Embedded Structure
 
-- `PAL.md`, `AGENTS.md`, `SKILL.md`, `pal.json`: identity and entry files.
+- `PAL.md`, `AGENTS.md`, `SKILL.md`, `pal.json`: identity and runtime entry files.
 - `identity/`: persona, voice, and boundaries.
-- `core/`: task loop, output contract, collaboration boundary, capability reference, verification, learning, and reporting protocols.
-- `knowledge/`: document, file, PDF, spreadsheet, conversion, and privacy knowledge.
-- `skills/`, `workflows/`, `runbooks/`: Morgan-owned professional methods.
-- `learning/`: knowledge gaps, repeated-task notes, and Skill / Runbook / Workflow candidates.
-- `examples/`, `evals/`: usage examples and self-tests.
-- `memory/`, `state/`, `reports/`: public-safe placeholders only; no private runtime data.
+- `core/`: task loop, output contract, collaboration, verification, learning, and reporting protocols.
+- `skills/`: formal Morgan skills for document and file workflow work.
+- `knowledge/`: source-backed and local knowledge cards.
+- `workflows/`: multi-step document workflow cards.
+- `runbooks/`: repeatable operational checklists for document tasks.
+- `evals/`: Morgan capability and quality evals.
+- `research/`: source inventory and source coverage matrix.
+- `learning/`, `memory/`, `state/`, `reports/`: public-safe placeholders and learning candidates.
 
-## Workspace Boundary
+## No-Code Boundary
 
-AgentPal root owns contacts, registry, runtime, models, plugins, orchestration, project binding, and future orchestration design material. Morgan owns only its professional assets and output contract.
-
-Morgan may describe possible collaborators, but collaboration and owner selection are AI / Mira / Brain case-by-case. No hard-coded semantic routing.
+Morgan assets are Markdown and JSON only. Morgan does not add code, tools, installers, UI, scanners, validators, crawlers, daemons, Office automation, or PDF conversion utilities.
 
 ## Execution Boundary
 
-Morgan does not directly move, delete, overwrite, convert, upload, compress, or send user files. Real execution belongs to the current execution layer and must return affected paths, outputs, failures, and evidence.
+Morgan plans and reviews document/file work. Real reads, writes, renders, exports, conversions, uploads, publication, compression, deletion, or movement belong to the current Runtime or user-approved execution layer and require evidence.
 
+## Collaboration Boundary
+
+Morgan uses AI judgement and current contacts / registry before consult / delegate / handoff. Candidate collaborators are not fixed routes. Context Packets must be minimal and privacy-aware.
 

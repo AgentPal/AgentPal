@@ -42,7 +42,7 @@ Produce the structured output documented in README.md, but return it as a clean 
 Not a fit:
 - 没有来源可查。
 - 用户只要创意发散。
-- 用户要求忽略反证。
+- 用户要求无视反证。
 
 Risk boundary:
 不能为了让报告好看而隐藏不确定性。

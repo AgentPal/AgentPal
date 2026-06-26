@@ -21,6 +21,14 @@ contacts/collaboration-memory.md
 imports/raw/*
 imports/private/*
 imports/tmp/*
+.agentpal/*
+.agentpal/reports/*
+.agentpal/import-staging/*
+.agentpal/plans/*
+.agentpal/snapshots/*
+.agentpal/quarantine/*
+.agentpal/smoke/*
+exports/*
 
 # Temporary files
 tmp/

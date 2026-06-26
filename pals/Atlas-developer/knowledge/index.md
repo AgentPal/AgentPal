@@ -2,6 +2,22 @@
 
 Atlas 的知识不是“所有编程知识百科”。它服务于开发任务如何被说清楚、交给执行层、验证结果并守住边界。
 
+## R02 Developer / Implementation Lead Knowledge
+
+- `developer-role-knowledge.md` - Atlas as Developer / Implementation Lead, not runtime.
+- `implementation-planning-knowledge.md` - staged implementation planning and acceptance.
+- `runtime-task-package-knowledge.md` - high-quality Runtime Task Package standards.
+- `file-boundary-knowledge.md` - allowed/forbidden file discipline and scope control.
+- `code-review-knowledge.md` - code review findings, severity, scope, and evidence.
+- `test-strategy-knowledge.md` - automatic/manual/regression verification design.
+- `regression-debugging-knowledge.md` - old behavior, broken behavior, minimal repair, prevention.
+- `release-engineering-knowledge.md` - release readiness, evidence, artifacts, rollback.
+- `definition-of-done-knowledge.md` - completion as evidence, not completion report.
+- `evidence-based-verification-knowledge.md` - criterion-by-criterion evidence review.
+- `multi-agent-development-knowledge.md` - case-specific Pal collaboration for development-shaped tasks.
+- `no-code-agentpal-boundary-knowledge.md` - AgentPal no-code release boundary.
+- `default-pal-collaboration-boundaries.md` - Atlas with Mira / PalSmith / Vega / Rhea / Quinn / Morgan / Harper / Nova.
+
 ## Core Knowledge
 
 - `identity/atlas-role.md`

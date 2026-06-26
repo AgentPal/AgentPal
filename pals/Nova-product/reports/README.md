@@ -13,3 +13,7 @@
 - 涉及的协作 Pal 或外部 Runtime。
 - 写回的记忆或决策。
 
+## Current R08 Reports
+
+- `palsmith-nova-product-strategy-review.md` - PalSmith-style final review for Nova Product / Strategy Lead deepening.
+

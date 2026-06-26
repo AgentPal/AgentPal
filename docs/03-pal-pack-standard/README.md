@@ -16,6 +16,8 @@ This directory is the public standard entry for Pal Packs. It explains the files
 - [Public/private boundary](11-public-private-boundary.md)
 - [Pal Pack checklist](12-pal-pack-checklist.md)
 - [Pal import and export](13-pal-import-export.md)
+- [Runtime Task Package](14-runtime-task-package.md)
+- [Formal Skill assets](15-formal-skill-assets.md)
 
 ## Three Levels
 

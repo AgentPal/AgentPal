@@ -11,6 +11,7 @@ Use this release if you want to:
 - try a Pal Workspace inside an existing agent runtime
 - inspect the Pal Pack Standard structure
 - use the bundled official Pals as public working assets
+- use PalSmith as a no-code Pal asset governance Pal for Pal creation, import/export planning, health checks, and Runtime Task Package planning
 - create or review public-safe Pal Packs
 - study Simple Pal Mode and Pal discovery through contacts and registry files
 
@@ -31,8 +32,9 @@ This release is not suitable if you need:
 - initialization prompt for Codex / Claude Code style runtimes
 - `agentpal.json` workspace manifest
 - contacts and registry files for Pal discovery
-- eight official public Pal Packs: Mira, Atlas, Vega, Rhea, Quinn, Morgan, Harper, and Nova
+- nine official public Pal Packs: Mira, Atlas, Vega, Rhea, PalSmith, Quinn, Morgan, Harper, and Nova
 - Pal Pack Standard documentation
+- PalSmith docs, Runtime Task Package standard, task package templates, example task packages, Markdown evals, and release-scope review
 - release maintenance and public-safe checklist docs
 - public examples, evals, prompts, templates, and protocols
 - MIT license and third-party notice file
@@ -50,6 +52,8 @@ Pal discovery source of truth: `contacts/` and `registry/`.
 ## Safety Notes
 
 Public releases must not include private user memory, private project state, real task reports, internal development notes, secrets, credentials, customer data, local absolute paths, unauthorized logs, or unauthorized third-party full text.
+
+PalSmith is included only as Markdown/JSON Pal governance content. It is not an executable command layer, scanner, validator, importer program, exporter program, installer, UI, daemon, service, or runtime dependency.
 
 Future design materials must remain clearly labeled as future, experimental, or inactive unless a future release explicitly activates them.
 

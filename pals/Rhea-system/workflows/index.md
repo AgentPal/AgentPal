@@ -8,6 +8,17 @@ Rhea v0.1 内置一个正式 Workflow：
 
 Workflow 不直接执行命令、安装、卸载、删除或系统写入。真实执行交给 Runtime 或外部 Runtime，Rhea 负责计划、边界、审批和复验。
 
+## R04 System / Runtime Safety Lead Workflows
+
+- `runtime-safety-intake-workflow.md`
+- `no-code-boundary-review-workflow.md`
+- `high-risk-operation-approval-workflow.md`
+- `environment-troubleshooting-workflow.md`
+- `release-safety-review-workflow.md`
+- `evidence-review-workflow.md`
+- `incident-review-workflow.md`
+- `collaboration-with-default-pals.md`
+
 
 ## Context Loading Rule
 

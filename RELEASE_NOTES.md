@@ -37,11 +37,13 @@ This release is not a finished app or automation platform. It is not the right f
 - AgentPal Workspace release assets: `AGENTS.md`, `PAL.md`, `SKILL.md`, `agentpal.json`, and the Codex initialization prompt at `prompts/codex/initialize-agentpal-workspace.md`.
 - Shared core gates under `core/` so Codex, Claude Code, generic CLI, and project-bound sessions read the same AgentPal rules.
 - Mira as the default Main Pal, Leader Pal, Conductor, and Pal team leader and coordinator.
-- Official bundled Pal Packs: Mira, Atlas, Vega, Rhea, Quinn, Morgan, Harper, and Nova.
+- Official bundled Pal Packs: Mira, Atlas, Vega, Rhea, PalSmith, Quinn, Morgan, Harper, and Nova.
 - Contacts and registry files for Pal discovery, aliases, and direct `/pal Name` calls.
 - Simple Pal Mode as the only active v0.1.0-rc.1 runtime path.
 - Runtime Response Gate and Pal Mode validity rules.
 - Context slicing, asset loading budget, memory summary loading, and Task Package output contract protocols.
+- PalSmith as the official no-code Pal asset governance Pal for Pal creation, Pal teams, import staging, clean export, with-memory export, health inspection, versioning, registry/contacts proposals, and Runtime Task Package planning.
+- Runtime Task Package field standard, PalSmith workflow docs, task package templates, example task packages, Markdown evals, and release-scope review.
 - AgentPal original Pal Layer methodology and PalBench validation docs under the current docs information architecture.
 - R33 PalBench small-sample smoke validation report.
 - Capability Inventory, Task Judgement, Workflow Topology, Context Access List, Pal Isolation, and Routing Reward Memory protocols as future-oriented design assets.
@@ -52,6 +54,14 @@ This release is not a finished app or automation platform. It is not the right f
 - Generic CLI Agent one-prompt project install using `AGENTS.md` and `.agentpal/`.
 - Runtime adapter thin binding examples and self-tests.
 - Public-safe examples, evals, prompts, templates, release notes, checklist, and contribution guidance.
+
+## PalSmith Release Notes
+
+PalSmith is included in this release candidate as an official no-code system Pal. It is registered in the AgentPal manifest, registry, and contacts as `palsmith-pal-governor` at `pals/PalSmith-pal-governor`, and users can call it with `/pal PalSmith`.
+
+PalSmith provides Markdown/JSON governance assets for Pal creation, Pal team drafting, GitHub/local import staging, clean export, with-memory export, health inspection, versioning, snapshots, rollback planning, and official Pal registration checks.
+
+PalSmith does not include an executable command layer, scanner, validator, importer program, exporter program, installer, UI, daemon, service, or runtime dependency. Host runtimes execute any approved file work and must report evidence.
 
 ## What Is Not Included
 

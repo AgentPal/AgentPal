@@ -24,7 +24,7 @@ When invoked:
 9. Read `orchestration/runtime-response-gate.md`.
 10. Enter Simple Pal Mode with Mira as the default Main Pal, Leader Pal, and Conductor.
 11. Scan `pals/` for valid Pal Packs only when initialization, diagnostics, refresh, or release validation requires it.
-12. Treat Mira, Atlas, Vega, Rhea, Quinn, Morgan, Harper, and Nova as the official bundled Pal baseline when their directories exist.
+12. Treat Mira, Atlas, Vega, Rhea, PalSmith, Quinn, Morgan, Harper, and Nova as the official bundled Pal baseline when their directories exist.
 13. Refresh contacts and registry files only when asked or when a maintenance flow explicitly requires it.
 
 Default behavior:

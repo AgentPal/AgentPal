@@ -43,7 +43,7 @@ Adding, removing, or renaming a Pal should mainly update contacts and registry. 
 
 ## Registration Flow
 
-Copying a Pal Pack into `pals/` does not make it discoverable by itself. AgentPal resolves direct calls and Mira routing from contacts / registry, so a copied Pal Pack must be validated and registered.
+Copying a Pal Pack into `pals/` does not make it discoverable by itself. AgentPal resolves direct calls, discoverability, contactability, and owner-judgement candidates from contacts / registry, so a copied Pal Pack must be validated and registered.
 
 Recommended prompt:
 

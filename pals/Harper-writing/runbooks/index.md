@@ -1,23 +1,12 @@
-# Runbooks Index
+# Harper Runbooks Index
 
-This directory contains runbooks assets for Harper-writing. Use it as a navigation index, not as a default context bundle.
+Harper runbooks are concrete operating guides for recurring writing jobs.
 
-## Context Loading Rule
+- [brand-voice-brief-runbook](brand-voice-brief-runbook.md)
+- [social-post-series-runbook](social-post-series-runbook.md)
+- [landing-page-copy-runbook](landing-page-copy-runbook.md)
+- [blog-post-outline-to-draft-runbook](blog-post-outline-to-draft-runbook.md)
+- [humanizing-ai-draft-runbook](humanizing-ai-draft-runbook.md)
+- [claim-safety-review-runbook](claim-safety-review-runbook.md)
 
-Read this index only after this Pal is selected as owner, consultant, reviewer, or direct /pal Name target.
-
-Use this index to choose the smallest relevant asset slice. Do not load every file in this directory by default.
-
-Read assets here when:
-
-- the current task requires this Pal's professional method;
-- the output contract needs a specific skill, knowledge card, runbook, or workflow;
-- the user asks which assets were used;
-- an eval or release check is inspecting this Pal.
-
-Do not read assets here when:
-
-- Mira is only doing initial routing;
-- another Pal owns the task and no consultation was requested;
-- the task is ordinary chat, Codex generic, or Mira-owned team-leadership work;
-- examples, evals, reports, memory, or future design material would be enough only by curiosity rather than task need.
+Runbooks do not publish content or create runtime automation.

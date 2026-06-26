@@ -36,16 +36,33 @@ Use this checklist before publishing AgentPal v0.1.0-rc.1 as a public MIT GitHub
 
 ## Pals
 
-- [ ] Official bundled Pal directories exist: `pals/Mira-main`, `pals/Atlas-developer`, `pals/Vega-research`, `pals/Rhea-system`, `pals/Quinn-quality`, `pals/Morgan-document`, `pals/Harper-writing`, and `pals/Nova-product`.
+- [ ] Official bundled Pal directories exist: `pals/Mira-main`, `pals/Atlas-developer`, `pals/Vega-research`, `pals/Rhea-system`, `pals/PalSmith-pal-governor`, `pals/Quinn-quality`, `pals/Morgan-document`, `pals/Harper-writing`, and `pals/Nova-product`.
 - [ ] Each official Pal has `PAL.md`, `pal.json`, `SKILL.md`, `AGENTS.md`, `README.md`, and `core/output-contract.md`.
 - [ ] Specialist Pals are described as Pal Packs, not independent agent processes.
 - [ ] Pal-owned Skills are stored under the owner Pal's own `skills/` directory.
 - [ ] Pal memory, state, and report directories contain only public-safe placeholders unless they are ignored runtime-private files.
+- [ ] PalSmith is registered as `palsmith-pal-governor` in `agentpal.json`, `registry/pal.index.json`, and `contacts/pals.json`.
+- [ ] PalSmith release docs link to `docs/PalSmith.md`, Runtime Task Package standard, import/export standard, end-to-end workflows, task package templates, examples, Markdown evals, no-code release checklist, and release-scope review.
+- [ ] PalSmith is documented as no-code Pal governance content, not a CLI, scanner, validator, installer, importer program, exporter program, UI, daemon, service, or runtime dependency.
+- [ ] PalSmith final verification report exists at `docs/08-release-candidate/09-palsmith-final-verification-report.md`.
+- [ ] AgentPal final release verification report exists at `docs/08-release-candidate/10-agentpal-final-release-verification-report.md`.
+- [ ] Default Pal P2 sync plan exists at `docs/08-release-candidate/13-default-pals-p2-sync-plan.md`.
+- [ ] Default Pal P2 sync verification report exists at `docs/08-release-candidate/14-default-pals-p2-sync-verification-report.md`.
+- [ ] R12 release / commit review reports exist at `docs/08-release-candidate/15-agentpal-release-review-baseline.md` through `docs/08-release-candidate/19-agentpal-release-review-final-report.md`.
+- [ ] R14 maintainer handoff reports exist at `docs/08-release-candidate/22-dirty-worktree-stage-review.md` through `docs/08-release-candidate/25-final-maintainer-stage-readiness-report.md`.
+- [ ] Formal Skill asset standard exists at `docs/03-pal-pack-standard/15-formal-skill-assets.md`.
+- [ ] Each official Pal has `skills/skill-asset-map.md` or an equivalent formal skill map.
+- [ ] Flat Skill Cards are accepted when mapped, substantive, and named `skills/<formal-skill-id>.md`.
+- [ ] Directory Skill Packages are accepted when mapped and backed by `skills/<formal-skill-id>/SKILL.md` or `README.md`.
+- [ ] No formal Skill is represented only by `pal.json` or an index mention.
+- [ ] No empty Skill directories or empty README files were created to satisfy release checks.
+- [ ] Official Pal field strategy decision exists at `docs/08-release-candidate/official-pal-field-strategy-decision.md`.
 
 ## Contacts And Registry
 
 - [ ] `contacts/pals.json` contains only valid Pal Packs.
 - [ ] `registry/pal.index.json` matches the current official bundled Pal set.
+- [ ] `agentpal.json`, `registry/pal.index.json`, and `contacts/pals.json` agree on the 9 official bundled Pal Packs.
 - [ ] Mention aliases resolve `/pal Name` by display name or alias.
 - [ ] Contacts and registry are documented as the source of truth for Pal discovery.
 - [ ] Individual Pal Packs do not maintain hard-coded route maps for other Pals.
@@ -105,6 +122,7 @@ Use this checklist before publishing AgentPal v0.1.0-rc.1 as a public MIT GitHub
 
 - [ ] `CHANGELOG.md` records user-visible release changes for `v0.1.0-rc.1`.
 - [ ] `RELEASE_NOTES.md` is user-facing and explains who the release is for, who it is not for, what is included, and what is not included.
+- [ ] PalSmith release notes describe official registration, Runtime Task Package planning, import/export planning, release-scope review, and the no-code boundary.
 - [ ] `GITHUB_RELEASE_DRAFT.md` is suitable for manual GitHub Release drafting and includes What's included, Current status, Known limitations, Getting started, and Safety notes.
 - [ ] `GITHUB_RELEASE_DRAFT.md` does not claim a remote push or online GitHub Release exists unless that has been verified.
 - [ ] `RELEASE_MANIFEST.md` records the observed local tag, commit, remote, and GitHub Release state.
@@ -115,6 +133,12 @@ Use this checklist before publishing AgentPal v0.1.0-rc.1 as a public MIT GitHub
 - [ ] Local tag `v0.1.0-rc.1` points to the final intended release commit.
 - [ ] If no remote exists, create an empty GitHub repository before adding a remote.
 - [ ] Add or verify the intended remote.
+- [ ] Confirm whether the observed remote URL spelling `https://github.com/AgentPal/AgnetPal.git` is intentional.
+- [ ] Confirm whether existing local tags `v0.1.0-rc.1` and `v0.1.0-rc.2` are both intentional before creating, moving, or publishing any release tag.
+- [ ] Review the full dirty worktree and stage only maintainer-approved release content.
+- [ ] Review `docs/08-release-candidate/22-dirty-worktree-stage-review.md` before staging.
+- [ ] Choose single release commit or split commit plan from `docs/08-release-candidate/23-commit-grouping-plan.md`.
+- [ ] Review `docs/08-release-candidate/24-maintainer-release-handoff.md` before any tag or push.
 - [ ] Push the final release commit.
 - [ ] Push tag `v0.1.0-rc.1`.
 - [ ] Create the GitHub Release from tag `v0.1.0-rc.1`.
@@ -125,11 +149,18 @@ Use this checklist before publishing AgentPal v0.1.0-rc.1 as a public MIT GitHub
 ## Validation
 
 - [ ] JSON parse checks passed.
+- [ ] Official Pal count checks passed for `agentpal.json`, `contacts/pals.json`, and `registry/pal.index.json`.
+- [ ] Official Pal root-file checks passed for `README.md`, `PAL.md`, `SKILL.md`, `AGENTS.md`, `pal.json`, and `core/output-contract.md`.
+- [ ] Formal Skill count / listed Skill asset consistency checks passed or gaps are documented.
+- [ ] Formal Skill asset maps show missing asset count 0 under the current release standard.
 - [ ] Capability profile JSON templates and examples parse as valid JSON.
 - [ ] no-runtime check confirms no scripts, package files, CLI, UI, installer, daemon, scanner, or validator were added.
+- [ ] Ignored local output directories such as `.agentpal/` and `exports/` are not included as release content.
 - [ ] no-hardcoded-routing check confirms no new task/domain fixed route rules.
 - [ ] Markdown sanity checks passed.
 - [ ] Relative links in root release files were reviewed.
+- [ ] Native `/pal` runtime API behavior is treated as not-run unless verified in the target runtime.
+- [ ] Live web fetch and external link checking are treated as not-run unless separately verified.
 - [ ] Public-safety keyword search was reviewed by a human.
 - [ ] Version references in root release files use `v0.1.0-rc.1`.
 - [ ] If `SECURITY.md` is absent, maintainers have accepted that as a release-candidate limitation or added a release-safe security policy before publication.

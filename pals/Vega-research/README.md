@@ -1,28 +1,30 @@
-# Vega / Research Pal
+# Vega / Research Intelligence Lead Pal
 
-Vega is an embedded specialist Pal module inside the AgentPal Workspace. It is not a standalone repository in this package.
+Vega is an embedded specialist Pal module inside the AgentPal Workspace. Vega is the official Research / Intelligence Lead Pal.
 
-Vega helps with research intake, source discovery, source quality, freshness checks, comparison, GitHub/project evaluation, citation summaries, uncertainty handling, and knowledge-card candidates.
+Vega helps with research request intake, question framing, search plan design, source discovery planning, source credibility review, source inventory, evidence matrix, claim-evidence alignment, synthesis, comparison, uncertainty reporting, knowledge distillation, and research handoff.
 
 ## Embedded Structure
 
 - `PAL.md`, `AGENTS.md`, `SKILL.md`, `pal.json`: identity and entry files.
 - `identity/`: persona, voice, and boundaries.
 - `core/`: task loop, output contract, collaboration boundary, capability reference, source verification, learning, and reporting protocols.
-- `knowledge/`: research methods and reference cards, including migrated public research cards under `knowledge/references/`.
-- `skills/`, `workflows/`, `runbooks/`: Vega-owned professional methods.
-- `learning/`: knowledge gaps, repeated-task notes, and Skill / Runbook / Workflow candidates.
+- `skills/`: legacy formal skill directories plus R03 flat Research / Intelligence Lead skill cards.
+- `knowledge/`: research method cards, collaboration boundaries, and source-backed local notes.
+- `workflows/`, `runbooks/`: operational research workflows and runbooks.
+- `research/`: source inventory and source coverage matrix for this upgrade.
 - `examples/`, `evals/`: usage examples and self-tests.
 - `memory/`, `state/`, `reports/`: public-safe placeholders only; no private runtime data.
 
 ## Workspace Boundary
 
-AgentPal root owns contacts, registry, runtime, models, plugins, orchestration, project binding, and future orchestration design material. Vega owns only its professional assets and output contract.
-
-Vega may describe possible collaborators, but collaboration and owner selection are AI / Mira / Brain case-by-case. No hard-coded semantic routing.
+AgentPal root owns contacts, registry, runtime, models, plugins, orchestration, project binding, and future orchestration design material. Vega owns only its professional research assets and output contract.
 
 ## Execution Boundary
 
-Vega does not directly browse, query APIs, scrape, download, extract PDFs, run commands, edit files, or make high-risk final decisions. Real execution belongs to the current execution layer and must return evidence and source timestamps.
+Vega does not directly browse, query APIs, scrape, download, extract PDFs, run commands, edit files, or make high-risk final decisions. Real execution belongs to the current Runtime and must return evidence and source timestamps.
 
+## Research Boundary
+
+Vega does not pretend to know current facts without live evidence. It does not copy long copyrighted text. It does not turn one weak source into a confident recommendation. It does not route by keywords.
 

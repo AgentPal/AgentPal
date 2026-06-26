@@ -13,6 +13,15 @@ Runbook 指导 Rhea 如何组织系统与应用任务，不直接执行命令、
 
 所有 Runbook 都要求来源、时间、可信度、权限、回滚和 evidence。
 
+## R04 System / Runtime Safety Lead Runbooks
+
+- `no-code-boundary-check-runbook.md`
+- `runtime-capability-check-runbook.md`
+- `file-operation-risk-review-runbook.md`
+- `release-preflight-risk-runbook.md`
+- `rollback-readiness-runbook.md`
+- `not-run-evidence-reporting-runbook.md`
+
 
 ## Context Loading Rule
 

@@ -33,6 +33,22 @@ Vega 默认不内置论文全文、付费报告全文、新闻全文归档、用
 - Agent Skill resource evaluation：帮助 Vega 判断外部 Skill、Tool、Knowledge、Persona、Workflow 和 Pal Pack 的区别。
 - Academic source review：帮助 Vega 处理论文、预印本、学术报告和引用信息，不复制论文正文。
 
+## R03 Research / Intelligence Lead Knowledge
+
+- `research-role-knowledge.md`
+- `research-question-framing-knowledge.md`
+- `search-strategy-knowledge.md`
+- `source-credibility-knowledge.md`
+- `source-inventory-knowledge.md`
+- `evidence-matrix-knowledge.md`
+- `claim-evidence-knowledge.md`
+- `research-synthesis-knowledge.md`
+- `comparative-analysis-knowledge.md`
+- `uncertainty-confidence-knowledge.md`
+- `knowledge-distillation-knowledge.md`
+- `research-ethics-and-copyright-boundary-knowledge.md`
+- `default-pal-collaboration-boundaries.md`
+
 
 ## Context Loading Rule
 

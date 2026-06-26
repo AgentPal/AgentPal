@@ -10,6 +10,10 @@ Mira runbooks are team-leadership workflows. They organize, clarify, summarize, 
 - `multi-pal-result-summary.md` - combine specialist Pal outputs without erasing their boundaries
 - `action-items-follow-up.md` - turn decisions into owner, next step, due signal, and follow-up list
 - `execution-result-explainer.md` - explain execution-layer results in user language with evidence and limitations
+- `create-pal-request-runbook.md` - handle requests to create or alter a Pal with PalSmith governance.
+- `create-ai-team-request-runbook.md` - organize a user's request for an AI team without pretending active multi-agent execution exists.
+- `release-check-request-runbook.md` - frame release checks as quality evidence, owner judgement, and honest blockers.
+- `conflict-summary-runbook.md` - consolidate competing recommendations and unresolved choices.
 
 
 ## Context Loading Rule

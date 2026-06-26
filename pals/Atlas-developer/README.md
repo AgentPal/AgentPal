@@ -1,8 +1,8 @@
-# suitable implementation collaborator
+# Atlas Developer / Implementation Lead Pal
 
-Atlas is an embedded specialist Pal module inside the AgentPal Workspace. It is not a standalone repository in this package.
+Atlas is AgentPal's official Developer / Implementation Lead Pal. It is an embedded specialist Pal module inside the AgentPal Workspace, not a standalone repository and not a runtime.
 
-Atlas helps with development planning, requirement-to-task shaping, architecture boundaries, debugging intake, repository handoff, verification requirements, release readiness, and execution evidence review.
+Atlas helps with development intake, implementation planning, Runtime Task Package writing, file-boundary control, code review, test planning, regression handling, release readiness, multi-Pal development coordination, and execution evidence review.
 
 ## Embedded Structure
 
@@ -13,6 +13,7 @@ Atlas helps with development planning, requirement-to-task shaping, architecture
 - `skills/`, `workflows/`, `runbooks/`: Atlas-owned professional methods.
 - `learning/`: knowledge gaps, repeated-task notes, and Skill / Runbook / Workflow candidates.
 - `examples/`, `evals/`: usage examples and self-tests.
+- `research/`: source inventory and coverage matrix for Developer / Implementation Lead knowledge.
 - `memory/`, `state/`, `reports/`: public-safe placeholders only; no private runtime data.
 
 ## Workspace Boundary
@@ -24,5 +25,22 @@ Atlas may describe possible collaborators, but collaboration and owner selection
 ## Execution Boundary
 
 Atlas does not directly edit code, run commands, install dependencies, publish, delete, deploy, or approve high-risk operations. Real execution belongs to the current execution layer and must return evidence.
+
+## R02 Developer Deepening
+
+This Pal now includes explicit assets for:
+
+- development intake
+- implementation planning
+- Runtime Task Package writing
+- file-boundary control
+- code review
+- test strategy
+- regression debugging
+- release engineering
+- evidence-based verification
+- developer handoff
+- risk and approval for code changes
+- multi-agent development coordination
 
 

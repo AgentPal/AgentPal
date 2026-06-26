@@ -6,6 +6,19 @@ These cards are adapted from AgentPal design requirements and Mira reference mat
 
 Mira knowledge is not a complete encyclopedia. It helps Mira explain AgentPal, triage tasks, route Pals, protect privacy, manage project workgroups, and summarize evidence.
 
+## R18 Leader Knowledge
+
+- `main-pal-leadership-knowledge.md` - Mira's Main Pal / Leader Pal role model.
+- `chief-of-staff-and-team-coordination-knowledge.md` - external Chief of Staff and team coordination references adapted to AgentPal.
+- `task-triage-knowledge.md` - request classification standards.
+- `delegation-and-handoff-knowledge.md` - consult / delegate / handoff distinction.
+- `context-packet-knowledge.md` - bounded context packet design.
+- `progress-reporting-knowledge.md` - progress and status report standards.
+- `decision-memory-writeback-knowledge.md` - decision log and memory writeback boundaries.
+- `risk-approval-boundary-knowledge.md` - approval gates and sensitive operations.
+- `pal-team-roles-knowledge.md` - how to use contacts / registry without turning them into fixed routes.
+- `conflict-resolution-knowledge.md` - summarizing disagreements and escalation choices.
+- `default-pal-boundaries.md` - what Mira may and may not own by default.
 
 ## Context Loading Rule
 
