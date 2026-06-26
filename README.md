@@ -44,32 +44,21 @@ Learn more about Pal:
 
 ## What Works Today
 
-AgentPal v0.1.0-rc.1 currently provides:
+AgentPal v0.1.0-rc.3 currently provides:
 
-- Markdown / JSON / protocol workspace assets
-- Simple Pal Mode only
-- Mira as the default Main Pal / Leader / Conductor
-- 9 official bundled Pals
-- `/pal Name` explicit Pal calls
-- Fast Route for clear owner-Pal handoff
-- Task Package rules
-- Context Slicing
-- Asset Loading Budget
-- PalSmith as the official no-code Pal asset governance Pal for Pal creation, job fitness inspection, user material ingestion, web research to knowledge, import, export, health checks, versioning, and Runtime Task Package planning
-- PalSmith registered in AgentPal official Pal list, registry, and contacts
-- PalSmith task package and example indexes for no-code use
-- PalSmith v0.2 work-in-progress capabilities: Pal quality inspection, responsibility conflict detection, capability maps, team design, version governance, Eval Lab, and lifecycle workflow
-- PalSmith v0.3 work-in-progress capabilities: AI Team Builder, team governance, cross-Pal review, publish quality gate, runtime call verification, GitHub import verification, and quickstart AI team guide
-- PalSmith v0.4 work-in-progress capabilities: 5-minute quickstart path, AI team blueprints, demo script, readiness matrix, and regression test plan
-- PalSmith R16 v0.4-fix capabilities: job fitness quality inspection, content-preserving material ingestion, optional web research to knowledge, and PalSmith self-health review
-- Mira R18 Leader deepening assets: Main Pal job fitness, leader skills, knowledge, workflows, runbooks, evals, research inventory, and PalSmith-style review under `pals/Mira-main/`
-- Atlas R02 Developer deepening assets: Developer / Implementation Lead job fitness, Runtime Task Package writing, file-boundary control, code review, test strategy, release engineering, collaboration boundaries, research inventory, and evals under `pals/Atlas-developer/`
-- Vega R03 Research / Intelligence Lead deepening assets: research intake, question framing, search plan design, source inventory, evidence matrix, synthesis, uncertainty reporting, knowledge distillation, collaboration boundaries, research inventory, and evals under `pals/Vega-research/`
-- Rhea R04 System / Runtime Safety Lead deepening assets: runtime capability assessment, permission boundary, no-code boundary audit, file safety, risk classification, approval gates, execution evidence review, release safety, rollback readiness, incident review, research inventory, and evals under `pals/Rhea-system/`
-- Quinn R05 Quality / Verification Lead deepening assets: acceptance criteria, Definition of Done, test strategy, evidence review, false completion detection, regression gates, release quality gates, risk severity, not-run handling, quality reports, cross-Pal review, research inventory, and evals under `pals/Quinn-quality/`
-- Morgan R06 Document / File Workflow Lead deepening assets: document-role judgement, information architecture, source-material organization, content preservation, Markdown documentation, Office/PDF output task packages, file workflow design, document quality review, versioned documentation, release notes, privacy-sensitive document review, collaboration boundaries, research inventory, and evals under `pals/Morgan-document/`
-- Harper R07 Writing / Content Craft Lead deepening assets: writing goal clarification, audience and voice control, long-form structure, rewriting, editing, brand voice, copywriting, narrative, social content, content preservation, fact and claim boundaries, content quality self-review, collaboration boundaries, research inventory, and evals under `pals/Harper-writing/`
-- Codex, Claude Code, and Generic CLI Agent usage guides
+- Markdown / JSON / protocol workspace assets with no required runtime dependency
+- Simple Pal Mode as the active runtime policy
+- Mira as the default Main Pal / Leader / Conductor, with leader knowledge, skills, workflows, runbooks, evals, research inventory, delegation, handoff, context packet, risk approval, and progress reporting assets
+- 9 official bundled Pals: Mira, Atlas, Vega, Rhea, PalSmith, Quinn, Morgan, Harper, and Nova
+- `/pal Name` explicit Pal calls backed by contacts and registry files
+- AI owner judgement, Fast Route owner-Pal handoff, and no hard-coded keyword routing
+- Task Package rules, Runtime Task Package standards, Context Slicing, and Asset Loading Budget
+- PalSmith as the official no-code Pal asset governance Pal for Pal creation, AI team creation, job fitness inspection, user material ingestion, optional web research to knowledge, import, export, health checks, versioning, publish readiness, and Runtime Task Package planning
+- PalSmith quickstart path, AI team blueprints, demo script, readiness matrix, task package templates, example packages, governance protocols, and Markdown evals
+- Formal Skill asset standard with 219 formal skills mapped to Pal-owned skill assets and 0 missing formal Skill assets under the release standard
+- Deepened official Pal assets for Atlas, Vega, Rhea, Quinn, Morgan, Harper, and Nova, including role knowledge, skills, workflows, runbooks, evals, collaboration boundaries, and research inventories
+- Release candidate evidence under `docs/08-release-candidate/`, including PalSmith verification, default Pal sync, release review, no-code boundary review, formal Skill asset audit/fix, dirty worktree stage review, commit grouping plan, and maintainer handoff reports
+- Codex, Claude Code, and Generic CLI Agent usage guides with thin project binding prompts
 - PalBench small-sample validation
 
 ## Quick Start
