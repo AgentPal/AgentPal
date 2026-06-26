@@ -27,6 +27,9 @@ AgentPal is a Pal layer and Pal Pack Standard practice for Markdown/JSON-capable
 - [PalBench Light suite plan](research/palbench-light-suite-plan.md)
 - [Runtime Adapter stability guide](04-runtime-guides/runtime-adapter-stability-guide.md)
 - [Runtime Adapter troubleshooting prompt cards](04-runtime-guides/runtime-adapter-troubleshooting-prompt-cards.md)
+- [v0.2 release readiness](09-roadmap/v0.2-release-readiness.md)
+- [v0.2 public capability summary](09-roadmap/v0.2-public-capability-summary.md)
+- [v0.2 integration test matrix](../evals/v0.2-integration/v0.2-integration-test-matrix.md)
 - [Validation and evidence](06-validation-and-evidence/README.md)
 - [v0.1.0-rc.1 release candidate](08-release-candidate/README.md)
 - [v0.2 development plan](09-roadmap/v0.2-development-plan.md)
@@ -196,6 +199,7 @@ AgentPal is a Pal layer and Pal Pack Standard practice for Markdown/JSON-capable
 | [06-collaboration](06-collaboration/00-collaboration-overview.md) | Contacts, mention protocol, Context Packets, handoff, and project workgroups |
 | [06-validation-and-evidence](06-validation-and-evidence/README.md) | PalBench meaning, limits, observed benefits, and future validation design |
 | [evals/palbench-light](../evals/palbench-light/README.md) | v0.2 PalBench Light release regression suite |
+| [evals/v0.2-integration](../evals/v0.2-integration/v0.2-integration-test-matrix.md) | v0.2 first-phase integrated readiness matrix |
 | [07-authoring-pals](07-authoring-pals/README.md) | Designing, writing, testing, publishing, and governing Pal Packs with PalSmith |
 | [07-memory-and-learning](07-memory-and-learning/00-memory-overview.md) | User memory, project memory, skill memory, and repeated-task learning |
 | [08-release-and-maintenance](08-release-and-maintenance/00-release-process.md) | Release process, public-safety checks, versioning, and maintenance |

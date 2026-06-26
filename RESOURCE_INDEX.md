@@ -87,6 +87,9 @@ Use:
 | `docs/01-concepts/07-why-pal.md` | why AgentPal uses the Pal concept between Skills and Agent teams | concept questions and onboarding |
 | `docs/05-orchestration-methodology/` | current AgentPal Pal orchestration methodology | methodology questions and docs navigation |
 | `docs/09-roadmap/` | v0.2 roadmap and task pool | v0.2 planning and development sequencing |
+| `docs/09-roadmap/v0.2-release-readiness.md` | v0.2 release readiness assessment | R46 first-phase integrated readiness and rc preparation recommendation |
+| `docs/09-roadmap/v0.2-public-capability-summary.md` | v0.2 public capability summary | restrained public claims for v0.2 first phase |
+| `evals/v0.2-integration/v0.2-integration-test-matrix.md` | v0.2 integration matrix | R46 integrated readiness test matrix |
 | `docs/06-palsmith/README.md` | PalSmith v0.2 productization index | PalSmith creation and AI team productization work |
 | `docs/06-palsmith/palsmith-end-to-end-productization.md` | PalSmith v0.2 end-to-end user path | PalSmith creation and AI team productization work |
 | `pals/PalSmith-pal-governor/templates/task-packages/create-first-professional-pal.md` | Copyable first professional Pal creation task package | PalSmith v0.2 single-Pal creation work |
@@ -125,6 +128,9 @@ Use:
 | `docs/04-runtime-guides/runtime-adapter-troubleshooting-prompt-cards.md` | Runtime Adapter troubleshooting cards | R45 copyable bounded troubleshooting prompts |
 | `docs/04-runtime-guides/upgrade-existing-binding-to-thin-binding.md` | existing binding upgrade runbook | R45 upgrade path for old copied bindings |
 | `evals/runtime-adapters/runtime-adapter-regression-suite.md` | Runtime Adapter regression suite | R45 12-scenario adapter regression checklist |
+| `docs/09-roadmap/v0.2-release-readiness.md` | v0.2 release readiness assessment | R46 integrated readiness conclusion |
+| `docs/09-roadmap/v0.2-public-capability-summary.md` | v0.2 public capability summary | public-safe capability summary |
+| `evals/v0.2-integration/v0.2-integration-test-matrix.md` | v0.2 integration matrix | first-phase integration test matrix |
 | `docs/05-orchestration-methodology/11-pal-teams-and-deep-conductor.md` | Pal Team, runtime-layer agent execution, and future Deep Conductor boundaries | Pal Team and orchestration questions |
 | `docs/06-validation-and-evidence/` | current PalBench and evidence interpretation | validation, PalBench, and evidence questions |
 | `docs/08-release-candidate/` | current v0.1.0-rc.1 release candidate notes | release candidate scope and evidence questions |
