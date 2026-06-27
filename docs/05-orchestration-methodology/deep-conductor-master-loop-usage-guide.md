@@ -57,7 +57,7 @@ The host Runtime performs file reads, writes, commands, tool calls, publishing, 
 - Project memory: summarizes current project state when available and approved.
 - Routing Memory: provides previous routing outcomes as evidence, never as fixed routes.
 - Capability Inventory: provides Runtime / Model / Reasoning / Runtime Skill / Plugin / MCP / Pal capability candidates.
-- Runtime-installed Skills / Plugins / MCP: appear only as host Runtime candidates and require current evidence before use.
+- Runtime-installed Skills / Plugins / MCP: appear only as host Runtime candidates and require current availability, fallback, execution evidence, and verification before completion claims.
 - Pal-owned Skills: Pal methods, workflows, runbooks, and output contracts used to judge and package work.
 - Context Packet: bounds what a Pal, verifier, reviewer, or Runtime package receives.
 - Workflow Topology: chooses Fast Route, Owner + Verifier, Plan -> Execute -> Verify, Parallel Independent Review, project conductor workflow, or another no-code pattern.
@@ -94,6 +94,7 @@ Deep Conductor may output:
 - workflow topology recommendation;
 - context budget plan;
 - Runtime Skill-aware task packages;
+- Runtime Skill availability check and fallback packages when needed;
 - verification package;
 - next-round runtime task package;
 - conductor decision record;

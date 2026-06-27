@@ -87,6 +87,14 @@ The first suite includes at least 10 cases:
 41. Routing Memory fixed route failure.
 42. Private project memory leak failure.
 43. Cross-runtime continuation without verification failure.
+44. Runtime Skill office document candidate.
+45. Runtime Skill browser check candidate.
+46. Runtime Skill repo analysis candidate.
+47. Runtime Skill availability unknown.
+48. Runtime Skill unavailable fallback.
+49. Runtime Skill output requires verification.
+50. Runtime Skill usage memory reuse.
+51. Runtime Skill confused with Pal Skill failure.
 
 ## Boundary
 
@@ -98,3 +106,5 @@ PalBench Collaboration must not require:
 - automatic routing memory writeback;
 - automatic capability probing;
 - CLI, UI, scanner, validator, installer, daemon, or service.
+
+Runtime Skill cases verify no-code Task Package quality only. They do not require AgentPal to call, install, scan, or execute host Runtime Skills.

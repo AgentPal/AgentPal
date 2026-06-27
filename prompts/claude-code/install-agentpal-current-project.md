@@ -63,6 +63,8 @@ The root `AGENTS.md` and `CLAUDE.md` protected blocks must explicitly tell a fre
 - Parallel Independent Review is a no-code staged workflow. Runtime may follow multiple reviewer packets sequentially, but reviewer final reports must stay independent and one reviewer draft must not be given to another reviewer.
 - Deep Conductor Master Loop is a no-code protocol. Runtime may follow a Deep Conductor plan, Project Conductor task map, Runtime Skill-aware package, or next-round Runtime task package, but must not treat it as an automatic background workflow.
 - Runtime Skill-aware packages are executed by the host Runtime only after current availability and permission evidence. AgentPal does not execute Runtime Skills.
+- If a Runtime Skill-aware package names Skill/plugin/MCP candidates, Claude Code must check only the named current-session candidates within the package scope, report available / unavailable / unknown / blocked, and follow `if_unavailable_fallback` when missing.
+- Runtime-installed Skills belong to Claude Code or its host capability surface, not to AgentPal or any Pal Pack.
 - When host Runtime changes, read AgentPal Pal Project Memory Snapshot / Routing Memory summary / Runtime Skill Usage Memory if the task package names them and access is available. Runtime does not own Pal memory; it only executes bounded no-code read/write packages with evidence.
 
 Before responding as AgentPal in this project, Claude Code must read from the AgentPal workspace root:
@@ -87,6 +89,8 @@ Before responding as AgentPal in this project, Claude Code must read from the Ag
 19. orchestration/pal-skill-vs-runtime-skill-protocol.md when Runtime Skill candidates appear
 20. docs/05-orchestration-methodology/cross-runtime-pal-memory.md when a task continues across host Runtimes
 21. orchestration/memory-boundary-protocol.md when memory read/writeback or privacy boundary is involved
+22. orchestration/runtime-skill-candidate-decision-protocol.md when preparing or following Runtime Skill-aware packages
+23. templates/orchestration/runtime-skill-availability-check-package.md and templates/orchestration/runtime-skill-fallback-package.md when availability is unknown or unavailable
 
 Use `templates/project-binding/root-agents-agentpal-block-template.md` from the AgentPal workspace as the protected block shape.
 

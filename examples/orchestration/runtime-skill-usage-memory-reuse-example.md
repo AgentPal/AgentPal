@@ -14,9 +14,11 @@ runtime_id: claude-code
 runtime_skill_candidate:
   name: document-skill
   type: Agent Skill
+availability_confirmed: true
 task_type: "document restructuring"
 success: true
 verification_result: pass
+fallback_used: none
 known_limits:
   - "Needed a clear output format."
 recommended_prompt_shape:
@@ -43,6 +45,7 @@ Reason: a host Runtime Skill may reduce document handling risk, but Pal Skill an
 
 ```yaml
 schema: agentpal.runtime_skill_aware_task_package.v0.1
+availability_check_required: true
 runtime_skill_candidates:
   - name: document-skill
     type: Agent Skill
@@ -53,8 +56,13 @@ pal_owned_skills_used:
   - pal: Morgan
     skill_or_method: "document judgement method"
     purpose: "shape document task requirements"
-routing_memory_writeback:
+if_unavailable_fallback:
+  - "Use ordinary document task package or ask user to choose a document-capable Runtime."
+verification_requirements:
+  - "Verify output against the current source and requested format."
+runtime_skill_usage_memory_writeback:
   required: true
+not_a_fixed_route: true
 ```
 
 ## Verification Plan
@@ -62,10 +70,11 @@ routing_memory_writeback:
 - If the Skill is unavailable, mark `not-run`.
 - If used, report input summary, output summary, artifact evidence, and verification result.
 - Do not say Morgan or any Pal executed the host Skill.
+- Availability and verification are separate. An available Skill can still produce a failed or partial result.
 
 ## Memory Writeback Candidate
 
-Create or update Runtime Skill Usage Memory after evidence exists.
+Create or update Runtime Skill Usage Memory after evidence exists. Include availability, success/failure, verification result, fallback used, privacy notes, and `not_a_fixed_route: true`.
 
 ## No-Code Boundary Note
 

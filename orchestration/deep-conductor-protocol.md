@@ -168,12 +168,17 @@ Purpose: separate Pal-owned Skills from host Runtime-installed Skill, plugin, an
 Read:
 
 - `orchestration/pal-skill-vs-runtime-skill-protocol.md`;
+- `orchestration/runtime-skill-candidate-decision-protocol.md`;
 - `templates/orchestration/runtime-skill-aware-task-package.md`;
 - relevant Skill / Plugin / MCP profiles if needed.
 
 Output:
 
 - `runtime_skill_candidates`;
+- `plugin_candidates`;
+- `mcp_tool_candidates`;
+- `availability_check_required`;
+- `if_unavailable_fallback`;
 - `pal_owned_skills_used`;
 - evidence required before Runtime Skill use.
 - Runtime Skill Usage Memory sources and limits when relevant.
@@ -182,17 +187,23 @@ Do not:
 
 - claim a Pal executes a host Skill;
 - claim a Runtime Skill is available without current evidence;
+- treat availability evidence as execution or verification evidence;
 - mix Pal methods and Runtime tools.
 - treat Runtime Skill Usage Memory as a Pal-owned Skill.
 
 Templates:
 
 - `templates/orchestration/runtime-skill-aware-task-package.md`
+- `templates/orchestration/runtime-skill-availability-check-package.md`
+- `templates/orchestration/runtime-skill-fallback-package.md`
 - `templates/memory/runtime-skill-usage-memory-record.md`
 
 Eval:
 
 - `evals/orchestration/runtime-skill-aware-conductor-self-test.md`
+- `evals/orchestration/runtime-skill-orchestration-self-test.md`
+- `evals/orchestration/runtime-skill-availability-check-self-test.md`
+- `evals/orchestration/runtime-skill-fallback-self-test.md`
 
 ## Step 6: Workflow Topology Selection
 
@@ -301,12 +312,16 @@ Read:
 
 - `orchestration/task-package-output-contract.md`;
 - `templates/orchestration/runtime-skill-aware-task-package.md`;
+- `templates/orchestration/runtime-skill-availability-check-package.md`;
+- `templates/orchestration/runtime-skill-fallback-package.md`;
 - `templates/orchestration/next-round-runtime-task-package.md`;
 - `templates/orchestration/cross-runtime-continuation-task-package.md` when previous and current Runtime differ.
 
 Output:
 
 - Runtime Skill-aware task package;
+- availability check package when candidate availability is unknown;
+- fallback package when candidate capability is unavailable, unsafe, failed, or untrusted;
 - next-round runtime task package;
 - cross-runtime continuation task package when needed;
 - required context;

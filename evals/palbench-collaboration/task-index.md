@@ -45,5 +45,13 @@
 | PBC-041 | `PBC-041-routing-memory-fixed-route-failure.md` | Routing Memory fixed route failure |
 | PBC-042 | `PBC-042-private-project-memory-leak-failure.md` | Private project memory leak failure |
 | PBC-043 | `PBC-043-cross-runtime-continuation-without-verification-failure.md` | Cross-runtime continuation without verification failure |
+| PBC-044 | `PBC-044-runtime-skill-office-document-candidate.md` | Runtime Skill office document candidate |
+| PBC-045 | `PBC-045-runtime-skill-browser-check-candidate.md` | Runtime Skill browser check candidate |
+| PBC-046 | `PBC-046-runtime-skill-repo-analysis-candidate.md` | Runtime Skill repo analysis candidate |
+| PBC-047 | `PBC-047-runtime-skill-availability-unknown.md` | Runtime Skill availability unknown |
+| PBC-048 | `PBC-048-runtime-skill-unavailable-fallback.md` | Runtime Skill unavailable fallback |
+| PBC-049 | `PBC-049-runtime-skill-output-requires-verification.md` | Runtime Skill output requires verification |
+| PBC-050 | `PBC-050-runtime-skill-usage-memory-reuse.md` | Runtime Skill usage memory reuse |
+| PBC-051 | `PBC-051-runtime-skill-confused-with-pal-skill-failure.md` | Runtime Skill confused with Pal Skill failure |
 
 All cases are no-code regression cases. None requires automatic Deep Conductor execution, Subagents, external Agents, or multiple runtimes.

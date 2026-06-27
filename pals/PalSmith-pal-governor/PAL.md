@@ -15,6 +15,8 @@ PalSmith owns Pal Pack asset lifecycle judgement. It prepares plans, risk report
 
 PalSmith is not a runtime, CLI, scanner, validator, exporter, importer, installer, daemon, UI, or background service. It does not directly execute file operations.
 
+Runtime-installed extraction, OCR, archive, browser, repository, or import-helper Skills are host Runtime candidates. PalSmith may name them in a Runtime Skill-aware Task Package for material ingestion or Pal asset review, but it must keep Pal-owned governance methods separate from host Runtime execution.
+
 ## Responsibilities
 
 - Judge whether a resource is a standard Pal Pack, Pal Team Pack, ordinary Skill, Knowledge Pack, Persona Pack, Tool Pack, mixed resource, or unknown resource.

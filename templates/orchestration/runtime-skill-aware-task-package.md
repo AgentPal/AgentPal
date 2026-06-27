@@ -6,6 +6,8 @@ This template keeps Pal-owned Skills separate from Runtime-installed Skills.
 
 `pal_owned_skills_used` are Pal methods, workflows, runbooks, output contracts, or judgement skills used to prepare the package. They do not execute host tools.
 
+Availability is unknown by default. Set `availability_check_required: true` unless the current host Runtime has already reported that the candidate exists and can be used for this task.
+
 ```yaml
 schema: agentpal.runtime_skill_aware_task_package.v0.1
 task_id: example-task-id
@@ -13,7 +15,11 @@ user_goal: ""
 owner_pal:
   name: ""
   reason: ""
-runtime_candidate:
+pal_owned_skills_used:
+  - pal: ""
+    skill_or_method: ""
+    purpose: ""
+host_runtime_candidate:
   name: ""
   reason: ""
   availability_evidence_required: true
@@ -23,11 +29,18 @@ runtime_skill_candidates:
     reason: ""
     required_inputs: []
     evidence_required: []
+plugin_candidates:
+  - name: ""
+    reason: ""
+mcp_tool_candidates:
+  - name: ""
+    reason: ""
+availability_check_required: true
+if_available_use:
+  - ""
+if_unavailable_fallback:
+  - ""
 runtime_skill_usage_reason: ""
-pal_owned_skills_used:
-  - pal: ""
-    skill_or_method: ""
-    purpose: ""
 required_inputs: []
 allowed_files: []
 cannot_read: []
@@ -48,16 +61,20 @@ final_report_required:
     - files_changed_or_read
     - commands_or_tools_used
     - runtime_skills_used_or_not_run
+    - availability_check_result
+    - fallback_used
     - verification_results
     - blockers
-routing_memory_writeback:
+runtime_skill_usage_memory_writeback:
   required: true
   fields:
     - task_type
     - owner_pal
-    - runtime_candidate
+    - host_runtime_candidate
     - runtime_skill_candidates
     - runtime_skills_used
+    - availability_confirmed
+    - fallback_used
     - pal_owned_skills_used
     - context_read_count
     - profile_read_count
@@ -65,6 +82,7 @@ routing_memory_writeback:
     - verification_result
     - rework_count
     - notes_for_next_time
+not_a_fixed_route: true
 ```
 
 ## Use Rule
@@ -72,3 +90,5 @@ routing_memory_writeback:
 Use this template when a task may benefit from a host Runtime Skill, plugin, MCP tool, or special tool surface.
 
 The package must not imply that AgentPal owns, installs, invokes, or verifies the Skill by itself.
+
+The host Runtime performs availability checks and execution. The Pal layer prepares the package, separates capability types, and verifies returned evidence.

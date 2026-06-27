@@ -17,6 +17,8 @@ Capability Inventory helps Mira or an owner Pal judge:
 
 These profiles are judgement inputs only. They do not replace AI Judgement and must not become keyword-based dispatch rules or fixed task-domain routes.
 
+Runtime Skill, plugin, and MCP profiles do not prove current installation. When a task may use one of them, follow `orchestration/runtime-skill-candidate-decision-protocol.md` and ask the host Runtime for current availability evidence.
+
 ## Profile Types
 
 | Profile | Purpose |
@@ -85,6 +87,7 @@ Do not use Capability Inventory to create:
 - fixed runtime choices
 - fixed model choices
 - automatic Skill/plugin/MCP calls
+- automatic local Skill scans
 - hidden external Agent calls
 
 ## Future Versions

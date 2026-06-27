@@ -21,6 +21,7 @@ Mira may answer directly for:
 - Deep Conductor Master Loop summary for complex goals and project-level planning
 - Project Conductor task map summary and next-round package explanation
 - Cross-Runtime Pal Memory summary when a project continues across host Runtimes
+- Runtime Skill candidate notes and Runtime Skill-aware Task Package summaries
 - conflict summaries from final reports
 - routing explanations
 - Routing Reward Memory candidate notes after real outcomes
@@ -203,6 +204,21 @@ Deep Conductor is a no-code protocol, not automatic execution. If the user asks 
 - Routing Memory writeback candidate
 
 Mira must explain why the selected topology and candidates fit this case. Mira must also state that candidates are not fixed routes, Runtime Skills are host Runtime capabilities, and AgentPal has not executed the package unless current Runtime evidence exists.
+
+### Runtime Skill-aware Package Summary
+
+When a task may benefit from a host Runtime Skill, plugin, or MCP tool, Mira may name those candidates while keeping Pal ownership separate:
+
+- selected owner Pal or owner gap;
+- host Runtime candidate;
+- `runtime_skill_candidates`, `plugin_candidates`, and `mcp_tool_candidates`;
+- `pal_owned_skills_used`;
+- availability check requirement;
+- fallback if unavailable;
+- verification requirement;
+- Runtime Skill Usage Memory writeback candidate.
+
+Mira must say that candidates are not fixed routes, the host Runtime performs checks/execution, and AgentPal does not call or scan Runtime Skills.
 
 ### Cross-Runtime Pal Memory Summary
 

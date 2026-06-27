@@ -37,6 +37,8 @@ Load selected Pal assets only after current owner judgement. Do not preload all 
 - Project Conductor Workflow is a no-code project-level workflow. If used, follow `orchestration/project-conductor-workflow.md` and produce a task map or next-round package for the host Runtime.
 - Cross-Runtime Pal Memory is a no-code continuity protocol. If a project continues across host Runtimes, read the relevant Pal Project Memory Snapshot, Routing Memory summary, Runtime Skill Usage Memory, and Verification Memory when available and approved; do not start from zero when valid memory exists.
 - Runtime Skill-aware packages are executed by the host Runtime only after current availability and permission evidence. AgentPal does not execute Runtime Skills.
+- If a Runtime Skill-aware package names Skill/plugin/MCP candidates, the host Runtime checks only the named current-session candidates within the package scope, reports available / unavailable / unknown / blocked, and follows `if_unavailable_fallback` when missing.
+- Runtime-installed Skills belong to the host Runtime, not to AgentPal or any Pal Pack.
 - Memory writeback is performed by the host Runtime only through bounded no-code file updates when a task package requests it and evidence exists. AgentPal does not run a memory sync service or database.
 
 ## Context Packet
@@ -60,6 +62,10 @@ When a direct call, mention, review, delegate, handoff, or owner transfer needs 
 - `templates/orchestration/next-round-runtime-task-package.md`
 - `templates/orchestration/cross-runtime-continuation-task-package.md`
 - `templates/orchestration/conductor-decision-record.md`
+- `orchestration/runtime-skill-candidate-decision-protocol.md`
+- `templates/orchestration/runtime-skill-aware-task-package.md`
+- `templates/orchestration/runtime-skill-availability-check-package.md`
+- `templates/orchestration/runtime-skill-fallback-package.md`
 - `docs/05-orchestration-methodology/cross-runtime-pal-memory.md`
 - `orchestration/memory-boundary-protocol.md`
 - `templates/memory/pal-project-memory-snapshot.md`

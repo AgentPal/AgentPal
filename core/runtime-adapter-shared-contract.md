@@ -34,6 +34,9 @@ An adapter must:
 - follow `docs/05-orchestration-methodology/cross-runtime-pal-memory.md` and `orchestration/memory-boundary-protocol.md` when a task continues across host Runtimes or uses memory snapshots
 - read Pal Project Memory Snapshot, Routing Memory summary, Runtime Skill Usage Memory, and Verification Memory when a task package names them and access is available
 - treat Runtime Skill-aware packages as host Runtime instructions that still require current availability and permission evidence
+- when a Runtime Skill-aware package names Skill, plugin, or MCP candidates, check the current host Runtime's available capabilities only within the package scope and report available / unavailable / unknown / blocked
+- if a named Runtime Skill, plugin, or MCP tool is unavailable, follow the package fallback instead of silently substituting or claiming success
+- keep Runtime-installed Skills as host Runtime capabilities, not AgentPal or Pal-owned Skills
 - treat memory writeback as a no-code file update task that requires explicit package scope and execution evidence
 
 ## Adapter Must Not
@@ -54,6 +57,9 @@ An adapter must:
 - present Cross-Runtime Pal Memory as an automatic memory sync service, database, daemon, or background Runtime feature
 - treat the host Runtime as the owner of Pal memory
 - claim Runtime Skill candidates were used before the host Runtime verifies and reports evidence
+- auto-scan local Runtime Skills outside a bounded package
+- auto-install or auto-enable Runtime Skills, plugins, or MCP tools
+- treat Runtime Skill candidates as fixed routes
 - let verifier work rely only on an owner completion claim when evidence context is missing
 - feed one reviewer candidate another reviewer draft during independent review
 
@@ -96,6 +102,19 @@ If a project continues from a previous host Runtime, the adapter should help the
 6. write back no-code memory candidates only when the task package asks for it and current Runtime evidence supports the update.
 
 The host Runtime changes, but Pal memory continuity belongs to the Pal layer. The Runtime is an execution carrier, not the owner of Pal memory.
+
+## Runtime Skill-aware Package Handling
+
+If a task package includes `runtime_skill_candidates`, `plugin_candidates`, or `mcp_tool_candidates`, the adapter should help the host Runtime:
+
+1. confirm the named candidates are available in the current host Runtime, when the package asks for it;
+2. keep availability evidence separate from execution evidence;
+3. execute only if available, allowed, and within the package scope;
+4. use `if_unavailable_fallback` when unavailable, unknown, disabled, unsafe, or blocked;
+5. return final evidence including availability result, capability used or not-run, outputs, verification evidence, and blockers;
+6. record Runtime Skill Usage Memory only when the package asks for writeback and privacy boundaries allow it.
+
+Runtime Skill-aware package handling does not authorize broad local Skill scanning, automatic installs, background services, or fixed Skill routes.
 
 ## Owner + Verifier Handling
 

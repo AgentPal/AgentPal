@@ -58,6 +58,7 @@ Future methodology extends this with workflow topology, Context Access Lists, is
 - [Deep Conductor Master Goal](deep-conductor-master-goal.md)
 - [Deep Conductor Master Loop Usage Guide](deep-conductor-master-loop-usage-guide.md)
 - [Cross-Runtime Pal Memory](cross-runtime-pal-memory.md)
+- [Runtime-installed Skill Orchestration Guide](runtime-installed-skill-orchestration-guide.md)
 - [Owner + Verifier Usage Guide](owner-verifier-usage-guide.md)
 - [Parallel Independent Review Usage Guide](parallel-independent-review-usage-guide.md)
 - [08 Routing Decision Record](08-routing-decision-record.md)
