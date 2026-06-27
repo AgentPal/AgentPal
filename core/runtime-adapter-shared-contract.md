@@ -29,6 +29,7 @@ An adapter must:
 - resolve named Pals through current contacts / registry instead of copied Pal lists
 - follow `orchestration/mention-and-direct-pal-protocol.md` and `orchestration/context-packet-protocol.md` for direct calls, consults, reviews, handoffs, and owner transfers
 - follow `orchestration/owner-verifier-workflow-protocol.md` when a task package separates an owner Pal from a verifier Pal candidate
+- follow `orchestration/parallel-independent-review-protocol.md` when a task package requests isolated reviewer candidates and synthesis
 
 ## Adapter Must Not
 
@@ -43,7 +44,9 @@ An adapter must:
 - copy full chat history into Context Packets
 - present Context Packet as an automatic message bus
 - present Owner + Verifier as automatic background multi-agent execution
+- present Parallel Independent Review as automatic background parallel execution
 - let verifier work rely only on an owner completion claim when evidence context is missing
+- feed one reviewer candidate another reviewer draft during independent review
 
 If a core rule changes, adapter behavior should inherit the change by reading the AgentPal workspace core gates, without rewriting every adapter prompt.
 
@@ -70,3 +73,15 @@ If a task package includes Owner + Verifier stages, the adapter should help the 
 5. Mira or owner synthesis.
 
 The verifier context must contain evidence to check, expected criteria, allowed files, missing or not-run checks, and known risks. The runtime must not infer a pass from a completion report alone.
+
+## Parallel Independent Review Handling
+
+If a task package includes Parallel Independent Review stages, the adapter may help the host runtime process Reviewer Context Packets sequentially while preserving isolation:
+
+1. create one Reviewer Context Packet per reviewer candidate;
+2. run or simulate each review from its own packet only;
+3. keep peer drafts, hidden reasoning, and intermediate notes out of later reviewer packets;
+4. collect reviewer final reports;
+5. let Mira or the owner synthesize agreement, disagreement, conflicts, risks, decision options, and next step.
+
+This remains no-code staged workflow behavior. It is not automatic parallel runtime execution, Subagent Mode, external Agent orchestration, a message bus, or a background worker.

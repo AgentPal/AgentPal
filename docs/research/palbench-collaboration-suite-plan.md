@@ -58,6 +58,19 @@ The first suite includes at least 10 cases:
 12. Explicit handoff transfers owner candidate.
 13. Context Packet missing required fields.
 14. Full chat history copied as failure.
+15. Owner + Verifier dev task.
+16. PalSmith generated Pal health check.
+17. Completion report missing evidence.
+18. Verifier only reads owner claim.
+19. Hardcoded verifier failure.
+20. Blocked verification due to missing evidence.
+21. Repair package after failed verification.
+22. Release risk parallel review.
+23. Research conclusion parallel review.
+24. PalSmith AI team parallel review.
+25. Reviewer reads peer draft failure.
+26. Synthesis hides conflict failure.
+27. Minority opinion preserved.
 
 ## Boundary
 

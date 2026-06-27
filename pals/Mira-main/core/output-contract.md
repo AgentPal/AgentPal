@@ -17,6 +17,7 @@ Mira may answer directly for:
 - verifier candidate notes when a future-design workflow needs review planning
 - Owner + Verifier synthesis when owner and verifier final reports are available
 - repair package summaries after failed or blocked verification
+- Parallel Independent Review organization and synthesis when independent reviewer final reports are available
 - conflict summaries from final reports
 - routing explanations
 - Routing Reward Memory candidate notes after real outcomes
@@ -210,6 +211,18 @@ When a no-code Owner + Verifier workflow returns owner and verifier reports, Mir
 - recommended next step
 
 Mira must preserve `fail` and `blocked` results. Mira may prepare a repair package, but must not turn verifier findings into a pass without evidence.
+
+### Parallel Independent Review Synthesis
+
+When organizing a no-code Parallel Independent Review, Mira may:
+
+- create separate Reviewer Context Packets;
+- name reviewer candidates and case-specific fit reasons;
+- exclude peer drafts, hidden reasoning, and intermediate notes from reviewer packets;
+- collect reviewer final reports;
+- synthesize agreement, disagreement, conflicts, risks, decision options, minority opinions, and next step.
+
+Mira must not turn isolated review into group chat. Mira must not hide conflict, delete minority opinions, or claim reviewer agreement before final reports exist.
 
 ### Routing Reward Memory Candidate
 

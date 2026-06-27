@@ -94,6 +94,7 @@ Use:
 | `docs/09-roadmap/v0.3-task-pool.md` | v0.3 execution task pool | P0/P1/P2 task packages for collaboration protocol work |
 | `docs/05-orchestration-methodology/context-packet-usage-guide.md` | Context Packet usage guide | user and maintainer guide for `/pal`, `@Pal`, consult, handoff, review, owner transfer, privacy, and runtime adapter usage |
 | `docs/05-orchestration-methodology/owner-verifier-usage-guide.md` | Owner + Verifier usage guide | no-code owner/verifier workflow, independent evidence context, result records, and repair package guidance |
+| `docs/05-orchestration-methodology/parallel-independent-review-usage-guide.md` | Parallel Independent Review usage guide | no-code isolated reviewer workflow, reviewer packets, final reports, synthesis, and group-chat collapse prevention |
 | `docs/02-getting-started/multi-pal-collaboration-prompt-cards.md` | Multi-Pal prompt cards | copyable user prompts for Mira, `/pal`, `@Pal`, Context Packet, review, handoff, and summary paths |
 | `evals/v0.2-integration/v0.2-integration-test-matrix.md` | v0.2 integration matrix | R46 integrated readiness test matrix |
 | `docs/06-palsmith/README.md` | PalSmith v0.2 productization index | PalSmith creation and AI team productization work |
@@ -132,7 +133,7 @@ Use:
 | `evals/palbench-light/scoring-rubric.md` | PalBench Light scoring rubric | 0 / 1 / 2 release regression scoring |
 | `evals/palbench-light/palbench-light-suite-self-test.md` | PalBench Light suite self-test | R44 suite structure and boundary check |
 | `evals/palbench-collaboration/README.md` | PalBench Collaboration eval entry | v0.3 collaboration regression suite navigation |
-| `evals/palbench-collaboration/task-index.md` | PalBench Collaboration task index | collaboration cases for direct Pal, mention consult, Owner + Verifier, Context Packet privacy, missing fields, and failure cases |
+| `evals/palbench-collaboration/task-index.md` | PalBench Collaboration task index | collaboration cases for direct Pal, mention consult, Owner + Verifier, Parallel Independent Review, Context Packet privacy, missing fields, and failure cases |
 | `docs/04-runtime-guides/runtime-adapter-stability-guide.md` | Runtime Adapter stability guide | R45 thin binding stability and cross-project troubleshooting |
 | `docs/04-runtime-guides/runtime-adapter-troubleshooting-prompt-cards.md` | Runtime Adapter troubleshooting cards | R45 copyable bounded troubleshooting prompts |
 | `docs/04-runtime-guides/upgrade-existing-binding-to-thin-binding.md` | existing binding upgrade runbook | R45 upgrade path for old copied bindings |
@@ -196,6 +197,7 @@ Do not load all Pal directories by default. Load Mira for ordinary entry and the
 - `orchestration/context-packet-protocol.md`
 - `orchestration/mention-and-direct-pal-protocol.md`
 - `orchestration/owner-verifier-workflow-protocol.md`
+- `orchestration/parallel-independent-review-protocol.md`
 - `orchestration/memory-summary-loading-protocol.md`
 - `orchestration/task-package-output-contract.md`
 - `orchestration/pal-owned-skill-storage-protocol.md`
@@ -233,7 +235,7 @@ Use the current docs directories as the public entry points. Archived research n
 | `orchestration/pal-isolation-and-shared-memory-protocol.md` | isolation and shared memory design |
 | `orchestration/routing-reward-memory-protocol.md` | routing outcome memory design |
 | `capabilities/` | capability profile notes and illustrative examples |
-| `templates/orchestration/` | task judgement, workflow, access list, verifier context packet, result record, routing, and verification templates |
+| `templates/orchestration/` | task judgement, workflow, access list, verifier context packet, reviewer context packet, final report, synthesis, result record, routing, and verification templates |
 | `templates/capabilities/` | profile templates |
 | `templates/research/` | PalBench result template |
 | `evals/palbench/` | PalBench evaluation drafts |

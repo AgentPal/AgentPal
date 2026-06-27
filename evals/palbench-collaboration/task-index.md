@@ -23,5 +23,11 @@
 | PBC-019 | `PBC-019-quinn-hardcoded-as-verifier-failure.md` | hardcoded verifier failure |
 | PBC-020 | `PBC-020-blocked-verification-missing-evidence.md` | blocked verification due to missing evidence |
 | PBC-021 | `PBC-021-repair-package-after-failed-verification.md` | repair package after failed or blocked verification |
+| PBC-022 | `PBC-022-parallel-release-risk-review.md` | release risk parallel review |
+| PBC-023 | `PBC-023-parallel-research-conclusion-review.md` | research conclusion parallel review |
+| PBC-024 | `PBC-024-parallel-palsmith-ai-team-review.md` | PalSmith AI team parallel review |
+| PBC-025 | `PBC-025-reviewer-reads-peer-draft-failure.md` | reviewer reads peer draft failure |
+| PBC-026 | `PBC-026-synthesis-hides-conflict-failure.md` | synthesis hides conflict failure |
+| PBC-027 | `PBC-027-minority-opinion-preserved.md` | minority opinion preserved |
 
 All cases are no-code regression cases. None requires automatic Deep Conductor execution, Subagents, external Agents, or multiple runtimes.

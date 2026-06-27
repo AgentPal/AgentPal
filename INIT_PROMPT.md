@@ -32,6 +32,7 @@ Load selected Pal assets only after current owner judgement. Do not preload all 
 - Explicit handoff, takeover, or owner-transfer wording may use `handoff` or `owner_transfer`.
 - `/pal` and `@Pal` are AgentPal plain-text protocols. They do not require native runtime slash-command or mention support.
 - Owner + Verifier is a no-code staged workflow. If used, follow `orchestration/owner-verifier-workflow-protocol.md`, prepare independent verifier evidence context, and require a `pass`, `fail`, or `blocked` result record.
+- Parallel Independent Review is a no-code staged workflow. If used, follow `orchestration/parallel-independent-review-protocol.md`, create separate reviewer packets, keep peer drafts excluded, and synthesize final reports only after independent reports exist.
 
 ## Context Packet
 
@@ -43,6 +44,10 @@ When a direct call, mention, review, delegate, handoff, or owner transfer needs 
 - `orchestration/owner-verifier-workflow-protocol.md` when owner and verifier candidates are separated
 - `templates/orchestration/verifier-context-packet.md`
 - `templates/orchestration/verification-result-record.md`
+- `orchestration/parallel-independent-review-protocol.md` when independent reviewer candidates are separated
+- `templates/orchestration/reviewer-context-packet.md`
+- `templates/orchestration/reviewer-final-report.md`
+- `templates/orchestration/parallel-review-synthesis-summary.md`
 
 Packets must include `can_read`, `cannot_read`, `needed_output`, `verification_requirements`, `return_to`, and `final_report_required`.
 

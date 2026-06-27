@@ -8,7 +8,7 @@ AgentPal v0.1.0-rc.1 is not a multi-agent runtime and not an execution layer. Th
 
 ## Status
 
-- Current: Simple Pal Mode, Fast Route, Task Package, Context Slicing, Asset Loading Budget, Context Packet, Owner + Verifier no-code workflow, Verification Result Record templates, and Routing Decision Record templates.
+- Current: Simple Pal Mode, Fast Route, Task Package, Context Slicing, Asset Loading Budget, Context Packet, Owner + Verifier no-code workflow, Parallel Independent Review no-code workflow, Verification Result Record templates, and Routing Decision Record templates.
 - Future: Deep Conductor, richer Capability Inventory, Context Access Lists as enforceable workflow contracts, Pal Isolation and Shared Memory, Routing Reward Memory, and external runtime orchestration.
 - Research: PalBench evaluates AgentPal usage methods, not model capability or model superiority.
 
@@ -56,6 +56,7 @@ Future methodology extends this with workflow topology, Context Access Lists, is
 - [06 Runtime / Model / Skill Awareness](06-runtime-model-skill-awareness.md)
 - [07 Verification Result Record](07-verification-result-record.md)
 - [Owner + Verifier Usage Guide](owner-verifier-usage-guide.md)
+- [Parallel Independent Review Usage Guide](parallel-independent-review-usage-guide.md)
 - [08 Routing Decision Record](08-routing-decision-record.md)
 - [09 Deep Conductor Future](09-deep-conductor-future.md)
 - [10 Pal Isolation And Shared Memory Future](10-pal-isolation-and-shared-memory-future.md)

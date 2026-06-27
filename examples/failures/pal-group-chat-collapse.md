@@ -1,32 +1,42 @@
 # Failure Example: Pal Group Chat Collapse
 
-## Bad Pattern
+## Wrong Scenario
 
-Multiple Pal perspectives are shown the first answer before making their own judgement. Later perspectives repeat or lightly rephrase the first path.
+Mira asks several Pals to discuss in one shared thread:
 
-Example:
+```text
+Nova, Atlas, and Quinn, talk together and decide whether this feature is worth doing.
+```
 
-1. Atlas first proposes a development plan.
-2. Nova follows Atlas' structure and does not independently challenge the product scope.
-3. Quinn sees the apparent agreement and weakens the testing bar.
-4. Rhea repeats the combined summary instead of independently checking environment or deployment risk.
+Nova posts first. Atlas and Quinn read Nova's draft and adjust their answers around it. Mira reports the resulting agreement as independent review.
 
-## Why It Fails
+## Why It Is Wrong
 
-- first-answer anchoring
-- copied mistakes
-- false consensus
-- redundant review
-- no independent evidence
+Parallel Independent Review requires isolated reviewer context before synthesis. Shared drafts cause anchoring, copied assumptions, false consensus, and weaker risk discovery.
 
-## Better Pattern
+## Correct Behavior
 
-Use Context Access Lists and Pal Isolation:
+Mira or the owner should create separate Reviewer Context Packets and collect final reports before synthesis:
 
-1. Give each reviewer the minimum relevant context.
-2. Hide other drafts during independent judgement.
-3. Summarize only after final reports exist.
-4. Record conflicts and evidence quality.
-5. Share cleaned final findings across workflows only when allowed; never share hidden drafts as memory.
+```yaml
+reviewers:
+  - reviewer_candidate: Nova
+    cannot_read:
+      - Atlas draft
+      - Quinn draft
+  - reviewer_candidate: Atlas
+    cannot_read:
+      - Nova draft
+      - Quinn draft
+  - reviewer_candidate: Quinn
+    cannot_read:
+      - Nova draft
+      - Atlas draft
+synthesis_stage:
+  can_read:
+    - reviewer_final_reports
+```
 
-This is future design. AgentPal v0.1 remains Simple Pal Mode only.
+## Corresponding Eval
+
+- `evals/orchestration/no-group-chat-collapse-in-parallel-review-self-test.md`

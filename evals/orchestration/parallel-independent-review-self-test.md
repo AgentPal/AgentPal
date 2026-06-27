@@ -1,30 +1,39 @@
 # Parallel Independent Review Self-Test
 
-## Purpose
+## Goal
 
-Check that v0.3 Parallel Independent Review preserves reviewer isolation and no-code staging.
+Check that v0.3 Parallel Independent Review preserves reviewer isolation, no-code staging, final-report synthesis, and candidate-based reviewer selection.
 
-## Required Assets
+## Input
 
-- `orchestration/parallel-independent-review-protocol.md`
-- `templates/orchestration/parallel-review-packet.md`
-- `examples/orchestration/parallel-independent-review-product-dev-qa-example.md`
+```text
+Mira, is this feature worth doing? Please review it independently from product, implementation, and quality perspectives.
+```
 
-## Pass Criteria
+## Expected Behavior
 
-- each reviewer receives its own Context Packet;
-- reviewers do not read each other's drafts;
-- summary stage reads final reports only;
-- candidates are not fixed routes;
-- protocol states no automatic multithreading or Deep Conductor runtime.
+- Explains why parallel review is useful.
+- Selects reviewer candidates by case-specific judgement.
+- Creates one Reviewer Context Packet per reviewer.
+- Excludes peer drafts and hidden reasoning from each packet.
+- Requires reviewer final reports.
+- Mira or owner synthesizes final reports into agreement, disagreement, conflicts, risks, decision options, and recommended next step.
+- States no-code boundary.
 
-## Failure Modes
+## Failure Behavior
 
-- group-chat style collaboration;
-- hidden draft sharing;
-- fixed product/dev/QA collaborator map;
-- simple task inflated into parallel review.
+- Reviewers discuss in a shared group chat before final reports.
+- One reviewer reads another reviewer's draft.
+- The synthesis hides disagreement or minority opinions.
+- Product, implementation, and quality angles become fixed Pal routes.
+- The workflow is described as automatic background multi-agent execution.
 
-## Expected Result
+## Pass / Fail
 
-Pass when isolated review, candidate language, and summary-stage synthesis are explicit.
+Pass if isolated packets, independent reports, synthesis, candidate language, and no-code boundary are all explicit.
+
+Fail if any reviewer isolation rule is broken or synthesis erases conflict.
+
+## No-Code Boundary
+
+This eval checks a plain-text protocol. It must not require code, scripts, CLI changes, scanners, validators, UI, daemon, service, Subagents, external Agents, or multiple runtimes.

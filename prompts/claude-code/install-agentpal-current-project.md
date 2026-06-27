@@ -30,6 +30,7 @@ Hard boundaries:
 - Do not create runtime code, scripts, services, daemons, installers, or UI.
 - Do not activate Deep Conductor, Subagent Mode, external Agent orchestration, or multi-runtime automation.
 - Do not present Owner + Verifier as automatic background multi-agent execution.
+- Do not present Parallel Independent Review as automatic background multi-agent or multi-runtime execution.
 
 Create or update only the thin binding:
 1. `.agentpal/project.json`
@@ -57,6 +58,7 @@ The root `AGENTS.md` and `CLAUDE.md` protected blocks must explicitly tell a fre
 - if the user explicitly asks for handoff, takeover, or owner transfer, use Context Packet mode `handoff` or `owner_transfer`
 - `/pal` and `@Pal` are AgentPal Markdown protocols in this binding, not native Claude Code commands; do not require CLI support for them
 - Owner + Verifier is a no-code staged workflow. Runtime may follow the task package sequentially, but verifier work needs independent evidence context and a `pass` / `fail` / `blocked` result record.
+- Parallel Independent Review is a no-code staged workflow. Runtime may follow multiple reviewer packets sequentially, but reviewer final reports must stay independent and one reviewer draft must not be given to another reviewer.
 
 Before responding as AgentPal in this project, Claude Code must read from the AgentPal workspace root:
 1. core/agentpal-core-gate.md
@@ -74,6 +76,7 @@ Before responding as AgentPal in this project, Claude Code must read from the Ag
 13. orchestration/mention-and-direct-pal-protocol.md when `/pal` or `@Pal` appears
 14. orchestration/context-packet-protocol.md when creating or following a packet
 15. orchestration/owner-verifier-workflow-protocol.md when a task package separates owner and verifier candidates
+16. orchestration/parallel-independent-review-protocol.md when a task package separates independent reviewer candidates
 
 Use `templates/project-binding/root-agents-agentpal-block-template.md` from the AgentPal workspace as the protected block shape.
 
