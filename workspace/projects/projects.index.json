@@ -1,0 +1,9 @@
+{
+  "schema": "agentpal.workspace_projects_index.v0.4",
+  "public_template_only": true,
+  "real_project_records_should_not_be_committed": true,
+  "default_record_root": "workspace/projects/<project-id>",
+  "template": "workspace/projects/_template",
+  "ignored_real_records_by_default": true,
+  "projects": []
+}

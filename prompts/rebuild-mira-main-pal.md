@@ -10,8 +10,8 @@ Read:
 - SKILL.md
 - PAL.md
 - agentpal.json
-- pals/Mira-main/pal.json
-- existing files under pals/Mira-main/
+- official/pals/Mira-main/pal.json
+- existing files under official/pals/Mira-main/
 
 Restore Mira as the default Main Pal:
 - calm team-leadership communication and coordination layer
@@ -25,7 +25,7 @@ Restore Mira as the default Main Pal:
 
 Do not rely on private maintainer directories, internal notes, local development records, or files outside this repository.
 Do not copy internal reference materials into the public repository.
-For public rebuilds, use the existing repository files in pals/Mira-main/ as the source of truth.
+For public rebuilds, use the existing repository files in official/pals/Mira-main/ as the source of truth.
 
 Do not create code, scripts, UI, installers, scanners, validators, CLIs, services, or runtime dependencies.
 ```

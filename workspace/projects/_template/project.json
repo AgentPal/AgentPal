@@ -1,0 +1,37 @@
+{
+  "schema": "agentpal.central_project_record.v0.4",
+  "public_template": true,
+  "project_id": "REPLACE_WITH_PROJECT_ID",
+  "project_name": "REPLACE_WITH_PROJECT_NAME",
+  "record_root": "workspace/projects/REPLACE_WITH_PROJECT_ID",
+  "binding_mode": "thin",
+  "binding_style": "thin-binding",
+  "active_project_root": "REPLACE_WITH_EXTERNAL_PROJECT_ROOT",
+  "agentpal_workspace_root": "REPLACE_WITH_AGENTPAL_WORKSPACE_ROOT",
+  "agentpal_project_record": "workspace/projects/REPLACE_WITH_PROJECT_ID",
+  "central_pal_contacts": [
+    "workspace/organization/contacts/pals.json",
+    "workspace/organization/contacts/PAL_CONTACTS.md",
+    "workspace/organization/contacts/aliases.json"
+  ],
+  "project_context_policy": "active_project_root_only",
+  "routing_policy": "ai_judgement_only",
+  "keyword_routing_allowed": false,
+  "external_project_binding_files": [
+    ".agentpal/project.json",
+    ".agentpal/AGENTPAL.md",
+    "AGENTS.md protected block",
+    "CLAUDE.md protected block when Claude Code is used"
+  ],
+  "central_record_sections": {
+    "binding": "binding/",
+    "source_map": "source-map/",
+    "derived_knowledge": "derived-knowledge/",
+    "memory": "memory/",
+    "tasks": "tasks/",
+    "reports": "reports/",
+    "governance": "governance/",
+    "capability_inventory": "capability-inventory/"
+  },
+  "do_not_commit_real_user_project_records": true
+}

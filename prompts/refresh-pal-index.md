@@ -2,7 +2,7 @@
 
 Use this prompt when you want Mira or the current runtime to rebuild the Pal index.
 
-Normal initialization reads the current contacts / registry files. Use this maintenance prompt when Pal Pack changes need to be reflected in contacts / registry. Users do not need to see this maintenance action in the first welcome message.
+Normal initialization reads the current central contacts. Use this maintenance prompt when Pal Pack changes need to be reflected in `workspace/organization/contacts/`. Users do not need to see this maintenance action in the first welcome message.
 
 Run this prompt from the AgentPal Workspace:
 
@@ -13,27 +13,27 @@ Run this prompt from the AgentPal Workspace:
 ```text
 Refresh the AgentPal Pal index.
 
-AgentPal v0.1 is a Pal layer. Current task handling uses Simple Pal Mode only.
+AgentPal is a no-code Pal organization layer. Current task handling is host-runtime executed and evidence-bound.
 
 Do not probe, call, or narrate parallel child-agent workflows. Do not output runtime-mode metadata in normal answers.
 
 Read:
 - AGENTS.md
 - agentpal.json
-- pals/README.md
-- contacts/README.md
-- registry/README.md
-- pals/Mira-main/knowledge/default-pals/default-pal-map.md
-- pals/Mira-main/core/routing-protocol.md
-- pals/Mira-main/core/reporting-protocol.md
+- official/pals/README.md
+- workspace/organization/contacts/PAL_CONTACTS.md
+- workspace/organization/contacts/pals.json
+- official/pals/Mira-main/knowledge/default-pals/default-pal-map.md
+- official/pals/Mira-main/core/routing-protocol.md
+- official/pals/Mira-main/core/reporting-protocol.md
 - orchestration/pal-mode-validity-protocol.md
 - response-fingerprints/README.md
 
-Scan only pals/.
+Scan only `official/pals/`.
 Do not scan the whole disk.
 Do not scan external projects.
 Do not modify Pal directories.
-Do not add non-standard candidates directly to contacts.
+Do not add non-standard candidates directly to central contacts.
 
 Expected bundled Pal directories:
 - Mira-main
@@ -45,7 +45,7 @@ Expected bundled Pal directories:
 - Harper-writing
 - Nova-product
 
-For each directory under pals/:
+For each directory under `official/pals/`:
 1. Check Name-role directory naming.
 2. Check PAL.md, SKILL.md, AGENTS.md, and pal.json.
 3. Parse pal.json.
@@ -54,16 +54,14 @@ For each directory under pals/:
 6. Confirm discoverable/contactable/collaboration permissions.
 
 Valid Pal Packs update:
-- registry/pal.index.md
-- registry/pal.index.json
-- contacts/PAL_CONTACTS.md
-- contacts/pals.json
-- contacts/mention-aliases.md
+- workspace/organization/contacts/PAL_CONTACTS.md
+- workspace/organization/contacts/pals.json
+- workspace/organization/contacts/aliases.json
 
 Invalid, missing, or uncertain directories update:
-- contacts/discovered-candidates.md
+- a central organization review note; do not promote them as active contacts
 
-Ordinary Skills, tools, models, MCP servers, plugins, and non-Pal runtimes do not enter contacts.
+Ordinary Skills, tools, models, MCP servers, plugins, and non-Pal runtimes do not enter central contacts.
 
 Keep behavior rules aligned:
 - Runtime Response Gate must run before every answer.
@@ -74,10 +72,10 @@ Keep behavior rules aligned:
 - output contract gate: fake Pal response fails.
 - AI routing judgement gate: semantic owner selection is case-by-case. No hard-coded semantic routing. Pal capability reference is not a route map.
 - Owner judgement gate: Mira may answer directly only for ordinary chat, clarification, routing explanation, project/context coordination, initialization guidance, result summarization, Mira-owned team-leadership work, or explicit Mira-only / Codex-generic requests.
-- Current runtime gate: AgentPal v0.1 uses Simple Pal Mode only.
+- Current runtime gate: AgentPal is no-code governed and host-runtime executed; do not claim automatic execution without evidence.
 - Mira professional body ban: Mira must not write substantive professional content herself. If the answer would include concrete recommendations, technical stack choices, architecture/implementation advice, database/module design, product scope, acceptance/risk review, research findings, writing drafts, system fixes, document processing, or customer process advice, Mira must route to the judged owner Pal.
 - repeated task Skill creation gate: explicit user request to save a Skill creates a formal owner Pal Skill; similar operations over 3 times also create a formal owner Pal Skill.
-- Pal-owned Skill storage gate: saved Skills go to pals/<Owner-Pal-Directory>/skills/<skill-id>/SKILL.md and update that Pal's skills/index.md, not global runtime skills unless explicitly requested.
+- Pal-owned Skill storage gate: saved Skills go to official/pals/<Owner-Pal-Directory>/skills/<skill-id>/SKILL.md and update that Pal's skills/index.md, not global runtime skills unless explicitly requested.
 - Ordinary messages go to Mira.
 - All replies in AgentPal mode must start with the speaking Pal name.
 - Default active Pal is Mira.
@@ -96,7 +94,7 @@ Keep behavior rules aligned:
 - If specialist knowledge is missing, fallback method is allowed but must be reported.
 - If the user explicitly asks to save a Skill, the owner Pal creates the formal Skill under its own skills/ directory.
 - If similar operations happen more than 3 times, the owner Pal automatically creates the formal Skill under its own skills/ directory.
-- Pal-owned Skill path: pals/<Owner-Pal-Directory>/skills/<skill-id>/SKILL.md; also update pals/<Owner-Pal-Directory>/skills/index.md.
+- Pal-owned Skill path: official/pals/<Owner-Pal-Directory>/skills/<skill-id>/SKILL.md; also update official/pals/<Owner-Pal-Directory>/skills/index.md.
 - Do not save AgentPal Pal-owned Skills to global runtime Skills, plugin folders, tool folders, or external project source directories unless the user explicitly asks for a runtime/global Skill.
 - Multi-Pal tasks require case-by-case owner Pal, consultant Pal(s), reviewer Pal(s), execution layer when needed, and final summarizer.
 - Mira direct answers are limited to ordinary chat, clarification, routing explanation, project/context coordination, initialization guidance, result summarization, Mira-owned team-leadership work, or explicit Mira-only / Codex-generic requests. Owned work goes to the selected owner Pal by AI judgement.

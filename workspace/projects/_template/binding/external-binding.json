@@ -1,0 +1,34 @@
+{
+  "schema": "agentpal.central_project_external_binding.v0.4",
+  "project_id": "REPLACE_WITH_PROJECT_ID",
+  "binding_mode": "thin",
+  "binding_style": "thin-binding",
+  "active_project_root": "REPLACE_WITH_EXTERNAL_PROJECT_ROOT",
+  "agentpal_workspace_root": "REPLACE_WITH_AGENTPAL_WORKSPACE_ROOT",
+  "agentpal_project_record": "workspace/projects/REPLACE_WITH_PROJECT_ID",
+  "runtime_hint": "REPLACE_WITH_RUNTIME_HINT",
+  "central_pal_contacts": [
+    "workspace/organization/contacts/pals.json",
+    "workspace/organization/contacts/PAL_CONTACTS.md",
+    "workspace/organization/contacts/aliases.json"
+  ],
+  "allowed_project_binding_files": [
+    ".agentpal/project.json",
+    ".agentpal/AGENTPAL.md",
+    "AGENTS.md protected block",
+    "CLAUDE.md protected block when Claude Code is used",
+    ".claude/settings.local.json when Claude Code needs local access"
+  ],
+  "forbidden_default_project_binding_dirs": [
+    ".agentpal/memory",
+    ".agentpal/state",
+    ".agentpal/reports",
+    ".agentpal/context",
+    ".agentpal/index",
+    ".agentpal/pals",
+    ".agentpal/workflows",
+    ".agentpal/evals"
+  ],
+  "routing_policy": "ai_judgement_only",
+  "keyword_routing_allowed": false
+}

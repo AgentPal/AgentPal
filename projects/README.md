@@ -4,5 +4,5 @@
 
 Project means external user project by default, not the AgentPal workspace itself.
 
-Use `project-workgroup-template/agentpal/` as the source template. When copied into an external project, the folder name should be `.agentpal/`.
+Use `templates/project-binding/generic-codex/` or `templates/project-binding/claude-code/` as the current source template. Legacy `project-workgroup-template/agentpal/` remains a compatibility pointer only and is not the active install template.
 
