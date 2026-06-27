@@ -8,6 +8,11 @@ record_id: ""
 created_at: ""
 user_goal_summary: ""
 project_or_single_task: ""
+e2e_package:
+  applies: false
+  package_id: ""
+  complete_output_shape_required: false
+  no_auto_execution: true
 topology_selected: ""
 topology_reason:
   - ""
@@ -91,3 +96,4 @@ privacy_review:
 - Model and reasoning candidates are not automatic selectors.
 - Verification cost is necessary quality cost; missing evidence must remain visible.
 - Private project facts, secrets, local absolute paths, and raw chat history must not be written into public records.
+- When `e2e_package.applies` is true, the decision record must show how memory, Capability Inventory, Context Budget, topology, Runtime Skill-aware packages, verification, and Routing Memory were considered together.

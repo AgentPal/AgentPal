@@ -5,7 +5,7 @@ Deep Conductor is AgentPal's no-code master loop for complex goals and project-l
 It connects existing v0.3 components into one usable path:
 
 ```text
-project goal -> project state judgement -> task planning -> capability inventory -> topology selection -> context packets -> Runtime Skill-aware task packages -> verification -> synthesis -> routing memory writeback -> next-round task pool
+project goal -> memory -> capability inventory -> context budget -> topology -> context packets -> Runtime Skill-aware packages -> verification -> synthesis -> routing memory writeback -> next-round task pool
 ```
 
 ## What Deep Conductor Is
@@ -17,6 +17,7 @@ It helps Mira or the current owner Pal:
 - decide whether a goal is a single task or a project-level continuing task;
 - identify deliverables, phases, and task pools;
 - read bounded Pal memory, project memory, Routing Memory, and Capability Inventory;
+- create a complete E2E package when the work needs end-to-end project-level closure;
 - choose workflow topology candidates;
 - create Context Packets and Runtime Skill-aware Task Packages;
 - plan verification before claiming completion;
@@ -45,11 +46,13 @@ The host Runtime performs file reads, writes, commands, tool calls, publishing, 
 5. Runtime Skill / Plugin / MCP Awareness.
 6. Workflow Topology Selection.
 7. Context Access Planning.
-8. Prompt Shaping and Token Budgeting.
+8. Prompt Shaping and Context Budgeting.
 9. Runtime Task Package Generation.
 10. Verification Planning.
 11. Synthesis and User-facing Explanation.
 12. Routing Memory Writeback Candidate.
+
+For full-loop work, these steps are represented together in `templates/orchestration/deep-conductor-e2e-package.md`. The post-work summary uses `templates/orchestration/deep-conductor-e2e-synthesis-report.md`.
 
 ## How It Combines Existing Assets
 
@@ -90,12 +93,14 @@ Do not use it when:
 
 Deep Conductor may output:
 
+- Deep Conductor E2E package;
 - project task map;
 - workflow topology recommendation;
 - context budget plan;
 - Runtime Skill-aware task packages;
 - Runtime Skill availability check and fallback packages when needed;
 - verification package;
+- E2E synthesis report;
 - next-round runtime task package;
 - conductor decision record;
 - routing memory candidate;
@@ -106,3 +111,5 @@ Deep Conductor may output:
 All outputs are Markdown / JSON-like no-code artifacts for the host Runtime to read and act on. The presence of a plan, task map, package, record, example, or eval does not prove that execution happened.
 
 Completion claims require evidence returned by the host Runtime or another approved evidence source.
+
+The E2E package is not automatic execution. A host Runtime may follow its task packages by stage and must return evidence, not just completion text.

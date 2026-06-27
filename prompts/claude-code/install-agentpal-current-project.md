@@ -62,6 +62,7 @@ The root `AGENTS.md` and `CLAUDE.md` protected blocks must explicitly tell a fre
 - Owner + Verifier is a no-code staged workflow. Runtime may follow the task package sequentially, but verifier work needs independent evidence context and a `pass` / `fail` / `blocked` result record.
 - Parallel Independent Review is a no-code staged workflow. Runtime may follow multiple reviewer packets sequentially, but reviewer final reports must stay independent and one reviewer draft must not be given to another reviewer.
 - Deep Conductor Master Loop is a no-code protocol. Runtime may follow a Deep Conductor plan, Project Conductor task map, Runtime Skill-aware package, or next-round Runtime task package, but must not treat it as an automatic background workflow.
+- Deep Conductor E2E Package is the complete no-code output shape for goal -> memory -> Capability Inventory -> Context Budget -> topology -> Context Packets -> Runtime Skill-aware packages -> verification -> synthesis -> Routing Memory -> next-round recommendation. Claude Code may follow approved stage packages and must return E2E synthesis fields; it must not treat E2E as an automatic background system.
 - Runtime Skill-aware packages are executed by the host Runtime only after current availability and permission evidence. AgentPal does not execute Runtime Skills.
 - If a Runtime Skill-aware package names Skill/plugin/MCP candidates, Claude Code must check only the named current-session candidates within the package scope, report available / unavailable / unknown / blocked, and follow `if_unavailable_fallback` when missing.
 - Runtime-installed Skills belong to Claude Code or its host capability surface, not to AgentPal or any Pal Pack.
@@ -97,6 +98,8 @@ Before responding as AgentPal in this project, Claude Code must read from the Ag
 23. templates/orchestration/runtime-skill-availability-check-package.md and templates/orchestration/runtime-skill-fallback-package.md when availability is unknown or unavailable
 24. orchestration/context-budget-protocol.md and templates/orchestration/context-budget-plan.md when a package includes Context Budget fields
 25. templates/orchestration/context-usage-report.md when final reporting requests context usage
+26. templates/orchestration/deep-conductor-e2e-package.md when a task package uses Deep Conductor E2E
+27. templates/orchestration/deep-conductor-e2e-synthesis-report.md when returning E2E final reporting fields
 
 Use `templates/project-binding/root-agents-agentpal-block-template.md` from the AgentPal workspace as the protected block shape.
 

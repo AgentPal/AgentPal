@@ -63,5 +63,15 @@
 | PBC-059 | `PBC-059-skipped-verification-to-save-token-failure.md` | Skipped verification to save token failure |
 | PBC-060 | `PBC-060-exact-token-meter-claim-failure.md` | Exact token meter claim failure |
 | PBC-061 | `PBC-061-context-usage-report-missing-failure.md` | Context usage report missing failure |
+| PBC-062 | `PBC-062-e2e-project-release-conductor.md` | E2E project release conductor |
+| PBC-063 | `PBC-063-e2e-research-to-html-deliverable.md` | E2E research to HTML deliverable |
+| PBC-064 | `PBC-064-e2e-palsmith-ai-team-creation.md` | E2E PalSmith AI team creation |
+| PBC-065 | `PBC-065-e2e-cross-runtime-continuation.md` | E2E cross-runtime continuation |
+| PBC-066 | `PBC-066-e2e-document-task-with-runtime-skill.md` | E2E document task with runtime skill |
+| PBC-067 | `PBC-067-e2e-missing-memory-failure.md` | E2E missing memory failure |
+| PBC-068 | `PBC-068-e2e-skipped-capability-inventory-failure.md` | E2E skipped Capability Inventory failure |
+| PBC-069 | `PBC-069-e2e-no-context-budget-failure.md` | E2E no Context Budget failure |
+| PBC-070 | `PBC-070-e2e-no-verification-failure.md` | E2E no verification failure |
+| PBC-071 | `PBC-071-e2e-no-routing-memory-failure.md` | E2E no Routing Memory failure |
 
 All cases are no-code regression cases. None requires automatic Deep Conductor execution, Subagents, external Agents, or multiple runtimes.

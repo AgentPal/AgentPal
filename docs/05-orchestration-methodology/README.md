@@ -8,7 +8,7 @@ AgentPal v0.1.0-rc.1 is not a multi-agent runtime and not an execution layer. Th
 
 ## Status
 
-- Current: Simple Pal Mode, Fast Route, Task Package, Context Slicing, Asset Loading Budget, Context Packet, Owner + Verifier no-code workflow, Parallel Independent Review no-code workflow, Deep Conductor Master Loop no-code usage guide, Project Conductor workflow, Cross-Runtime Pal Memory no-code continuity, Runtime-installed Skill Orchestration, Context Budget no-code planning, Verification Result Record templates, and Routing Decision Record templates.
+- Current: Simple Pal Mode, Fast Route, Task Package, Context Slicing, Asset Loading Budget, Context Packet, Owner + Verifier no-code workflow, Parallel Independent Review no-code workflow, Deep Conductor Master Loop no-code usage guide, Deep Conductor E2E package shape, Project Conductor workflow, Cross-Runtime Pal Memory no-code continuity, Runtime-installed Skill Orchestration, Context Budget no-code planning, Verification Result Record templates, and Routing Decision Record templates.
 - Future: richer Capability Inventory, Context Access Lists as enforceable workflow contracts, Pal Isolation and Shared Memory, and Routing Reward Memory.
 - Research: PalBench evaluates AgentPal usage methods, not model capability or model superiority.
 
@@ -57,6 +57,7 @@ Future methodology extends this with workflow topology, Context Access Lists, is
 - [07 Verification Result Record](07-verification-result-record.md)
 - [Deep Conductor Master Goal](deep-conductor-master-goal.md)
 - [Deep Conductor Master Loop Usage Guide](deep-conductor-master-loop-usage-guide.md)
+- [Deep Conductor E2E Usage Guide](deep-conductor-e2e-usage-guide.md)
 - [Cross-Runtime Pal Memory](cross-runtime-pal-memory.md)
 - [Runtime-installed Skill Orchestration Guide](runtime-installed-skill-orchestration-guide.md)
 - [Token / Cost-aware Deep Conductor](token-cost-aware-deep-conductor.md)

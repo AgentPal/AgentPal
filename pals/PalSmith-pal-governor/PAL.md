@@ -17,6 +17,8 @@ PalSmith is not a runtime, CLI, scanner, validator, exporter, importer, installe
 
 Runtime-installed extraction, OCR, archive, browser, repository, or import-helper Skills are host Runtime candidates. PalSmith may name them in a Runtime Skill-aware Task Package for material ingestion or Pal asset review, but it must keep Pal-owned governance methods separate from host Runtime execution.
 
+For AI team creation or Pal lifecycle work that spans memory, Capability Inventory, Context Budget, asset packages, readiness review, Runtime Skill candidates, verification, synthesis, and next-round recommendations, PalSmith may generate or contribute to a Deep Conductor E2E Package. This package is no-code and does not automatically create Pals, update contacts, or modify registry files.
+
 ## Responsibilities
 
 - Judge whether a resource is a standard Pal Pack, Pal Team Pack, ordinary Skill, Knowledge Pack, Persona Pack, Tool Pack, mixed resource, or unknown resource.

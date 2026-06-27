@@ -95,6 +95,7 @@ Use:
 | `docs/09-roadmap/v0.3-task-pool.md` | v0.3 execution task pool | P0/P1/P2 task packages for collaboration protocol work |
 | `docs/05-orchestration-methodology/deep-conductor-master-goal.md` | Deep Conductor master goal | no-code 12-step conductor loop and executor boundary |
 | `docs/05-orchestration-methodology/deep-conductor-master-loop-usage-guide.md` | Deep Conductor master loop usage guide | project goal to task map, Runtime packages, verification, synthesis, and memory writeback |
+| `docs/05-orchestration-methodology/deep-conductor-e2e-usage-guide.md` | Deep Conductor E2E usage guide | full no-code loop from goal through memory, capability, context budget, topology, Runtime Skill-aware packages, verification, synthesis, routing memory, and next-round recommendation |
 | `docs/05-orchestration-methodology/cross-runtime-pal-memory.md` | Cross-Runtime Pal Memory usage guide | no-code continuity across Codex, Claude Code, generic CLI, and other host Runtimes |
 | `docs/05-orchestration-methodology/runtime-installed-skill-orchestration-guide.md` | Runtime-installed Skill Orchestration guide | no-code Runtime Skill candidate selection, availability checks, fallback, verification, and usage memory |
 | `docs/05-orchestration-methodology/token-cost-aware-deep-conductor.md` | Token / Cost-aware Deep Conductor guide | no-code Context Budget, read tier, prompt shaping, verification cost, and usage report guidance |
@@ -228,6 +229,7 @@ Use the current docs directories as the public entry points. Archived research n
 | `docs/05-orchestration-methodology/capability-inventory-minimal-usable-design.md` | v0.2 minimal manual Capability Inventory profile design |
 | `docs/05-orchestration-methodology/deep-conductor-master-goal.md` | Deep Conductor master goal and no-code 12-step loop |
 | `docs/05-orchestration-methodology/deep-conductor-master-loop-usage-guide.md` | Deep Conductor usage guide for project-level no-code coordination |
+| `docs/05-orchestration-methodology/deep-conductor-e2e-usage-guide.md` | Deep Conductor E2E usage guide for integrated no-code project-level closure |
 | `docs/05-orchestration-methodology/cross-runtime-pal-memory.md` | Cross-Runtime Pal Memory guide for preserving Pal/project/routing continuity across host Runtimes |
 | `docs/05-orchestration-methodology/token-cost-aware-deep-conductor.md` | Token / Cost-aware Deep Conductor guide for qualitative Context Budget planning |
 | `docs/05-orchestration-methodology/00-methodology-overview.md` | current methodology overview |
@@ -263,6 +265,8 @@ Use the current docs directories as the public entry points. Archived research n
 | `orchestration/routing-reward-memory-protocol.md` | routing outcome memory design |
 | `capabilities/` | capability profile notes and illustrative examples |
 | `templates/orchestration/` | task judgement, workflow, access list, project conductor task map, Deep Conductor plan, next-round runtime package, cross-runtime continuation package, conductor decision record, Runtime Skill-aware task package, context budget plan, context usage report, verifier context packet, reviewer context packet, final report, synthesis, result record, routing, and verification templates |
+| `templates/orchestration/deep-conductor-e2e-package.md` | complete Deep Conductor E2E package template |
+| `templates/orchestration/deep-conductor-e2e-synthesis-report.md` | complete Deep Conductor E2E synthesis report template |
 | `templates/memory/` | Pal Project Memory Snapshot, Routing Memory Record, and Runtime Skill Usage Memory Record templates |
 | `templates/capabilities/` | profile templates |
 | `templates/research/` | PalBench result template |

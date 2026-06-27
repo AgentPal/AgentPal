@@ -34,6 +34,7 @@ Load selected Pal assets only after current owner judgement. Do not preload all 
 - Owner + Verifier is a no-code staged workflow. If used, follow `orchestration/owner-verifier-workflow-protocol.md`, prepare independent verifier evidence context, and require a `pass`, `fail`, or `blocked` result record.
 - Parallel Independent Review is a no-code staged workflow. If used, follow `orchestration/parallel-independent-review-protocol.md`, create separate reviewer packets, keep peer drafts excluded, and synthesize final reports only after independent reports exist.
 - Deep Conductor Master Loop is a no-code protocol. If used, follow `orchestration/deep-conductor-protocol.md`, prepare a plan, task map, context budget, Runtime Skill-aware packages, verification plan, and Routing Memory candidate without claiming automatic execution.
+- Deep Conductor E2E Package is the complete no-code output shape for goal -> memory -> Capability Inventory -> Context Budget -> topology -> Context Packets -> Runtime Skill-aware packages -> verification -> synthesis -> Routing Memory -> next-round recommendation. If used, follow the package by stage and return E2E synthesis fields without claiming background automation.
 - Project Conductor Workflow is a no-code project-level workflow. If used, follow `orchestration/project-conductor-workflow.md` and produce a task map or next-round package for the host Runtime.
 - Cross-Runtime Pal Memory is a no-code continuity protocol. If a project continues across host Runtimes, read the relevant Pal Project Memory Snapshot, Routing Memory summary, Runtime Skill Usage Memory, and Verification Memory when available and approved; do not start from zero when valid memory exists.
 - Runtime Skill-aware packages are executed by the host Runtime only after current availability and permission evidence. AgentPal does not execute Runtime Skills.
@@ -72,6 +73,8 @@ When a direct call, mention, review, delegate, handoff, or owner transfer needs 
 - `orchestration/context-budget-protocol.md`
 - `templates/orchestration/context-budget-plan.md`
 - `templates/orchestration/context-usage-report.md`
+- `templates/orchestration/deep-conductor-e2e-package.md`
+- `templates/orchestration/deep-conductor-e2e-synthesis-report.md`
 - `docs/05-orchestration-methodology/cross-runtime-pal-memory.md`
 - `orchestration/memory-boundary-protocol.md`
 - `templates/memory/pal-project-memory-snapshot.md`

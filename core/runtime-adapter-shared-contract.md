@@ -30,7 +30,7 @@ An adapter must:
 - follow `orchestration/mention-and-direct-pal-protocol.md` and `orchestration/context-packet-protocol.md` for direct calls, consults, reviews, handoffs, and owner transfers
 - follow `orchestration/owner-verifier-workflow-protocol.md` when a task package separates an owner Pal from a verifier Pal candidate
 - follow `orchestration/parallel-independent-review-protocol.md` when a task package requests isolated reviewer candidates and synthesis
-- follow `orchestration/deep-conductor-protocol.md` and `orchestration/project-conductor-workflow.md` when a task package contains a Deep Conductor plan, project task map, or next-round Runtime task package
+- follow `orchestration/deep-conductor-protocol.md` and `orchestration/project-conductor-workflow.md` when a task package contains a Deep Conductor plan, Deep Conductor E2E Package, project task map, or next-round Runtime task package
 - follow `docs/05-orchestration-methodology/cross-runtime-pal-memory.md` and `orchestration/memory-boundary-protocol.md` when a task continues across host Runtimes or uses memory snapshots
 - read Pal Project Memory Snapshot, Routing Memory summary, Runtime Skill Usage Memory, and Verification Memory when a task package names them and access is available
 - follow `orchestration/context-budget-protocol.md` when a task package includes a Context Budget Plan
@@ -84,14 +84,15 @@ This remains no-code protocol behavior. It does not start background Pals, Subag
 
 ## Deep Conductor / Project Conductor Handling
 
-If a task package includes a Deep Conductor plan, Project Conductor task map, or next-round Runtime task package, the adapter should help the host Runtime follow the package as a no-code plan:
+If a task package includes a Deep Conductor plan, Deep Conductor E2E Package, Project Conductor task map, or next-round Runtime task package, the adapter should help the host Runtime follow the package as a no-code plan:
 
 1. confirm the target Runtime and any Runtime Skill candidates are currently available before using them;
 2. respect `required_context`, `forbidden_context`, Context Budget Plan, and read tier;
-3. execute only the approved next-round scope;
+3. execute only the approved stage or next-round scope;
 4. preserve Pal-owned Skill and Runtime-installed Skill separation;
-5. return evidence, not-run items, blockers, changed or read files, and Context Usage Report when requested;
-6. leave verification and Routing Memory writeback to the Pal-layer package unless explicitly asked to prepare evidence.
+5. when following an E2E Package, return the synthesis fields requested by `templates/orchestration/deep-conductor-e2e-synthesis-report.md`;
+6. return evidence, not-run items, blockers, changed or read files, and Context Usage Report when requested;
+7. leave verification and Routing Memory writeback to the Pal-layer package unless explicitly asked to prepare evidence.
 
 Deep Conductor and Project Conductor are not a background project manager, queue, service, database, scanner, validator, or automatic execution loop.
 

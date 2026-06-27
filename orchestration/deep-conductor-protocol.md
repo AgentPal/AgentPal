@@ -23,6 +23,8 @@ Deep Conductor uses 12 operational steps:
 
 Each step produces no-code artifacts that a host Runtime may read, execute, or verify only within its own permissions and evidence rules.
 
+For end-to-end work, the complete output shape is `templates/orchestration/deep-conductor-e2e-package.md` plus `templates/orchestration/deep-conductor-e2e-synthesis-report.md`. The E2E package integrates memory, Capability Inventory, Context Budget, topology, Context Packets, Runtime Skill-aware packages, verification, synthesis, Routing Memory, and next-round recommendation.
+
 ## Step 1: Goal Intake
 
 Purpose: capture the user's goal and decide whether it is an ordinary task, a composite task, or a project-level continuing task.
@@ -51,6 +53,7 @@ Do not:
 Templates:
 
 - `templates/orchestration/deep-conductor-plan.md`
+- `templates/orchestration/deep-conductor-e2e-package.md`
 - `templates/orchestration/project-conductor-task-map.md`
 
 Eval:
@@ -401,6 +404,7 @@ Output:
 
 - user-facing explanation;
 - selected topology and reason;
+- E2E synthesis report when the complete end-to-end package was used;
 - candidate resources and boundaries;
 - next-round package summary;
 - user decisions needed.
@@ -414,6 +418,7 @@ Do not:
 Templates:
 
 - `templates/orchestration/deep-conductor-plan.md`
+- `templates/orchestration/deep-conductor-e2e-synthesis-report.md`
 - `templates/orchestration/parallel-review-synthesis-summary.md`
 
 Eval:
@@ -455,6 +460,7 @@ Templates:
 - `templates/memory/routing-memory-record.md`
 - `templates/memory/runtime-skill-usage-memory-record.md`
 - `templates/orchestration/conductor-decision-record.md`
+- `templates/orchestration/deep-conductor-e2e-synthesis-report.md`
 
 Eval:
 
@@ -463,3 +469,7 @@ Eval:
 ## Boundary
 
 Deep Conductor artifacts are no-code coordination artifacts. They may guide Codex, Claude Code, OpenCode, OpenHands, Gemini CLI, or another host Runtime. They do not prove that those Runtimes, Skills, plugins, MCP tools, files, commands, or external services are available.
+
+Deep Conductor must not create a CLI, scanner, validator, installer, daemon, service, database, desktop app, web app, automation runtime, hidden scheduler, exact token meter, cost calculator, or automatic Runtime Skill caller.
+
+The E2E package is the complete integrated output shape, not a new execution mode. It requires memory, Capability Inventory, Context Budget, topology, verification, and Routing Memory to be represented together, while preserving the same no-code boundary and current-runtime evidence requirements.

@@ -105,6 +105,16 @@ The first suite includes at least 10 cases:
 59. Skipped verification to save token failure.
 60. Exact token meter claim failure.
 61. Context usage report missing failure.
+62. E2E project release conductor.
+63. E2E research to HTML deliverable.
+64. E2E PalSmith AI team creation.
+65. E2E cross-runtime continuation.
+66. E2E document task with runtime skill.
+67. E2E missing memory failure.
+68. E2E skipped Capability Inventory failure.
+69. E2E no Context Budget failure.
+70. E2E no verification failure.
+71. E2E no Routing Memory failure.
 
 ## Boundary
 
@@ -120,3 +130,5 @@ PalBench Collaboration must not require:
 Runtime Skill cases verify no-code Task Package quality only. They do not require AgentPal to call, install, scan, or execute host Runtime Skills.
 
 Context Budget cases verify qualitative context planning, read tiers, prompt shaping, Runtime Skill cost notes, verification preservation, and Context Usage Reports. They do not require exact token metering or automatic cost calculation.
+
+Deep Conductor E2E cases verify the full no-code loop from user goal through memory, Capability Inventory, Context Budget, topology, Context Packets, Runtime Skill-aware packages, verification, synthesis, Routing Memory candidate, and next-round recommendation. They do not require AgentPal to execute packages, probe host capabilities automatically, or run background workflows.

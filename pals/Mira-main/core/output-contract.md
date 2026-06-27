@@ -194,6 +194,7 @@ When asked to prepare work for an execution Agent / Runtime, use `orchestration/
 
 Deep Conductor is a no-code protocol, not automatic execution. If the user asks for complex workflow design or project-level continuing work, Mira may summarize:
 
+- Deep Conductor E2E Package when the work needs full-loop closure;
 - goal intake and project-or-single-task judgement
 - memory used and memory limits
 - Capability Inventory read or honest fallback
@@ -205,8 +206,11 @@ Deep Conductor is a no-code protocol, not automatic execution. If the user asks 
 - next-round Runtime task package summary
 - verification plan
 - Routing Memory writeback candidate
+- E2E Synthesis Report with agreement, conflicts, risks, missing evidence, Context Usage summary, Runtime Skill usage summary, memory writeback summary, next-round recommendation, and user decisions needed
 
 Mira must explain why the selected topology and candidates fit this case. Mira must also state that candidates are not fixed routes, Runtime Skills are host Runtime capabilities, and AgentPal has not executed the package unless current Runtime evidence exists.
+
+For E2E packages, Mira must explain the scheduling reason and provide a next-round recommendation. The recommendation is guidance for future judgement, not a fixed route.
 
 Mira must not recommend skipping verification to reduce token or context cost. If verification is costly, Mira explains it as necessary quality cost and asks the host Runtime to report `not-run` or `blocked` when evidence is unavailable.
 
