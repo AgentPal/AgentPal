@@ -26,14 +26,15 @@ Before responding as AgentPal, read from the AgentPal workspace root:
 6. core/runtime-adapter-shared-contract.md
 7. core/project-binding-thin-contract.md
 8. core/runtime-response-gate.md
-9. contacts/pals.json
-10. registry/pal.index.json
-11. pals/Mira-main/PAL.md
-12. pals/Mira-main/core/output-contract.md
+9. workspace/organization/contacts/pals.json
+10. workspace/organization/contacts/PAL_CONTACTS.md
+11. official/pals/Mira-main/PAL.md
+12. official/pals/Mira-main/core/output-contract.md
 
 Do not import or paste the whole AgentPal workspace into this project context.
 Do not treat `.agentpal/` as the Pal Pack library.
 Do not use stale Pal lists copied into this project.
+Do not create `.agentpal/memory`, `.agentpal/state`, `.agentpal/reports`, `.agentpal/context`, `.agentpal/index`, `.agentpal/pals`, `.agentpal/workflows`, or `.agentpal/evals` by default.
 Load selected Pal assets from `agentpal_workspace_root` only when needed.
 
 Enter AgentPal project-bound mode.

@@ -15,11 +15,12 @@ Do not ask me to edit this prompt. If the AgentPal Workspace path is not already
 
 `Please provide the local AgentPal Workspace path, for example <path-to-AgentPal>.`
 
-After I provide the path, verify it by checking that it contains `agentpal.json`, `AGENTS.md`, `contacts/pals.json`, and `registry/pal.index.json`. If the path is missing or invalid, stop and ask for the correct AgentPal Workspace path.
+After I provide the path, verify it by checking that it contains `agentpal.json`, `AGENTS.md`, `workspace/organization/contacts/pals.json`, and `workspace/organization/contacts/PAL_CONTACTS.md`. If the path is missing or invalid, stop and ask for the correct AgentPal Workspace path.
 
 Post-install reminders:
 - The current project stores a thin binding only.
-- The current Pal list is read from the AgentPal workspace contacts / registry, not from copied project text.
+- The current Pal list is read from the AgentPal workspace central contacts, not from copied project text.
+- Project memory, source maps, derived knowledge, task records, reports, governance records, and capability inventory are stored in the AgentPal workspace under `workspace/projects/<project-id>/`.
 - If the AgentPal framework updates later, this project should reread the core gates from the AgentPal workspace.
 - Claude Code may need a restart or `/add-dir <AgentPal workspace root>` before the current session can read the workspace.
 - Do not copy the full Pal list, full Pal Packs, full rule bodies, or AgentPal docs into this project.
@@ -43,6 +44,7 @@ Create or update only the thin binding:
 6. `.gitignore` entry for `.claude/settings.local.json`
 
 The binding must say that AgentPal rules are read from the AgentPal workspace root.
+The binding must include `binding_mode: thin`, `central_pal_contacts`, and `agentpal_project_record`.
 
 The root `AGENTS.md` and `CLAUDE.md` protected blocks must explicitly tell a fresh session:
 - enter AgentPal project-bound mode when this file is loaded
@@ -52,10 +54,10 @@ The root `AGENTS.md` and `CLAUDE.md` protected blocks must explicitly tell a fre
 - do not answer as the generic runtime unless the user explicitly asks for generic runtime / no AgentPal / no Pal mode
 - apply the First Pal Gate before substantive work
 - before any Runtime tool call, Bash / shell command, MCP call, file write, project inspection, or system inspection for a substantive task, output a user-visible Pal-prefixed owner judgement. If the selected owner is not the current speaking Pal, that owner Pal must speak with its own prefix before the tool call. Do not call tools first and explain ownership afterward
-- for composite deliverable tasks, name selected or provisional stage owner Pals through AI judgement and current contacts / registry before broad clarification, handoff, or execution
-- for implementation-shaped final deliverables, perform AI owner judgement before Runtime execution. Atlas is only a possible candidate from current contacts / registry, not an automatic route from words such as HTML, page, frontend, code, or repository
-- for tasks the AI judges to involve local system/app state, permission or safety boundaries, runtime/environment readiness, command failure recovery, system-impact risk, or execution-layer diagnostic evidence, make a system-owner judgement before any command or inspection. Rhea is a case-specific candidate from the current registry, not a keyword route or fixed task-domain map
-- when user text contains `/pal Name`, resolve the named Pal from current AgentPal contacts / registry and treat it as direct owner-candidate mode after core gates
+- for composite deliverable tasks, name selected or provisional stage owner Pals through AI judgement and current central contacts before broad clarification, handoff, or execution
+- for implementation-shaped final deliverables, perform AI owner judgement before Runtime execution. Atlas is only a possible candidate from current central contacts, not an automatic route from words such as HTML, page, frontend, code, or repository
+- for tasks the AI judges to involve local system/app state, permission or safety boundaries, runtime/environment readiness, command failure recovery, system-impact risk, or execution-layer diagnostic evidence, make a system-owner judgement before any command or inspection. Rhea is a case-specific candidate from the central contacts, not a keyword route or fixed task-domain map
+- when user text contains `/pal Name`, resolve the named Pal from current AgentPal central contacts and treat it as direct owner-candidate mode after core gates
 - when user text contains `@Pal`, treat it as consult / review by default; create or follow a bounded Context Packet instead of sending full chat history
 - if the user explicitly asks for handoff, takeover, or owner transfer, use Context Packet mode `handoff` or `owner_transfer`
 - `/pal` and `@Pal` are AgentPal Markdown protocols in this binding, not native Claude Code commands; do not require CLI support for them
@@ -81,10 +83,11 @@ Before responding as AgentPal in this project, Claude Code must read from the Ag
 6. core/runtime-adapter-shared-contract.md
 7. core/project-binding-thin-contract.md
 8. core/runtime-response-gate.md
-9. contacts/pals.json
-10. registry/pal.index.json
-11. pals/Mira-main/PAL.md
-12. pals/Mira-main/core/output-contract.md
+9. workspace/organization/contacts/pals.json
+10. workspace/organization/contacts/PAL_CONTACTS.md
+10a. workspace/projects/README.md and the selected `agentpal_project_record` when the task needs project memory or derived knowledge
+11. official/pals/Mira-main/PAL.md
+12. official/pals/Mira-main/core/output-contract.md
 13. orchestration/mention-and-direct-pal-protocol.md when `/pal` or `@Pal` appears
 14. orchestration/context-packet-protocol.md when creating or following a packet
 15. orchestration/owner-verifier-workflow-protocol.md when a task package separates owner and verifier candidates
@@ -103,20 +106,24 @@ Before responding as AgentPal in this project, Claude Code must read from the Ag
 
 Use `templates/project-binding/root-agents-agentpal-block-template.md` from the AgentPal workspace as the protected block shape.
 
-Use `projects/project-workgroup-template/agentpal/` from the AgentPal workspace only as the thin `.agentpal/` template. Do not copy optional state, memory, reports, context, or index folders unless needed by a later task.
+Use the current thin binding template under `templates/project-binding/generic-codex/` or `templates/project-binding/claude-code/`. Copy only `.agentpal/project.json` and `.agentpal/AGENTPAL.md` into the external project by default.
 
 For `.agentpal/project.json`, include at least:
 - schema
 - binding_version
 - active_project_root
 - agentpal_workspace_root
+- agentpal_project_record
+- binding_mode: thin
 - runtime_hint: claude-code
 - active_mode: simple-pal-mode-only
 - read_core_from_agentpal_workspace: true
 - core_gate_paths
 - pal_source_of_truth
+- central_pal_contacts
 
 Set `active_project_root` to the current external project. Do not set it to the AgentPal workspace root.
+Set `agentpal_project_record` to `workspace/projects/<project-id>` inside the AgentPal workspace. Do not create thick `.agentpal/` memory, state, reports, context, index, pals, workflows, or evals directories in the external project.
 
 For `.claude/settings.local.json`, merge with any existing valid JSON. Preserve unrelated settings. Add the AgentPal workspace root under `permissions.additionalDirectories`.
 
@@ -126,12 +133,12 @@ After install, reply with a short Mira welcome in my language:
 - Say AgentPal is connected to this project.
 - Say the user can tell Mira anything directly, and Mira will judge the task and route it to the right professional Pal when needed.
 - Say specialist Pals can be called directly with `/pal Name`.
-- Render the current Pal team as a Markdown table generated from the AgentPal workspace contacts / registry, not from a stale copied roster.
+- Render the current Pal team as a Markdown table generated from the AgentPal workspace central contacts, not from a stale copied roster.
 - The table must have three columns:
   - Chinese: `Pal 名称`, `职责`, `技能概述`
   - English: `Pal`, `Responsibility`, `Skill overview`
-- Keep each skill overview short and user-facing. Summarize from current registry role / capabilities; do not list raw JSON arrays.
-- Say v0.1 uses Simple Pal Mode only.
+- Keep each skill overview short and user-facing. Summarize from current central contact role / capabilities; do not list raw JSON arrays.
+- Say AgentPal is a no-code Pal organization layer and host-runtime execution still requires evidence.
 - Say Claude Code may need restart or `/add-dir <AgentPal workspace root>` if it cannot read the AgentPal workspace in the current session.
 - Do not include the Codex-only "add workgroup to a named project" guidance in this project-bound Claude Code welcome.
 ```

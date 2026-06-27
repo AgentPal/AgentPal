@@ -60,7 +60,7 @@ Do not put the local AgentPal absolute path in `.claude/settings.json`.
 
 Existing project instructions outside that block are preserved.
 
-The block is lightweight. It points to the AgentPal workspace and tells Claude Code to use contacts / registry and selected Pal assets on demand. It does not import the whole AgentPal workspace.
+The block is lightweight. It points to the AgentPal workspace and tells Claude Code to use the central Pal roster and selected Pal assets on demand. It does not import the whole AgentPal workspace.
 
 ## If Access Does Not Take Effect Immediately
 
@@ -91,7 +91,7 @@ Use:
 - `.agentpal/project.json` for binding metadata
 - `CLAUDE.md` for lightweight Claude Code instructions
 - `AGENTS.md` for cross-runtime instructions
-- `contacts/pals.json` and `registry/pal.index.json` for Pal discovery
+- `workspace/organization/contacts/pals.json` and `workspace/organization/contacts/PAL_CONTACTS.md` for Pal discovery
 - `RESOURCE_INDEX.md` and selected Pal assets on demand
 
 Project questions mean `<your-project>`, not the AgentPal workspace.

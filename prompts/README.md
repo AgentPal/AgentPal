@@ -40,7 +40,7 @@ Keep local machine paths in project-local files such as `.agentpal/project.json`
 
 ## Maintenance Prompts
 
-- `refresh-pal-index.md`: refresh contacts / registry after Pal Pack changes.
+- `refresh-pal-index.md`: refresh central contacts after Pal Pack changes.
 - `add-pal-to-agentpal.md`: add newly copied valid Pal Pack directories.
 - `initialize-agentpal.md`: legacy-compatible workspace initialization prompt.
 - `rebuild-mira-main-pal.md`: repair Mira public files only when damaged.

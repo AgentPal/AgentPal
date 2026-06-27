@@ -1,0 +1,41 @@
+{
+  "schema": "agentpal.external_project_binding.v0.4",
+  "binding_mode": "thin",
+  "binding_style": "thin-binding",
+  "project_id": "REPLACE_WITH_PROJECT_ID",
+  "project_name": "REPLACE_WITH_EXTERNAL_PROJECT_NAME",
+  "active_project_root": "<absolute external project root>",
+  "agentpal_workspace_root": "<absolute AgentPal workspace root>",
+  "agentpal_project_record": "workspace/projects/REPLACE_WITH_PROJECT_ID",
+  "runtime_hint": "generic-codex",
+  "ordinary_messages_go_to": "Mira",
+  "project_context_policy": "active_project_root_only",
+  "central_pal_contacts": [
+    "workspace/organization/contacts/pals.json",
+    "workspace/organization/contacts/PAL_CONTACTS.md",
+    "workspace/organization/contacts/aliases.json"
+  ],
+  "central_contacts_are_not_copied": true,
+  "project_knowledge_policy": {
+    "read_current_project_materials_from": "active_project_root",
+    "write_structured_agentpal_records_to": "agentpal_project_record",
+    "do_not_write_agentpal_internal_memory_to_external_project": true
+  },
+  "allowed_project_binding_files": [
+    ".agentpal/project.json",
+    ".agentpal/AGENTPAL.md",
+    "AGENTS.md protected block"
+  ],
+  "forbidden_default_project_binding_dirs": [
+    ".agentpal/memory",
+    ".agentpal/state",
+    ".agentpal/reports",
+    ".agentpal/context",
+    ".agentpal/index",
+    ".agentpal/pals",
+    ".agentpal/workflows",
+    ".agentpal/evals"
+  ],
+  "routing_policy": "ai_judgement_only",
+  "keyword_routing_allowed": false
+}

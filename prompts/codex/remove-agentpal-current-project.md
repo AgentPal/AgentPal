@@ -23,8 +23,8 @@ Step 1 - Confirm current project root:
 3. AgentPal Workspace indicators include:
    - root agentpal.json
    - prompts/codex/initialize-agentpal-workspace.md
-   - pals/Mira-main/
-   - contacts/pals.json
+   - official/pals/Mira-main/
+   - workspace/organization/contacts/pals.json
 
 Step 2 - Detect binding:
 Check whether the current project has any of:

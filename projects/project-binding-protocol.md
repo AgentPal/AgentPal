@@ -21,13 +21,18 @@ For Claude Code, also create or update:
 - root `CLAUDE.md` protected block
 - `.claude/settings.local.json`
 
-Optional project state folders are lazy-created only when needed:
+Do not create project-local AgentPal state folders by default.
+
+Forbidden default additions:
 
 - `.agentpal/state/`
 - `.agentpal/memory/`
 - `.agentpal/reports/`
 - `.agentpal/context/`
 - `.agentpal/index/`
+- `.agentpal/pals/`
+- `.agentpal/workflows/`
+- `.agentpal/evals/`
 
 ## Must Not Copy
 
@@ -41,10 +46,13 @@ Do not copy these into the external project binding:
 - evals
 - release notes
 - PalBench reports
+- central contacts
+- official Pal Packs
+- workspace project records
 
 ## Core Gate Read Order
 
-The protected root block and `.agentpal/INIT_AGENTPAL_PROJECT_PROMPT.md` must tell runtimes to read these from `agentpal_workspace_root`:
+The protected root block and `.agentpal/AGENTPAL.md` must tell runtimes to read these from `agentpal_workspace_root`:
 
 1. `core/agentpal-core-gate.md`
 2. `core/first-pal-gate.md`
@@ -54,10 +62,10 @@ The protected root block and `.agentpal/INIT_AGENTPAL_PROJECT_PROMPT.md` must te
 6. `core/runtime-adapter-shared-contract.md`
 7. `core/project-binding-thin-contract.md`
 8. `core/runtime-response-gate.md`
-9. `contacts/pals.json`
-10. `registry/pal.index.json`
-11. `pals/Mira-main/PAL.md`
-12. `pals/Mira-main/core/output-contract.md`
+9. `workspace/organization/contacts/pals.json`
+10. `workspace/organization/contacts/PAL_CONTACTS.md`
+11. `official/pals/Mira-main/PAL.md`
+12. `official/pals/Mira-main/core/output-contract.md`
 
 ## Binding Metadata
 
@@ -75,6 +83,8 @@ The protected root block and `.agentpal/INIT_AGENTPAL_PROJECT_PROMPT.md` must te
 - pal_source_of_truth
 
 It should not store an authoritative Pal roster.
+
+It must state `routing_policy: ai_judgement_only` and `keyword_routing_allowed: false`.
 
 ## Runtime Notes
 
@@ -99,9 +109,11 @@ Verification should prove:
 
 - the project binding is thin
 - core gate files exist in the AgentPal workspace
-- contacts / registry exist in the AgentPal workspace
+- central contacts exist in the AgentPal workspace
 - Mira entry files exist in the AgentPal workspace
 - root instruction blocks point to core gates
 - no stale embedded full Pal list is used as source of truth
 - no full AgentPal protocols are copied into `.agentpal/`
 - active mode remains Simple Pal Mode only
+- no `.agentpal/memory`, `.agentpal/state`, `.agentpal/reports`, `.agentpal/context`, `.agentpal/index`, `.agentpal/pals`, `.agentpal/workflows`, or `.agentpal/evals` directories were created by default
+- no keyword routing map is used

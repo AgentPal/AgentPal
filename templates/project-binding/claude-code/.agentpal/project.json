@@ -1,0 +1,30 @@
+{
+  "schema": "agentpal.external_project_binding.v0.4",
+  "binding_style": "thin-binding",
+  "active_project_root": "<absolute external project root>",
+  "agentpal_workspace_root": "<absolute AgentPal workspace root>",
+  "runtime_hint": "claude-code",
+  "ordinary_messages_go_to": "Mira",
+  "project_context_policy": "active_project_root_only",
+  "central_contacts": "workspace/organization/contacts/pals.json",
+  "central_contacts_are_not_copied": true,
+  "allowed_project_binding_files": [
+    ".agentpal/project.json",
+    ".agentpal/AGENTPAL.md",
+    "CLAUDE.md protected block",
+    ".claude/settings.local.json",
+    ".gitignore entry for .claude/settings.local.json"
+  ],
+  "forbidden_default_project_binding_dirs": [
+    ".agentpal/memory",
+    ".agentpal/state",
+    ".agentpal/reports",
+    ".agentpal/context",
+    ".agentpal/index",
+    ".agentpal/pals",
+    ".agentpal/workflows",
+    ".agentpal/evals"
+  ],
+  "routing_policy": "ai_judgement_only",
+  "keyword_routing_allowed": false
+}

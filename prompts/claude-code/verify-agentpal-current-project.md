@@ -18,11 +18,14 @@ Verify:
 3. `project.json` has:
    - active_project_root
    - agentpal_workspace_root
+   - agentpal_project_record
+   - binding_mode: thin
    - runtime_hint
    - active_mode: simple-pal-mode-only
    - read_core_from_agentpal_workspace: true
    - core_gate_paths
    - pal_source_of_truth
+   - central_pal_contacts
 4. AgentPal workspace path is readable.
 5. These AgentPal workspace files exist:
    - core/agentpal-core-gate.md
@@ -33,11 +36,14 @@ Verify:
    - core/runtime-adapter-shared-contract.md
    - core/project-binding-thin-contract.md
    - core/runtime-response-gate.md
-   - contacts/pals.json
-   - registry/pal.index.json
-   - pals/Mira-main/PAL.md
-   - pals/Mira-main/core/output-contract.md
-6. The AgentPal workspace contacts / registry are readable and are the Pal source of truth. If project files contain a copied roster, report it as stale or non-authoritative.
+   - workspace/organization/contacts/pals.json
+   - workspace/organization/contacts/PAL_CONTACTS.md
+   - workspace/projects/README.md
+   - workspace/projects/_template/project.json
+   - official/pals/Mira-main/PAL.md
+   - official/pals/Mira-main/core/output-contract.md
+6. The AgentPal workspace central contacts are readable and are the Pal source of truth. If project files contain a copied roster, report it as stale or non-authoritative.
+6a. `agentpal_project_record` points to `workspace/projects/<project-id>` and project memory, source maps, derived knowledge, tasks, reports, governance records, and capability inventory are not stored in project-local `.agentpal/`.
 7. `CLAUDE.md` contains exactly one AgentPal block between:
    - `<!-- BEGIN AGENTPAL WORKGROUP -->`
    - `<!-- END AGENTPAL WORKGROUP -->`

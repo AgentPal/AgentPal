@@ -1,6 +1,6 @@
 # Use With Claude Code
 
-This is the recommended Claude Code path for AgentPal v0.1.0-rc.1.
+This is the recommended Claude Code path for AgentPal v0.3.0-rc.1.
 
 ## Project-First Path
 
@@ -52,7 +52,7 @@ These are fallback options, not the default setup path.
 
 - AgentPal is a Pal layer, not an Agent runtime.
 - The active path is `Simple Pal Mode only`.
-- Deep Conductor is future design only.
+- Deep Conductor is a no-code protocol foundation, not automatic runtime execution.
 - Subagent Mode and external Agent orchestration are not active in this release.
 
 ## Related

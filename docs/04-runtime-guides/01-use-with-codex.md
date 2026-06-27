@@ -1,6 +1,6 @@
 # Use With Codex
 
-This is the current Codex path for AgentPal v0.1.0-rc.1.
+This is the current Codex path for AgentPal v0.3.0-rc.1.
 
 ## Quick Start
 
@@ -22,8 +22,8 @@ This is the current Codex path for AgentPal v0.1.0-rc.1.
 ## Important Boundary
 
 - AgentPal is not a Codex replacement.
-- AgentPal is not a Codex subagent system in `v0.1.0-rc.1`.
-- Deep Conductor is future design only.
+- AgentPal is not a Codex subagent system.
+- Deep Conductor is a no-code protocol foundation, not automatic runtime execution.
 - Do not describe parallel child workflows as the current AgentPal runtime path.
 
 ## Good First Commands

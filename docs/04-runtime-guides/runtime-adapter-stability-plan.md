@@ -31,13 +31,13 @@ Across supported Markdown/JSON-capable runtimes:
 Expected:
 
 - user opens AgentPal Workspace directly;
-- runtime reads root `AGENTS.md`, core gates, contacts/registry, and Mira minimum assets;
+- runtime reads root `AGENTS.md`, core gates, central contacts, and Mira minimum assets;
 - current context is AgentPal Workspace, not an external project.
 
 Evidence:
 
 - initialized response starts with `Mira：`;
-- contacts/registry list current official Pals;
+- central contacts list current official Pals;
 - no external project root is invented.
 
 ### Claude Code Project-First Install
@@ -71,7 +71,7 @@ Evidence:
 
 - existing binding upgrade;
 - remove and reinstall;
-- Pal list refresh from contacts/registry;
+- Pal list refresh from central contacts;
 - core gate propagation;
 - project-root separation;
 - failed install troubleshooting;

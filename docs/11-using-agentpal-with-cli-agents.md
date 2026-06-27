@@ -46,7 +46,7 @@ The project binding is lightweight:
 
 - `.agentpal/project.json` records the current project root and AgentPal workspace root
 - `AGENTS.md` contains a protected AgentPal block
-- contacts / registry are used for Pal discovery
+- `workspace/organization/contacts/` is used for Pal discovery
 - selected Pal assets are loaded on demand
 
 Do not copy all Pal Packs into the project.

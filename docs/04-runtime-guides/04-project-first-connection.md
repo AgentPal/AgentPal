@@ -28,7 +28,7 @@ Then paste the prompt from `prompts/generic-cli-agent/install-agentpal-current-p
 
 - the current project directory is the active task root
 - the AgentPal Workspace is only a Pal workspace reference
-- Pal discovery comes from AgentPal `contacts/` and `registry/`
+- Pal discovery comes from AgentPal `workspace/organization/contacts/`
 - `.agentpal/` stores project-local binding metadata
 - the runtime should not preload the whole AgentPal Workspace into project context
 

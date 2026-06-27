@@ -10,7 +10,7 @@ A stable Runtime Adapter should:
 
 - keep the user's real project as the active project;
 - read AgentPal core gates from the AgentPal Workspace;
-- read the current Pal list from `contacts/pals.json` and `registry/pal.index.json`;
+- read the current Pal list from `workspace/organization/contacts/pals.json` and `workspace/organization/contacts/PAL_CONTACTS.md`;
 - load Mira as the ordinary entry Pal;
 - preserve Simple Pal Mode only;
 - report exact evidence for reads, writes, and command results;
@@ -38,10 +38,10 @@ The binding should point back to:
 - `core/runtime-adapter-shared-contract.md`;
 - `core/project-binding-thin-contract.md`;
 - `core/runtime-response-gate.md`;
-- `contacts/pals.json`;
-- `registry/pal.index.json`;
-- `pals/Mira-main/PAL.md`;
-- `pals/Mira-main/core/output-contract.md`.
+- `workspace/organization/contacts/pals.json`;
+- `workspace/organization/contacts/PAL_CONTACTS.md`;
+- `official/pals/Mira-main/PAL.md`;
+- `official/pals/Mira-main/core/output-contract.md`.
 
 The project should not become a second AgentPal Workspace.
 
@@ -93,7 +93,7 @@ In a bound external project:
 
 - "this project" means `active_project_root`;
 - normal source inspection stays inside `active_project_root`;
-- AgentPal Workspace reads are limited to core gates, contacts, registry, Mira entry files, and selected Pal assets needed for the current task;
+- AgentPal Workspace reads are limited to core gates, central contacts, Mira entry files, and selected Pal assets needed for the current task;
 - reports should not list AgentPal as a second active project root.
 
 If these roots become identical by accident, the binding should be rejected unless the user explicitly says they are working on AgentPal itself.
@@ -118,7 +118,7 @@ Do not copy these into the user project as binding material:
 - full Mira assets;
 - full core gates or orchestration protocols;
 - AgentPal docs, examples, evals, release notes, or PalBench reports;
-- optional `.agentpal/state`, `.agentpal/memory`, `.agentpal/reports`, `.agentpal/context`, or `.agentpal/index` folders;
+- `.agentpal/state`, `.agentpal/memory`, `.agentpal/reports`, `.agentpal/context`, `.agentpal/index`, `.agentpal/pals`, `.agentpal/workflows`, or `.agentpal/evals` folders by default;
 - generated runtime helpers, background services, installers, or UI.
 
 The binding may copy only the small project template files needed to point back to the AgentPal Workspace.
@@ -139,8 +139,8 @@ Recommended check:
 
 The current Pal list comes from:
 
-- `contacts/pals.json`;
-- `registry/pal.index.json`.
+- `workspace/organization/contacts/pals.json`;
+- `workspace/organization/contacts/PAL_CONTACTS.md`.
 
 If a bound project still shows old Pals:
 
@@ -160,9 +160,9 @@ Minimum verification:
 
 - current directory is the user's project, not the AgentPal Workspace;
 - `.agentpal/project.json` is valid JSON;
-- the AgentPal Workspace path exists and contains the required core, contacts, registry, and Mira files;
+- the AgentPal Workspace path exists and contains the required core, central contact, and Mira files;
 - root instruction blocks exist once and point back to core gates;
-- the Pal list is read from contacts and registry;
+- the Pal list is read from central contacts;
 - Claude Code local settings include the AgentPal Workspace path when Claude Code is used;
 - no copied full rules or Pal Packs exist in `.agentpal/`.
 
@@ -187,7 +187,7 @@ Check whether the session can read the AgentPal Workspace path. If not, restart 
 
 ### `/pal Atlas` is treated as normal text
 
-Check that the root instruction block says direct Pal calls are resolved from current contacts and registry. Then confirm the runtime has actually read `contacts/pals.json` and `registry/pal.index.json`.
+Check that the root instruction block says direct Pal calls are resolved from current central contacts. Then confirm the runtime has actually read `workspace/organization/contacts/pals.json` and `workspace/organization/contacts/PAL_CONTACTS.md`.
 
 ### The project still shows an old Pal list
 

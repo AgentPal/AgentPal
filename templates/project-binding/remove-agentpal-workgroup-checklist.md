@@ -45,7 +45,7 @@ Keyword rules:
 - [ ] Project package files.
 - [ ] Project `.git`.
 - [ ] AgentPal Workspace.
-- [ ] AgentPal `pals/`.
+- [ ] AgentPal `official/pals/` or central workspace assets.
 - [ ] Other projects' `.agentpal/`.
 
 ## Completion

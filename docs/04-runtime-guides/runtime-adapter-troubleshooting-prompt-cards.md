@@ -31,7 +31,7 @@ User problem: install reported success, but the first AgentPal reply did not sta
 Copyable prompt:
 
 ```text
-Verify why Mira did not produce the project-bound welcome. Check only the current project binding, root instruction blocks, the recorded AgentPal Workspace path, contacts, registry, and Mira entry files. Report pass, fail, or warning with exact evidence and one fix.
+Verify why Mira did not produce the project-bound welcome. Check only the current project binding, root instruction blocks, the recorded AgentPal Workspace path, central contacts, and Mira entry files. Report pass, fail, or warning with exact evidence and one fix.
 ```
 
 Expected checks:
@@ -39,10 +39,10 @@ Expected checks:
 - `.agentpal/project.json`;
 - protected blocks in `AGENTS.md` and `CLAUDE.md`;
 - required core gate paths;
-- `contacts/pals.json`;
-- `registry/pal.index.json`;
-- `pals/Mira-main/PAL.md`;
-- `pals/Mira-main/core/output-contract.md`.
+- `workspace/organization/contacts/pals.json`;
+- `workspace/organization/contacts/PAL_CONTACTS.md`;
+- `official/pals/Mira-main/PAL.md`;
+- `official/pals/Mira-main/core/output-contract.md`.
 
 Should-not behavior:
 
@@ -100,13 +100,13 @@ User problem: a newly added Pal is missing or an old Pal still appears.
 Copyable prompt:
 
 ```text
-Check whether this project reads the Pal list from the AgentPal Workspace contacts and registry. Look for any copied roster in project files and mark it non-authoritative. Then report the current Pal names from contacts and registry.
+Check whether this project reads the Pal list from the AgentPal Workspace central contacts. Look for any copied roster in project files and mark it non-authoritative. Then report the current Pal names from central contacts.
 ```
 
 Expected checks:
 
-- `contacts/pals.json`;
-- `registry/pal.index.json`;
+- `workspace/organization/contacts/pals.json`;
+- `workspace/organization/contacts/PAL_CONTACTS.md`;
 - root instruction blocks;
 - `.agentpal/` for copied roster text.
 
@@ -122,13 +122,13 @@ User problem: direct Pal command was not recognized.
 Copyable prompt:
 
 ```text
-Verify direct Pal call support for this project. Check that root AgentPal blocks mention `/pal Name`, that contacts and registry are readable, and that Atlas exists in the current registry. Do not infer from a copied roster.
+Verify direct Pal call support for this project. Check that root AgentPal blocks mention `/pal Name`, that central contacts are readable, and that Atlas exists in the current central roster. Do not infer from a copied roster.
 ```
 
 Expected checks:
 
 - direct mention instructions in root blocks;
-- contacts and registry readable;
+- central contacts readable;
 - `Atlas` present in current registry;
 - active mode is Simple Pal Mode only.
 

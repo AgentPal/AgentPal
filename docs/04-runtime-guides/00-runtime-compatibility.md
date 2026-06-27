@@ -1,6 +1,6 @@
 # Runtime Compatibility
 
-AgentPal v0.1.0-rc.1 is a Pal layer, not an execution layer. Compatibility depends on whether a runtime can read structured workspace files, follow Markdown / JSON instructions, preserve context, and report execution evidence honestly.
+AgentPal v0.3.0-rc.1 is a Pal layer, not an execution layer. Compatibility depends on whether a runtime can read structured workspace files, follow Markdown / JSON instructions, preserve context, and report execution evidence honestly.
 
 ## Current Quick-Start Paths
 
@@ -45,7 +45,7 @@ See [Use With Generic CLI Agent](03-use-with-generic-cli-agent.md).
 ## Common Boundary
 
 - AgentPal is not a runtime adapter that guarantees identical behavior everywhere.
-- AgentPal is not a deep plugin for Codex or Claude Code in `v0.1.0-rc.1`.
+- AgentPal is not a deep plugin for Codex or Claude Code.
 - Deep Conductor, Subagent Mode, parallel child workflows, and external Agent orchestration are not active runtime paths in this release.
 
 ## Related

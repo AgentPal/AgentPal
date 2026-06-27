@@ -18,11 +18,11 @@ This folder does not contain the AgentPal rule body, Pal Packs, full protocols, 
    - `core/project-binding-thin-contract.md`
    - `core/runtime-response-gate.md`
 4. Read Pal source of truth from the AgentPal workspace:
-   - `contacts/pals.json`
-   - `registry/pal.index.json`
+   - `workspace/organization/contacts/pals.json`
+   - `workspace/organization/contacts/PAL_CONTACTS.md`
 5. Read Mira entry assets from the AgentPal workspace:
-   - `pals/Mira-main/PAL.md`
-   - `pals/Mira-main/core/output-contract.md`
+   - `official/pals/Mira-main/PAL.md`
+   - `official/pals/Mira-main/core/output-contract.md`
 
 ## Boundary
 
@@ -31,3 +31,9 @@ The active project is this external project directory.
 The AgentPal workspace is only a Pal source and routing reference. Do not treat it as part of this project.
 
 If the AgentPal main framework updates its core gates, this project should inherit the update by reading `agentpal_workspace_root`; do not paste a full rule copy into this folder.
+
+## Thin Binding Cleanliness
+
+Do not create `.agentpal/memory`, `.agentpal/state`, `.agentpal/reports`, `.agentpal/context`, `.agentpal/index`, `.agentpal/pals`, `.agentpal/workflows`, or `.agentpal/evals` by default.
+
+Owner selection is AI judgement only. Do not use keyword routing, `keyword_map`, `domain_map`, or `role_map`.

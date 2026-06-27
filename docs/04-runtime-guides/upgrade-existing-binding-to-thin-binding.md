@@ -26,7 +26,7 @@ Signs of an old or oversized binding:
 - `.agentpal/` contains copied Mira assets, Pal Packs, docs, examples, evals, or release material;
 - `.agentpal/AGENTPAL.md` claims the project-local copy is authoritative;
 - a project-local cache is treated as the current registry;
-- direct Pal calls use stale names that do not match workspace contacts or registry;
+- direct Pal calls use stale names that do not match the workspace central Pal roster;
 - the binding lacks `read_core_from_agentpal_workspace: true`.
 
 ## Upgrade Steps
@@ -40,8 +40,8 @@ Signs of an old or oversized binding:
 4. Validate the AgentPal Workspace path by checking:
    - `agentpal.json`;
    - `AGENTS.md`;
-   - `contacts/pals.json`;
-   - `registry/pal.index.json`.
+   - `workspace/organization/contacts/pals.json`;
+   - `workspace/organization/contacts/PAL_CONTACTS.md`.
 5. Replace old root `AGENTS.md` and `CLAUDE.md` AgentPal sections with the protected thin block from `templates/project-binding/root-agents-agentpal-block-template.md`.
 6. Rewrite `.agentpal/project.json` to include:
    - `binding_version`;
@@ -74,7 +74,7 @@ Signs of an old or oversized binding:
 - `read_core_from_agentpal_workspace` is true.
 - Root AgentPal blocks exist once.
 - Root AgentPal blocks point to core gates.
-- Contacts and registry are read from the AgentPal Workspace.
+- The central Pal roster is read from the AgentPal Workspace.
 - `.agentpal/` contains binding files only.
 - Claude Code local settings are merged when Claude Code is the target runtime.
 - The runtime reports Simple Pal Mode only.

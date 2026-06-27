@@ -1,0 +1,3 @@
+```gitignore
+.claude/settings.local.json
+```
