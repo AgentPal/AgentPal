@@ -1,6 +1,6 @@
 # Current Capabilities
 
-This page describes what AgentPal v0.1.0-rc.1 can do today without treating future design material as active runtime behavior.
+This page describes what AgentPal v0.3.0-rc.1 can do today without treating host-runtime-dependent or future runtime behavior as active AgentPal execution.
 
 ## Workspace Capabilities
 
@@ -23,6 +23,8 @@ This page describes what AgentPal v0.1.0-rc.1 can do today without treating futu
 - Context Slicing so runtimes load only relevant files.
 - Asset Loading Budget so a Pal does not preload the whole workspace by default.
 - Runtime Response Gate for answer validity and routing boundary.
+- Deep Conductor as no-code protocols, task packages, examples, evals, synthesis reports, and replay reports.
+- Context Packet, Owner + Verifier, Parallel Independent Review, Project Conductor, Cross-Runtime Pal Memory, Runtime-installed Skill Orchestration, and qualitative Context Budget guidance.
 
 ## Runtime Use Capabilities
 
@@ -33,7 +35,7 @@ This page describes what AgentPal v0.1.0-rc.1 can do today without treating futu
 ## Validation And Release Capabilities
 
 - Release notes, release checklist, and GitHub release draft files.
-- Small-sample PalBench validation material for cautious RC evidence.
+- PalBench Collaboration qualitative regression coverage with 87 cases.
 - Public-safe prompts, examples, and evaluation assets.
 
 ## Related

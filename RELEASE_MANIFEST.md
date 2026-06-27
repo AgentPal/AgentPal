@@ -11,7 +11,7 @@ Generated: 2026-06-27
 | Git tag | `v0.3.0-rc.1` |
 | Release type | Public release candidate / pre-release |
 | Runtime policy | Simple Pal Mode with no-code Deep Conductor protocols |
-| Publication status | Release preparation only; tag, push, and GitHub Release are not done by this manifest |
+| Publication status | Release candidate package; verify the pushed tag and GitHub pre-release page during publication |
 
 Scope:
 

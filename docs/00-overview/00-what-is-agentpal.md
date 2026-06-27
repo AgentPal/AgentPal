@@ -4,7 +4,7 @@ AgentPal is a Pal layer and Pal Pack Standard practice for agent runtimes.
 
 It packages identity, knowledge, skills, memory boundaries, workflows, context rules, output contracts, verification habits, and collaboration protocols into runtime-readable working assets.
 
-AgentPal v0.1.0-rc.1 is a Markdown/JSON workspace. It is not an Agent layer, not a multi-agent runtime, not an execution layer, not a desktop app, and not a marketplace.
+AgentPal v0.3.0-rc.1 is a Markdown / JSON / protocol workspace. It is not an Agent layer, not a multi-agent runtime, not an execution layer, not a desktop app, and not a marketplace.
 
 ## The Short Version
 
@@ -20,7 +20,7 @@ Single Pal Packs live under `pals/<Pal-Directory>/`. Each Pal Pack owns its own 
 
 ## Current Runtime Path
 
-AgentPal v0.1.0-rc.1 uses Simple Pal Mode only.
+AgentPal v0.3.0-rc.1 uses Simple Pal Mode for task handling and provides Deep Conductor as no-code protocols, templates, examples, evals, task packages, and replay reports. It is not automatic runtime execution.
 
 Mira receives ordinary messages. When a substantive task belongs to a registered Pal, Mira gives a short handoff and stops. The owner Pal answers immediately in the same response using its own assets and Output Contract.
 

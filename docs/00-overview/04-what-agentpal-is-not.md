@@ -1,6 +1,6 @@
 # What AgentPal Is Not
 
-AgentPal v0.1.0-rc.1 has a strict release boundary. This page states the non-goals clearly so GitHub readers do not mistake future design material for current runtime behavior.
+AgentPal v0.3.0-rc.1 has a strict release boundary. This page states the non-goals clearly so GitHub readers do not mistake no-code protocols or future runtime material for current AgentPal execution.
 
 ## AgentPal Is Not
 
@@ -14,22 +14,25 @@ AgentPal v0.1.0-rc.1 has a strict release boundary. This page states the non-goa
 - an automatic installer
 - a daemon, scanner, or validator
 - a finished external Agent orchestration platform
+- a token meter or cost calculator
 
-## Not Active In v0.1.0-rc.1
+## Not Active In v0.3.0-rc.1
 
-- Deep Conductor as an active feature
-- Subagent Mode
-- parallel child workflows
-- external Agent orchestration
+- automatic Deep Conductor execution
+- automatic Subagent launch
+- automatic parallel child workflows
+- automatic external Agent orchestration
 - automatic runtime-wide scanning
+- automatic Runtime Skill execution by AgentPal
 - automatic project takeover
 
 ## Important Language Boundary
 
 - A Pal is not an Agent.
 - `/pal Name` does not start a separate agent process.
-- Simple Pal Mode is the current active path.
-- Future design documents must stay labeled as future or not active in `v0.1.0-rc.1`.
+- Simple Pal Mode is the active task-handling path.
+- Deep Conductor is current only as no-code protocols, templates, examples, evals, task packages, and replay reports.
+- Future runtime behavior must stay labeled as future, unavailable, blocked, or host-runtime-dependent in `v0.3.0-rc.1`.
 
 ## Related
 

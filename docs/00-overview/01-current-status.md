@@ -1,14 +1,14 @@
 # Current Status
 
-AgentPal v0.1.0-rc.1 is a release candidate for the AgentPal Workspace and Pal Pack standard practice for agent runtimes.
+AgentPal v0.3.0-rc.1 is a release candidate for the AgentPal Workspace, Pal Pack standard practice, and no-code orchestration prototype line for agent runtimes.
 
 ## Release Snapshot
 
-- Version: `v0.1.0-rc.1`
+- Version: `v0.3.0-rc.1`
 - Release status: release candidate
-- Current active path: `Simple Pal Mode only`
+- Current active path: `Simple Pal Mode` with no-code Deep Conductor protocols and host-runtime execution evidence
 - Default Main Pal / Leader / Conductor: `Mira`
-- Official bundled Pals: `Mira`, `Atlas`, `Vega`, `Rhea`, `Quinn`, `Morgan`, `Harper`, `Nova`
+- Official bundled Pals: `Mira`, `Atlas`, `Vega`, `Rhea`, `PalSmith`, `Quinn`, `Morgan`, `Harper`, `Nova`
 
 ## What Is Active In This Release
 
@@ -18,6 +18,8 @@ AgentPal v0.1.0-rc.1 is a release candidate for the AgentPal Workspace and Pal P
 - `/pal Name` direct calls through contacts and registry.
 - Fast Route for clear owner-Pal handoff.
 - Task Package, Context Slicing, and Asset Loading Budget protocols.
+- Deep Conductor no-code orchestration protocols, E2E packages, synthesis reports, examples, evals, and replay evidence.
+- Context Packet, Owner + Verifier, Parallel Independent Review, Project Conductor, Cross-Runtime Pal Memory, Runtime-installed Skill Orchestration, and qualitative Context Budget guidance.
 - Codex path, Claude Code project-first path, and generic CLI compatibility path.
 
 ## What Is Not Active In This Release
@@ -26,8 +28,11 @@ AgentPal v0.1.0-rc.1 is a release candidate for the AgentPal Workspace and Pal P
 - Multi-agent runtime behavior.
 - Subagent Mode.
 - Parallel child workflows.
-- Deep Conductor as an active runtime path.
-- External Agent orchestration.
+- Automatic Deep Conductor execution.
+- Automatic Subagent launch.
+- Automatic external Agent orchestration.
+- Automatic Runtime Skill detection or execution by AgentPal.
+- Exact token meter or cost calculator owned by AgentPal.
 - Desktop app, web app, marketplace, installer, daemon, scanner, validator, or hosted service.
 
 ## Runtime Boundary

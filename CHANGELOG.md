@@ -2,7 +2,7 @@
 
 All notable public changes to AgentPal are recorded here.
 
-## v0.3.0-rc.1 - Unreleased
+## v0.3.0-rc.1 - 2026-06-27
 
 Release candidate for the v0.3 no-code orchestration prototype line.
 

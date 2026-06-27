@@ -186,7 +186,7 @@ These prompts are Markdown instructions, not scripts or installers.
 
 ## Official Pal Packs
 
-Official Pal Packs for v0.1.0-rc.1:
+Official Pal Packs for v0.3.0-rc.1:
 
 - `pals/Mira-main`
 - `pals/Atlas-developer`

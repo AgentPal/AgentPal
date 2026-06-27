@@ -25,7 +25,7 @@ This document explains the boundary between AgentPal and the runtime that uses A
 
 ## Current Status
 
-AgentPal v0.1.0-rc.1 uses Simple Pal Mode only. It does not provide an execution layer or active multi-agent runtime.
+AgentPal v0.3.0-rc.1 uses Simple Pal Mode for task handling and provides Deep Conductor as no-code protocols, templates, examples, evals, task packages, and replay reports. It does not provide an execution layer or active multi-agent runtime.
 
 ## Related
 

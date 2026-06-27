@@ -77,4 +77,4 @@ Deep Conductor in v0.3.0-rc.1 is a no-code orchestration protocol and task-packa
 
 ## Next Steps
 
-After this release-preparation commit is accepted, a separate R65 release operation may create the `v0.3.0-rc.1` tag, push the commit and tag, and create a GitHub pre-release from `GITHUB_RELEASE_DRAFT.md`.
+Create the GitHub release from tag `v0.3.0-rc.1`, use `GITHUB_RELEASE_DRAFT.md` as the release body, and mark it as a pre-release rather than a stable release.
