@@ -115,6 +115,14 @@ The first suite includes at least 10 cases:
 69. E2E no Context Budget failure.
 70. E2E no verification failure.
 71. E2E no Routing Memory failure.
+72. E2E live project release replay.
+73. E2E live research-to-HTML replay.
+74. Runtime Skill availability replay.
+75. Owner + Verifier fake completion replay.
+76. Parallel review live replay.
+77. Cross-runtime continuation replay.
+78. Subagent / external Agent availability replay.
+79. Synthesis readability audit.
 
 ## Boundary
 
@@ -132,3 +140,5 @@ Runtime Skill cases verify no-code Task Package quality only. They do not requir
 Context Budget cases verify qualitative context planning, read tiers, prompt shaping, Runtime Skill cost notes, verification preservation, and Context Usage Reports. They do not require exact token metering or automatic cost calculation.
 
 Deep Conductor E2E cases verify the full no-code loop from user goal through memory, Capability Inventory, Context Budget, topology, Context Packets, Runtime Skill-aware packages, verification, synthesis, Routing Memory candidate, and next-round recommendation. They do not require AgentPal to execute packages, probe host capabilities automatically, or run background workflows.
+
+Real host replay cases verify whether a current Runtime can manually follow the no-code packages and return evidence. They must preserve unavailable, unknown, blocked, and not-run outcomes instead of smoothing them into pass.

@@ -73,5 +73,13 @@
 | PBC-069 | `PBC-069-e2e-no-context-budget-failure.md` | E2E no Context Budget failure |
 | PBC-070 | `PBC-070-e2e-no-verification-failure.md` | E2E no verification failure |
 | PBC-071 | `PBC-071-e2e-no-routing-memory-failure.md` | E2E no Routing Memory failure |
+| PBC-072 | `PBC-072-e2e-live-project-release-replay.md` | E2E live project release replay |
+| PBC-073 | `PBC-073-e2e-live-research-to-html-replay.md` | E2E live research-to-HTML replay |
+| PBC-074 | `PBC-074-runtime-skill-availability-replay.md` | Runtime Skill availability replay |
+| PBC-075 | `PBC-075-owner-verifier-fake-completion-replay.md` | Owner + Verifier fake completion replay |
+| PBC-076 | `PBC-076-parallel-review-live-replay.md` | Parallel review live replay |
+| PBC-077 | `PBC-077-cross-runtime-continuation-replay.md` | Cross-runtime continuation replay |
+| PBC-078 | `PBC-078-subagent-external-agent-availability-replay.md` | Subagent / external Agent availability replay |
+| PBC-079 | `PBC-079-synthesis-readability-audit.md` | Synthesis readability audit |
 
 All cases are no-code regression cases. None requires automatic Deep Conductor execution, Subagents, external Agents, or multiple runtimes.
