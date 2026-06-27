@@ -37,7 +37,7 @@ Possible future storage locations:
 
 - `memory/routing/`
 - owner Pal `learning/`
-- external project `.agentpal/memory/`
+- central `workspace/projects/<project-id>/memory/routing-memory.md`
 - private runtime memory outside the public release package
 
 Public releases should include only templates and synthetic examples.

@@ -21,7 +21,7 @@ Purpose: public-safe Pal Pack identity, examples, templates, knowledge, workflow
 
 Purpose: project state, goals, blockers, decisions, task ledger, and next steps for a specific external project.
 
-- Can live in: project-local `.agentpal/memory/`, private runtime state, user-approved project notes.
+- Can live in: the central `workspace/projects/<project-id>/memory/` record, private runtime state, or user-approved project notes.
 - Can commit to Git: only if the project owner approves and content is public-safe for that project.
 - Can share with other Pals: only as bounded summaries.
 - Can enter Context Packet: yes, as minimal task-relevant summaries.
@@ -44,6 +44,7 @@ Purpose: personal preferences, private facts, sensitive constraints, long-term u
 Purpose: record owner, verifier, Runtime, model/reasoning, topology, context, verification outcome, and next-time recommendations.
 
 - Can live in: `memory/routing/` for synthetic examples; project-private memory for real records.
+- Preferred project location: `workspace/projects/<project-id>/memory/routing-memory.md`.
 - Can commit to Git: only templates and synthetic examples in public AgentPal.
 - Can share with other Pals: yes as judgement input, not as rules.
 - Can enter Context Packet: yes as a short evidence summary.
@@ -54,7 +55,7 @@ Purpose: record owner, verifier, Runtime, model/reasoning, topology, context, ve
 
 Purpose: observed success, failure, limits, permission issues, or evidence quality for a host Runtime.
 
-- Can live in: private runtime state, project-local memory, synthetic public examples.
+- Can live in: private runtime state, central project memory, or synthetic public examples.
 - Can commit to Git: only synthetic or public-safe summaries.
 - Can share with other Pals: yes as current-risk context.
 - Can enter Context Packet: yes as a summary with freshness notes.
@@ -76,7 +77,7 @@ Purpose: observed result of a host Runtime-installed Skill, plugin, MCP tool, br
 
 Purpose: preserve verification result, evidence checked, missing evidence, not-run items, false completion caught, and repair history.
 
-- Can live in: project-local memory, verification records, private runtime notes, synthetic public examples.
+- Can live in: central project memory, verification records, private runtime notes, or synthetic public examples.
 - Can commit to Git: only public-safe verification templates/examples or approved project records.
 - Can share with other Pals: yes when needed for acceptance decisions.
 - Can enter Context Packet: yes, with evidence references and missing items.
@@ -87,7 +88,7 @@ Purpose: preserve verification result, evidence checked, missing evidence, not-r
 
 Purpose: preserve why a decision was made, alternatives rejected, constraints, risks, and user decisions needed.
 
-- Can live in: conductor decision records, project-local notes, private runtime state.
+- Can live in: conductor decision records, central project notes, private runtime state.
 - Can commit to Git: only public-safe or synthetic decision records.
 - Can share with other Pals: yes as context for future judgement.
 - Can enter Context Packet: yes as a summary.
