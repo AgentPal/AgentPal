@@ -1,31 +1,49 @@
 {
   "schema": "agentpal.external_project_binding.v0.4",
-  "binding_mode": "thin",
-  "binding_style": "thin-binding",
-  "project_id": "REPLACE_WITH_PROJECT_ID",
+  "binding_version": "0.4-foundation",
+  "binding_created_at": "REPLACE_WITH_ISO_TIMESTAMP",
   "project_name": "REPLACE_WITH_EXTERNAL_PROJECT_NAME",
-  "active_project_root": "<absolute external project root>",
-  "agentpal_workspace_root": "<absolute AgentPal workspace root>",
+  "active_project_root": "REPLACE_WITH_EXTERNAL_PROJECT_ROOT",
+  "active_project_role": "user_project",
+  "agentpal_workspace_root": "REPLACE_WITH_AGENTPAL_WORKSPACE_PATH",
+  "agentpal_workspace_role": "pal_workspace_reference",
   "agentpal_project_record": "workspace/projects/REPLACE_WITH_PROJECT_ID",
   "runtime_hint": "generic-codex",
-  "ordinary_messages_go_to": "Mira",
-  "project_context_policy": "active_project_root_only",
+  "active_mode": "simple-pal-mode-only",
+  "agentpal_enabled": true,
+  "project_bound_mode": true,
+  "binding_mode": "thin",
+  "binding_style": "thin-binding",
+  "read_core_from_agentpal_workspace": true,
+  "core_gate_paths": [
+    "core/agentpal-core-gate.md",
+    "core/first-pal-gate.md",
+    "core/simple-pal-mode-runtime-contract.md",
+    "core/deliverable-aware-task-judgement-gate.md",
+    "core/main-pal-conductor-gate.md",
+    "core/runtime-adapter-shared-contract.md",
+    "core/project-binding-thin-contract.md",
+    "core/runtime-response-gate.md"
+  ],
   "central_pal_contacts": [
     "workspace/organization/contacts/pals.json",
-    "workspace/organization/contacts/PAL_CONTACTS.md",
-    "workspace/organization/contacts/aliases.json"
+    "workspace/organization/contacts/PAL_CONTACTS.md"
+  ],
+  "pal_source_of_truth": [
+    "workspace/organization/contacts/pals.json",
+    "workspace/organization/contacts/PAL_CONTACTS.md"
   ],
   "central_contacts_are_not_copied": true,
-  "project_knowledge_policy": {
-    "read_current_project_materials_from": "active_project_root",
-    "write_structured_agentpal_records_to": "agentpal_project_record",
-    "do_not_write_agentpal_internal_memory_to_external_project": true
+  "routing_policy": "ai_judgement_only",
+  "keyword_routing_allowed": false,
+  "default_main_pal": {
+    "id": "mira-main",
+    "display_name": "Mira",
+    "paths": [
+      "official/pals/Mira-main/PAL.md",
+      "official/pals/Mira-main/core/output-contract.md"
+    ]
   },
-  "allowed_project_binding_files": [
-    ".agentpal/project.json",
-    ".agentpal/AGENTPAL.md",
-    "AGENTS.md protected block"
-  ],
   "forbidden_default_project_binding_dirs": [
     ".agentpal/memory",
     ".agentpal/state",
@@ -35,7 +53,5 @@
     ".agentpal/pals",
     ".agentpal/workflows",
     ".agentpal/evals"
-  ],
-  "routing_policy": "ai_judgement_only",
-  "keyword_routing_allowed": false
+  ]
 }

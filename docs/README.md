@@ -9,6 +9,7 @@ AgentPal is a Pal layer and Pal Pack Standard practice for Markdown/JSON-capable
 - [What is AgentPal?](00-overview/00-what-is-agentpal.md)
 - [Current status](00-overview/01-current-status.md)
 - [Repository map](00-overview/02-repository-map.md)
+- [Repository structure](00-overview/repository-structure.md)
 - [Why Pal?](01-concepts/07-why-pal.md)
 - [Pal Teams, Multi-Pal Collaboration, and Deep Conductor](01-concepts/08-pal-teams-collaboration-and-deep-conductor.md)
 - [Quick start](02-getting-started/00-quick-start.md)

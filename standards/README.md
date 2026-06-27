@@ -10,5 +10,10 @@ Primary areas:
 - `project-binding/`: thin external project binding files and protected blocks.
 - `organization/`: central Pal roster, central project records, project memory, source maps, derived knowledge, and organization workspace rules.
 - `routing-and-judgement/`: AI judgement routing rules and anti-keyword-routing constraints.
+- `deep-conductor/`: no-code Deep Conductor standard surface and pointers.
+- `capability-inventory/`: manual capability inventory standards and pointers.
+- `governance/`: governance record standards and review boundaries.
+- `org-pack/`: organization pack standards and packaging boundaries.
+- `schemas/`: public JSON / Markdown schema notes.
 
 These standards are documents and JSON conventions only. They do not create a CLI, daemon, scanner, validator, installer, service, database, app, or automatic execution layer.

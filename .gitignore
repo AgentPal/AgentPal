@@ -45,6 +45,10 @@ imports/tmp/*
 .agentpal/smoke/*
 exports/*
 
+# Keep release-safe thin binding template files visible.
+!templates/project-binding/*/.agentpal/
+!templates/project-binding/*/.agentpal/**
+
 # Temporary files
 tmp/
 temp/

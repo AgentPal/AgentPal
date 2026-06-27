@@ -47,6 +47,7 @@ Use:
 | `SKILL.md` | Workspace-level Skill entry | Skill-aware runtime entry |
 | `prompts/codex/initialize-agentpal-workspace.md` | copyable initialization prompt | first run or re-initialization |
 | `agentpal.json` | machine-readable workspace metadata | initialization, validation, release checks |
+| `docs/00-overview/repository-structure.md` | visual repository structure and thin-binding map | repository orientation, local structure checks |
 | `CHANGELOG.md` | public version history | release review |
 | `RELEASE_NOTES.md` | user-facing release notes | release review or user onboarding |
 | `GITHUB_RELEASE_DRAFT.md` | manual GitHub Release draft | release publishing |
@@ -63,6 +64,8 @@ Use:
 | `standards/` | public governance standards for boundaries, project binding, central assets, and routing | repository governance, release checks, binding questions |
 | `official/` | official AgentPal assets, including bundled Pal Packs | selected official Pal or team asset work |
 | `workspace/` | central organization workspace, contacts, project records, resources, and state placeholders | central roster, central project records, project governance, workspace-private records |
+| `templates/` | reusable project-binding, Pal Pack, organization, governance, org-pack, and prompt templates | selected template work or external project binding |
+| `docs/` | user and contributor documentation | user-facing docs and public orientation |
 | `archive/migration-from-v0.3/` | migration maps and compatibility notes | path migration and cleanup work |
 
 ## Core Gates
@@ -85,6 +88,8 @@ Use:
 | `official/pals/` | official bundled Pal Pack pool | selected Pal only |
 | `workspace/organization/contacts/` | central Pal contact source of truth | routing and discovery |
 | `workspace/projects/` | central project records and `_template/` | external project binding, project memory, source-map, derived-knowledge, governance |
+| `templates/project-binding/` | thin external project binding templates | install/update/remove AgentPal workgroups in external projects |
+| `docs/00-overview/repository-structure.md` | visible v0.4/v0.5 directory structure guide | explaining root directories and compatibility pointers |
 | `contacts/` | legacy compatibility contact files | compatibility checks only |
 | `registry/` | legacy Pal and resource indexes | compatibility and selected navigation |
 | `core/` | shared AgentPal core gates | runtime adapter and project binding bootstrap |

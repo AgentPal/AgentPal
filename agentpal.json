@@ -614,6 +614,26 @@
     "deepseek-tui",
     "markdown-json-capable-runtime"
   ],
+  "repository_structure": {
+    "visual_root_dirs": [
+      "standards",
+      "official",
+      "workspace",
+      "templates",
+      "examples",
+      "evals",
+      "release",
+      "archive",
+      "docs"
+    ],
+    "structure_guide": "docs/00-overview/repository-structure.md",
+    "external_projects_use_thin_binding_only": true,
+    "central_contacts": "workspace/organization/contacts",
+    "official_pals": "official/pals",
+    "project_binding_templates": "templates/project-binding",
+    "central_project_record_template": "workspace/projects/_template",
+    "github_release_work_deferred_until_v0_5_completion": true
+  },
   "license": "MIT"
 }
 

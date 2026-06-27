@@ -22,6 +22,8 @@ For Runtime Adapter troubleshooting and thin binding stability, see the [stabili
 
 For the no-code orchestration prototype line, see the [v0.3 development plan](docs/09-roadmap/v0.3-development-plan.md), [v0.3 task pool](docs/09-roadmap/v0.3-task-pool.md), [v0.3 Deep Conductor readiness](docs/09-roadmap/v0.3-deep-conductor-readiness.md), [v0.3 public capability summary](docs/09-roadmap/v0.3-public-capability-summary.md), [Deep Conductor E2E guide](docs/05-orchestration-methodology/deep-conductor-e2e-usage-guide.md), [Deep Conductor real runtime replay report](docs/research/deep-conductor-real-runtime-replay-report.md), [Context Packet usage guide](docs/05-orchestration-methodology/context-packet-usage-guide.md), [multi-Pal prompt cards](docs/02-getting-started/multi-pal-collaboration-prompt-cards.md), and [PalBench Collaboration Suite](evals/palbench-collaboration/README.md). v0.3 Deep Conductor is no-code orchestration, not an automatic runtime.
 
+For the local v0.4/v0.5 workspace layout, see the [Repository Structure](docs/00-overview/repository-structure.md) guide. The visible root directories are `standards/`, `official/`, `workspace/`, `templates/`, `examples/`, `evals/`, `release/`, `archive/`, and `docs/`.
+
 ## Why AgentPal?
 
 When users want agents to work better, they usually try one of two paths:
@@ -233,6 +235,7 @@ AgentPal is a Pal layer for existing runtimes. It does not require Python, Node.
 - [Central Project Record](docs/02-concepts/central-project-record.md)
 - [Project Memory in AgentPal](docs/02-concepts/project-memory-in-agentpal.md)
 - [Source Map and Derived Knowledge](docs/02-concepts/source-map-and-derived-knowledge.md)
+- [Repository Structure](docs/00-overview/repository-structure.md)
 - [Pal Pack Standard](docs/03-pal-pack-standard/)
 - [Runtime Guides](docs/04-runtime-guides/)
 - [Orchestration Methodology](docs/05-orchestration-methodology/)
