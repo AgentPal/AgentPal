@@ -11,6 +11,9 @@ This directory contains public roadmap and release-readiness planning documents.
 - [No-code future boundary](no-code-future-boundary.md)
 - [v0.3 development plan](v0.3-development-plan.md)
 - [v0.3 task pool](v0.3-task-pool.md)
+- [v0.3 Deep Conductor readiness](v0.3-deep-conductor-readiness.md)
+- [v0.3 public capability summary](v0.3-public-capability-summary.md)
+- [v0.3 release checklist](v0.3-release-checklist.md)
 
 ## Boundary
 

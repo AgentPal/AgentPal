@@ -26,6 +26,27 @@ Use this section before entering `v0.2.0-rc.1` tag / push / GitHub Release work.
 - [ ] `git status --short` is clean before tag / push / release work.
 - [ ] Tag, push, and GitHub Release creation remain not done until the maintainer explicitly authorizes release operations.
 
+## v0.3.0-rc.1 Pre-Release Checklist
+
+Use this section before entering `v0.3.0-rc.1` tag / push / GitHub Release work. It supplements the v0.1 and v0.2 checklists and does not authorize tag, push, or release creation by itself.
+
+- [ ] `docs/09-roadmap/v0.3-deep-conductor-readiness.md` recommends entering `v0.3.0-rc.1` release preparation.
+- [ ] `evals/v0.3-integration/v0.3-deep-conductor-integration-test-matrix.md` records `pass`, `partial`, `unavailable`, `blocked`, and `not-run` status honestly.
+- [ ] `docs/09-roadmap/v0.3-public-capability-summary.md` states allowed public claims and forbidden claims.
+- [ ] `docs/09-roadmap/v0.3-release-checklist.md` is complete.
+- [ ] `docs/research/palbench-collaboration-coverage-audit.md` confirms qualitative PalBench Collaboration coverage and states remaining gaps.
+- [ ] Deep Conductor remains documented as no-code coordination methodology, not an executor, scheduler, background workflow, CLI, scanner, validator, service, daemon, database, desktop app, web app, token meter, or cost calculator.
+- [ ] Runtime-installed Skill Orchestration remains host Runtime candidate handling with current availability evidence, fallback, verification, and usage-memory records; it is not described as AgentPal executing Skills.
+- [ ] Subagent / external Agent handoff remains unavailable / unknown / blocked unless a current host Runtime provides support and permission evidence.
+- [ ] Context Budget remains qualitative unless a host Runtime provides exact metering evidence.
+- [ ] PalBench Collaboration is described as qualitative regression coverage, not statistical benchmark evidence.
+- [ ] README, docs index, roadmap index, and `RESOURCE_INDEX.md` include the v0.3 readiness, public summary, integration matrix, release checklist, and coverage audit entries.
+- [ ] JSON parse checks pass.
+- [ ] no-runtime / no-program-future / no-hardcoded-routing / no-future-as-current / no-internal-path checks pass.
+- [ ] `git diff --check` passes.
+- [ ] `git status --short` is clean before tag / push / release work.
+- [ ] Tag, push, and GitHub Release creation remain not done until the maintainer explicitly authorizes release operations.
+
 ## Root Release Files
 
 - [ ] `README.md` exists and presents AgentPal as a Pal layer and Pal Pack Standard practice.

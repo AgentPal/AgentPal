@@ -22,7 +22,7 @@ v0.2 release regression 见 [PalBench Light Suite](evals/palbench-light/README.m
 
 Runtime Adapter 排障与 thin binding 稳定性见 [stability guide](docs/04-runtime-guides/runtime-adapter-stability-guide.md) 和 [troubleshooting prompt cards](docs/04-runtime-guides/runtime-adapter-troubleshooting-prompt-cards.md)。
 
-下一条 no-code orchestration prototype 主线见 [v0.3 development plan](docs/09-roadmap/v0.3-development-plan.md)、[v0.3 task pool](docs/09-roadmap/v0.3-task-pool.md)、[Context Packet usage guide](docs/05-orchestration-methodology/context-packet-usage-guide.md)、[multi-Pal prompt cards](docs/02-getting-started/multi-pal-collaboration-prompt-cards.md) 和 [PalBench Collaboration Suite](evals/palbench-collaboration/README.md)。v0.3 规划不表示 Deep Conductor 已成为自动运行时。
+下一条 no-code orchestration prototype 主线见 [v0.3 development plan](docs/09-roadmap/v0.3-development-plan.md)、[v0.3 task pool](docs/09-roadmap/v0.3-task-pool.md)、[v0.3 Deep Conductor readiness](docs/09-roadmap/v0.3-deep-conductor-readiness.md)、[v0.3 public capability summary](docs/09-roadmap/v0.3-public-capability-summary.md)、[Context Packet usage guide](docs/05-orchestration-methodology/context-packet-usage-guide.md)、[multi-Pal prompt cards](docs/02-getting-started/multi-pal-collaboration-prompt-cards.md) 和 [PalBench Collaboration Suite](evals/palbench-collaboration/README.md)。v0.3 规划不表示 Deep Conductor 已成为自动运行时。
 
 ## 为什么需要 AgentPal？
 
@@ -225,6 +225,7 @@ AgentPal 是给现有 Runtime 使用的 Pal 层。实际文件操作、命令、
 - [调度方法论](docs/05-orchestration-methodology/)
 - [v0.2 路线图](docs/09-roadmap/v0.2-development-plan.md)
 - [v0.3 路线图](docs/09-roadmap/v0.3-development-plan.md)
+- [v0.3 Deep Conductor Readiness](docs/09-roadmap/v0.3-deep-conductor-readiness.md)
 - [验证与证据](docs/06-validation-and-evidence/)
 - [创建 Pal](docs/07-authoring-pals/)
 - [Prompts](prompts/)

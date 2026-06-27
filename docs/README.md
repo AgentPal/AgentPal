@@ -33,6 +33,11 @@ AgentPal is a Pal layer and Pal Pack Standard practice for Markdown/JSON-capable
 - [v0.2 integration test matrix](../evals/v0.2-integration/v0.2-integration-test-matrix.md)
 - [v0.3 development plan](09-roadmap/v0.3-development-plan.md)
 - [v0.3 task pool](09-roadmap/v0.3-task-pool.md)
+- [v0.3 Deep Conductor readiness](09-roadmap/v0.3-deep-conductor-readiness.md)
+- [v0.3 public capability summary](09-roadmap/v0.3-public-capability-summary.md)
+- [v0.3 release checklist](09-roadmap/v0.3-release-checklist.md)
+- [v0.3 Deep Conductor integration matrix](../evals/v0.3-integration/v0.3-deep-conductor-integration-test-matrix.md)
+- [PalBench Collaboration coverage audit](research/palbench-collaboration-coverage-audit.md)
 - [No-code future boundary](09-roadmap/no-code-future-boundary.md)
 - [Deep Conductor master goal](05-orchestration-methodology/deep-conductor-master-goal.md)
 - [Deep Conductor master loop usage guide](05-orchestration-methodology/deep-conductor-master-loop-usage-guide.md)
@@ -136,6 +141,9 @@ AgentPal is a Pal layer and Pal Pack Standard practice for Markdown/JSON-capable
 
 - [v0.3 development plan](09-roadmap/v0.3-development-plan.md)
 - [v0.3 task pool](09-roadmap/v0.3-task-pool.md)
+- [v0.3 Deep Conductor readiness](09-roadmap/v0.3-deep-conductor-readiness.md)
+- [v0.3 public capability summary](09-roadmap/v0.3-public-capability-summary.md)
+- [v0.3 release checklist](09-roadmap/v0.3-release-checklist.md)
 - [No-code future boundary](09-roadmap/no-code-future-boundary.md)
 - [Deep Conductor master goal](05-orchestration-methodology/deep-conductor-master-goal.md)
 - [Deep Conductor master loop usage guide](05-orchestration-methodology/deep-conductor-master-loop-usage-guide.md)
@@ -185,6 +193,7 @@ AgentPal is a Pal layer and Pal Pack Standard practice for Markdown/JSON-capable
 - [Plan -> Execute -> Verify workflow](../orchestration/plan-execute-verify-protocol.md)
 - [Routing Memory writeback protocol](../orchestration/routing-memory-writeback-protocol.md)
 - [PalBench Collaboration suite plan](research/palbench-collaboration-suite-plan.md)
+- [PalBench Collaboration coverage audit](research/palbench-collaboration-coverage-audit.md)
 - [PalBench Collaboration eval index](../evals/palbench-collaboration/task-index.md)
 
 ## Atlas Developer Quick Links

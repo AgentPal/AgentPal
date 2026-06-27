@@ -93,6 +93,10 @@ Use:
 | `docs/09-roadmap/no-code-future-boundary.md` | no-code future boundary | default v0.3/v0.4/v0.5 boundary: AgentPal remains Pal layer, not runtime program |
 | `docs/09-roadmap/v0.3-development-plan.md` | v0.3 no-code orchestration prototype plan | Multi-Pal Collaboration, Deep Conductor prototype, Context Packet, Owner + Verifier, Plan -> Execute -> Verify, Parallel Review, and Routing Memory planning |
 | `docs/09-roadmap/v0.3-task-pool.md` | v0.3 execution task pool | P0/P1/P2 task packages for collaboration protocol work |
+| `docs/09-roadmap/v0.3-deep-conductor-readiness.md` | v0.3 Deep Conductor readiness | R63 readiness decision for entering v0.3.0-rc.1 release preparation |
+| `docs/09-roadmap/v0.3-public-capability-summary.md` | v0.3 public capability summary | public-safe current capability and forbidden claim summary |
+| `docs/09-roadmap/v0.3-release-checklist.md` | v0.3 release preparation checklist | checks before tag, push, or GitHub Release work |
+| `evals/v0.3-integration/v0.3-deep-conductor-integration-test-matrix.md` | v0.3 Deep Conductor integration matrix | integrated pass / partial / unavailable readiness matrix |
 | `docs/05-orchestration-methodology/deep-conductor-master-goal.md` | Deep Conductor master goal | no-code 12-step conductor loop and executor boundary |
 | `docs/05-orchestration-methodology/deep-conductor-master-loop-usage-guide.md` | Deep Conductor master loop usage guide | project goal to task map, Runtime packages, verification, synthesis, and memory writeback |
 | `docs/05-orchestration-methodology/deep-conductor-e2e-usage-guide.md` | Deep Conductor E2E usage guide | full no-code loop from goal through memory, capability, context budget, topology, Runtime Skill-aware packages, verification, synthesis, routing memory, and next-round recommendation |
@@ -136,6 +140,7 @@ Use:
 | `examples/failures/capability-profile-used-as-fixed-route.md` | Capability Inventory failure example | profile-as-route regression example |
 | `docs/research/palbench-light-suite-plan.md` | PalBench Light suite plan | v0.2 R44 release regression suite design |
 | `docs/research/palbench-collaboration-suite-plan.md` | PalBench Collaboration suite plan | v0.3 qualitative regression suite for no-code multi-Pal collaboration |
+| `docs/research/palbench-collaboration-coverage-audit.md` | PalBench Collaboration coverage audit | R63 coverage audit for 87 v0.3 no-code regression cases |
 | `evals/palbench-light/README.md` | PalBench Light eval entry | v0.2 release regression suite navigation |
 | `evals/palbench-light/task-index.md` | PalBench Light task index | R44 first 24 case index |
 | `evals/palbench-light/scoring-rubric.md` | PalBench Light scoring rubric | 0 / 1 / 2 release regression scoring |
@@ -231,6 +236,10 @@ Use the current docs directories as the public entry points. Archived research n
 | `docs/05-orchestration-methodology/deep-conductor-master-goal.md` | Deep Conductor master goal and no-code 12-step loop |
 | `docs/05-orchestration-methodology/deep-conductor-master-loop-usage-guide.md` | Deep Conductor usage guide for project-level no-code coordination |
 | `docs/05-orchestration-methodology/deep-conductor-e2e-usage-guide.md` | Deep Conductor E2E usage guide for integrated no-code project-level closure |
+| `docs/09-roadmap/v0.3-deep-conductor-readiness.md` | v0.3 Deep Conductor readiness assessment for rc.1 preparation |
+| `docs/09-roadmap/v0.3-public-capability-summary.md` | public-safe v0.3 capability summary |
+| `docs/09-roadmap/v0.3-release-checklist.md` | v0.3 release preparation checklist |
+| `evals/v0.3-integration/v0.3-deep-conductor-integration-test-matrix.md` | v0.3 integration readiness matrix |
 | `docs/05-orchestration-methodology/cross-runtime-pal-memory.md` | Cross-Runtime Pal Memory guide for preserving Pal/project/routing continuity across host Runtimes |
 | `docs/05-orchestration-methodology/token-cost-aware-deep-conductor.md` | Token / Cost-aware Deep Conductor guide for qualitative Context Budget planning |
 | `docs/05-orchestration-methodology/00-methodology-overview.md` | current methodology overview |

@@ -20,7 +20,7 @@ For v0.2 release regression work, see the [PalBench Light Suite](evals/palbench-
 
 For Runtime Adapter troubleshooting and thin binding stability, see the [stability guide](docs/04-runtime-guides/runtime-adapter-stability-guide.md) and [troubleshooting prompt cards](docs/04-runtime-guides/runtime-adapter-troubleshooting-prompt-cards.md).
 
-For the next no-code orchestration prototype line, see the [v0.3 development plan](docs/09-roadmap/v0.3-development-plan.md), [v0.3 task pool](docs/09-roadmap/v0.3-task-pool.md), [Context Packet usage guide](docs/05-orchestration-methodology/context-packet-usage-guide.md), [multi-Pal prompt cards](docs/02-getting-started/multi-pal-collaboration-prompt-cards.md), and [PalBench Collaboration Suite](evals/palbench-collaboration/README.md). v0.3 planning does not make Deep Conductor an automatic runtime.
+For the next no-code orchestration prototype line, see the [v0.3 development plan](docs/09-roadmap/v0.3-development-plan.md), [v0.3 task pool](docs/09-roadmap/v0.3-task-pool.md), [v0.3 Deep Conductor readiness](docs/09-roadmap/v0.3-deep-conductor-readiness.md), [v0.3 public capability summary](docs/09-roadmap/v0.3-public-capability-summary.md), [Context Packet usage guide](docs/05-orchestration-methodology/context-packet-usage-guide.md), [multi-Pal prompt cards](docs/02-getting-started/multi-pal-collaboration-prompt-cards.md), and [PalBench Collaboration Suite](evals/palbench-collaboration/README.md). v0.3 planning does not make Deep Conductor an automatic runtime.
 
 ## Why AgentPal?
 
@@ -230,6 +230,7 @@ AgentPal is a Pal layer for existing runtimes. It does not require Python, Node.
 - [Orchestration Methodology](docs/05-orchestration-methodology/)
 - [v0.2 Roadmap](docs/09-roadmap/v0.2-development-plan.md)
 - [v0.3 Roadmap](docs/09-roadmap/v0.3-development-plan.md)
+- [v0.3 Deep Conductor Readiness](docs/09-roadmap/v0.3-deep-conductor-readiness.md)
 - [Validation and Evidence](docs/06-validation-and-evidence/)
 - [Authoring Pals](docs/07-authoring-pals/)
 - [Prompts](prompts/)
