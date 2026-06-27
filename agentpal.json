@@ -45,10 +45,10 @@
   "default_pal": {
     "display_name": "Mira",
     "id": "mira-main",
-    "path": "pals/Mira-main",
+    "path": "official/pals/Mira-main",
     "main_pal_role": "default Main Pal, Leader Pal, and Conductor"
   },
-  "pals_dir": "pals",
+  "pals_dir": "official/pals",
   "default_listener": "Mira",
   "ordinary_messages_go_to": "Mira",
   "direct_call": {
@@ -63,12 +63,13 @@
   "pal_contact_source_of_truth": {
     "protocol": "orchestration/pal-contact-source-of-truth-protocol.md",
     "source_files": [
-      "contacts/pals.json",
-      "contacts/PAL_CONTACTS.md",
-      "contacts/mention-aliases.md",
-      "registry/pal.index.json",
-      "registry/pal.index.md"
+      "workspace/organization/contacts/pals.json",
+      "workspace/organization/contacts/PAL_CONTACTS.md",
+      "workspace/organization/contacts/aliases.json"
     ],
+    "source_of_truth": true,
+    "routing_policy": "ai_judgement_only",
+    "keyword_routing_allowed": false,
     "individual_pal_packs_must_not_hardcode_other_pal_identities": true,
     "collaborators_resolved_from_current_contacts_registry": true
   },
@@ -226,8 +227,8 @@
       "enabled": true,
       "explicit_user_request_creates_formal_owner_pal_skill": true,
       "similar_operations_over_3_create_formal_owner_pal_skill": true,
-      "destination": "pals/<Owner-Pal-Directory>/skills/<skill-id>/SKILL.md",
-      "update_index": "pals/<Owner-Pal-Directory>/skills/index.md",
+      "destination": "official/pals/<Owner-Pal-Directory>/skills/<skill-id>/SKILL.md",
+      "update_index": "official/pals/<Owner-Pal-Directory>/skills/index.md",
       "forbidden_destinations": [
         "~/.codex/skills",
         ".codex/skills",
@@ -247,8 +248,8 @@
     "repeated_task_candidate_trigger": "similar operations > 3 create a formal owner Pal Skill",
     "learning_directory_name": "learning",
     "explicit_user_request_creates_formal_owner_pal_skill": true,
-    "formal_skill_destination": "pals/<Owner-Pal-Directory>/skills/<skill-id>/SKILL.md",
-    "formal_skill_index": "pals/<Owner-Pal-Directory>/skills/index.md"
+    "formal_skill_destination": "official/pals/<Owner-Pal-Directory>/skills/<skill-id>/SKILL.md",
+    "formal_skill_index": "official/pals/<Owner-Pal-Directory>/skills/index.md"
   },
   "specialist_asset_loading": {
     "protocol": "orchestration/specialist-pal-asset-loading-protocol.md",
@@ -281,16 +282,14 @@
         "core/runtime-adapter-shared-contract.md",
         "core/project-binding-thin-contract.md",
         "core/runtime-response-gate.md",
-        "contacts/pals.json",
-        "registry/pal.index.json",
-        "pals/Mira-main/PAL.md",
-        "pals/Mira-main/core/output-contract.md"
+        "workspace/organization/contacts/pals.json",
+        "workspace/organization/contacts/PAL_CONTACTS.md",
+        "official/pals/Mira-main/PAL.md",
+        "official/pals/Mira-main/core/output-contract.md"
       ],
       "external_project_binding_files_if_present": [
         "AGENTS.md",
-        ".agentpal/INIT_AGENTPAL_PROJECT_PROMPT.md",
         ".agentpal/project.json",
-        ".agentpal/PAL_GROUP.md",
         ".agentpal/AGENTPAL.md"
       ],
       "deep_initialization_only_for": [
@@ -436,7 +435,36 @@
   "project_workgroup": {
     "enabled": true,
     "binding_dir": ".agentpal",
+    "binding_mode": "thin",
     "binding_style": "thin-binding",
+    "central_project_records": {
+      "enabled": true,
+      "root": "workspace/projects",
+      "template": "workspace/projects/_template",
+      "record_path_pattern": "workspace/projects/<project-id>",
+      "project_record_field": "agentpal_project_record",
+      "real_project_records_private_by_default": true,
+      "store_in_central_record": [
+        "binding",
+        "source-map",
+        "derived-knowledge",
+        "memory",
+        "tasks",
+        "reports",
+        "governance",
+        "capability-inventory"
+      ],
+      "do_not_store_in_external_agentpal_dir": [
+        "memory",
+        "state",
+        "reports",
+        "context",
+        "index",
+        "pals",
+        "workflows",
+        "evals"
+      ]
+    },
     "read_core_from_agentpal_workspace": true,
     "core_gate_paths": [
       "core/agentpal-core-gate.md",
@@ -501,8 +529,8 @@
       "contacts_registry_source": "agentpal_workspace_root",
       "allowed_for_routing_even_when_agentpal_workspace_is_not_project": true,
       "required_files": [
-        "contacts/pals.json",
-        "registry/pal.index.json"
+        "workspace/organization/contacts/pals.json",
+        "workspace/organization/contacts/PAL_CONTACTS.md"
       ],
       "external_agentpal_dir_is_not_pal_asset_store": true,
       "fail_closed_if_contacts_registry_unavailable": true
@@ -559,6 +587,10 @@
     "asset-usage-proof",
     "specialist-fallback-learning",
     "project-workgroup",
+    "central-project-record",
+    "project-memory-centralization",
+    "source-map",
+    "derived-knowledge",
     "pal-owned-skill-storage",
     "fast-route-protocol",
     "deep-conductor-design",

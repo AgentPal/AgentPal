@@ -25,7 +25,7 @@ Public release content may include:
 - workspace-level Markdown and JSON instructions
 - Pal Pack identity, skill entry, output contract, public knowledge, public runbooks, public workflows, public examples, and public evals
 - synthetic examples, placeholder records, and sanitized templates
-- contacts and registry indexes for official Pals
+- central contacts and compatibility indexes for official Pals
 - public-safe docs, release notes, checklists, and audit summaries
 - license, third-party notices, and contribution rules
 
@@ -55,9 +55,9 @@ Before release, check:
 - `memory/`
 - `state/`
 - `reports/`
-- `pals/*/memory/`
-- `pals/*/state/`
-- `pals/*/reports/`
+- `official/pals/*/memory/`
+- `official/pals/*/state/`
+- `official/pals/*/reports/`
 
 Ignored local-only files can exist in a working copy, but they must not be included in the public release package.
 
@@ -82,7 +82,7 @@ Each public Pal Pack must avoid:
 - unauthorized full-text source material
 - claims that a missing runtime integration is active
 
-Pal Packs are working assets, not independent agent runtimes. `pals/<Pal>/` is the single Pal Pack boundary; the root AgentPal Workspace is not itself one single Pal Pack.
+Pal Packs are working assets, not independent agent runtimes. `official/pals/<Pal>/` is the official Pal Pack boundary; the root AgentPal Workspace is not itself one single Pal Pack.
 
 ## 5. Runtime State Exclusion Rules
 
@@ -101,7 +101,7 @@ Pal Packs are working assets, not independent agent runtimes. `pals/<Pal>/` is t
 - public templates
 - root release documents
 - official Pal Pack public assets
-- contacts and registry files
+- central contacts files
 
 Do not rely on `.gitignore` alone. Review the release archive or GitHub diff before publishing.
 
@@ -122,8 +122,8 @@ Before opening a contribution, confirm:
 Before tagging a release, maintainers should:
 
 - [ ] Run keyword scans for secrets, credentials, private data, local paths, internal reports, and future-feature claims.
-- [ ] Validate root JSON, contacts JSON, registry JSON, and official Pal `pal.json` files.
-- [ ] Compare `contacts/pals.json` and `registry/pal.index.json` for official Pal synchronization.
+- [ ] Validate root JSON, central contacts JSON, and official Pal `pal.json` files.
+- [ ] Compare `workspace/organization/contacts/pals.json` and `workspace/organization/contacts/PAL_CONTACTS.md` for official Pal synchronization.
 - [ ] Check `memory/`, `state/`, `reports/`, and Pal-local equivalents for non-placeholder content.
 - [ ] Review public examples and evals for private or unauthorized material.
 - [ ] Confirm release notes and GitHub release draft do not overclaim active capabilities.

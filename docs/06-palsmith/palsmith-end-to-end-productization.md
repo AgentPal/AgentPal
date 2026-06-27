@@ -84,7 +84,7 @@ Use this flow when the user wants a coordinated set of Pals for a broader goal.
 - Runtime Task Package for approved team asset creation;
 - team health check and repair package.
 
-Mira remains the default entry Pal and Conductor unless a user explicitly installs a different team entry Pal and the current contacts / registry support it. PalSmith must not create fixed natural-language dispatch rules.
+Mira remains the default entry Pal and Conductor unless a user explicitly installs a different team entry Pal and the current central Pal roster supports it. PalSmith must not create fixed natural-language dispatch rules.
 
 ## Material Ingestion Flow
 

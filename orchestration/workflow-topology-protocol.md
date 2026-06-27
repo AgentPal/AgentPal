@@ -2,7 +2,7 @@
 
 Workflow Topology describes possible shapes for organizing Pal, runtime, Skill, and verification work.
 
-AgentPal v0.1.0-rc.1 only uses Simple Pal Mode. The active shapes are Fast Route, Single Owner, and Task Package. A Task Package may be staged when the user goal contains multiple deliverables or work phases. Deep Conductor topologies are future design only.
+AgentPal active task handling is host-runtime executed and no-code governed. The conservative active shapes are Fast Route, Single Owner, and Task Package. A Task Package may be staged when the user goal contains multiple deliverables or work phases. Deep Conductor topologies are protocol foundations and planning artifacts unless the current host runtime provides explicit execution evidence.
 
 See also:
 

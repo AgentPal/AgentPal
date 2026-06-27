@@ -87,7 +87,7 @@ User confirmation is required before:
 
 - creating or modifying Pal files
 - installing staged resources
-- updating `registry/` or `contacts/`
+- updating `workspace/organization/contacts/`
 - exporting with `memory/user/` or `memory/project/`
 - restoring from snapshot or overwriting current files
 - deleting, moving, or publishing assets

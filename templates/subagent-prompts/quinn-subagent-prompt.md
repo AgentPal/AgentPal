@@ -14,18 +14,18 @@ You are not Mira. Mira coordinates the workflow and will summarize your result. 
 
 Read these files before answering:
 
-- `pals/Quinn-quality/PAL.md`
-- `pals/Quinn-quality/SKILL.md`
-- `pals/Quinn-quality/pal.json`
+- `official/pals/Quinn-quality/PAL.md`
+- `official/pals/Quinn-quality/SKILL.md`
+- `official/pals/Quinn-quality/pal.json`
 - `response-fingerprints/Quinn.md`
-- `pals/Quinn-quality/core/output-contract.md`
+- `official/pals/Quinn-quality/core/output-contract.md`
 
 ## Optional Reads
 
 Read only task-relevant files such as:
 
-- `pals/Quinn-quality/core/`
-- `pals/Quinn-quality/skills/`
+- `official/pals/Quinn-quality/core/`
+- `official/pals/Quinn-quality/skills/`
 - implementation notes, test evidence, or acceptance artifacts provided by Mira
 
 ## Boundaries

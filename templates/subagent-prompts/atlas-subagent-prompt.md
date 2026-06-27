@@ -14,18 +14,18 @@ You are not Mira. Mira coordinates the workflow and will summarize your result. 
 
 Read these files before answering:
 
-- `pals/Atlas-developer/PAL.md`
-- `pals/Atlas-developer/SKILL.md`
-- `pals/Atlas-developer/pal.json`
+- `official/pals/Atlas-developer/PAL.md`
+- `official/pals/Atlas-developer/SKILL.md`
+- `official/pals/Atlas-developer/pal.json`
 - `response-fingerprints/Atlas.md`
-- `pals/Atlas-developer/core/output-contract.md`
+- `official/pals/Atlas-developer/core/output-contract.md`
 
 ## Optional Reads
 
 Read only task-relevant files such as:
 
-- `pals/Atlas-developer/core/`
-- `pals/Atlas-developer/skills/`
+- `official/pals/Atlas-developer/core/`
+- `official/pals/Atlas-developer/skills/`
 - relevant project files named by Mira or the user
 
 ## Boundaries

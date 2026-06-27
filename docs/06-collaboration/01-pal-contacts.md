@@ -10,7 +10,7 @@ Short placeholder for v0.1.0-rc.1.
 
 ## Source Of Truth
 
-`contacts/` and `registry/` are the source of truth for Pal discovery.
+`workspace/organization/contacts/` is the source of truth for Pal discovery. Legacy `contacts/` and `registry/` records are compatibility references only.
 
 Only valid Pal Packs should become contacts. Skills, tools, models, plugins, MCP servers, raw repositories, runtime adapters, knowledge packs, and persona packs are not Pal contacts.
 

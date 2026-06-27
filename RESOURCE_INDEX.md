@@ -16,10 +16,12 @@ Use the short initialization path by default:
 - `core/deliverable-aware-task-judgement-gate.md`
 - `core/main-pal-conductor-gate.md`
 - `core/runtime-adapter-shared-contract.md`
-- `contacts/pals.json`
-- `registry/pal.index.json`
-- `pals/Mira-main/PAL.md`
-- `pals/Mira-main/core/output-contract.md`
+- `workspace/organization/contacts/pals.json`
+- `workspace/organization/contacts/PAL_CONTACTS.md`
+- `workspace/projects/README.md`
+- `workspace/projects/projects.index.json`
+- `official/pals/Mira-main/PAL.md`
+- `official/pals/Mira-main/core/output-contract.md`
 
 If an external project is already bound to AgentPal, project-side `.agentpal/` binding files may be read first when they exist. They are binding context, not permission to treat the AgentPal Workspace as the user project.
 
@@ -54,6 +56,15 @@ Use:
 | `LICENSE` | MIT License | release validation |
 | `.gitignore` | public-safe ignore rules | release validation |
 
+## Foundation Directories
+
+| Directory | Purpose | When To Read |
+| --- | --- | --- |
+| `standards/` | public governance standards for boundaries, project binding, central assets, and routing | repository governance, release checks, binding questions |
+| `official/` | official AgentPal assets, including bundled Pal Packs | selected official Pal or team asset work |
+| `workspace/` | central organization workspace, contacts, project records, resources, and state placeholders | central roster, central project records, project governance, workspace-private records |
+| `archive/migration-from-v0.3/` | migration maps and compatibility notes | path migration and cleanup work |
+
 ## Core Gates
 
 | Path | Purpose |
@@ -71,9 +82,11 @@ Use:
 
 | Directory | Purpose | Default Loading |
 | --- | --- | --- |
-| `pals/` | official and user-added Pal Pack pool | selected Pal only |
-| `contacts/` | Pal contact source of truth | routing and discovery |
-| `registry/` | Pal and resource indexes | routing and selected navigation |
+| `official/pals/` | official bundled Pal Pack pool | selected Pal only |
+| `workspace/organization/contacts/` | central Pal contact source of truth | routing and discovery |
+| `workspace/projects/` | central project records and `_template/` | external project binding, project memory, source-map, derived-knowledge, governance |
+| `contacts/` | legacy compatibility contact files | compatibility checks only |
+| `registry/` | legacy Pal and resource indexes | compatibility and selected navigation |
 | `core/` | shared AgentPal core gates | runtime adapter and project binding bootstrap |
 | `orchestration/` | current protocols and future-design notes | selected current protocols only |
 | `templates/` | reusable Context Packet, output, binding, and task templates | selected template only |
@@ -113,18 +126,18 @@ Use:
 | `evals/v0.2-integration/v0.2-integration-test-matrix.md` | v0.2 integration matrix | R46 integrated readiness test matrix |
 | `docs/06-palsmith/README.md` | PalSmith v0.2 productization index | PalSmith creation and AI team productization work |
 | `docs/06-palsmith/palsmith-end-to-end-productization.md` | PalSmith v0.2 end-to-end user path | PalSmith creation and AI team productization work |
-| `pals/PalSmith-pal-governor/templates/task-packages/create-first-professional-pal.md` | Copyable first professional Pal creation task package | PalSmith v0.2 single-Pal creation work |
-| `pals/PalSmith-pal-governor/templates/task-packages/create-ai-team-from-goal.md` | Copyable AI team creation task package | PalSmith v0.2 AI team creation work |
-| `pals/PalSmith-pal-governor/runbooks/pal-health-check.md` | Pal health check runbook | PalSmith v0.2 creation and repair checks |
-| `pals/PalSmith-pal-governor/runbooks/ai-team-health-check.md` | AI team health check runbook | PalSmith v0.2 team readiness checks |
+| `official/pals/PalSmith-pal-governor/templates/task-packages/create-first-professional-pal.md` | Copyable first professional Pal creation task package | PalSmith v0.2 single-Pal creation work |
+| `official/pals/PalSmith-pal-governor/templates/task-packages/create-ai-team-from-goal.md` | Copyable AI team creation task package | PalSmith v0.2 AI team creation work |
+| `official/pals/PalSmith-pal-governor/runbooks/pal-health-check.md` | Pal health check runbook | PalSmith v0.2 creation and repair checks |
+| `official/pals/PalSmith-pal-governor/runbooks/ai-team-health-check.md` | AI team health check runbook | PalSmith v0.2 team readiness checks |
 | `docs/02-getting-started/mira-first-usage.md` | Mira-first user path | onboarding and daily-use examples |
 | `docs/02-getting-started/mira-first-prompt-cards.md` | Copyable Mira-first prompts | daily user prompts and direct `/pal Name` guidance |
-| `pals/Mira-main/templates/task-packages/mira-first-task-intake.md` | Mira ordinary task intake template | Mira-first task organization |
-| `pals/Mira-main/templates/task-packages/mira-composite-deliverable-task-package.md` | Mira composite deliverable template | staged Task Package creation |
-| `pals/Mira-main/templates/task-packages/mira-owner-judgement-summary.md` | Mira owner judgement summary template | explaining Pal candidates and override paths |
-| `pals/Mira-main/templates/task-packages/mira-runtime-brief.md` | Mira runtime brief template | Codex / Claude Code / generic CLI execution handoff |
-| `pals/Mira-main/examples/mira-runtime-brief-example.md` | Mira runtime brief example | execution-layer evidence and project boundary example |
-| `pals/Mira-main/evals/mira-first-usage-self-test.md` | Mira-first self-test | ordinary, composite, direct Pal, and release-check regression |
+| `official/pals/Mira-main/templates/task-packages/mira-first-task-intake.md` | Mira ordinary task intake template | Mira-first task organization |
+| `official/pals/Mira-main/templates/task-packages/mira-composite-deliverable-task-package.md` | Mira composite deliverable template | staged Task Package creation |
+| `official/pals/Mira-main/templates/task-packages/mira-owner-judgement-summary.md` | Mira owner judgement summary template | explaining Pal candidates and override paths |
+| `official/pals/Mira-main/templates/task-packages/mira-runtime-brief.md` | Mira runtime brief template | Codex / Claude Code / generic CLI execution handoff |
+| `official/pals/Mira-main/examples/mira-runtime-brief-example.md` | Mira runtime brief example | execution-layer evidence and project boundary example |
+| `official/pals/Mira-main/evals/mira-first-usage-self-test.md` | Mira-first self-test | ordinary, composite, direct Pal, and release-check regression |
 | `docs/07-official-pals/official-pal-examples-index.md` | Official 9 Pal real task examples index | official Pal examples and v0.2 R42 navigation |
 | `docs/07-official-pals/official-pal-example-library-plan.md` | Official Pal example library plan | official Pal examples planning and R42 first implementation status |
 | `evals/official-pals/official-pal-example-library-self-test.md` | Official Pal example library self-test | R42 example structure and boundary checks |
@@ -158,7 +171,8 @@ Use:
 | `evals/v0.2-integration/v0.2-integration-test-matrix.md` | v0.2 integration matrix | first-phase integration test matrix |
 | `docs/05-orchestration-methodology/11-pal-teams-and-deep-conductor.md` | Pal Team, runtime-layer agent execution, and future Deep Conductor boundaries | Pal Team and orchestration questions |
 | `docs/06-validation-and-evidence/` | current PalBench and evidence interpretation | validation, PalBench, and evidence questions |
-| `docs/08-release-candidate/` | current v0.1.0-rc.1 release candidate notes | release candidate scope and evidence questions |
+| `docs/08-release-candidate/README.md` | pointer to archived historical release-candidate documents | legacy release-candidate path questions |
+| `archive/migration-from-v0.3/release-candidate-docs/` | historical v0.3 release-candidate documents | historical traceability only |
 | `docs/research/` | archived research notes | historical traceability only; not a primary entry point |
 | `examples/` | public-safe examples and failure examples | examples, evals, or regression checks |
 | `evals/` | self-tests and release checks | eval or release validation only |
@@ -188,15 +202,15 @@ These prompts are Markdown instructions, not scripts or installers.
 
 Official Pal Packs for v0.3.0-rc.1:
 
-- `pals/Mira-main`
-- `pals/Atlas-developer`
-- `pals/Vega-research`
-- `pals/Rhea-system`
-- `pals/PalSmith-pal-governor`
-- `pals/Quinn-quality`
-- `pals/Morgan-document`
-- `pals/Harper-writing`
-- `pals/Nova-product`
+- `official/pals/Mira-main`
+- `official/pals/Atlas-developer`
+- `official/pals/Vega-research`
+- `official/pals/Rhea-system`
+- `official/pals/PalSmith-pal-governor`
+- `official/pals/Quinn-quality`
+- `official/pals/Morgan-document`
+- `official/pals/Harper-writing`
+- `official/pals/Nova-product`
 
 Do not load all Pal directories by default. Load Mira for ordinary entry and the selected owner Pal for owned tasks.
 
@@ -250,8 +264,8 @@ Use the current docs directories as the public entry points. Archived research n
 | `docs/06-validation-and-evidence/README.md` | current validation and PalBench entry |
 | `docs/06-validation-and-evidence/01-palbench-small-sample-report.md` | current R33 PalBench small-sample report |
 | `docs/06-validation-and-evidence/05-future-palbench-design.md` | current future PalBench design notes |
-| `docs/08-release-candidate/README.md` | current release candidate entry |
-| `docs/08-release-candidate/02-release-manifest.md` | current release candidate manifest |
+| `docs/08-release-candidate/README.md` | historical release-candidate pointer |
+| `archive/migration-from-v0.3/release-candidate-docs/02-release-manifest.md` | historical release-candidate manifest |
 | `docs/research/README.md` | archive status note; not a primary docs entry |
 | `docs/research/archive/` | historical research notes retained for traceability |
 | `orchestration/fast-route-protocol.md` | current Simple Pal Mode clear-task handoff pattern |
@@ -318,6 +332,13 @@ Use the current docs directories as the public entry points. Archived research n
 | `docs/04-runtime-guides/runtime-adapter-stability-guide.md` | thin binding stability guide |
 | `docs/04-runtime-guides/runtime-adapter-troubleshooting-prompt-cards.md` | troubleshooting prompt cards |
 | `docs/04-runtime-guides/upgrade-existing-binding-to-thin-binding.md` | upgrade old bindings to thin binding |
+| `docs/02-concepts/central-project-record.md` | central project record concept |
+| `docs/02-concepts/project-memory-in-agentpal.md` | project memory boundary |
+| `docs/02-concepts/source-map-and-derived-knowledge.md` | source-map and derived-knowledge boundary |
+| `docs/01-getting-started/bind-external-project.md` | external project binding quick start |
+| `docs/03-user-guides/project-memory.md` | project memory user guide |
+| `docs/03-user-guides/using-user-project-docs.md` | user project docs to central records guide |
+| `workspace/projects/_template/` | central project record template |
 | `evals/runtime-adapters/runtime-adapter-regression-suite.md` | 12-scenario Runtime Adapter regression suite |
 | `examples/failures/runtime-opened-in-wrong-directory.md` | failure example for wrong working directory |
 | `examples/failures/stale-pal-list-after-agentpal-update.md` | failure example for stale Pal list |
@@ -328,10 +349,10 @@ Use the current docs directories as the public entry points. Archived research n
 
 | Path | Purpose |
 | --- | --- |
-| `pals/Mira-main/PAL.md` | Mira Main Pal / Leader Pal / Conductor identity |
-| `pals/Mira-main/AGENTS.md` | Mira runtime instructions |
-| `pals/Mira-main/SKILL.md` | Mira Pal Pack skill entry |
-| `pals/Mira-main/core/output-contract.md` | Mira output shapes, Fast Route, CAL, Task Package, and future-design boundaries |
+| `official/pals/Mira-main/PAL.md` | Mira Main Pal / Leader Pal / Conductor identity |
+| `official/pals/Mira-main/AGENTS.md` | Mira runtime instructions |
+| `official/pals/Mira-main/SKILL.md` | Mira Pal Pack skill entry |
+| `official/pals/Mira-main/core/output-contract.md` | Mira output shapes, Fast Route, CAL, Task Package, and future-design boundaries |
 
 ## R32 PalBench And Orchestration Additions
 

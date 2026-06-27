@@ -2,9 +2,9 @@
 
 PalSmith is AgentPal's official Pal asset governance Pal.
 
-PalSmith is a no-code workflow Pal. It helps the current runtime plan Pal creation, AI team building, Pal team governance, cross-Pal review, import staging, export, health inspection, quality inspection, version review, publish quality gates, runtime call verification, GitHub import verification, snapshot, rollback, official Pal registration, registry update, and contacts update work.
+PalSmith is a no-code workflow Pal. It helps the current runtime plan Pal creation, AI team building, Pal team governance, cross-Pal review, import staging, export, health inspection, quality inspection, version review, publish quality gates, runtime call verification, GitHub import verification, snapshot, rollback, official Pal registration, and central roster update work.
 
-Registered id/path: `palsmith-pal-governor` at `pals/PalSmith-pal-governor`.
+Registered id/path: `palsmith-pal-governor` at `official/pals/PalSmith-pal-governor`.
 
 ## Current Product Status
 
@@ -28,7 +28,7 @@ R17 quality testing in an internal test workspace showed that the repaired PalSm
 
 PalSmith is not triggered by keyword matching. AgentPal Core is not a semantic classifier or planner.
 
-Mira is the default entry Pal, but any current Pal may consult, delegate, or hand off to PalSmith after AI judgement shows the request belongs to Pal asset governance. Example task types include creating Pals, creating teams, maintaining Pals, checking quality, detecting conflicts, mapping capabilities, importing/exporting, registry/contacts suggestions, snapshot/rollback, runtime call verification, and publish quality gates.
+Mira is the default entry Pal, but any current Pal may consult, delegate, or hand off to PalSmith after AI judgement shows the request belongs to Pal asset governance. Example task types include creating Pals, creating teams, maintaining Pals, checking quality, detecting conflicts, mapping capabilities, importing/exporting, central roster suggestions, snapshot/rollback, runtime call verification, and publish quality gates.
 
 ## What PalSmith Is Not
 
@@ -49,7 +49,7 @@ PalSmith then prepares a Runtime Task Package. The current Agent Runtime, such a
 
 For the task package field standard, see [Runtime Task Package](03-pal-pack-standard/14-runtime-task-package.md). For complete usage flows, see [PalSmith end-to-end workflows](07-authoring-pals/13-palsmith-end-to-end-workflows.md).
 
-For the v0.2 creation loop, see [PalSmith end-to-end productization](06-palsmith/palsmith-end-to-end-productization.md), [create first professional Pal](../pals/PalSmith-pal-governor/templates/task-packages/create-first-professional-pal.md), and [create AI team from goal](../pals/PalSmith-pal-governor/templates/task-packages/create-ai-team-from-goal.md).
+For the v0.2 creation loop, see [PalSmith end-to-end productization](06-palsmith/palsmith-end-to-end-productization.md), [create first professional Pal](../official/pals/PalSmith-pal-governor/templates/task-packages/create-first-professional-pal.md), and [create AI team from goal](../official/pals/PalSmith-pal-governor/templates/task-packages/create-ai-team-from-goal.md).
 
 ## No-Code Workflows
 
@@ -81,8 +81,7 @@ For the v0.2 creation loop, see [PalSmith end-to-end productization](06-palsmith
 - Pal Health Check Runbook
 - AI Team Health Check Runbook
 - Repair Package Template
-- registry update task package
-- contacts update task package
+- central roster update task package
 - snapshot task package
 - rollback task package
 - Pal Version Upgrade Task Package
@@ -92,13 +91,13 @@ For the v0.2 creation loop, see [PalSmith end-to-end productization](06-palsmith
 
 Every workflow separates PalSmith judgement from runtime execution, asks for user confirmation before controlled writes, and reports evidence after the runtime acts.
 
-With-memory export always requires strong confirmation and a privacy report. Imports always begin in staging; registry and contacts updates are separate confirmed task packages.
+With-memory export always requires strong confirmation and a privacy report. Imports always begin in staging; central roster updates are separate confirmed task packages.
 
 ## Current Release Status
 
 Completed for the current release candidate:
 
-- official registration in `agentpal.json`, `registry/pal.index.json`, and `contacts/pals.json`
+- official registration in `agentpal.json`, `workspace/organization/contacts/pals.json`, and `workspace/organization/contacts/PAL_CONTACTS.md`
 - Runtime Task Package standard
 - end-to-end workflows
 - task package templates and template index
@@ -128,15 +127,15 @@ If future maintainers build a PalSmith CLI, Pal Hub manager, UI, or installer, i
 - [PalSmith end-to-end workflows](07-authoring-pals/13-palsmith-end-to-end-workflows.md)
 - [Pal import/export standard](03-pal-pack-standard/13-pal-import-export.md)
 - [Runtime Task Package standard](03-pal-pack-standard/14-runtime-task-package.md)
-- [No-code release checklist](08-release-candidate/05-no-code-release-checklist.md)
-- [PalSmith release-scope review](08-release-candidate/06-palsmith-release-scope-review.md)
-- [PalSmith task package templates](../pals/PalSmith-pal-governor/templates/task-packages/README.md)
-- [PalSmith example task packages](../pals/PalSmith-pal-governor/examples/task-packages/README.md)
+- [No-code release checklist](../archive/migration-from-v0.3/release-candidate-docs/05-no-code-release-checklist.md)
+- [PalSmith release-scope review](../archive/migration-from-v0.3/release-candidate-docs/06-palsmith-release-scope-review.md)
+- [PalSmith task package templates](../official/pals/PalSmith-pal-governor/templates/task-packages/README.md)
+- [PalSmith example task packages](../official/pals/PalSmith-pal-governor/examples/task-packages/README.md)
 - [PalSmith Pal lifecycle](07-authoring-pals/14-palsmith-pal-lifecycle.md)
 - [PalSmith quickstart AI team](07-authoring-pals/15-palsmith-quickstart-ai-team.md)
 - [PalSmith demo script](07-authoring-pals/16-palsmith-demo-script.md)
-- [PalSmith v0.4 regression test plan](08-release-candidate/12-palsmith-v0.4-regression-test-plan.md)
-- [PalSmith AI team blueprints](../pals/PalSmith-pal-governor/examples/ai-team-blueprints/README.md)
-- [PalSmith skills index](../pals/PalSmith-pal-governor/skills/README.md)
-- [PalSmith knowledge index](../pals/PalSmith-pal-governor/knowledge/README.md)
-- [PalSmith source coverage report template](../pals/PalSmith-pal-governor/templates/source-coverage-report-template.md)
+- [PalSmith v0.4 regression test plan](../archive/migration-from-v0.3/release-candidate-docs/12-palsmith-v0.4-regression-test-plan.md)
+- [PalSmith AI team blueprints](../official/pals/PalSmith-pal-governor/examples/ai-team-blueprints/README.md)
+- [PalSmith skills index](../official/pals/PalSmith-pal-governor/skills/README.md)
+- [PalSmith knowledge index](../official/pals/PalSmith-pal-governor/knowledge/README.md)
+- [PalSmith source coverage report template](../official/pals/PalSmith-pal-governor/templates/source-coverage-report-template.md)

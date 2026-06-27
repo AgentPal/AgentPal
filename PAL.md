@@ -6,19 +6,20 @@ AgentPal is an AgentPal Workspace and Pal Pack Standard practice for agent runti
 
 This root `PAL.md` describes the identity of the whole AgentPal Workspace. It is not Mira's personal `PAL.md`, and it is not the identity file for any specialist Pal.
 
-AgentPal v0.1.0-rc.1 is a Pal layer. It provides Pal identity, knowledge, skills, context, memory boundaries, output contracts, coordination rules, review habits, summaries, and learning storage for the current execution runtime. It is not an Agent layer, not a multi-agent runtime, and not an execution layer.
+AgentPal v0.3.0-rc.1 is a Pal layer and no-code organization workspace. It provides Pal identity, knowledge, skills, context, memory boundaries, output contracts, coordination rules, review habits, summaries, and learning storage for the current execution runtime. It is not an Agent layer, not a multi-agent runtime, and not an execution layer.
 
 ## Workspace And Pal Pack Levels
 
 The AgentPal Workspace owns the shared layer:
 
 - root runtime instructions such as `AGENTS.md`, `SKILL.md`, `agentpal.json`, and the Codex initialization prompt under `prompts/codex/`
-- Pal discovery through `contacts/` and `registry/`
+- Pal discovery through the central roster under `workspace/organization/contacts/`
+- central project records under `workspace/projects/`
 - workspace-level orchestration protocols
 - reusable templates, prompts, examples, evals, and public-safe placeholders
 - external project workgroup binding templates
 
-Each `pals/<Pal-Directory>/` directory owns one Pal Pack:
+Each `official/pals/<Pal-Directory>/` directory owns one official Pal Pack:
 
 - that Pal's `PAL.md`, `SKILL.md`, `AGENTS.md`, and `pal.json`
 - that Pal's output contract and response habits
@@ -30,15 +31,16 @@ Do not treat this root `PAL.md` as a substitute for the selected Pal's own ident
 
 AgentPal helps users keep one runtime-readable Pal workspace for many Pals. It provides:
 
-- a Pal pool in `pals/`
+- an official Pal pool in `official/pals/`
 - Pal discovery and indexing rules
 - contacts and mention aliases
 - `/pal Name` and `@Name` routing
 - Context Packet templates
 - external project workgroup binding templates
+- central project-record templates for source maps, derived knowledge, memory, tasks, reports, governance, and capability inventory
 - runtime-awareness and model-routing notes
 
-The official bundled Pal set for v0.1.0-rc.1 is Mira, Atlas, Vega, Rhea, PalSmith, Quinn, Morgan, Harper, and Nova.
+The official bundled Pal set is Mira, Atlas, Vega, Rhea, PalSmith, Quinn, Morgan, Harper, and Nova. The central roster source of truth is `workspace/organization/contacts/pals.json`.
 
 ## Default Main Pal
 
@@ -50,7 +52,7 @@ All AgentPal-mode natural-language replies identify the speaking Pal first. Mira
 
 ## Pal Pool
 
-`pals/` contains Pal Packs. A valid contributed Pal Pack should include `PAL.md`, `pal.json`, `SKILL.md`, `README.md`, `AGENTS.md`, `core/output-contract.md`, a clear identity, responsibility boundaries, collaboration permissions, and public-safe placeholders where needed.
+`official/pals/` contains official bundled Pal Packs. A valid contributed Pal Pack should include `PAL.md`, `pal.json`, `SKILL.md`, `README.md`, `AGENTS.md`, `core/output-contract.md`, a clear identity, responsibility boundaries, collaboration permissions, and public-safe placeholders where needed.
 
 Tools inside external Pal directories are not contacts unless the directory itself is a valid Pal Pack and is intentionally registered.
 
@@ -66,11 +68,13 @@ Owned work must be delegated to the proper Pal. Mira can handle ordinary chat, c
 
 ## Project Workgroup Policy
 
-Project means external user project by default, not the AgentPal workspace itself. External projects may receive a `.agentpal/` binding folder based on `projects/project-workgroup-template/agentpal/`.
+Project means external user project by default, not the AgentPal workspace itself. External projects may receive a thin `.agentpal/` binding folder based on `templates/project-binding/`.
+
+Project memory, source maps, derived knowledge, task ledgers, reports, governance records, and capability inventory for bound projects are stored centrally under `workspace/projects/<project-id>/` by default. External projects keep only thin binding entrypoints unless the user explicitly asks for a business document inside the project.
 
 ## Runtime Awareness Policy
 
-AgentPal records runtime, model, skill, plugin, tool, cost, context, and capability boundaries as documents and templates. v0.1.0-rc.1 does not claim that any runtime has been automatically scanned.
+AgentPal records runtime, model, skill, plugin, tool, cost, context, and capability boundaries as documents and templates. It does not claim that any runtime has been automatically scanned unless the current host runtime provides evidence.
 
 Unknown facts remain `unknown until scanned`.
 

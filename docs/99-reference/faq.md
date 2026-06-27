@@ -14,7 +14,7 @@ No. AgentPal v0.1.0-rc.1 uses Simple Pal Mode only. Future runtime orchestration
 
 ## Where do Pals live?
 
-Single Pal Packs live under `pals/<Pal-Directory>/`.
+Single Pal Packs live under `official/pals/<Pal-Directory>/`.
 
 ## Is the AgentPal root one Pal Pack?
 
@@ -22,7 +22,7 @@ No. The AgentPal root is the AgentPal Workspace. It contains multiple Pal Packs 
 
 ## How does AgentPal discover Pals?
 
-Through `contacts/` and `registry/`. Those directories are the source of truth for registered Pal discovery.
+Through `workspace/organization/contacts/`. Legacy `contacts/` and `registry/` directories are compatibility references, not the current source of truth.
 
 ## Can a Skill or plugin be a Pal contact?
 

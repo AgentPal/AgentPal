@@ -32,7 +32,7 @@ A workflow is a larger lifecycle that may combine Skills, knowledge, runbooks, a
 
 - stages
 - owner Pal responsibilities
-- optional collaborators resolved from contacts / registry
+- optional collaborators resolved from central contacts
 - evidence and completion rules
 
 ## Boundary

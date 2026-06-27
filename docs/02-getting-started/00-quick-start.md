@@ -29,7 +29,7 @@ Example:
 
 - Mira is the default Main Pal, Leader Pal, and Conductor.
 - Specialist Pals do not listen by default.
-- Direct calls resolve from `contacts/` and `registry/`.
+- Direct calls resolve from the central Pal roster under `workspace/organization/contacts/`.
 - Simple Pal Mode remains the only active task-handling path.
 
 ## No Required Runtime Dependency

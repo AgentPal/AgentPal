@@ -8,9 +8,9 @@ This folder collects the v0.2 no-code productization path for PalSmith.
 
 ## Related Assets
 
-- [Create first professional Pal task package](../../pals/PalSmith-pal-governor/templates/task-packages/create-first-professional-pal.md)
-- [Create AI team from goal task package](../../pals/PalSmith-pal-governor/templates/task-packages/create-ai-team-from-goal.md)
-- [User material ingestion workflow](../../pals/PalSmith-pal-governor/workflows/user-material-ingestion-to-pal-assets.md)
-- [Pal health check runbook](../../pals/PalSmith-pal-governor/runbooks/pal-health-check.md)
-- [AI team health check runbook](../../pals/PalSmith-pal-governor/runbooks/ai-team-health-check.md)
-- [PalSmith E2E creation self-test](../../pals/PalSmith-pal-governor/evals/palsmith-e2e-creation-self-test.md)
+- [Create first professional Pal task package](../../official/pals/PalSmith-pal-governor/templates/task-packages/create-first-professional-pal.md)
+- [Create AI team from goal task package](../../official/pals/PalSmith-pal-governor/templates/task-packages/create-ai-team-from-goal.md)
+- [User material ingestion workflow](../../official/pals/PalSmith-pal-governor/workflows/user-material-ingestion-to-pal-assets.md)
+- [Pal health check runbook](../../official/pals/PalSmith-pal-governor/runbooks/pal-health-check.md)
+- [AI team health check runbook](../../official/pals/PalSmith-pal-governor/runbooks/ai-team-health-check.md)
+- [PalSmith E2E creation self-test](../../official/pals/PalSmith-pal-governor/evals/palsmith-e2e-creation-self-test.md)

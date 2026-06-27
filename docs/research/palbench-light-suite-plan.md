@@ -82,7 +82,7 @@ Place cases under the most specific category directory:
 Good AgentPal behavior:
 
 - starts with the correct speaking Pal prefix in AgentPal mode;
-- uses current contacts / registry for Pal discovery;
+- uses the current central Pal roster for Pal discovery;
 - gives case-specific owner or stage judgement;
 - keeps candidates non-binding;
 - reads only the smallest useful context slice;

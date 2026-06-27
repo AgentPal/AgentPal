@@ -33,7 +33,7 @@ When handling a task in this Pal directory, read in this order:
 
 ## Contact Source Of Truth
 
-Collaborators must be resolved from the current AgentPal `contacts/` and `registry/`.
+Collaborators must be resolved from the current AgentPal central Pal roster.
 
 Adding, removing, or renaming another Pal should not require changes to this Pal's professional knowledge, Skills, Workflows, or Runbooks.
 

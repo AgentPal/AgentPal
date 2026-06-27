@@ -15,7 +15,7 @@ Current for AgentPal `v0.1.0-rc.1`.
   "name": "Example",
   "display_name": "Example / Role Pal",
   "directory_name": "Example-role",
-  "path": "pals/Example-role",
+  "path": "official/pals/Example-role",
   "role": "role",
   "type": "pal-pack",
   "direct_call": "/pal Example",

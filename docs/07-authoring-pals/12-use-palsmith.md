@@ -101,17 +101,17 @@ GitHub import verification also has three levels: Level 1 URL Plan, Level 2 Runt
 PalSmith v0.4 adds a shorter user path:
 
 - [5-minute quickstart](15-palsmith-quickstart-ai-team.md)
-- quickstart cheatsheet in `pals/PalSmith-pal-governor/examples/quickstart/`
-- AI team blueprints in `pals/PalSmith-pal-governor/examples/ai-team-blueprints/`
+- quickstart cheatsheet in `official/pals/PalSmith-pal-governor/examples/quickstart/`
+- AI team blueprints in `official/pals/PalSmith-pal-governor/examples/ai-team-blueprints/`
 - [10-minute demo script](16-palsmith-demo-script.md)
 
-Blueprints are examples only. They are not installed Pals and must not be written into registry / contacts without a confirmed Runtime Task Package.
+Blueprints are examples only. They are not installed Pals and must not be written into the central Pal roster without a confirmed Runtime Task Package.
 
 ## Readiness Review
 
 When the user asks whether a Pal can publish, PalSmith first performs readiness review instead of answering yes immediately. The review unifies lifecycle, Eval Lab, and publish quality gate evidence into one state recommendation: `idea`, `draft`, `testing`, `stable`, `publish-ready`, `published`, `deprecated`, or `archived`.
 
-If a dimension was not checked, PalSmith reports `not-run`. If evidence is missing, PalSmith reports `missing`. `publish-ready` requires clean export safety, public-safety evidence, Eval Lab coverage, and registry / contacts consistency when relevant.
+If a dimension was not checked, PalSmith reports `not-run`. If evidence is missing, PalSmith reports `missing`. `publish-ready` requires clean export safety, public-safety evidence, Eval Lab coverage, and central roster consistency when relevant.
 
 ## Importing A Pal
 
@@ -129,8 +129,7 @@ Clean export excludes `memory/user/`, `memory/project/`, `state/`, `reports/`, l
 
 PalSmith can generate:
 
-- registry update task package
-- contacts update task package
+- central roster update task package
 - Official Pal Registration Task Package
 - snapshot task package
 - rollback task package

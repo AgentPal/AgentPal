@@ -35,9 +35,9 @@ Review these before release:
 - `memory/`
 - `state/`
 - `reports/`
-- `pals/*/memory/`
-- `pals/*/state/`
-- `pals/*/reports/`
+- `official/pals/*/memory/`
+- `official/pals/*/state/`
+- `official/pals/*/reports/`
 - `examples/`
 - `evals/`
 - `imports/`

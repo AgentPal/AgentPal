@@ -18,10 +18,10 @@ R11 E2E testing passed PalSmith's v0.1 core loop in an independent test copy. v0
 - PalSmith 生成什么计划：Pal identity, role boundary, job expertise model, material ingestion plan, optional research plan, directory plan, root files, output contract, knowledge/skill/workflow/eval assets, registry suggestion, contacts suggestion.
 - 需要问用户什么确认问题：Pal 名称、职责、目标、场景、目录、语言、用户材料、是否允许材料读取、是否需要联网研究、是否需要注册、是否允许当前 Runtime 写入新目录。
 - 生成哪个 Runtime Task Package：`Pal Creation Task Package`.
-- 当前 Runtime 执行哪些动作：按确认创建 `pals/<Pal-Directory>/` Markdown/JSON assets and public-safe placeholders.
+- 当前 Runtime 执行哪些动作：按确认创建 `official/pals/<Pal-Directory>/` Markdown/JSON assets and public-safe placeholders.
 - PalSmith 如何验收：检查 required root files, `pal.json`, public/private boundary, and no unconfirmed registry or contacts write.
 - 输出什么报告：created files, skipped files, missing files, not-run checks, next confirmation needed.
-- 哪些动作禁止自动执行：自动写 `contacts/`, 自动写 `registry/`, 读取私人 memory, 引入代码工具。
+- 哪些动作禁止自动执行：自动写 `workspace/organization/contacts/`, 读取私人 memory, 引入代码工具。
 
 ## 1A. Create A Pal From User Materials
 
@@ -62,14 +62,14 @@ R11 E2E testing passed PalSmith's v0.1 core loop in an independent test copy. v0
 
 - 示例说法：`/pal PalSmith 从 https://github.com/example/legal-pal-pack 导入 Pal`
 - 当前 Pal 如何协作：当前 Pal 通过 AI 判断确认这是 external-source Pal import governance 后，交给 PalSmith 并标注 external source risk。
-- PalSmith 读取哪些文件：import protocol, staging policy, source URL text, current registry/contacts only if registration is requested.
+- PalSmith 读取哪些文件：import protocol, staging policy, source URL text, current central roster only if registration is requested.
 - PalSmith 生成什么计划：staging target, source trust boundary, risk checks, quarantine rules, install decision points.
 - 需要问用户什么确认问题：是否允许当前 Runtime 访问该 URL、staging 位置、是否允许读取 memory、是否只是评估还是准备安装。
 - 生成哪个 Runtime Task Package：`Pal Import Staging Task Package`.
 - 当前 Runtime 执行哪些动作：下载或复制到 staging, list files, do not execute imported scripts, produce risk report.
 - PalSmith 如何验收：classify resource, check core files, scripts, credentials, memory/user, memory/project, state/, reports/, license, conflicts.
 - 输出什么报告：staged path, resource type, risk list, quarantine list, install recommendation.
-- 哪些动作禁止自动执行：直接安装到 `pals/`, 执行脚本, 自动写 contacts/registry, 导入私人记忆到公开包。
+- 哪些动作禁止自动执行：直接安装到 `official/pals/`, 执行脚本, 自动写中央 roster, 导入私人记忆到公开包。
 
 ## 4. Local Import
 
@@ -82,7 +82,7 @@ R11 E2E testing passed PalSmith's v0.1 core loop in an independent test copy. v0
 - 当前 Runtime 执行哪些动作：copy approved files into staging, quarantine risky sections, report file inventory.
 - PalSmith 如何验收：verify staged package shape, exclusions, conflict status, and not-run checks.
 - 输出什么报告：local import report, install readiness, blocked reasons if any.
-- 哪些动作禁止自动执行：越界读取本地私人目录、直接覆盖现有 Pal、自动登记 contacts/registry。
+- 哪些动作禁止自动执行：越界读取本地私人目录、直接覆盖现有 Pal、自动登记中央 roster。
 
 ## 5. Clean Export
 
@@ -114,9 +114,9 @@ R11 E2E testing passed PalSmith's v0.1 core loop in an independent test copy. v0
 
 - 示例说法：`/pal PalSmith 体检所有 Pal`
 - 当前 Pal 如何协作：当前 Pal 通过 AI 判断确认这是 Pal health / quality governance 后，可交给 PalSmith；如果用户只问方法，可先解释再建议 PalSmith。
-- PalSmith 读取哪些文件：`pals/`, `contacts/pals.json`, `registry/pal.index.json`, `agentpal.json`, excluding private memory content.
+- PalSmith 读取哪些文件：`official/pals/`, `workspace/organization/contacts/pals.json`, `workspace/organization/contacts/PAL_CONTACTS.md`, `agentpal.json`, excluding private memory content.
 - PalSmith 生成什么计划：inspection scope, health checklist, allowed reads, report path, repair follow-up boundary.
-- 需要问用户什么确认问题：体检范围、是否生成报告文件、是否允许读 registry/contacts。
+- 需要问用户什么确认问题：体检范围、是否生成报告文件、是否允许读中央 roster。
 - 生成哪个 Runtime Task Package：`Pal Health Inspection Task Package`.
 - 当前 Runtime 执行哪些动作：read approved files, summarize missing files, parse JSON, produce health report.
 - PalSmith 如何验收：separate index-known count from content-read count, report missing/not-run, avoid repair claims.
@@ -125,12 +125,12 @@ R11 E2E testing passed PalSmith's v0.1 core loop in an independent test copy. v0
 
 ## 8. Registry / Contacts Update Suggestion
 
-- 示例说法：`/pal PalSmith 生成 registry/contacts 更新建议`
-- 当前 Pal 如何协作：当前 Pal 通过 AI 判断确认这是 registry / contacts governance 后，交给 PalSmith and includes target Pal/path in Context Packet.
-- PalSmith 读取哪些文件：target Pal root files, `registry/pal.index.json`, `contacts/pals.json`.
+- 示例说法：`/pal PalSmith 生成 central roster 更新建议`
+- 当前 Pal 如何协作：当前 Pal 通过 AI 判断确认这是 central roster governance 后，交给 PalSmith and includes target Pal/path in Context Packet.
+- PalSmith 读取哪些文件：target Pal root files, `workspace/organization/contacts/pals.json`, `workspace/organization/contacts/PAL_CONTACTS.md`.
 - PalSmith 生成什么计划：JSON diff proposal, eligibility checks, contactability checks, separate write packages.
 - 需要问用户什么确认问题：是否只是建议、是否写入 registry、是否写入 contacts、exact diff approval。
-- 生成哪个 Runtime Task Package：`registry update task package` and/or `contacts update task package`.
+- 生成哪个 Runtime Task Package：`central roster update task package`.
 - 当前 Runtime 执行哪些动作：only after confirmation, snapshot current JSON, apply approved diff, parse JSON.
 - PalSmith 如何验收：valid Pal Pack only, no duplicate id, contacts only for discoverable/contactable Pal with allowed modes.
 - 输出什么报告：diff summary, changed JSON paths, parse result, snapshot path.
@@ -165,12 +165,12 @@ R11 E2E testing passed PalSmith's v0.1 core loop in an independent test copy. v0
 ## 11. Official Pal Registration
 
 - 示例说法：`/pal PalSmith 将 PalSmith 登记为官方 Pal` or `/pal PalSmith 生成官方登记建议`
-- 当前 Pal 如何协作：当前 Pal 通过 AI 判断确认这是 Pal asset governance / registry / contacts consistency work 后，hands off to PalSmith.
-- PalSmith 读取哪些文件：`agentpal.json`, `registry/pal.index.json`, `contacts/pals.json`, target `PAL.md`, target `pal.json`, target `SKILL.md`, target `AGENTS.md`.
+- 当前 Pal 如何协作：当前 Pal 通过 AI 判断确认这是 Pal asset governance / central roster consistency work 后，hands off to PalSmith.
+- PalSmith 读取哪些文件：`agentpal.json`, `workspace/organization/contacts/pals.json`, `workspace/organization/contacts/PAL_CONTACTS.md`, target `PAL.md`, target `pal.json`, target `SKILL.md`, target `AGENTS.md`.
 - PalSmith 生成什么计划：official bundled list update, registry entry, contacts entry, id/path/direct call consistency checks, no-code boundary checks.
 - 需要问用户什么确认问题：是否确认登记为 official Pal、是否确认加入 contacts、是否确认只写目标 Pal 条目、是否确认不写私人 memory/state/reports。
 - 生成哪个 Runtime Task Package：`Official Pal Registration Task Package`.
-- 当前 Runtime 执行哪些动作：inspect target files, apply approved JSON diff to `agentpal.json`, `registry/pal.index.json`, and `contacts/pals.json`, then parse JSON.
+- 当前 Runtime 执行哪些动作：inspect target files, apply approved JSON diff to `agentpal.json` and `workspace/organization/contacts/pals.json`, then parse JSON.
 - PalSmith 如何验收：target appears in agentpal official list, registry, and contacts; id/path/direct call match; no duplicate id; JSON parse OK.
 - 输出什么报告：changed fields, parse evidence, consistency result, no-code boundary result, remaining risk.
 - 失败时如何回滚：use a pre-change snapshot or `git diff` to restore only the changed PalSmith entries, then parse JSON again.
@@ -190,7 +190,7 @@ R11 E2E testing passed PalSmith's v0.1 core loop in an independent test copy. v0
 - PalSmith 生成什么计划：Pal Conflict Detection Task Package.
 - 检查什么：id, direct call, alias, responsibility overlap/gap, owner/verifier problems, Mira/PalSmith responsibility confusion, ordinary Skill contact mistakes.
 - 输出什么报告：Conflict Report with severity and recommendations: keep, clarify, merge, split, rename alias, update contacts, or ask user.
-- 禁止什么：自动修改 contacts / registry.
+- 禁止什么：自动修改中央 roster.
 
 ## 14. Capability Map
 
@@ -203,9 +203,9 @@ R11 E2E testing passed PalSmith's v0.1 core loop in an independent test copy. v0
 
 - 示例说法：`/pal PalSmith 这个新 Pal 可以用了么`
 - PalSmith 生成什么计划：Pal Eval Lab Task Package.
-- 检查什么：identity, responsibility boundary, non-responsibility, risky request, output format, collaboration, import/export safety, registry/contacts consistency.
+- 检查什么：identity, responsibility boundary, non-responsibility, risky request, output format, collaboration, import/export safety, central roster consistency.
 - 输出什么：passed items, failed items, files needing changes, suggested lifecycle state.
-- 生命周期：idea -> design -> confirmation -> Runtime creation -> registry/contacts suggestion -> quality inspection -> Eval Lab -> testing -> trial -> versioned changes -> stable -> clean export/share/team collaboration -> deprecated/archived.
+- 生命周期：idea -> design -> confirmation -> Runtime creation -> central roster suggestion -> quality inspection -> Eval Lab -> testing -> trial -> versioned changes -> stable -> clean export/share/team collaboration -> deprecated/archived.
 
 ## 16. AI Team Builder
 
@@ -241,7 +241,7 @@ R11 E2E testing passed PalSmith's v0.1 core loop in an independent test copy. v0
 - 示例说法：`从 GitHub 导入这个 Pal，并验证能不能用。`
 - 判断方式：AI 判断该请求是否 needs external-source import governance.
 - PalSmith 输出什么：Level 1 URL Plan, Level 2 Runtime Fetch, or Level 3 Full Import Trial.
-- 安全边界：do not execute imported scripts, auto-install, auto-write contacts/registry, import private memory, trust unknown license, or treat ordinary Skill as Pal.
+- 安全边界：do not execute imported scripts, auto-install, auto-write the central roster, import private memory, trust unknown license, or treat ordinary Skill as Pal.
 
 ## 21. AI Team Blueprint
 
@@ -250,13 +250,13 @@ R11 E2E testing passed PalSmith's v0.1 core loop in an independent test copy. v0
 - PalSmith 读取哪些文件：`examples/ai-team-blueprints/README.md` and the smallest relevant blueprint.
 - PalSmith 输出什么：blueprint summary, recommended 3-5 Pal list, owner/verifier/consultants, shared knowledge, shared workflows, Context Packet rules, quality gate, and confirmation questions.
 - 生成哪个 Runtime Task Package：if the user accepts, `AI Team Builder Task Package` or `Pal Team Creation Task Package`.
-- 禁止什么：treating the blueprint as an installed Pal, writing registry/contacts, or creating files without confirmation.
+- 禁止什么：treating the blueprint as an installed Pal, writing the central roster, or creating files without confirmation.
 
 ## 22. Readiness Matrix Review
 
 - 示例说法：`/pal PalSmith 这个 Pal 可以进入 publish-ready 吗？`
 - 判断方式：AI 判断该请求是否 needs lifecycle / Eval Lab / publish gate convergence.
-- PalSmith 读取哪些文件：target public Pal files, evals, registry/contacts if relevant, clean export evidence if approved.
+- PalSmith 读取哪些文件：target public Pal files, evals, central roster if relevant, clean export evidence if approved.
 - PalSmith 输出什么：readiness matrix with Structure Completeness, Identity Consistency, Responsibility Clarity, Skill / Knowledge Coverage, Workflow Readiness, Eval Coverage, Registry / Contacts Consistency, Memory / State / Reports Safety, Collaboration Safety, Runtime Task Package Readiness, Clean Export Safety, With Memory Export Risk, and Team Governance Readiness.
 - 生成哪个 Runtime Task Package：`Pal Readiness Review Task Package`.
 - 状态：idea, draft, testing, stable, publish-ready, published, deprecated, archived.

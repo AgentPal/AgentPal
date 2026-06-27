@@ -79,7 +79,7 @@ For real execution, the host Runtime may follow the packages by stage and return
 ## Workflow: AI Team Creation
 
 1. PalSmith frames the team goal, user scenarios, roles, assets, and readiness criteria.
-2. Memory and Capability Inventory inform candidate Pal responsibilities without forcing contacts/registry changes.
+2. Memory and Capability Inventory inform candidate Pal responsibilities without forcing central roster changes.
 3. Context Packets separate Pal asset design, knowledge ingestion, readiness review, and quality checks.
 4. Runtime task packages may request bounded file edits only after approval.
 5. Synthesis reports asset completeness, conflicts, missing evidence, and next registration decision.

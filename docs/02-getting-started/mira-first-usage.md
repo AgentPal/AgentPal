@@ -36,11 +36,11 @@ Use `/pal Name` when you already know which specialist you want to consult or te
 /pal Quinn 检查这个完成报告的证据是否足够。
 ```
 
-Direct calls still use current contacts and registry. They do not start independent agent processes. A directly called Pal still applies AgentPal's gates, and if your request is composite, that Pal should identify stage candidates instead of blindly owning every stage.
+Direct calls still use the current central Pal roster. They do not start independent agent processes. A directly called Pal still applies AgentPal's gates, and if your request is composite, that Pal should identify stage candidates instead of blindly owning every stage.
 
 ## How Mira Judges Owner Candidates
 
-Mira judges from the current request, expected deliverable, risk, available Pals, current contacts / registry, and evidence needs.
+Mira judges from the current request, expected deliverable, risk, available Pals, current central Pal roster, and evidence needs.
 
 Mira may:
 

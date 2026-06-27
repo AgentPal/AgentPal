@@ -57,17 +57,20 @@ Learn more about Pal:
 AgentPal v0.3.0-rc.1 currently provides:
 
 - Markdown / JSON / protocol workspace assets with no required runtime dependency
+- Standards for no-code boundaries, thin project binding, central assets, host-runtime execution, and no keyword routing under `standards/`
+- Central organization workspace foundations under `workspace/`, including the central Pal roster at `workspace/organization/contacts/pals.json` and central project records under `workspace/projects/`
+- Official bundled Pal Packs under `official/pals/`
 - Simple Pal Mode as the active runtime policy
 - Mira as the default Main Pal / Leader / Conductor, with leader knowledge, skills, workflows, runbooks, evals, research inventory, delegation, handoff, context packet, risk approval, and progress reporting assets
 - 9 official bundled Pals: Mira, Atlas, Vega, Rhea, PalSmith, Quinn, Morgan, Harper, and Nova
-- `/pal Name` explicit Pal calls backed by contacts and registry files
+- `/pal Name` explicit Pal calls backed by the central contact roster
 - AI owner judgement, Fast Route owner-Pal handoff, and no hard-coded keyword routing
 - Task Package rules, Runtime Task Package standards, Context Slicing, and Asset Loading Budget
 - PalSmith as the official no-code Pal asset governance Pal for Pal creation, AI team creation, job fitness inspection, user material ingestion, optional web research to knowledge, import, export, health checks, versioning, publish readiness, and Runtime Task Package planning
 - PalSmith quickstart path, AI team blueprints, demo script, readiness matrix, task package templates, example packages, governance protocols, and Markdown evals
 - Formal Skill asset standard with 219 formal skills mapped to Pal-owned skill assets and 0 missing formal Skill assets under the release standard
 - Deepened official Pal assets for Atlas, Vega, Rhea, Quinn, Morgan, Harper, and Nova, including role knowledge, skills, workflows, runbooks, evals, collaboration boundaries, and research inventories
-- Release candidate evidence under `docs/08-release-candidate/`, including PalSmith verification, default Pal sync, release review, no-code boundary review, formal Skill asset audit/fix, dirty worktree stage review, commit grouping plan, and maintainer handoff reports
+- Historical release-candidate evidence archived under `archive/migration-from-v0.3/release-candidate-docs/`, with `docs/08-release-candidate/README.md` kept as a pointer
 - Codex, Claude Code, and Generic CLI Agent usage guides with thin project binding prompts
 - PalBench small-sample validation
 
@@ -106,7 +109,7 @@ Use this when you want to connect AgentPal to an existing user project in Claude
 5. When Claude Code asks for your AgentPal Workspace path, enter the local path to the AgentPal directory, for example `<path-to-AgentPal>`.
 6. Let Claude Code create or update the project-local binding files.
 
-The Claude Code path updates project-local binding files and may update `.claude/settings.local.json`. That file is local machine configuration and should not be committed.
+The Claude Code path updates project-local binding files and may update `.claude/settings.local.json`. That file is local machine configuration and should not be committed. Project memory, source maps, derived knowledge, task records, reports, governance notes, and capability inventory belong in the AgentPal Workspace under `workspace/projects/<project-id>/`, not in the external project's `.agentpal/` directory.
 
 More: [`docs/04-runtime-guides/02-use-with-claude-code.md`](docs/04-runtime-guides/02-use-with-claude-code.md)
 
@@ -128,11 +131,13 @@ Use this with a CLI agent that can read project files, follow Markdown / JSON in
 
 This is a generic compatibility path. AgentPal does not claim every CLI Agent has been fully validated.
 
+External projects stay thin-bound: `.agentpal/project.json`, `.agentpal/AGENTPAL.md`, and protected root instruction blocks point back to the AgentPal Workspace and its `agentpal_project_record`.
+
 More: [`docs/04-runtime-guides/03-use-with-generic-cli-agent.md`](docs/04-runtime-guides/03-use-with-generic-cli-agent.md)
 
 ## Create Your Own Pal
 
-AgentPal includes standard Pal Pack templates under [`templates/Pal Pack/`](<templates/Pal Pack/>). Copy a template, rename it for your Pal, fill in the identity, output contract, knowledge, Skills, examples, and public-safe placeholders, then place the finished Pal Pack under [`pals/`](pals/). After the Pal is registered through AgentPal contacts and registry, you can use it like the bundled Pals.
+AgentPal includes standard Pal Pack templates under [`templates/Pal Pack/`](<templates/Pal Pack/>). Copy a template, rename it for your Pal, fill in the identity, output contract, knowledge, Skills, examples, and public-safe placeholders, then place the finished Pal Pack under [`official/pals/`](official/pals/) or the selected organization Pal area. After the Pal is registered through AgentPal central contacts, you can use it like the bundled Pals.
 
 Available template sets:
 
@@ -144,7 +149,7 @@ To register a copied Pal Pack, run [`prompts/add-pal-to-agentpal.md`](prompts/ad
 - Codex: open the AgentPal directory as its own Codex project, then paste the prompt into the AgentPal project conversation.
 - Claude Code or another CLI agent: open a terminal in `<path-to-AgentPal>`, start the CLI agent there, then paste the prompt.
 
-Most users run AgentPal from an external project during daily work. Pal registration edits AgentPal's own `contacts/` and `registry/` files, so do the registration step in the AgentPal Workspace, then reinitialize the external project session if it still shows the old Pal list.
+Most users run AgentPal from an external project during daily work. Pal registration edits AgentPal's central roster under `workspace/organization/contacts/`, so do the registration step in the AgentPal Workspace, then reinitialize the external project session if it still shows the old Pal list.
 
 ## Official Pals
 
@@ -164,11 +169,11 @@ Mira is the default entry Pal and Leader Pal. She handles first-contact intake, 
 
 For realistic official Pal task examples, see the [Official Pal examples index](docs/07-official-pals/official-pal-examples-index.md). These examples are non-binding learning references, not dispatch rules.
 
-PalSmith is registered as `palsmith-pal-governor` at `pals/PalSmith-pal-governor` in `agentpal.json`, `registry/pal.index.json`, and `contacts/pals.json`.
+PalSmith is registered as `palsmith-pal-governor` at `official/pals/PalSmith-pal-governor` in `agentpal.json` and `workspace/organization/contacts/pals.json`.
 
 Use PalSmith directly with `/pal PalSmith ...`. PalSmith works through Runtime Task Packages and does not require Python, Node.js, Rust, a UI, or an installer.
 
-Start from [`docs/PalSmith.md`](docs/PalSmith.md), then use the [Runtime Task Package standard](docs/03-pal-pack-standard/14-runtime-task-package.md), [PalSmith v0.2 productization](docs/06-palsmith/README.md), [PalSmith end-to-end workflows](docs/07-authoring-pals/13-palsmith-end-to-end-workflows.md), [PalSmith Pal lifecycle](docs/07-authoring-pals/14-palsmith-pal-lifecycle.md), [PalSmith quickstart AI team](docs/07-authoring-pals/15-palsmith-quickstart-ai-team.md), [PalSmith demo script](docs/07-authoring-pals/16-palsmith-demo-script.md), and [PalSmith E2E test summary](docs/08-release-candidate/11-palsmith-e2e-test-summary.md) when preparing release-safe Pal work.
+Start from [`docs/PalSmith.md`](docs/PalSmith.md), then use the [Runtime Task Package standard](docs/03-pal-pack-standard/14-runtime-task-package.md), [PalSmith v0.2 productization](docs/06-palsmith/README.md), [PalSmith end-to-end workflows](docs/07-authoring-pals/13-palsmith-end-to-end-workflows.md), [PalSmith Pal lifecycle](docs/07-authoring-pals/14-palsmith-pal-lifecycle.md), [PalSmith quickstart AI team](docs/07-authoring-pals/15-palsmith-quickstart-ai-team.md), [PalSmith demo script](docs/07-authoring-pals/16-palsmith-demo-script.md), and the historical [PalSmith E2E test summary archive](archive/migration-from-v0.3/release-candidate-docs/11-palsmith-e2e-test-summary.md) when preparing release-safe Pal work.
 
 ## How AgentPal Works
 
@@ -225,6 +230,9 @@ AgentPal is a Pal layer for existing runtimes. It does not require Python, Node.
 
 - [Why Pal?](docs/01-concepts/07-why-pal.md)
 - [Concepts](docs/01-concepts/)
+- [Central Project Record](docs/02-concepts/central-project-record.md)
+- [Project Memory in AgentPal](docs/02-concepts/project-memory-in-agentpal.md)
+- [Source Map and Derived Knowledge](docs/02-concepts/source-map-and-derived-knowledge.md)
 - [Pal Pack Standard](docs/03-pal-pack-standard/)
 - [Runtime Guides](docs/04-runtime-guides/)
 - [Orchestration Methodology](docs/05-orchestration-methodology/)

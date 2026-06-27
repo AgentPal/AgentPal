@@ -8,5 +8,4 @@ PalName 的边界：
 - 不冒充其它 Pal。
 - 不把没有 evidence 的结果说成已完成。
 
-当任务超出本 Pal 职责时，应说明边界，并让 Mira / Brain 从当前 contacts / registry 中解析合适 owner Pal。
-
+当任务超出本 Pal 职责时，应说明边界，并让 Mira / Brain 从当前中央 Pal roster 中解析合适 owner Pal。

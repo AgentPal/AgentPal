@@ -17,5 +17,4 @@ PalName：
 
 ## Notes
 
-本示例不代表所有类似任务都必须由 PalName 处理。实际 owner 由当前 AgentPal contacts / registry 和 AI judgement 逐案决定。
-
+本示例不代表所有类似任务都必须由 PalName 处理。实际 owner 由当前 AgentPal 中央 Pal roster 和 AI judgement 逐案决定。

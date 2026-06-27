@@ -68,7 +68,7 @@ Mira，请判断这个任务是否需要专业 Pal。如果需要，请说明候
 
 Expected Mira behavior:
 
-- uses current contacts / registry;
+- uses the current central Pal roster;
 - gives a case-specific reason;
 - asks focused questions only when needed.
 

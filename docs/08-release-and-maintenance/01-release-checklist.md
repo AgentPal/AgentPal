@@ -21,7 +21,7 @@ Use this checklist with the root [`RELEASE_CHECKLIST.md`](../../RELEASE_CHECKLIS
 
 - [ ] `docs/README.md` works as the docs entry point.
 - [ ] Overview docs explain AgentPal vs Agent Runtime.
-- [ ] Pal Pack Standard docs explain `pals/<Pal>/` as the single Pal Pack boundary.
+- [ ] Pal Pack Standard docs explain `official/pals/<Pal>/` as the official Pal Pack boundary.
 - [ ] Public/private boundary docs are linked from release and standard docs.
 - [ ] Known limitations are visible from release maintenance docs.
 - [ ] Internal development reports are not linked into the public docs flow.
@@ -35,8 +35,8 @@ Use this checklist with the root [`RELEASE_CHECKLIST.md`](../../RELEASE_CHECKLIS
 
 ## Contacts And Registry
 
-- [ ] `contacts/pals.json` and `registry/pal.index.json` list the same official Pals.
-- [ ] Contacts and registry remain the Pal discovery source of truth.
+- [ ] `workspace/organization/contacts/pals.json` and `workspace/organization/contacts/PAL_CONTACTS.md` list the same official Pals.
+- [ ] Central contacts remain the Pal discovery source of truth; legacy contacts and registry files are compatibility references only.
 - [ ] Skills, tools, models, plugins, MCP resources, and raw repositories are not registered as Pals.
 
 ## Public-Safe Release Gate

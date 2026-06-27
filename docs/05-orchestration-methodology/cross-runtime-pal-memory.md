@@ -52,7 +52,7 @@ Continuity is preserved by portable no-code artifacts:
 | Memory type | Purpose | Typical location |
 | --- | --- | --- |
 | Pal Memory | Pal-owned lessons, preferences, and professional continuity | Pal `learning/` or user-approved private memory |
-| Project Memory | current project goal, state, blockers, decisions, and next steps | project-local `.agentpal/memory/` or private runtime state |
+| Project Memory | current project goal, state, blockers, decisions, and next steps | central `workspace/projects/` records or private runtime state |
 | Routing Memory | routing decisions, candidates, outcomes, and verifier results | `memory/routing/` for synthetic public examples; private project memory for real records |
 | Runtime Skill Usage Memory | observed result of a host Runtime Skill, plugin, MCP, or tool candidate | private runtime/project memory or synthetic public examples |
 | Verification Memory | evidence, pass/fail/blocked, not-run, and rework history | project-local memory or verification records |

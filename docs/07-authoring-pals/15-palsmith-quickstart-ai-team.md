@@ -32,7 +32,7 @@ These are examples, not keyword rules. Any current Pal may consult, delegate, or
 - You do not need to hand-write `pal.json`.
 - You do not need to understand every AgentPal directory first.
 - You do not need to install Python, Node.js, Rust, a CLI, a scanner, or a validator.
-- You do not need to decide registry / contacts changes before seeing the plan.
+- You do not need to decide central roster changes before seeing the plan.
 
 ## Five-Minute Path
 
@@ -73,7 +73,7 @@ These are examples, not keyword rules. Any current Pal may consult, delegate, or
 
 ## Confirmation Boundary
 
-PalSmith may propose reads, writes, imports, exports, registration, contacts updates, or release status changes. It does not perform those actions itself.
+PalSmith may propose reads, writes, imports, exports, registration, central roster updates, or release status changes. It does not perform those actions itself.
 
 The current Agent Runtime may act only after the relevant Runtime Task Package and user confirmation. Reports must separate:
 
@@ -94,8 +94,8 @@ If web research is needed, PalSmith asks before network access. The Runtime retu
 - [PalSmith overview](../PalSmith.md)
 - [PalSmith end-to-end workflows](13-palsmith-end-to-end-workflows.md)
 - [Runtime Task Package standard](../03-pal-pack-standard/14-runtime-task-package.md)
-- [Quickstart examples](../../pals/PalSmith-pal-governor/examples/quickstart/README.md)
-- [AI team blueprints](../../pals/PalSmith-pal-governor/examples/ai-team-blueprints/README.md)
+- [Quickstart examples](../../official/pals/PalSmith-pal-governor/examples/quickstart/README.md)
+- [AI team blueprints](../../official/pals/PalSmith-pal-governor/examples/ai-team-blueprints/README.md)
 - [PalSmith demo script](16-palsmith-demo-script.md)
-- [PalSmith skills index](../../pals/PalSmith-pal-governor/skills/README.md)
-- [PalSmith knowledge index](../../pals/PalSmith-pal-governor/knowledge/README.md)
+- [PalSmith skills index](../../official/pals/PalSmith-pal-governor/skills/README.md)
+- [PalSmith knowledge index](../../official/pals/PalSmith-pal-governor/knowledge/README.md)

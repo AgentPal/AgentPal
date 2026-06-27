@@ -11,7 +11,7 @@ AgentPal 主体负责系统层。
 
 更具体地说：
 
-- AgentPal 主体负责 `contacts/`、`registry/`、`runtime/`、`models/`、`plugins/`、`orchestration/`、`templates/` 和 project binding。
+- AgentPal 主体负责中央 roster、runtime、models、plugins、orchestration、templates 和 project binding。
 - 单个 Pal Pack 负责身份、语气、专业知识、技能、流程、学习、输出标准、示例、自测和 public-safe 占位。
 
 不要把单个 Pal 写成独立项目、Agent Runtime、工具集合、固定路由表，或某个外部项目绑定目录。
@@ -66,7 +66,7 @@ AgentPal 主体负责系统层。
 
 5. 为这个 Pal 添加最小知识、技能、自测和 public-safe 占位。
 
-6. 只有当 Pal Pack 已经完整、公开安全、且通过维护者检查后，才把它加入 AgentPal `contacts/` 和 `registry/`。
+6. 只有当 Pal Pack 已经完整、公开安全、且通过维护者检查后，才把它加入 AgentPal `workspace/organization/contacts/`。
 
 ## 根目录标准结构
 
@@ -158,7 +158,7 @@ PalName-role/
 | 文件 | 是否必需 | 开发者需要写什么 | 不应该写什么 |
 | --- | ---: | --- | --- |
 | `PAL.md` | 必需 | Pal 的身份、职责、边界、语气、协作原则和不能做什么。 | 不写固定路由表，不写“某类任务必须交给某 Pal”。 |
-| `AGENTS.md` | 必需 | Runtime 进入本 Pal 目录时的读取顺序、工作规则、风险边界和输出要求。 | 不重复 AgentPal 全局 contacts / registry / runtime 逻辑。 |
+| `AGENTS.md` | 必需 | Runtime 进入本 Pal 目录时的读取顺序、工作规则、风险边界和输出要求。 | 不重复 AgentPal 全局 central roster / runtime 逻辑。 |
 | `SKILL.md` | 必需 | 作为 Pal Pack 入口，说明何时使用、读取哪些文件、如何输出。 | 不把 Pal 降级成单一小工具 Skill。 |
 | `pal.json` | 必需 | 机器可读元数据，例如 `id`、`display_name`、`directory_name`、`aliases`、`role`、`capabilities`、`collaboration`。 | 不写 `domain_map`、固定 owner、task 到 Pal 的硬编码路由。 |
 | `README.md` | 建议 | 给人看的说明：这个 Pal 是谁，适合什么，怎么 `/pal Name` 调用，如何维护。 | 不写内部开发流水账、本机路径、私有数据或过期标准。 |
@@ -418,8 +418,8 @@ This is a non-binding example.
 | `.agents/` | 删除或迁移 | Runtime 适配层，不应默认放在 Pal 内。 | `core/` 或 `skills/`。 |
 | `.claude/` | 删除或迁移 | Claude Code 专属配置，不是通用 Pal 资产。 | Runtime guide 或未来适配包。 |
 | `adapters/` | 删除 | 主体层 / Runtime 层职责。 | AgentPal 主体未来统一管理。 |
-| `contacts/` | 删除 | Pal 联系册由 AgentPal 主体维护。 | `AgentPal/contacts/`。 |
-| `registry/` | 删除 | Pal 索引由 AgentPal 主体维护。 | `AgentPal/registry/`。 |
+| `contacts/` | 删除 | Pal 联系册由 AgentPal 主体维护。 | `AgentPal/workspace/organization/contacts/`。 |
+| `registry/` | 删除 | 旧 registry 只保留兼容/历史导航，不属于 Pal Pack。 | AgentPal 主体兼容目录。 |
 | `runtime/` | 删除 | Runtime 信息由 AgentPal 主体维护。 | `AgentPal/runtime/`。 |
 | `models/` | 删除 | 模型信息由 AgentPal 主体维护。 | `AgentPal/models/`。 |
 | `plugins/` | 删除 | 插件信息由 AgentPal 主体维护。 | `AgentPal/plugins/`。 |
@@ -460,7 +460,7 @@ Pal Pack 模板和公开 Pal Pack 必须保持 public-safe。
 正确写法：
 
 ```text
-需要协作时，从当前 AgentPal contacts / registry 中解析合适协作者。
+需要协作时，从当前 AgentPal 中央 Pal roster 中解析合适协作者。
 ```
 
 错误写法：
@@ -527,6 +527,6 @@ Pal Pack 只负责专业层。
 更具体一点：
 
 ```text
-AgentPal 主体负责 contacts / registry / runtime / models / plugins / orchestration / project binding。
+AgentPal 主体负责 central roster / runtime / models / plugins / orchestration / project binding。
 Pal Pack 负责 identity / core / knowledge / skills / workflows / runbooks / learning / examples / evals / public-safe placeholders。
 ```

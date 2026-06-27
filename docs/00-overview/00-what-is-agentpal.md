@@ -14,9 +14,9 @@ The runtime still performs execution: reading files, writing files, calling tool
 
 ## Workspace, Not One Pal Pack
 
-The AgentPal root is the AgentPal Workspace. It contains the shared contacts, registry, orchestration protocols, templates, prompts, examples, evals, release files, and public-safe placeholders.
+The AgentPal root is the AgentPal Workspace. It contains the shared central contacts, orchestration protocols, templates, prompts, examples, evals, release files, and public-safe placeholders.
 
-Single Pal Packs live under `pals/<Pal-Directory>/`. Each Pal Pack owns its own identity, output contract, professional knowledge, skills, runbooks, workflows, examples, evals, and learning rules.
+Single Pal Packs live under `official/pals/<Pal-Directory>/`. Each Pal Pack owns its own identity, output contract, professional knowledge, skills, runbooks, workflows, examples, evals, and learning rules.
 
 ## Current Runtime Path
 

@@ -11,7 +11,7 @@ Each Pal Pack owns only its professional layer.
 
 More specifically:
 
-- AgentPal owns `contacts/`, `registry/`, `runtime/`, `models/`, `plugins/`, `orchestration/`, `templates/`, and project binding.
+- AgentPal owns the central roster, runtime, models, plugins, orchestration, templates, and project binding.
 - A Pal Pack owns identity, voice, domain knowledge, Skills, workflows, learning notes, output standards, examples, evals, and public-safe placeholders.
 
 Do not turn a Pal Pack into an independent project, an Agent runtime, a tool bundle, a fixed routing table, or an external project binding folder.
@@ -64,7 +64,7 @@ Do not use this template to create:
 
 4. Update identity, boundaries, output contract, and working protocols under `identity/` and `core/`.
 5. Add minimum public-safe knowledge, Skills, examples, evals, and placeholders.
-6. Register the Pal Pack in AgentPal `contacts/` and `registry/` only after it is complete, public-safe, and reviewed.
+6. Register the Pal Pack in AgentPal `workspace/organization/contacts/` only after it is complete, public-safe, and reviewed.
 
 ## Standard Structure
 
@@ -156,7 +156,7 @@ PalName-role/
 | File | Required | What to write | What to avoid |
 | --- | ---: | --- | --- |
 | `PAL.md` | Yes | Identity, responsibilities, boundaries, voice, collaboration principles, and refusals. | Fixed routing tables or claims that a task type must always go to a specific Pal. |
-| `AGENTS.md` | Yes | Runtime read order, work rules, risk boundaries, and output requirements for this Pal. | Repeating global AgentPal `contacts/`, `registry/`, or runtime logic. |
+| `AGENTS.md` | Yes | Runtime read order, work rules, risk boundaries, and output requirements for this Pal. | Repeating global AgentPal central roster or runtime logic. |
 | `SKILL.md` | Yes | Pal Pack entry: when to load this Pal, what to read, and how to answer. | Reducing the Pal to a single small tool Skill. |
 | `pal.json` | Yes | Machine-readable metadata: `id`, `display_name`, `directory_name`, `aliases`, `role`, `capabilities`, `collaboration`. | `domain_map`, fixed owners, or hard-coded task-to-Pal routes. |
 | `README.md` | Recommended | Human guide: who this Pal is, when to use it, how to call it, and how to maintain it. | Internal logs, local paths, private data, or outdated standards. |
@@ -338,7 +338,7 @@ A Pal Pack can describe how it collaborates, but it must not hard-code fixed rou
 Good:
 
 ```text
-Resolve collaborators from the current AgentPal contacts / registry.
+Resolve collaborators from the current AgentPal central Pal roster.
 ```
 
 Bad:

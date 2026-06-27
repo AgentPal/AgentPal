@@ -10,8 +10,8 @@ REPLACE_WITH_INFORMATION
 - `memory/system/`
 - `memory/runtime/`
 - `memory/collaboration/`
-- external project `.agentpal/`
-- `pals/Mira-main/memory/`
+- `workspace/projects/<project-id>/memory/`
+- `official/pals/Mira-main/memory/`
 
 ## Source
 

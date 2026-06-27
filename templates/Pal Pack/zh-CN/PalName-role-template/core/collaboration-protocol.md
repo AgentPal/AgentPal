@@ -1,6 +1,6 @@
 # Collaboration Protocol
 
-本 Pal 可以与其它 Pal 协作，但协作者必须从当前 AgentPal contacts / registry 中解析。
+本 Pal 可以与其它 Pal 协作，但协作者必须从当前 AgentPal 中央 Pal roster 中解析。
 
 ## 允许协作模式
 
@@ -21,4 +21,3 @@
 - privacy_boundary
 
 不要共享完整聊天记录、私人记忆、密钥、Token 或无关项目内容。
-

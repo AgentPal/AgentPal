@@ -14,6 +14,12 @@ AgentPal is a Pal layer and Pal Pack Standard practice for Markdown/JSON-capable
 - [Quick start](02-getting-started/00-quick-start.md)
 - [Mira-first usage](02-getting-started/mira-first-usage.md)
 - [Mira-first prompt cards](02-getting-started/mira-first-prompt-cards.md)
+- [Bind an external project](01-getting-started/bind-external-project.md)
+- [Central project record](02-concepts/central-project-record.md)
+- [Project memory in AgentPal](02-concepts/project-memory-in-agentpal.md)
+- [Source map and derived knowledge](02-concepts/source-map-and-derived-knowledge.md)
+- [Project memory user guide](03-user-guides/project-memory.md)
+- [Using user project docs](03-user-guides/using-user-project-docs.md)
 - [Multi-Pal collaboration prompt cards](02-getting-started/multi-pal-collaboration-prompt-cards.md)
 - [Official Pal examples index](07-official-pals/official-pal-examples-index.md)
 - [Use AgentPal with Claude Code](10-using-agentpal-with-claude-code.md)
@@ -70,7 +76,7 @@ AgentPal is a Pal layer and Pal Pack Standard practice for Markdown/JSON-capable
 - [Parallel Independent Review usage guide](05-orchestration-methodology/parallel-independent-review-usage-guide.md)
 - [PalBench Collaboration Suite](../evals/palbench-collaboration/README.md)
 - [Validation and evidence](06-validation-and-evidence/README.md)
-- [v0.1.0-rc.1 release candidate](08-release-candidate/README.md)
+- [Historical release-candidate pointer](08-release-candidate/README.md)
 - [v0.2 development plan](09-roadmap/v0.2-development-plan.md)
 - [v0.2 task pool](09-roadmap/v0.2-task-pool.md)
 
@@ -82,33 +88,33 @@ AgentPal is a Pal layer and Pal Pack Standard practice for Markdown/JSON-capable
 - [PalSmith Pal lifecycle](07-authoring-pals/14-palsmith-pal-lifecycle.md)
 - [PalSmith quickstart AI team](07-authoring-pals/15-palsmith-quickstart-ai-team.md)
 - [PalSmith demo script](07-authoring-pals/16-palsmith-demo-script.md)
-- [PalSmith v0.4 regression test plan](08-release-candidate/12-palsmith-v0.4-regression-test-plan.md)
+- [PalSmith v0.4 regression test plan](../archive/migration-from-v0.3/release-candidate-docs/12-palsmith-v0.4-regression-test-plan.md)
 - [PalSmith v0.2 productization](06-palsmith/README.md)
 - [PalSmith end-to-end productization](06-palsmith/palsmith-end-to-end-productization.md)
-- [Create first professional Pal task package](../pals/PalSmith-pal-governor/templates/task-packages/create-first-professional-pal.md)
-- [Create AI team from goal task package](../pals/PalSmith-pal-governor/templates/task-packages/create-ai-team-from-goal.md)
+- [Create first professional Pal task package](../official/pals/PalSmith-pal-governor/templates/task-packages/create-first-professional-pal.md)
+- [Create AI team from goal task package](../official/pals/PalSmith-pal-governor/templates/task-packages/create-ai-team-from-goal.md)
 - [Pal import/export standard](03-pal-pack-standard/13-pal-import-export.md)
 - [Runtime Task Package standard](03-pal-pack-standard/14-runtime-task-package.md)
-- [No-code release checklist](08-release-candidate/05-no-code-release-checklist.md)
-- [PalSmith release-scope review](08-release-candidate/06-palsmith-release-scope-review.md)
-- [PalSmith E2E test summary](08-release-candidate/11-palsmith-e2e-test-summary.md)
-- [PalSmith Pal Pack](../pals/PalSmith-pal-governor/README.md)
+- [No-code release checklist](../archive/migration-from-v0.3/release-candidate-docs/05-no-code-release-checklist.md)
+- [PalSmith release-scope review](../archive/migration-from-v0.3/release-candidate-docs/06-palsmith-release-scope-review.md)
+- [PalSmith E2E test summary](../archive/migration-from-v0.3/release-candidate-docs/11-palsmith-e2e-test-summary.md)
+- [PalSmith Pal Pack](../official/pals/PalSmith-pal-governor/README.md)
 
 ## Mira Leader Quick Links
 
-- [Mira Pal Pack](../pals/Mira-main/README.md)
+- [Mira Pal Pack](../official/pals/Mira-main/README.md)
 - [Mira-first usage](02-getting-started/mira-first-usage.md)
 - [Mira-first prompt cards](02-getting-started/mira-first-prompt-cards.md)
-- [Mira first task intake template](../pals/Mira-main/templates/task-packages/mira-first-task-intake.md)
-- [Mira composite deliverable template](../pals/Mira-main/templates/task-packages/mira-composite-deliverable-task-package.md)
-- [Mira runtime brief template](../pals/Mira-main/templates/task-packages/mira-runtime-brief.md)
-- [Mira leader skills](../pals/Mira-main/skills/index.md)
-- [Mira leader knowledge](../pals/Mira-main/knowledge/INDEX.md)
-- [Mira workflows](../pals/Mira-main/workflows/index.md)
-- [Mira runbooks](../pals/Mira-main/runbooks/INDEX.md)
-- [Mira evals](../pals/Mira-main/evals/README.md)
-- [Mira self-health report](../pals/Mira-main/reports/mira-self-health-report.md)
-- [PalSmith Mira Leader review](../pals/Mira-main/reports/palsmith-mira-leader-review.md)
+- [Mira first task intake template](../official/pals/Mira-main/templates/task-packages/mira-first-task-intake.md)
+- [Mira composite deliverable template](../official/pals/Mira-main/templates/task-packages/mira-composite-deliverable-task-package.md)
+- [Mira runtime brief template](../official/pals/Mira-main/templates/task-packages/mira-runtime-brief.md)
+- [Mira leader skills](../official/pals/Mira-main/skills/index.md)
+- [Mira leader knowledge](../official/pals/Mira-main/knowledge/INDEX.md)
+- [Mira workflows](../official/pals/Mira-main/workflows/index.md)
+- [Mira runbooks](../official/pals/Mira-main/runbooks/INDEX.md)
+- [Mira evals](../official/pals/Mira-main/evals/README.md)
+- [Mira self-health report archive](../archive/migration-from-v0.3/official-pal-history/official/pals/Mira-main/reports/mira-self-health-report.md)
+- [PalSmith Mira Leader review archive](../archive/migration-from-v0.3/official-pal-history/official/pals/Mira-main/reports/palsmith-mira-leader-review.md)
 
 ## Official Pal Example Links
 
@@ -201,88 +207,88 @@ AgentPal is a Pal layer and Pal Pack Standard practice for Markdown/JSON-capable
 
 ## Atlas Developer Quick Links
 
-- [Atlas Pal Pack](../pals/Atlas-developer/README.md)
-- [Atlas skills](../pals/Atlas-developer/skills/index.md)
-- [Atlas knowledge](../pals/Atlas-developer/knowledge/index.md)
-- [Atlas workflows](../pals/Atlas-developer/workflows/index.md)
-- [Atlas runbooks](../pals/Atlas-developer/runbooks/index.md)
-- [Atlas evals](../pals/Atlas-developer/evals/README.md)
-- [Atlas research inventory](../pals/Atlas-developer/research/source-inventory.md)
-- [Atlas Developer gap report](08-release-candidate/atlas-developer-gap-report.md)
-- [Atlas self-health report](08-release-candidate/atlas-self-health-report.md)
+- [Atlas Pal Pack](../official/pals/Atlas-developer/README.md)
+- [Atlas skills](../official/pals/Atlas-developer/skills/index.md)
+- [Atlas knowledge](../official/pals/Atlas-developer/knowledge/index.md)
+- [Atlas workflows](../official/pals/Atlas-developer/workflows/index.md)
+- [Atlas runbooks](../official/pals/Atlas-developer/runbooks/index.md)
+- [Atlas evals](../official/pals/Atlas-developer/evals/README.md)
+- [Atlas research inventory](../official/pals/Atlas-developer/research/source-inventory.md)
+- [Atlas Developer gap report](../archive/migration-from-v0.3/release-candidate-docs/atlas-developer-gap-report.md)
+- [Atlas self-health report](../archive/migration-from-v0.3/release-candidate-docs/atlas-self-health-report.md)
 
 ## Vega Research Quick Links
 
-- [Vega Pal Pack](../pals/Vega-research/README.md)
-- [Vega skills](../pals/Vega-research/skills/index.md)
-- [Vega knowledge](../pals/Vega-research/knowledge/index.md)
-- [Vega workflows](../pals/Vega-research/workflows/index.md)
-- [Vega runbooks](../pals/Vega-research/runbooks/index.md)
-- [Vega evals](../pals/Vega-research/evals/README.md)
-- [Vega source inventory](../pals/Vega-research/research/source-inventory.md)
-- [Vega Research gap report](08-release-candidate/vega-research-gap-report.md)
-- [Vega self-health report](08-release-candidate/vega-self-health-report.md)
+- [Vega Pal Pack](../official/pals/Vega-research/README.md)
+- [Vega skills](../official/pals/Vega-research/skills/index.md)
+- [Vega knowledge](../official/pals/Vega-research/knowledge/index.md)
+- [Vega workflows](../official/pals/Vega-research/workflows/index.md)
+- [Vega runbooks](../official/pals/Vega-research/runbooks/index.md)
+- [Vega evals](../official/pals/Vega-research/evals/README.md)
+- [Vega source inventory](../official/pals/Vega-research/research/source-inventory.md)
+- [Vega Research gap report](../archive/migration-from-v0.3/release-candidate-docs/vega-research-gap-report.md)
+- [Vega self-health report](../archive/migration-from-v0.3/release-candidate-docs/vega-self-health-report.md)
 
 ## Rhea Safety Quick Links
 
-- [Rhea Pal Pack](../pals/Rhea-system/README.md)
-- [Rhea skills](../pals/Rhea-system/skills/index.md)
-- [Rhea knowledge](../pals/Rhea-system/knowledge/index.md)
-- [Rhea workflows](../pals/Rhea-system/workflows/index.md)
-- [Rhea runbooks](../pals/Rhea-system/runbooks/index.md)
-- [Rhea evals](../pals/Rhea-system/evals/README.md)
-- [Rhea source inventory](../pals/Rhea-system/research/source-inventory.md)
-- [Rhea System / Runtime gap report](08-release-candidate/rhea-system-runtime-gap-report.md)
-- [Rhea self-health report](08-release-candidate/rhea-self-health-report.md)
+- [Rhea Pal Pack](../official/pals/Rhea-system/README.md)
+- [Rhea skills](../official/pals/Rhea-system/skills/index.md)
+- [Rhea knowledge](../official/pals/Rhea-system/knowledge/index.md)
+- [Rhea workflows](../official/pals/Rhea-system/workflows/index.md)
+- [Rhea runbooks](../official/pals/Rhea-system/runbooks/index.md)
+- [Rhea evals](../official/pals/Rhea-system/evals/README.md)
+- [Rhea source inventory](../official/pals/Rhea-system/research/source-inventory.md)
+- [Rhea System / Runtime gap report](../archive/migration-from-v0.3/release-candidate-docs/rhea-system-runtime-gap-report.md)
+- [Rhea self-health report](../archive/migration-from-v0.3/release-candidate-docs/rhea-self-health-report.md)
 
 ## Quinn Quality Quick Links
 
-- [Quinn Pal Pack](../pals/Quinn-quality/README.md)
-- [Quinn skills](../pals/Quinn-quality/skills/index.md)
-- [Quinn knowledge](../pals/Quinn-quality/knowledge/index.md)
-- [Quinn workflows](../pals/Quinn-quality/workflows/index.md)
-- [Quinn runbooks](../pals/Quinn-quality/runbooks/index.md)
-- [Quinn evals](../pals/Quinn-quality/evals/README.md)
-- [Quinn source inventory](../pals/Quinn-quality/research/source-inventory.md)
-- [Quinn Quality / Verification gap report](08-release-candidate/quinn-quality-verification-gap-report.md)
-- [Quinn self-health report](08-release-candidate/quinn-self-health-report.md)
+- [Quinn Pal Pack](../official/pals/Quinn-quality/README.md)
+- [Quinn skills](../official/pals/Quinn-quality/skills/index.md)
+- [Quinn knowledge](../official/pals/Quinn-quality/knowledge/index.md)
+- [Quinn workflows](../official/pals/Quinn-quality/workflows/index.md)
+- [Quinn runbooks](../official/pals/Quinn-quality/runbooks/index.md)
+- [Quinn evals](../official/pals/Quinn-quality/evals/README.md)
+- [Quinn source inventory](../official/pals/Quinn-quality/research/source-inventory.md)
+- [Quinn Quality / Verification gap report](../archive/migration-from-v0.3/release-candidate-docs/quinn-quality-verification-gap-report.md)
+- [Quinn self-health report](../archive/migration-from-v0.3/release-candidate-docs/quinn-self-health-report.md)
 
 ## Morgan Document Workflow Quick Links
 
-- [Morgan Pal Pack](../pals/Morgan-document/README.md)
-- [Morgan skills](../pals/Morgan-document/skills/index.md)
-- [Morgan knowledge](../pals/Morgan-document/knowledge/index.md)
-- [Morgan workflows](../pals/Morgan-document/workflows/index.md)
-- [Morgan runbooks](../pals/Morgan-document/runbooks/index.md)
-- [Morgan evals](../pals/Morgan-document/evals/README.md)
-- [Morgan source inventory](../pals/Morgan-document/research/source-inventory.md)
-- [Morgan Document / File Workflow gap report](08-release-candidate/morgan-document-workflow-gap-report.md)
-- [Morgan self-health report](08-release-candidate/morgan-self-health-report.md)
+- [Morgan Pal Pack](../official/pals/Morgan-document/README.md)
+- [Morgan skills](../official/pals/Morgan-document/skills/index.md)
+- [Morgan knowledge](../official/pals/Morgan-document/knowledge/index.md)
+- [Morgan workflows](../official/pals/Morgan-document/workflows/index.md)
+- [Morgan runbooks](../official/pals/Morgan-document/runbooks/index.md)
+- [Morgan evals](../official/pals/Morgan-document/evals/README.md)
+- [Morgan source inventory](../official/pals/Morgan-document/research/source-inventory.md)
+- [Morgan Document / File Workflow gap report](../archive/migration-from-v0.3/release-candidate-docs/morgan-document-workflow-gap-report.md)
+- [Morgan self-health report](../archive/migration-from-v0.3/release-candidate-docs/morgan-self-health-report.md)
 
 ## Harper Writing / Content Craft Quick Links
 
-- [Harper Pal Pack](../pals/Harper-writing/README.md)
-- [Harper skills](../pals/Harper-writing/skills/index.md)
-- [Harper knowledge](../pals/Harper-writing/knowledge/index.md)
-- [Harper workflows](../pals/Harper-writing/workflows/index.md)
-- [Harper runbooks](../pals/Harper-writing/runbooks/index.md)
-- [Harper evals](../pals/Harper-writing/evals/README.md)
-- [Harper source inventory](../pals/Harper-writing/research/source-inventory.md)
-- [Harper Writing / Content Craft gap report](08-release-candidate/harper-writing-content-gap-report.md)
-- [Harper self-health report](08-release-candidate/harper-self-health-report.md)
+- [Harper Pal Pack](../official/pals/Harper-writing/README.md)
+- [Harper skills](../official/pals/Harper-writing/skills/index.md)
+- [Harper knowledge](../official/pals/Harper-writing/knowledge/index.md)
+- [Harper workflows](../official/pals/Harper-writing/workflows/index.md)
+- [Harper runbooks](../official/pals/Harper-writing/runbooks/index.md)
+- [Harper evals](../official/pals/Harper-writing/evals/README.md)
+- [Harper source inventory](../official/pals/Harper-writing/research/source-inventory.md)
+- [Harper Writing / Content Craft gap report](../archive/migration-from-v0.3/release-candidate-docs/harper-writing-content-gap-report.md)
+- [Harper self-health report](../archive/migration-from-v0.3/release-candidate-docs/harper-self-health-report.md)
 
 ## Nova Product / Strategy Quick Links
 
-- [Nova Pal Pack](../pals/Nova-product/README.md)
-- [Nova skills](../pals/Nova-product/skills/index.md)
-- [Nova knowledge](../pals/Nova-product/knowledge/index.md)
-- [Nova workflows](../pals/Nova-product/workflows/index.md)
-- [Nova runbooks](../pals/Nova-product/runbooks/index.md)
-- [Nova evals](../pals/Nova-product/evals/README.md)
-- [Nova source inventory](../pals/Nova-product/research/source-inventory.md)
-- [Nova Product / Strategy gap report](08-release-candidate/nova-product-strategy-gap-report.md)
-- [Nova self-health report](08-release-candidate/nova-self-health-report.md)
-- [PalSmith Nova review](../pals/Nova-product/reports/palsmith-nova-product-strategy-review.md)
+- [Nova Pal Pack](../official/pals/Nova-product/README.md)
+- [Nova skills](../official/pals/Nova-product/skills/index.md)
+- [Nova knowledge](../official/pals/Nova-product/knowledge/index.md)
+- [Nova workflows](../official/pals/Nova-product/workflows/index.md)
+- [Nova runbooks](../official/pals/Nova-product/runbooks/index.md)
+- [Nova evals](../official/pals/Nova-product/evals/README.md)
+- [Nova source inventory](../official/pals/Nova-product/research/source-inventory.md)
+- [Nova Product / Strategy gap report](../archive/migration-from-v0.3/release-candidate-docs/nova-product-strategy-gap-report.md)
+- [Nova self-health report](../archive/migration-from-v0.3/release-candidate-docs/nova-self-health-report.md)
+- [PalSmith Nova review archive](../archive/migration-from-v0.3/official-pal-history/official/pals/Nova-product/reports/palsmith-nova-product-strategy-review.md)
 
 ## Documentation Map
 
@@ -302,7 +308,7 @@ AgentPal is a Pal layer and Pal Pack Standard practice for Markdown/JSON-capable
 | [07-authoring-pals](07-authoring-pals/README.md) | Designing, writing, testing, publishing, and governing Pal Packs with PalSmith |
 | [07-memory-and-learning](07-memory-and-learning/00-memory-overview.md) | User memory, project memory, skill memory, and repeated-task learning |
 | [08-release-and-maintenance](08-release-and-maintenance/00-release-process.md) | Release process, public-safety checks, versioning, and maintenance |
-| [08-release-candidate](08-release-candidate/README.md) | v0.1.0-rc.1 scope, manifest, public-safe audit summary, tag process, and known limitations |
+| [08-release-candidate](08-release-candidate/README.md) | historical pointer to archived release-candidate documents |
 | [09-roadmap](09-roadmap/README.md) | v0.2 and v0.3 development plans, task pools, and release-readiness planning |
 | [research](research/README.md) | Archived research notes only; not a primary docs entry point |
 | [99-reference](99-reference/glossary.md) | Glossary, file index, official Pals, FAQ, and known limitations |
@@ -312,7 +318,7 @@ AgentPal is a Pal layer and Pal Pack Standard practice for Markdown/JSON-capable
 - Simple Pal Mode is the only active task-handling path.
 - Mira is the default Main Pal, Leader Pal, and Conductor.
 - `/pal Name` is a plain-text AgentPal direct-call protocol for a registered Pal by display name or alias; it does not require a native Runtime command.
-- `contacts/` and `registry/` are the source of truth for Pal discovery.
+- `workspace/organization/contacts/` is the source of truth for Pal discovery; legacy `contacts/` and `registry/` remain compatibility references.
 - AgentPal does not execute actions by itself; the host runtime performs file reads, writes, commands, tool calls, publishing, and deletion.
 - Deep Conductor is available as no-code protocols, templates, task packages, examples, evals, and replay reports; it is not automatic execution.
 - Subagent / external Agent execution remains unavailable, unknown, blocked, or host-dependent unless the host Runtime proves support and permission.

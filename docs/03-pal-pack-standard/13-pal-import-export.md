@@ -2,7 +2,7 @@
 
 ## Status
 
-Current for AgentPal `v0.1.0-rc.1`.
+Current for AgentPal `v0.3.0-rc.1`.
 
 Pal import and export are Pal asset governance tasks. The official owner Pal is PalSmith (`/pal PalSmith`), while the current Agent Runtime performs actual file operations and must return evidence.
 
@@ -21,11 +21,11 @@ Supported source types for a Runtime Task Package:
 - local directory
 - local archive
 - AgentPal internal Pal copy
-- project `.agentpal/pals`
+- legacy project `.agentpal/pals` archive, if explicitly provided as an import source and not as a default project binding
 
 PalSmith classifies imports as Standard Pal Pack, Pal Team Pack, ordinary Skill, Knowledge Pack, Persona Pack, Tool Pack, Mixed Resource Pack, or Unknown Resource.
 
-Only valid Pal Packs can enter `pals/`, contacts, and registry. Ordinary Skills, tools, models, plugins, MCP servers, external Agents, raw repositories, Knowledge Packs, and Persona Packs do not become Pal contacts.
+Only valid Pal Packs can enter `official/pals/` or the selected organization Pal area and the central contacts. Ordinary Skills, tools, models, plugins, MCP servers, external Agents, raw repositories, Knowledge Packs, and Persona Packs do not become Pal contacts.
 
 ## Pal Import Staging Task Package
 
@@ -41,7 +41,7 @@ The staging task package tells the current runtime:
 - expected import report
 - confirmation questions
 
-The runtime must not execute imported scripts, directly install into formal `pals/`, automatically write contacts, automatically write registry, or import `memory/user/` and `memory/project/` into a public Pal Pack.
+The runtime must not execute imported scripts, directly install into `official/pals/` or another selected organization Pal area, automatically write central contacts, automatically write legacy registry files, or import `memory/user/` and `memory/project/` into a public Pal Pack.
 
 ## Pal Install Task Package
 

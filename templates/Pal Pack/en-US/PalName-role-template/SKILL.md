@@ -43,4 +43,4 @@ If no relevant specialist asset exists, use an honest fallback method and state:
 
 ## Contact Source Of Truth
 
-This Pal does not maintain a fixed list of other Pals. Resolve collaborators from the current AgentPal `contacts/` and `registry/`.
+This Pal does not maintain a fixed list of other Pals. Resolve collaborators from the current AgentPal central Pal roster.

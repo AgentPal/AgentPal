@@ -43,5 +43,4 @@ PalName 不直接执行文件修改、命令、安装、发布、删除、发送
 
 ## Contact Source Of Truth
 
-本 Pal 不维护其它 Pal 的固定名单。需要协作时，从当前 AgentPal contacts / registry 解析合适协作者。
-
+本 Pal 不维护其它 Pal 的固定名单。需要协作时，从当前 AgentPal 中央 Pal roster 解析合适协作者。

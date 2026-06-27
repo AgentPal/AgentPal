@@ -11,8 +11,8 @@ The release package may include:
 - root release files such as `README.md`, `README.zh-CN.md`, `AGENTS.md`, `PAL.md`, `SKILL.md`, `agentpal.json`, release notes, notices, and checklists
 - prompt assets such as `prompts/codex/initialize-agentpal-workspace.md`
 - public documentation under `docs/`
-- official public Pal Packs under `pals/`
-- contacts and registry files used for Pal discovery
+- official public Pal Packs under `official/pals/`
+- central contacts under `workspace/organization/contacts/` used for Pal discovery
 - public examples, evals, prompts, templates, protocols, and placeholder memory/state/report directories
 - release audit notes under `release/v0.1.0-rc.1/`
 
@@ -25,7 +25,7 @@ The release package must not include private runtime memory, private project sta
 3. Review `docs/README.md`, the overview docs, Pal Pack Standard docs, runtime guide docs, and reference docs for public-safe navigation.
 4. Run the root [release checklist](../../RELEASE_CHECKLIST.md).
 5. Run the [public-safe checklist](02-public-safe-checklist.md).
-6. Audit `pals/`, `contacts/`, and `registry/` for Pal Pack structure and discovery consistency.
+6. Audit `official/pals/` and `workspace/organization/contacts/` for Pal Pack structure and discovery consistency.
 7. Confirm third-party notices and license files are present and accurate for the current repository contents.
 8. Prepare or update the GitHub release draft and user-facing release notes.
 9. Record audit evidence under `release/v0.1.0-rc.1/`.

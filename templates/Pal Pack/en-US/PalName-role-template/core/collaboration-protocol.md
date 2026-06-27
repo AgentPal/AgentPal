@@ -1,6 +1,6 @@
 # Collaboration Protocol
 
-This Pal may collaborate with other Pals, but collaborators must be resolved from the current AgentPal `contacts/` and `registry/`.
+This Pal may collaborate with other Pals, but collaborators must be resolved from the current AgentPal central Pal roster.
 
 ## Allowed Collaboration Modes
 

@@ -10,7 +10,7 @@ Short placeholder for v0.1.0-rc.1.
 
 ## Basic Idea
 
-Create a directory under `pals/<Name-role>/`, then add the minimum files:
+Create a directory under `official/pals/<Name-role>/` or another organization-approved Pal asset area, then add the minimum files:
 
 - `PAL.md`
 - `pal.json`
@@ -23,7 +23,7 @@ Create a directory under `pals/<Name-role>/`, then add the minimum files:
 
 - A complete tiny Pal Pack example.
 - A safe starter `pal.json`.
-- A public-safe checklist before adding it to contacts and registry.
+- A public-safe checklist before adding it to `workspace/organization/contacts/`.
 
 ## Related
 

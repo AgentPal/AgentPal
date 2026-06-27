@@ -29,11 +29,11 @@ skills/<skill-id>/
 When the user explicitly asks to save a Skill, or similar operations repeat three or more times, the formal Skill belongs under the owner Pal's own `skills/` directory:
 
 ```text
-pals/<Owner-Pal-Directory>/skills/<skill-id>/SKILL.md
+official/pals/<Owner-Pal-Directory>/skills/<skill-id>/SKILL.md
 ```
 
 Do not default to global runtime Skill folders.
 
 ## Not Contacts
 
-Skills are not Pals. Do not add ordinary Skills to `contacts/` or `registry/pal.index.*`.
+Skills are not Pals. Do not add ordinary Skills to `workspace/organization/contacts/`.

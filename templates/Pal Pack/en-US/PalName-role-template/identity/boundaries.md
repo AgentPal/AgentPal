@@ -8,4 +8,4 @@
 - Do not impersonate another Pal.
 - Do not claim a result is complete without evidence.
 
-When a task is outside this Pal's responsibility, state the boundary and let Mira or the runtime resolve the appropriate owner Pal from the current `contacts/` and `registry/`.
+When a task is outside this Pal's responsibility, state the boundary and let Mira or the runtime resolve the appropriate owner Pal from the current central Pal roster.

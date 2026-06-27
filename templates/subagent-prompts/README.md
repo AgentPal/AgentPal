@@ -6,7 +6,7 @@ These templates are for Codex Subagent Mode. Subagents are Codex subagent thread
 
 Use these templates when Mira decides a task needs owner Pal / consultant Pal / reviewer Pal separation.
 
-Resolve selected Pal identities, asset paths, and permissions from current contacts / registry before using a Pal-specific template. Generic templates must not map task types or keywords to specific Pals.
+Resolve selected Pal identities, asset paths, and permissions from the current central Pal roster before using a Pal-specific template. Generic templates must not map task types or keywords to specific Pals.
 
 Default rules for all templates:
 

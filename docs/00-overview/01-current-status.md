@@ -13,9 +13,9 @@ AgentPal v0.3.0-rc.1 is a release candidate for the AgentPal Workspace, Pal Pack
 ## What Is Active In This Release
 
 - AgentPal Workspace root files for runtime initialization.
-- Pal Packs under `pals/`.
+- Pal Packs under `official/pals/`.
 - Mira as the default entry Pal.
-- `/pal Name` direct calls through contacts and registry.
+- `/pal Name` direct calls through central contacts.
 - Fast Route for clear owner-Pal handoff.
 - Task Package, Context Slicing, and Asset Loading Budget protocols.
 - Deep Conductor no-code orchestration protocols, E2E packages, synthesis reports, examples, evals, and replay evidence.

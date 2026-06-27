@@ -78,9 +78,7 @@ Most users do not want to manually write:
     
 - `evals/`
     
-- `contacts/`
-    
-- `registry/`
+- central roster records under `workspace/organization/contacts/`
     
 
 PalSmith hides that complexity behind a natural language workflow.
@@ -310,7 +308,7 @@ Then PalSmith designs:
     
 - evals,
     
-- and registry/contact recommendations.
+- and central roster recommendations.
     
 
 Only after the user confirms should the current Runtime create the Pal Pack files.
@@ -537,7 +535,7 @@ Publish readiness should check:
     
 - eval coverage,
     
-- registry/contact consistency,
+- central roster consistency,
     
 - clean export safety,
     

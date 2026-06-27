@@ -15,6 +15,21 @@ pals/*/memory/runtime/*
 pals/*/memory/*.local.md
 pals/*/state/*
 pals/*/reports/*
+official/pals/*/memory/user/*
+official/pals/*/memory/project/*
+official/pals/*/memory/projects/*
+official/pals/*/memory/runtime/*
+official/pals/*/memory/*.local.md
+official/pals/*/state/*
+official/pals/*/reports/*
+official/pals/*/reports/**/*.md
+
+# Central workspace-private project records
+workspace/projects/*
+!workspace/projects/README.md
+!workspace/projects/projects.index.json
+!workspace/projects/_template/
+!workspace/projects/_template/**
 
 # Collaboration and import staging
 contacts/collaboration-memory.md
@@ -61,6 +76,15 @@ desktop.ini
 !pals/*/memory/runtime/README.md
 !pals/*/state/README.md
 !pals/*/reports/README.md
+!official/pals/*/memory/README.md
+!official/pals/*/memory/user/README.md
+!official/pals/*/memory/project/README.md
+!official/pals/*/memory/projects/README.md
+!official/pals/*/memory/runtime/README.md
+!official/pals/*/state/README.md
+!official/pals/*/reports/README.md
+!official/pals/*/reports/**/
+!official/pals/*/reports/**/README.md
 !imports/raw/README.md
 !imports/private/README.md
 !imports/tmp/README.md

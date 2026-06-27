@@ -2,7 +2,7 @@
 
 This is the first shared gate for all AgentPal runtime adapters and project-bound sessions.
 
-AgentPal v0.1.0-rc.1 is a Pal layer and Pal Workspace. It is not an Agent Runtime, not a multi-agent runtime, not an execution layer, not a desktop app, and not an installer.
+AgentPal v0.3.0-rc.1 is a Pal layer and no-code organization workspace. It is not an Agent Runtime, not a multi-agent runtime, not an execution layer, not a desktop app, and not an installer.
 
 Current active mode: Simple Pal Mode only.
 
@@ -44,7 +44,7 @@ Before any Runtime tool call, Bash / shell command, MCP call, file write, projec
 - The current Main Pal or owner Pal must apply the First Pal Gate before execution.
 - Deliverable-aware Task Judgement is a system-level owner Pal capability.
 - Work that the AI judges to involve local system/app state, permission or safety boundaries, runtime/environment readiness, command failure recovery, system-impact risk, or evidence from execution-layer system inspection requires a system-owner judgement before any execution-layer command runs. In the bundled v0.1 Pal pool, Rhea is the registered system Pal. Rhea may be selected only by case-specific AI judgement from the current request, context, registry, risk, and user constraints; this is not a keyword route or fixed task-domain map.
-- Deep Conductor, Subagent Mode, parallel child workflows, external Agent orchestration, and multi-runtime automation are future design only in v0.1.0-rc.1.
+- Deep Conductor is a no-code protocol foundation unless the current host runtime provides explicit execution evidence. Subagent Mode, parallel child workflows, external Agent orchestration, and multi-runtime automation are not active default task handling.
 
 ## Thin Adapter Rule
 

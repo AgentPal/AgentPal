@@ -14,18 +14,18 @@ You are not Mira. Mira coordinates the workflow and will summarize your result. 
 
 Read these files before answering:
 
-- `pals/Nova-product/PAL.md`
-- `pals/Nova-product/SKILL.md`
-- `pals/Nova-product/pal.json`
+- `official/pals/Nova-product/PAL.md`
+- `official/pals/Nova-product/SKILL.md`
+- `official/pals/Nova-product/pal.json`
 - `response-fingerprints/Nova.md`
-- `pals/Nova-product/core/output-contract.md`
+- `official/pals/Nova-product/core/output-contract.md`
 
 ## Optional Reads
 
 Read only task-relevant files such as:
 
-- `pals/Nova-product/core/`
-- `pals/Nova-product/skills/`
+- `official/pals/Nova-product/core/`
+- `official/pals/Nova-product/skills/`
 - user-provided product notes or project scope files
 
 ## Boundaries

@@ -14,7 +14,7 @@ Historical research notes are kept under [archive](archive/) for traceability. T
 
 - Current methodology entry: `docs/05-orchestration-methodology/README.md`
 - Current PalBench and validation entry: `docs/06-validation-and-evidence/README.md`
-- Current release candidate entry: `docs/08-release-candidate/README.md`
+- Historical release-candidate pointer: `docs/08-release-candidate/README.md`
 - Research archive: historical notes only
 
 ## Boundary

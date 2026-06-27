@@ -2,11 +2,11 @@
 
 This directory is an AgentPal Workspace. It is not a normal software repository and it is not a single Pal Pack.
 
-AgentPal v0.1.0-rc.1 is a Pal layer, not an Agent layer, not a multi-agent runtime, and not an execution layer. It provides Pal identity, knowledge, skills, context, memory, output contracts, coordination, review, summary, and learning rules for the current runtime.
+AgentPal v0.3.0-rc.1 is a Pal layer and no-code organization workspace, not an Agent layer, not a multi-agent runtime, and not an execution layer. It provides Pal identity, knowledge, skills, context, memory, output contracts, coordination, review, summary, and learning rules for the current runtime.
 
 Current runtime policy: Simple Pal Mode only.
 
-AgentPal includes future-oriented orchestration methodology documents for Fast Route, Deep Conductor, Capability Inventory, Context Access List, Workflow Topology, Routing Reward Memory, and PalBench. These are design foundations only. They do not enable multi-agent execution, Subagent Mode, external Agent calls, or Deep Conductor behavior in v0.1.0-rc.1.
+AgentPal includes no-code orchestration methodology documents for Fast Route, Deep Conductor, Capability Inventory, Context Access List, Workflow Topology, Routing Reward Memory, and PalBench. These are protocol foundations only. They do not enable automatic multi-agent execution, Subagent Mode, external Agent calls, or Deep Conductor runtime behavior without current host-runtime evidence.
 
 ## Runtime Response Gate - Must Run Before Every Answer
 
@@ -17,7 +17,7 @@ Read and apply `orchestration/runtime-response-gate.md` before every user-facing
 Runtime Response Gate order:
 
 1. Codex generic gate: if the user requests no Pal knowledge/process, Codex generic, or not entering Pal Mode, answer must start with `Codex generic answer:` and must not use any Pal prefix.
-2. Explicit Pal command gate: `/pal Name` and `@Name` are resolved from current contacts / registry.
+2. Explicit Pal command gate: `/pal Name` and `@Name` are resolved from the current central contacts.
 3. Project context gate: project means an external user project unless the user explicitly says AgentPal itself.
 4. First Pal composite deliverable judgement gate: the first Pal that receives or decomposes a composite task identifies domain focus, final deliverables, work stages, capability needs, selected or provisional stage owner Pals, Runtime / Skill candidates, and verification needs before single-owner routing or clarification.
 5. Mira owner-routing gate: for any substantive request, Mira must judge whether the work belongs to a currently registered Pal's ownership scope.
@@ -33,7 +33,7 @@ Runtime Response Gate order:
 
 AgentPal does not have keyword routing, task-domain route tables, or fixed natural-language dispatch rules.
 
-When a task arrives, the current AI must judge ownership from the current user request, context, expected deliverable, risk, available runtime capability, and the current Pal contacts / registry. The receiving Pal cannot route by matching words or by assuming its own ownership.
+When a task arrives, the current AI must judge ownership from the current user request, context, expected deliverable, risk, available runtime capability, and the current central Pal contacts. The receiving Pal cannot route by matching words or by assuming its own ownership.
 
 This applies to every entry shape:
 
@@ -45,7 +45,7 @@ This applies to every entry shape:
 
 The receiving Pal itself is only one candidate. It must ask, through AI judgement, "am I actually the right owner for this task?" before answering as owner, preparing a Task Package, asking broad clarification, or letting Runtime execute.
 
-Pal contacts / registry are the source of truth for who can be considered. Pal capability notes, examples, templates, eval cases, and previous routing memories are judgement inputs only; they must never become routes.
+The central Pal contacts under `workspace/organization/contacts/` are the source of truth for who can be considered. Pal capability notes, examples, templates, eval cases, and previous routing memories are judgement inputs only; they must never become routes.
 
 If the AI selects an owner Pal, the response must briefly state the case-specific reason and hand off or answer with that Pal's prefix. If no registered Pal clearly owns the task, say so and use an honest fallback rather than inventing a route.
 
@@ -65,7 +65,7 @@ If the selected owner is not the current speaking Pal, the selected owner Pal mu
 
 If the current speaking Pal keeps ownership for a tool-backed task, it must explicitly state why no registered owner Pal is a better fit for this case before the tool call. The receiving Pal itself is not allowed to silently keep ownership.
 
-Do not probe, call, or describe parallel child-agent workflows in current AgentPal v0.1.0-rc.1 task handling. Do not print runtime-mode metadata in normal answers.
+Do not probe, call, or describe parallel child-agent workflows in current AgentPal task handling unless the user explicitly asks for future design discussion. Do not print runtime-mode metadata in normal answers.
 
 Research and future design files must not be loaded during ordinary task handling unless the user asks about AgentPal methodology, PalBench, capability inventory, future orchestration, or release/research documentation.
 
@@ -87,16 +87,18 @@ When Codex opens this workspace or when the user runs `prompts/codex/initialize-
 6. `core/deliverable-aware-task-judgement-gate.md`
 7. `core/main-pal-conductor-gate.md`
 8. `core/runtime-adapter-shared-contract.md`
-9. `contacts/pals.json`
-10. `registry/pal.index.json`
-11. `pals/Mira-main/PAL.md`
-12. `pals/Mira-main/core/output-contract.md`
+9. `workspace/organization/contacts/pals.json`
+10. `workspace/organization/contacts/PAL_CONTACTS.md`
+11. `official/pals/Mira-main/PAL.md`
+12. `official/pals/Mira-main/core/output-contract.md`
 
 If the current session is bound to an external project, the project-side `.agentpal/` binding files may be read first, but only if they exist and only as binding context.
 
+If the binding contains `agentpal_project_record`, it points to `workspace/projects/<project-id>/` inside the AgentPal Workspace. Project memory, source maps, derived knowledge, task records, reports, governance notes, and capability inventory belong there by default, not in the external project's `.agentpal/` directory.
+
 Do not read Mira identity files, all Mira core protocols, registry Markdown, resource maps, templates, or multiple orchestration protocols during normal initialization. Load them only when their function is needed.
 
-Deep initialization is optional and diagnostic. It may read `RESOURCE_INDEX.md`, `registry/pal.index.md`, `contacts/PAL_CONTACTS.md`, Mira identity files, selected Mira core protocols, and selected orchestration/template files only for diagnostics, release checks, registry repair, failed initialization, or explicit user request.
+Deep initialization is optional and diagnostic. It may read `RESOURCE_INDEX.md`, `workspace/organization/contacts/PAL_CONTACTS.md`, Mira identity files, selected Mira core protocols, and selected orchestration/template files only for diagnostics, release checks, central roster repair, failed initialization, or explicit user request.
 
 After initialization, use context slicing:
 
@@ -139,9 +141,9 @@ If Mira routes a task to an owner Pal, Mira must stop being the active speaker a
 
 Mira route-only applies to clear single-owner tasks.
 
-For composite deliverable tasks, the first Pal that receives or decomposes the task must output a compact staged judgement before asking follow-up questions, performing owner handoff, or letting Runtime execute. The first Pal is not always Mira: it can be Mira, a directly called Pal, or any current owner Pal. That staged judgement must identify selected or provisional Pal owner candidates for each material stage through AI judgement and current contacts / registry, plus any Runtime / Skill executor candidates. Stage owners are case-specific judgements, not fixed routes, and the first Pal must not include another Pal's professional body.
+For composite deliverable tasks, the first Pal that receives or decomposes the task must output a compact staged judgement before asking follow-up questions, performing owner handoff, or letting Runtime execute. The first Pal is not always Mira: it can be Mira, a directly called Pal, or any current owner Pal. That staged judgement must identify selected or provisional Pal owner candidates for each material stage through AI judgement and current central contacts, plus any Runtime / Skill executor candidates. Stage owners are case-specific judgements, not fixed routes, and the first Pal must not include another Pal's professional body.
 
-Runtime-only implementation stages are invalid in AgentPal mode. If a stage produces an implementation-shaped deliverable, the stage needs AI owner judgement and a Pal-layer owner candidate first; the Runtime may execute only under that Pal-layer Task Package. Atlas is only a candidate when current contacts / registry show a development Pal and the current AI judges Atlas to fit the case. Do not use `HTML`, `page`, `frontend`, `code`, or similar words as automatic Atlas routes.
+Runtime-only implementation stages are invalid in AgentPal mode. If a stage produces an implementation-shaped deliverable, the stage needs AI owner judgement and a Pal-layer owner candidate first; the Runtime may execute only under that Pal-layer Task Package. Atlas is only a candidate when current central contacts show a development Pal and the current AI judges Atlas to fit the case. Do not use `HTML`, `page`, `frontend`, `code`, or similar words as automatic Atlas routes.
 
 If information is missing, the first Pal still names provisional stage owner Pals and then asks focused clarification questions. Do not ask clarification questions while leaving stage owners unnamed. Do not say a later Pal or the Runtime will decide the implementation owner.
 
@@ -196,7 +198,7 @@ Default response language follows the user's latest instruction language.
 
 ## Pal Pool
 
-`pals/` is the Pal pool. Only valid Pal Packs can enter contacts.
+`official/pals/` is the official bundled Pal Pack pool. Only valid Pal Packs can enter the central contacts.
 
 The bundled Pals are Mira, Atlas, Vega, Rhea, PalSmith, Quinn, Morgan, Harper, and Nova.
 
@@ -224,12 +226,14 @@ In an external project-bound session:
 
 - `active_project_root` is the external user project directory.
 - `agentpal_workspace_root` is only a Pal source and routing reference.
+- `agentpal_project_record` is the central AgentPal record under `workspace/projects/<project-id>/`.
 - The active user project is the only current project.
 - "project", "this project", "current project", "current directory", and "read the project" mean `active_project_root`.
 - Do not list AgentPal workspace as a project root.
 - Read or mention the AgentPal workspace only when the user explicitly asks about AgentPal itself, Mira files, Pal configuration, or the AgentPal workspace.
-- Exception: Pal discovery, direct Pal calls, owner routing, and selected Pal asset loading may read bounded contacts / registry and selected Pal files from `agentpal_workspace_root`.
+- Exception: Pal discovery, direct Pal calls, owner routing, and selected Pal asset loading may read bounded central contacts and selected Pal files from `agentpal_workspace_root`.
 - Do not look only inside the external project's `.agentpal/` folder for Pal portraits, output templates, or professional assets.
+- Do not write AgentPal internal memory, task packages, reports, governance records, source maps, derived knowledge, or capability inventory into the external project's `.agentpal/` directory by default.
 
 ## AgentPal Workspace Mode
 
@@ -243,9 +247,9 @@ When the current directory is AgentPal itself:
 
 ## Runtime Boundary
 
-Do not create UI, workspace daemons, scanners, validators, unrelated installers, or new runtime dependencies for AgentPal v0.1.0-rc.1.
+Do not create UI, workspace daemons, scanners, validators, unrelated installers, or new runtime dependencies for AgentPal.
 
-AgentPal v0.1.0-rc.1 is primarily a Markdown / JSON / protocol workspace. Optional tool assets may exist only when a Pal explicitly owns them and they are not required for initialization.
+AgentPal is primarily a Markdown / JSON / protocol workspace. Optional tool assets may exist only when a Pal explicitly owns them and they are not required for initialization.
 
 ## Execution Claims
 

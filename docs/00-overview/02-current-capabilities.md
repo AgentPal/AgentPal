@@ -5,8 +5,8 @@ This page describes what AgentPal v0.3.0-rc.1 can do today without treating host
 ## Workspace Capabilities
 
 - Provide an AgentPal Workspace with runtime-readable Markdown / JSON / protocol assets.
-- Organize official and user-added Pal Packs under `pals/`.
-- Expose Pal discovery through `contacts/` and `registry/`.
+- Organize official and user-added Pal Packs under `official/pals/` or another organization-approved Pal asset area.
+- Expose Pal discovery through `workspace/organization/contacts/`, with legacy `contacts/` and `registry/` retained as compatibility references only.
 - Define runtime-facing release assets such as `AGENTS.md`, `PAL.md`, `SKILL.md`, `agentpal.json`, and the Codex initialization prompt at `prompts/codex/initialize-agentpal-workspace.md`.
 
 ## Pal Interaction Capabilities

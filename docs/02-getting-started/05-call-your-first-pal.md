@@ -29,7 +29,7 @@ The selected Pal should then use that Pal's identity, Output Contract, and at le
 
 ## Unknown Pal
 
-If a Pal name is unknown, the runtime should check `contacts/pals.json` and `registry/pal.index.json`, report that the Pal is missing, and avoid inventing it.
+If a Pal name is unknown, the runtime should check `workspace/organization/contacts/pals.json` and `workspace/organization/contacts/PAL_CONTACTS.md`, report that the Pal is missing, and avoid inventing it.
 
 ## Boundary
 

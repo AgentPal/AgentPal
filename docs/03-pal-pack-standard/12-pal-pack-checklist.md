@@ -4,7 +4,7 @@
 
 Current for AgentPal `v0.1.0-rc.1`.
 
-Use this checklist before adding a Pal Pack to contacts / registry or publishing it.
+Use this checklist before adding a Pal Pack to central contacts or publishing it.
 
 ## Minimal Required Files
 
@@ -43,7 +43,7 @@ Use this checklist before adding a Pal Pack to contacts / registry or publishing
 
 ## Discovery Checks
 
-- [ ] The directory is a valid Pal Pack before contacts / registry are updated.
+- [ ] The directory is a valid Pal Pack before central contacts are updated.
 - [ ] Contacts and registry are the source of truth for discovery.
 - [ ] No ordinary Skill, plugin, model, MCP server, runtime, raw repository, knowledge pack, or persona pack was added as a Pal.
 - [ ] No Pal Pack contains a hard-coded route map for other Pals.

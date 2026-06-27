@@ -4,7 +4,7 @@
 
 Current for AgentPal `v0.1.0-rc.1`.
 
-This directory is the tutorial entry for creating your own Pal Pack. It assumes you are creating files under `pals/<Pal-Directory>/` in an AgentPal Workspace.
+This directory is the tutorial entry for creating your own Pal Pack. It assumes you are creating files under `official/pals/<Pal-Directory>/` or another organization-approved Pal asset area in an AgentPal Workspace.
 
 ## Authoring Path
 

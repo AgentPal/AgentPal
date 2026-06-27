@@ -13,15 +13,15 @@ This index points to the v0.2 first implementation of the official 9 Pal real ta
 
 | Pal | Role | Task examples |
 | --- | --- | --- |
-| Mira | Main Pal / Leader / Conductor | `pals/Mira-main/examples/tasks/` |
-| Atlas | Developer / Implementation Lead | `pals/Atlas-developer/examples/tasks/` |
-| Vega | Research / Intelligence Lead | `pals/Vega-research/examples/tasks/` |
-| Rhea | System / Runtime Safety Lead | `pals/Rhea-system/examples/tasks/` |
-| PalSmith | Pal Asset Governor | `pals/PalSmith-pal-governor/examples/tasks/` |
-| Quinn | Quality / Verification Lead | `pals/Quinn-quality/examples/tasks/` |
-| Morgan | Document / File Workflow Lead | `pals/Morgan-document/examples/tasks/` |
-| Harper | Writing / Content Craft Lead | `pals/Harper-writing/examples/tasks/` |
-| Nova | Product / Strategy Lead | `pals/Nova-product/examples/tasks/` |
+| Mira | Main Pal / Leader / Conductor | `official/pals/Mira-main/examples/tasks/` |
+| Atlas | Developer / Implementation Lead | `official/pals/Atlas-developer/examples/tasks/` |
+| Vega | Research / Intelligence Lead | `official/pals/Vega-research/examples/tasks/` |
+| Rhea | System / Runtime Safety Lead | `official/pals/Rhea-system/examples/tasks/` |
+| PalSmith | Pal Asset Governor | `official/pals/PalSmith-pal-governor/examples/tasks/` |
+| Quinn | Quality / Verification Lead | `official/pals/Quinn-quality/examples/tasks/` |
+| Morgan | Document / File Workflow Lead | `official/pals/Morgan-document/examples/tasks/` |
+| Harper | Writing / Content Craft Lead | `official/pals/Harper-writing/examples/tasks/` |
+| Nova | Product / Strategy Lead | `official/pals/Nova-product/examples/tasks/` |
 
 ## Cross-Pal Examples
 

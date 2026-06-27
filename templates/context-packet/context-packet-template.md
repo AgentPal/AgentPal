@@ -10,7 +10,7 @@ constraints:
 - REPLACE_WITH_CONSTRAINT
 user_visible_handoff: true
 required_response_fingerprint: response-fingerprints/REPLACE_WITH_TARGET_PAL.md
-required_output_contract: pals/REPLACE_WITH_TARGET_PAL_DIR/core/output-contract.md
+required_output_contract: official/pals/REPLACE_WITH_TARGET_PAL_DIR/core/output-contract.md
 minimum_asset_loading:
   - PAL.md or pal.json identity
   - output contract
@@ -64,10 +64,10 @@ constraints:
   - do not modify startup items without user confirmation
 user_visible_handoff: true
 required_response_fingerprint: response-fingerprints/Rhea.md
-required_output_contract: pals/Rhea-system/core/output-contract.md
+required_output_contract: official/pals/Rhea-system/core/output-contract.md
 minimum_asset_loading:
-  - pals/Rhea-system/PAL.md
-  - pals/Rhea-system/core/output-contract.md
+  - official/pals/Rhea-system/PAL.md
+  - official/pals/Rhea-system/core/output-contract.md
   - response-fingerprints/Rhea.md
   - Rhea asset or fallback method
 allow_codex_generic_answer: false

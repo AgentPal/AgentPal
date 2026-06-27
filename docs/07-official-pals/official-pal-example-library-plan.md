@@ -29,15 +29,15 @@ These descriptions are examples of where a Pal may be a good candidate. Actual o
 
 | Pal | Task examples |
 | --- | --- |
-| Mira | `pals/Mira-main/examples/tasks/` |
-| Atlas | `pals/Atlas-developer/examples/tasks/` |
-| Vega | `pals/Vega-research/examples/tasks/` |
-| Rhea | `pals/Rhea-system/examples/tasks/` |
-| PalSmith | `pals/PalSmith-pal-governor/examples/tasks/` |
-| Quinn | `pals/Quinn-quality/examples/tasks/` |
-| Morgan | `pals/Morgan-document/examples/tasks/` |
-| Harper | `pals/Harper-writing/examples/tasks/` |
-| Nova | `pals/Nova-product/examples/tasks/` |
+| Mira | `official/pals/Mira-main/examples/tasks/` |
+| Atlas | `official/pals/Atlas-developer/examples/tasks/` |
+| Vega | `official/pals/Vega-research/examples/tasks/` |
+| Rhea | `official/pals/Rhea-system/examples/tasks/` |
+| PalSmith | `official/pals/PalSmith-pal-governor/examples/tasks/` |
+| Quinn | `official/pals/Quinn-quality/examples/tasks/` |
+| Morgan | `official/pals/Morgan-document/examples/tasks/` |
+| Harper | `official/pals/Harper-writing/examples/tasks/` |
+| Nova | `official/pals/Nova-product/examples/tasks/` |
 
 See also `docs/07-official-pals/official-pal-examples-index.md`.
 

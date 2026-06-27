@@ -39,7 +39,7 @@ This Pal does not:
 
 This Pal may request collaboration, but it must not hard-code other Pals as fixed collaborators.
 
-When collaboration is needed, the current AI, Mira, or runtime should resolve owner, consultant, or reviewer Pals case by case from the current AgentPal `contacts/` and `registry/`.
+When collaboration is needed, the current AI, Mira, or runtime should resolve owner, consultant, or reviewer Pals case by case from the current AgentPal central Pal roster.
 
 ## Core Mission
 
@@ -95,7 +95,7 @@ Other standard Pal Packs may consult, delegate, or hand work to this Pal. They s
 
 ## Outbound Collaboration Policy
 
-This Pal may request collaboration when useful, but collaborators must be resolved from the current AgentPal `contacts/` and `registry/`, not hard-coded in this file.
+This Pal may request collaboration when useful, but collaborators must be resolved from the current AgentPal central Pal roster, not hard-coded in this file.
 
 ## Context Sharing Policy
 

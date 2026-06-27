@@ -1,6 +1,6 @@
 # Pal Pack English Templates
 
-This directory contains the English AgentPal Pal Pack template set. Use it to create a new public-safe Pal Pack that can be copied into an AgentPal Workspace and registered through `contacts/` and `registry/`.
+This directory contains the English AgentPal Pal Pack template set. Use it to create a new public-safe Pal Pack that can be copied into an AgentPal Workspace and registered through the central Pal roster under `workspace/organization/contacts/`.
 
 A Pal is a long-lived working companion that a compatible runtime can read. It is not a single prompt, not an ordinary one-off Skill, and not an Agent runtime. A Pal Pack should contain identity, responsibility boundaries, output contracts, knowledge, skills, workflows, learning notes, self-tests, examples, and public-safe placeholders for runtime-only data.
 
@@ -55,17 +55,17 @@ A Pal is a long-lived working companion that a compatible runtime can read. It i
    - `core/output-contract.md`
 
 4. Add real public-safe knowledge, Skills, workflows, examples, and evals as needed.
-5. Place the finished Pal Pack under:
+5. Place the finished Pal Pack under the official Pal asset pool:
 
    ```text
-   AgentPal/pals/
+   AgentPal/official/pals/
    ```
 
 6. Register it only after it is complete, public-safe, and reviewed.
 
 ## Register The Pal Pack
 
-Copying the directory into `pals/` does not register it by itself. Registration updates the AgentPal Workspace contacts / registry files so Mira routing, `/pal Name`, and `@Name` can discover the Pal.
+Copying the directory into `official/pals/` does not register it by itself. Registration updates the central Pal roster under `workspace/organization/contacts/` so Mira routing, `/pal Name`, and `@Name` can discover the Pal.
 
 Run `prompts/add-pal-to-agentpal.md` from the AgentPal Workspace:
 

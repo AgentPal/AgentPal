@@ -35,7 +35,7 @@ PalName：
 
 ## Contact Source Of Truth
 
-协作者必须从当前 AgentPal contacts / registry 中解析。
+协作者必须从当前 AgentPal 中央 Pal roster 中解析。
 
 新增、删除或重命名其它 Pal，不应要求修改本 Pal 的专业知识、Skill、Workflow 或 Runbook。
 
@@ -54,4 +54,3 @@ skills/index.md
 ```
 
 信息不足或存在隐私 / 安全风险时，先记录到 `learning/`，不要直接发布为正式 Skill。
-

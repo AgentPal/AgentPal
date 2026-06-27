@@ -10,7 +10,7 @@ A portable working companion for agent runtimes. A Pal packages identity, knowle
 
 ## Pal Pack
 
-The directory package for one Pal, usually under `pals/<Pal-Directory>/`.
+The directory package for one Pal, usually under `official/pals/<Pal-Directory>/`.
 
 ## Simple Pal Mode
 
@@ -18,11 +18,11 @@ The only active task-handling path in AgentPal v0.1.0-rc.1. Mira routes or a use
 
 ## Contacts
 
-Files under `contacts/` that help define registered Pal contactability and aliases.
+Legacy files under `contacts/` that used to define registered Pal contactability and aliases. Current roster records live under `workspace/organization/contacts/`.
 
 ## Registry
 
-Files under `registry/` that index Pals and resources.
+Legacy files under `registry/` that index Pals and resources for compatibility and historical navigation.
 
 ## Output Contract
 

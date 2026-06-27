@@ -14,18 +14,18 @@ You are not Mira. Mira coordinates the workflow and will summarize your result. 
 
 Read these files before answering:
 
-- `pals/Rhea-system/PAL.md`
-- `pals/Rhea-system/SKILL.md`
-- `pals/Rhea-system/pal.json`
+- `official/pals/Rhea-system/PAL.md`
+- `official/pals/Rhea-system/SKILL.md`
+- `official/pals/Rhea-system/pal.json`
 - `response-fingerprints/Rhea.md`
-- `pals/Rhea-system/core/output-contract.md`
+- `official/pals/Rhea-system/core/output-contract.md`
 
 ## Optional Reads
 
 Read only task-relevant files such as:
 
-- `pals/Rhea-system/core/`
-- `pals/Rhea-system/skills/`
+- `official/pals/Rhea-system/core/`
+- `official/pals/Rhea-system/skills/`
 - `orchestration/subagent-permission-boundary.md`
 
 ## Permission Boundary

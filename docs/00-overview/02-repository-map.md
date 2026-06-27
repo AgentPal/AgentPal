@@ -21,7 +21,7 @@ This map explains the public AgentPal Workspace layout. It is a navigation aid, 
 | Directory | Purpose |
 | --- | --- |
 | `capabilities/` | Capability profile notes and boundaries. |
-| `contacts/` | Pal contact source of truth for display names, aliases, paths, and availability. |
+| `contacts/` | Legacy compatibility contact files. Current source of truth is `workspace/organization/contacts/`. |
 | `docs/` | Public documentation and reference material. |
 | `evals/` | Self-tests and release checks. |
 | `examples/` | Public-safe examples and failure examples. |
@@ -29,11 +29,11 @@ This map explains the public AgentPal Workspace layout. It is a navigation aid, 
 | `memory/` | Public-safe memory placeholders; private memory must not be committed. |
 | `models/` | Model-routing notes and boundaries. |
 | `orchestration/` | Current protocols and clearly marked future-design material. |
-| `pals/` | Pal Pack pool. Each `pals/<Pal>/` directory is one Pal Pack. |
+| `official/pals/` | Official bundled Pal Pack pool. Each `official/pals/<Pal>/` directory is one Pal Pack. |
 | `plugins/` | Plugin-discovery notes and boundaries. |
 | `projects/` | External project workgroup binding templates. |
 | `prompts/` | Copyable maintenance and setup prompts. |
-| `registry/` | Pal and resource indexes. |
+| `registry/` | Legacy Pal and resource indexes retained for compatibility and selected historical navigation. |
 | `reports/` | Public-safe report placeholders; real reports should remain private or ignored. |
 | `response-fingerprints/` | Response fingerprint references for Pal-mode validation. |
 | `runtime/` | Runtime-awareness notes and boundaries. |
@@ -42,7 +42,7 @@ This map explains the public AgentPal Workspace layout. It is a navigation aid, 
 
 ## Pal Discovery Boundary
 
-`contacts/` and `registry/` are the source of truth for Pal discovery.
+`workspace/organization/contacts/` is the source of truth for Pal discovery. Legacy `contacts/`, `registry/`, and old root `pals/` references are compatibility references only.
 
 Skills, tools, plugins, models, MCP servers, raw repositories, runtime adapters, and knowledge packs do not become Pals because they are indexed. Only valid Pal Packs should enter contacts.
 

@@ -1,6 +1,6 @@
 # Simple Pal Mode Runtime Contract
 
-AgentPal v0.1.0-rc.1 active task handling is Simple Pal Mode only.
+AgentPal active task handling is host-runtime executed and no-code governed. Simple Pal Mode remains the conservative default path.
 
 ## Current Practical Patterns
 

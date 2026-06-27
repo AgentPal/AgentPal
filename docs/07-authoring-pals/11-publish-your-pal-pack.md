@@ -19,18 +19,17 @@ At minimum, verify:
 - memory, state, and reports are public-safe
 - examples and evals use synthetic data
 
-## Add To Contacts / Registry
+## Add To Central Roster
 
 Only after the directory is a valid Pal Pack, update:
 
-- `contacts/pals.json`
-- `contacts/PAL_CONTACTS.md`
-- `registry/pal.index.json`
-- `registry/pal.index.md`
+- `workspace/organization/contacts/pals.json`
+- `workspace/organization/contacts/PAL_CONTACTS.md`
+- `workspace/organization/contacts/aliases.json`, when aliases change
 
-These files are the source of truth for Pal discovery.
+These central roster files are the source of truth for Pal discovery.
 
-For normal users, the recommended path is to run [`../../prompts/add-pal-to-agentpal.md`](../../prompts/add-pal-to-agentpal.md) from the AgentPal Workspace after copying the completed Pal Pack into `pals/<Name-role>/`.
+For normal users, the recommended path is to run [`../../prompts/add-pal-to-agentpal.md`](../../prompts/add-pal-to-agentpal.md) from the AgentPal Workspace after copying the completed Pal Pack into `official/pals/<Name-role>/`.
 
 ### Where To Run The Registration Prompt
 
@@ -39,7 +38,7 @@ Run the registration prompt in the AgentPal Workspace, not in the external proje
 Codex:
 
 1. Open the AgentPal directory as its own Codex project.
-2. Copy the finished Pal Pack into `pals/<Name-role>/`.
+2. Copy the finished Pal Pack into `official/pals/<Name-role>/`.
 3. Open [`../../prompts/add-pal-to-agentpal.md`](../../prompts/add-pal-to-agentpal.md).
 4. Copy the prompt block.
 5. Paste it into the AgentPal project conversation.
@@ -54,7 +53,7 @@ Claude Code:
    claude
    ```
 
-2. Copy the finished Pal Pack into `pals/<Name-role>/`.
+2. Copy the finished Pal Pack into `official/pals/<Name-role>/`.
 3. Paste the full [`../../prompts/add-pal-to-agentpal.md`](../../prompts/add-pal-to-agentpal.md) prompt into that Claude Code session.
 4. Reinitialize any external project session if it still has the old Pal list.
 
@@ -67,9 +66,9 @@ Generic CLI Agent:
    <your-cli-agent>
    ```
 
-2. Copy the finished Pal Pack into `pals/<Name-role>/`.
+2. Copy the finished Pal Pack into `official/pals/<Name-role>/`.
 3. Paste the full registration prompt into that session.
-4. The agent should scan only `pals/`, validate the Pal Pack, and update contacts / registry.
+4. The agent should scan only `official/pals/`, validate the Pal Pack, and update `workspace/organization/contacts/`.
 
 ## Do Not Register
 

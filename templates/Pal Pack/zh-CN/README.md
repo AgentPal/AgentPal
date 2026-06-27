@@ -84,19 +84,19 @@ Momo-study
 
 ## 放到什么位置
 
-把新 Pal 目录放到 AgentPal 工作区的：
+把新 Pal 目录放到 AgentPal 工作区的官方 Pal 资产池：
 
 ```text
-AgentPal/pals/
+AgentPal/official/pals/
 ```
 
 示例：
 
 ```text
-AgentPal/pals/Luna-designer/
+AgentPal/official/pals/Luna-designer/
 ```
 
-把目录放入 `pals/` 之后，还需要在 AgentPal 工作区执行注册提示词，让 Runtime 检查新 Pal Pack 并更新 contacts / registry。仅复制目录或重启外部项目会话，不应被当成已经完成注册。
+把目录放入 `official/pals/` 之后，还需要在 AgentPal 工作区执行注册提示词，让 Runtime 检查新 Pal Pack 并更新 `workspace/organization/contacts/`。仅复制目录或重启外部项目会话，不应被当成已经完成注册。
 
 注册方式：
 
@@ -115,17 +115,17 @@ AgentPal/pals/Luna-designer/
 @Luna
 ```
 
-普通消息仍默认先交给 Mira。专业任务由 Mira / Brain 根据当前 contacts / registry 和上下文逐案判断 owner Pal。不要在 Pal 内部写死“某类任务必须交给某个 Pal”。
+普通消息仍默认先交给 Mira。专业任务由 Mira / Brain 根据当前中央 Pal roster 和上下文逐案判断 owner Pal。不要在 Pal 内部写死“某类任务必须交给某个 Pal”。
 
 ## 如何删除 Pal
 
 删除对应 Pal 目录即可：
 
 ```text
-AgentPal/pals/Luna-designer/
+AgentPal/official/pals/Luna-designer/
 ```
 
-删除后，在 AgentPal 工作区执行 `prompts/refresh-pal-index.md`，让 AgentPal 重新检查 `pals/`，并从通讯录 / 注册表中去除已经不存在的 Pal。
+删除后，在 AgentPal 工作区执行 `prompts/refresh-pal-index.md`，让 AgentPal 重新检查 `official/pals/`，并从中央 Pal roster 中去除已经不存在的 Pal。
 
 如果某个会话中仍显示旧 Pal，通常是会话尚未刷新。重新初始化 AgentPal 工作区即可。
 
@@ -134,7 +134,7 @@ AgentPal/pals/Luna-designer/
 - 不要把私人用户记忆、真实项目状态、客户资料、密钥、Token、账号、内部开发资料放入公开 Pal Pack。
 - `memory/`、`state/`、`reports/` 默认只放 README 或 `.gitkeep`。
 - 示例可以提到其它 Pal，但必须标明是非绑定示例。
-- Pal Pack 不维护其它 Pal 的固定名单。协作者应从当前 AgentPal `contacts/` / `registry/` 中解析。
+- Pal Pack 不维护其它 Pal 的固定名单。协作者应从当前 AgentPal 中央 Pal roster 中解析。
 - `pal.json` 必须保持合法 JSON。
 - 新增 Skill 时，优先放到本 Pal 自己的 `skills/` 目录，并更新 `skills/index.md`。
 

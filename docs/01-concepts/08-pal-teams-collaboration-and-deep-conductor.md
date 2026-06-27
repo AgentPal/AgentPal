@@ -88,7 +88,7 @@ Fast Route is appropriate when:
 
 For example, a focused documentation edit can go to Harper. A release gate can go to Quinn. A system startup audit can go to Rhea.
 
-The owner is still selected by AI judgment from the current request and the current contacts / registry. AgentPal does not use hard-coded keyword routing.
+The owner is still selected by AI judgment from the current request and the current central contacts. AgentPal does not use hard-coded keyword routing.
 
 ## Multi-Pal Collaboration for Complex Work
 
@@ -106,7 +106,7 @@ That request may involve product scope, documentation readiness, repository stat
 A practical multi-Pal flow looks like this:
 
 1. The first Pal that receives the task identifies the expected deliverable.
-2. The current AI judges candidate owner Pals from contacts / registry.
+2. The current AI judges candidate owner Pals from central contacts.
 3. The task is split into clear stages only when the deliverable requires it.
 4. Each stage receives a provisional Pal-layer owner.
 5. Runtime tools or Skills are treated as execution support, not as Pal owners.

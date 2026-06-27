@@ -4,15 +4,13 @@
 
 Current for AgentPal `v0.1.0-rc.1`.
 
-`contacts/` and `registry/` are the source of truth for Pal discovery.
+`workspace/organization/contacts/` is the source of truth for Pal discovery. Legacy `contacts/` and `registry/` records are compatibility references only.
 
 ## Source Files
 
-- `contacts/pals.json`
-- `contacts/PAL_CONTACTS.md`
-- `contacts/mention-aliases.md`
-- `registry/pal.index.json`
-- `registry/pal.index.md`
+- `workspace/organization/contacts/aliases.json`
+- `workspace/organization/contacts/pals.json`
+- `workspace/organization/contacts/PAL_CONTACTS.md`
 
 ## What They Control
 
@@ -39,16 +37,16 @@ These can support a Pal, but they are not Pals unless packaged as valid Pal Pack
 
 ## Maintenance Rule
 
-Adding, removing, or renaming a Pal should mainly update contacts and registry. Individual Pal Packs should not maintain hard-coded route maps for other Pals.
+Adding, removing, or renaming a Pal should mainly update central contacts. Individual Pal Packs should not maintain hard-coded route maps for other Pals.
 
 ## Registration Flow
 
-Copying a Pal Pack into `pals/` does not make it discoverable by itself. AgentPal resolves direct calls, discoverability, contactability, and owner-judgement candidates from contacts / registry, so a copied Pal Pack must be validated and registered.
+Copying a Pal Pack into `official/pals/` does not make it discoverable by itself. AgentPal resolves direct calls, discoverability, contactability, and owner-judgement candidates from central contacts, so a copied Pal Pack must be validated and registered.
 
 Recommended prompt:
 
 - [`../../prompts/add-pal-to-agentpal.md`](../../prompts/add-pal-to-agentpal.md) for newly copied Pal Packs
-- [`../../prompts/refresh-pal-index.md`](../../prompts/refresh-pal-index.md) when contacts / registry need to be rebuilt after Pal Pack changes
+- [`../../prompts/refresh-pal-index.md`](../../prompts/refresh-pal-index.md) when central contacts need to be rebuilt after Pal Pack changes
 
 Run these prompts from the AgentPal Workspace:
 

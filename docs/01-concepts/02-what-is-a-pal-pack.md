@@ -5,7 +5,7 @@ A Pal Pack is the directory package for one Pal.
 In the AgentPal Workspace, Pal Packs live under:
 
 ```text
-pals/<Pal-Directory>/
+official/pals/<Pal-Directory>/
 ```
 
 Each directory is one Pal Pack. The AgentPal Workspace itself is not a single Pal Pack.
@@ -37,7 +37,7 @@ A contributed Pal Pack should include:
 
 ## Contacts Boundary
 
-Only valid Pal Packs should enter `contacts/` and `registry/`. Skills, tools, plugins, models, MCP servers, and runtime adapters do not become Pals because they are indexed.
+Only valid Pal Packs should enter `workspace/organization/contacts/`. Skills, tools, plugins, models, MCP servers, and runtime adapters do not become Pals because they are indexed.
 
 ## Related
 

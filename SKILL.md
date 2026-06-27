@@ -1,13 +1,13 @@
 ---
 name: agentpal-workspace
 description: Use this AgentPal Workspace when the user wants to initialize Mira Main Pal / Leader Pal / Conductor, manage official and user-added Pal Packs in a runtime-readable Pal Workspace, route with /pal Name, or bind AgentPal to external projects.
-version: v0.1.0-rc.1
+version: v0.3.0-rc.1
 type: agentpal-workspace
 ---
 
 # AgentPal Workspace Skill Entry
 
-This is not a single-purpose Skill. This is the AgentPal Workspace entry for the Pal Pack Standard practice in v0.1.0-rc.1.
+This is not a single-purpose Skill. This is the AgentPal Workspace entry for the Pal Pack Standard practice in v0.3.0-rc.1.
 
 AgentPal is a Pal layer for an existing execution runtime. It is not an Agent layer, not a multi-agent runtime, not an execution layer, and not a single Pal Pack.
 
@@ -16,16 +16,17 @@ When invoked:
 1. Read root `AGENTS.md`.
 2. Read `prompts/codex/initialize-agentpal-workspace.md`.
 3. Read `agentpal.json`.
-4. Read `contacts/pals.json`.
-5. Read `registry/pal.index.json`.
-6. Read `pals/Mira-main/PAL.md`.
-7. Read `pals/Mira-main/AGENTS.md`.
-8. Read `pals/Mira-main/SKILL.md`.
+4. Read `workspace/organization/contacts/pals.json`.
+5. Read `workspace/organization/contacts/PAL_CONTACTS.md`.
+6. Read `official/pals/Mira-main/PAL.md`.
+7. Read `official/pals/Mira-main/AGENTS.md`.
+8. Read `official/pals/Mira-main/SKILL.md`.
 9. Read `orchestration/runtime-response-gate.md`.
 10. Enter Simple Pal Mode with Mira as the default Main Pal, Leader Pal, and Conductor.
-11. Scan `pals/` for valid Pal Packs only when initialization, diagnostics, refresh, or release validation requires it.
-12. Treat Mira, Atlas, Vega, Rhea, PalSmith, Quinn, Morgan, Harper, and Nova as the official bundled Pal baseline when their directories exist.
-13. Refresh contacts and registry files only when asked or when a maintenance flow explicitly requires it.
+11. Scan `official/pals/` for valid official Pal Packs only when initialization, diagnostics, refresh, or release validation requires it.
+12. Treat Mira, Atlas, Vega, Rhea, PalSmith, Quinn, Morgan, Harper, and Nova as the official bundled Pal baseline from `workspace/organization/contacts/pals.json`.
+13. For external project-bound work, treat `workspace/projects/<project-id>/` as the central project record for source maps, derived knowledge, project memory, task records, reports, governance records, and capability inventory.
+14. Refresh contacts and registry files only when asked or when a maintenance flow explicitly requires it.
 
 Default behavior:
 
@@ -36,7 +37,7 @@ Default behavior:
 - Natural-language replies and reports follow the user's latest instruction language unless the user explicitly requests another language; preserve commands, file paths, filenames, JSON keys, Git hashes, tags, branch names, model names, and code blocks as-is.
 - Use `/pal Name` and `@Name` for direct Pal calls.
 - Use Context Packet for Pal-to-Pal handoff, consultation, delegation, or review.
-- Use Fast Route for clear owner-Pal handoff. Treat Deep Conductor as future design only.
+- Use Fast Route for clear owner-Pal handoff. Treat Deep Conductor as no-code protocol foundation unless host-runtime execution evidence exists.
 - Delegate owned tasks to the proper Pal through the current Simple Pal Mode handoff pattern unless the user explicitly asks Mira for a simple explanation she can own.
 - Treat project as external user project by default.
 - When binding an external project, create or update the external project root `AGENTS.md` with the AgentPal workgroup block; `.agentpal/` alone is not enough.
