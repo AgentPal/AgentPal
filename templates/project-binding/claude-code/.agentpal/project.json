@@ -23,7 +23,15 @@
     ".agentpal/index",
     ".agentpal/pals",
     ".agentpal/workflows",
-    ".agentpal/evals"
+    ".agentpal/evals",
+    ".agentpal/capability-inventory",
+    ".agentpal/business-systems",
+    ".agentpal/reviews",
+    ".agentpal/evidence",
+    ".agentpal/replay",
+    ".agentpal/rollback",
+    ".agentpal/verification",
+    ".agentpal/audit-trail"
   ],
   "routing_policy": "ai_judgement_only",
   "keyword_routing_allowed": false

@@ -8,4 +8,4 @@ Use:
 - `claude-code/` for Claude Code projects.
 - `prompts/` for install/update prompt text.
 
-Default templates must not include `.agentpal/memory`, `.agentpal/state`, `.agentpal/reports`, `.agentpal/context`, `.agentpal/index`, `.agentpal/pals`, `.agentpal/workflows`, or `.agentpal/evals`.
+Default templates must not include `.agentpal/memory`, `.agentpal/state`, `.agentpal/reports`, `.agentpal/context`, `.agentpal/index`, `.agentpal/pals`, `.agentpal/workflows`, `.agentpal/evals`, `.agentpal/capability-inventory`, `.agentpal/business-systems`, `.agentpal/reviews`, `.agentpal/evidence`, `.agentpal/replay`, `.agentpal/rollback`, `.agentpal/verification`, or `.agentpal/audit-trail`.

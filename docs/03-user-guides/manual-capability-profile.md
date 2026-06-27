@@ -53,6 +53,12 @@ For Business System profile manual writeback replay records after a manual write
 standards/capability-inventory/business-system-profile-manual-writeback-replay-record.md
 ```
 
+For Business System profile audit trail indexes across review, evidence, replay, rollback, and second verification records, use:
+
+```text
+standards/capability-inventory/business-system-profile-audit-trail-index.md
+```
+
 ## Where Templates Live
 
 Copyable templates live in:
@@ -79,6 +85,12 @@ Business System profile manual writeback replay records use:
 
 ```text
 templates/capability-inventory/business-system-profile-manual-writeback-replay-record.md
+```
+
+Business System profile audit trail indexes use:
+
+```text
+templates/capability-inventory/business-system-profile-audit-trail-index.md
 ```
 
 ## Where Examples Live
@@ -113,7 +125,7 @@ Business System profile review examples live in:
 examples/capability-inventory/business-system-profile-reviews/
 ```
 
-These examples show project usage memory proposing review without automatically updating organization capability profiles. They also include a manual update evidence pack example for the approved-review stage and a manual writeback replay example for the after-writeback audit stage, still without performing profile updates, automatic rollback, connector setup, or credential storage.
+These examples show project usage memory proposing review without automatically updating organization capability profiles. They also include a manual update evidence pack example for the approved-review stage, a manual writeback replay example for the after-writeback audit stage, and an audit trail index example for summarizing related records, still without performing profile updates, automatic rollback, external API calls, connector setup, missing-evidence closure, or credential storage.
 
 ## Where Organization Records Live
 
@@ -279,4 +291,4 @@ Do not turn usage memory into an automatic score, benchmark, or certification cl
 
 Project usage memory records what happened in one project. It is not organization truth, must not silently update organization capability profiles, must not update the central Pal roster, and must not be copied into external project `.agentpal/` by default. See `docs/03-user-guides/project-usage-memory-boundary.md`.
 
-If project usage memory suggests an organization-level Business System profile change, create a review packet and keep the decision blocked until explicit user confirmation and reviewable host Runtime evidence are present. If the review is later approved for manual update, create a Manual Update Evidence Pack with a rollback note and second verification checklist before any organization profile writeback. If a manual writeback later happens, create a Manual Writeback Replay Record to audit changed fields, rollback record, and second verification result. If second verification did not run, keep the status as `second_verification_not_run`; do not report it as pass.
+If project usage memory suggests an organization-level Business System profile change, create a review packet and keep the decision blocked until explicit user confirmation and reviewable host Runtime evidence are present. If the review is later approved for manual update, create a Manual Update Evidence Pack with a rollback note and second verification checklist before any organization profile writeback. If a manual writeback later happens, create a Manual Writeback Replay Record to audit changed fields, rollback record, and second verification result. If several related records need summary, create an Audit Trail Index to list paths, statuses, open unknowns, not-run checks, missing evidence, risk notes, and next manual action suggestions. If second verification did not run, keep the status as `second_verification_not_run`; do not report it as pass. If evidence remains missing, keep it missing; do not auto-close it from the index.

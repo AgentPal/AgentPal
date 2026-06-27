@@ -8,10 +8,10 @@ It is not an automatic scanner, validator, installer, sync service, or keyword r
 
 | Source type | Path | Role |
 | --- | --- | --- |
-| Standards | `standards/capability-inventory/` | Reusable rules, matrices, protocols, profile standards, Business System review flow, manual update evidence pack rules, and manual writeback replay record rules. |
+| Standards | `standards/capability-inventory/` | Reusable rules, matrices, protocols, profile standards, Business System review flow, manual update evidence pack rules, manual writeback replay record rules, and audit trail index rules. |
 | Current organization records | `workspace/organization/capability-inventory/` | Public-safe current organization placeholders and maintained capability notes. |
 | Examples | `examples/capability-inventory/` | Synthetic example profiles and task judgement examples, including public-safe Business System examples and review examples. |
-| Templates | `templates/capability-inventory/` | Copyable profile templates, including `business-system-profile-template.json`, `business-system-profile-review-packet.md`, `business-system-profile-manual-update-evidence-pack.md`, and `business-system-profile-manual-writeback-replay-record.md`. |
+| Templates | `templates/capability-inventory/` | Copyable profile templates, including `business-system-profile-template.json`, `business-system-profile-review-packet.md`, `business-system-profile-manual-update-evidence-pack.md`, `business-system-profile-manual-writeback-replay-record.md`, and `business-system-profile-audit-trail-index.md`. |
 | Project record template | `workspace/projects/_template/capability-inventory/` | Template for per-project capability records under central project records. |
 | Historical archive | `archive/migration-from-v0.3/root-legacy/capability-inventory/` | R78/R79/R80 migration evidence and archived legacy pointers. |
 
@@ -42,6 +42,8 @@ Use `standards/capability-inventory/business-system-profile-review-flow.md` and 
 Use `standards/capability-inventory/business-system-profile-manual-update-evidence-pack.md` and `templates/capability-inventory/business-system-profile-manual-update-evidence-pack.md` after a review packet is approved for manual update. Evidence packs record the proposed manual change, user confirmation, host Runtime evidence, rollback note, writeback target, and second verification status. They still must not perform automatic writeback, modify central contacts, write into external project `.agentpal/evidence/`, create connectors, store credentials, or keyword route.
 
 Use `standards/capability-inventory/business-system-profile-manual-writeback-replay-record.md` and `templates/capability-inventory/business-system-profile-manual-writeback-replay-record.md` after a manual writeback has happened. Replay records audit changed fields, previous and updated snapshots, rollback record, and second verification result. They still must not execute writeback, auto-rollback, modify central contacts, write into external project `.agentpal/replay/`, `.agentpal/rollback/`, or `.agentpal/verification/`, create connectors, store credentials, or keyword route.
+
+Use `standards/capability-inventory/business-system-profile-audit-trail-index.md` and `templates/capability-inventory/business-system-profile-audit-trail-index.md` when several review, evidence, replay, rollback, or second verification records need an organization-level summary. Audit trail indexes summarize paths, statuses, open unknowns, not-run checks, missing evidence, risks, and next manual action suggestions. They still must not execute actions, auto-call external APIs, auto-close missing evidence, modify central contacts, write into external project `.agentpal/audit-trail/`, create connectors, store credentials, or keyword route.
 
 Current Business System examples:
 
@@ -86,6 +88,14 @@ examples/capability-inventory/business-system-profile-reviews/notion-read-access
 ```
 
 It shows a completed manual writeback premise while keeping second verification as `second_verification_not_run` because no real writeback or verification ran in the example.
+
+The audit trail index example lives at:
+
+```text
+examples/capability-inventory/business-system-profile-reviews/notion-read-access-audit-trail-index.example.md
+```
+
+It summarizes the public-safe Notion read access review, evidence pack, replay record, rollback summary, second verification status, open unknowns, missing evidence, and next manual action suggestions without executing actions or modifying organization truth.
 
 ## External Project Boundary
 
@@ -184,6 +194,14 @@ evals/palbench/capability-inventory/r89-business-system-profile-manual-writeback
 ```
 
 It checks the replay record standard, replay template, public-safe replay example, manual update evidence relationship, rollback record, honest second verification, central roster boundary, no connector, no credentials, no automatic scanner, no keyword routing, and no external project `.agentpal/replay/`, `.agentpal/rollback/`, or `.agentpal/verification/` writes.
+
+The Business System profile audit trail index regression lives at:
+
+```text
+evals/palbench/capability-inventory/r90-business-system-profile-audit-trail-index-boundary.md
+```
+
+It checks the audit trail standard, audit trail template, public-safe audit trail example, review / evidence / replay references, next manual action boundary, not-run and missing evidence preservation, central roster boundary, no connector, no credentials, no automatic scanner, no external API call, no keyword routing, and no external project `.agentpal/audit-trail/` writes.
 
 ## Legacy Path Notes
 

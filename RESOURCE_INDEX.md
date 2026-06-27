@@ -106,14 +106,17 @@ Use:
 | `standards/capability-inventory/business-system-profile-review-flow.md` | Business System profile review flow standard | project usage memory to organization profile review boundary checks |
 | `standards/capability-inventory/business-system-profile-manual-update-evidence-pack.md` | Business System profile manual update evidence pack standard | approved review to manual writeback evidence, rollback, and second verification boundary checks |
 | `standards/capability-inventory/business-system-profile-manual-writeback-replay-record.md` | Business System profile manual writeback replay record standard | completed manual writeback audit, rollback record, and second verification boundary checks |
+| `standards/capability-inventory/business-system-profile-audit-trail-index.md` | Business System profile audit trail index standard | organization-level review / evidence / replay / rollback / verification index boundary checks |
 | `templates/capability-inventory/business-system-profile-template.json` | Business System capability profile template for external system governance boundaries | business-system profile template work or release checks |
 | `templates/capability-inventory/business-system-profile-review-packet.md` | Business System profile review packet template | no-code organization profile review proposals |
 | `templates/capability-inventory/business-system-profile-manual-update-evidence-pack.md` | Business System profile manual update evidence pack template | approved-review evidence pack preparation without automatic profile writeback |
 | `templates/capability-inventory/business-system-profile-manual-writeback-replay-record.md` | Business System profile manual writeback replay record template | completed manual writeback audit without execution or automatic rollback |
+| `templates/capability-inventory/business-system-profile-audit-trail-index.md` | Business System profile audit trail index template | manual no-code audit trail summaries without automatic actions |
 | `examples/capability-inventory/business-system-profiles/` | public-safe Business System profile examples | example shape and no-connector boundary checks |
 | `examples/capability-inventory/business-system-profile-reviews/` | public-safe Business System profile review examples | no-code review flow examples that do not auto-update organization truth |
 | `examples/capability-inventory/business-system-profile-reviews/notion-read-access-manual-update-evidence.example.md` | public-safe Notion read access manual update evidence example | approved-review premise, rollback note, second verification not-run, and no auto writeback |
 | `examples/capability-inventory/business-system-profile-reviews/notion-read-access-manual-writeback-replay.example.md` | public-safe Notion read access manual writeback replay example | completed manual writeback premise, rollback record, second verification not-run, and no auto rollback |
+| `examples/capability-inventory/business-system-profile-reviews/notion-read-access-audit-trail-index.example.md` | public-safe Notion read access audit trail index example | review / evidence / replay / rollback / verification summary with no automatic action |
 | `examples/project-records/business-system-profile-references/` | public-safe project record examples that reference Business System profiles | central project record relationship examples, not real private project records |
 | `examples/capability-inventory/business-system-profiles/manual-github-profile-walkthrough.md` | manual GitHub Business System walkthrough | end-to-end user-confirmed facts to organization and project records |
 | `examples/capability-inventory/business-system-profiles/manual-notion-profile-walkthrough.md` | manual Notion Business System walkthrough | non-code user-confirmed facts, unknown fields, not-run checks, and missing evidence |
@@ -130,6 +133,8 @@ Use:
 | `evals/palbench/capability-inventory/r87-business-system-profile-review-flow-boundary.md` | Business System profile review flow regression | review packet, project usage memory upgrade, central roster, thin binding, and no-connector boundary checks |
 | `evals/palbench/capability-inventory/r88-business-system-profile-manual-update-evidence-boundary.md` | Business System profile manual update evidence regression | evidence pack, rollback, second verification, central roster, thin binding, and no-connector boundary checks |
 | `evals/palbench/capability-inventory/r89-business-system-profile-manual-writeback-replay-boundary.md` | Business System profile manual writeback replay regression | replay record, rollback record, second verification, central roster, thin binding, and no-connector boundary checks |
+| `evals/palbench/capability-inventory/r90-business-system-profile-audit-trail-index-boundary.md` | Business System profile audit trail index regression | audit trail index, next manual actions, missing evidence, central roster, thin binding, external API, and no-connector boundary checks |
+| `release/fresh-clone-checks/r90-local-business-system-profile-audit-trail-index-validation.md` | R90 local clean-copy validation record | audit trail index validation and local no-code boundary evidence |
 | `archive/migration-from-v0.3/root-legacy/capability-inventory/root-pointers/` | archived R78 root compatibility pointers | legacy path questions and migration audits |
 | `workspace/resources/imports/` | public-safe import staging placeholders | import/resource boundary work |
 | `workspace/organization/memory/` | public-safe organization memory placeholders and examples | memory protocol or placeholder work |
@@ -366,6 +371,7 @@ Use the current docs directories as the public entry points. Archived research n
 | `standards/capability-inventory/business-system-profile-review-flow.md` | Business System profile review flow standard for no-code organization profile review |
 | `standards/capability-inventory/business-system-profile-manual-update-evidence-pack.md` | Business System profile manual update evidence pack standard for approved-review evidence, rollback, and second verification |
 | `standards/capability-inventory/business-system-profile-manual-writeback-replay-record.md` | Business System profile manual writeback replay record standard for completed manual writeback audit and rollback record |
+| `standards/capability-inventory/business-system-profile-audit-trail-index.md` | Business System profile audit trail index standard for review / evidence / replay / rollback / verification summaries |
 | `examples/capability-inventory/business-system-profiles/github-public-governance-profile.example.json` | public-safe GitHub Business System profile example using `example-org/example-repo` |
 | `examples/capability-inventory/business-system-profiles/notion-public-governance-profile.example.json` | public-safe Notion Business System profile example with unknown access and no connector |
 | `examples/capability-inventory/business-system-profiles/generic-crm-public-governance-profile.example.json` | public-safe generic CRM Business System profile example with unknown customer-data and write access |
@@ -374,9 +380,11 @@ Use the current docs directories as the public entry points. Archived research n
 | `templates/capability-inventory/business-system-profile-review-packet.md` | Business System profile review packet template |
 | `templates/capability-inventory/business-system-profile-manual-update-evidence-pack.md` | Business System profile manual update evidence pack template |
 | `templates/capability-inventory/business-system-profile-manual-writeback-replay-record.md` | Business System profile manual writeback replay record template |
+| `templates/capability-inventory/business-system-profile-audit-trail-index.md` | Business System profile audit trail index template |
 | `examples/capability-inventory/business-system-profile-reviews/notion-read-access-review.example.md` | public-safe Notion read access review example blocked by missing evidence |
 | `examples/capability-inventory/business-system-profile-reviews/notion-read-access-manual-update-evidence.example.md` | public-safe Notion read access manual update evidence example with second verification not-run |
 | `examples/capability-inventory/business-system-profile-reviews/notion-read-access-manual-writeback-replay.example.md` | public-safe Notion read access manual writeback replay example with rollback record and second verification not-run |
+| `examples/capability-inventory/business-system-profile-reviews/notion-read-access-audit-trail-index.example.md` | public-safe Notion read access audit trail index example with next manual actions and missing evidence preserved |
 | `evals/palbench/capability-inventory/r83-project-record-relationship-boundary.md` | Business System profile relationship and thin-binding regression |
 | `examples/capability-inventory/business-system-profiles/manual-github-profile-walkthrough.md` | manual Business System walkthrough from user facts to central records |
 | `examples/capability-inventory/business-system-profiles/manual-notion-profile-walkthrough.md` | manual Notion Business System walkthrough from user facts to central records |
@@ -393,6 +401,8 @@ Use the current docs directories as the public entry points. Archived research n
 | `release/fresh-clone-checks/r88-local-business-system-profile-manual-update-evidence-validation.md` | R88 local clean-copy validation record |
 | `evals/palbench/capability-inventory/r89-business-system-profile-manual-writeback-replay-boundary.md` | R89 Business System profile manual writeback replay boundary regression |
 | `release/fresh-clone-checks/r89-local-business-system-profile-manual-writeback-replay-validation.md` | R89 local clean-copy validation record |
+| `evals/palbench/capability-inventory/r90-business-system-profile-audit-trail-index-boundary.md` | R90 Business System profile audit trail index boundary regression |
+| `release/fresh-clone-checks/r90-local-business-system-profile-audit-trail-index-validation.md` | R90 local clean-copy validation record |
 | `docs/05-orchestration-methodology/deep-conductor-master-goal.md` | Deep Conductor master goal and no-code 12-step loop |
 | `docs/05-orchestration-methodology/deep-conductor-master-loop-usage-guide.md` | Deep Conductor usage guide for project-level no-code coordination |
 | `docs/05-orchestration-methodology/deep-conductor-e2e-usage-guide.md` | Deep Conductor E2E usage guide for integrated no-code project-level closure |

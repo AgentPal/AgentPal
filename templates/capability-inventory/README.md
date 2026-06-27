@@ -20,6 +20,7 @@ When creating a real profile, copy a template and follow `docs/03-user-guides/ma
 | Business System profile review packet | `business-system-profile-review-packet.md` |
 | Business System profile manual update evidence pack | `business-system-profile-manual-update-evidence-pack.md` |
 | Business System profile manual writeback replay record | `business-system-profile-manual-writeback-replay-record.md` |
+| Business System profile audit trail index | `business-system-profile-audit-trail-index.md` |
 | Pal capability profile | `pal-capability-profile-template.json` |
 
 ## Related Sources
@@ -48,3 +49,5 @@ Business System profile review packets are no-code review artifacts. They may re
 Manual update evidence packs are the next no-code artifact after an approved review packet. They record the approved change, user confirmation, host Runtime evidence, rollback note, manual writeback target, and second verification status. They still must not auto-update organization profiles, modify central Pal contacts, create connectors, store credentials, or write into external project `.agentpal/evidence/`.
 
 Manual writeback replay records are no-code audit artifacts after a manual writeback has happened. They record changed fields, previous and updated snapshot summaries, rollback record, second verification status, not-run checks, and missing evidence. They must not execute writeback, auto-rollback, modify central Pal contacts, create connectors, store credentials, or write into external project `.agentpal/replay/`, `.agentpal/rollback/`, or `.agentpal/verification/`.
+
+Audit trail indexes are no-code index artifacts across review packets, evidence packs, replay records, rollback records, and second verification records. They record paths, statuses, open unknowns, not-run checks, missing evidence, risks, and next manual action suggestions. They must not execute actions, auto-update organization profiles, auto-call external APIs, auto-close missing evidence, modify central Pal contacts, create connectors, store credentials, keyword-route, or write into external project `.agentpal/audit-trail/`.

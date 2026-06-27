@@ -77,6 +77,15 @@ templates/capability-inventory/business-system-profile-manual-writeback-replay-r
 
 The replay record logs changed fields, previous and updated profile snapshot summaries, rollback record, second verification status, not-run checks, and missing evidence. It still must not execute writeback, auto-rollback, modify central contacts, create a connector, store credentials, route by keywords, or write into external project `.agentpal/replay/`, `.agentpal/rollback/`, or `.agentpal/verification/`.
 
+When several review packets, evidence packs, replay records, rollback records, or second verification records exist, create an Audit Trail Index to summarize the chain:
+
+```text
+standards/capability-inventory/business-system-profile-audit-trail-index.md
+templates/capability-inventory/business-system-profile-audit-trail-index.md
+```
+
+The audit trail index records related paths, statuses, current profile status summary, open unknowns, not-run checks, missing evidence, risks, and next manual action suggestions. It still must not execute actions, auto-call external APIs, auto-close missing evidence, modify central contacts, create a connector, store credentials, route by keywords, or write into external project `.agentpal/audit-trail/`.
+
 ## Boundary Checklist
 
 - Keep project usage memory under the central project record.
@@ -87,3 +96,4 @@ The replay record logs changed fields, previous and updated profile snapshot sum
 - Do not use project usage memory as `keyword_map`, `domain_map`, `role_map`, or deterministic routing.
 - Do not convert `second_verification_not_run` into `second_verification_passed`.
 - Do not treat a replay record as an execution engine or automatic rollback program.
+- Do not treat an audit trail index as an execution engine, external API caller, or automatic missing-evidence closer.
