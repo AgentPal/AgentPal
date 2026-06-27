@@ -101,8 +101,11 @@ R78 split the legacy root capability inventory surfaces into three active locati
 | `standards/capability-inventory/` | Profile standards, capability matrices, runtime detection protocol, model routing policy, and plugin discovery protocol. |
 | `workspace/organization/capability-inventory/` | Current central organization runtime, model, Skill, plugin, MCP, business-system, and usage-memory records. |
 | `examples/capability-inventory/` | Public-safe illustrative profiles and task judgement examples. |
+| `templates/capability-inventory/` | Copyable JSON profile templates. |
 
 Capability Inventory is a no-code profile layer. It does not scan machines, install tools, enable plugins, or route by keywords.
+
+For the full source map, see `docs/00-overview/capability-inventory-navigation.md`.
 
 ## Compatibility And Current-Reference Directories
 

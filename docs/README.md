@@ -10,6 +10,7 @@ AgentPal is a Pal layer and Pal Pack Standard practice for Markdown/JSON-capable
 - [Current status](00-overview/01-current-status.md)
 - [Repository map](00-overview/02-repository-map.md)
 - [Repository structure](00-overview/repository-structure.md)
+- [Capability Inventory navigation](00-overview/capability-inventory-navigation.md)
 - [Capability Inventory migration plan](00-overview/capability-inventory-migration-plan.md)
 - [Orchestration migration plan](00-overview/orchestration-migration-plan.md)
 - [Prompts migration plan](00-overview/prompts-migration-plan.md)
@@ -131,7 +132,9 @@ AgentPal is a Pal layer and Pal Pack Standard practice for Markdown/JSON-capable
 ## Capability Inventory Quick Links
 
 - [Capability Inventory minimal usable design](05-orchestration-methodology/capability-inventory-minimal-usable-design.md)
+- [Capability Inventory navigation](00-overview/capability-inventory-navigation.md)
 - [Capability profiles index](../standards/capability-inventory/README.md)
+- [Capability Inventory templates](../templates/capability-inventory/README.md)
 - [Runtime profiles](../examples/capability-inventory/runtime-profiles/README.md)
 - [Model profiles](../examples/capability-inventory/model-profiles/README.md)
 - [Reasoning profiles](../examples/capability-inventory/reasoning-profiles/README.md)

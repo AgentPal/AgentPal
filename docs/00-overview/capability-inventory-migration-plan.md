@@ -4,6 +4,8 @@ R78 completed the first staged split of `capabilities/`, `runtime/`, `models/`, 
 
 R79 archived the temporary root compatibility pointers under `archive/migration-from-v0.3/root-legacy/capability-inventory/root-pointers/`. The old root directories are no longer active facts sources.
 
+R80 renamed `templates/capabilities/` to `templates/capability-inventory/` and moved `examples/runtime/README.md` into `examples/runtime-adapters/README.md` to avoid confusion with archived root paths.
+
 ## Current Surfaces
 
 | current path | current role | future home |
@@ -11,6 +13,7 @@ R79 archived the temporary root compatibility pointers under `archive/migration-
 | `standards/capability-inventory/` | profile standards, policies, protocols, and matrices | active standard source |
 | `examples/capability-inventory/` | illustrative runtime/model/reasoning/Skill/plugin/MCP/Pal profiles | active example source |
 | `workspace/organization/capability-inventory/` | current central organization records and usage memory placeholders | active central organization record source |
+| `templates/capability-inventory/` | copyable JSON profile templates | active template source |
 | `archive/migration-from-v0.3/root-legacy/capability-inventory/root-pointers/` | archived R78 compatibility pointers | historical traceability only |
 
 ## Target Split
@@ -29,6 +32,7 @@ R79 archived the temporary root compatibility pointers under `archive/migration-
 3. R78: move illustrative examples into `examples/capability-inventory/` and update active references. Done for low-risk files.
 4. R78: move current organization placeholders into `workspace/organization/capability-inventory/`. Done for low-risk files.
 5. R79: archive root `capabilities/`, `runtime/`, `models/`, and `plugins/` compatibility pointers after active references are updated. Done.
+6. R80: rename capability profile templates to `templates/capability-inventory/` and move runtime adapter navigation to `examples/runtime-adapters/`. Done.
 
 ## Boundaries
 

@@ -12,5 +12,6 @@ Primary areas:
 - `org-pack/`: org-pack template pointers.
 - `prompts/`: prompt template pointers.
 - `orchestration/`: Deep Conductor, Context Packet, verification, Runtime Skill, and context-budget task package templates.
+- `capability-inventory/`: JSON profile templates for runtime, model, reasoning, Skill, plugin, MCP, and Pal capability profiles.
 
 Templates are Markdown / JSON assets only. They do not create a CLI, installer, scanner, daemon, service, or automatic execution layer.

@@ -100,6 +100,7 @@ Use:
 | `standards/capability-inventory/` | capability profile standards, policies, protocols, and matrices | capability inventory governance and release checks |
 | `workspace/organization/capability-inventory/` | central organization capability inventory records and usage-memory placeholders | current public-safe organization capability records |
 | `examples/capability-inventory/` | illustrative capability profile examples | examples and regression checks |
+| `templates/capability-inventory/` | copyable Capability Inventory JSON profile templates | selected template work |
 | `archive/migration-from-v0.3/root-legacy/capability-inventory/root-pointers/` | archived R78 root compatibility pointers | legacy path questions and migration audits |
 | `workspace/resources/imports/` | public-safe import staging placeholders | import/resource boundary work |
 | `workspace/organization/memory/` | public-safe organization memory placeholders and examples | memory protocol or placeholder work |
@@ -152,6 +153,7 @@ Use:
 | `docs/07-official-pals/official-pal-example-library-plan.md` | Official Pal example library plan | official Pal examples planning and R42 first implementation status |
 | `evals/official-pals/official-pal-example-library-self-test.md` | Official Pal example library self-test | R42 example structure and boundary checks |
 | `docs/05-orchestration-methodology/capability-inventory-minimal-usable-design.md` | Capability Inventory minimal usable design | v0.2 R43 manual profile design |
+| `docs/00-overview/capability-inventory-navigation.md` | Capability Inventory standards / records / examples / templates navigation | R80 template and runtime example path clarification |
 | `standards/capability-inventory/README.md` | Capability Inventory profile index | runtime/model/reasoning/skill/plugin/MCP/Pal profile navigation |
 | `examples/capability-inventory/runtime-profiles/` | Runtime profile examples | runtime capability judgement inputs |
 | `examples/capability-inventory/model-profiles/` | Model profile examples | model tendency judgement inputs |
@@ -304,6 +306,7 @@ Use the current docs directories as the public entry points. Archived research n
 | `standards/capability-inventory/` | capability profile standards and matrices |
 | `workspace/organization/capability-inventory/` | current organization capability records |
 | `examples/capability-inventory/` | capability profile examples |
+| `templates/capability-inventory/` | capability profile JSON templates |
 | `archive/migration-from-v0.3/root-legacy/capability-inventory/root-pointers/` | archived R78 capability inventory root pointers |
 | `templates/orchestration/` | task judgement, workflow, access list, project conductor task map, Deep Conductor plan, next-round runtime package, cross-runtime continuation package, conductor decision record, Runtime Skill-aware task package, context budget plan, context usage report, verifier context packet, reviewer context packet, final report, synthesis, result record, routing, and verification templates |
 | `templates/orchestration/deep-conductor-e2e-package.md` | complete Deep Conductor E2E package template |
@@ -312,7 +315,7 @@ Use the current docs directories as the public entry points. Archived research n
 | `templates/orchestration/external-agent-handoff-package.md` | manual external Agent handoff package template |
 | `templates/orchestration/subagent-task-package.md` | host Runtime subagent task package template |
 | `templates/memory/` | Pal Project Memory Snapshot, Routing Memory Record, and Runtime Skill Usage Memory Record templates |
-| `templates/capabilities/` | capability profile JSON templates under the templates tree, not a root capability facts source |
+| `templates/capability-inventory/` | capability profile JSON templates under the templates tree, not a facts source |
 | `templates/research/` | PalBench result template |
 | `evals/palbench/` | PalBench evaluation drafts |
 | `evals/palbench-light/` | v0.2 PalBench Light regression suite |
@@ -335,6 +338,7 @@ Use the current docs directories as the public entry points. Archived research n
 | --- | --- |
 | `examples/runtime-adapters/thin-binding-project-example.md` | expected thin project binding shape |
 | `examples/runtime-adapters/core-gate-shared-by-codex-claude-generic.md` | shared core gate example across adapters |
+| `examples/runtime-adapters/README.md` | runtime adapter and thin-binding examples navigation |
 | `examples/failures/stale-project-copied-pal-list.md` | failure example for copied Pal rosters |
 | `examples/failures/runtime-adapter-rule-drift.md` | failure example for adapter rule drift |
 | `evals/runtime-adapters/thin-binding-core-gate-self-test.md` | thin binding self-test |

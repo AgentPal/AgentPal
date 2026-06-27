@@ -58,7 +58,8 @@ Search hits for `capabilities/`, `runtime/`, `models/`, and `plugins/` after R79
 - historical migration or release validation evidence,
 - archive pointer explanations,
 - negative tests or Pal Pack cleanup examples,
-- non-root paths such as `templates/capabilities/`, `examples/runtime/`, `memory/runtime/`, or `workspace/organization/memory/runtime/`,
+- R79-era non-root paths that R80 later renamed, such as `templates/capabilities/` and `examples/runtime/`,
+- non-root paths such as `memory/runtime/` or `workspace/organization/memory/runtime/`,
 - current active paths under `workspace/organization/capability-inventory/plugins/` and `workspace/organization/capability-inventory/models/`.
 
 No active entrance document now uses root `capabilities/`, `runtime/`, `models/`, or `plugins/` as a current facts source.

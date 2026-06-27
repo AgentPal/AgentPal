@@ -635,6 +635,7 @@
     "capability_inventory_standards": "standards/capability-inventory",
     "organization_capability_inventory": "workspace/organization/capability-inventory",
     "capability_inventory_examples": "examples/capability-inventory",
+    "capability_inventory_templates": "templates/capability-inventory",
     "capability_inventory_legacy_archive": "archive/migration-from-v0.3/root-legacy/capability-inventory",
     "capability_inventory_root_pointers_archive": "archive/migration-from-v0.3/root-legacy/capability-inventory/root-pointers",
     "legacy_root_capability_dirs_active": false,
