@@ -33,6 +33,9 @@ Load selected Pal assets only after current owner judgement. Do not preload all 
 - `/pal` and `@Pal` are AgentPal plain-text protocols. They do not require native runtime slash-command or mention support.
 - Owner + Verifier is a no-code staged workflow. If used, follow `orchestration/owner-verifier-workflow-protocol.md`, prepare independent verifier evidence context, and require a `pass`, `fail`, or `blocked` result record.
 - Parallel Independent Review is a no-code staged workflow. If used, follow `orchestration/parallel-independent-review-protocol.md`, create separate reviewer packets, keep peer drafts excluded, and synthesize final reports only after independent reports exist.
+- Deep Conductor Master Loop is a no-code protocol. If used, follow `orchestration/deep-conductor-protocol.md`, prepare a plan, task map, context budget, Runtime Skill-aware packages, verification plan, and Routing Memory candidate without claiming automatic execution.
+- Project Conductor Workflow is a no-code project-level workflow. If used, follow `orchestration/project-conductor-workflow.md` and produce a task map or next-round package for the host Runtime.
+- Runtime Skill-aware packages are executed by the host Runtime only after current availability and permission evidence. AgentPal does not execute Runtime Skills.
 
 ## Context Packet
 
@@ -48,6 +51,12 @@ When a direct call, mention, review, delegate, handoff, or owner transfer needs 
 - `templates/orchestration/reviewer-context-packet.md`
 - `templates/orchestration/reviewer-final-report.md`
 - `templates/orchestration/parallel-review-synthesis-summary.md`
+- `orchestration/deep-conductor-protocol.md`
+- `orchestration/project-conductor-workflow.md`
+- `templates/orchestration/deep-conductor-plan.md`
+- `templates/orchestration/project-conductor-task-map.md`
+- `templates/orchestration/next-round-runtime-task-package.md`
+- `templates/orchestration/conductor-decision-record.md`
 
 Packets must include `can_read`, `cannot_read`, `needed_output`, `verification_requirements`, `return_to`, and `final_report_required`.
 

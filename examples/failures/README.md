@@ -4,5 +4,5 @@ These examples describe incorrect AgentPal behavior and the corrected behavior.
 
 They are release-safe, synthetic examples. They must not be used as routing rules or runtime instructions.
 
-Use them when reviewing regressions around fake Pal responses, Mira over-answering, hard-coded routing, Subagent Mode evidence, external project context, Codex generic labeling, contact boundaries, no-code future boundaries, Pal Skill / Runtime Skill separation, and Deep Conductor executor confusion.
+Use them when reviewing regressions around fake Pal responses, Mira over-answering, hard-coded routing, Subagent Mode evidence, external project context, Codex generic labeling, contact boundaries, no-code future boundaries, Pal Skill / Runtime Skill separation, Deep Conductor executor confusion, skipped Capability Inventory, context overload, missing verification plans, and missing memory writeback.
 

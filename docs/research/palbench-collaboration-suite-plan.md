@@ -71,6 +71,14 @@ The first suite includes at least 10 cases:
 25. Reviewer reads peer draft failure.
 26. Synthesis hides conflict failure.
 27. Minority opinion preserved.
+28. Deep Conductor project release planning.
+29. Deep Conductor research to HTML report.
+30. Deep Conductor PalSmith AI team creation.
+31. Deep Conductor cross-runtime continuation.
+32. Deep Conductor token budget failure.
+33. Deep Conductor skips Capability Inventory failure.
+34. Deep Conductor missing verification failure.
+35. Deep Conductor no memory writeback failure.
 
 ## Boundary
 

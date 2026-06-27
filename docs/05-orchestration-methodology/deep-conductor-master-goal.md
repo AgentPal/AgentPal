@@ -24,18 +24,18 @@ The advantage comes from resource cognition, scheduling, context discipline, ver
 
 ## Master Loop
 
-1. Receive Goal.
-2. Load Pal / Project / Routing Memory.
-3. Understand Deliverables.
-4. Read Capability Inventory.
-5. Identify Runtime / Model / Reasoning / Runtime-installed Skill / Plugin / MCP / Pal candidates.
-6. Choose Workflow Topology.
-7. Build Context Access Lists / Context Packets.
-8. Shape Prompts by Runtime / Model / Skill capability.
-9. Generate Runtime Skill-aware Task Packages.
-10. Collect Final Reports.
-11. Verify Results.
-12. Synthesize, Explain, and Write Routing Memory.
+1. Goal Intake.
+2. Project / Pal Memory Loading.
+3. Deliverable and Stage Judgement.
+4. Capability Inventory Read.
+5. Runtime Skill / Plugin / MCP Awareness.
+6. Workflow Topology Selection.
+7. Context Access Planning.
+8. Prompt Shaping and Token Budgeting.
+9. Runtime Task Package Generation.
+10. Verification Planning.
+11. Synthesis and User-facing Explanation.
+12. Routing Memory Writeback Candidate.
 
 ## Candidate Rules
 

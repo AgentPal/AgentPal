@@ -30,6 +30,7 @@ Hard boundaries:
 - Do not copy AgentPal Pal Packs, docs, protocols, examples, evals, or release notes into this project.
 - Do not create runtime code, scripts, services, daemons, installers, or UI.
 - Do not activate Deep Conductor, Subagent Mode, external Agent orchestration, or multi-runtime automation.
+- Do not present Deep Conductor Master Loop or Project Conductor Workflow as an automatic background task system.
 - Do not present Owner + Verifier as automatic background multi-agent execution.
 - Do not present Parallel Independent Review as automatic background multi-agent or multi-runtime execution.
 
@@ -57,6 +58,8 @@ The root `AGENTS.md` protected block must explicitly tell a fresh session:
 - `/pal` and `@Pal` are AgentPal Markdown protocols in this binding, not native CLI commands; do not require CLI support for them
 - Owner + Verifier is a no-code staged workflow. Runtime may follow the task package sequentially, but verifier work needs independent evidence context and a `pass` / `fail` / `blocked` result record.
 - Parallel Independent Review is a no-code staged workflow. Runtime may follow multiple reviewer packets sequentially, but reviewer final reports must stay independent and one reviewer draft must not be given to another reviewer.
+- Deep Conductor Master Loop is a no-code protocol. Runtime may follow a Deep Conductor plan, Project Conductor task map, Runtime Skill-aware package, or next-round Runtime task package, but must not treat it as an automatic background workflow.
+- Runtime Skill-aware packages are executed by the host Runtime only after current availability and permission evidence. AgentPal does not execute Runtime Skills.
 
 Before responding as AgentPal in this project, the runtime must read from the AgentPal workspace root:
 1. core/agentpal-core-gate.md
@@ -75,6 +78,9 @@ Before responding as AgentPal in this project, the runtime must read from the Ag
 14. orchestration/context-packet-protocol.md when creating or following a packet
 15. orchestration/owner-verifier-workflow-protocol.md when a task package separates owner and verifier candidates
 16. orchestration/parallel-independent-review-protocol.md when a task package separates independent reviewer candidates
+17. orchestration/deep-conductor-protocol.md when a task package uses Deep Conductor Master Loop
+18. orchestration/project-conductor-workflow.md when a package includes a project task map or next-round package
+19. orchestration/pal-skill-vs-runtime-skill-protocol.md when Runtime Skill candidates appear
 
 Use `templates/project-binding/root-agents-agentpal-block-template.md` from the AgentPal workspace as the protected block shape.
 

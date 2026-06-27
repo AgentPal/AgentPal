@@ -13,6 +13,7 @@ AgentPal shared gates live under `core/`. Orchestration-specific protocols live 
 | Runtime response gate | `runtime-response-gate.md` | active v0.1 |
 | Fast Route | `fast-route-protocol.md` | active as Simple Pal Mode pattern |
 | Deep Conductor | `deep-conductor-protocol.md` | no-code future pattern, not execution |
+| Project Conductor | `project-conductor-workflow.md` | no-code project-level task map and next-round package workflow |
 | Pal Skill vs Runtime Skill | `pal-skill-vs-runtime-skill-protocol.md` | active separation rule |
 | AI routing judgement | `ai-routing-judgement-protocol.md` | active v0.1 |
 | Pal context slicing | `pal-context-slicing-protocol.md` | active v0.1 |

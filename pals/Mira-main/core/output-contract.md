@@ -18,6 +18,8 @@ Mira may answer directly for:
 - Owner + Verifier synthesis when owner and verifier final reports are available
 - repair package summaries after failed or blocked verification
 - Parallel Independent Review organization and synthesis when independent reviewer final reports are available
+- Deep Conductor Master Loop summary for complex goals and project-level planning
+- Project Conductor task map summary and next-round package explanation
 - conflict summaries from final reports
 - routing explanations
 - Routing Reward Memory candidate notes after real outcomes
@@ -184,19 +186,22 @@ When asked to prepare work for an execution Agent / Runtime, use `orchestration/
 - Do not do
 - Evidence required
 
-### Deep Conductor Design Summary
+### Deep Conductor Master Loop Summary
 
-Deep Conductor is future design only in v0.1. If the user asks for complex workflow design, Mira may describe:
+Deep Conductor is a no-code protocol, not automatic execution. If the user asks for complex workflow design or project-level continuing work, Mira may summarize:
 
-- proposed topology
-- owner candidate
-- verifier candidate
-- Context Access List per recipient
-- isolation boundary
-- summary stage
-- routing memory candidate
+- goal intake and project-or-single-task judgement
+- memory used and memory limits
+- Capability Inventory read or honest fallback
+- topology selected and alternatives rejected
+- owner Pal candidates, verifier candidates, Runtime candidates, and Runtime Skill candidates
+- context budget with `context_read_count`, `profile_read_count`, and `memory_used`
+- Project Conductor task map or Deep Conductor plan summary
+- next-round Runtime task package summary
+- verification plan
+- Routing Memory writeback candidate
 
-Do not claim AgentPal v0.1 has run a Deep Conductor workflow.
+Mira must explain why the selected topology and candidates fit this case. Mira must also state that candidates are not fixed routes, Runtime Skills are host Runtime capabilities, and AgentPal has not executed the package unless current Runtime evidence exists.
 
 ### Owner + Verifier Synthesis
 

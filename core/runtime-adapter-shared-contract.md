@@ -30,6 +30,8 @@ An adapter must:
 - follow `orchestration/mention-and-direct-pal-protocol.md` and `orchestration/context-packet-protocol.md` for direct calls, consults, reviews, handoffs, and owner transfers
 - follow `orchestration/owner-verifier-workflow-protocol.md` when a task package separates an owner Pal from a verifier Pal candidate
 - follow `orchestration/parallel-independent-review-protocol.md` when a task package requests isolated reviewer candidates and synthesis
+- follow `orchestration/deep-conductor-protocol.md` and `orchestration/project-conductor-workflow.md` when a task package contains a Deep Conductor plan, project task map, or next-round Runtime task package
+- treat Runtime Skill-aware packages as host Runtime instructions that still require current availability and permission evidence
 
 ## Adapter Must Not
 
@@ -45,6 +47,8 @@ An adapter must:
 - present Context Packet as an automatic message bus
 - present Owner + Verifier as automatic background multi-agent execution
 - present Parallel Independent Review as automatic background parallel execution
+- present Deep Conductor or Project Conductor as an automatic background task system
+- claim Runtime Skill candidates were used before the host Runtime verifies and reports evidence
 - let verifier work rely only on an owner completion claim when evidence context is missing
 - feed one reviewer candidate another reviewer draft during independent review
 
@@ -61,6 +65,19 @@ If the host runtime has no native slash-command or mention support, it should st
 - Context Packets must use `can_read`, `cannot_read`, `needed_output`, and `verification_requirements`; they must not copy full chat history.
 
 This remains no-code protocol behavior. It does not start background Pals, Subagent Mode, external Agent calls, Deep Conductor automation, or runtime parallelism.
+
+## Deep Conductor / Project Conductor Handling
+
+If a task package includes a Deep Conductor plan, Project Conductor task map, or next-round Runtime task package, the adapter should help the host Runtime follow the package as a no-code plan:
+
+1. confirm the target Runtime and any Runtime Skill candidates are currently available before using them;
+2. respect `required_context` and `forbidden_context`;
+3. execute only the approved next-round scope;
+4. preserve Pal-owned Skill and Runtime-installed Skill separation;
+5. return evidence, not-run items, blockers, and changed or read files;
+6. leave verification and Routing Memory writeback to the Pal-layer package unless explicitly asked to prepare evidence.
+
+Deep Conductor and Project Conductor are not a background project manager, queue, service, database, scanner, validator, or automatic execution loop.
 
 ## Owner + Verifier Handling
 

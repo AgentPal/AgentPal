@@ -29,5 +29,13 @@
 | PBC-025 | `PBC-025-reviewer-reads-peer-draft-failure.md` | reviewer reads peer draft failure |
 | PBC-026 | `PBC-026-synthesis-hides-conflict-failure.md` | synthesis hides conflict failure |
 | PBC-027 | `PBC-027-minority-opinion-preserved.md` | minority opinion preserved |
+| PBC-028 | `PBC-028-deep-conductor-project-release-planning.md` | Deep Conductor project release planning |
+| PBC-029 | `PBC-029-deep-conductor-research-to-html-report.md` | Deep Conductor research to HTML report |
+| PBC-030 | `PBC-030-deep-conductor-palsmith-ai-team-creation.md` | Deep Conductor PalSmith AI team creation |
+| PBC-031 | `PBC-031-deep-conductor-cross-runtime-continuation.md` | Deep Conductor cross-runtime continuation |
+| PBC-032 | `PBC-032-deep-conductor-token-budget-failure.md` | Deep Conductor token budget failure |
+| PBC-033 | `PBC-033-deep-conductor-skips-capability-inventory-failure.md` | Deep Conductor skips Capability Inventory failure |
+| PBC-034 | `PBC-034-deep-conductor-missing-verification-failure.md` | Deep Conductor missing verification failure |
+| PBC-035 | `PBC-035-deep-conductor-no-memory-writeback-failure.md` | Deep Conductor no memory writeback failure |
 
 All cases are no-code regression cases. None requires automatic Deep Conductor execution, Subagents, external Agents, or multiple runtimes.

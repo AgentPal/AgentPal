@@ -11,6 +11,7 @@
 - `task-packages/`: PalSmith task-package examples.
 - `create-first-professional-pal.md`: end-to-end first professional Pal example.
 - `create-ai-team-from-user-goal.md`: end-to-end AI team example.
+- `palsmith-project-conductor-ai-team-task-map.md`: Project Conductor task map example for AI team creation.
 
 ## Notes
 

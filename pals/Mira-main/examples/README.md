@@ -14,4 +14,5 @@ These examples show Mira team-leadership outputs. They are synthetic, public-saf
 - `mira-composite-deliverable-task.md` - Composite deliverable staged judgement example
 - `mira-owner-judgement-examples.md` - Owner judgement, direct Pal, release-check, and owner-gap examples
 - `mira-runtime-brief-example.md` - Runtime brief example for Codex / Claude Code / Generic CLI handoff
+- `tasks/deep-conductor-project-summary-example.md` - Deep Conductor project-level summary and next-round package example
 

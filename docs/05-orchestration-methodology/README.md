@@ -8,8 +8,8 @@ AgentPal v0.1.0-rc.1 is not a multi-agent runtime and not an execution layer. Th
 
 ## Status
 
-- Current: Simple Pal Mode, Fast Route, Task Package, Context Slicing, Asset Loading Budget, Context Packet, Owner + Verifier no-code workflow, Parallel Independent Review no-code workflow, Verification Result Record templates, and Routing Decision Record templates.
-- Future: Deep Conductor no-code patterns, richer Capability Inventory, Runtime Skill-aware Task Packages, cross-runtime Pal memory continuity, Context Access Lists as enforceable workflow contracts, Pal Isolation and Shared Memory, and Routing Reward Memory.
+- Current: Simple Pal Mode, Fast Route, Task Package, Context Slicing, Asset Loading Budget, Context Packet, Owner + Verifier no-code workflow, Parallel Independent Review no-code workflow, Deep Conductor Master Loop no-code usage guide, Project Conductor workflow, Verification Result Record templates, and Routing Decision Record templates.
+- Future: richer Capability Inventory, cross-runtime Pal memory continuity, Context Access Lists as enforceable workflow contracts, Pal Isolation and Shared Memory, and Routing Reward Memory.
 - Research: PalBench evaluates AgentPal usage methods, not model capability or model superiority.
 
 ## Why it exists
@@ -56,6 +56,7 @@ Future methodology extends this with workflow topology, Context Access Lists, is
 - [06 Runtime / Model / Skill Awareness](06-runtime-model-skill-awareness.md)
 - [07 Verification Result Record](07-verification-result-record.md)
 - [Deep Conductor Master Goal](deep-conductor-master-goal.md)
+- [Deep Conductor Master Loop Usage Guide](deep-conductor-master-loop-usage-guide.md)
 - [Owner + Verifier Usage Guide](owner-verifier-usage-guide.md)
 - [Parallel Independent Review Usage Guide](parallel-independent-review-usage-guide.md)
 - [08 Routing Decision Record](08-routing-decision-record.md)
