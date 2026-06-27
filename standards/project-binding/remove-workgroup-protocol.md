@@ -48,10 +48,10 @@ After confirmation:
 5. If `AGENTS.md` is empty or blank after removing the block, replace it with the non-workgroup deactivation marker from `templates/project-binding/agentpal-removed-agents-template.md`.
 6. If root `AGENTS.md` did not exist, create that same non-workgroup deactivation marker.
 7. For Claude Code, remove the AgentPal workspace path from `.claude/settings.local.json` `permissions.additionalDirectories`, preserving all other settings.
-8. Remove the matching project record from `projects/registered-projects.json`.
-9. Remove or mark removed in `projects/registered-projects.md`.
-10. Archive matching AgentPal binding memory under `memory/projects/` by default.
-11. Clear `state/active-project.md` if it points to the removed project.
+8. Remove or mark removed the matching central project record under `workspace/projects/<project-id>/` and `workspace/projects/projects.index.json` when such a public/approved record exists.
+9. If a legacy registry entry exists under `archive/migration-from-v0.3/root-legacy/projects/registered-projects.json` or `.md`, mark it as historical rather than treating it as current truth.
+10. Archive matching AgentPal binding memory under `workspace/organization/memory/projects/` or the selected central project record by default.
+11. Clear ignored local runtime state under `.agentpal/local/state/` only if it points to the removed project.
 12. Generate a concise removal summary that warns about old runtime thread context.
 
 Keyword rules:
@@ -62,7 +62,7 @@ Keyword rules:
 - remove only AgentPal path from Claude Code additionalDirectories when present
 - leave deactivation marker if AGENTS.md would otherwise be empty or missing
 - do not delete user AGENTS content
-- cleanup registered projects
+- cleanup central project records
 - warn that old Codex threads may still retain loaded AgentPal context
 
 ## Boundaries
@@ -86,8 +86,8 @@ Only delete:
 - target project `AGENTS.md` AgentPal block
 - target project `CLAUDE.md` AgentPal block when present
 - target project `.claude/settings.local.json` AgentPal additionalDirectories entry when present
-- AgentPal registered project record
-- AgentPal active project state for that target
+- AgentPal central project record for that target, when present and approved for cleanup
+- AgentPal ignored local active project state for that target
 
 ## Completion message
 

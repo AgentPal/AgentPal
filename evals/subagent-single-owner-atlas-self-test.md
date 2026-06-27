@@ -20,7 +20,7 @@
 - `official/pals/Atlas-developer/PAL.md`
 - `official/pals/Atlas-developer/SKILL.md`
 - `official/pals/Atlas-developer/pal.json`
-- `response-fingerprints/Atlas.md`
+- `workspace/resources/response-fingerprints/Atlas.md`
 - `official/pals/Atlas-developer/core/output-contract.md`
 
 ## Expected output

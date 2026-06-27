@@ -6,7 +6,7 @@ mode: handoff
 owner_pal: REPLACE_WITH_OWNER_PAL
 user_visible_handoff: true
 active_speaker_after_handoff: REPLACE_WITH_OWNER_PAL
-required_response_fingerprint: response-fingerprints/REPLACE_WITH_OWNER_PAL.md
+required_response_fingerprint: workspace/resources/response-fingerprints/REPLACE_WITH_OWNER_PAL.md
 required_output_contract: official/pals/REPLACE_WITH_OWNER_PAL_DIR/core/output-contract.md
 minimum_asset_loading:
   - owner Pal identity

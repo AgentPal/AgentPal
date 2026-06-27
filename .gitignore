@@ -7,6 +7,14 @@ reports/task-reports/*
 reports/verification-reports/*
 reports/user-reports/*
 
+# Central organization private memory
+workspace/organization/memory/user/*
+workspace/organization/memory/projects/*
+workspace/organization/memory/runtime/*
+!workspace/organization/memory/user/README.md
+!workspace/organization/memory/projects/README.md
+!workspace/organization/memory/runtime/README.md
+
 # Pal-local runtime-private data
 pals/*/memory/user/*
 pals/*/memory/project/*
@@ -36,6 +44,12 @@ contacts/collaboration-memory.md
 imports/raw/*
 imports/private/*
 imports/tmp/*
+workspace/resources/imports/raw/*
+workspace/resources/imports/private/*
+workspace/resources/imports/tmp/*
+!workspace/resources/imports/raw/README.md
+!workspace/resources/imports/private/README.md
+!workspace/resources/imports/tmp/README.md
 .agentpal/*
 .agentpal/reports/*
 .agentpal/import-staging/*
@@ -73,6 +87,14 @@ desktop.ini
 !memory/runtime/README.md
 !state/README.md
 !reports/**/README.md
+!workspace/organization/memory/README.md
+!workspace/organization/memory/archive/README.md
+!workspace/organization/memory/collaboration/README.md
+!workspace/organization/memory/projects/README.md
+!workspace/organization/memory/routing/README.md
+!workspace/organization/memory/runtime/README.md
+!workspace/organization/memory/system/README.md
+!workspace/organization/memory/user/README.md
 !pals/*/memory/README.md
 !pals/*/memory/user/README.md
 !pals/*/memory/project/README.md

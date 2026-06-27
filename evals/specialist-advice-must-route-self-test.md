@@ -19,7 +19,7 @@ Verify that Mira uses AI routing judgement for specialist advice instead of answ
 - Mira route output is max 2 short sentences.
 - Owner Pal starts immediately with `{Owner}：我接手`.
 - Any consultant or reviewer Pal is selected case-by-case by the active owner or coordinator.
-- The selected owner follows its own `response-fingerprints/{Owner}.md` when present.
+- The selected owner follows its own `workspace/resources/response-fingerprints/{Owner}.md` when present.
 - The selected owner uses its own output contract.
 - The selected owner uses at least one Pal asset or explicit fallback method.
 - If no Pal asset or fallback method is used, the answer is labeled `Codex generic answer`.

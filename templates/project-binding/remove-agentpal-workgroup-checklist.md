@@ -24,10 +24,10 @@ Mira：
 - [ ] Preserve all user-authored `AGENTS.md` content outside the block.
 - [ ] If root `AGENTS.md` becomes empty or whitespace-only, replace it with the non-workgroup deactivation marker from `templates/project-binding/agentpal-removed-agents-template.md`.
 - [ ] If root `AGENTS.md` did not exist, create the same non-workgroup deactivation marker.
-- [ ] Remove matching `projects/registered-projects.json` record.
-- [ ] Remove or mark removed in `projects/registered-projects.md`.
-- [ ] Archive matching `memory/projects/` binding memory by default.
-- [ ] Clear `state/active-project.md` if it points to the target.
+- [ ] Remove or mark removed the matching central project record under `workspace/projects/<project-id>/` and `workspace/projects/projects.index.json` when such a public/approved record exists.
+- [ ] If a legacy registry entry exists under `archive/migration-from-v0.3/root-legacy/projects/registered-projects.json` or `.md`, mark it historical instead of treating it as current truth.
+- [ ] Archive matching memory under `workspace/organization/memory/projects/` or the selected central project record by default.
+- [ ] Clear ignored local runtime state under `.agentpal/local/state/` only if it points to the target.
 
 Keyword rules:
 
@@ -35,7 +35,7 @@ Keyword rules:
 - remove AGENTS.md AgentPal block
 - leave deactivation marker if AGENTS.md would otherwise be empty or missing
 - do not delete user AGENTS content
-- cleanup registered projects
+- cleanup central project records
 - warn that old Codex threads may still retain loaded AgentPal context
 
 ## Do not delete

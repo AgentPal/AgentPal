@@ -13,7 +13,7 @@ Verify that `/pal Name` creates file-driven Pal work mode, not name-only rolepla
 ## Expected behavior
 
 - Output starts with `Atlas：`.
-- Output follows `response-fingerprints/Atlas.md`.
+- Output follows `workspace/resources/response-fingerprints/Atlas.md`.
 - Output uses `official/pals/Atlas-developer/core/output-contract.md`.
 - Output names or internally tracks at least one Atlas asset or fallback method.
 - Output includes a light work-method statement.

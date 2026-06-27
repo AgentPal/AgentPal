@@ -94,14 +94,16 @@ Use:
 | `orchestration/` | current protocols and future-design notes | selected current protocols only |
 | `templates/` | reusable Context Packet, output, binding, and task templates | selected template only |
 | `prompts/` | copyable maintenance and setup prompts | when running that prompt flow |
-| `projects/` | external project workgroup binding templates | project binding only |
+| `standards/project-binding/` | external project binding standards and removal protocol | project binding governance |
 | `workspace/resources/registry/` | legacy registry records moved from root during R76 | compatibility and selected navigation |
 | `archive/migration-from-v0.3/root-legacy/` | old root compatibility paths moved during R76 | migration audits and old-path questions |
 | `runtime/` | runtime-awareness notes | diagnostics or runtime documentation |
 | `models/` | model-routing notes | model-routing documentation |
 | `plugins/` | plugin-discovery notes | plugin documentation |
 | `capabilities/` | capability-profile notes | diagnostics or capability documentation |
-| `response-fingerprints/` | Pal response fingerprint references | selected Pal validation |
+| `workspace/resources/imports/` | public-safe import staging placeholders | import/resource boundary work |
+| `workspace/organization/memory/` | public-safe organization memory placeholders and examples | memory protocol or placeholder work |
+| `workspace/resources/response-fingerprints/` | Pal response fingerprint references | selected Pal validation |
 | `docs/` | user documentation and reference material | docs work or user questions |
 | `docs/01-concepts/07-why-pal.md` | why AgentPal uses the Pal concept between Skills and Agent teams | concept questions and onboarding |
 | `docs/05-orchestration-methodology/` | current AgentPal Pal orchestration methodology | methodology questions and docs navigation |
@@ -109,6 +111,9 @@ Use:
 | `docs/09-roadmap/v0.2-release-readiness.md` | v0.2 release readiness assessment | R46 first-phase integrated readiness and rc preparation recommendation |
 | `docs/09-roadmap/v0.2-public-capability-summary.md` | v0.2 public capability summary | restrained public claims for v0.2 first phase |
 | `docs/09-roadmap/no-code-future-boundary.md` | no-code future boundary | default v0.3/v0.4/v0.5 boundary: AgentPal remains Pal layer, not runtime program |
+| `docs/00-overview/capability-inventory-migration-plan.md` | capability/runtime/model/plugin migration plan | R77 high-risk reference directory planning |
+| `docs/00-overview/orchestration-migration-plan.md` | orchestration migration plan | R77 high-risk protocol surface planning |
+| `docs/00-overview/prompts-migration-plan.md` | prompts migration plan | R77 copyable prompt family planning |
 | `docs/09-roadmap/v0.3-development-plan.md` | v0.3 no-code orchestration prototype plan | Multi-Pal Collaboration, Deep Conductor prototype, Context Packet, Owner + Verifier, Plan -> Execute -> Verify, Parallel Review, and Routing Memory planning |
 | `docs/09-roadmap/v0.3-task-pool.md` | v0.3 execution task pool | P0/P1/P2 task packages for collaboration protocol work |
 | `docs/09-roadmap/v0.3-deep-conductor-readiness.md` | v0.3 Deep Conductor readiness | R63 readiness decision for entering v0.3.0-rc.1 release preparation |
@@ -181,10 +186,10 @@ Use:
 | `docs/research/` | archived research notes | historical traceability only; not a primary entry point |
 | `examples/` | public-safe examples and failure examples | examples, evals, or regression checks |
 | `evals/` | self-tests and release checks | eval or release validation only |
-| `memory/` | public-safe memory placeholders | not ordinary task context |
-| `state/` | public-safe state placeholders | not ordinary task context |
-| `reports/` | public-safe report placeholders | not ordinary task context |
-| `imports/` | import staging placeholders | not ordinary task context |
+| `workspace/organization/memory/` | public-safe memory placeholders | not ordinary task context |
+| `archive/migration-from-v0.3/root-legacy/state/` | legacy public-safe state placeholder | migration traceability only |
+| `archive/migration-from-v0.3/root-legacy/reports/` | legacy public-safe report placeholders | migration traceability only |
+| `workspace/resources/imports/` | import staging placeholders | not ordinary task context |
 
 For user-facing documentation, start with `docs/README.md`. For root-level release asset navigation, use this file.
 
@@ -242,7 +247,7 @@ Do not load all Pal directories by default. Load Mira for ordinary entry and the
 - `orchestration/token-cost-aware-conductor-policy.md`
 - `orchestration/context-budget-protocol.md`
 - `orchestration/prompt-shaping-by-model-and-reasoning.md`
-- `memory/runtime/cross-runtime-pal-memory-protocol.md`
+- `workspace/organization/memory/runtime/cross-runtime-pal-memory-protocol.md`
 - `orchestration/pal-owned-skill-storage-protocol.md`
 - `orchestration/specialist-pal-asset-loading-protocol.md`
 
@@ -283,7 +288,7 @@ Use the current docs directories as the public entry points. Archived research n
 | `orchestration/token-cost-aware-conductor-policy.md` | token, cost, context, profile, memory, model, and verification policy |
 | `orchestration/context-budget-protocol.md` | qualitative Context Budget Plan, read tiers, escalation, stop / ask-user conditions, and usage reporting |
 | `orchestration/prompt-shaping-by-model-and-reasoning.md` | no-code prompt shaping guidance for strong, medium, and economy / weak model or reasoning candidates |
-| `memory/runtime/cross-runtime-pal-memory-protocol.md` | cross-runtime Pal memory continuity protocol |
+| `workspace/organization/memory/runtime/cross-runtime-pal-memory-protocol.md` | cross-runtime Pal memory continuity protocol |
 | `orchestration/capability-inventory-protocol.md` | runtime/model/skill/plugin/MCP/Pal profile design |
 | `orchestration/task-judgement-protocol.md` | structured task judgement design |
 | `orchestration/workflow-topology-protocol.md` | workflow topology design and v0.1/future boundary |

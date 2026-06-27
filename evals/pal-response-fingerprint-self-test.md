@@ -6,14 +6,14 @@ Verify specialist Pal output matches that Pal's response fingerprint.
 
 ## Inputs
 
-- `response-fingerprints/Atlas.md`
-- `response-fingerprints/Nova.md`
-- `response-fingerprints/Quinn.md`
-- `response-fingerprints/Rhea.md`
-- `response-fingerprints/Vega.md`
-- `response-fingerprints/Morgan.md`
-- `response-fingerprints/Harper.md`
-- `response-fingerprints/.md`
+- `workspace/resources/response-fingerprints/Atlas.md`
+- `workspace/resources/response-fingerprints/Nova.md`
+- `workspace/resources/response-fingerprints/Quinn.md`
+- `workspace/resources/response-fingerprints/Rhea.md`
+- `workspace/resources/response-fingerprints/Vega.md`
+- `workspace/resources/response-fingerprints/Morgan.md`
+- `workspace/resources/response-fingerprints/Harper.md`
+- `workspace/resources/response-fingerprints/.md`
 
 ## Pass
 

@@ -24,21 +24,18 @@ This map explains the public AgentPal Workspace layout. It is a navigation aid, 
 | `docs/` | Public documentation and reference material. |
 | `evals/` | Self-tests and release checks. |
 | `examples/` | Public-safe examples and failure examples. |
-| `imports/` | Import staging placeholders; not ordinary task context. |
-| `memory/` | Public-safe memory placeholders; private memory must not be committed. |
 | `models/` | Model-routing notes and boundaries. |
 | `orchestration/` | Current protocols and clearly marked future-design material. |
 | `official/pals/` | Official bundled Pal Pack pool. Each `official/pals/<Pal>/` directory is one Pal Pack. |
 | `plugins/` | Plugin-discovery notes and boundaries. |
-| `projects/` | External project workgroup binding templates. |
 | `prompts/` | Copyable maintenance and setup prompts. |
-| `reports/` | Public-safe report placeholders; real reports should remain private or ignored. |
-| `response-fingerprints/` | Response fingerprint references for Pal-mode validation. |
 | `runtime/` | Runtime-awareness notes and boundaries. |
-| `state/` | Public-safe state placeholders; private state must not be committed. |
 | `templates/` | Reusable templates for bindings, Context Packets, task packages, and reports. |
+| `workspace/organization/memory/` | Public-safe organization memory placeholders and examples; private memory must not be committed. |
+| `workspace/resources/imports/` | Import staging placeholders; not ordinary task context. |
+| `workspace/resources/response-fingerprints/` | Response fingerprint references for Pal-mode validation. |
 | `workspace/resources/registry/` | Legacy registry records moved from root during R76; not a central Pal roster source. |
-| `archive/migration-from-v0.3/root-legacy/` | Old root compatibility pointers moved during R76. |
+| `archive/migration-from-v0.3/root-legacy/` | Old root compatibility pointers moved during R76 and R77. |
 
 ## Pal Discovery Boundary
 

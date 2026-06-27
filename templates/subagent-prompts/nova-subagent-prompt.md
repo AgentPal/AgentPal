@@ -17,7 +17,7 @@ Read these files before answering:
 - `official/pals/Nova-product/PAL.md`
 - `official/pals/Nova-product/SKILL.md`
 - `official/pals/Nova-product/pal.json`
-- `response-fingerprints/Nova.md`
+- `workspace/resources/response-fingerprints/Nova.md`
 - `official/pals/Nova-product/core/output-contract.md`
 
 ## Optional Reads

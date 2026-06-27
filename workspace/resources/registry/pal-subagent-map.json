@@ -48,7 +48,7 @@
         "official/pals/Atlas-developer/PAL.md",
         "official/pals/Atlas-developer/SKILL.md",
         "official/pals/Atlas-developer/pal.json",
-        "response-fingerprints/Atlas.md",
+        "workspace/resources/response-fingerprints/Atlas.md",
         "official/pals/Atlas-developer/core/output-contract.md"
       ],
       "may_read": [
@@ -57,7 +57,7 @@
         "orchestration/subagent-result-collection-protocol.md"
       ],
       "output_contract": "official/pals/Atlas-developer/core/output-contract.md",
-      "response_fingerprint": "response-fingerprints/Atlas.md",
+      "response_fingerprint": "workspace/resources/response-fingerprints/Atlas.md",
       "future_mode": "child-workflow",
       "permissions": "workspace-scoped read-only by default; may edit only when task explicitly authorizes implementation",
       "future_child_workflow_suitable": true,
@@ -73,7 +73,7 @@
         "official/pals/Nova-product/PAL.md",
         "official/pals/Nova-product/SKILL.md",
         "official/pals/Nova-product/pal.json",
-        "response-fingerprints/Nova.md",
+        "workspace/resources/response-fingerprints/Nova.md",
         "official/pals/Nova-product/core/output-contract.md"
       ],
       "may_read": [
@@ -82,7 +82,7 @@
         "orchestration/subagent-result-collection-protocol.md"
       ],
       "output_contract": "official/pals/Nova-product/core/output-contract.md",
-      "response_fingerprint": "response-fingerprints/Nova.md",
+      "response_fingerprint": "workspace/resources/response-fingerprints/Nova.md",
       "future_mode": "child-workflow",
       "permissions": "read-only product judgment and planning",
       "future_child_workflow_suitable": true,
@@ -98,7 +98,7 @@
         "official/pals/Quinn-quality/PAL.md",
         "official/pals/Quinn-quality/SKILL.md",
         "official/pals/Quinn-quality/pal.json",
-        "response-fingerprints/Quinn.md",
+        "workspace/resources/response-fingerprints/Quinn.md",
         "official/pals/Quinn-quality/core/output-contract.md"
       ],
       "may_read": [
@@ -107,7 +107,7 @@
         "orchestration/subagent-result-collection-protocol.md"
       ],
       "output_contract": "official/pals/Quinn-quality/core/output-contract.md",
-      "response_fingerprint": "response-fingerprints/Quinn.md",
+      "response_fingerprint": "workspace/resources/response-fingerprints/Quinn.md",
       "future_mode": "child-workflow",
       "permissions": "read-only quality, risk, and acceptance review",
       "future_child_workflow_suitable": true,
@@ -123,7 +123,7 @@
         "official/pals/Rhea-system/PAL.md",
         "official/pals/Rhea-system/SKILL.md",
         "official/pals/Rhea-system/pal.json",
-        "response-fingerprints/Rhea.md",
+        "workspace/resources/response-fingerprints/Rhea.md",
         "official/pals/Rhea-system/core/output-contract.md"
       ],
       "may_read": [
@@ -132,7 +132,7 @@
         "orchestration/subagent-permission-boundary.md"
       ],
       "output_contract": "official/pals/Rhea-system/core/output-contract.md",
-      "response_fingerprint": "response-fingerprints/Rhea.md",
+      "response_fingerprint": "workspace/resources/response-fingerprints/Rhea.md",
       "future_mode": "child-workflow",
       "permissions": "read-only by default; no system modification without explicit approval",
       "future_child_workflow_suitable": true,
@@ -148,7 +148,7 @@
         "official/pals/Vega-research/PAL.md",
         "official/pals/Vega-research/SKILL.md",
         "official/pals/Vega-research/pal.json",
-        "response-fingerprints/Vega.md",
+        "workspace/resources/response-fingerprints/Vega.md",
         "official/pals/Vega-research/core/output-contract.md"
       ],
       "may_read": [
@@ -158,7 +158,7 @@
         "official/pals/Vega-research/learning/"
       ],
       "output_contract": "official/pals/Vega-research/core/output-contract.md",
-      "response_fingerprint": "response-fingerprints/Vega.md",
+      "response_fingerprint": "workspace/resources/response-fingerprints/Vega.md",
       "future_mode": "child-workflow",
       "permissions": "read-only research; no external network unless approved",
       "future_child_workflow_suitable": true,
@@ -174,7 +174,7 @@
         "official/pals/Morgan-document/PAL.md",
         "official/pals/Morgan-document/SKILL.md",
         "official/pals/Morgan-document/pal.json",
-        "response-fingerprints/Morgan.md",
+        "workspace/resources/response-fingerprints/Morgan.md",
         "official/pals/Morgan-document/core/output-contract.md"
       ],
       "may_read": [
@@ -184,7 +184,7 @@
         "official/pals/Morgan-document/learning/"
       ],
       "output_contract": "official/pals/Morgan-document/core/output-contract.md",
-      "response_fingerprint": "response-fingerprints/Morgan.md",
+      "response_fingerprint": "workspace/resources/response-fingerprints/Morgan.md",
       "future_mode": "child-workflow",
       "permissions": "read-only document planning by default; no file moves or deletes without approval",
       "future_child_workflow_suitable": true,
@@ -200,7 +200,7 @@
         "official/pals/Harper-writing/PAL.md",
         "official/pals/Harper-writing/SKILL.md",
         "official/pals/Harper-writing/pal.json",
-        "response-fingerprints/Harper.md",
+        "workspace/resources/response-fingerprints/Harper.md",
         "official/pals/Harper-writing/core/output-contract.md"
       ],
       "may_read": [
@@ -210,7 +210,7 @@
         "official/pals/Harper-writing/learning/"
       ],
       "output_contract": "official/pals/Harper-writing/core/output-contract.md",
-      "response_fingerprint": "response-fingerprints/Harper.md",
+      "response_fingerprint": "workspace/resources/response-fingerprints/Harper.md",
       "future_mode": "child-workflow",
       "permissions": "read-only writing and editing; no external sending without approval",
       "future_child_workflow_suitable": true,

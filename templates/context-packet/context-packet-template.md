@@ -9,7 +9,7 @@ active_project: REPLACE_WITH_CURRENT_PROJECT_OR_NONE
 constraints:
 - REPLACE_WITH_CONSTRAINT
 user_visible_handoff: true
-required_response_fingerprint: response-fingerprints/REPLACE_WITH_TARGET_PAL.md
+required_response_fingerprint: workspace/resources/response-fingerprints/REPLACE_WITH_TARGET_PAL.md
 required_output_contract: official/pals/REPLACE_WITH_TARGET_PAL_DIR/core/output-contract.md
 minimum_asset_loading:
   - PAL.md or pal.json identity
@@ -63,12 +63,12 @@ constraints:
   - read-only first
   - do not modify startup items without user confirmation
 user_visible_handoff: true
-required_response_fingerprint: response-fingerprints/Rhea.md
+required_response_fingerprint: workspace/resources/response-fingerprints/Rhea.md
 required_output_contract: official/pals/Rhea-system/core/output-contract.md
 minimum_asset_loading:
   - official/pals/Rhea-system/PAL.md
   - official/pals/Rhea-system/core/output-contract.md
-  - response-fingerprints/Rhea.md
+  - workspace/resources/response-fingerprints/Rhea.md
   - Rhea asset or fallback method
 allow_codex_generic_answer: false
 fallback_if_no_asset: true

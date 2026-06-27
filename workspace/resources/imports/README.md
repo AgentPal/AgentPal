@@ -4,12 +4,12 @@ External resources can be placed here before review.
 
 Rules:
 
-- Pal Packs go in `imports/pal-packs/`.
-- Skills go in `imports/skills/`.
-- knowledge packages go in `imports/knowledge/`.
-- persona packages go in `imports/personas/`.
-- tools go in `imports/tools/`.
-- raw resources go in `imports/raw/`.
+- Pal Packs go in `workspace/resources/imports/pal-packs/`.
+- Skills go in `workspace/resources/imports/skills/`.
+- knowledge packages go in `workspace/resources/imports/knowledge/`.
+- persona packages go in `workspace/resources/imports/personas/`.
+- tools go in `workspace/resources/imports/tools/`.
+- raw resources go in `workspace/resources/imports/raw/`.
 
 Only valid Pal Packs with collaboration permissions can enter contacts. Ordinary Skills, tools, knowledge packs, persona packs, plugins, MCP servers, and non-Pal runtimes do not enter Pal contacts.
 

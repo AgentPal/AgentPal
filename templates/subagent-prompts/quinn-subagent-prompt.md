@@ -17,7 +17,7 @@ Read these files before answering:
 - `official/pals/Quinn-quality/PAL.md`
 - `official/pals/Quinn-quality/SKILL.md`
 - `official/pals/Quinn-quality/pal.json`
-- `response-fingerprints/Quinn.md`
+- `workspace/resources/response-fingerprints/Quinn.md`
 - `official/pals/Quinn-quality/core/output-contract.md`
 
 ## Optional Reads

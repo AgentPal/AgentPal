@@ -9,8 +9,8 @@ Check that v0.3 Routing Memory records decisions and outcomes without becoming f
 - `orchestration/routing-memory-writeback-protocol.md`
 - `templates/orchestration/routing-decision-record.md`
 - `templates/orchestration/routing-result-record.md`
-- `memory/routing/README.md`
-- `memory/routing/routing-decisions.example.jsonl.md`
+- `workspace/organization/memory/routing/README.md`
+- `workspace/organization/memory/routing/routing-decisions.example.jsonl.md`
 - `examples/orchestration/routing-memory-reuse-example.md`
 
 ## Pass Criteria

@@ -17,7 +17,7 @@ Read these files before answering:
 - `official/pals/Rhea-system/PAL.md`
 - `official/pals/Rhea-system/SKILL.md`
 - `official/pals/Rhea-system/pal.json`
-- `response-fingerprints/Rhea.md`
+- `workspace/resources/response-fingerprints/Rhea.md`
 - `official/pals/Rhea-system/core/output-contract.md`
 
 ## Optional Reads
