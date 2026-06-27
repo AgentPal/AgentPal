@@ -132,8 +132,11 @@ AgentPal is a Pal layer and Pal Pack Standard practice for Markdown/JSON-capable
 ## Capability Inventory Quick Links
 
 - [Capability Inventory minimal usable design](05-orchestration-methodology/capability-inventory-minimal-usable-design.md)
+- [Manual Capability Profile Guide](03-user-guides/manual-capability-profile.md)
 - [Capability Inventory navigation](00-overview/capability-inventory-navigation.md)
 - [Capability profiles index](../standards/capability-inventory/README.md)
+- [Organization capability records](../workspace/organization/capability-inventory/README.md)
+- [Project capability record template](../workspace/projects/_template/capability-inventory/README.md)
 - [Capability Inventory templates](../templates/capability-inventory/README.md)
 - [Runtime profiles](../examples/capability-inventory/runtime-profiles/README.md)
 - [Model profiles](../examples/capability-inventory/model-profiles/README.md)

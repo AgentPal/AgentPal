@@ -6,6 +6,8 @@ Default public repository content should include only templates, examples, and e
 
 External projects should contain thin binding files only. Project memory, source maps, derived knowledge, governance notes, task packages, reports, and capability inventory records belong here when they are maintained centrally.
 
+Project-level capability inventory templates live under `_template/capability-inventory/`. Real project capability records live under `workspace/projects/<project-id>/capability-inventory/`, may reference organization records from `workspace/organization/capability-inventory/`, and are private by default.
+
 Default public files:
 
 - `README.md`

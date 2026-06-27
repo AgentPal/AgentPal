@@ -12,7 +12,23 @@ It is not an automatic scanner, validator, installer, sync service, or keyword r
 | Current organization records | `workspace/organization/capability-inventory/` | Public-safe current organization placeholders and maintained capability notes. |
 | Examples | `examples/capability-inventory/` | Synthetic example profiles and task judgement examples. |
 | Templates | `templates/capability-inventory/` | Copyable JSON profile templates. |
+| Project record template | `workspace/projects/_template/capability-inventory/` | Template for per-project capability records under central project records. |
 | Historical archive | `archive/migration-from-v0.3/root-legacy/capability-inventory/` | R78/R79/R80 migration evidence and archived legacy pointers. |
+
+## Manual Profile Updates
+
+Use `docs/03-user-guides/manual-capability-profile.md` when adding or updating a profile.
+
+Manual profile rules:
+
+- choose the profile type before writing
+- copy a template from `templates/capability-inventory/`
+- fill only confirmed information
+- mark unconfirmed fields as `unknown`
+- record source and confidence
+- include limitations and not-run notes
+- do not store credentials, private tokens, API keys, or secrets
+- do not copy profile records into external user projects by default
 
 ## External Project Boundary
 
@@ -22,6 +38,12 @@ Project-specific capability findings belong under:
 
 ```text
 workspace/projects/<project-id>/capability-inventory/
+```
+
+The template for that central project record area is:
+
+```text
+workspace/projects/_template/capability-inventory/
 ```
 
 The external project should keep only binding entrypoints such as `.agentpal/project.json`, `.agentpal/AGENTPAL.md`, and protected root instruction blocks.

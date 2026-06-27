@@ -22,8 +22,10 @@ This map explains the public AgentPal Workspace layout. It is a navigation aid, 
 | --- | --- |
 | `standards/capability-inventory/` | Capability profile standards, protocols, policies, and matrices. |
 | `workspace/organization/capability-inventory/` | Current central organization capability inventory records and usage-memory placeholders. |
+| `workspace/projects/_template/capability-inventory/` | Project-level capability inventory record template, not real project data. |
 | `examples/capability-inventory/` | Public-safe capability profile examples. |
 | `templates/capability-inventory/` | Copyable Capability Inventory JSON profile templates. |
+| `docs/03-user-guides/manual-capability-profile.md` | Manual no-code Capability Inventory profile guide. |
 | `docs/` | Public documentation and reference material. |
 | `evals/` | Self-tests and release checks. |
 | `examples/` | Public-safe examples and failure examples. |

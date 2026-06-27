@@ -33,5 +33,13 @@
     "governance": "governance/",
     "capability_inventory": "capability-inventory/"
   },
+  "capability_inventory_policy": {
+    "record_path": "capability-inventory/",
+    "organization_records": "workspace/organization/capability-inventory/",
+    "manual_profile_guide": "docs/03-user-guides/manual-capability-profile.md",
+    "auto_scan": false,
+    "keyword_routing_allowed": false,
+    "credentials_allowed": false
+  },
   "do_not_commit_real_user_project_records": true
 }

@@ -99,8 +99,10 @@ Use:
 | `archive/migration-from-v0.3/root-legacy/` | old root compatibility paths moved during R76 | migration audits and old-path questions |
 | `standards/capability-inventory/` | capability profile standards, policies, protocols, and matrices | capability inventory governance and release checks |
 | `workspace/organization/capability-inventory/` | central organization capability inventory records and usage-memory placeholders | current public-safe organization capability records |
+| `workspace/projects/_template/capability-inventory/` | project-level capability inventory record template | central project record template work |
 | `examples/capability-inventory/` | illustrative capability profile examples | examples and regression checks |
 | `templates/capability-inventory/` | copyable Capability Inventory JSON profile templates | selected template work |
+| `docs/03-user-guides/manual-capability-profile.md` | manual Capability Inventory profile guide | adding no-code manual or semi-manual capability profiles |
 | `archive/migration-from-v0.3/root-legacy/capability-inventory/root-pointers/` | archived R78 root compatibility pointers | legacy path questions and migration audits |
 | `workspace/resources/imports/` | public-safe import staging placeholders | import/resource boundary work |
 | `workspace/organization/memory/` | public-safe organization memory placeholders and examples | memory protocol or placeholder work |
@@ -153,6 +155,7 @@ Use:
 | `docs/07-official-pals/official-pal-example-library-plan.md` | Official Pal example library plan | official Pal examples planning and R42 first implementation status |
 | `evals/official-pals/official-pal-example-library-self-test.md` | Official Pal example library self-test | R42 example structure and boundary checks |
 | `docs/05-orchestration-methodology/capability-inventory-minimal-usable-design.md` | Capability Inventory minimal usable design | v0.2 R43 manual profile design |
+| `docs/03-user-guides/manual-capability-profile.md` | Manual Capability Profile Guide | no-code manual or semi-manual capability profile creation |
 | `docs/00-overview/capability-inventory-navigation.md` | Capability Inventory standards / records / examples / templates navigation | R80 template and runtime example path clarification |
 | `standards/capability-inventory/README.md` | Capability Inventory profile index | runtime/model/reasoning/skill/plugin/MCP/Pal profile navigation |
 | `examples/capability-inventory/runtime-profiles/` | Runtime profile examples | runtime capability judgement inputs |
@@ -194,6 +197,50 @@ Use:
 | `workspace/resources/imports/` | import staging placeholders | not ordinary task context |
 
 For user-facing documentation, start with `docs/README.md`. For root-level release asset navigation, use this file.
+
+## Capability Inventory Navigation
+
+Capability Inventory is a no-code profile layer. It is not an automatic scanner, automatic validator, automatic discovery service, automatic execution engine, or keyword router.
+
+### Capability Inventory Standards
+
+| Path | Purpose |
+| --- | --- |
+| `standards/capability-inventory/` | standards, matrices, protocols, and profile rules |
+| `docs/05-orchestration-methodology/capability-inventory-minimal-usable-design.md` | minimal usable design for manual profile records |
+
+### Capability Inventory Templates
+
+| Path | Purpose |
+| --- | --- |
+| `templates/capability-inventory/` | copyable JSON templates only, not current facts |
+
+### Capability Inventory Examples
+
+| Path | Purpose |
+| --- | --- |
+| `examples/capability-inventory/` | illustrative examples only, not proof of current availability |
+
+### Organization Capability Records
+
+| Path | Purpose |
+| --- | --- |
+| `workspace/organization/capability-inventory/` | public-safe organization-level capability records and placeholders |
+
+### Project Capability Record Template
+
+| Path | Purpose |
+| --- | --- |
+| `workspace/projects/_template/capability-inventory/` | project-level record template; real records live under `workspace/projects/<project-id>/capability-inventory/` and are private by default |
+| `docs/03-user-guides/manual-capability-profile.md` | manual flow for choosing a profile type, copying a template, marking source/confidence, and saving to the right central record |
+
+### Historical Migration Notes
+
+| Path | Purpose |
+| --- | --- |
+| `docs/00-overview/capability-inventory-navigation.md` | current source map and legacy path notes |
+| `docs/00-overview/capability-inventory-migration-plan.md` | migration plan and completed R78/R79/R80 path decisions |
+| `archive/migration-from-v0.3/root-legacy/capability-inventory/` | historical migration evidence and archived root pointers |
 
 ## Project Install Prompts
 
@@ -305,8 +352,10 @@ Use the current docs directories as the public entry points. Archived research n
 | `orchestration/routing-reward-memory-protocol.md` | routing outcome memory design |
 | `standards/capability-inventory/` | capability profile standards and matrices |
 | `workspace/organization/capability-inventory/` | current organization capability records |
+| `workspace/projects/_template/capability-inventory/` | project capability record template, not real project data |
 | `examples/capability-inventory/` | capability profile examples |
 | `templates/capability-inventory/` | capability profile JSON templates |
+| `docs/03-user-guides/manual-capability-profile.md` | manual no-code profile creation guide |
 | `archive/migration-from-v0.3/root-legacy/capability-inventory/root-pointers/` | archived R78 capability inventory root pointers |
 | `templates/orchestration/` | task judgement, workflow, access list, project conductor task map, Deep Conductor plan, next-round runtime package, cross-runtime continuation package, conductor decision record, Runtime Skill-aware task package, context budget plan, context usage report, verifier context packet, reviewer context packet, final report, synthesis, result record, routing, and verification templates |
 | `templates/orchestration/deep-conductor-e2e-package.md` | complete Deep Conductor E2E package template |
