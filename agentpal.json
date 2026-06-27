@@ -3,7 +3,7 @@
   "id": "agentpal-workspace",
   "name": "AgentPal",
   "type": "agentpal-workspace",
-  "version": "v0.2.0-rc.1",
+  "version": "v0.3.0-rc.1",
   "release_status": "release-candidate",
   "methodology": {
     "design_foundation": "AgentPal does not compete with foundation models. It defines an original Pal Layer methodology for using existing Agent runtimes through Pal identity, context control, task packaging, verification, and routing memory.",
@@ -376,7 +376,9 @@
   "future_design": {
     "agentpal_orchestration_methodology": {
       "active_in_v0_1_runtime": false,
-      "future_design_only": true,
+      "future_design_only": false,
+      "current_in_v0_3_as_no_code_protocols": true,
+      "automatic_runtime_execution": false,
       "docs": [
         "docs/05-orchestration-methodology/README.md",
         "docs/05-orchestration-methodology/00-methodology-overview.md",
@@ -402,7 +404,7 @@
         "routing-reward-memory",
         "palbench"
       ],
-      "purpose": "Design foundation for transparent scheduling of Pals, runtimes, model profiles, reasoning profiles, Skills, plugins, context, verification, and routing memory. Not active Deep Conductor behavior in v0.2.0-rc.1."
+      "purpose": "No-code methodology foundation for transparent scheduling of Pals, runtimes, model profiles, reasoning profiles, Skills, plugins, context, verification, and routing memory. In v0.3.0-rc.1, Deep Conductor is represented as protocols, templates, examples, evals, and task packages, not as automatic runtime execution."
     },
     "agent_runtime_orchestration": {
       "active_in_v0_1_runtime": false,

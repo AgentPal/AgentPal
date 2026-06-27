@@ -14,6 +14,7 @@ This directory contains public roadmap and release-readiness planning documents.
 - [v0.3 Deep Conductor readiness](v0.3-deep-conductor-readiness.md)
 - [v0.3 public capability summary](v0.3-public-capability-summary.md)
 - [v0.3 release checklist](v0.3-release-checklist.md)
+- [v0.3 release preparation audit](v0.3-release-preparation-audit.md)
 
 ## Boundary
 

@@ -1,5 +1,70 @@
 # AgentPal Release Manifest
 
+## v0.3.0-rc.1 Release Snapshot
+
+Generated: 2026-06-27
+
+| Field | Value |
+| --- | --- |
+| Release name | AgentPal v0.3.0-rc.1 |
+| Version | `v0.3.0-rc.1` |
+| Git tag | `v0.3.0-rc.1` |
+| Release type | Public release candidate / pre-release |
+| Runtime policy | Simple Pal Mode with no-code Deep Conductor protocols |
+| Publication status | Release preparation only; tag, push, and GitHub Release are not done by this manifest |
+
+Scope:
+
+- Deep Conductor E2E guide, package template, synthesis report template, and user-facing short summary template.
+- Deep Conductor Master Loop, Project Conductor workflow, project task map, next-round Runtime Task Package, and conductor decision record.
+- Context Packet, Context Access, `/pal Name`, and `@Pal` no-code collaboration protocols.
+- Owner + Verifier, Parallel Independent Review, and Plan -> Execute -> Verify workflows.
+- Cross-Runtime Pal Memory, memory boundary protocol, Pal Project Memory Snapshot, Routing Memory Record, Runtime Skill Usage Memory Record, and continuation package.
+- Runtime-installed Skill Orchestration guide, candidate decision protocol, availability check package, fallback package, and Runtime Skill-aware Task Package.
+- Token / Cost-aware Deep Conductor, Context Budget protocol, Context Budget Plan, Context Usage Report, and prompt shaping guide.
+- Deep Conductor real host Runtime replay report and replay gap analysis.
+- PalBench Collaboration qualitative regression suite with 87 no-code cases.
+- v0.3 readiness document, public capability summary, release checklist, integration matrix, coverage audit, and release preparation audit.
+- Runtime adapter notes that keep actual execution in host Agent Runtimes.
+
+Core v0.3 assets:
+
+- `docs/05-orchestration-methodology/deep-conductor-e2e-usage-guide.md`
+- `templates/orchestration/deep-conductor-e2e-package.md`
+- `templates/orchestration/deep-conductor-e2e-synthesis-report.md`
+- `docs/05-orchestration-methodology/deep-conductor-master-loop-usage-guide.md`
+- `orchestration/deep-conductor-protocol.md`
+- `orchestration/project-conductor-workflow.md`
+- `docs/05-orchestration-methodology/runtime-installed-skill-orchestration-guide.md`
+- `templates/orchestration/runtime-skill-aware-task-package.md`
+- `docs/05-orchestration-methodology/token-cost-aware-deep-conductor.md`
+- `orchestration/context-budget-protocol.md`
+- `docs/05-orchestration-methodology/cross-runtime-pal-memory.md`
+- `docs/research/deep-conductor-real-runtime-replay-report.md`
+- `docs/research/deep-conductor-real-runtime-replay-gap-analysis.md`
+- `evals/palbench-collaboration/task-index.md`
+- `evals/v0.3-integration/v0.3-deep-conductor-integration-test-matrix.md`
+- `docs/09-roadmap/v0.3-deep-conductor-readiness.md`
+- `docs/09-roadmap/v0.3-public-capability-summary.md`
+- `docs/09-roadmap/v0.3-release-checklist.md`
+- `docs/09-roadmap/v0.3-release-preparation-audit.md`
+
+Not included:
+
+- runtime code, generated binaries, generated archives, dependency files, package manifests, or build artifacts
+- desktop app, web app, CLI runtime, daemon, scanner, validator, installer, service, database, token meter, or cost calculator
+- automatic Deep Conductor execution, automatic Subagent launch, automatic external Agent calls, or automatic Runtime Skill scanning
+- private memory, private project state, internal reports, local absolute paths, credentials, tokens, secrets, or raw user data
+- statistical benchmark proof or foundation-model comparison
+
+Publication boundary:
+
+- Create the release from tag `v0.3.0-rc.1` only in the authorized release operation.
+- Mark the GitHub Release as a pre-release.
+- Do not mark this release as stable `v0.3.0`.
+- Use `GITHUB_RELEASE_DRAFT.md` as the GitHub Release body.
+- Verify the intended commit, tag, remote, and GitHub Release page during the release operation.
+
 ## v0.2.0-rc.1 Release Snapshot
 
 Generated: 2026-06-27

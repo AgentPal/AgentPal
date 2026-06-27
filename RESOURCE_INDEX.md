@@ -96,11 +96,13 @@ Use:
 | `docs/09-roadmap/v0.3-deep-conductor-readiness.md` | v0.3 Deep Conductor readiness | R63 readiness decision for entering v0.3.0-rc.1 release preparation |
 | `docs/09-roadmap/v0.3-public-capability-summary.md` | v0.3 public capability summary | public-safe current capability and forbidden claim summary |
 | `docs/09-roadmap/v0.3-release-checklist.md` | v0.3 release preparation checklist | checks before tag, push, or GitHub Release work |
+| `docs/09-roadmap/v0.3-release-preparation-audit.md` | v0.3 release preparation audit | R64 release-facing package audit before tag / push / release work |
 | `evals/v0.3-integration/v0.3-deep-conductor-integration-test-matrix.md` | v0.3 Deep Conductor integration matrix | integrated pass / partial / unavailable readiness matrix |
 | `docs/05-orchestration-methodology/deep-conductor-master-goal.md` | Deep Conductor master goal | no-code 12-step conductor loop and executor boundary |
 | `docs/05-orchestration-methodology/deep-conductor-master-loop-usage-guide.md` | Deep Conductor master loop usage guide | project goal to task map, Runtime packages, verification, synthesis, and memory writeback |
 | `docs/05-orchestration-methodology/deep-conductor-e2e-usage-guide.md` | Deep Conductor E2E usage guide | full no-code loop from goal through memory, capability, context budget, topology, Runtime Skill-aware packages, verification, synthesis, routing memory, and next-round recommendation |
 | `docs/research/deep-conductor-real-runtime-replay-gap-analysis.md` | Deep Conductor real replay gap analysis | R61 real host replay pass / partial / unavailable / fail classification and R62 repair targets |
+| `docs/research/deep-conductor-real-runtime-replay-report.md` | Deep Conductor real Runtime replay report | R61 manual host Runtime replay report and boundary evidence |
 | `docs/05-orchestration-methodology/cross-runtime-pal-memory.md` | Cross-Runtime Pal Memory usage guide | no-code continuity across Codex, Claude Code, generic CLI, and other host Runtimes |
 | `docs/05-orchestration-methodology/runtime-installed-skill-orchestration-guide.md` | Runtime-installed Skill Orchestration guide | no-code Runtime Skill candidate selection, availability checks, fallback, verification, and usage memory |
 | `docs/05-orchestration-methodology/token-cost-aware-deep-conductor.md` | Token / Cost-aware Deep Conductor guide | no-code Context Budget, read tier, prompt shaping, verification cost, and usage report guidance |
@@ -239,6 +241,7 @@ Use the current docs directories as the public entry points. Archived research n
 | `docs/09-roadmap/v0.3-deep-conductor-readiness.md` | v0.3 Deep Conductor readiness assessment for rc.1 preparation |
 | `docs/09-roadmap/v0.3-public-capability-summary.md` | public-safe v0.3 capability summary |
 | `docs/09-roadmap/v0.3-release-checklist.md` | v0.3 release preparation checklist |
+| `docs/09-roadmap/v0.3-release-preparation-audit.md` | R64 release preparation audit |
 | `evals/v0.3-integration/v0.3-deep-conductor-integration-test-matrix.md` | v0.3 integration readiness matrix |
 | `docs/05-orchestration-methodology/cross-runtime-pal-memory.md` | Cross-Runtime Pal Memory guide for preserving Pal/project/routing continuity across host Runtimes |
 | `docs/05-orchestration-methodology/token-cost-aware-deep-conductor.md` | Token / Cost-aware Deep Conductor guide for qualitative Context Budget planning |

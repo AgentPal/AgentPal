@@ -1,6 +1,6 @@
 # Release Checklist
 
-Use this checklist before publishing AgentPal v0.1.0-rc.1 as a public MIT GitHub release.
+Use this checklist before publishing AgentPal v0.3.0-rc.1 as a public MIT GitHub pre-release.
 
 ## v0.2.0-rc.1 Pre-Release Checklist
 
@@ -34,7 +34,9 @@ Use this section before entering `v0.3.0-rc.1` tag / push / GitHub Release work.
 - [ ] `evals/v0.3-integration/v0.3-deep-conductor-integration-test-matrix.md` records `pass`, `partial`, `unavailable`, `blocked`, and `not-run` status honestly.
 - [ ] `docs/09-roadmap/v0.3-public-capability-summary.md` states allowed public claims and forbidden claims.
 - [ ] `docs/09-roadmap/v0.3-release-checklist.md` is complete.
+- [ ] `docs/09-roadmap/v0.3-release-preparation-audit.md` records the final release-prep audit.
 - [ ] `docs/research/palbench-collaboration-coverage-audit.md` confirms qualitative PalBench Collaboration coverage and states remaining gaps.
+- [ ] `CHANGELOG.md`, `RELEASE_NOTES.md`, `RELEASE_MANIFEST.md`, and `GITHUB_RELEASE_DRAFT.md` have `v0.3.0-rc.1` release-candidate wording.
 - [ ] Deep Conductor remains documented as no-code coordination methodology, not an executor, scheduler, background workflow, CLI, scanner, validator, service, daemon, database, desktop app, web app, token meter, or cost calculator.
 - [ ] Runtime-installed Skill Orchestration remains host Runtime candidate handling with current availability evidence, fallback, verification, and usage-memory records; it is not described as AgentPal executing Skills.
 - [ ] Subagent / external Agent handoff remains unavailable / unknown / blocked unless a current host Runtime provides support and permission evidence.
@@ -42,6 +44,10 @@ Use this section before entering `v0.3.0-rc.1` tag / push / GitHub Release work.
 - [ ] PalBench Collaboration is described as qualitative regression coverage, not statistical benchmark evidence.
 - [ ] README, docs index, roadmap index, and `RESOURCE_INDEX.md` include the v0.3 readiness, public summary, integration matrix, release checklist, and coverage audit entries.
 - [ ] JSON parse checks pass.
+- [ ] Pal count / contacts / registry count checks pass for the 9 official bundled Pals.
+- [ ] PalBench Collaboration case count matches index and file count.
+- [ ] Deep Conductor E2E package, R61 replay report, and R62 gap analysis are present.
+- [ ] Release notes wording does not describe `v0.3.0-rc.1` as stable.
 - [ ] no-runtime / no-program-future / no-hardcoded-routing / no-future-as-current / no-internal-path checks pass.
 - [ ] `git diff --check` passes.
 - [ ] `git status --short` is clean before tag / push / release work.
@@ -55,7 +61,7 @@ Use this section before entering `v0.3.0-rc.1` tag / push / GitHub Release work.
 - [ ] `PAL.md` exists and describes the AgentPal Workspace identity, not a single Pal.
 - [ ] `SKILL.md` exists and identifies AgentPal as a Workspace-level Skill entry, not a single-purpose Skill.
 - [ ] `prompts/codex/initialize-agentpal-workspace.md` can be copied into Codex for AgentPal Workspace initialization.
-- [ ] `agentpal.json` parses as valid JSON and uses version `v0.1.0-rc.1`.
+- [ ] `agentpal.json` parses as valid JSON and uses version `v0.3.0-rc.1`.
 - [ ] `RESOURCE_INDEX.md` exists as navigation, not a default full-context bundle.
 - [ ] `core/` exists and centralizes shared AgentPal gates for runtime adapters.
 
@@ -64,10 +70,10 @@ Use this section before entering `v0.3.0-rc.1` tag / push / GitHub Release work.
 - [ ] `README.md` and `README.zh-CN.md` do not describe future work as active.
 - [ ] `docs/` has a clear user-facing navigation path.
 - [ ] Current docs distinguish AgentPal Workspace, Pal Pack, Pal, Skill, and execution runtime.
-- [ ] Future design docs are clearly marked as future or not active in v0.1.0-rc.1.
-- [ ] Research docs for orchestration methodology and PalBench are present and clearly marked as design foundation.
+- [ ] Future-oriented runtime claims are clearly separated from current v0.3.0-rc.1 no-code protocols and host-runtime-dependent execution.
+- [ ] Research docs for orchestration methodology and PalBench are present and clearly marked as qualitative design / regression foundations.
 - [ ] R33 PalBench small-sample report is present, cautious, and does not claim statistical significance or model superiority.
-- [ ] R32 Fast Route / Deep Conductor boundary is documented: Fast Route current, Deep Conductor future-only.
+- [ ] Deep Conductor boundary is documented: current as no-code protocols, templates, examples, evals, task packages, and replay reports; not automatic execution.
 - [ ] Mira is documented as Main Pal / Leader Pal / Conductor, with team-leadership as communication layer.
 - [ ] Capability Inventory, Context Access List, Workflow Topology, Pal Isolation, and Routing Reward Memory protocols are present.
 - [ ] Deliverable-aware Task Judgement is documented as a Main Pal / owner Pal capability for composite deliverables.

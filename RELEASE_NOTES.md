@@ -1,152 +1,80 @@
 # AgentPal Release Notes
 
-## v0.2.0-rc.1
+## v0.3.0-rc.1
 
-AgentPal v0.2.0-rc.1 is a release candidate for the first integrated no-code Pal layer improvements after v0.1.
+AgentPal v0.3.0-rc.1 is a release candidate for the no-code orchestration prototype line.
 
-This release strengthens:
+It strengthens Deep Conductor, Multi-Pal Collaboration, Context Packet handoff, evidence-based verification, Runtime Skill-aware task packaging, cross-runtime memory continuity, and qualitative release regression coverage.
 
-- PalSmith end-to-end creation flows for a first professional Pal and a small AI team.
-- Mira-first usage flows for users who want one default entry point.
-- Official Pal task examples for all 9 bundled Pals.
-- Minimal Capability Inventory profiles as manual AI judgement inputs.
-- PalBench Light as a qualitative release regression suite.
-- Runtime Adapter troubleshooting and thin binding guidance for Codex, Claude Code, and generic CLI agents.
+This is not a stable release. The GitHub Release should be marked as a pre-release.
 
-Current boundary:
+## What This Release Is
 
-- AgentPal remains a Markdown / JSON / protocol workspace for existing runtimes.
-- Simple Pal Mode remains the active runtime policy.
-- Host runtimes perform real file reads, writes, commands, publishing, and tool calls.
-- Deep Conductor, autonomous multi-agent runtime behavior, automatic capability probing, automatic Routing Reward Memory writeback, and statistical benchmark claims are not included.
-- PalSmith is not a CLI, scanner, importer, exporter, builder, installer, UI, daemon, or service.
+AgentPal remains a Markdown / JSON / protocol workspace for host Agent Runtimes. It is a Pal layer and Pal Pack Standard practice, not an Agent runtime, multi-agent runtime, app, CLI, service, or execution layer.
 
-Publication note:
+Deep Conductor in v0.3.0-rc.1 is a no-code orchestration protocol and task-package system. Host Runtimes perform real file reads, writes, commands, tool calls, rendering, browsing, publishing, and Skill/plugin/MCP use, and must return evidence.
 
-- This is a release candidate, not a stable `v0.2.0` release.
-- The GitHub Release should be marked as a pre-release.
+## What Is New In v0.3.0-rc.1
 
-## v0.1.0-rc.1
+- Deep Conductor E2E package and synthesis report.
+- Deep Conductor Master Loop and Project Conductor workflow.
+- Context Packet and Context Access boundaries for controlled Pal handoff.
+- `/pal Name` and `@Pal` collaboration protocols as plain-text AgentPal behavior.
+- Owner + Verifier workflow with independent evidence checks.
+- Parallel Independent Review workflow with isolated reviewer packets.
+- Cross-Runtime Pal Memory, Routing Memory, Runtime Skill Usage Memory, and continuation packages.
+- Runtime-installed Skill Orchestration packages with availability checks, fallback, verification, and usage-memory records.
+- Token / Cost-aware Context Budget, Context Usage Report, and prompt-shaping guidance.
+- Deep Conductor real host Runtime replay report and replay gap repair.
+- PalBench Collaboration expanded to 87 qualitative no-code regression cases.
+- v0.3 readiness, public capability summary, release checklist, integration matrix, and coverage audit.
 
-AgentPal v0.1.0-rc.1 is a release candidate for the AgentPal Workspace and Pal Pack Standard practice.
+## What Remains No-Code / Host-Runtime-Dependent
 
-## Who This Release Is For
+- Deep Conductor produces plans, Context Packets, Runtime Skill-aware packages, verification plans, synthesis reports, and next-round recommendations.
+- AgentPal does not execute those packages by itself.
+- Runtime-installed Skills are host Runtime capabilities. AgentPal may name them as candidates, but the current host Runtime must prove availability and execute them if authorized.
+- Subagent and external Agent handoff remains unavailable, unknown, blocked, or host-dependent unless a host Runtime explicitly supports and permits it.
+- Context Budget is qualitative unless the host Runtime provides exact token or cost metering evidence.
+- Routing Memory is a writeback candidate and judgement input, not an automatic database or fixed route table.
 
-This release is for users and contributors who want to try Pal Packs inside Codex, Claude Code, or another runtime that can read Markdown and JSON files.
+## What This Release Does Not Include
 
-It is especially useful if you want to:
+- No stable `v0.3.0` release.
+- No desktop app, web app, CLI runtime, daemon, service, scanner, validator, installer, database, token meter, or cost calculator.
+- No automatic Deep Conductor background executor.
+- No automatic Subagent launch or external Agent calls by AgentPal.
+- No automatic scan of all Runtime Skills, plugins, or MCP tools.
+- No claim that Runtime Skills are installed or available in a user's current Runtime.
+- No statistical benchmark proof or foundation-model performance comparison from PalBench.
+- No replacement for Codex, Claude Code, OpenCode, OpenHands, Gemini CLI, or another host Runtime.
 
-- keep multiple professional Pal Packs in one workspace
-- initialize Mira as the default Main Pal
-- call registered Pals with `/pal Name`
-- study the Pal Pack file structure
-- author or review release-safe Pal Pack templates, protocols, and examples
+## How To Try It
 
-## R32 Methodology Clarification
+1. Open the AgentPal Workspace in a Markdown/JSON-capable host Runtime.
+2. Start from `docs/README.md` or `RESOURCE_INDEX.md`.
+3. For v0.3 concepts, read `docs/09-roadmap/v0.3-public-capability-summary.md`.
+4. For Deep Conductor, read `docs/05-orchestration-methodology/deep-conductor-e2e-usage-guide.md`.
+5. For release evidence, read `docs/09-roadmap/v0.3-deep-conductor-readiness.md` and `evals/v0.3-integration/v0.3-deep-conductor-integration-test-matrix.md`.
+6. Use the host Runtime to perform any real execution and report evidence.
 
-- Mira is documented as the default Main Pal, Leader Pal, and Conductor. The team-leadership identity remains her communication and relationship layer, not the whole product role.
-- AgentPal separates Fast Route and Deep Conductor. Fast Route is the current Simple Pal Mode clear-task handoff pattern. Deep Conductor is future complex-workflow design only.
-- Context Access List, Pal Isolation, Shared Memory, Routing Reward Memory, PalBench evals, and orchestration examples were strengthened for auditability.
-- R33 adds a small-sample PalBench smoke validation. It shows initial evidence for task-package clarity, context-scope control, verification quality, and lower user routing burden. It is not a model benchmark and not statistically significant.
+## Known Limitations
 
-## Who This Release Is Not For
+- Runtime Skill execution quality is not proven unless the current host Runtime runs the named Skill and returns evidence.
+- Browser/render verification, publishing, and external calls remain host Runtime tasks.
+- Subagent / external Agent execution is not an AgentPal capability.
+- PalBench Collaboration is qualitative regression coverage, not a statistical benchmark.
+- Cross-runtime memory freshness still needs future replay after time passes.
+- Release publication requires a separate tag / push / GitHub Release operation after maintainer approval.
 
-This release is not a finished app or automation platform. It is not the right fit if you need:
+## Validation Summary
 
-- a desktop app or web UI
-- a marketplace or hosted Pal Hub
-- an automatic installer, daemon, scanner, validator, or service
-- an execution engine that runs actions without the host runtime
-- active subagent, remote agent, or MCP-hosted agent orchestration
-- production enterprise permission management
+- R63 recommended entering `v0.3.0-rc.1` release preparation.
+- v0.3 integration matrix records pass / partial / unavailable boundaries.
+- PalBench Collaboration task index contains 87 cases.
+- R61 real host Runtime replay and R62 gap repair preserve partial, unavailable, blocked, and not-run outcomes.
+- R64 release preparation should verify JSON, no-runtime, no-program-future, no-hardcoded-routing, no-future-as-current, public safety, PalBench count, public entry links, and Git state before tag / push work.
 
-## What Is Included
+## Next Steps
 
-- AgentPal Workspace release assets: `AGENTS.md`, `PAL.md`, `SKILL.md`, `agentpal.json`, and the Codex initialization prompt at `prompts/codex/initialize-agentpal-workspace.md`.
-- Shared core gates under `core/` so Codex, Claude Code, generic CLI, and project-bound sessions read the same AgentPal rules.
-- Mira as the default Main Pal, Leader Pal, Conductor, and Pal team leader and coordinator.
-- Official bundled Pal Packs: Mira, Atlas, Vega, Rhea, PalSmith, Quinn, Morgan, Harper, and Nova.
-- Contacts and registry files for Pal discovery, aliases, and direct `/pal Name` calls.
-- Simple Pal Mode as the only active v0.1.0-rc.1 runtime path.
-- Runtime Response Gate and Pal Mode validity rules.
-- Context slicing, asset loading budget, memory summary loading, and Task Package output contract protocols.
-- PalSmith as the official no-code Pal asset governance Pal for Pal creation, Pal teams, import staging, clean export, with-memory export, health inspection, versioning, registry/contacts proposals, and Runtime Task Package planning.
-- Runtime Task Package field standard, PalSmith workflow docs, task package templates, example task packages, Markdown evals, and release-scope review.
-- AgentPal original Pal Layer methodology and PalBench validation docs under the current docs information architecture.
-- R33 PalBench small-sample smoke validation report.
-- Capability Inventory, Task Judgement, Workflow Topology, Context Access List, Pal Isolation, and Routing Reward Memory protocols as future-oriented design assets.
-- External project workgroup templates.
-- Thin external project workgroup templates that store pointers and minimal metadata instead of copying full AgentPal rules.
-- Claude Code one-prompt project install using thin `CLAUDE.md`, `AGENTS.md`, `.agentpal/`, and `.claude/settings.local.json`.
-- Claude Code install first welcome output: a `Mira：` welcome that introduces Mira as Main Pal / Leader Pal / Conductor, lists the official Pal set, and explains `/pal Name`.
-- Generic CLI Agent one-prompt project install using `AGENTS.md` and `.agentpal/`.
-- Runtime adapter thin binding examples and self-tests.
-- Public-safe examples, evals, prompts, templates, release notes, checklist, and contribution guidance.
-
-## PalSmith Release Notes
-
-PalSmith is included in this release candidate as an official no-code system Pal. It is registered in the AgentPal manifest, registry, and contacts as `palsmith-pal-governor` at `pals/PalSmith-pal-governor`, and users can call it with `/pal PalSmith`.
-
-PalSmith provides Markdown/JSON governance assets for Pal creation, Pal team drafting, GitHub/local import staging, clean export, with-memory export, health inspection, versioning, snapshots, rollback planning, and official Pal registration checks.
-
-PalSmith does not include an executable command layer, scanner, validator, importer program, exporter program, installer, UI, daemon, service, or runtime dependency. Host runtimes execute any approved file work and must report evidence.
-
-## What Is Not Included
-
-- No desktop app.
-- No web UI.
-- No CLI requirement.
-- No required Python, Node.js, Rust, Go, service, daemon, scanner, validator, or installer.
-- No automatic execution layer.
-- No active multi-agent runtime.
-- No active subagent orchestration.
-- No active Deep Conductor or automatic external Agent orchestration; future orchestration notes are design material only.
-- No marketplace or commercial Pal distribution system.
-- No bundled private user memory, private project state, real reports, or secrets.
-
-## How It Works
-
-AgentPal v0.1.0-rc.1 uses Simple Pal Mode.
-
-Mira receives ordinary messages. When Mira judges that a registered Pal should own a substantive request, Mira gives a short handoff and stops. The owner Pal answers immediately in the same response, using its own Pal assets, Output Contract, and fallback rules when needed.
-
-Direct calls such as `/pal Harper` enter that Pal's working mode. They do not start an independent agent process.
-
-## Getting Started
-
-1. Open the AgentPal Workspace in a supported runtime.
-2. Paste or run `prompts/codex/initialize-agentpal-workspace.md`.
-3. Start with Mira for ordinary messages.
-4. Use `/pal Name` to call a registered Pal directly.
-5. Use `RESOURCE_INDEX.md` as navigation when you need to find a specific root asset or directory.
-
-## Claude Code Project Setup
-
-For project work in Claude Code:
-
-```text
-cd <your-project>
-claude
-```
-
-Then paste `prompts/claude-code/install-agentpal-current-project.md` after replacing `AGENTPAL_HOME` with your AgentPal Workspace path.
-
-The prompt updates `.claude/settings.local.json` `permissions.additionalDirectories`, `CLAUDE.md`, `AGENTS.md`, and `.agentpal/`. `--add-dir` remains a fallback / advanced option, not the required default path.
-
-## Generic CLI Agent Project Setup
-
-For Markdown/JSON-capable CLI Agents, run the CLI Agent inside `<your-project>` and paste `prompts/generic-cli-agent/install-agentpal-current-project.md` after replacing `AGENTPAL_HOME` with your AgentPal Workspace path. The generic prompt updates `.agentpal/` and `AGENTS.md` without relying on Claude Code settings.
-
-## Safety And Public Release Boundary
-
-Runtime-private memory, private state, real reports, internal development notes, secrets, credentials, customer data, and local absolute paths must stay out of the public repository.
-
-Examples and templates should use synthetic or placeholder data. Future designs should be marked as future work and must not be described as active v0.1.0-rc.1 behavior.
-
-## Publication Status
-
-This release note describes the v0.1.0-rc.1 release candidate content. A local `v0.1.0-rc.1` tag may exist in a maintainer workspace, but a GitHub Release should be considered published only after the intended commit and tag are pushed to the intended remote and the GitHub Release page is created.
-
-## License
-
-AgentPal is released under the MIT License. See `LICENSE`.
+After this release-preparation commit is accepted, a separate R65 release operation may create the `v0.3.0-rc.1` tag, push the commit and tag, and create a GitHub pre-release from `GITHUB_RELEASE_DRAFT.md`.

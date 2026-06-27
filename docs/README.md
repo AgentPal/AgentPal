@@ -1,6 +1,6 @@
 # AgentPal Documentation
 
-This documentation set is the public entry point for AgentPal v0.2.0-rc.1.
+This documentation set is the public entry point for AgentPal v0.3.0-rc.1.
 
 AgentPal is a Pal layer and Pal Pack Standard practice for Markdown/JSON-capable agent runtimes. It is not an Agent layer, not a multi-agent runtime, and not an execution layer.
 
@@ -36,12 +36,14 @@ AgentPal is a Pal layer and Pal Pack Standard practice for Markdown/JSON-capable
 - [v0.3 Deep Conductor readiness](09-roadmap/v0.3-deep-conductor-readiness.md)
 - [v0.3 public capability summary](09-roadmap/v0.3-public-capability-summary.md)
 - [v0.3 release checklist](09-roadmap/v0.3-release-checklist.md)
+- [v0.3 release preparation audit](09-roadmap/v0.3-release-preparation-audit.md)
 - [v0.3 Deep Conductor integration matrix](../evals/v0.3-integration/v0.3-deep-conductor-integration-test-matrix.md)
 - [PalBench Collaboration coverage audit](research/palbench-collaboration-coverage-audit.md)
 - [No-code future boundary](09-roadmap/no-code-future-boundary.md)
 - [Deep Conductor master goal](05-orchestration-methodology/deep-conductor-master-goal.md)
 - [Deep Conductor master loop usage guide](05-orchestration-methodology/deep-conductor-master-loop-usage-guide.md)
 - [Deep Conductor E2E usage guide](05-orchestration-methodology/deep-conductor-e2e-usage-guide.md)
+- [Deep Conductor real Runtime replay report](research/deep-conductor-real-runtime-replay-report.md)
 - [Deep Conductor real Runtime replay gap analysis](research/deep-conductor-real-runtime-replay-gap-analysis.md)
 - [Cross-Runtime Pal Memory](05-orchestration-methodology/cross-runtime-pal-memory.md)
 - [Project Conductor workflow](../orchestration/project-conductor-workflow.md)
@@ -144,6 +146,7 @@ AgentPal is a Pal layer and Pal Pack Standard practice for Markdown/JSON-capable
 - [v0.3 Deep Conductor readiness](09-roadmap/v0.3-deep-conductor-readiness.md)
 - [v0.3 public capability summary](09-roadmap/v0.3-public-capability-summary.md)
 - [v0.3 release checklist](09-roadmap/v0.3-release-checklist.md)
+- [v0.3 release preparation audit](09-roadmap/v0.3-release-preparation-audit.md)
 - [No-code future boundary](09-roadmap/no-code-future-boundary.md)
 - [Deep Conductor master goal](05-orchestration-methodology/deep-conductor-master-goal.md)
 - [Deep Conductor master loop usage guide](05-orchestration-methodology/deep-conductor-master-loop-usage-guide.md)
@@ -304,15 +307,15 @@ AgentPal is a Pal layer and Pal Pack Standard practice for Markdown/JSON-capable
 | [research](research/README.md) | Archived research notes only; not a primary docs entry point |
 | [99-reference](99-reference/glossary.md) | Glossary, file index, official Pals, FAQ, and known limitations |
 
-## Current v0.2.0-rc.1 Boundary
+## Current v0.3.0-rc.1 Boundary
 
 - Simple Pal Mode is the only active task-handling path.
 - Mira is the default Main Pal, Leader Pal, and Conductor.
 - `/pal Name` is a plain-text AgentPal direct-call protocol for a registered Pal by display name or alias; it does not require a native Runtime command.
 - `contacts/` and `registry/` are the source of truth for Pal discovery.
 - AgentPal does not execute actions by itself; the host runtime performs file reads, writes, commands, tool calls, publishing, and deletion.
-- Future child workflow or subagent design material is not active in v0.2.0-rc.1.
-- Research and orchestration methodology docs are design foundations. They do not enable Deep Conductor, external Agent calls, or Subagent Mode in v0.2.0-rc.1.
+- Deep Conductor is available as no-code protocols, templates, task packages, examples, evals, and replay reports; it is not automatic execution.
+- Subagent / external Agent execution remains unavailable, unknown, blocked, or host-dependent unless the host Runtime proves support and permission.
 
 ## Public-Safe Rule
 

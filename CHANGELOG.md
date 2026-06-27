@@ -2,6 +2,64 @@
 
 All notable public changes to AgentPal are recorded here.
 
+## v0.3.0-rc.1 - Unreleased
+
+Release candidate for the v0.3 no-code orchestration prototype line.
+
+### Deep Conductor E2E
+
+- Added Deep Conductor E2E usage guidance, package template, synthesis report template, short user-facing summary, examples, failure examples, evals, and readiness assessment.
+- Added a release-preparation integration matrix for Deep Conductor readiness.
+
+### Multi-Pal Collaboration
+
+- Added Context Packet, Context Access, `/pal Name`, and `@Pal` no-code collaboration protocols and prompt-card guidance.
+- Clarified that direct calls and mentions remain plain-text AgentPal protocols unless a host Runtime implements native command support.
+
+### Owner + Verifier
+
+- Added evidence-based Owner + Verifier workflow, verifier context packet, verification result record, examples, failure cases, and evals.
+
+### Parallel Independent Review
+
+- Added isolated reviewer workflow, reviewer context packet, reviewer final report, synthesis summary, examples, failure cases, and evals.
+
+### Project Conductor
+
+- Added Deep Conductor Master Loop, Project Conductor workflow, project task map, next-round Runtime Task Package, and conductor decision record.
+
+### Cross-Runtime Pal Memory
+
+- Added Cross-Runtime Pal Memory, memory boundary protocol, Pal Project Memory Snapshot, Routing Memory Record, Runtime Skill Usage Memory Record, and continuation package.
+
+### Runtime-installed Skill Orchestration
+
+- Added Runtime Skill candidate decision, availability check, fallback package, Runtime Skill-aware Task Package, usage memory, examples, failures, and evals.
+- Clarified that Runtime-installed Skills belong to the host Runtime and require current availability evidence.
+
+### Token / Cost-aware Context Budget
+
+- Added qualitative Context Budget protocol, Context Budget Plan, Context Usage Report, and prompt-shaping guidance.
+- Clarified that Context Budget is not exact token metering or cost calculation.
+
+### Real Runtime Replay / Gap Repair
+
+- Added Deep Conductor real host Runtime replay report and replay gap analysis.
+- Strengthened partial, unavailable, blocked, and not-run reporting in E2E packages, synthesis, Routing Memory, and subagent / external Agent handoff boundaries.
+
+### PalBench Collaboration
+
+- Expanded PalBench Collaboration to 87 qualitative no-code regression cases covering R51-R63 collaboration, E2E, replay, and gap-repair scenarios.
+
+### Runtime Adapter Notes
+
+- Updated runtime adapter contracts and public docs to keep host Runtimes as the execution layer and AgentPal as the no-code Pal layer.
+
+### No-code Boundary
+
+- Confirmed that v0.3.0-rc.1 is a release candidate, not a stable release.
+- AgentPal still does not provide automatic execution, a CLI, app, service, scanner, validator, installer, daemon, database, token meter, cost calculator, automatic Subagent launch, automatic external Agent calls, or statistical benchmark proof.
+
 ## v0.2.0-rc.1
 
 Release candidate for the v0.2 first-phase no-code Pal layer improvements.
