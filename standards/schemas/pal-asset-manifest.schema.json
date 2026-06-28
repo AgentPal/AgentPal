@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agentpal.local/schemas/pal-asset-manifest.schema.json",
+  "title": "AgentPal Pal Asset Manifest",
+  "description": "v0.5 schema for optional Pal Pack asset-manifest.json navigation indexes.",
+  "type": "object",
+  "required": ["schema", "pal_id", "asset_standard", "assets"],
+  "not": {
+    "anyOf": [
+      { "required": ["keyword_map"] },
+      { "required": ["domain_map"] },
+      { "required": ["role_map"] },
+      { "required": ["route_map"] }
+    ]
+  },
+  "properties": {
+    "schema": { "type": "string" },
+    "pal_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "display_name": { "type": "string" },
+    "asset_standard": { "type": "string" },
+    "manifest_version": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "generated_by": { "type": "string" },
+    "asset_root": { "type": "string" },
+    "root_entries": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["path", "status"],
+        "properties": {
+          "path": { "type": "string" },
+          "status": { "$ref": "#/$defs/status" },
+          "summary": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "assets": {
+      "type": "object",
+      "properties": {
+        "identity": { "$ref": "#/$defs/assetEntryArray" },
+        "core": { "$ref": "#/$defs/assetEntryArray" },
+        "knowledge": { "$ref": "#/$defs/assetEntryArray" },
+        "research": { "$ref": "#/$defs/assetEntryArray" },
+        "skills": { "$ref": "#/$defs/assetEntryArray" },
+        "workflows": { "$ref": "#/$defs/assetEntryArray" },
+        "runbooks": { "$ref": "#/$defs/assetEntryArray" },
+        "learning": { "$ref": "#/$defs/assetEntryArray" },
+        "memory": { "$ref": "#/$defs/assetEntryArray" },
+        "state": { "$ref": "#/$defs/assetEntryArray" },
+        "reports": { "$ref": "#/$defs/assetEntryArray" },
+        "evals": { "$ref": "#/$defs/assetEntryArray" },
+        "examples": { "$ref": "#/$defs/assetEntryArray" }
+      },
+      "additionalProperties": { "$ref": "#/$defs/assetEntryArray" }
+    },
+    "public_safety": {
+      "type": "object",
+      "properties": {
+        "credentials_allowed": { "type": "boolean", "const": false },
+        "private_memory_in_public_manifest": { "type": "boolean", "const": false },
+        "customer_private_data_allowed": { "type": "boolean", "const": false },
+        "large_report_bodies_allowed": { "type": "boolean", "const": false }
+      },
+      "additionalProperties": true
+    },
+    "skill_boundary": {
+      "type": "object",
+      "properties": {
+        "pal_skills_are_role_level": { "type": "boolean", "const": true },
+        "agent_skills_are_runtime_level": { "type": "boolean", "const": true },
+        "agent_skill_refs_are_references_only": { "type": "boolean", "const": true }
+      },
+      "additionalProperties": true
+    },
+    "runtime_boundary": {
+      "type": "object",
+      "properties": {
+        "manifest_executes_checks": { "type": "boolean", "const": false },
+        "manifest_scans_filesystem": { "type": "boolean", "const": false },
+        "manifest_calls_external_api": { "type": "boolean", "const": false }
+      },
+      "additionalProperties": true
+    },
+    "known_gaps": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "not_run_checks": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "requires_human_review": { "type": "boolean" }
+  },
+  "$defs": {
+    "status": {
+      "type": "string",
+      "enum": ["present", "missing", "partial", "deprecated", "not-applicable", "not-run"]
+    },
+    "assetEntry": {
+      "type": "object",
+      "required": ["id", "type", "path", "status"],
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "type": "string" },
+        "path": { "type": "string" },
+        "status": { "$ref": "#/$defs/status" },
+        "summary": { "type": "string" },
+        "owner": { "type": "string" },
+        "last_reviewed": { "type": "string" },
+        "promotion_source": { "type": "string" },
+        "verification_ref": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "assetEntryArray": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/assetEntry" }
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,104 @@
+{
+  "schema": "agentpal.pal.v0.5",
+  "id": "example-pal",
+  "name": "ExamplePal",
+  "display_name": "ExamplePal / Example Role Pal",
+  "directory_name": "ExamplePal-role",
+  "role": "example-role",
+  "type": "pal-pack",
+  "version": "0.5.0-local-template",
+  "asset_standard": "agentpal-pal-asset-standard.v0.5",
+  "entry": {
+    "pal": "PAL.md",
+    "readme": "README.md",
+    "agent": "AGENTS.md",
+    "skill": "SKILL.md",
+    "asset_manifest": "asset-manifest.json"
+  },
+  "asset_dirs": {
+    "identity": "identity/",
+    "core": "core/",
+    "knowledge": "knowledge/",
+    "research": "research/",
+    "skills": "skills/",
+    "workflows": "workflows/",
+    "runbooks": "runbooks/",
+    "learning": "learning/",
+    "memory": "memory/",
+    "state": "state/",
+    "reports": "reports/",
+    "evals": "evals/",
+    "examples": "examples/"
+  },
+  "core_capabilities": [
+    "identity",
+    "task-loop",
+    "collaboration",
+    "verification",
+    "memory",
+    "reporting"
+  ],
+  "collaboration": {
+    "discoverable": true,
+    "contactable": true,
+    "allowed_modes": ["consult", "delegate", "handoff", "review", "joint_work"],
+    "requires_user_approval_for_sensitive_context": true,
+    "central_roster_required": true
+  },
+  "discovery": {
+    "direct_call": "/pal ExamplePal",
+    "aliases": ["ExamplePal", "example-pal"],
+    "central_roster_ref": "workspace/organization/contacts/pals.json",
+    "source_of_truth": "central_roster"
+  },
+  "runtime_awareness": {
+    "requires_runtime_evidence": true,
+    "pal_executes_runtime_actions": false,
+    "auto_probe_runtime": false
+  },
+  "capability_inventory_refs": [
+    {
+      "ref": "workspace/organization/capability-inventory/",
+      "purpose": "AI judgement input only when task-relevant",
+      "judgement_input_only": true
+    }
+  ],
+  "pal_skill_boundary": {
+    "pal_skills_are_role_level": true,
+    "agent_skills_are_runtime_level": true,
+    "pal_skills_dir_default": "skills/",
+    "agent_skill_refs_are_references_only": true
+  },
+  "agent_skill_refs_policy": {
+    "agent_skill_refs_are_references_only": true,
+    "store_agent_skills_in_pal_skills_by_default": false,
+    "requires_runtime_evidence": true
+  },
+  "memory_policy": {
+    "private_memory_allowed_in_public_pack": false,
+    "task_logs_allowed_in_pal_json": false,
+    "large_report_bodies_allowed_in_pal_json": false,
+    "memory_write_requires_approval": true
+  },
+  "external_project_write_policy": {
+    "external_project_write_allowed_by_default": false,
+    "copy_pal_assets_to_external_project_by_default": false,
+    "thin_binding_required": true
+  },
+  "no_keyword_routing_policy": {
+    "keyword_routing_allowed": false,
+    "domain_routing_allowed": false,
+    "role_routing_allowed": false,
+    "route_maps_allowed": false
+  },
+  "credentials_allowed": false,
+  "compatibility": {
+    "legacy_v0_1_readable": true,
+    "missing_asset_manifest_is_upgrade_gap": true,
+    "missing_asset_dirs_is_upgrade_gap": true
+  },
+  "migration_notes": [
+    "Replace example ids and paths before registering a real Pal.",
+    "Do not place private data, credentials, task logs, or route maps in pal.json."
+  ]
+}

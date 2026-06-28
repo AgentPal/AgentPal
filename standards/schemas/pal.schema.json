@@ -1,0 +1,173 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agentpal.local/schemas/pal.schema.json",
+  "title": "AgentPal Pal Manifest",
+  "description": "v0.5 target schema for Pal Pack pal.json metadata. Legacy Pal manifests may be read with compatibility fallbacks.",
+  "type": "object",
+  "required": ["id", "name", "type"],
+  "not": {
+    "anyOf": [
+      { "required": ["keyword_map"] },
+      { "required": ["domain_map"] },
+      { "required": ["role_map"] },
+      { "required": ["route_map"] }
+    ]
+  },
+  "properties": {
+    "schema": { "type": "string" },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "name": { "type": "string", "minLength": 1 },
+    "display_name": { "type": "string" },
+    "directory_name": { "type": "string" },
+    "role": { "type": "string" },
+    "type": {
+      "type": "string",
+      "enum": ["pal", "pal-pack", "official-pal-pack", "community-pal-pack"]
+    },
+    "version": { "type": "string" },
+    "asset_standard": { "type": "string" },
+    "entry": {
+      "type": "object",
+      "properties": {
+        "pal": { "type": "string" },
+        "readme": { "type": "string" },
+        "agent": { "type": "string" },
+        "skill": { "type": "string" },
+        "asset_manifest": { "type": "string" }
+      },
+      "additionalProperties": { "type": "string" }
+    },
+    "asset_dirs": {
+      "type": "object",
+      "properties": {
+        "identity": { "type": "string" },
+        "core": { "type": "string" },
+        "knowledge": { "type": "string" },
+        "research": { "type": "string" },
+        "skills": { "type": "string" },
+        "workflows": { "type": "string" },
+        "runbooks": { "type": "string" },
+        "learning": { "type": "string" },
+        "memory": { "type": "string" },
+        "state": { "type": "string" },
+        "reports": { "type": "string" },
+        "evals": { "type": "string" },
+        "examples": { "type": "string" }
+      },
+      "additionalProperties": { "type": "string" }
+    },
+    "core_capabilities": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "collaboration": {
+      "type": "object",
+      "properties": {
+        "discoverable": { "type": "boolean" },
+        "contactable": { "type": "boolean" },
+        "allowed_modes": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "requires_user_approval_for_sensitive_context": { "type": "boolean" },
+        "central_roster_required": { "type": "boolean" }
+      },
+      "additionalProperties": true
+    },
+    "discovery": {
+      "type": "object",
+      "properties": {
+        "direct_call": { "type": "string" },
+        "aliases": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "central_roster_ref": { "type": "string" },
+        "source_of_truth": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "runtime_awareness": {
+      "type": "object",
+      "properties": {
+        "requires_runtime_evidence": { "type": "boolean" },
+        "pal_executes_runtime_actions": { "type": "boolean", "const": false },
+        "auto_probe_runtime": { "type": "boolean", "const": false }
+      },
+      "additionalProperties": true
+    },
+    "capability_inventory_refs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ref": { "type": "string" },
+          "purpose": { "type": "string" },
+          "judgement_input_only": { "type": "boolean", "const": true }
+        },
+        "required": ["ref"],
+        "additionalProperties": true
+      }
+    },
+    "pal_skill_boundary": {
+      "type": "object",
+      "properties": {
+        "pal_skills_are_role_level": { "type": "boolean", "const": true },
+        "agent_skills_are_runtime_level": { "type": "boolean", "const": true },
+        "pal_skills_dir_default": { "type": "string" },
+        "agent_skill_refs_are_references_only": { "type": "boolean", "const": true }
+      },
+      "additionalProperties": true
+    },
+    "agent_skill_refs_policy": {
+      "type": "object",
+      "properties": {
+        "agent_skill_refs_are_references_only": { "type": "boolean", "const": true },
+        "store_agent_skills_in_pal_skills_by_default": { "type": "boolean", "const": false },
+        "requires_runtime_evidence": { "type": "boolean" }
+      },
+      "additionalProperties": true
+    },
+    "memory_policy": {
+      "type": "object",
+      "properties": {
+        "private_memory_allowed_in_public_pack": { "type": "boolean", "const": false },
+        "task_logs_allowed_in_pal_json": { "type": "boolean", "const": false },
+        "large_report_bodies_allowed_in_pal_json": { "type": "boolean", "const": false },
+        "memory_write_requires_approval": { "type": "boolean" }
+      },
+      "additionalProperties": true
+    },
+    "external_project_write_policy": {
+      "type": "object",
+      "properties": {
+        "external_project_write_allowed_by_default": { "type": "boolean", "const": false },
+        "copy_pal_assets_to_external_project_by_default": { "type": "boolean", "const": false },
+        "thin_binding_required": { "type": "boolean" }
+      },
+      "additionalProperties": true
+    },
+    "no_keyword_routing_policy": {
+      "type": "object",
+      "properties": {
+        "keyword_routing_allowed": { "type": "boolean", "const": false },
+        "domain_routing_allowed": { "type": "boolean", "const": false },
+        "role_routing_allowed": { "type": "boolean", "const": false },
+        "route_maps_allowed": { "type": "boolean", "const": false }
+      },
+      "additionalProperties": true
+    },
+    "compatibility": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "migration_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": true
+}

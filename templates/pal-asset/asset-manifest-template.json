@@ -1,0 +1,91 @@
+{
+  "schema": "agentpal.pal-asset-manifest.v0.5",
+  "pal_id": "example-pal",
+  "display_name": "ExamplePal / Example Role Pal",
+  "asset_standard": "agentpal-pal-asset-standard.v0.5",
+  "manifest_version": "0.5.0-local-template",
+  "generated_at": "not-run",
+  "generated_by": "template",
+  "asset_root": "official/pals/ExamplePal-role",
+  "root_entries": {
+    "README.md": {
+      "path": "README.md",
+      "status": "present",
+      "summary": "Human-facing Pal overview."
+    },
+    "PAL.md": {
+      "path": "PAL.md",
+      "status": "present",
+      "summary": "Pal identity and collaboration statement."
+    },
+    "pal.json": {
+      "path": "pal.json",
+      "status": "present",
+      "summary": "Machine-readable Pal manifest."
+    },
+    "AGENTS.md": {
+      "path": "AGENTS.md",
+      "status": "present",
+      "summary": "Runtime-facing Pal Pack instructions."
+    },
+    "SKILL.md": {
+      "path": "SKILL.md",
+      "status": "present",
+      "summary": "Pal Pack compatible entry, not a single Agent Skill."
+    }
+  },
+  "assets": {
+    "identity": [
+      {
+        "id": "persona",
+        "type": "identity",
+        "path": "identity/persona.md",
+        "status": "missing",
+        "summary": "Example identity asset placeholder.",
+        "owner": "example-pal",
+        "last_reviewed": "not-run",
+        "promotion_source": "none",
+        "verification_ref": "not-run"
+      }
+    ],
+    "core": [],
+    "knowledge": [],
+    "research": [],
+    "skills": [],
+    "workflows": [],
+    "runbooks": [],
+    "learning": [],
+    "memory": [],
+    "state": [],
+    "reports": [],
+    "evals": [],
+    "examples": []
+  },
+  "public_safety": {
+    "credentials_allowed": false,
+    "private_memory_in_public_manifest": false,
+    "customer_private_data_allowed": false,
+    "large_report_bodies_allowed": false
+  },
+  "skill_boundary": {
+    "pal_skills_are_role_level": true,
+    "agent_skills_are_runtime_level": true,
+    "agent_skill_refs_are_references_only": true
+  },
+  "runtime_boundary": {
+    "manifest_executes_checks": false,
+    "manifest_scans_filesystem": false,
+    "manifest_calls_external_api": false
+  },
+  "known_gaps": [
+    "Template paths must be replaced before use.",
+    "Missing assets remain missing until real evidence exists."
+  ],
+  "not_run_checks": [
+    "No real Pal asset inventory was generated from this template."
+  ],
+  "requires_human_review": true,
+  "keyword_routing_allowed": false,
+  "external_project_write_allowed_by_default": false,
+  "credentials_allowed": false
+}
