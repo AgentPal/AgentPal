@@ -1,24 +1,29 @@
 # R93-C Thin Binding Simulation Results
 
-## Test Metadata
+## Test date
 
-- test date: 2026-06-28
-- test thread: R93-C
-- test target: `templates/project-binding/`
-- execution layer: Codex shell / PowerShell
-- temp dirs:
-  - generic: `<TEMP>/r93c-20260628-125207/agentpal-r93c-generic-project`
-  - claude: `<TEMP>/r93c-20260628-125207/agentpal-r93c-claude-project`
+2026-06-28 17:09:20 +08:00
 
 ## Scope
 
-This test simulated local thin binding installation into two temporary external projects.
+This record covers a local public-safe simulation of the current thin binding templates under `templates/project-binding/`.
 
-No temporary project was created inside the public AgentPal workspace. No remote Git operation was run. No template source file was modified.
+No temp project was created inside this repository. No template source file was modified.
 
-## Generic Codex Result
+## Temp dirs
 
-Result: pass.
+Sanitized base path:
+
+`%TEMP%/agentpal-r93c-20260628-170851`
+
+Simulated projects:
+
+- Generic Codex: `%TEMP%/agentpal-r93c-20260628-170851/agentpal-r93c-generic-project`
+- Claude Code: `%TEMP%/agentpal-r93c-20260628-170851/agentpal-r93c-claude-project`
+
+## Generic Codex result
+
+Result: Pass.
 
 Created files:
 
@@ -28,24 +33,20 @@ Created files:
 
 Checks:
 
-| Check | Result |
-| --- | --- |
-| expected file surface only | pass |
-| `.agentpal/project.json` JSON parse | pass |
-| `binding_mode=thin` | pass |
-| `binding_style=thin-binding` | pass |
-| contains `agentpal_workspace_root` | pass |
-| contains `central_pal_contacts` | pass |
-| contains `agentpal_project_record` | pass |
-| central contacts path exists in AgentPal workspace | pass |
-| `keyword_routing_allowed=false` | pass |
-| no copied Pal packs | pass |
-| no copied contacts file | pass |
-| no copied memory / reports / evals | pass |
+- JSON parse result: pass
+- `binding_mode`: `thin`
+- `agentpal_workspace_root`: present
+- `central_pal_contacts` / Pal source reference: present
+- `agentpal_project_record`: present
+- `keyword_routing_allowed`: `false`
+- forbidden dirs count: `0`
+- copied `official/pals`: no
+- copied `workspace/organization/contacts/pals.json`: no
+- copied `.agentpal/memory`, `.agentpal/reports`, or `.agentpal/evals`: no
 
-## Claude Code Result
+## Claude Code result
 
-Result: pass with template-note.
+Result: Pass.
 
 Created files:
 
@@ -57,30 +58,23 @@ Created files:
 
 Checks:
 
-| Check | Result |
-| --- | --- |
-| expected file surface only | pass |
-| `.agentpal/project.json` JSON parse | pass |
-| `.claude/settings.local.json` JSON parse | pass |
-| `binding_style=thin-binding` | pass |
-| contains `agentpal_workspace_root` | pass |
-| contains central contacts pointer | pass |
-| `.gitignore` contains `.claude/settings.local.json` | pass |
-| central contacts path exists in AgentPal workspace | pass |
-| `keyword_routing_allowed=false` | pass |
-| no copied Pal packs | pass |
-| no copied contacts file | pass |
-| no copied memory / reports / evals | pass |
+- JSON parse result: pass
+- `binding_style`: `thin-binding`
+- `agentpal_workspace_root`: present
+- `central_contacts` / Pal source reference: present
+- `agentpal_project_record`: present
+- `keyword_routing_allowed`: `false`
+- forbidden dirs count: `0`
+- copied `official/pals`: no
+- copied `workspace/organization/contacts/pals.json`: no
+- copied `.agentpal/memory`, `.agentpal/reports`, or `.agentpal/evals`: no
+- `.gitignore` contains `.claude/settings.local.json`
 
-Template note:
+## Forbidden dirs check
 
-- Claude `.agentpal/project.json` does not currently include `agentpal_project_record`.
-- This did not block the Claude-specific file-surface and forbidden-dir simulation, but it differs from the protected block and binding docs that describe `agentpal_project_record`.
-- Recommended follow-up: add an `agentpal_project_record` pointer to the Claude project binding template in a separate template-fix thread.
+Result: Pass.
 
-## Forbidden Dirs
-
-Forbidden directory list checked:
+The following default-forbidden project-local directories were absent in both temp projects:
 
 - `.agentpal/memory`
 - `.agentpal/state`
@@ -100,49 +94,56 @@ Forbidden directory list checked:
 - `.agentpal/audit-trail`
 - `.agentpal/governance-decisions`
 - `.agentpal/change-ledger`
+- `.agentpal/change-review`
 
-Result:
+## Central contacts path check
 
-| Project | forbidden dirs present | count |
-| --- | ---: | ---: |
-| Generic Codex | none | 0 |
-| Claude Code | none | 0 |
-| total | none | 0 |
+Result: Pass.
 
-## Keyword Routing Check
+The generated bindings reference central contacts in the AgentPal workspace and do not copy `workspace/organization/contacts/pals.json` into the temp projects.
 
-Search target: `keyword_map|domain_map|role_map`
+## No keyword routing check
 
-Result:
+Result: Pass.
 
-- occurrence count: 3
-- all occurrences are negative prohibition text in generated instruction files
-- positive JSON map keys found: 0
-- `routing_policy=ai_judgement_only` present where provided
-- `keyword_routing_allowed=false` in both generated `project.json` files
+Search terms checked:
 
-Observed prohibition references:
+- `keyword_map`
+- `domain_map`
+- `role_map`
 
-- Generic `AGENTS.md`: forbids `keyword_map`, `domain_map`, and `role_map`
-- Generic `.agentpal/AGENTPAL.md`: forbids `keyword_map`, `domain_map`, and `role_map`
-- Claude `CLAUDE.md`: forbids `keyword_map`, `domain_map`, and `role_map`
+Observed matches were prohibition text only:
 
-Conclusion: no keyword routing map was generated; the only matches are explicit ban text.
+- Generic `AGENTS.md`: states keyword routing and route maps are forbidden.
+- Generic `.agentpal/AGENTPAL.md`: states keyword routing and route maps must not be used.
+- Claude `CLAUDE.md`: states keyword routing and route maps are forbidden.
 
-## Copy Boundary Checks
+No generated JSON route map field was present.
 
-| Check | Generic | Claude |
-| --- | --- | --- |
-| no `official/pals` directory copied | pass | pass |
-| no `workspace/organization/contacts/pals.json` copied | pass | pass |
-| no `.agentpal/memory` copied | pass | pass |
-| no `.agentpal/reports` copied | pass | pass |
-| no `.agentpal/evals` copied | pass | pass |
-| no unresolved `REPLACE_WITH_` / `<absolute ...>` placeholders | pass | pass |
-| no secret / credential placeholder matches | pass | pass |
+## No copied Pal packs
+
+Result: Pass.
+
+No `official/pals` tree was copied into either temp project.
+
+## No copied memory/reports/evals
+
+Result: Pass.
+
+No `.agentpal/memory`, `.agentpal/reports`, or `.agentpal/evals` directory was created in either temp project.
+
+## Credentials and secrets check
+
+Result: Pass.
+
+The generated temp files had no hits for credential-like placeholders such as API key, secret, token, password, credential, or private key.
+
+## Template source mutation check
+
+Result: Pass.
+
+`templates/project-binding/`, `standards/project-binding/`, `docs/01-getting-started/bind-external-project.md`, and `workspace/organization/contacts/pals.json` had no current diff from this simulation.
 
 ## Conclusion
 
-R93-C local thin binding simulation passed for the intended temporary-project file surface and cleanliness boundary.
-
-The only follow-up is a non-applied template note: Claude `project.json` should likely add `agentpal_project_record` for parity with the docs and protected block language. This report records the issue without modifying shared templates.
+Pass. The current thin binding templates can generate the expected minimal external project binding surface for Generic Codex and Claude Code simulations without copying AgentPal Pal Packs, central contacts, memory, reports, evals, or forbidden project-local AgentPal directories.

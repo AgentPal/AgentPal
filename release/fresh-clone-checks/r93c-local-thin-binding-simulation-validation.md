@@ -1,56 +1,69 @@
 # R93-C Local Thin Binding Simulation Validation
 
-## Decision
+## Status
 
-Pass with template-note.
+Pass.
 
-## Public-Safe Evidence
+## Date
 
-- date: 2026-06-28
-- execution layer: Codex shell / PowerShell
-- temp path recorded as sanitized `<TEMP>/r93c-20260628-125207/...`
-- source templates read from `templates/project-binding/`
-- simulated Generic Codex binding produced only:
-  - `.agentpal/project.json`
-  - `.agentpal/AGENTPAL.md`
-  - `AGENTS.md`
-- simulated Claude Code binding produced only:
-  - `.agentpal/project.json`
-  - `.agentpal/AGENTPAL.md`
-  - `CLAUDE.md`
-  - `.claude/settings.local.json`
-  - `.gitignore`
+2026-06-28 17:09:20 +08:00
 
-## Validation Summary
+## Validation target
 
-| Gate | Result |
-| --- | --- |
-| generated `project.json` parse | pass |
-| generated Claude settings JSON parse | pass |
-| forbidden project-local AgentPal dirs absent | pass |
-| no copied Pal packs | pass |
-| no copied central contacts file | pass |
-| no copied memory / reports / evals | pass |
-| no unresolved placeholders | pass |
-| no secret placeholder matches | pass |
-| no positive keyword/domain/role routing maps | pass |
+Thin binding simulation for:
 
-## Template Note
+- `templates/project-binding/generic-codex/`
+- `templates/project-binding/claude-code/`
 
-Claude `.agentpal/project.json` does not include `agentpal_project_record`, while the Claude protected block and external binding docs describe that pointer. This is recorded as a template follow-up note only; the shared template was not modified in R93-C.
+Temp projects were created outside the repository under sanitized path:
 
-## Boundary Confirmation
+`%TEMP%/agentpal-r93c-20260628-170851`
 
-Not run / not done:
+## Evidence summary
 
-- no `git push`
-- no `git pull`
-- no `git fetch`
-- no tag or GitHub Release action
-- no template source modification
-- no shared entry modification
-- no runtime dependency, scanner, validator, installer, daemon, database, connector, or auto execution engine
+Generic Codex created only:
+
+- `.agentpal/project.json`
+- `.agentpal/AGENTPAL.md`
+- `AGENTS.md`
+
+Claude Code created only:
+
+- `.agentpal/project.json`
+- `.agentpal/AGENTPAL.md`
+- `CLAUDE.md`
+- `.claude/settings.local.json`
+- `.gitignore`
+
+## Checks
+
+- Generic `project.json` parse: pass
+- Claude `project.json` parse: pass
+- Claude `.claude/settings.local.json` parse: pass
+- Generic binding mode/style: `thin`
+- Claude binding mode/style: `thin-binding`
+- `agentpal_workspace_root` present: pass
+- central contacts reference present: pass
+- `agentpal_project_record` present: pass
+- forbidden dirs absent: pass, count `0`
+- `official/pals` not copied: pass
+- central contacts file not copied: pass
+- project-local memory/reports/evals not copied: pass
+- keyword-route map tokens: prohibition text only, no generated route map field
+- credential-like placeholders: no hits
+- shared entry files not modified: pass
+- template source files not modified: pass
+
+## Files changed by this R93-C public record
+
+- `evals/palbench/project-binding/r93c-thin-binding-simulation-results.md`
+- `release/fresh-clone-checks/r93c-local-thin-binding-simulation-validation.md`
+- `release/integration-notes/r93c-index-update-notes.md`
+
+## Boundary statement
+
+No push, pull, fetch, tag, release, scanner, validator, installer, daemon, connector, external business system client, keyword router, deterministic semantic router, or automatic external project `.agentpal/` write was introduced.
 
 ## Conclusion
 
-The local temporary-project simulation confirms that `templates/project-binding/` still produces a thin external project binding surface after directory migration, with one recorded Claude project-record parity note for a later template-fix thread.
+The R93-C local simulation passed. No template bug requiring a shared template fix was found.
