@@ -51,6 +51,10 @@ Use:
 | `release/current/v0.4-local-completion-report.md` | v0.4 local completion report | local completion review; not remote release proof |
 | `release/current/v0.4-local-completion-evidence-index.md` | v0.4 local completion evidence index | evidence lookup for local completion |
 | `docs/08-release-and-maintenance/v0.4-local-completion-summary.md` | user-facing v0.4 local completion summary | contributor and user orientation |
+| `docs/09-roadmap/v0.5-local-development-scope.md` | v0.5 local development scope freeze | v0.5 planning and boundary checks |
+| `standards/org-pack/org-pack-standard.md` | Org Pack standard | reusable no-code organization package work |
+| `templates/org-pack/base-org-pack/` | base Org Pack template | creating public-safe reusable organization packages |
+| `examples/org-packs/base-agentpal-org-pack/` | public-safe base Org Pack example | examples and Org Pack boundary checks |
 | `CHANGELOG.md` | public version history | release review |
 | `RELEASE_NOTES.md` | user-facing release notes | release review or user onboarding |
 | `GITHUB_RELEASE_DRAFT.md` | manual GitHub Release draft | release publishing |
@@ -461,6 +465,12 @@ Use the current docs directories as the public entry points. Archived research n
 | `docs/08-release-and-maintenance/v0.4-local-completion-summary.md` | R96 user-facing v0.4 local completion summary |
 | `evals/palbench/v0.4/r96-v0.4-completion-evidence-review.md` | R96 evidence review for v0.4 local completion |
 | `release/fresh-clone-checks/r96-v0.4-local-completion-validation.md` | R96 local completion validation record |
+| `docs/09-roadmap/v0.5-local-development-scope.md` | R97 v0.5 local development scope and no-code boundary freeze |
+| `standards/org-pack/org-pack-standard.md` | R97 Org Pack standard |
+| `templates/org-pack/base-org-pack/` | R97 base Org Pack template |
+| `examples/org-packs/base-agentpal-org-pack/` | R97 public-safe base AgentPal Org Pack example |
+| `evals/palbench/org-pack/r97-org-pack-foundation-boundary.md` | R97 Org Pack foundation boundary eval |
+| `release/fresh-clone-checks/r97-local-org-pack-foundation-validation.md` | R97 local Org Pack foundation validation record |
 | `docs/05-orchestration-methodology/deep-conductor-master-goal.md` | Deep Conductor master goal and no-code 12-step loop |
 | `docs/05-orchestration-methodology/deep-conductor-master-loop-usage-guide.md` | Deep Conductor usage guide for project-level no-code coordination |
 | `docs/05-orchestration-methodology/deep-conductor-e2e-usage-guide.md` | Deep Conductor E2E usage guide for integrated no-code project-level closure |

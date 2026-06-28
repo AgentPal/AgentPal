@@ -1,0 +1,36 @@
+{
+  "schema": "agentpal.org-pack.v0.5",
+  "id": "base-agentpal-org-pack-example",
+  "name": "Base AgentPal Org Pack Example",
+  "version": "0.5.0-local-example",
+  "type": "org-pack-example",
+  "description": "A public-safe example of a reusable no-code AgentPal organization package.",
+  "recommended_pals": [
+    {
+      "pal_id": "mira-main",
+      "reason": "Main Pal / leader / conductor candidate for intake and coordination.",
+      "recommendation_type": "ai_judgement_input_only"
+    },
+    {
+      "pal_id": "quinn-quality",
+      "reason": "Quality and verification candidate for evidence review.",
+      "recommendation_type": "ai_judgement_input_only"
+    },
+    {
+      "pal_id": "palsmith-pal-governor",
+      "reason": "Pal and organization asset governance candidate.",
+      "recommendation_type": "ai_judgement_input_only"
+    }
+  ],
+  "central_roster_ref": "workspace/organization/contacts/pals.json",
+  "thin_binding_required": true,
+  "external_projects_copy_assets_by_default": false,
+  "customer_private_assets_allowed_in_pack": false,
+  "public_safe_example": true,
+  "credentials_allowed": false,
+  "keyword_routing_allowed": false,
+  "auto_scan": false,
+  "auto_execution": false,
+  "connector_included": false,
+  "marketplace_program_included": false
+}

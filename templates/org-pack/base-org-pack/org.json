@@ -1,0 +1,20 @@
+{
+  "schema": "agentpal.org-pack.v0.5",
+  "id": "base-org-pack",
+  "name": "Base Org Pack",
+  "version": "0.5.0-local",
+  "type": "org-pack-template",
+  "description": "A no-code organization package template for AgentPal.",
+  "recommended_pals": [],
+  "recommended_pals_are_ai_judgement_input_only": true,
+  "central_roster_ref": "workspace/organization/contacts/pals.json",
+  "thin_binding_required": true,
+  "external_projects_copy_assets_by_default": false,
+  "customer_private_assets_allowed_in_pack": false,
+  "credentials_allowed": false,
+  "keyword_routing_allowed": false,
+  "auto_scan": false,
+  "auto_execution": false,
+  "connector_included": false,
+  "marketplace_program_included": false
+}

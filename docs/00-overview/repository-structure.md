@@ -108,6 +108,22 @@ Capability Inventory is a no-code profile layer. It can be maintained manually b
 
 For the manual update flow, see `docs/03-user-guides/manual-capability-profile.md`. For the full source map, see `docs/00-overview/capability-inventory-navigation.md`.
 
+## Org Pack Foundations
+
+Org Packs are no-code reusable organization asset packages. They are not Pal Packs, project templates, installers, marketplaces, scanners, validators, connectors, databases, or keyword routers.
+
+Current Org Pack foundations:
+
+| Path | Role |
+| --- | --- |
+| `docs/09-roadmap/v0.5-local-development-scope.md` | v0.5 local development scope and boundary freeze. |
+| `standards/org-pack/org-pack-standard.md` | Org Pack standard. |
+| `templates/org-pack/base-org-pack/` | Minimal reusable Org Pack template. |
+| `examples/org-packs/base-agentpal-org-pack/` | Public-safe Org Pack example. |
+| `evals/palbench/org-pack/r97-org-pack-foundation-boundary.md` | Org Pack foundation boundary eval. |
+
+Org Packs may recommend Pals as AI judgement inputs, but the central roster remains `workspace/organization/contacts/pals.json` and `official/pals/`. External projects remain thin-bound and do not receive `.agentpal/org-pack/` by default.
+
 ## Compatibility And Current-Reference Directories
 
 Some root directories remain visible as current-reference surfaces while the v0.4/v0.5 structure settles. R77 moved low-risk root reference directories into central workspace, standards, or archive locations. R79 archived the R78 `capabilities/`, `runtime/`, `models/`, and `plugins/` compatibility pointers after active references moved to the new capability inventory structure.
