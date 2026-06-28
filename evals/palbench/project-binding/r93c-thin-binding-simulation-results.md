@@ -2,7 +2,7 @@
 
 ## Test date
 
-2026-06-28 18:34:54 +08:00
+2026-06-28 19:11:10 +08:00
 
 ## Scope
 
@@ -14,12 +14,12 @@ No temp project was created inside this repository. No template source file was 
 
 Sanitized base path:
 
-`<TEMP>/agentpal-r93c-20260628-183454`
+`<TEMP>/agentpal-r93c-20260628-191110`
 
 Simulated projects:
 
-- Generic Codex: `<TEMP>/agentpal-r93c-20260628-183454/agentpal-r93c-generic-project`
-- Claude Code: `<TEMP>/agentpal-r93c-20260628-183454/agentpal-r93c-claude-project`
+- Generic Codex: `<TEMP>/agentpal-r93c-20260628-191110/agentpal-r93c-generic-project`
+- Claude Code: `<TEMP>/agentpal-r93c-20260628-191110/agentpal-r93c-claude-project`
 
 ## Generic Codex result
 

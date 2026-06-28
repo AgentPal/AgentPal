@@ -6,7 +6,7 @@ Pass.
 
 ## Date
 
-2026-06-28 18:34:54 +08:00
+2026-06-28 19:11:10 +08:00
 
 ## Validation target
 
@@ -17,7 +17,7 @@ Thin binding simulation for:
 
 Temp projects were created outside the repository under sanitized path:
 
-`<TEMP>/agentpal-r93c-20260628-183454`
+`<TEMP>/agentpal-r93c-20260628-191110`
 
 ## Evidence summary
 
