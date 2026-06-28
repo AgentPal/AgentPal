@@ -16,7 +16,7 @@ PalSmith 是 AgentPal 的 AI 团队创建师，也是 Pal 资产治理 Pal。它
 
 v0.2 开发会重点产品化这条路径。可以从 [v0.2 development plan](docs/09-roadmap/v0.2-development-plan.md)、[v0.2 task pool](docs/09-roadmap/v0.2-task-pool.md) 和 [PalSmith end-to-end productization](docs/06-palsmith/palsmith-end-to-end-productization.md) 开始。首个实现切片补齐了创建首个专业 Pal 与从目标创建 AI team 的可复制任务包。
 
-v0.2 Capability Inventory 见 [minimal usable design](docs/05-orchestration-methodology/capability-inventory-minimal-usable-design.md) 和 [capability profile index](capabilities/README.md)。这些 profile 是示例性的判断输入，不是自动环境扫描结果。
+v0.2 Capability Inventory 见 [minimal usable design](docs/05-orchestration-methodology/capability-inventory-minimal-usable-design.md)、[manual profile guide](docs/03-user-guides/manual-capability-profile.md)、[navigation guide](docs/00-overview/capability-inventory-navigation.md) 和 [capability profile index](standards/capability-inventory/README.md)。这些 profile 是示例性的判断输入，不是自动环境扫描结果。
 
 v0.2 release regression 见 [PalBench Light Suite](evals/palbench-light/README.md) 和 [suite plan](docs/research/palbench-light-suite-plan.md)。
 
@@ -62,7 +62,7 @@ AgentPal v0.3.0-rc.1 当前提供：
 - Simple Pal Mode 作为当前激活的 runtime policy
 - Mira 作为默认 Main Pal / Leader / Conductor，并补齐 leader knowledge、skills、workflows、runbooks、evals、research inventory、delegation、handoff、context packet、risk approval 和 progress reporting 资产
 - 9 个官方 Pal：Mira、Atlas、Vega、Rhea、PalSmith、Quinn、Morgan、Harper、Nova
-- 基于 contacts / registry 的 `/pal Name` 显式调用
+- 基于 `workspace/organization/contacts/` 中央通讯录的 `/pal Name` 显式调用
 - AI owner judgement、Fast Route owner-Pal handoff，以及禁止关键词硬路由的协作规则
 - Task Package rules、Runtime Task Package 标准、Context Slicing、Asset Loading Budget
 - PalSmith 作为官方 no-code Pal 资产治理 Pal，支持 Pal 创建、AI team 创建、job fitness 体检、用户材料摄取、可选 web research to knowledge、import、export、health check、versioning、publish readiness 和 Runtime Task Package planning
@@ -134,7 +134,7 @@ Claude Code 路径会写入项目本地绑定文件，并可能更新 `.claude/s
 
 ## 创建你自己的 Pal
 
-AgentPal 在 [`templates/Pal Pack/`](<templates/Pal Pack/>) 下提供标准 Pal Pack 模板。你可以复制模板目录，改成自己的 Pal 名称，补充身份、输出契约、知识、Skills、示例和 public-safe 占位文件，然后把完成后的 Pal Pack 放入 [`pals/`](pals/) 目录。注册到 AgentPal contacts / registry 后，就可以像官方 Pal 一样使用。
+AgentPal 在 [`templates/Pal Pack/`](<templates/Pal Pack/>) 下提供标准 Pal Pack 模板。你可以复制模板目录，改成自己的 Pal 名称，补充身份、输出契约、知识、Skills、示例和 public-safe 占位文件，然后把完成后的 Pal Pack 放入 [`official/pals/`](official/pals/) 或组织批准的 Pal 资产区。注册到 AgentPal 中央通讯录后，就可以像官方 Pal 一样使用。
 
 当前模板：
 
@@ -146,7 +146,7 @@ AgentPal 在 [`templates/Pal Pack/`](<templates/Pal Pack/>) 下提供标准 Pal 
 - Codex：把 AgentPal 目录作为 Codex 项目打开，然后把注册提示词粘贴到 AgentPal 项目对话中执行。
 - Claude Code 或其它 CLI Agent：在终端进入 `<path-to-AgentPal>`，从这个目录启动 CLI Agent，然后粘贴注册提示词执行。
 
-日常使用 AgentPal 时，用户通常是在自己的外部项目目录中工作；这是正常的。但 Pal 注册会修改 AgentPal 自身的 `contacts/` 和 `registry/` 文件，所以注册步骤应回到 AgentPal 工作区执行。注册完成后，如果外部项目会话仍显示旧 Pal 列表，再重新初始化该项目会话。
+日常使用 AgentPal 时，用户通常是在自己的外部项目目录中工作；这是正常的。但 Pal 注册会修改 AgentPal 自身的 `workspace/organization/contacts/` 与相关中央索引，所以注册步骤应回到 AgentPal 工作区执行。注册完成后，如果外部项目会话仍显示旧 Pal 列表，再重新初始化该项目会话。
 
 ## 官方 Pal
 

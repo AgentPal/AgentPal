@@ -8,7 +8,7 @@ Scope: local-only validation for the staged migration of `capabilities/`, `runti
 
 - Working directory: `J:\开发\AgentPal`
 - Git top level: `J:/开发/AgentPal`
-- Not `AgentPal_dcos`
+- Not a private development-records directory
 - No `git push`, `git pull`, `git fetch`, tag, or GitHub Release action was run.
 
 ## Index Clean-Copy Evidence
