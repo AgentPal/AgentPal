@@ -65,8 +65,13 @@ The worktree contained files from parallel R108 threads at validation time. They
 - `evals/palbench/pal-asset/r108a-mira-skills-index-boundary.md`
 - `evals/palbench/pal-asset/r108b-palsmith-skills-index-boundary.md`
 - `release/fresh-clone-checks/r108a-local-mira-skills-index-validation.md`
+- `release/fresh-clone-checks/r108b-local-palsmith-skills-index-validation.md`
+- `release/fresh-clone-checks/r108d-local-official-pal-index-integration-gate-validation.md`
 - `release/integration-notes/r108a-mira-skills-index-summary.md`
 - `release/integration-notes/r108b-palsmith-skills-index-summary.md`
+- `release/integration-notes/r108d-official-pal-index-integration-checklist.md`
+- `release/integration-notes/r108d-official-pal-index-integration-issue-template.md`
+- `evals/palbench/pal-asset/r108d-official-pal-index-integration-gate.md`
 
 ## Safe-fix candidate
 
