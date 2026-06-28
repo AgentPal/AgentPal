@@ -26,7 +26,7 @@ For the local v0.4/v0.5 workspace layout, see the [Repository Structure](docs/00
 
 For v0.4 local completion evidence, see the [local completion report](release/current/v0.4-local-completion-report.md), [evidence index](release/current/v0.4-local-completion-evidence-index.md), and [user-facing summary](docs/08-release-and-maintenance/v0.4-local-completion-summary.md). This is local completion evidence, not a GitHub Release or remote publication.
 
-For v0.5 local development, see the [v0.5 local development scope](docs/09-roadmap/v0.5-local-development-scope.md), [Org Pack standard](standards/org-pack/org-pack-standard.md), [Pal Asset standards](standards/pal-asset/), [Pal Metadata v0.5 upgrade path](docs/00-overview/pal-metadata-v0.5-upgrade-path.md), [PalSmith v0.5 standards](standards/palsmith/), [Pal Asset / Org Pack relationship guide](docs/00-overview/pal-asset-and-org-pack-relationship.md), [base Org Pack template](templates/org-pack/base-org-pack/), and [public-safe example](examples/org-packs/base-agentpal-org-pack/). Org Packs, Pal Asset standards, and Pal Metadata v0.5 plans are no-code organization assets, not installers, marketplaces, scanners, connectors, runtime resolvers, or keyword routers.
+For v0.5 local development, see the [v0.5 local development scope](docs/09-roadmap/v0.5-local-development-scope.md), [Org Pack standard](standards/org-pack/org-pack-standard.md), [Org Pack / FDE / Asset Boundary overview](docs/00-overview/org-pack-fde-asset-boundary-overview.md), [Pal Asset standards](standards/pal-asset/), [Pal Metadata v0.5 upgrade path](docs/00-overview/pal-metadata-v0.5-upgrade-path.md), [PalSmith v0.5 standards](standards/palsmith/), [Pal Asset / Org Pack relationship guide](docs/00-overview/pal-asset-and-org-pack-relationship.md), [practical Org Pack template](templates/org-pack/practical-org-pack/), [base FDE Pack template](templates/fde-pack/base-fde-pack/), [asset-boundary standards](standards/asset-boundary/), and [public-safe examples](examples/). Org Packs, FDE Packs, Asset Boundary standards, Pal Asset standards, and Pal Metadata v0.5 plans are no-code organization assets, not installers, marketplaces, scanners, connectors, runtime resolvers, or keyword routers.
 
 ## Why AgentPal?
 
@@ -242,6 +242,7 @@ AgentPal is a Pal layer for existing runtimes. It does not require Python, Node.
 - [Source Map and Derived Knowledge](docs/02-concepts/source-map-and-derived-knowledge.md)
 - [Repository Structure](docs/00-overview/repository-structure.md)
 - [Pal Asset / Org Pack Relationship](docs/00-overview/pal-asset-and-org-pack-relationship.md)
+- [Org Pack / FDE / Asset Boundary Overview](docs/00-overview/org-pack-fde-asset-boundary-overview.md)
 - [Pal Metadata v0.5 Upgrade Path](docs/00-overview/pal-metadata-v0.5-upgrade-path.md)
 - [PalSmith v0.5 Pal Creation and Upgrade](docs/03-user-guides/palsmith-v0.5-pal-creation-and-upgrade.md)
 - [Official Pal Asset Upgrade Plan](docs/03-user-guides/official-pal-asset-upgrade-plan.md)

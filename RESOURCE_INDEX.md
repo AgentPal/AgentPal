@@ -576,6 +576,59 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/pal-asset/r99-pal-asset-v0.5-integration-boundary.md` | R99 Pal Asset v0.5 integration boundary eval |
 | `release/fresh-clone-checks/r99-r98-parallel-integration-validation.md` | R99 R98 parallel integration validation |
 
+## Org Pack v0.5
+
+| Path | Purpose |
+| --- | --- |
+| `standards/org-pack/org-pack-standard.md` | Org Pack standard |
+| `standards/org-pack/org-pack-practical-structure.md` | R119-A practical Org Pack structure |
+| `templates/org-pack/base-org-pack/` | base Org Pack template |
+| `templates/org-pack/practical-org-pack/` | R119-A practical Org Pack template |
+| `examples/org-packs/base-agentpal-org-pack/` | public-safe base AgentPal Org Pack example |
+| `examples/org-packs/content-ops-org-pack/` | R119-A public-safe content operations Org Pack example |
+| `evals/palbench/org-pack/r119a-org-pack-practical-structure-boundary.md` | R119-A practical Org Pack boundary eval |
+| `release/fresh-clone-checks/r119a-local-org-pack-practical-structure-validation.md` | R119-A local validation |
+
+## FDE / Expert Delivery Pack
+
+| Path | Purpose |
+| --- | --- |
+| `standards/fde-pack/fde-pack-standard.md` | R119-B FDE Pack standard |
+| `standards/fde-pack/expert-delivery-boundary.md` | R119-B expert delivery boundary |
+| `templates/fde-pack/base-fde-pack/` | R119-B base FDE Pack template |
+| `examples/fde-packs/accounting-advisor-fde-pack/` | R119-B public-safe accounting advisor FDE example |
+| `evals/palbench/fde-pack/r119b-fde-pack-standard-boundary.md` | R119-B FDE Pack boundary eval |
+| `release/fresh-clone-checks/r119b-local-fde-pack-standard-validation.md` | R119-B local validation |
+
+## Asset Boundary
+
+| Path | Purpose |
+| --- | --- |
+| `standards/asset-boundary/reusable-vs-customer-private-assets.md` | R119-C reusable vs customer-private asset standard |
+| `standards/asset-boundary/asset-classification-matrix.md` | R119-C asset classification matrix |
+| `standards/asset-boundary/deidentification-standard.md` | R119-C de-identification standard |
+| `templates/asset-boundary/asset-classification-result-template.json` | R119-C asset classification result template |
+| `templates/asset-boundary/customer-private-boundary-template.md` | R119-C customer-private boundary template |
+| `examples/asset-boundary/reusable-vs-private-classification-examples.md` | R119-C public-safe classification examples |
+| `examples/asset-boundary/bad-examples-customer-private-leak.md` | R119-C fake bad examples for boundary regression |
+| `evals/palbench/asset-boundary/r119c-reusable-private-asset-boundary.md` | R119-C reusable/private asset boundary eval |
+| `release/fresh-clone-checks/r119c-local-reusable-private-asset-boundary-validation.md` | R119-C local validation |
+
+## Org / FDE Integration
+
+| Path | Purpose |
+| --- | --- |
+| `evals/palbench/org-pack/r119d-org-fde-integration-gate.md` | R119-D Org Pack / FDE integration gate |
+| `release/fresh-clone-checks/r119d-local-org-fde-integration-gate-validation.md` | R119-D local gate validation |
+| `release/integration-notes/r119d-org-fde-integration-checklist.md` | R119-D integration checklist |
+| `release/integration-notes/r119d-org-fde-integration-issue-template.md` | R119-D integration issue template |
+| `release/integration-notes/r119d-r120-integration-plan.md` | R119-D R120 integration plan |
+| `docs/00-overview/org-pack-fde-asset-boundary-overview.md` | R120 Org Pack / FDE / Asset Boundary overview |
+| `release/integration-notes/r120-r119-org-fde-integration-summary.md` | R120 R119 integration summary |
+| `evals/palbench/org-pack/r120-org-fde-asset-boundary-integrated-boundary.md` | R120 integrated boundary eval |
+| `release/fresh-clone-checks/r120-local-org-fde-asset-boundary-integration-validation.md` | R120 local integration validation |
+| `release/integration-notes/r120-r121-readiness-decision.md` | R120 R121 readiness decision |
+
 ## R101 Integration
 
 | Path | Purpose |

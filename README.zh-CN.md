@@ -26,7 +26,7 @@ no-code orchestration prototype 主线见 [v0.3 development plan](docs/09-roadma
 
 v0.4 本地完成度证据见 [local completion report](release/current/v0.4-local-completion-report.md)、[evidence index](release/current/v0.4-local-completion-evidence-index.md) 和 [user-facing summary](docs/08-release-and-maintenance/v0.4-local-completion-summary.md)。这是本地完成证据，不是 GitHub Release，也不是远端发布。
 
-v0.5 本地开发入口见 [v0.5 local development scope](docs/09-roadmap/v0.5-local-development-scope.md)、[Org Pack standard](standards/org-pack/org-pack-standard.md)、[Pal Asset standards](standards/pal-asset/)、[Pal Metadata v0.5 upgrade path](docs/00-overview/pal-metadata-v0.5-upgrade-path.md)、[PalSmith v0.5 standards](standards/palsmith/)、[Pal Asset / Org Pack relationship guide](docs/00-overview/pal-asset-and-org-pack-relationship.md)、[base Org Pack template](templates/org-pack/base-org-pack/) 和 [public-safe example](examples/org-packs/base-agentpal-org-pack/)。Org Pack、Pal Asset 标准与 Pal Metadata v0.5 计划都是 no-code 组织资产，不是 installer、marketplace、scanner、connector、runtime resolver 或关键词路由器。
+v0.5 本地开发入口见 [v0.5 local development scope](docs/09-roadmap/v0.5-local-development-scope.md)、[Org Pack standard](standards/org-pack/org-pack-standard.md)、[Org Pack / FDE / Asset Boundary overview](docs/00-overview/org-pack-fde-asset-boundary-overview.md)、[Pal Asset standards](standards/pal-asset/)、[Pal Metadata v0.5 upgrade path](docs/00-overview/pal-metadata-v0.5-upgrade-path.md)、[PalSmith v0.5 standards](standards/palsmith/)、[Pal Asset / Org Pack relationship guide](docs/00-overview/pal-asset-and-org-pack-relationship.md)、[practical Org Pack template](templates/org-pack/practical-org-pack/)、[base FDE Pack template](templates/fde-pack/base-fde-pack/)、[asset-boundary standards](standards/asset-boundary/) 和 [public-safe examples](examples/)。Org Pack、FDE Pack、Asset Boundary 标准、Pal Asset 标准与 Pal Metadata v0.5 计划都是 no-code 组织资产，不是 installer、marketplace、scanner、connector、runtime resolver 或关键词路由器。
 
 ## 为什么需要 AgentPal？
 
@@ -225,6 +225,7 @@ AgentPal 是给现有 Runtime 使用的 Pal 层。实际文件操作、命令、
 - [为什么是 Pal？](docs/01-concepts/07-why-pal.md)
 - [核心概念](docs/01-concepts/)
 - [Pal Asset / Org Pack 关系](docs/00-overview/pal-asset-and-org-pack-relationship.md)
+- [Org Pack / FDE / Asset Boundary 总览](docs/00-overview/org-pack-fde-asset-boundary-overview.md)
 - [Pal Metadata v0.5 升级路径](docs/00-overview/pal-metadata-v0.5-upgrade-path.md)
 - [PalSmith v0.5 Pal 创建与升级](docs/03-user-guides/palsmith-v0.5-pal-creation-and-upgrade.md)
 - [官方 Pal 资产升级计划](docs/03-user-guides/official-pal-asset-upgrade-plan.md)
