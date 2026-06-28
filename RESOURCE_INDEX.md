@@ -688,6 +688,14 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/r130-v0.5-completion-evidence-review.md` | R130 completion evidence review eval |
 | `release/fresh-clone-checks/r130-local-v0.5-completion-validation.md` | R130 local v0.5 completion validation |
 | `release/integration-notes/r130-r131-readiness-decision.md` | R130 readiness decision for local-only v0.5 release preflight |
+| `release/current/v0.5-local-release-preflight.md` | R131 local-only v0.5 release preflight; not remote publication proof |
+| `release/current/v0.5-public-package-checklist.md` | R131 public package checklist for release decision |
+| `release/current/v0.5-release-notes-draft.md` | R131 draft release notes; not published release notes |
+| `release/current/v0.5-public-artifact-inventory.md` | R131 public artifact inventory for v0.5 package review |
+| `release/current/v0.5-remote-publication-decision-required.md` | R131 decision gate before remote publication |
+| `release/fresh-clone-checks/r131-local-v0.5-release-preflight-validation.md` | R131 local v0.5 release preflight validation |
+| `evals/palbench/v0.5/r131-v0.5-release-preflight-evidence-review.md` | R131 release preflight evidence review eval |
+| `release/integration-notes/r131-r132-readiness-decision.md` | R131 readiness decision for explicit R132 publication choice |
 
 ## R101 Integration
 

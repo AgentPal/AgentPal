@@ -935,6 +935,24 @@
     "github_release_created": false,
     "remote_sync_requires_explicit_user_authorization": true
   },
+  "v0_5_release_preflight": {
+    "local_preflight": "release/current/v0.5-local-release-preflight.md",
+    "public_package_checklist": "release/current/v0.5-public-package-checklist.md",
+    "release_notes_draft": "release/current/v0.5-release-notes-draft.md",
+    "public_artifact_inventory": "release/current/v0.5-public-artifact-inventory.md",
+    "remote_publication_decision": "release/current/v0.5-remote-publication-decision-required.md",
+    "preflight_validation": "release/fresh-clone-checks/r131-local-v0.5-release-preflight-validation.md",
+    "evidence_review": "evals/palbench/v0.5/r131-v0.5-release-preflight-evidence-review.md",
+    "r132_readiness_decision": "release/integration-notes/r131-r132-readiness-decision.md",
+    "status": "local_preflight_passed",
+    "remote_published": false,
+    "git_push_performed": false,
+    "git_pull_performed": false,
+    "git_fetch_performed": false,
+    "git_tag_created": false,
+    "github_release_created": false,
+    "remote_sync_requires_explicit_user_authorization": true
+  },
   "palsmith": {
     "creation_standard": "standards/palsmith/palsmith-v0.5-creation-standard.md",
     "classification_standard": "standards/palsmith/palsmith-asset-classification-standard.md",

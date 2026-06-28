@@ -30,6 +30,8 @@ v0.5 本地开发入口见 [v0.5 local development scope](docs/09-roadmap/v0.5-l
 
 v0.5 本地完成度证据见 [local completion report](release/current/v0.5-local-completion-report.md)、[evidence index](release/current/v0.5-local-completion-evidence-index.md) 和 [release-not-published statement](release/current/v0.5-release-not-published.md)。这是本地完成证据；本轮没有 GitHub Release、tag、push 或远端发布。
 
+v0.5 本地 release preflight 见 [local release preflight](release/current/v0.5-local-release-preflight.md)、[public package checklist](release/current/v0.5-public-package-checklist.md)、[release notes draft](release/current/v0.5-release-notes-draft.md)、[public artifact inventory](release/current/v0.5-public-artifact-inventory.md) 和 [remote-publication decision note](release/current/v0.5-remote-publication-decision-required.md)。R131 只准备发布决策，不代表 v0.5 已经远端发布。
+
 ## 为什么需要 AgentPal？
 
 用户想让 Agent 更好用时，通常会走两条路：

@@ -30,6 +30,8 @@ For v0.5 local development, see the [v0.5 local development scope](docs/09-roadm
 
 For v0.5 local completion evidence, see the [local completion report](release/current/v0.5-local-completion-report.md), [evidence index](release/current/v0.5-local-completion-evidence-index.md), and [release-not-published statement](release/current/v0.5-release-not-published.md). This is local completion evidence only; no GitHub Release, tag, push, or remote publication was performed in this round.
 
+For v0.5 local release preflight, see the [local release preflight](release/current/v0.5-local-release-preflight.md), [public package checklist](release/current/v0.5-public-package-checklist.md), [release notes draft](release/current/v0.5-release-notes-draft.md), [public artifact inventory](release/current/v0.5-public-artifact-inventory.md), and [remote-publication decision note](release/current/v0.5-remote-publication-decision-required.md). R131 prepares a publication decision only; it does not publish v0.5 remotely.
+
 ## Why AgentPal?
 
 When users want agents to work better, they usually try one of two paths:
