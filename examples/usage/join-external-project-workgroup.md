@@ -28,12 +28,10 @@ Binding must create or update:
 
 - `.agentpal/project.json`
 - `.agentpal/AGENTPAL.md`
-- `.agentpal/PAL_GROUP.md`
-- `.agentpal/INIT_AGENTPAL_PROJECT_PROMPT.md`
 - external project root `AGENTS.md` with `<!-- BEGIN AGENTPAL WORKGROUP -->` / `<!-- END AGENTPAL WORKGROUP -->`
 - root `CLAUDE.md` with the same block when using Claude Code
 
-The root `AGENTS.md` block must tell Codex to read `.agentpal/INIT_AGENTPAL_PROJECT_PROMPT.md` if the session has not loaded AgentPal rules yet.
+The root `AGENTS.md` block must tell Codex to read `.agentpal/project.json` and `.agentpal/AGENTPAL.md` if the session has not loaded AgentPal binding context yet.
 
 After successful binding, Mira says:
 
@@ -43,7 +41,7 @@ Mira：
 
 下一步你进入这个项目的 Codex 会话后，如果它没有自动进入 Mira 模式，就复制执行：
 
-请读取当前项目根 AGENTS.md，以及 .agentpal/INIT_AGENTPAL_PROJECT_PROMPT.md，进入 AgentPal project-bound mode。普通消息默认交给 Mira，当前项目只以本项目目录为准。
+请读取当前项目根 AGENTS.md，以及 .agentpal/project.json 和 .agentpal/AGENTPAL.md，进入 AgentPal project-bound mode。普通消息默认交给 Mira，当前项目只以本项目目录为准。
 
 如果当前 Codex 能自动读取根 AGENTS.md，则用户无需手动执行这段提示。
 ```
@@ -56,10 +54,11 @@ J:/dev/MyProject
 
 ## Files or protocols involved
 
-- `prompts/join-external-project-workgroup.md`
-- `projects/project-binding-protocol.md`
-- `projects/project-workgroup-template/agentpal/`
+- `templates/project-binding/generic-codex/`
+- `templates/project-binding/claude-code/`
+- `templates/project-binding/prompts/install-thin-binding.md`
 - `templates/project-binding/root-agents-agentpal-block-template.md`
+- `standards/project-binding/project-binding-protocol.md`
 
 ## What Mira must not do
 
@@ -69,5 +68,5 @@ J:/dev/MyProject
 - let specialist Pals listen by default
 - share sensitive files by default
 - assume `.agentpal/` alone is enough for Codex takeover
-- omit the next-step prompt for reading `AGENTS.md` / `.agentpal/INIT_AGENTPAL_PROJECT_PROMPT.md`
+- omit the next-step prompt for reading `AGENTS.md`, `.agentpal/project.json`, and `.agentpal/AGENTPAL.md`
 

@@ -15,7 +15,7 @@ Conclusion: `r93c_finally_closed=true`
 | R93-C public results file exists | pass: `evals/palbench/project-binding/r93c-thin-binding-simulation-results.md` |
 | R93-C local validation file exists | pass: `release/fresh-clone-checks/r93c-local-thin-binding-simulation-validation.md` |
 | R93-C integration note exists | pass: `release/integration-notes/r93c-index-update-notes.md` |
-| R93-C internal report exists | pass: `J:\开发\AgentPal_dcos\开发记录\R93-C-ThinBinding真实临时项目模拟测试完成报告.md` |
+| R93-C internal report exists | pass: `private completion report outside the public repository` |
 | R93-C validation result | pass |
 | R93-C temp projects inside public repo | no |
 | shared entry diff from R93-C closure | none observed for `README.md`, `RESOURCE_INDEX.md`, `agentpal.json`, `templates/project-binding/`, and central contacts |

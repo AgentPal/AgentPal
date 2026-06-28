@@ -23,7 +23,7 @@ The gate is documentation and evidence policy only. It is not a scanner, validat
 
 Read before running this gate:
 
-- `J:\开发\AgentPal_dcos\开发记录\R118-retry-PalSmithManifestPostWritebackObservation与Pilot收口完成报告.md`
+- `private completion report outside the public repository`
 - `release/integration-notes/r118-pal-metadata-pause-and-org-pack-return-decision.md`
 - `release/integration-notes/r118-r119-readiness-decision.md`
 - `docs/09-roadmap/v0.5-local-development-scope.md`
@@ -43,7 +43,7 @@ R120 must verify the R119-A final paths from the current worktree, not from expe
 | Org Pack templates, if added, are public-safe | pass |
 | Org Pack examples, if added, are public-safe | pass |
 | R119-A validation exists | pass or documented issue |
-| R119-A internal report exists under `J:\开发\AgentPal_dcos\开发记录\` | pass or documented issue |
+| R119-A internal report exists under `private completion report outside the public repository` | pass or documented issue |
 
 Org Pack files must remain no-code organization assets. They must not become a project installer, external project template, connector, marketplace package, scanner, validator, runtime, or keyword router.
 
@@ -56,7 +56,7 @@ Org Pack files must remain no-code organization assets. They must not become a p
 | FDE Pack templates, if added, are public-safe | pass |
 | FDE Pack examples, if added, are public-safe | pass |
 | R119-B validation exists | pass or documented issue |
-| R119-B internal report exists under `J:\开发\AgentPal_dcos\开发记录\` | pass or documented issue |
+| R119-B internal report exists under `private completion report outside the public repository` | pass or documented issue |
 
 FDE Pack files must describe no-code delivery assets and governance. They must not become a delivery daemon, business-system connector, API client, customer-data store, marketplace program, or execution engine.
 
@@ -69,7 +69,7 @@ FDE Pack files must describe no-code delivery assets and governance. They must n
 | private asset handling is explicit | pass |
 | public reusable asset safety is explicit | pass |
 | R119-C validation exists | pass or documented issue |
-| R119-C internal report exists under `J:\开发\AgentPal_dcos\开发记录\` | pass or documented issue |
+| R119-C internal report exists under `private completion report outside the public repository` | pass or documented issue |
 
 R119-C must not place customer private data, real project facts, private project memory, credentials, system identifiers, private reports, or business secrets into reusable public packs.
 

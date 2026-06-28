@@ -20,7 +20,7 @@ Validation for the R114 PalSmith v0.5 metadata post-update audit. R114 adds audi
 | `release/fresh-clone-checks/r114-local-palsmith-metadata-post-update-validation.md` | created |
 | `release/integration-notes/r114-palsmith-metadata-post-update-issues.md` | created |
 | `release/integration-notes/r114-r115-readiness-decision.md` | created |
-| internal report under `J:\开发\AgentPal_dcos\开发记录\` | created |
+| internal report under `private completion report outside the public repository` | created |
 
 ## Current-State Validation
 

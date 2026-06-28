@@ -66,7 +66,7 @@ The following untracked R103-looking files were present during validation. They 
 
 ## Baseline References Read
 
-- `J:\开发\AgentPal_dcos\开发记录\R102-OfficialPal_v0.5安全Index补齐Batch1完成报告.md`
+- `private completion report outside the public repository`
 - `evals/palbench/pal-asset/r100d-pal-metadata-upgrade-compatibility-gate.md`
 - `templates/pal-asset/safe-index-backfill-guide.md`
 - `release/integration-notes/r100b-official-pal-safe-index-file-plan.md`

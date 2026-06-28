@@ -23,7 +23,7 @@ The gate is documentation and evidence policy only. It is not a scanner, validat
 
 Read before running this gate:
 
-- `J:\开发\AgentPal_dcos\开发记录\R102-OfficialPal_v0.5安全Index补齐Batch1完成报告.md`
+- `private completion report outside the public repository`
 - `evals/palbench/pal-asset/r100d-pal-metadata-upgrade-compatibility-gate.md`
 - `templates/pal-asset/safe-index-backfill-guide.md`
 - `release/integration-notes/r100b-official-pal-safe-index-file-plan.md`
@@ -45,7 +45,7 @@ The R104 integration round must verify that the parallel-thread outputs exist be
 | R103-B validation exists | pass or documented `missing` issue |
 | R103-C validation exists | pass or documented `missing` issue |
 | R103-A/B/C integration notes exist | pass or documented `missing` issue |
-| R103-A/B/C internal reports exist under `J:\开发\AgentPal_dcos\开发记录\` | pass or documented `missing` issue |
+| R103-A/B/C internal reports exist under `private completion report outside the public repository` | pass or documented `missing` issue |
 
 Do not infer completion from a commit message alone. The evidence must be the current files and validation records.
 

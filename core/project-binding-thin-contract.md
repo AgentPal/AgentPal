@@ -48,10 +48,10 @@ Before responding as AgentPal, the runtime should use `.agentpal/project.json` t
 4. `core/deliverable-aware-task-judgement-gate.md`
 5. `core/main-pal-conductor-gate.md`
 6. `core/runtime-adapter-shared-contract.md`
-7. `contacts/pals.json`
-8. `registry/pal.index.json`
-9. `pals/Mira-main/PAL.md`
-10. `pals/Mira-main/core/output-contract.md`
+7. `workspace/organization/contacts/pals.json`
+8. `workspace/organization/contacts/PAL_CONTACTS.md`
+9. `official/pals/Mira-main/PAL.md`
+10. `official/pals/Mira-main/core/output-contract.md`
 
 The project binding is a pointer and state holder, not a copy of AgentPal.
 

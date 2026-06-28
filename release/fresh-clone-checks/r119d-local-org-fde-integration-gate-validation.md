@@ -84,7 +84,7 @@ At final R119-D commit time, some R119-B FDE files were already staged by anothe
 
 ## Baseline References Read
 
-- `J:\开发\AgentPal_dcos\开发记录\R118-retry-PalSmithManifestPostWritebackObservation与Pilot收口完成报告.md`
+- `private completion report outside the public repository`
 - `release/integration-notes/r118-pal-metadata-pause-and-org-pack-return-decision.md`
 - `release/integration-notes/r118-r119-readiness-decision.md`
 - `docs/09-roadmap/v0.5-local-development-scope.md`

@@ -12,7 +12,7 @@ This PalBench boundary verifies that R111 closes readiness evidence without begi
 | --- | --- | --- |
 | R110 artifact audit exists | pass | `release/integration-notes/r111-r110-readiness-artifact-audit.md` |
 | R110 readiness artifacts exist | pass | 6 / 6 expected R110 public files found |
-| R110 completion report exists | pass | `J:\开发\AgentPal_dcos\开发记录\R110-OfficialPalMetadataManifestReadinessPlanningGate完成报告.md` |
+| R110 completion report exists | pass | `private completion report outside the public repository` |
 | Delayed R93-C closure note exists | pass | `release/integration-notes/r111-delayed-r93c-closure-note.md` |
 | R111 readiness decision exists | pass | `release/integration-notes/r111-official-pal-metadata-execution-readiness-decision.md` |
 | Official Pal count remains 9 | pass | `official/pals/` directory count `9` |

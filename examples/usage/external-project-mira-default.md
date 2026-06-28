@@ -10,7 +10,6 @@
 
 - The external project has `.agentpal/project.json`.
 - The external project has `.agentpal/AGENTPAL.md`.
-- The external project has `.agentpal/PAL_GROUP.md`.
 - The external project root `AGENTS.md` contains the `<!-- BEGIN AGENTPAL WORKGROUP -->` / `<!-- END AGENTPAL WORKGROUP -->` block.
 
 ## Expected Mira behavior

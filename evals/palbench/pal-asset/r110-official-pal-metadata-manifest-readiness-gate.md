@@ -18,7 +18,7 @@ R110 is planning only. It does not modify official Pal `pal.json` and does not g
 | `release/integration-notes/r110-official-pal-metadata-manifest-batch-proposal.md` | exists |
 | `evals/palbench/pal-asset/r110-official-pal-metadata-manifest-readiness-gate.md` | exists |
 | `release/fresh-clone-checks/r110-local-official-pal-metadata-manifest-readiness-validation.md` | exists |
-| internal R110 report under `J:\开发\AgentPal_dcos\开发记录\` | exists |
+| internal R110 report under `private completion report outside the public repository` | exists |
 
 ## Gate Checks
 

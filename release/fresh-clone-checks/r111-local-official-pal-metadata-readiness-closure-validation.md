@@ -42,7 +42,7 @@ R111 validates R110 readiness evidence, closes delayed R93-C evidence, and recor
 | `release/integration-notes/r111-official-pal-metadata-execution-readiness-decision.md` | created |
 | `evals/palbench/pal-asset/r111-official-pal-metadata-readiness-closure-boundary.md` | created |
 | `release/fresh-clone-checks/r111-local-official-pal-metadata-readiness-closure-validation.md` | created |
-| internal report under `J:\开发\AgentPal_dcos\开发记录\` | created |
+| internal report under `private completion report outside the public repository` | created |
 
 ## Clean-Copy Validation
 

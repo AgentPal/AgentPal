@@ -19,7 +19,7 @@ Record the final R119-A owner, selected paths, and decisions before integration.
 | Org Pack examples | present if R119-A created them; JSON examples parse | pending |
 | R119-A validation | public Markdown under `release/fresh-clone-checks/` | pending |
 | R119-A integration note or index update note | public Markdown under `release/integration-notes/` | pending |
-| R119-A internal report | `J:\开发\AgentPal_dcos\开发记录\` | pending |
+| R119-A internal report | `private completion report outside the public repository` | pending |
 
 ## Expected B Files
 
@@ -32,7 +32,7 @@ Record the final R119-B owner, selected paths, and decisions before integration.
 | FDE Pack examples | present if R119-B created them; JSON examples parse | pending |
 | R119-B validation | public Markdown under `release/fresh-clone-checks/` | pending |
 | R119-B integration note or index update note | public Markdown under `release/integration-notes/` | pending |
-| R119-B internal report | `J:\开发\AgentPal_dcos\开发记录\` | pending |
+| R119-B internal report | `private completion report outside the public repository` | pending |
 
 FDE Pack files must remain no-code delivery assets and must not implement a connector, API client, scanner, marketplace, or execution engine.
 
@@ -47,7 +47,7 @@ Record the final R119-C owner, selected paths, and decisions before integration.
 | private asset examples | placeholders only; no customer-private data | pending |
 | R119-C validation | public Markdown under `release/fresh-clone-checks/` | pending |
 | R119-C integration note or index update note | public Markdown under `release/integration-notes/` | pending |
-| R119-C internal report | `J:\开发\AgentPal_dcos\开发记录\` | pending |
+| R119-C internal report | `private completion report outside the public repository` | pending |
 
 R119-C must prove customer-private material does not enter reusable public packs.
 

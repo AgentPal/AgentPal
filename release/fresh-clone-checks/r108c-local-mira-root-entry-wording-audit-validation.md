@@ -24,7 +24,7 @@ R108-C audit-only review of Mira root-entry and related thin-binding wording.
 - `templates/project-binding/`
 - `docs/01-getting-started/bind-external-project.md`
 - `workspace/organization/contacts/pals.json`
-- `J:\开发\AgentPal_dcos\开发记录\R105-Mira-specific-PalAssetReview与memory-research-index补齐完成报告.md`
+- `private completion report outside the public repository`
 
 ## Evidence summary
 
@@ -87,7 +87,7 @@ R108-C is audit-only. It does not modify Mira root entries, official Pal metadat
 
 ## Commit scope note
 
-The R108-C commit scope is limited to the three public R108-C artifacts. Internal reporting stays under `J:\开发\AgentPal_dcos\开发记录\` and parallel R108-A/B/D artifacts are treated as other-thread files.
+The R108-C commit scope is limited to the three public R108-C artifacts. Internal reporting stays under `private completion report outside the public repository` and parallel R108-A/B/D artifacts are treated as other-thread files.
 
 ## Conclusion
 

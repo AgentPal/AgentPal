@@ -23,8 +23,8 @@ This gate is documentation and evidence policy only. It is not a scanner, valida
 
 Read before running this gate:
 
-- `J:\开发\AgentPal_dcos\开发记录\R104-R103并行结果审查与OfficialPalIndexBackfill集成完成报告.md`
-- `J:\开发\AgentPal_dcos\开发记录\R105-Mira-specific-PalAssetReview与memory-research-index补齐完成报告.md`
+- `private completion report outside the public repository`
+- `private completion report outside the public repository`
 - `evals/palbench/pal-asset/r100d-pal-metadata-upgrade-compatibility-gate.md`
 - `templates/pal-asset/safe-index-backfill-guide.md`
 - `templates/pal-asset/index-templates/skills-index-template.md`
@@ -45,7 +45,7 @@ The R107 integration round must verify the real output files from the parallel t
 | R106-B validation exists | pass or documented issue |
 | R106-C validation exists | pass or documented issue |
 | R106-A/B/C integration notes exist | pass or documented issue |
-| R106-A/B/C internal reports exist under `J:\开发\AgentPal_dcos\开发记录\` | pass or documented issue |
+| R106-A/B/C internal reports exist under `private completion report outside the public repository` | pass or documented issue |
 
 Do not infer completion from branch position, commit message, or directory presence alone.
 

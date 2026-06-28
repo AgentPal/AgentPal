@@ -9,7 +9,7 @@ Check that R108-C records an audit of Mira root-entry `.agentpal` wording withou
 - `release/integration-notes/r108c-mira-root-entry-agentpal-wording-audit.md`
 - `evals/palbench/pal-asset/r108c-mira-root-entry-wording-boundary.md`
 - `release/fresh-clone-checks/r108c-local-mira-root-entry-wording-audit-validation.md`
-- internal report at `J:\开发\AgentPal_dcos\开发记录\R108-C-Mira-root-entry-agentpal-wording审计完成报告.md`
+- internal report at `private completion report outside the public repository`
 
 ## Checks
 

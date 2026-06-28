@@ -18,7 +18,7 @@ Record the final R108-A owner, selected paths, and decisions before integration.
 | Mira skills index outcome | `official/pals/Mira-main/skills/index.md` or approved equivalent / documented no-write decision | pending |
 | R108-A validation | public Markdown under `release/fresh-clone-checks/` | pending |
 | R108-A integration note or summary | public Markdown under `release/integration-notes/` | pending |
-| R108-A internal report | `J:\开发\AgentPal_dcos\开发记录\` | pending |
+| R108-A internal report | `private completion report outside the public repository` | pending |
 
 Mira-specific work must preserve the Main Pal / Leader Pal / Conductor boundary and must not create keyword routing.
 
@@ -32,7 +32,7 @@ Record the final R108-B owner, selected paths, and decisions before integration.
 | PalSmith skills index outcome | `official/pals/PalSmith-pal-governor/skills/index.md` or approved equivalent / documented no-write decision | pending |
 | R108-B validation | public Markdown under `release/fresh-clone-checks/` | pending |
 | R108-B integration note or summary | public Markdown under `release/integration-notes/` | pending |
-| R108-B internal report | `J:\开发\AgentPal_dcos\开发记录\` | pending |
+| R108-B internal report | `private completion report outside the public repository` | pending |
 
 Verify that Agent / Runtime Skills are references only and that no runtime skill registry files are copied into Pal `skills/`.
 
@@ -46,7 +46,7 @@ Record the final R108-C audit target, findings, and decisions before integration
 | audited file list | exact Mira root-entry files recorded | pending |
 | old `.agentpal` wording classification | pass / issue / accepted-risk recorded | pending |
 | R108-C validation or audit evidence | public Markdown under `release/fresh-clone-checks/` or equivalent integration note | pending |
-| R108-C internal report | `J:\开发\AgentPal_dcos\开发记录\` | pending |
+| R108-C internal report | `private completion report outside the public repository` | pending |
 
 If R108-C edits root-entry wording, verify the edits are explicitly allowed, documentation-only, and behavior-preserving.
 
@@ -69,7 +69,7 @@ Each validation must state `not-run` items explicitly.
 Internal reports belong under:
 
 ```text
-J:\开发\AgentPal_dcos\开发记录\
+private completion report outside the public repository
 ```
 
 Expected handling:

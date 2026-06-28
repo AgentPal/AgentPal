@@ -35,7 +35,7 @@ Related thin-binding references:
 - `templates/project-binding/`
 - `docs/01-getting-started/bind-external-project.md`
 - `workspace/organization/contacts/pals.json`
-- `J:\开发\AgentPal_dcos\开发记录\R105-Mira-specific-PalAssetReview与memory-research-index补齐完成报告.md`
+- `private completion report outside the public repository`
 
 ## Audit criteria
 

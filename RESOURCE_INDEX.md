@@ -674,6 +674,14 @@ Use the current docs directories as the public entry points. Archived research n
 | `release/integration-notes/r127-r128-overall-regression-execution-checklist.md` | R128 execution checklist and safety gates |
 | `release/fresh-clone-checks/r127-local-v0.5-overall-regression-planning-validation.md` | R127 local planning validation record |
 | `release/integration-notes/r127-r128-readiness-decision.md` | R127 readiness decision for R128 regression execution |
+| `evals/palbench/v0.5/r128-v0.5-overall-regression-results.md` | R128 executed v0.5 overall regression results |
+| `evals/palbench/v0.5/r128-v0.5-overall-regression-issues.md` | R128 issue table and severity classification |
+| `release/fresh-clone-checks/r128-local-v0.5-overall-regression-validation.md` | R128 local validation record |
+| `release/integration-notes/r128-r129-readiness-decision.md` | R128 readiness decision for R129 fix round |
+| `release/integration-notes/r129-v0.5-regression-medium-issue-fix-plan.md` | R129 fix plan for R128 medium issues |
+| `evals/palbench/v0.5/r129-v0.5-targeted-fix-rerun-results.md` | R129 targeted rerun results |
+| `release/fresh-clone-checks/r129-local-v0.5-medium-issue-fix-validation.md` | R129 local validation record |
+| `release/integration-notes/r129-r130-readiness-decision.md` | R129 readiness decision for v0.5 local completion report |
 
 ## R101 Integration
 

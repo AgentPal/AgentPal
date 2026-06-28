@@ -3,7 +3,7 @@
 Failure shape:
 
 ```text
-.agentpal/PAL_GROUP.md contains a copied list of Pals and says it is authoritative.
+A project-local copied roster file contains a copied list of Pals and says it is authoritative.
 ```
 
 Why this fails:
@@ -15,7 +15,7 @@ Why this fails:
 Correct shape:
 
 ```text
-.agentpal/PAL_GROUP.md says the roster is read from:
-- agentpal_workspace_root/contacts/pals.json
-- agentpal_workspace_root/registry/pal.index.json
+A thin binding file says the roster is read from:
+- agentpal_workspace_root/workspace/organization/contacts/pals.json
+- agentpal_workspace_root/workspace/organization/contacts/PAL_CONTACTS.md
 ```

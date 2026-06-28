@@ -19,7 +19,7 @@ This eval verifies that R109 integrates R108-A / R108-B / R108-C / R108-D, fixes
 | R109 integration summary | present |
 | R109 integrated boundary eval | present |
 | R109 local validation | present |
-| R109 internal report | present under `J:\开发\AgentPal_dcos\开发记录\` |
+| R109 internal report | present under `private completion report outside the public repository` |
 
 ## Pass criteria
 

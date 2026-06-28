@@ -75,8 +75,8 @@ The following R106-looking files were present during validation. They appear to 
 
 ## Baseline References Read
 
-- `J:\开发\AgentPal_dcos\开发记录\R104-R103并行结果审查与OfficialPalIndexBackfill集成完成报告.md`
-- `J:\开发\AgentPal_dcos\开发记录\R105-Mira-specific-PalAssetReview与memory-research-index补齐完成报告.md`
+- `private completion report outside the public repository`
+- `private completion report outside the public repository`
 - `evals/palbench/pal-asset/r100d-pal-metadata-upgrade-compatibility-gate.md`
 - `templates/pal-asset/safe-index-backfill-guide.md`
 - `templates/pal-asset/index-templates/skills-index-template.md`

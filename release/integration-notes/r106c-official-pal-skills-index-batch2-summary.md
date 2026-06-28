@@ -13,7 +13,7 @@ This is a local Markdown / validation round. It is not a GitHub sync, tag, relea
 The R106-C internal target report was missing when R107 began:
 
 ```text
-J:\开发\AgentPal_dcos\开发记录\R106-C-Nova-Vega-Harper-Rhea-skills-index补齐完成报告.md
+private completion report outside the public repository
 ```
 
 R106-C was therefore classified as `target not completed` until R107 reviewed the current worktree and completed the missing evidence files.

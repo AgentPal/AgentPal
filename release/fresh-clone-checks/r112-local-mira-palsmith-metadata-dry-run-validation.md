@@ -44,7 +44,7 @@ R112 creates proposal and dry-run JSON artifacts for Mira and PalSmith only. It 
 | `evals/palbench/pal-asset/r112-mira-palsmith-metadata-dry-run-boundary.md` | created |
 | `release/fresh-clone-checks/r112-local-mira-palsmith-metadata-dry-run-validation.md` | created |
 | `release/integration-notes/r112-r113-metadata-update-readiness-decision.md` | created |
-| internal report under `J:\开发\AgentPal_dcos\开发记录\` | created |
+| internal report under `private completion report outside the public repository` | created |
 
 ## Proposed JSON Validation
 

@@ -74,8 +74,8 @@ R108-A/B/C commits were visible in history during final validation:
 
 ## Baseline References Read
 
-- `J:\开发\AgentPal_dcos\开发记录\R107-R106并行结果审查与OfficialPalSkillsIndex集成完成报告.md`
-- `J:\开发\AgentPal_dcos\开发记录\R105-Mira-specific-PalAssetReview与memory-research-index补齐完成报告.md`
+- `private completion report outside the public repository`
+- `private completion report outside the public repository`
 - `evals/palbench/pal-asset/r100d-pal-metadata-upgrade-compatibility-gate.md`
 - `templates/pal-asset/safe-index-backfill-guide.md`
 - `workspace/organization/contacts/pals.json`

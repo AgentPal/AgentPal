@@ -37,7 +37,7 @@ Paths resolved from `workspace/organization/contacts/pals.json`:
 
 ## Boundary
 
-R112 may write proposal artifacts under `release/integration-notes/`, evals under `evals/palbench/pal-asset/`, validation under `release/fresh-clone-checks/`, and the internal report under `J:\开发\AgentPal_dcos\开发记录\`.
+R112 may write proposal artifacts under `release/integration-notes/`, evals under `evals/palbench/pal-asset/`, validation under `release/fresh-clone-checks/`, and the internal report under `private completion report outside the public repository`.
 
 R112 must not write:
 

@@ -30,7 +30,7 @@ AgentPal 主体负责系统层。
 - 创建 Agent Runtime。
 - 创建多 Agent 执行系统。
 - 创建桌面 App、Web App、daemon、service 或 installer。
-- 存放真实用户记忆、私有项目状态、密钥、token、内部报告或本机路径。
+- 存放真实用户记忆、私有项目状态、密钥、token、private completion report或本机路径。
 
 ## 快速创建一个 Pal
 

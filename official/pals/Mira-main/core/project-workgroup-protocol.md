@@ -78,13 +78,13 @@ Mira：
 10. If still unresolved, ask for the project path.
 11. If one candidate is found, confirm the exact path with the user or proceed if the user already allowed it.
 12. If multiple candidates are found, list candidates and ask the user to choose.
-13. Use the template in `projects/project-workgroup-template/agentpal/`.
+13. Use the current thin-binding templates in `templates/project-binding/generic-codex/` or `templates/project-binding/claude-code/`.
 14. In the external project, the target folder name should be `.agentpal/`.
 15. Set `active_project_root` to the external user project directory.
 16. Set `agentpal_workspace_root` to the AgentPal workspace directory.
 17. Set `current_project_semantics` to `active_project_root_only`.
 18. Create or update the external project root `AGENTS.md` with the protected AgentPal workgroup block.
-19. Ensure the root `AGENTS.md` block tells Codex to read `.agentpal/INIT_AGENTPAL_PROJECT_PROMPT.md` if this session has not loaded AgentPal rules yet.
+19. Ensure the root `AGENTS.md` block tells Codex to read `.agentpal/project.json` and `.agentpal/AGENTPAL.md` if this session has not loaded AgentPal binding context yet.
 20. Record only non-private registration metadata in this AgentPal workspace.
 21. After successful binding, give the external project next-step prompt.
 
@@ -123,8 +123,7 @@ External project root `AGENTS.md` should include:
 - specialist Pals do not listen by default
 - `/pal Name` calls specialist Pals
 - `/pal Name enters Pal work mode`, not an independent agent process
-- read `.agentpal/project.json`, `.agentpal/AGENTPAL.md`, and `.agentpal/PAL_GROUP.md`
-- read `.agentpal/INIT_AGENTPAL_PROJECT_PROMPT.md` if AgentPal rules have not loaded yet
+- read `.agentpal/project.json` and `.agentpal/AGENTPAL.md`
 - current project means `active_project_root`
 - do not list AgentPal workspace as project root
 - this external project is not the AgentPal workspace directory
@@ -145,7 +144,7 @@ Mira：
 
 下一步你进入这个项目的 Codex 会话后，如果它没有自动进入 Mira 模式，就复制执行：
 
-请读取当前项目根 AGENTS.md，以及 .agentpal/INIT_AGENTPAL_PROJECT_PROMPT.md，进入 AgentPal project-bound mode。普通消息默认交给 Mira，当前项目只以本项目目录为准。
+请读取当前项目根 AGENTS.md，以及 .agentpal/project.json 和 .agentpal/AGENTPAL.md，进入 AgentPal project-bound mode。普通消息默认交给 Mira，当前项目只以本项目目录为准。
 
 如果当前 Codex 能自动读取根 AGENTS.md，则用户无需手动执行这段提示。
 ```

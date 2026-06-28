@@ -20,7 +20,7 @@ Minimum expected shape:
 | R103-A selected Pal README / index files | exact files under approved `official/pals/<Pal>/...` paths | pending |
 | R103-A validation | public Markdown under `release/fresh-clone-checks/` | pending |
 | R103-A integration note or summary | public Markdown under `release/integration-notes/` | pending |
-| R103-A internal report | `J:\开发\AgentPal_dcos\开发记录\` | pending |
+| R103-A internal report | `private completion report outside the public repository` | pending |
 
 Do not infer the selected Pal list from R100-B alone. Use the final R103-A evidence.
 
@@ -36,7 +36,7 @@ Minimum expected shape:
 | R103-B selected Pal README / index files | exact files under approved `official/pals/<Pal>/...` paths | pending |
 | R103-B validation | public Markdown under `release/fresh-clone-checks/` | pending |
 | R103-B integration note or summary | public Markdown under `release/integration-notes/` | pending |
-| R103-B internal report | `J:\开发\AgentPal_dcos\开发记录\` | pending |
+| R103-B internal report | `private completion report outside the public repository` | pending |
 
 If R103-B is Batch 3, verify it did not overlap with R103-A selected paths.
 
@@ -51,7 +51,7 @@ Minimum expected shape:
 | R103-C PalSmith runbooks policy note | public Markdown under `release/integration-notes/` or `evals/palbench/pal-asset/` | pending |
 | PalSmith runbooks README pilot file | exact approved file, likely `official/pals/PalSmith-pal-governor/runbooks/README.md`, if pilot completed | pending |
 | R103-C validation | public Markdown under `release/fresh-clone-checks/` | pending |
-| R103-C internal report | `J:\开发\AgentPal_dcos\开发记录\` | pending |
+| R103-C internal report | `private completion report outside the public repository` | pending |
 
 If R103-C decides not to create PalSmith `runbooks/README.md`, record the decision and evidence instead of treating the missing file as a silent pass.
 
@@ -74,7 +74,7 @@ Each validation must state not-run items explicitly.
 Internal reports belong under:
 
 ```text
-J:\开发\AgentPal_dcos\开发记录\
+private completion report outside the public repository
 ```
 
 Expected handling:

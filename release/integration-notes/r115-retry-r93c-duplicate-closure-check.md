@@ -16,7 +16,7 @@ Pass.
 | --- | --- | --- |
 | latest R93-C simulation commit | `7d9b99c test: add thin binding simulation results` | latest commit for `r93c-thin-binding-simulation-results.md` and `r93c-local-thin-binding-simulation-validation.md` |
 | R93-C index note tracked | `11ff742 test: add thin binding simulation results` | latest commit for `r93c-index-update-notes.md` |
-| internal completion report exists | pass | `J:\开发\AgentPal_dcos\开发记录\R93-C-ThinBinding真实临时项目模拟测试完成报告.md` |
+| internal completion report exists | pass | `private completion report outside the public repository` |
 | public simulation result exists | pass | `evals/palbench/project-binding/r93c-thin-binding-simulation-results.md` |
 | public validation exists | pass | `release/fresh-clone-checks/r93c-local-thin-binding-simulation-validation.md` |
 | integration note exists | pass | `release/integration-notes/r93c-index-update-notes.md` |

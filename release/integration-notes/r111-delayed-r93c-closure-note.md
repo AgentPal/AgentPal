@@ -15,7 +15,7 @@ Evidence:
 - `evals/palbench/project-binding/r93c-thin-binding-simulation-results.md`
 - `release/fresh-clone-checks/r93c-local-thin-binding-simulation-validation.md`
 - `release/integration-notes/r93c-index-update-notes.md`
-- internal report: `J:\开发\AgentPal_dcos\开发记录\R93-C-ThinBinding真实临时项目模拟测试完成报告.md`
+- internal report: `private completion report outside the public repository`
 - local commit: `11ff742 test: add thin binding simulation results`
 
 ## Thin Binding Simulation Result

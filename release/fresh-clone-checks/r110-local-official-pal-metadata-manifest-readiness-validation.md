@@ -31,7 +31,7 @@ R110 creates planning and gate artifacts only. It does not modify official Pal `
 | `release/integration-notes/r110-official-pal-metadata-manifest-batch-proposal.md` | created |
 | `evals/palbench/pal-asset/r110-official-pal-metadata-manifest-readiness-gate.md` | created |
 | `release/fresh-clone-checks/r110-local-official-pal-metadata-manifest-readiness-validation.md` | created |
-| internal report | created under `J:\开发\AgentPal_dcos\开发记录\` |
+| internal report | created under `private completion report outside the public repository` |
 
 ## Validation results
 

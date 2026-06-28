@@ -84,7 +84,7 @@ Expected R109 public files:
 
 Internal report:
 
-- `J:\开发\AgentPal_dcos\开发记录\R109-R108并行结果集成与MiraWording修复完成报告.md`
+- `private completion report outside the public repository`
 
 ## Clean-copy validation
 

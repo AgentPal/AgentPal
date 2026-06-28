@@ -15,7 +15,7 @@ R107 began in `J:\开发\AgentPal`.
 The R106-C internal target report was missing:
 
 ```text
-J:\开发\AgentPal_dcos\开发记录\R106-C-Nova-Vega-Harper-Rhea-skills-index补齐完成报告.md
+private completion report outside the public repository
 ```
 
 The current worktree contained uncommitted R106-C skills index changes for Nova, Vega, Harper, and Rhea. R107 therefore classified R106-C as `target not completed` and completed the missing public evidence files and internal report.
@@ -31,7 +31,7 @@ R106-A covers PalSmith memory / research README backfill:
 - `evals/palbench/pal-asset/r106a-palsmith-memory-research-readme-boundary.md`
 - `release/fresh-clone-checks/r106a-local-palsmith-memory-research-readme-validation.md`
 - `release/integration-notes/r106a-palsmith-memory-research-readme-summary.md`
-- internal report: `J:\开发\AgentPal_dcos\开发记录\R106-A-PalSmith-memory-research-README补齐完成报告.md`
+- internal report: `private completion report outside the public repository`
 
 ## R106-B Status
 
@@ -45,7 +45,7 @@ R106-B covers Atlas / Quinn / Morgan skills index backfill:
 - `evals/palbench/pal-asset/r106b-official-pal-skills-index-batch1-boundary.md`
 - `release/fresh-clone-checks/r106b-local-official-pal-skills-index-batch1-validation.md`
 - `release/integration-notes/r106b-official-pal-skills-index-batch1-summary.md`
-- internal report: `J:\开发\AgentPal_dcos\开发记录\R106-B-Atlas-Quinn-Morgan-skills-index补齐完成报告.md`
+- internal report: `private completion report outside the public repository`
 
 ## R106-C Status
 
@@ -68,7 +68,7 @@ R106-C now covers Nova / Vega / Harper / Rhea skills index backfill:
 - `evals/palbench/pal-asset/r106c-official-pal-skills-index-batch2-boundary.md`
 - `release/fresh-clone-checks/r106c-local-official-pal-skills-index-batch2-validation.md`
 - `release/integration-notes/r106c-official-pal-skills-index-batch2-summary.md`
-- internal report: `J:\开发\AgentPal_dcos\开发记录\R106-C-Nova-Vega-Harper-Rhea-skills-index补齐完成报告.md`
+- internal report: `private completion report outside the public repository`
 
 ## R106-D Status
 
@@ -80,7 +80,7 @@ R106-D covers the integration gate, checklist, and issue template:
 - `release/fresh-clone-checks/r106d-local-official-pal-skills-index-gate-validation.md`
 - `release/integration-notes/r106d-official-pal-skills-index-issue-template.md`
 - `release/integration-notes/r106d-official-pal-skills-index-integration-checklist.md`
-- internal report: `J:\开发\AgentPal_dcos\开发记录\R106-D-OfficialPalSkillsIndexIntegrationGate完成报告.md`
+- internal report: `private completion report outside the public repository`
 
 ## Still Not Processed
 
@@ -124,7 +124,7 @@ R107 also completes missing R106-C public and private evidence:
 - `evals/palbench/pal-asset/r106c-official-pal-skills-index-batch2-boundary.md`
 - `release/fresh-clone-checks/r106c-local-official-pal-skills-index-batch2-validation.md`
 - `release/integration-notes/r106c-official-pal-skills-index-batch2-summary.md`
-- `J:\开发\AgentPal_dcos\开发记录\R106-C-Nova-Vega-Harper-Rhea-skills-index补齐完成报告.md`
+- `private completion report outside the public repository`
 
 ## Next Step Suggestion
 

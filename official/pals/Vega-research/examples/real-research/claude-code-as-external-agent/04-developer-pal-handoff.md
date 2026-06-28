@@ -73,7 +73,7 @@ Return to selected implementation collaborator:
 
 - 优先限制到少量文件或一个明确模块。
 - 禁止访问生产密钥、私人记忆、内部调研目录和无关仓库。
-- 运行时状态、用户记忆和内部报告不应暴露给外部 Runtime，除非用户明确授权。
+- 运行时状态、用户记忆和private completion report不应暴露给外部 Runtime，除非用户明确授权。
 - 如果 Claude Code 需要扩大范围，必须先回报原因，由合适协作对象 或用户确认。
 
 ## Forbidden Actions

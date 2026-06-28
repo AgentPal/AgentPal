@@ -9,19 +9,17 @@ During normal initialization or workspace context setup, use the short path and 
 - root `AGENTS.md`
 - `prompts/codex/initialize-agentpal-workspace.md`
 - `agentpal.json`
-- `contacts/pals.json` or summary
-- `registry/pal.index.json` or summary
-- `pals/Mira-main/PAL.md`
-- `pals/Mira-main/AGENTS.md`
-- `pals/Mira-main/SKILL.md`
+- `workspace/organization/contacts/pals.json` or summary
+- `workspace/organization/contacts/PAL_CONTACTS.md` or summary
+- `official/pals/Mira-main/PAL.md`
+- `official/pals/Mira-main/AGENTS.md`
+- `official/pals/Mira-main/SKILL.md`
 - `orchestration/runtime-response-gate.md`
 
 If the session is bound to an external project, also read only the existing project binding files needed to establish context:
 
 - external project `AGENTS.md`
-- `.agentpal/INIT_AGENTPAL_PROJECT_PROMPT.md`
 - `.agentpal/project.json`
-- `.agentpal/PAL_GROUP.md`
 - `.agentpal/AGENTPAL.md`
 
 Do not load every Pal's instruction files during initialization. Do not load templates, multiple orchestration protocols, all Mira identity files, registry Markdown, or resource maps during default initialization.
@@ -33,9 +31,9 @@ Wide initialization is diagnostic only. Use it for release checks, failed initia
 Deep initialization may load selected additional files such as:
 
 - `RESOURCE_INDEX.md`
-- `registry/pal.index.md`
-- `contacts/PAL_CONTACTS.md`
-- `contacts/mention-aliases.md`
+- `workspace/resources/registry/pal.index.json`
+- `workspace/organization/contacts/PAL_CONTACTS.md`
+- `workspace/organization/contacts/aliases.json`
 - selected Mira core protocol files
 - selected orchestration protocols
 - selected templates

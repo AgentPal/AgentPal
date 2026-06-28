@@ -21,7 +21,7 @@ Minimum expected shape:
 | PalSmith research README outcome | `official/pals/PalSmith-pal-governor/research/README.md` or documented no-write decision | pending |
 | R106-A validation | public Markdown under `release/fresh-clone-checks/` | pending |
 | R106-A integration note or summary | public Markdown under `release/integration-notes/` | pending |
-| R106-A internal report | `J:\开发\AgentPal_dcos\开发记录\` | pending |
+| R106-A internal report | `private completion report outside the public repository` | pending |
 
 Do not infer PalSmith policy approval from directory presence alone.
 
@@ -39,7 +39,7 @@ Minimum expected shape:
 | Morgan skills index outcome | `official/pals/Morgan-document/skills/index.md` or approved equivalent / documented no-write decision | pending |
 | R106-B validation | public Markdown under `release/fresh-clone-checks/` | pending |
 | R106-B integration note or summary | public Markdown under `release/integration-notes/` | pending |
-| R106-B internal report | `J:\开发\AgentPal_dcos\开发记录\` | pending |
+| R106-B internal report | `private completion report outside the public repository` | pending |
 
 Verify each index references Agent / Runtime Skills only as execution candidates, not copied Pal Skills.
 
@@ -58,7 +58,7 @@ Minimum expected shape:
 | Rhea skills index outcome | `official/pals/Rhea-system/skills/index.md` or approved equivalent / documented no-write decision | pending |
 | R106-C validation | public Markdown under `release/fresh-clone-checks/` | pending |
 | R106-C integration note or summary | public Markdown under `release/integration-notes/` | pending |
-| R106-C internal report | `J:\开发\AgentPal_dcos\开发记录\` | pending |
+| R106-C internal report | `private completion report outside the public repository` | pending |
 
 Verify R106-C did not overlap with R106-B selected paths.
 
@@ -81,7 +81,7 @@ Each validation must state `not-run` items explicitly.
 Internal reports belong under:
 
 ```text
-J:\开发\AgentPal_dcos\开发记录\
+private completion report outside the public repository
 ```
 
 Expected handling:
