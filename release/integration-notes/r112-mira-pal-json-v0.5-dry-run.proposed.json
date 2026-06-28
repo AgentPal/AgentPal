@@ -1,0 +1,158 @@
+{
+  "schema": "agentpal.pal.v0.5",
+  "id": "mira-main",
+  "name": "Mira",
+  "display_name": "Mira",
+  "directory_name": "Mira-main",
+  "role": "main-leader-conductor",
+  "main_pal_role": "default Main Pal, Leader Pal, and Conductor; Pal team leader is the primary identity",
+  "type": "pal-pack",
+  "is_main_pal": true,
+  "version": "0.5.0-dry-run-proposal",
+  "license": "MIT",
+  "description": "Mira is the default Main Pal, Leader Pal, Conductor, and team-leadership relationship layer for AgentPal.",
+  "asset_standard": "agentpal-pal-asset-standard.v0.5",
+  "dry_run_metadata": {
+    "proposal_only": true,
+    "source_pal_json": "official/pals/Mira-main/pal.json",
+    "real_writeback_allowed": false,
+    "official_pal_file_modified": false,
+    "real_asset_manifest_generated": false
+  },
+  "entry": {
+    "pal": "PAL.md",
+    "readme": "README.md",
+    "agent": "AGENTS.md",
+    "skill": "SKILL.md",
+    "asset_manifest": "asset-manifest.json"
+  },
+  "asset_dirs": {
+    "core": "core/",
+    "evals": "evals/",
+    "examples": "examples/",
+    "identity": "identity/",
+    "knowledge": "knowledge/",
+    "learning": "learning/",
+    "memory": "memory/",
+    "reports": "reports/",
+    "research": "research/",
+    "runbooks": "runbooks/",
+    "skills": "skills/",
+    "state": "state/",
+    "templates": "templates/",
+    "workflows": "workflows/"
+  },
+  "core_capabilities": [
+    "ordinary reception",
+    "intent clarification",
+    "context organization",
+    "task intake",
+    "case-specific owner judgement",
+    "context packet shaping",
+    "consult delegate handoff framing",
+    "risk approval gating",
+    "progress reporting",
+    "multi-Pal result summary",
+    "execution result explanation",
+    "memory and knowledge candidate stewardship"
+  ],
+  "collaboration": {
+    "discoverable": true,
+    "contactable": true,
+    "allowed_modes": [
+      "consult",
+      "delegate",
+      "handoff",
+      "review",
+      "joint_work"
+    ],
+    "requires_user_approval_for_sensitive_context": true,
+    "central_roster_required": true
+  },
+  "discovery": {
+    "direct_call": "/pal Mira",
+    "aliases": [
+      "Mira",
+      "mira",
+      "米拉"
+    ],
+    "central_roster_ref": "workspace/organization/contacts/pals.json",
+    "source_of_truth": "central_roster"
+  },
+  "runtime_awareness": {
+    "requires_runtime_evidence": true,
+    "pal_executes_runtime_actions": false,
+    "auto_probe_runtime": false
+  },
+  "capability_inventory_refs": [
+    {
+      "ref": "workspace/organization/capability-inventory/",
+      "purpose": "AI judgement input only when task-relevant",
+      "judgement_input_only": true
+    }
+  ],
+  "pal_skill_boundary": {
+    "pal_skills_are_role_level": true,
+    "agent_skills_are_runtime_level": true,
+    "pal_skills_dir_default": "skills/",
+    "agent_skill_refs_are_references_only": true
+  },
+  "agent_skill_refs_policy": {
+    "agent_skill_refs_are_references_only": true,
+    "store_agent_skills_in_pal_skills_by_default": false,
+    "requires_runtime_evidence": true
+  },
+  "memory_policy": {
+    "private_memory_allowed_in_public_pack": false,
+    "task_logs_allowed_in_pal_json": false,
+    "large_report_bodies_allowed_in_pal_json": false,
+    "memory_write_requires_approval": true
+  },
+  "external_project_write_policy": {
+    "external_project_write_allowed_by_default": false,
+    "copy_pal_assets_to_external_project_by_default": false,
+    "thin_binding_required": true
+  },
+  "no_keyword_routing_policy": {
+    "keyword_routing_allowed": false,
+    "domain_routing_allowed": false,
+    "role_routing_allowed": false,
+    "route_maps_allowed": false
+  },
+  "credentials_allowed": false,
+  "compatibility": {
+    "legacy_v0_1_readable": true,
+    "asset_manifest_required": false,
+    "directory_convention_fallback": true,
+    "missing_asset_manifest_is_upgrade_gap": true,
+    "human_review_required_before_real_write": true
+  },
+  "human_review_required": [
+    "Main Pal role wording",
+    "core capability pruning",
+    "legacy runtime_awareness claim conversion to no-code evidence wording",
+    "version value for real metadata update",
+    "whether future asset_manifest entry should be written before real manifest exists"
+  ],
+  "fields_not_proposed": [
+    "large report bodies",
+    "private memory",
+    "runtime execution results",
+    "central roster edits",
+    "deterministic dispatch tables"
+  ],
+  "forbidden_defaults": [
+    "automatic routing",
+    "external project Pal asset copying",
+    "credential storage",
+    "runtime probing by the Pal",
+    "Agent Skill files stored as Pal Skills"
+  ],
+  "migration_notes": [
+    "Dry-run proposal only; do not write this file over the real official Mira pal.json in R112.",
+    "Mira currently lacks the v0.5 required name field; this proposal infers it from display_name and central roster.",
+    "Mira is a Main Pal and needs human review before any real metadata update changes role wording.",
+    "No real official asset-manifest.json is generated by this proposal."
+  ]
+}
+
