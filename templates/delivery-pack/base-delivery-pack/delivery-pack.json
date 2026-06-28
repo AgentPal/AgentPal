@@ -1,0 +1,41 @@
+{
+  "schema": "agentpal.delivery-pack.v0.5",
+  "id": "base-delivery-pack",
+  "name": "Base Delivery Pack",
+  "type": "delivery-pack-template",
+  "version": "0.1.0",
+  "status": "template",
+  "delivery_structure": [
+    "Project",
+    "Flow Pack",
+    "Task Package"
+  ],
+  "required_files": [
+    "DELIVERY.md",
+    "PROJECT.md",
+    "FLOWS/README.md",
+    "TASKS/README.md",
+    "PAL_TEAM.md",
+    "INTEGRATIONS/README.md",
+    "ACCEPTANCE.md",
+    "TRAINING.md",
+    "REPORTS/README.md",
+    "FAYE_BUILD_REQUEST.md",
+    "delivery-pack.json"
+  ],
+  "recommended_pals_are_ai_judgement_input_only": true,
+  "external_projects_copy_assets_by_default": false,
+  "customer_private_assets_allowed_in_reusable_pack": false,
+  "credentials_allowed": false,
+  "keyword_routing_allowed": false,
+  "connector_included": false,
+  "marketplace_program_included": false,
+  "scanner_included": false,
+  "validator_included": false,
+  "auto_execution": false,
+  "auto_sync": false,
+  "can_modify_central_roster": false,
+  "official_pal_changes_allowed_by_default": false,
+  "requires_human_review": true,
+  "notes": "Template only. Fill with public-safe delivery assets and keep private project records outside reusable packs."
+}

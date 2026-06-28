@@ -1,0 +1,34 @@
+{
+  "schema": "agentpal.delivery-pack.v0.5",
+  "id": "base-faye-delivery-pack-example",
+  "name": "Base Faye Delivery Pack Example",
+  "type": "delivery-pack-example-shell",
+  "version": "0.1.0",
+  "status": "public-safe-example-shell",
+  "fictional": true,
+  "delivery_structure": [
+    "Project",
+    "Flow Pack",
+    "Task Package"
+  ],
+  "references": {
+    "faye_standard": "standards/faye-delivery-pal/faye-ai-delivery-pal-standard.md",
+    "delivery_pack_standard": "standards/faye-delivery-pal/delivery-pack-standard.md",
+    "handoff_standard": "standards/faye-delivery-pal/faye-palsmith-handoff-standard.md",
+    "base_template": "templates/delivery-pack/base-delivery-pack/"
+  },
+  "recommended_pals_are_ai_judgement_input_only": true,
+  "external_projects_copy_assets_by_default": false,
+  "customer_private_assets_allowed_in_reusable_pack": false,
+  "credentials_allowed": false,
+  "keyword_routing_allowed": false,
+  "connector_included": false,
+  "marketplace_program_included": false,
+  "scanner_included": false,
+  "validator_included": false,
+  "auto_execution": false,
+  "auto_sync": false,
+  "can_modify_central_roster": false,
+  "official_pal_changes_allowed_by_default": false,
+  "requires_human_review": true
+}
