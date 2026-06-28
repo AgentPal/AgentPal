@@ -1,62 +1,120 @@
-# Rhea Skills Index
+# Skills Index
 
-Each internal skill must use skills/<skill-id>/SKILL.md as the runtime entry. README.md remains human-readable notes.
+## Purpose
+
+This directory lists Rhea's Pal Skills for System / Runtime Safety Lead work.
+
+Rhea's skills are no-code Markdown assets. They help Rhea organize recurring runtime safety work through capability assessment, permission boundary review, no-code audit, file safety, risk classification, approval gates, execution evidence review, troubleshooting, release safety, rollback readiness, incident review, and Runtime Task Package safety briefing.
+
+## Pal Skill definition
+
+A Pal Skill is a role-level work capability owned by Rhea. It describes how Rhea judges system or Runtime risk, what context is allowed, what approval is needed, what execution evidence is required, what actions are forbidden, and what residual risk remains.
+
+Rhea Pal Skills are not shell scripts, command libraries, scanners, validators, installers, daemons, monitoring services, or Runtime tools.
+
+## Agent Skill boundary
+
+Agent Skills, Runtime Skills, plugins, MCP tools, command runners, package managers, browser tools, and local system tools belong to the host Runtime layer. They may be referenced as execution candidates in a Runtime Task Package, but they are not stored in Rhea's `skills/` directory.
+
+Rhea may review a command plan or Runtime capability candidate, but the current Runtime performs any real command, install, deletion, scan, validation, or system inspection and must return evidence.
+
+## What belongs here
+
+- System / Runtime Safety Lead Pal Skills.
+- Runtime capability, permission boundary, no-code boundary, file safety, risk, approval, evidence review, troubleshooting, release safety, rollback, incident, and task-package safety methods.
+- Links to related safety knowledge, workflows, runbooks, examples, and evals.
+- Notes that help choose the smallest relevant Rhea skill after Rhea is selected as owner or consultant.
+
+## What does not belong here
+
+- Agent Skills, Runtime Skills, plugins, MCP tools, shell scripts, PowerShell recipes, Bash recipes, package-manager instructions, scanner configs, validator tooling, daemon configs, or installer docs.
+- Raw CLI tool instructions unless rewritten as a Rhea-owned safety method with context, approval, verification, and writeback boundaries.
+- Keyword route maps, `keyword_map`, `domain_map`, `role_map`, or deterministic task-to-Pal dispatch rules.
+- Reports, private memory, system secrets, credentials, tokens, customer data, or private evidence.
+
+Raw CLI tool instructions are not Pal Skills. Rhea can review command plans and evidence, but she does not execute commands or scan systems.
+
+## Current assets
+
+Legacy formal skill directories:
 
 | Skill | Runtime entry | Human notes | Description |
 | --- | --- | --- | --- |
-| [app-installation-handoff](app-installation-handoff/SKILL.md) | skills/app-installation-handoff/SKILL.md | [README](app-installation-handoff/README.md) | Use this skill when you need to 为软件安装生成安全、可审批、可验证的执行层任务包。 |
-| [approval-request-writer](approval-request-writer/SKILL.md) | skills/approval-request-writer/SKILL.md | [README](approval-request-writer/README.md) | Use this skill when you need to 把需要用户确认的安装、卸载、删除、权限、环境变量或系统写入动作，写成清楚、可判断的审批请求。 |
-| [command-plan-review](command-plan-review/SKILL.md) | skills/command-plan-review/SKILL.md | [README](command-plan-review/README.md) | Use this skill when you need to 把执行层计划运行的命令或动作翻译成人能理解的影响、风险、审批点和证据要求。 |
-| [dependency-version-check](dependency-version-check/SKILL.md) | skills/dependency-version-check/SKILL.md | [README](dependency-version-check/README.md) | Use this skill when you need to 检查开发任务所需依赖、版本、PATH 和项目配置是否匹配。 |
-| [environment-diagnosis-plan](environment-diagnosis-plan/SKILL.md) | skills/environment-diagnosis-plan/SKILL.md | [README](environment-diagnosis-plan/README.md) | Use this skill when you need to 把环境异常整理成只读诊断任务，帮助执行层检查命令是否存在、版本是否正确、PATH 是否可用、依赖是否缺失。 |
-| [failure-recovery-plan](failure-recovery-plan/SKILL.md) | skills/failure-recovery-plan/SKILL.md | [README](failure-recovery-plan/README.md) | Use this skill when you need to 为失败命令、安装失败、依赖失败或环境修复失败生成可回滚、可复验的恢复计划。 |
-| [local-tool-discovery](local-tool-discovery/SKILL.md) | skills/local-tool-discovery/SKILL.md | [README](local-tool-discovery/README.md) | Use this skill when you need to 识别当前机器或 Runtime 可用的包管理器、开发工具、Agent、Skill、插件、MCP、hooks 和 commands。 |
-| [maintenance-report-writer](maintenance-report-writer/SKILL.md) | skills/maintenance-report-writer/SKILL.md | [README](maintenance-report-writer/README.md) | Use this skill when you need to 把系统维护、安装配置、故障排查和执行层结果整理成用户可读的维护报告。 |
-| [permission-risk-review](permission-risk-review/SKILL.md) | skills/permission-risk-review/SKILL.md | [README](permission-risk-review/README.md) | Use this skill when you need to 审查任务是否涉及管理员权限、sudo、系统目录、注册表、服务、启动项、安全软件、外发数据或敏感路径。 |
-| [runtime-setup-handoff](runtime-setup-handoff/SKILL.md) | skills/runtime-setup-handoff/SKILL.md | [README](runtime-setup-handoff/README.md) | Use this skill when you need to 为 Codex、Claude Code、OpenHands、Gemini CLI、DeepSeek-TUI 等 Runtime / Agent 的安装、检测和配置生成执行层 handoff。 |
-| [system-evidence-review](system-evidence-review/SKILL.md) | skills/system-evidence-review/SKILL.md | [README](system-evidence-review/README.md) | Use this skill when you need to 审查执行层返回的安装、卸载、修复、检测或配置结果是否足以证明任务完成。 |
-| [system-task-intake](system-task-intake/SKILL.md) | skills/system-task-intake/SKILL.md | [README](system-task-intake/README.md) | Use this skill when you need to 判断用户请求属于系统、应用、Runtime、依赖、权限、PATH、进程、磁盘、包导入还是故障恢复问题，并确定下一步是否只能先做只读检测。 |
+| `app-installation-handoff/` | `skills/app-installation-handoff/SKILL.md` | `app-installation-handoff/README.md` | Safe app-install task-package handoff method. |
+| `approval-request-writer/` | `skills/approval-request-writer/SKILL.md` | `approval-request-writer/README.md` | Approval request writing method for risky actions. |
+| `command-plan-review/` | `skills/command-plan-review/SKILL.md` | `command-plan-review/README.md` | Command or action plan risk review method. |
+| `dependency-version-check/` | `skills/dependency-version-check/SKILL.md` | `dependency-version-check/README.md` | Dependency and version requirement review method. |
+| `environment-diagnosis-plan/` | `skills/environment-diagnosis-plan/SKILL.md` | `environment-diagnosis-plan/README.md` | Read-only environment diagnosis planning method. |
+| `failure-recovery-plan/` | `skills/failure-recovery-plan/SKILL.md` | `failure-recovery-plan/README.md` | Recovery plan method after failed Runtime action. |
+| `local-tool-discovery/` | `skills/local-tool-discovery/SKILL.md` | `local-tool-discovery/README.md` | Bounded local tool discovery planning method. |
+| `maintenance-report-writer/` | `skills/maintenance-report-writer/SKILL.md` | `maintenance-report-writer/README.md` | Maintenance report writing method. |
+| `permission-risk-review/` | `skills/permission-risk-review/SKILL.md` | `permission-risk-review/README.md` | Permission and sensitive-context risk review method. |
+| `runtime-setup-handoff/` | `skills/runtime-setup-handoff/SKILL.md` | `runtime-setup-handoff/README.md` | Runtime setup handoff method. |
+| `system-evidence-review/` | `skills/system-evidence-review/SKILL.md` | `system-evidence-review/README.md` | Execution evidence review method. |
+| `system-task-intake/` | `skills/system-task-intake/SKILL.md` | `system-task-intake/README.md` | System task intake and read-only-first method. |
 
-## R04 System / Runtime Safety Lead Skill Cards
+Canonical System / Runtime Safety Lead flat skill cards:
 
-- `runtime-capability-assessment-skill.md`
-- `permission-boundary-review-skill.md`
-- `no-code-boundary-audit-skill.md`
-- `file-directory-safety-review-skill.md`
-- `risk-classification-skill.md`
 - `approval-gate-design-skill.md`
-- `execution-evidence-review-skill.md`
 - `environment-troubleshooting-skill.md`
-- `release-safety-review-skill.md`
-- `rollback-readiness-review-skill.md`
+- `execution-evidence-review-skill.md`
+- `file-directory-safety-review-skill.md`
 - `incident-review-skill.md`
+- `no-code-boundary-audit-skill.md`
+- `permission-boundary-review-skill.md`
+- `release-safety-review-skill.md`
+- `risk-classification-skill.md`
+- `rollback-readiness-review-skill.md`
+- `runtime-capability-assessment-skill.md`
 - `runtime-task-package-safety-briefing-skill.md`
 
-## Skill Memory Default
+Supporting index:
 
-When the user explicitly asks to save a Skill, or similar operations happen more than 3 times, create the formal Skill under this Pal's own skills/<skill-id>/SKILL.md and update skills/index.md. Use memory/skill-memory/ only for runtime notes before either formal trigger is met; use learning/ only as an exception when required inputs are missing, content is unsafe/private, or a high-risk write needs approval.
+- `README.md`
+- `skill-asset-map.md`
 
+## Candidate skills / needs review
 
-## Context Loading Rule
+| Candidate | Reason | Review status |
+| --- | --- | --- |
+| sensitive-path review method | Could standardize when system paths or private files make a task blocked. | needs-review |
+| host-runtime capability profile review method | Could strengthen bounded Runtime Skill / plugin / MCP availability review without broad probing. | needs-review |
 
-Read this index only after this Pal is selected as owner, consultant, reviewer, or direct /pal Name target.
+Candidate skills are not approved capability until reviewed, written as Pal-owned methods, and linked to risk, approval, evidence, output, and writeback boundaries.
 
-Use this index to choose the smallest relevant asset slice. Do not load every file in this directory by default.
+## Agent Skill references
 
-Read assets here when:
+No Agent Skill is stored here.
 
-- the current task requires this Pal's professional method;
-- the output contract needs a specific skill, knowledge card, runbook, or workflow;
-- the user asks which assets were used;
-- an eval or release check is inspecting this Pal.
+Possible Runtime capability references for future Task Packages may include shell execution, package managers, browser checks, Git tooling, process inspection, file-system inspection, or runtime capability discovery. These must stay as Runtime candidates and require current Runtime availability, user approval when needed, bounded scope, and evidence.
 
-Do not read assets here when:
+## Related workflows / runbooks
 
-- Mira is only doing initial routing;
-- another Pal owns the task and no consultation was requested;
-- the task is ordinary chat, Codex generic, or Mira-owned team-leadership work;
-- examples, evals, reports, memory, or future design material would be enough only by curiosity rather than task need.
+Use Rhea workflows for multi-stage safety review systems and Rhea runbooks for concrete repeated checks such as permission risk, command plan review, rollback readiness, or incident handling.
 
-## Formal Skill Asset Map
+Do not treat raw CLI instructions, install recipes, or system command docs as Pal Skills.
 
-R13 formal skill mapping lives in `skill-asset-map.md`. It maps every `pal.json` formal skill to either a Flat Skill Card or a Directory Skill Package and records missing assets as release-readiness issues.
+## Verification boundary
+
+Rhea skill use does not prove that a command ran, a system changed, a dependency exists, or an environment is safe.
+
+Mark as `not-run` when Runtime evidence is absent. Mark as `blocked` when approval, target path, permission, rollback, or safety evidence is missing.
+
+## Memory writeback boundary
+
+Only extracted long-term safety lessons, tool-use lessons, routing lessons, or approved environment notes may become memory candidates after review.
+
+Full maintenance reports, command output, private system state, credentials, and private evidence must not be copied into memory by default.
+
+## External project boundary
+
+Rhea skills belong in the AgentPal central Pal Pack. Do not copy Rhea skills into external project `.agentpal/` by default.
+
+External projects remain thin-bound and should read Rhea through the central roster and AgentPal workspace.
+
+## Related standards
+
+- `standards/pal-asset/pal-asset-standard.md`
+- `standards/pal-asset/pal-asset-directory-standard.md`
+- `standards/pal-asset/pal-skill-vs-agent-skill-standard.md`
+- `templates/pal-asset/safe-index-backfill-guide.md`

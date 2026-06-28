@@ -1,65 +1,123 @@
-# Vega Skills Index
+# Skills Index
 
-Each internal skill must use skills/<skill-id>/SKILL.md as the runtime entry. README.md remains human-readable notes.
+## Purpose
+
+This directory lists Vega's Pal Skills for Research / Intelligence Lead work.
+
+Vega's skills are no-code Markdown assets. They help Vega organize recurring research work through question framing, source planning, source credibility, source inventory, evidence matrices, claim alignment, synthesis, comparison, uncertainty reporting, knowledge distillation, and research handoff.
+
+## Pal Skill definition
+
+A Pal Skill is a role-level work capability owned by Vega. It describes how Vega frames research, requests Runtime evidence when needed, evaluates sources, separates fact from inference, reports uncertainty, and prepares reusable knowledge candidates or handoffs.
+
+Vega Pal Skills are not browser tools, crawlers, scrapers, downloaders, scanners, validators, or search-engine automations.
+
+## Agent Skill boundary
+
+Agent Skills, Runtime Skills, plugins, MCP tools, browser tools, PDF tools, API tools, and CLI commands belong to the host Runtime layer. They may be referenced as execution candidates in a Runtime Task Package, but they are not stored in Vega's `skills/` directory.
+
+Vega may ask the Runtime to browse, search, inspect GitHub, extract PDFs, or read files only under an approved task package with current evidence. Vega does not execute those actions herself.
+
+## What belongs here
+
+- Research and intelligence Pal Skills.
+- Methods for research intake, question framing, search strategy, source discovery, source credibility, source inventory, evidence matrix, claim-evidence alignment, synthesis, comparison, confidence, uncertainty, knowledge distillation, and handoff.
+- Links to related research knowledge, workflows, runbooks, examples, evals, and source inventories.
+- Notes that help choose the smallest relevant Vega skill after Vega is selected as owner or consultant.
+
+## What does not belong here
+
+- Agent Skills, Runtime Skills, plugins, MCP tools, browser automation, crawler instructions, scraper instructions, downloader docs, or raw CLI command docs.
+- Raw research dumps, copied source full text, private or paid source material, source inventories without review, or unverified claims.
+- Keyword route maps, `keyword_map`, `domain_map`, `role_map`, or deterministic task-to-Pal dispatch rules.
+- Reports, private memory, credentials, tokens, secrets, or customer data.
+
+Raw research material is not a Pal Skill. Research conclusions require source review before becoming knowledge, and source-gathering actions remain Runtime evidence candidates.
+
+## Current assets
+
+Legacy formal skill directories:
 
 | Skill | Runtime entry | Human notes | Description |
 | --- | --- | --- | --- |
-| [citation-summary](citation-summary/SKILL.md) | skills/citation-summary/SKILL.md | [README](citation-summary/README.md) | Use this skill when you need to 把多个来源的关键事实整理成可引用摘要，保留来源、时间、支持程度和局限。 |
-| [competitor-analysis](competitor-analysis/SKILL.md) | skills/competitor-analysis/SKILL.md | [README](competitor-analysis/README.md) | Use this skill when you need to 帮助用户比较同类产品、项目、工具或方案的定位、能力、差异、可学习点和不应照搬点。 |
-| [contradiction-and-uncertainty-check](contradiction-and-uncertainty-check/SKILL.md) | skills/contradiction-and-uncertainty-check/SKILL.md | [README](contradiction-and-uncertainty-check/README.md) | Use this skill when you need to 防止 Vega 只找支持自己结论的来源，检查反证、来源冲突、时间冲突和过度推断。 |
-| [copyright-and-source-boundary](copyright-and-source-boundary/SKILL.md) | skills/copyright-and-source-boundary/SKILL.md | [README](copyright-and-source-boundary/README.md) | Use this skill when you need to 防止 Vega 把外部资料全文、付费内容、未授权材料或敏感资料直接写入公开包或长期知识库。 |
-| [deep-research-plan](deep-research-plan/SKILL.md) | skills/deep-research-plan/SKILL.md | [README](deep-research-plan/README.md) | Use this skill when you need to 把复杂研究任务拆成可执行的研究问题、子问题、来源计划、搜索计划和验证计划。 |
-| [evidence-table-builder](evidence-table-builder/SKILL.md) | skills/evidence-table-builder/SKILL.md | [README](evidence-table-builder/README.md) | Use this skill when you need to 把研究材料整理成证据表，避免只给用户堆摘要或链接。 |
-| [github-project-comparison](github-project-comparison/SKILL.md) | skills/github-project-comparison/SKILL.md | [README](github-project-comparison/README.md) | Use this skill when you need to 比较多个 GitHub 项目的适用性、活跃度、集成难度、License、风险和推荐用途。 |
-| [knowledge-card-curator](knowledge-card-curator/SKILL.md) | skills/knowledge-card-curator/SKILL.md | [README](knowledge-card-curator/README.md) | Use this skill when you need to 把研究结果转成可写入系统层、Pal 层或项目层的知识卡候选。 |
-| [outdated-info-warning](outdated-info-warning/SKILL.md) | skills/outdated-info-warning/SKILL.md | [README](outdated-info-warning/README.md) | Use this skill when you need to 判断某条信息是否可能已经过期，并提醒用户重新验证。 |
-| [research-brief-writer](research-brief-writer/SKILL.md) | skills/research-brief-writer/SKILL.md | [README](research-brief-writer/README.md) | Use this skill when you need to 把调研结果压缩成结论先行、证据清楚、能支持下一步行动的研究简报。 |
-| [search-query-design](search-query-design/SKILL.md) | skills/search-query-design/SKILL.md | [README](search-query-design/README.md) | Use this skill when you need to 帮助 Vega 为 Runtime 或外部 Runtime 设计高质量搜索查询，而不是只搜索一个泛词。 |
-| [source-quality-check](source-quality-check/SKILL.md) | skills/source-quality-check/SKILL.md | [README](source-quality-check/README.md) | Use this skill when you need to 判断资料来源是否可信、是否新鲜、是否有偏见、是否适合引用。 |
-| [technical-option-comparison](technical-option-comparison/SKILL.md) | skills/technical-option-comparison/SKILL.md | [README](technical-option-comparison/README.md) | Use this skill when you need to 比较多个技术方案或工具的适用场景、证据、风险和推荐方向。 |
-| [vega-research-intake](vega-research-intake/SKILL.md) | skills/vega-research-intake/SKILL.md | [README](vega-research-intake/README.md) | Use this skill when you need to 判断用户请求属于哪类研究任务，明确研究深度、来源需求、输出形式和是否需要其他 Pal 协作。 |
+| `citation-summary/` | `skills/citation-summary/SKILL.md` | `citation-summary/README.md` | Source-aware citation summary method. |
+| `competitor-analysis/` | `skills/competitor-analysis/SKILL.md` | `competitor-analysis/README.md` | Product, tool, or project comparison method. |
+| `contradiction-and-uncertainty-check/` | `skills/contradiction-and-uncertainty-check/SKILL.md` | `contradiction-and-uncertainty-check/README.md` | Contradiction, uncertainty, and overclaim check method. |
+| `copyright-and-source-boundary/` | `skills/copyright-and-source-boundary/SKILL.md` | `copyright-and-source-boundary/README.md` | Source and copyright boundary method. |
+| `deep-research-plan/` | `skills/deep-research-plan/SKILL.md` | `deep-research-plan/README.md` | Research question, source plan, and verification plan method. |
+| `evidence-table-builder/` | `skills/evidence-table-builder/SKILL.md` | `evidence-table-builder/README.md` | Evidence table construction method. |
+| `github-project-comparison/` | `skills/github-project-comparison/SKILL.md` | `github-project-comparison/README.md` | GitHub project comparison method. |
+| `knowledge-card-curator/` | `skills/knowledge-card-curator/SKILL.md` | `knowledge-card-curator/README.md` | Research-to-knowledge candidate method. |
+| `outdated-info-warning/` | `skills/outdated-info-warning/SKILL.md` | `outdated-info-warning/README.md` | Stale information warning method. |
+| `research-brief-writer/` | `skills/research-brief-writer/SKILL.md` | `research-brief-writer/README.md` | Research brief writing method. |
+| `search-query-design/` | `skills/search-query-design/SKILL.md` | `search-query-design/README.md` | Search query planning method for Runtime evidence collection. |
+| `source-quality-check/` | `skills/source-quality-check/SKILL.md` | `source-quality-check/README.md` | Source credibility and fit review method. |
+| `technical-option-comparison/` | `skills/technical-option-comparison/SKILL.md` | `technical-option-comparison/README.md` | Technical option comparison method. |
+| `vega-research-intake/` | `skills/vega-research-intake/SKILL.md` | `vega-research-intake/README.md` | Research task intake and depth classification method. |
 
-## R03 Research / Intelligence Lead Skill Cards
+Canonical Research / Intelligence Lead flat skill cards:
 
-- `research-intake-skill.md`
-- `research-question-framing-skill.md`
-- `search-strategy-design-skill.md`
-- `source-discovery-skill.md`
-- `source-credibility-evaluation-skill.md`
-- `source-inventory-building-skill.md`
-- `evidence-matrix-skill.md`
 - `claim-evidence-alignment-skill.md`
-- `research-synthesis-skill.md`
 - `comparative-analysis-skill.md`
-- `uncertainty-and-confidence-reporting-skill.md`
+- `evidence-matrix-skill.md`
 - `knowledge-distillation-skill.md`
 - `research-handoff-skill.md`
+- `research-intake-skill.md`
+- `research-question-framing-skill.md`
+- `research-synthesis-skill.md`
+- `search-strategy-design-skill.md`
+- `source-credibility-evaluation-skill.md`
+- `source-discovery-skill.md`
+- `source-inventory-building-skill.md`
+- `uncertainty-and-confidence-reporting-skill.md`
 
-## Skill Memory Default
+Supporting index:
 
-When the user explicitly asks to save a Skill, or similar operations happen more than 3 times, create the formal Skill under this Pal's own skills/<skill-id>/SKILL.md and update skills/index.md. Use memory/skill-memory/ only for runtime notes before either formal trigger is met; use learning/ only as an exception when required inputs are missing, content is unsafe/private, or a high-risk write needs approval.
+- `README.md`
+- `skill-asset-map.md`
 
+## Candidate skills / needs review
 
-## Context Loading Rule
+| Candidate | Reason | Review status |
+| --- | --- | --- |
+| research freshness triage method | Could standardize when current web evidence is mandatory. | needs-review |
+| source-license risk triage method | Could clarify when source material can become public-safe knowledge. | needs-review |
 
-Read this index only after this Pal is selected as owner, consultant, reviewer, or direct /pal Name target.
+Candidate skills are not approved capability until reviewed, written as Pal-owned methods, and linked to evidence, uncertainty, output, and writeback boundaries.
 
-Use this index to choose the smallest relevant asset slice. Do not load every file in this directory by default.
+## Agent Skill references
 
-Read assets here when:
+No Agent Skill is stored here.
 
-- the current task requires this Pal's professional method;
-- the output contract needs a specific skill, knowledge card, runbook, or workflow;
-- the user asks which assets were used;
-- an eval or release check is inspecting this Pal.
+Possible Runtime capability references for future Task Packages may include browser search, GitHub lookup, PDF extraction, web page capture, spreadsheet evidence tables, or repository inspection. These must stay as Runtime candidates and require current Runtime availability, source IDs, access dates, and evidence.
 
-Do not read assets here when:
+## Related workflows / runbooks
 
-- Mira is only doing initial routing;
-- another Pal owns the task and no consultation was requested;
-- the task is ordinary chat, Codex generic, or Mira-owned team-leadership work;
-- examples, evals, reports, memory, or future design material would be enough only by curiosity rather than task need.
+Use Vega workflows for multi-stage research systems and Vega runbooks for concrete repeated checks such as source credibility, copyright, or stale-information handling.
 
-## Formal Skill Asset Map
+Do not promote raw research dumps to Pal Skills. Do not promote research conclusions to knowledge without source review.
 
-R13 formal skill mapping lives in `skill-asset-map.md`. It maps every `pal.json` formal skill to either a Flat Skill Card or a Directory Skill Package and records missing assets as release-readiness issues.
+## Verification boundary
+
+Vega skill use does not prove a source-backed claim by itself.
+
+Mark as `not-run` when live web evidence, source inventory, credibility review, contradiction check, or evidence matrix did not run. Current facts require current Runtime evidence.
+
+## Memory writeback boundary
+
+Only extracted long-term research lessons, source-quality patterns, or routing lessons may become memory candidates after review.
+
+Full research reports, raw source material, private source text, and copyrighted full text belong elsewhere and must not be copied into memory.
+
+## External project boundary
+
+Vega skills belong in the AgentPal central Pal Pack. Do not copy Vega skills into external project `.agentpal/` by default.
+
+External projects remain thin-bound and should read Vega through the central roster and AgentPal workspace.
+
+## Related standards
+
+- `standards/pal-asset/pal-asset-standard.md`
+- `standards/pal-asset/pal-asset-directory-standard.md`
+- `standards/pal-asset/pal-skill-vs-agent-skill-standard.md`
+- `templates/pal-asset/safe-index-backfill-guide.md`
