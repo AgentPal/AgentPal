@@ -26,7 +26,7 @@ For the local v0.4/v0.5 workspace layout, see the [Repository Structure](docs/00
 
 For v0.4 local completion evidence, see the [local completion report](release/current/v0.4-local-completion-report.md), [evidence index](release/current/v0.4-local-completion-evidence-index.md), and [user-facing summary](docs/08-release-and-maintenance/v0.4-local-completion-summary.md). This is local completion evidence, not a GitHub Release or remote publication.
 
-For v0.5 local development, see the [v0.5 local development scope](docs/09-roadmap/v0.5-local-development-scope.md), [Org Pack standard](standards/org-pack/org-pack-standard.md), [base Org Pack template](templates/org-pack/base-org-pack/), and [public-safe example](examples/org-packs/base-agentpal-org-pack/). Org Packs are no-code organization asset packages, not installers, marketplaces, scanners, connectors, or keyword routers.
+For v0.5 local development, see the [v0.5 local development scope](docs/09-roadmap/v0.5-local-development-scope.md), [Org Pack standard](standards/org-pack/org-pack-standard.md), [Pal Asset standards](standards/pal-asset/), [PalSmith v0.5 standards](standards/palsmith/), [Pal Asset / Org Pack relationship guide](docs/00-overview/pal-asset-and-org-pack-relationship.md), [base Org Pack template](templates/org-pack/base-org-pack/), and [public-safe example](examples/org-packs/base-agentpal-org-pack/). Org Packs and Pal Asset standards are no-code organization assets, not installers, marketplaces, scanners, connectors, runtime resolvers, or keyword routers.
 
 ## Why AgentPal?
 
@@ -241,6 +241,9 @@ AgentPal is a Pal layer for existing runtimes. It does not require Python, Node.
 - [Project Memory in AgentPal](docs/02-concepts/project-memory-in-agentpal.md)
 - [Source Map and Derived Knowledge](docs/02-concepts/source-map-and-derived-knowledge.md)
 - [Repository Structure](docs/00-overview/repository-structure.md)
+- [Pal Asset / Org Pack Relationship](docs/00-overview/pal-asset-and-org-pack-relationship.md)
+- [PalSmith v0.5 Pal Creation and Upgrade](docs/03-user-guides/palsmith-v0.5-pal-creation-and-upgrade.md)
+- [Official Pal Asset Upgrade Plan](docs/03-user-guides/official-pal-asset-upgrade-plan.md)
 - [Pal Pack Standard](docs/03-pal-pack-standard/)
 - [Runtime Guides](docs/04-runtime-guides/)
 - [Orchestration Methodology](docs/05-orchestration-methodology/)

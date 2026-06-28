@@ -55,6 +55,11 @@ Use:
 | `standards/org-pack/org-pack-standard.md` | Org Pack standard | reusable no-code organization package work |
 | `templates/org-pack/base-org-pack/` | base Org Pack template | creating public-safe reusable organization packages |
 | `examples/org-packs/base-agentpal-org-pack/` | public-safe base Org Pack example | examples and Org Pack boundary checks |
+| `docs/00-overview/pal-asset-and-org-pack-relationship.md` | Pal Asset and Org Pack relationship guide | v0.5 Pal Asset / Org Pack integration |
+| `standards/pal-asset/` | Pal Asset standards | Pal Asset, Pal Skill, loading order, and resolver standard work |
+| `standards/palsmith/` | PalSmith v0.5 standards | no-code Pal creation, classification, and upgrade standards |
+| `docs/03-user-guides/palsmith-v0.5-pal-creation-and-upgrade.md` | PalSmith v0.5 user guide | Pal creation and upgrade orientation |
+| `docs/03-user-guides/official-pal-asset-upgrade-plan.md` | official Pal asset upgrade plan guide | official Pal upgrade planning |
 | `CHANGELOG.md` | public version history | release review |
 | `RELEASE_NOTES.md` | user-facing release notes | release review or user onboarding |
 | `GITHUB_RELEASE_DRAFT.md` | manual GitHub Release draft | release publishing |
@@ -471,6 +476,57 @@ Use the current docs directories as the public entry points. Archived research n
 | `examples/org-packs/base-agentpal-org-pack/` | R97 public-safe base AgentPal Org Pack example |
 | `evals/palbench/org-pack/r97-org-pack-foundation-boundary.md` | R97 Org Pack foundation boundary eval |
 | `release/fresh-clone-checks/r97-local-org-pack-foundation-validation.md` | R97 local Org Pack foundation validation record |
+
+## Pal Asset Standards
+
+| Path | Purpose |
+| --- | --- |
+| `standards/pal-asset/README.md` | Pal Asset standards index |
+| `standards/pal-asset/pal-asset-standard.md` | R98-A Pal Asset Standard |
+| `standards/pal-asset/pal-skill-vs-agent-skill-standard.md` | R98-A Pal Skill vs Agent Skill boundary |
+| `standards/pal-asset/pal-asset-directory-standard.md` | R98-A Pal asset directory responsibilities |
+| `standards/pal-asset/pal-root-entry-standard.md` | R98-A Pal root entry responsibilities |
+| `standards/pal-asset/pal-loading-order-standard.md` | R98-D Pal loading order standard |
+| `standards/pal-asset/pal-asset-resolver-standard.md` | R98-D no-code Pal Asset Resolver standard |
+| `templates/pal-asset/README.md` | Pal Asset template index |
+| `evals/palbench/pal-asset/r98a-pal-asset-standard-boundary.md` | R98-A Pal Asset boundary eval |
+| `release/fresh-clone-checks/r98a-local-pal-asset-standard-validation.md` | R98-A local validation |
+
+## PalSmith v0.5
+
+| Path | Purpose |
+| --- | --- |
+| `standards/palsmith/palsmith-v0.5-creation-standard.md` | R98-C PalSmith creation standard |
+| `standards/palsmith/palsmith-asset-classification-standard.md` | R98-C PalSmith asset classification standard |
+| `templates/palsmith/minimal-pal-generation-checklist.md` | Minimal Pal generation checklist |
+| `templates/palsmith/standard-pal-generation-checklist.md` | Standard Pal generation checklist |
+| `templates/palsmith/pal-asset-classification-result-template.json` | Pal asset classification result JSON template |
+| `templates/palsmith/existing-pal-upgrade-report-template.md` | existing Pal upgrade report template |
+| `evals/palbench/palsmith/r98c-palsmith-v0.5-asset-generation-boundary.md` | R98-C PalSmith boundary eval |
+| `release/fresh-clone-checks/r98c-local-palsmith-v0.5-template-validation.md` | R98-C local validation |
+| `docs/03-user-guides/palsmith-v0.5-pal-creation-and-upgrade.md` | PalSmith v0.5 user guide |
+
+## Official Pal Asset Audit
+
+| Path | Purpose |
+| --- | --- |
+| `evals/palbench/pal-asset/r98b-official-pal-asset-audit.md` | R98-B official 9 Pal asset audit |
+| `evals/palbench/pal-asset/r98b-official-pal-upgrade-gap-table.md` | R98-B official Pal upgrade gap table |
+| `release/integration-notes/r98b-official-pal-upgrade-plan.md` | R98-B official Pal upgrade plan |
+| `release/fresh-clone-checks/r98b-local-official-pal-asset-audit-validation.md` | R98-B local validation |
+| `docs/03-user-guides/official-pal-asset-upgrade-plan.md` | official Pal asset upgrade plan guide |
+
+## Pal Asset / Org Pack Integration
+
+| Path | Purpose |
+| --- | --- |
+| `docs/00-overview/pal-asset-and-org-pack-relationship.md` | Pal Asset / Org Pack relationship guide |
+| `examples/pal-asset/pal-asset-resolver-task-package.example.md` | public-safe Pal Asset Resolver task package example |
+| `evals/palbench/pal-asset/r98d-pal-asset-resolver-thin-binding-boundary.md` | R98-D resolver and thin-binding boundary eval |
+| `release/fresh-clone-checks/r98d-local-pal-asset-resolver-validation.md` | R98-D local validation |
+| `evals/palbench/pal-asset/r99-pal-asset-v0.5-integration-boundary.md` | R99 Pal Asset v0.5 integration boundary eval |
+| `release/fresh-clone-checks/r99-r98-parallel-integration-validation.md` | R99 R98 parallel integration validation |
+
 | `docs/05-orchestration-methodology/deep-conductor-master-goal.md` | Deep Conductor master goal and no-code 12-step loop |
 | `docs/05-orchestration-methodology/deep-conductor-master-loop-usage-guide.md` | Deep Conductor usage guide for project-level no-code coordination |
 | `docs/05-orchestration-methodology/deep-conductor-e2e-usage-guide.md` | Deep Conductor E2E usage guide for integrated no-code project-level closure |
