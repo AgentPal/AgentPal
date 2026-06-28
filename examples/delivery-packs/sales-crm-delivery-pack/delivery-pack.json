@@ -1,0 +1,53 @@
+{
+  "schema": "agentpal.delivery-pack.example.v0.5",
+  "id": "sales-crm-delivery-pack",
+  "name": "Sales CRM Delivery Pack",
+  "version": "0.5.0-local-example",
+  "status": "public-safe-example",
+  "pack_type": "delivery-pack-example",
+  "created_at": "2026-06-29",
+  "owner_candidate": "Faye AI Delivery Pal",
+  "business_scenario": "A fictional B2B sales team wants AI support for lead organization, customer segmentation, follow-up copy, reminder cadence, and deal review.",
+  "public_safe": true,
+  "fictional_business_only": true,
+  "customer_private_assets_allowed_in_pack": false,
+  "credentials_allowed": false,
+  "real_crm_data_allowed": false,
+  "external_projects_copy_assets_by_default": false,
+  "keyword_routing_allowed": false,
+  "connector_included": false,
+  "api_client_included": false,
+  "webhook_included": false,
+  "marketplace_program_included": false,
+  "auto_sync_included": false,
+  "auto_execution_included": false,
+  "requires_human_review": true,
+  "candidate_pals_are_ai_judgement_input_only": true,
+  "candidate_pals": [
+    "Sales Strategist Pal",
+    "CRM Ops Pal",
+    "Copywriting Pal",
+    "Data Review Pal",
+    "Compliance QA Pal",
+    "Mira",
+    "PalSmith"
+  ],
+  "flows": [
+    "lead-import-flow",
+    "customer-segmentation-flow",
+    "follow-up-copy-flow",
+    "sales-reminder-flow",
+    "deal-review-flow"
+  ],
+  "task_packages": [
+    "TASKS/task-001-lead-segmentation-template.md",
+    "TASKS/task-002-follow-up-message-pack.md"
+  ],
+  "required_review": [
+    "Sales copy requires human review before use.",
+    "Customer-private CRM data must stay in private records.",
+    "Compliance risk must be confirmed by a human reviewer.",
+    "not-run is not pass."
+  ],
+  "integration_policy": "CRM, Lark, WeCom, and email systems are integration profiles and manual handoff notes only in this reusable example."
+}
