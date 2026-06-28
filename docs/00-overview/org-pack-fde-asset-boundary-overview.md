@@ -67,12 +67,34 @@ PalSmith may create, audit, review, maintain, and govern these no-code assets.
 PalSmith does not become an automatic execution engine, connector, installer,
 marketplace program, scanner, validator, or deterministic router.
 
+## Combined Example
+
+The public-safe combined example lives at
+`examples/combined-packs/content-ops-with-accounting-advisor/`.
+
+It demonstrates how `examples/org-packs/content-ops-org-pack/` references
+`examples/fde-packs/accounting-advisor-fde-pack/` while keeping customer-private
+records outside the reusable example.
+
+R122 review status:
+`approved_for_r123_integration_with_human_review_retained`.
+
+Customer-private boundary status:
+`public_safe_reusable_example_no_customer_private_leak`.
+
+Thin binding status: external projects remain thin-bound and do not receive
+Org Pack, FDE Pack, Combined Pack, Pal, workflow, memory, report, capability
+inventory, business-system, or manifest directories by default.
+
+Human review remains required for accounting, tax, payroll, audit, compliance,
+and financial reporting outputs in real customer use.
+
 ## Current v0.5 Direction
 
 R118 paused the full official Pal metadata / manifest rollout after the PalSmith
 pilot. R119 and R120 return the v0.5 mainline to Org Pack, FDE Pack, and Asset
 Boundary integration.
 
-The next recommended step is a public-safe combined Org Pack + FDE Pack example
-with PalSmith audit notes, customer-private boundary evidence, and thin-binding
-relationship notes.
+R121 through R123 add and integrate a public-safe combined Org Pack + FDE Pack
+example with PalSmith review-gate evidence, customer-private boundary evidence,
+and thin-binding relationship notes.

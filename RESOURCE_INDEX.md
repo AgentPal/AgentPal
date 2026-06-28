@@ -629,6 +629,20 @@ Use the current docs directories as the public entry points. Archived research n
 | `release/fresh-clone-checks/r120-local-org-fde-asset-boundary-integration-validation.md` | R120 local integration validation |
 | `release/integration-notes/r120-r121-readiness-decision.md` | R120 R121 readiness decision |
 
+## Combined Pack Examples
+
+| Path | Purpose |
+| --- | --- |
+| `examples/combined-packs/content-ops-with-accounting-advisor/` | R121 public-safe Org Pack + FDE Pack combined example |
+| `examples/combined-packs/content-ops-with-accounting-advisor/combined-pack.json` | machine-readable combined pack metadata and false safety flags |
+| `examples/combined-packs/content-ops-with-accounting-advisor/ORG-FDE-COMPOSITION.md` | Org/FDE reference composition notes |
+| `examples/combined-packs/content-ops-with-accounting-advisor/palsmith-audit-note.md` | public-safe PalSmith audit note |
+| `release/integration-notes/r122-combined-pack-palsmith-review-report.md` | R122 PalSmith-style review report |
+| `release/integration-notes/r122-combined-pack-reusable-private-classification-review.md` | R122 reusable/private classification review |
+| `release/integration-notes/r122-combined-pack-approval-checklist.md` | R122 approval checklist for shared-entry integration |
+| `evals/palbench/org-pack/r123-combined-pack-shared-entry-integration-boundary.md` | R123 shared-entry integration boundary eval |
+| `release/fresh-clone-checks/r123-local-combined-pack-shared-entry-integration-validation.md` | R123 local shared-entry integration validation |
+
 ## R101 Integration
 
 | Path | Purpose |

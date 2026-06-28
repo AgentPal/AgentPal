@@ -825,6 +825,32 @@
     "external_project_write_allowed_by_default": false,
     "requires_human_review": true
   },
+  "combined_packs": {
+    "content_ops_with_accounting_advisor": {
+      "path": "examples/combined-packs/content-ops-with-accounting-advisor/",
+      "combined_pack_json": "examples/combined-packs/content-ops-with-accounting-advisor/combined-pack.json",
+      "org_pack_ref": "examples/org-packs/content-ops-org-pack/",
+      "fde_pack_refs": [
+        "examples/fde-packs/accounting-advisor-fde-pack/"
+      ],
+      "palsmith_review_report": "release/integration-notes/r122-combined-pack-palsmith-review-report.md",
+      "classification_review": "release/integration-notes/r122-combined-pack-reusable-private-classification-review.md",
+      "approval_checklist": "release/integration-notes/r122-combined-pack-approval-checklist.md",
+      "r123_eval": "evals/palbench/org-pack/r123-combined-pack-shared-entry-integration-boundary.md",
+      "r123_validation": "release/fresh-clone-checks/r123-local-combined-pack-shared-entry-integration-validation.md",
+      "review_status": "approved_for_r123_integration_with_human_review_retained",
+      "recommended_pals_are_ai_judgement_input_only": true,
+      "recommended_pals_are_route_map": false,
+      "customer_private_assets_allowed": false,
+      "credentials_allowed": false,
+      "keyword_routing_allowed": false,
+      "connector_included": false,
+      "marketplace_program_included": false,
+      "scanner_or_validator_program_added": false,
+      "external_projects_copy_assets_by_default": false,
+      "requires_human_review": true
+    }
+  },
   "palsmith": {
     "creation_standard": "standards/palsmith/palsmith-v0.5-creation-standard.md",
     "classification_standard": "standards/palsmith/palsmith-asset-classification-standard.md",

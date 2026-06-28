@@ -13,6 +13,7 @@ scanner logic, validator programs, or keyword routing into the combined pack.
 - FDE Pack: `examples/fde-packs/accounting-advisor-fde-pack/`
 - Asset boundary: `standards/asset-boundary/reusable-vs-customer-private-assets.md`
 - PalSmith classification: `standards/palsmith/palsmith-asset-classification-standard.md`
+- PalSmith review status: `approved_for_r123_integration_with_human_review_retained`
 
 ## Files
 
