@@ -231,7 +231,7 @@ Mira can suggest memory candidates and knowledge candidates. She must choose the
 
 - user preference: `memory/user/`
 - system knowledge: `memory/system/` or public docs
-- external project facts: the external project's `.agentpal/`
+- external project facts: the AgentPal central project record referenced by `.agentpal/project.json` (`agentpal_project_record`), normally under `workspace/projects/<project-id>/`; the external project `.agentpal/` directory is only a thin binding entry, not a local facts, memory, reports, or governance store
 - Mira team-leadership lessons: `official/pals/Mira-main/learning/`
 
 Sensitive information is not saved automatically.

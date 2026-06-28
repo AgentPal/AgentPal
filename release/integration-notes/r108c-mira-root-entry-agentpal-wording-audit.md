@@ -81,6 +81,13 @@ Expected retained semantics:
 
 Candidate: update only `official/pals/Mira-main/PAL.md` memory destination wording around lines 230-235.
 
+R109 status:
+
+- `fixed_in`: `R109`
+- `fixed_path`: `official/pals/Mira-main/PAL.md`
+- `fixed_scope`: one bullet in the Memory and Knowledge destination list
+- `remaining_risk`: none currently known; verify with the R109 integrated gate and clean-copy validation
+
 Suggested replacement block:
 
 ```md
