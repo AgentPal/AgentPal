@@ -776,6 +776,14 @@ Use the current docs directories as the public entry points. Archived research n
 | `release/fresh-clone-checks/r140-local-fresh-clone-usability-validation.md` | R140 local fresh-clone usability validation |
 | `evals/palbench/v0.5/r140-fresh-clone-usability-evidence-review.md` | R140 fresh-clone usability evidence review |
 | `release/integration-notes/r140-r141-readiness-decision.md` | R140 readiness decision for user remote-publication decision |
+| `evals/palbench/v0.5/r141-v0.5-core-capability-inventory.md` | R141 v0.5 core capability inventory |
+| `evals/palbench/v0.5/r141-official-pal-readiness-matrix.md` | R141 official Pal readiness matrix |
+| `evals/palbench/v0.5/r141-faye-readiness-note.md` | R141 Faye readiness note |
+| `release/current/v0.5-completeness-scorecard.md` | R141 v0.5 completeness scorecard |
+| `evals/palbench/v0.5/r141-full-usable-core-test-coverage-map.md` | R141 full usable-core test coverage map |
+| `release/current/v0.5-release-readiness-interpretation.md` | R141 release readiness interpretation |
+| `release/fresh-clone-checks/r141-local-core-capability-pal-readiness-audit-validation.md` | R141 local core capability / Pal readiness audit validation |
+| `release/integration-notes/r141-r142-readiness-decision.md` | R141 readiness decision for R142 full usable-core test |
 
 ## R101 Integration
 
