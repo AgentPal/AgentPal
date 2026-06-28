@@ -877,6 +877,26 @@
       "human_review_required": true
     }
   },
+  "v0_5_regression": {
+    "overall_plan": "evals/palbench/v0.5/r127-v0.5-overall-regression-plan.md",
+    "test_matrix": "evals/palbench/v0.5/r127-v0.5-overall-regression-test-matrix.md",
+    "evidence_map": "release/integration-notes/r127-v0.5-overall-regression-evidence-map.md",
+    "issue_template": "release/integration-notes/r127-v0.5-overall-regression-issue-template.md",
+    "r128_execution_checklist": "release/integration-notes/r127-r128-overall-regression-execution-checklist.md",
+    "planning_validation": "release/fresh-clone-checks/r127-local-v0.5-overall-regression-planning-validation.md",
+    "r128_readiness_decision": "release/integration-notes/r127-r128-readiness-decision.md",
+    "test_group_count": 12,
+    "planning_only": true,
+    "regression_executes_release": false,
+    "git_push_allowed": false,
+    "tag_allowed": false,
+    "github_release_allowed": false,
+    "connector_included": false,
+    "scanner_or_validator_program_added": false,
+    "keyword_routing_allowed": false,
+    "credentials_allowed": false,
+    "customer_private_assets_allowed_in_public_plan": false
+  },
   "palsmith": {
     "creation_standard": "standards/palsmith/palsmith-v0.5-creation-standard.md",
     "classification_standard": "standards/palsmith/palsmith-asset-classification-standard.md",

@@ -663,6 +663,18 @@ Use the current docs directories as the public entry points. Archived research n
 | `release/fresh-clone-checks/r125-local-org-fde-workflow-governance-example-validation.md` | R125 local workflow/governance validation |
 | `release/integration-notes/r125-r126-readiness-decision.md` | R125 R126 readiness decision |
 
+## v0.5 Overall Regression Planning
+
+| Path | Purpose |
+| --- | --- |
+| `evals/palbench/v0.5/r127-v0.5-overall-regression-plan.md` | R127 v0.5 overall regression plan for R128 execution |
+| `evals/palbench/v0.5/r127-v0.5-overall-regression-test-matrix.md` | R127 12-group v0.5 regression test matrix |
+| `release/integration-notes/r127-v0.5-overall-regression-evidence-map.md` | R127 evidence map for v0.4 baseline and v0.5 modules |
+| `release/integration-notes/r127-v0.5-overall-regression-issue-template.md` | R127 issue template for R128 findings |
+| `release/integration-notes/r127-r128-overall-regression-execution-checklist.md` | R128 execution checklist and safety gates |
+| `release/fresh-clone-checks/r127-local-v0.5-overall-regression-planning-validation.md` | R127 local planning validation record |
+| `release/integration-notes/r127-r128-readiness-decision.md` | R127 readiness decision for R128 regression execution |
+
 ## R101 Integration
 
 | Path | Purpose |
