@@ -6,7 +6,7 @@ Pass.
 
 ## Date
 
-2026-06-28 17:09:20 +08:00
+2026-06-28 18:34:54 +08:00
 
 ## Validation target
 
@@ -17,7 +17,7 @@ Thin binding simulation for:
 
 Temp projects were created outside the repository under sanitized path:
 
-`%TEMP%/agentpal-r93c-20260628-170851`
+`<TEMP>/agentpal-r93c-20260628-183454`
 
 ## Evidence summary
 
@@ -51,6 +51,7 @@ Claude Code created only:
 - project-local memory/reports/evals not copied: pass
 - keyword-route map tokens: prohibition text only, no generated route map field
 - credential-like placeholders: no hits
+- JSON-escaped Windows path simulation: pass
 - shared entry files not modified: pass
 - template source files not modified: pass
 

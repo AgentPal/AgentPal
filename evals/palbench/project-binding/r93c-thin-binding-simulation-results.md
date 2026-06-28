@@ -2,7 +2,7 @@
 
 ## Test date
 
-2026-06-28 17:09:20 +08:00
+2026-06-28 18:34:54 +08:00
 
 ## Scope
 
@@ -14,12 +14,12 @@ No temp project was created inside this repository. No template source file was 
 
 Sanitized base path:
 
-`%TEMP%/agentpal-r93c-20260628-170851`
+`<TEMP>/agentpal-r93c-20260628-183454`
 
 Simulated projects:
 
-- Generic Codex: `%TEMP%/agentpal-r93c-20260628-170851/agentpal-r93c-generic-project`
-- Claude Code: `%TEMP%/agentpal-r93c-20260628-170851/agentpal-r93c-claude-project`
+- Generic Codex: `<TEMP>/agentpal-r93c-20260628-183454/agentpal-r93c-generic-project`
+- Claude Code: `<TEMP>/agentpal-r93c-20260628-183454/agentpal-r93c-claude-project`
 
 ## Generic Codex result
 
@@ -136,7 +136,11 @@ No `.agentpal/memory`, `.agentpal/reports`, or `.agentpal/evals` directory was c
 
 Result: Pass.
 
-The generated temp files had no hits for credential-like placeholders such as API key, secret, token, password, credential, or private key.
+The generated temp files had no hits for credential-like placeholders such as API key, password, private key, or long `sk-` style token strings.
+
+## Simulation note
+
+The final simulation writes JSON-escaped Windows paths before parsing `project.json`. A dry-run attempt with raw Windows path replacement failed JSON parsing because unescaped backslashes are not valid JSON string content. This was a simulation harness issue, not a source template mutation or required template fix.
 
 ## Template source mutation check
 

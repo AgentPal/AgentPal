@@ -19,6 +19,7 @@ R93-C adds public-safe evidence for a local thin binding simulation of the curre
 - Central contacts and official Pal Packs are referenced from the AgentPal workspace and are not copied into temp projects.
 - Keyword-route map strings appear only in prohibition text, not as generated route-map fields.
 - No credential-like placeholders were generated.
+- The simulation harness writes JSON-escaped Windows paths before parsing generated `project.json` files.
 
 ## Template impact
 
