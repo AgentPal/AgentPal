@@ -42,6 +42,8 @@ R137 refreshes v0.5 local completion after the Faye extension and R136 targeted 
 
 For the final v0.5 local release preflight after the Faye extension, see the [final local preflight](release/current/v0.5-final-local-release-preflight-after-faye-extension.md), [public package readiness review](release/current/v0.5-final-public-package-readiness-review.md), [final blocker scan](release/fresh-clone-checks/r138-final-local-release-blocker-scan.md), and [final local release status](release/current/v0.5-final-local-release-status.md). R138 prepares a user decision only; no GitHub Release, tag, push, pull, fetch, or remote publication was performed.
 
+R140 adds a local fresh-clone usability simulation for the new-user path. See the [setup](release/fresh-clone-checks/r140-fresh-clone-usability-simulation-setup.md), [issues](evals/palbench/v0.5/r140-fresh-clone-usability-issues.md), [validation](release/fresh-clone-checks/r140-local-fresh-clone-usability-validation.md), and [R141 readiness decision](release/integration-notes/r140-r141-readiness-decision.md). This is local usability evidence only.
+
 ## Why AgentPal?
 
 When users want agents to work better, they usually try one of two paths:

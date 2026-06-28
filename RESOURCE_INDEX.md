@@ -768,6 +768,14 @@ Use the current docs directories as the public entry points. Archived research n
 | `release/fresh-clone-checks/r139-local-new-user-onboarding-validation.md` | R139 local onboarding validation |
 | `evals/palbench/v0.5/r139-new-user-onboarding-evidence-review.md` | R139 onboarding evidence review |
 | `release/integration-notes/r139-r140-readiness-decision.md` | R139 readiness decision for fresh-clone usability simulation |
+| `release/fresh-clone-checks/r140-fresh-clone-usability-simulation-setup.md` | R140 clean-copy usability simulation setup |
+| `evals/palbench/v0.5/r140-start-here-walkthrough-results.md` | R140 START_HERE walkthrough result |
+| `evals/palbench/v0.5/r140-first-30-minutes-walkthrough-results.md` | R140 first-30-minutes walkthrough result |
+| `evals/palbench/v0.5/r140-first-agentpal-team-walkthrough-results.md` | R140 first AgentPal team walkthrough result |
+| `evals/palbench/v0.5/r140-fresh-clone-usability-issues.md` | R140 fresh-clone usability issue summary |
+| `release/fresh-clone-checks/r140-local-fresh-clone-usability-validation.md` | R140 local fresh-clone usability validation |
+| `evals/palbench/v0.5/r140-fresh-clone-usability-evidence-review.md` | R140 fresh-clone usability evidence review |
+| `release/integration-notes/r140-r141-readiness-decision.md` | R140 readiness decision for user remote-publication decision |
 
 ## R101 Integration
 
