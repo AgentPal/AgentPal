@@ -21,7 +21,7 @@ pull, fetch, tag, GitHub Release, remote sync, or full R95 rerun.
 | `keyword_routing_allowed` | `false` |
 | official Pal directory count | `9` |
 | official Pal `pal.json` parse failures | `0` |
-| official `asset-manifest.json` count | `0` |
+| official `asset-manifest.json` count | `1` existing tracked manifest; not generated or modified by R106-A |
 | central contacts diff before edits | empty |
 | official Pal `pal.json` diff before edits | empty |
 
@@ -45,7 +45,7 @@ pull, fetch, tag, GitHub Release, remote sync, or full R95 rerun.
 | PalSmith `pal.json` parses | pass | `official/pals/PalSmith-pal-governor/pal.json` parsed during all official Pal parse check. |
 | official Pal directory count | pass | `9`. |
 | official Pal `pal.json` parse failures | pass | `0`. |
-| official `asset-manifest.json` count | pass | `0`. |
+| official `asset-manifest.json` count | pass | `1` existing tracked manifest at `official/pals/PalSmith-pal-governor/asset-manifest.json`; `git diff` for that file is empty. |
 | central contacts diff | pass | `git diff --name-only -- workspace/organization/contacts` empty. |
 | official Pal `pal.json` diff | pass | `git diff --name-only -- official/pals/**/pal.json` empty. |
 | memory README required boundary terms | pass | Long-term lessons, reports boundary, research boundary, learning candidate boundary, no external `.agentpal/memory/`, no deterministic dispatch, and no automatic central roster / official asset rewrite boundary present. |
@@ -57,7 +57,31 @@ pull, fetch, tag, GitHub Release, remote sync, or full R95 rerun.
 | changed executable / dependency files | pass | `git status --short` contains only Markdown files. |
 | external `.agentpal/` thick-binding directories | pass | Clean-copy thick-binding directory count: `0`. |
 | `git diff --check` | pass | Exit code `0`. |
-| clean-copy validation | pass | Clean copy at `C:\Users\ADMINI~1\AppData\Local\Temp\agentpal-r106a-clean-1707a9ecc294442f8a4fcb9794cc8e33`; missing required paths `0`, JSON failures `0`, official dirs `9`, manifest count `0`. |
+| clean-copy validation | pass | Clean copy at `C:\Users\ADMINI~1\AppData\Local\Temp\agentpal-r106a-clean-1707a9ecc294442f8a4fcb9794cc8e33`; missing required paths `0`, JSON failures `0`, official dirs `9`, manifest count `1` existing tracked manifest, no R106-A manifest diff. |
+
+## Current Revalidation
+
+Current local revalidation confirms:
+
+- required R106-A paths missing: `0`
+- visible JSON parse: `100 / 100 pass`
+- central registered / active Pals: `9 / 9`
+- `routing_policy`: `ai_judgement_only`
+- `keyword_routing_allowed`: `false`
+- PalSmith `pack_path`: `official/pals/PalSmith-pal-governor`
+- official Pal dirs: `9`
+- official Pal `pal.json` parse failures: `0`
+- official `asset-manifest.json` count: `1` existing tracked manifest
+- PalSmith `pal.json` diff: empty
+- PalSmith `asset-manifest.json` diff: empty
+- central contacts diff: empty
+- active route-map or credential assignment scan over R106-A public files: no matches
+- clean-copy revalidation path:
+  `C:\Users\ADMINI~1\AppData\Local\Temp\agentpal-r106a-recheck-5a8a94ea79544dddae28b28dadc6e834`
+- clean-copy revalidation: missing required paths `0`, JSON failures `0`,
+  central registered / active Pals `9 / 9`, official Pal dirs `9`, official
+  Pal `pal.json` parse failures `0`, existing tracked manifest count `1`,
+  external `.agentpal` thick-binding directories `0`
 
 ## Not Run
 

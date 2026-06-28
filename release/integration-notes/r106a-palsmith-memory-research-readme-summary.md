@@ -9,7 +9,15 @@ PalSmith's own memory and research boundaries are clear for Pal creation,
 upgrade, asset classification, and Pal governance work.
 
 This is a local Markdown / validation round. It is not a GitHub sync, tag,
-release, `pal.json` metadata upgrade, or `asset-manifest.json` generation round.
+release, `pal.json` metadata upgrade, or `asset-manifest.json` generation or
+modification round.
+
+## Current Revalidation Note
+
+Current repository state may contain an existing tracked PalSmith
+`asset-manifest.json` from a later metadata round. R106-A does not generate,
+modify, delete, or validate the manifest body. Its manifest boundary is limited
+to confirming no manifest change is part of the R106-A diff.
 
 ## Source Of Truth
 
@@ -63,7 +71,7 @@ R106-A confirms:
 - PalSmith `research/README.md` exists.
 - PalSmith `pal.json` remains unchanged.
 - Central roster remains unchanged.
-- No real official `asset-manifest.json` is generated.
+- No official `asset-manifest.json` is generated or modified by R106-A.
 - Existing PalSmith research files remain in `research/`.
 - No report body is copied into memory.
 - No research source body is promoted directly into knowledge or memory.
@@ -79,7 +87,7 @@ R106-A does not:
 - push, pull, fetch, tag, or create a GitHub Release;
 - modify central contacts or registry files;
 - modify any official Pal `pal.json`;
-- create a real `asset-manifest.json`;
+- create or modify a real `asset-manifest.json`;
 - move, delete, rename, or reclassify existing PalSmith assets;
 - create a CLI, Web App, Desktop App, scanner, validator, daemon, database,
   connector, marketplace, hub, auto-sync engine, or auto-execution engine;

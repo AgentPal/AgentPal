@@ -47,7 +47,8 @@ official Pal metadata, manifests, or external project thin-binding boundaries.
 - All official Pal `pal.json` files parse.
 - No central contacts file changes.
 - No official Pal `pal.json` file changes.
-- No official `asset-manifest.json` is generated.
+- No official `asset-manifest.json` is generated or modified by the R106-A
+  diff.
 - No report body is copied into memory.
 - No research source body is promoted directly into knowledge or memory.
 - No keyword, domain, role, or deterministic routing map is introduced.
@@ -66,7 +67,8 @@ official Pal metadata, manifests, or external project thin-binding boundaries.
 - PalSmith research README or index is missing.
 - Any official Pal `pal.json` changes.
 - Central contacts change.
-- A real `asset-manifest.json` appears under `official/pals/**`.
+- A real `asset-manifest.json` is newly generated, modified, deleted, or made
+  part of the R106-A diff.
 - README files claim runtime execution, automatic routing, connector behavior,
   scanning, validation, or external system behavior.
 - README files require copying PalSmith assets into external project
