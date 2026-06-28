@@ -732,6 +732,10 @@ Use the current docs directories as the public entry points. Archived research n
 | `release/integration-notes/r135-r136-faye-extension-regression-execution-checklist.md` | R135 R136 execution checklist |
 | `release/fresh-clone-checks/r135-local-faye-extension-scope-update-validation.md` | R135 local scope-update validation |
 | `release/integration-notes/r135-r136-readiness-decision.md` | R135 readiness decision for R136 targeted regression |
+| `evals/palbench/v0.5/r136-faye-extension-targeted-regression-results.md` | R136 executed Faye extension targeted regression results |
+| `evals/palbench/v0.5/r136-faye-extension-targeted-regression-issues.md` | R136 Faye extension targeted regression issue table |
+| `release/fresh-clone-checks/r136-local-faye-extension-targeted-regression-validation.md` | R136 local targeted regression validation |
+| `release/integration-notes/r136-r137-readiness-decision.md` | R136 readiness decision for R137 completion refresh |
 
 ## R101 Integration
 
