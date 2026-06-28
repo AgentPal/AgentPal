@@ -1,0 +1,19 @@
+{
+  "schema": "agentpal.palsmith.asset_classification_result.v0.5",
+  "content_summary": "",
+  "recommended_asset_type": "learning candidate",
+  "target_path": "review/unclassified",
+  "reason": "",
+  "confidence": "low",
+  "requires_user_confirmation": true,
+  "central_workspace_target": true,
+  "external_project_write_allowed": false,
+  "forbidden_targets": [
+    "external_project/.agentpal/",
+    "workspace/organization/contacts/pals.json",
+    "official/pals/",
+    "pal skills/ for Agent Skills",
+    "public assets for credentials or private memory"
+  ],
+  "notes": ""
+}
