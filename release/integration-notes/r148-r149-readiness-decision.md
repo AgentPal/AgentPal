@@ -9,18 +9,18 @@ Date: 2026-06-29
 
 ## Basis
 
-R148 was a prompt initialization alignment check before manual test planning, not a targeted automatic behavior fix round. R147 had already concluded `no_r148_needed_ready_for_manual_test_plan` for automatic behavior tests.
+R148 completed the legacy entry / legacy wording / obsolete file cleanup pass requested before R149. The pass scanned the public workspace, updated current user-facing entries and source-of-truth metadata, preserved historical evidence, and found no safe deletion candidate that would not risk historical evidence or references.
 
-R148 checked and aligned the current AgentPal installation / initialization prompt surfaces:
+## Evidence
 
-- Codex
-- Claude Code
-- CLI Agent compatibility entry
-- Generic CLI Agent
-- Project Workgroup
-- Maintenance
-
-After updates, the prompts no longer present AgentPal v0.5 as Simple-only, no longer imply deterministic keyword routing, and include boundaries for capability unknown, no-code operation, thin binding, external project privacy, and remote publication.
+| Evidence | Result |
+| --- | --- |
+| Full legacy keyword scan | 69 patterns, 5,271 matched lines, 1,548 matched files |
+| Current entry Simple-only scan after cleanup | 0 hits |
+| Current entry deterministic route scan after cleanup | 0 hits |
+| Forbidden public leak classification | 0 files |
+| Deleted files | 0 |
+| R142-R147 evidence | preserved |
 
 ## R149 Scope
 

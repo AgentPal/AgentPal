@@ -56,7 +56,7 @@ Most users use AgentPal from an external project directory. That is normal for d
 
 ## Future / Deprecated-For-Current-Use
 
-- `test-codex-subagent-mode.md` is future-design diagnostic material. Do not use it as normal AgentPal v0.1.0-rc.1 task handling.
+- `test-codex-subagent-mode.md` is diagnostic material. Do not use it as evidence that AgentPal v0.5 can automatically execute subagents without current host evidence.
 
 ## Public-Safe Rules
 

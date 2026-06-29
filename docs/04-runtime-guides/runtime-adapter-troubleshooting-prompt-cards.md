@@ -130,7 +130,7 @@ Expected checks:
 - direct mention instructions in root blocks;
 - central contacts readable;
 - `Atlas` present in current registry;
-- active mode is Simple Pal Mode only.
+- active mode is AgentPal v0.5 Pal collaboration, with the simple Mira-to-owner path available and no deterministic keyword routing.
 
 Should-not behavior:
 

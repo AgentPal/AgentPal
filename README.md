@@ -4,7 +4,7 @@ AgentPal is a lightweight framework for building AI teams on top of agent runtim
 
 Create role-based Pals with knowledge, skills, memory, workflows, output contracts, and collaboration rules, then organize them into a working AI team.
 
-AgentPal gives every agent a Pal. AgentPal v0.3.0-rc.1 is a Markdown / JSON / protocol workspace for runtimes that can read structured workspace files. It is not an Agent runtime, not a multi-agent runtime, not an execution layer, not a desktop app, not a web app, and not an installer.
+AgentPal gives every agent a Pal. AgentPal v0.5 is a Markdown / JSON / protocol workspace for runtimes that can read structured workspace files. It is not an Agent runtime, not a multi-agent runtime, not an execution layer, not a desktop app, not a web app, and not an installer.
 
 First time here? Start with [START_HERE.md](START_HERE.md), then use [What is AgentPal?](docs/00-overview/what-is-agentpal.md), [First 30 Minutes with AgentPal](docs/01-getting-started/first-30-minutes.md), and the [first AgentPal team walkthrough](examples/walkthroughs/first-agentpal-team/). These onboarding docs are local-only and public-safe; remote publication still requires explicit user authorization.
 
@@ -76,7 +76,7 @@ Learn more about Pal:
 
 ## What Works Today
 
-AgentPal v0.3.0-rc.1 currently provides:
+AgentPal v0.5 currently provides:
 
 - Markdown / JSON / protocol workspace assets with no required runtime dependency
 - Standards for no-code boundaries, thin project binding, central assets, host-runtime execution, and no keyword routing under `standards/`
@@ -227,11 +227,11 @@ Skill is capability. Pal is a working companion that organizes capabilities.
 | Can add configuration, context, and coordination overhead | Shapes context, Task Packages, collaboration, and verification |
 | Useful for heavy multi-agent execution | Useful for professional perspectives without making AgentPal a runtime |
 
-Subagents and multi-agent execution belong to the runtime layer. A Pal Team can prepare and review tasks for runtime agents, but AgentPal v0.3.0-rc.1 is not a multi-agent runtime.
+Subagents and multi-agent execution belong to the runtime layer. A Pal Team can prepare and review tasks for runtime agents, but AgentPal v0.5 is not a multi-agent runtime.
 
 ## Deep Conductor
 
-Deep Conductor is AgentPal's no-code orchestration protocol and task-package system for complex tasks. In v0.3.0-rc.1, it is represented through Markdown / JSON protocols, templates, examples, evals, E2E packages, synthesis reports, and replay evidence. It is not an automatic background executor. Host runtimes perform real execution and must return evidence. Start with [`docs/05-orchestration-methodology/deep-conductor-e2e-usage-guide.md`](docs/05-orchestration-methodology/deep-conductor-e2e-usage-guide.md).
+Deep Conductor is AgentPal's no-code collaboration, mode-decision, and task-package protocol for complex tasks. In v0.5, it can help judge Fast Route, Owner + Verifier, Plan-Execute-Verify, Parallel Review, Sequential Chain, External Agent handoff, and Fallback shapes. It is not an automatic background executor. Host runtimes perform real execution and must return evidence. Start with [`docs/05-orchestration-methodology/deep-conductor-e2e-usage-guide.md`](docs/05-orchestration-methodology/deep-conductor-e2e-usage-guide.md).
 
 ## What AgentPal Is Not
 
@@ -276,7 +276,7 @@ AgentPal is a Pal layer for existing runtimes. It does not require Python, Node.
 
 ## Contributing
 
-Contributions should preserve the v0.3.0-rc.1 boundary: AgentPal is a Pal Workspace and Pal Pack standard practice for agent runtimes, with no-code Deep Conductor protocols and host Runtime execution evidence. It is not an automatic runtime.
+Contributions should preserve the v0.5 boundary: AgentPal is a Pal Workspace and Pal Pack standard practice for agent runtimes, with no-code Deep Conductor protocols and host Runtime execution evidence. It is not an automatic runtime.
 
 See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 

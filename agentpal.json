@@ -3,13 +3,14 @@
   "id": "agentpal-workspace",
   "name": "AgentPal",
   "type": "agentpal-workspace",
-  "version": "v0.3.0-rc.1",
-  "release_status": "release-candidate",
+  "version": "v0.5",
+  "release_status": "local-preflight",
   "methodology": {
     "design_foundation": "AgentPal does not compete with foundation models. It defines an original Pal Layer methodology for using existing Agent runtimes through Pal identity, context control, task packaging, verification, and routing memory.",
-    "active_mode": "simple-pal-mode-only",
+    "active_mode": "agentpal-v0.5-pal-collaboration",
     "active_clear_task_pattern": "fast-route",
-    "future_complex_task_design": "deep-conductor"
+    "deep_conductor_no_code_protocol_enabled": true,
+    "simple_pal_path_available": true
   },
   "agentpal_layer_definition": {
     "is_pal_layer": true,
@@ -18,10 +19,12 @@
     "is_execution_layer": false,
     "description": "AgentPal provides Pal identity, knowledge, skills, context, memory, output contracts, routing coordination, review, summary, and learning instructions for an existing Agent runtime."
   },
-  "active_runtime_mode": "simple-pal-mode-only",
+  "active_runtime_mode": "agentpal-v0.5-pal-collaboration",
   "runtime_policy": {
-    "current_mode": "simple-pal-mode-only",
-    "simple_pal_mode_only": true,
+    "current_mode": "agentpal-v0.5-pal-collaboration",
+    "simple_pal_mode_only": false,
+    "simple_pal_path_available": true,
+    "deep_conductor_no_code_protocol_enabled": true,
     "do_not_probe_parallel_agent_tools": true,
     "do_not_call_parallel_agent_tools": true,
     "do_not_call_external_agent_runtimes": true,
@@ -29,6 +32,13 @@
     "allowed_current_paths": [
       "mira-direct-answer",
       "simple-pal-owner-handoff",
+      "deep-conductor-mode-decision",
+      "owner-verifier-no-code-package",
+      "plan-execute-verify-no-code-package",
+      "parallel-review-no-code-package",
+      "sequential-chain-no-code-package",
+      "external-agent-handoff-package-with-host-evidence",
+      "fallback",
       "direct-pal-call",
       "codex-generic-answer",
       "clarification",
@@ -403,7 +413,7 @@
         "routing-reward-memory",
         "palbench"
       ],
-      "purpose": "No-code methodology foundation for transparent scheduling of Pals, runtimes, model profiles, reasoning profiles, Skills, plugins, context, verification, and routing memory. In v0.3.0-rc.1, Deep Conductor is represented as protocols, templates, examples, evals, and task packages, not as automatic runtime execution."
+      "purpose": "No-code methodology foundation for transparent scheduling of Pals, runtimes, model profiles, reasoning profiles, Skills, plugins, context, verification, and routing memory. In v0.5, Deep Conductor is represented as no-code collaboration and mode-decision protocols, templates, examples, evals, and task packages, not as automatic runtime execution."
     },
     "agent_runtime_orchestration": {
       "active_in_v0_1_runtime": false,
@@ -1342,6 +1352,40 @@
     "keyword_routing_allowed": false,
     "credentials_allowed": false,
     "customer_private_assets_allowed_in_reusable_pack": false
+  },
+  "v0_5_cleanup": {
+    "r148_legacy_audit": "evals/palbench/v0.5/cleanup/r148-legacy-entry-wording-file-audit.md",
+    "r148_cleanup_summary": "evals/palbench/v0.5/cleanup/r148-legacy-entry-wording-file-cleanup-summary.md",
+    "r148_deletion_manifest": "evals/palbench/v0.5/cleanup/r148-legacy-entry-wording-file-deletion-manifest.md",
+    "r148_residual_review_list": "evals/palbench/v0.5/cleanup/r148-legacy-entry-wording-file-residual-review-list.md",
+    "r148_validation": "release/fresh-clone-checks/r148-local-legacy-cleanup-validation.md",
+    "r148_r149_readiness": "release/integration-notes/r148-r149-readiness-decision.md",
+    "legacy_cleanup_completed": true,
+    "legacy_scan_pattern_count": 69,
+    "legacy_scan_matched_line_count": 5271,
+    "legacy_scan_matched_file_count": 1548,
+    "current_entry_simple_only_hits_after_cleanup": 0,
+    "current_entry_deterministic_route_hits_after_cleanup": 0,
+    "deleted_file_count": 0,
+    "residual_review_blocks_r149": false,
+    "manual_testing_started": false,
+    "remote_published": false,
+    "git_push_executed": false,
+    "git_pull_executed": false,
+    "git_fetch_executed": false,
+    "git_tag_created": false,
+    "github_release_created": false,
+    "central_roster_modified": false,
+    "official_pal_modified": false,
+    "connector_included": false,
+    "marketplace_program_included": false,
+    "scanner_included": false,
+    "validator_included": false,
+    "auto_execution": false,
+    "keyword_routing_allowed": false,
+    "credentials_allowed": false,
+    "customer_private_assets_allowed_in_reusable_pack": false,
+    "readiness_decision": "ready_for_manual_test_plan"
   },
   "palsmith": {
     "creation_standard": "standards/palsmith/palsmith-v0.5-creation-standard.md",

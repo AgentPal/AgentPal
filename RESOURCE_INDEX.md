@@ -830,6 +830,11 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/behavior/r148-prompt-initialization-v0-5-alignment-results.md` | R148 AgentPal v0.5 prompt initialization alignment results |
 | `release/fresh-clone-checks/r148-local-prompt-initialization-v0-5-validation.md` | R148 local validation for prompt initialization v0.5 alignment |
 | `release/integration-notes/r148-r149-readiness-decision.md` | R148 readiness decision for R149 manual test plan preparation |
+| `evals/palbench/v0.5/cleanup/r148-legacy-entry-wording-file-audit.md` | R148 full legacy entry / wording / file audit |
+| `evals/palbench/v0.5/cleanup/r148-legacy-entry-wording-file-cleanup-summary.md` | R148 legacy entry / wording cleanup summary |
+| `evals/palbench/v0.5/cleanup/r148-legacy-entry-wording-file-deletion-manifest.md` | R148 deletion manifest for legacy cleanup |
+| `evals/palbench/v0.5/cleanup/r148-legacy-entry-wording-file-residual-review-list.md` | R148 residual review list for ambiguous legacy files |
+| `release/fresh-clone-checks/r148-local-legacy-cleanup-validation.md` | R148 local validation for legacy cleanup |
 
 ## R101 Integration
 

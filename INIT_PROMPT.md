@@ -9,17 +9,24 @@ This is a Markdown prompt. It is not a CLI command, installer, scanner, validato
 Read the current core gates from this AgentPal Workspace:
 
 1. `AGENTS.md`
-2. `core/agentpal-core-gate.md`
-3. `core/first-pal-gate.md`
-4. `core/simple-pal-mode-runtime-contract.md`
-5. `core/deliverable-aware-task-judgement-gate.md`
-6. `core/main-pal-conductor-gate.md`
-7. `core/runtime-adapter-shared-contract.md`
-8. `core/runtime-response-gate.md`
-9. `contacts/pals.json`
-10. `registry/pal.index.json`
-11. `pals/Mira-main/PAL.md`
-12. `pals/Mira-main/core/output-contract.md`
+2. `agentpal.json`
+3. `RESOURCE_INDEX.md`
+4. `core/agentpal-core-gate.md`
+5. `core/first-pal-gate.md`
+6. `core/simple-pal-mode-runtime-contract.md`
+7. `core/deliverable-aware-task-judgement-gate.md`
+8. `core/main-pal-conductor-gate.md`
+9. `core/runtime-adapter-shared-contract.md`
+10. `core/project-binding-thin-contract.md`
+11. `core/runtime-response-gate.md`
+12. `workspace/organization/contacts/pals.json`
+13. `workspace/organization/contacts/PAL_CONTACTS.md`
+14. `official/pals/Mira-main/PAL.md`
+15. `official/pals/Mira-main/core/output-contract.md`
+16. `standards/deep-conductor/`
+17. `standards/capability-inventory/`
+18. `standards/asset-boundary/`
+19. `templates/project-binding/`
 
 Load selected Pal assets only after current owner judgement. Do not preload all Pals, all examples, all evals, all docs, all memory, or all project files.
 

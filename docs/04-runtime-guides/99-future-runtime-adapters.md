@@ -2,11 +2,11 @@
 
 ## Purpose
 
-This document points to future runtime-adapter material while keeping it out of the active v0.1.0-rc.1 path.
+This document points to future runtime-adapter material while keeping it out of the active v0.5 Pal collaboration path.
 
 ## Current Status
 
-Future design only. Not active in AgentPal v0.1.0-rc.1.
+Future design only. Not evidence of current automatic runtime execution in AgentPal v0.5.
 
 ## Boundary
 

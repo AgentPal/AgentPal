@@ -1,13 +1,13 @@
 ---
 name: agentpal-workspace
 description: Use this AgentPal Workspace when the user wants to initialize Mira Main Pal / Leader Pal / Conductor, manage official and user-added Pal Packs in a runtime-readable Pal Workspace, route with /pal Name, or bind AgentPal to external projects.
-version: v0.3.0-rc.1
+version: v0.5
 type: agentpal-workspace
 ---
 
 # AgentPal Workspace Skill Entry
 
-This is not a single-purpose Skill. This is the AgentPal Workspace entry for the Pal Pack Standard practice in v0.3.0-rc.1.
+This is not a single-purpose Skill. This is the AgentPal Workspace entry for the Pal Pack Standard practice in v0.5.
 
 AgentPal is a Pal layer for an existing execution runtime. It is not an Agent layer, not a multi-agent runtime, not an execution layer, and not a single Pal Pack.
 

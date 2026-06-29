@@ -1,6 +1,6 @@
 # Use With Codex
 
-This is the current Codex path for AgentPal v0.3.0-rc.1.
+This is the current Codex path for AgentPal v0.5.
 
 ## Quick Start
 
@@ -17,13 +17,14 @@ This is the current Codex path for AgentPal v0.3.0-rc.1.
 - Ordinary messages go to Mira first.
 - Specialist Pals do not listen by default.
 - `/pal Name` enters the selected Pal working mode inside the current runtime.
-- The active path is `Simple Pal Mode only`.
+- The simple Mira-to-owner path is available for clear tasks.
+- Deep Conductor is available as a no-code collaboration and mode-decision protocol, not as automatic runtime execution.
 
 ## Important Boundary
 
 - AgentPal is not a Codex replacement.
 - AgentPal is not a Codex subagent system.
-- Deep Conductor is a no-code protocol foundation, not automatic runtime execution.
+- Deep Conductor is a no-code collaboration and mode-decision protocol, not automatic runtime execution.
 - Do not describe parallel child workflows as the current AgentPal runtime path.
 
 ## Good First Commands

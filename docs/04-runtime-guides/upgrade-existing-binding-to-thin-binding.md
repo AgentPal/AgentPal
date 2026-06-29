@@ -48,7 +48,9 @@ Signs of an old or oversized binding:
    - `active_project_root`;
    - `agentpal_workspace_root`;
    - `runtime_hint`;
-   - `active_mode: simple-pal-mode-only`;
+   - `active_mode: agentpal-v0.5-pal-collaboration`;
+   - `simple_pal_path_available: true`;
+   - `deep_conductor_no_code_protocol_enabled: true`;
    - `read_core_from_agentpal_workspace: true`;
    - `core_gate_paths`;
    - `pal_source_of_truth`.
@@ -77,4 +79,4 @@ Signs of an old or oversized binding:
 - The central Pal roster is read from the AgentPal Workspace.
 - `.agentpal/` contains binding files only.
 - Claude Code local settings are merged when Claude Code is the target runtime.
-- The runtime reports Simple Pal Mode only.
+- The runtime reports AgentPal v0.5 Pal collaboration mode, with the simple Mira-to-owner path available and Deep Conductor limited to no-code mode decision unless host evidence proves execution capability.

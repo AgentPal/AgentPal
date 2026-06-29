@@ -12,7 +12,7 @@ A stable Runtime Adapter should:
 - read AgentPal core gates from the AgentPal Workspace;
 - read the current Pal list from `workspace/organization/contacts/pals.json` and `workspace/organization/contacts/PAL_CONTACTS.md`;
 - load Mira as the ordinary entry Pal;
-- preserve Simple Pal Mode only;
+- preserve AgentPal v0.5 Pal collaboration mode, where the simple Mira-to-owner path remains available and Deep Conductor is no-code mode decision unless host evidence proves execution capability;
 - report exact evidence for reads, writes, and command results;
 - avoid copying full AgentPal rules, Pal Packs, docs, examples, evals, or release material into the user project.
 
@@ -30,6 +30,8 @@ The project stores only:
 
 The binding should point back to:
 
+- `agentpal.json`;
+- `RESOURCE_INDEX.md`;
 - `core/agentpal-core-gate.md`;
 - `core/first-pal-gate.md`;
 - `core/simple-pal-mode-runtime-contract.md`;
@@ -42,6 +44,10 @@ The binding should point back to:
 - `workspace/organization/contacts/PAL_CONTACTS.md`;
 - `official/pals/Mira-main/PAL.md`;
 - `official/pals/Mira-main/core/output-contract.md`.
+- `standards/deep-conductor/`;
+- `standards/capability-inventory/`;
+- `standards/asset-boundary/`;
+- `templates/project-binding/`.
 
 The project should not become a second AgentPal Workspace.
 

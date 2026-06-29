@@ -1,6 +1,6 @@
 # Use With Claude Code
 
-This is the recommended Claude Code path for AgentPal v0.3.0-rc.1.
+This is the recommended Claude Code path for AgentPal v0.5.
 
 ## Project-First Path
 
@@ -51,9 +51,9 @@ These are fallback options, not the default setup path.
 ## Current Runtime Boundary
 
 - AgentPal is a Pal layer, not an Agent runtime.
-- The active path is `Simple Pal Mode only`.
-- Deep Conductor is a no-code protocol foundation, not automatic runtime execution.
-- Subagent Mode and external Agent orchestration are not active in this release.
+- The simple Mira-to-owner path is available for clear tasks.
+- Deep Conductor is available as a no-code collaboration and mode-decision protocol, not automatic runtime execution.
+- Subagent execution and external Agent execution require current Claude Code evidence or explicit user authorization.
 
 ## Related
 

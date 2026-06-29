@@ -1,6 +1,6 @@
 # Runtime Compatibility
 
-AgentPal v0.3.0-rc.1 is a Pal layer, not an execution layer. Compatibility depends on whether a runtime can read structured workspace files, follow Markdown / JSON instructions, preserve context, and report execution evidence honestly.
+AgentPal v0.5 is a Pal layer, not an execution layer. Compatibility depends on whether a runtime can read structured workspace files, follow Markdown / JSON instructions, preserve context, and report execution evidence honestly.
 
 ## Current Quick-Start Paths
 

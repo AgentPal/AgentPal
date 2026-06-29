@@ -6,7 +6,7 @@ AgentPal is an AgentPal Workspace and Pal Pack Standard practice for agent runti
 
 This root `PAL.md` describes the identity of the whole AgentPal Workspace. It is not Mira's personal `PAL.md`, and it is not the identity file for any specialist Pal.
 
-AgentPal v0.3.0-rc.1 is a Pal layer and no-code organization workspace. It provides Pal identity, knowledge, skills, context, memory boundaries, output contracts, coordination rules, review habits, summaries, and learning storage for the current execution runtime. It is not an Agent layer, not a multi-agent runtime, and not an execution layer.
+AgentPal v0.5 is a Pal layer and no-code organization workspace. It provides Pal identity, knowledge, skills, context, memory boundaries, output contracts, coordination rules, review habits, summaries, and learning storage for the current execution runtime. It is not an Agent layer, not a multi-agent runtime, and not an execution layer.
 
 ## Workspace And Pal Pack Levels
 

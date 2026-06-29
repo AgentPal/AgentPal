@@ -2,11 +2,11 @@
 
 This directory is an AgentPal Workspace. It is not a normal software repository and it is not a single Pal Pack.
 
-AgentPal v0.3.0-rc.1 is a Pal layer and no-code organization workspace, not an Agent layer, not a multi-agent runtime, and not an execution layer. It provides Pal identity, knowledge, skills, context, memory, output contracts, coordination, review, summary, and learning rules for the current runtime.
+AgentPal v0.5 is a Pal layer and no-code organization workspace, not an Agent layer, not a multi-agent runtime, and not an execution layer. It provides Pal identity, knowledge, skills, context, memory, output contracts, coordination, review, summary, and learning rules for the current runtime.
 
-Current runtime policy: Simple Pal Mode only.
+Current runtime policy: AgentPal v0.5 Pal collaboration. Mira remains the default entry Pal. The simple Mira-to-owner path is still available for clear tasks, and Deep Conductor is enabled as a no-code collaboration and mode-decision protocol.
 
-AgentPal includes no-code orchestration methodology documents for Fast Route, Deep Conductor, Capability Inventory, Context Access List, Workflow Topology, Routing Reward Memory, and PalBench. These are protocol foundations only. They do not enable automatic multi-agent execution, Subagent Mode, external Agent calls, or Deep Conductor runtime behavior without current host-runtime evidence.
+AgentPal includes no-code orchestration methodology documents for Fast Route, Deep Conductor, Capability Inventory, Context Access List, Workflow Topology, Routing Reward Memory, and PalBench. These are protocol foundations and current no-code mode-decision assets. They do not enable automatic multi-agent execution, Subagent Mode, external Agent calls, or Deep Conductor runtime behavior without current host-runtime evidence or explicit user authorization.
 
 ## Runtime Response Gate - Must Run Before Every Answer
 

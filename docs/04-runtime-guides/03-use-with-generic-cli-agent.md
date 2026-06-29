@@ -1,6 +1,6 @@
 # Use With Generic CLI Agent
 
-This guide covers the generic compatibility path for AgentPal v0.1.0-rc.1.
+This guide covers the generic compatibility path for AgentPal v0.5.
 
 ## When This Path Fits
 
@@ -44,8 +44,9 @@ It does not require Claude Code local settings, and it should not create runtime
 - The current project stays the active task context.
 - The AgentPal Workspace is a reference workspace, not the user project.
 - AgentPal is a Pal layer, not an Agent runtime or execution layer.
-- The active path is `Simple Pal Mode only`.
-- Deep Conductor, Subagent Mode, and external Agent orchestration are not active here.
+- The simple Mira-to-owner path is available for clear tasks.
+- Deep Conductor is available as a no-code collaboration and mode-decision protocol, not automatic runtime execution.
+- Subagent execution, external Agent execution, MCP/plugin calls, and Runtime Skill execution require current host evidence or explicit user authorization.
 
 ## Related
 
