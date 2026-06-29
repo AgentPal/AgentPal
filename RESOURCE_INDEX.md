@@ -794,6 +794,13 @@ Use the current docs directories as the public entry points. Archived research n
 | `release/integration-notes/r142-r143-to-r146-behavior-test-execution-plan.md` | R142 staged behavior test execution plan for R143-R146 |
 | `release/fresh-clone-checks/r142-local-pal-behavior-deep-conductor-test-design-validation.md` | R142 local behavior test design validation |
 | `release/integration-notes/r142-r143-readiness-decision.md` | R142 readiness decision for R143 Mira / PalSmith / Faye behavior tests |
+| `evals/palbench/v0.5/behavior/r143-mira-auto-behavior-results.md` | R143 executed Mira core entry behavior test results |
+| `evals/palbench/v0.5/behavior/r143-palsmith-auto-behavior-results.md` | R143 executed PalSmith core entry behavior test results |
+| `evals/palbench/v0.5/behavior/r143-faye-auto-behavior-results.md` | R143 executed Faye role/workflow behavior test results |
+| `evals/palbench/v0.5/behavior/r143-mira-palsmith-faye-auto-behavior-summary.md` | R143 Mira / PalSmith / Faye behavior test summary |
+| `evals/palbench/v0.5/behavior/r143-mira-palsmith-faye-auto-behavior-issues.md` | R143 Mira / PalSmith / Faye behavior issue table |
+| `release/fresh-clone-checks/r143-local-mira-palsmith-faye-auto-behavior-validation.md` | R143 local validation for Mira / PalSmith / Faye auto behavior tests |
+| `release/integration-notes/r143-r144-readiness-decision.md` | R143 readiness decision for R144 official Pal asset behavior tests |
 
 ## R101 Integration
 
