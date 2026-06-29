@@ -14,7 +14,7 @@ The directory package for one Pal, usually under `official/pals/<Pal-Directory>/
 
 ## Simple Pal Mode
 
-The only active task-handling path in AgentPal v0.1.0-rc.1. Mira routes or a user directly calls one Pal, and the selected Pal answers in the same response.
+The lightweight day-to-day task path in AgentPal v0.5. Mira routes clear work to one owner Pal, or a user directly calls one Pal with `/pal Name`, and the selected Pal answers in the same response. Deep Conductor can still be used as a no-code collaboration and mode-decision protocol for complex work.
 
 ## Contacts
 

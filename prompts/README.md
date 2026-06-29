@@ -42,7 +42,6 @@ Keep local machine paths in project-local files such as `.agentpal/project.json`
 
 - `refresh-pal-index.md`: refresh central contacts after Pal Pack changes.
 - `add-pal-to-agentpal.md`: add newly copied valid Pal Pack directories.
-- `initialize-agentpal.md`: legacy-compatible workspace initialization prompt.
 - `rebuild-mira-main-pal.md`: repair Mira public files only when damaged.
 - `test-ai-routing-judgement.md`: manual routing judgement regression prompt.
 
@@ -56,6 +55,7 @@ Most users use AgentPal from an external project directory. That is normal for d
 
 ## Future / Deprecated-For-Current-Use
 
+- `initialize-agentpal.md` is a legacy-compatible workspace initialization prompt. The current Codex initialization entry is `codex/initialize-agentpal-workspace.md`.
 - `test-codex-subagent-mode.md` is diagnostic material. Do not use it as evidence that AgentPal v0.5 can automatically execute subagents without current host evidence.
 
 ## Public-Safe Rules
