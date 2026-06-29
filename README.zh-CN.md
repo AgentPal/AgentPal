@@ -15,32 +15,6 @@ AgentPal 不替代 Codex、Claude Code、OpenClaw、Hermes、workbuddy 等 Agent
 
 ---
 
-## 安装
-
-AgentPal 当前是一个本地工作区，不是 npm / pip 包，不是 CLI installer，也不是后台服务。
-
-你可以用两种方式安装：
-
-### 方式 A：下载 release package
-
-1. 从 GitHub Release 下载 `agentpal-v0.5.0-rc.1.zip`。
-2. 解压到本地目录，例如 `<path-to-AgentPal>`。
-3. 把这个目录作为 AgentPal 工作区保留。
-4. 在能够读取本地 Markdown / JSON 文件的 Agent Runtime 中打开它。
-
-### 方式 B：clone 仓库
-
-```bash
-git clone https://github.com/AgentPal/AgentPal.git
-cd AgentPal
-```
-
-然后把 clone 下来的目录作为 AgentPal 工作区打开。
-
-当前推荐路径是 Codex。打开 AgentPal 目录后，复制 [`prompts/codex/initialize-agentpal-workspace.md`](prompts/codex/initialize-agentpal-workspace.md) 的内容到 fresh Codex 对话中，确认 Mira 欢迎你并列出当前 Pal。
-
----
-
 ## Pal 是什么？
 
 AgentPal 使用 **Pal** 作为 AI 团队的基本组织单位。
@@ -263,6 +237,67 @@ Faye 负责 FDE 式方案设计。
 
 PalSmith 更擅长搭建 AI 团队。
 Faye 更擅长把真实业务变成可落地方案。
+
+---
+
+## 快速开始
+
+日常使用可以先找 Mira。Mira 是默认 Main Pal / Leader Pal / Conductor：你把目标告诉她，她会判断是直接整理、补问关键问题、交给专业 Pal，还是生成 staged Runtime Task Package。可以先看 [Mira-first usage](docs/02-getting-started/mira-first-usage.md) 和 [Mira-first prompt cards](docs/02-getting-started/mira-first-prompt-cards.md)。
+
+### Codex
+
+适合直接在 Codex 中打开 AgentPal Workspace。
+
+1. 在 Codex 中把 AgentPal 目录当作新项目创建。
+2. 打开 [`prompts/codex/initialize-agentpal-workspace.md`](prompts/codex/initialize-agentpal-workspace.md)。
+3. 复制整篇 prompt。
+4. 粘贴到 Codex 里 AgentPal 项目对话中初始化 AgentPal。
+5. 普通任务先交给 Mira，或用 `/pal Name` 指定专业 Pal。
+
+Codex 的初始化 prompt 现在统一放在 [`prompts/codex/`](prompts/codex/) 下。Codex Workspace 初始化不需要设置 `AGENTPAL_HOME`。
+
+详见：[`docs/04-runtime-guides/01-use-with-codex.md`](docs/04-runtime-guides/01-use-with-codex.md)
+
+### Claude Code
+
+适合把 AgentPal 接入你已有的真实项目。
+
+1. 先进入你的项目目录：
+
+   ```text
+   cd <your-project>
+   claude
+   ```
+
+2. 打开 [`prompts/claude-code/install-agentpal-current-project.md`](prompts/claude-code/install-agentpal-current-project.md)。
+3. 不需要提前修改 prompt，直接复制整篇 prompt 文件。
+4. 粘贴到 Claude Code 中执行。
+5. Claude Code 提示你输入 AgentPal Workspace 路径时，输入你本机 AgentPal 目录路径，例如 `<path-to-AgentPal>`。
+6. 让 Claude Code 创建或更新当前项目里的本地绑定文件。
+
+Claude Code 路径会写入项目本地绑定文件，并可能更新 `.claude/settings.local.json`。这个文件是本机配置，不应该提交。
+
+详见：[`docs/04-runtime-guides/02-use-with-claude-code.md`](docs/04-runtime-guides/02-use-with-claude-code.md)
+
+### Generic CLI Agent
+
+适合能读取项目文件、遵循 Markdown / JSON 指令、维护上下文并报告执行证据的 CLI Agent。
+
+1. 先进入你的项目目录：
+
+   ```text
+   cd <your-project>
+   <your-cli-agent>
+   ```
+
+2. 打开 [`prompts/generic-cli-agent/install-agentpal-current-project.md`](prompts/generic-cli-agent/install-agentpal-current-project.md)。
+3. 不需要提前修改 prompt，直接复制整篇 prompt 文件。
+4. 粘贴到 CLI Agent 中执行。
+5. CLI Agent 提示你输入 AgentPal Workspace 路径时，输入你本机 AgentPal 目录路径，例如 `<path-to-AgentPal>`。
+
+这是通用兼容路径。AgentPal 不承诺所有 CLI Agent 都已经完整验证。
+
+详见：[`docs/04-runtime-guides/03-use-with-generic-cli-agent.md`](docs/04-runtime-guides/03-use-with-generic-cli-agent.md)
 
 ---
 

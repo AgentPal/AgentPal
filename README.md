@@ -15,32 +15,6 @@ In one sentence:
 
 ---
 
-## Install
-
-AgentPal is a local workspace. It is not an npm / pip package, not a CLI installer, and not a background service.
-
-You can install it in either way:
-
-### Option A: Download the release package
-
-1. Download `agentpal-v0.5.0-rc.1.zip` from the GitHub Release.
-2. Unzip it to a local folder, for example `<path-to-AgentPal>`.
-3. Keep that folder as the AgentPal Workspace.
-4. Open it in an Agent Runtime that can read local Markdown / JSON files.
-
-### Option B: Clone the repository
-
-```bash
-git clone https://github.com/AgentPal/AgentPal.git
-cd AgentPal
-```
-
-Then open the cloned folder as the AgentPal Workspace.
-
-The current recommended path is Codex. After opening the AgentPal folder, copy [`prompts/codex/initialize-agentpal-workspace.md`](prompts/codex/initialize-agentpal-workspace.md) into a fresh Codex conversation and confirm that Mira welcomes you and lists the current Pals.
-
----
-
 ## What Is A Pal?
 
 AgentPal uses **Pals** as the basic organization unit of an AI team.
@@ -263,6 +237,67 @@ She can help turn real business needs into:
 
 PalSmith is better at building AI teams.
 Faye is better at turning real business into an executable solution.
+
+---
+
+## Quick Start
+
+For daily use, you can start with Mira. Mira is the default Main Pal / Leader Pal / Conductor: tell her your goal, and she will judge whether to organize it directly, ask key follow-up questions, route it to a specialist Pal, or generate a staged Runtime Task Package. You can start with [Mira-first usage](docs/02-getting-started/mira-first-usage.md) and [Mira-first prompt cards](docs/02-getting-started/mira-first-prompt-cards.md).
+
+### Codex
+
+Use this path when you want to open the AgentPal Workspace directly in Codex.
+
+1. In Codex, create a new project from the AgentPal directory.
+2. Open [`prompts/codex/initialize-agentpal-workspace.md`](prompts/codex/initialize-agentpal-workspace.md).
+3. Copy the whole prompt.
+4. Paste it into the Codex conversation for the AgentPal project to initialize AgentPal.
+5. Send ordinary tasks to Mira first, or use `/pal Name` to call a specialist Pal.
+
+The Codex initialization prompt now lives under [`prompts/codex/`](prompts/codex/). Codex Workspace initialization does not require `AGENTPAL_HOME`.
+
+See: [`docs/04-runtime-guides/01-use-with-codex.md`](docs/04-runtime-guides/01-use-with-codex.md)
+
+### Claude Code
+
+Use this path when you want to connect AgentPal to an existing real project.
+
+1. Enter your project directory first:
+
+   ```text
+   cd <your-project>
+   claude
+   ```
+
+2. Open [`prompts/claude-code/install-agentpal-current-project.md`](prompts/claude-code/install-agentpal-current-project.md).
+3. Copy the whole prompt file directly; you do not need to edit it first.
+4. Paste it into Claude Code.
+5. When Claude Code asks for the AgentPal Workspace path, enter your local AgentPal directory, for example `<path-to-AgentPal>`.
+6. Let Claude Code create or update the local binding files in the current project.
+
+The Claude Code path writes local binding files in the project and may update `.claude/settings.local.json`. This is local machine configuration and should not be committed.
+
+See: [`docs/04-runtime-guides/02-use-with-claude-code.md`](docs/04-runtime-guides/02-use-with-claude-code.md)
+
+### Generic CLI Agent
+
+Use this path for CLI Agents that can read project files, follow Markdown / JSON instructions, maintain context, and report execution evidence.
+
+1. Enter your project directory first:
+
+   ```text
+   cd <your-project>
+   <your-cli-agent>
+   ```
+
+2. Open [`prompts/generic-cli-agent/install-agentpal-current-project.md`](prompts/generic-cli-agent/install-agentpal-current-project.md).
+3. Copy the whole prompt file directly; you do not need to edit it first.
+4. Paste it into the CLI Agent.
+5. When the CLI Agent asks for the AgentPal Workspace path, enter your local AgentPal directory, for example `<path-to-AgentPal>`.
+
+This is a generic compatibility path. AgentPal does not promise that every CLI Agent has been fully verified.
+
+See: [`docs/04-runtime-guides/03-use-with-generic-cli-agent.md`](docs/04-runtime-guides/03-use-with-generic-cli-agent.md)
 
 ---
 
