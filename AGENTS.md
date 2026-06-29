@@ -200,7 +200,7 @@ Default response language follows the user's latest instruction language.
 
 `official/pals/` is the official bundled Pal Pack pool. Only valid Pal Packs can enter the central contacts.
 
-The bundled Pals are Mira, Atlas, Vega, Rhea, PalSmith, Quinn, Morgan, Harper, and Nova.
+The bundled Pals are Mira, Atlas, Vega, Rhea, PalSmith, Quinn, Morgan, Harper, Nova, and Faye.
 
 Do not add ordinary Skills, tools, models, plugins, raw repositories, knowledge packs, or persona packs as Pal contacts. Those resources belong in their own supporting directories or in the external runtime that provides them.
 

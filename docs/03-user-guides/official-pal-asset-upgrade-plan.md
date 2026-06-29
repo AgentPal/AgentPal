@@ -59,9 +59,9 @@ Current evidence:
 Before future edits under `official/pals/**`, run the frozen R101 preflight:
 
 1. capture `git status --short --branch`;
-2. parse the central roster and verify 9 active official Pals;
+2. parse the central roster and verify 10 active official Pals;
 3. parse all official Pal `pal.json` files;
-4. verify official Pal directory count is 9;
+4. verify official Pal directory count is 10;
 5. verify no central roster diff;
 6. verify no route maps, scanner / connector behavior, or credential-like
    values are introduced;

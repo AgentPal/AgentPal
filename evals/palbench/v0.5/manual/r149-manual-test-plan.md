@@ -20,7 +20,7 @@ Manual execution should cover:
 - Maintenance-session initialization.
 - Mira ordinary entry and Deep Conductor mode decision.
 - Official Pal role participation from the current central contacts.
-- Faye / Delivery Pack standard-role flows as v0.5 delivery methodology, not as a registered direct-call Pal.
+- Faye / Delivery Pack flows as the official AI Delivery Pal and v0.5 delivery methodology.
 - Capability unknown and manual capability profile handling.
 - Writeback candidate classification.
 - External project thin binding.
@@ -37,8 +37,8 @@ R149 must not:
 - rewrite README or release docs;
 - publish, tag, or synchronize with any remote;
 - add app, web, CLI, installer, scanner, connector, marketplace, daemon, service, database, or runtime code;
-- modify central contacts;
-- modify official Pal `pal.json` files;
+- modify central contacts, except when a later scoped pre-manual blocker fix explicitly registers Faye;
+- modify official Pal `pal.json` files, except when a later scoped pre-manual blocker fix creates the Faye official Pal Pack;
 - delete R142-R148 evidence;
 - write into external project directories.
 
@@ -54,13 +54,14 @@ R149 must not:
 
 ## Test Roles / Pals
 
-Current central contacts list 9 active official Pals:
+Current central contacts list 10 active official Pals:
 
 | Pal | Role in manual testing |
 | --- | --- |
 | Mira | default entry, coordination, clarification, mode decision, final synthesis |
 | Atlas | development task package and engineering evidence review candidate |
 | Nova | product / strategy framing candidate |
+| Faye | AI delivery, business scenarios, user flows, data/interface lists, Delivery Packs, Flow Packs, FAYE_BUILD_REQUEST, acceptance handoff |
 | Vega | research framing and source evidence candidate |
 | Quinn | verification, acceptance, false-completion, release-quality candidate |
 | Morgan | documentation, source preservation, file workflow candidate |
@@ -68,7 +69,7 @@ Current central contacts list 9 active official Pals:
 | Rhea | runtime, capability, permission, no-code and release-safety candidate |
 | PalSmith | Pal creation, Pal team design, Pal asset governance candidate |
 
-Faye is not currently registered in `workspace/organization/contacts/pals.json`. R149 still includes Faye / Delivery Pack scenarios because v0.5 standards define Faye as a Delivery Pack / landing role and protocol surface. During R150+ execution, direct `/pal Faye` must not be expected unless Faye is registered before that round.
+Faye is now registered in `workspace/organization/contacts/pals.json` as the official AI Delivery Pal. During R150+ execution, direct `/pal Faye` should be tested as an explicit Pal call while still preserving her no-code delivery boundary.
 
 ## Scenario Groups
 
@@ -78,7 +79,7 @@ Faye is not currently registered in `workspace/organization/contacts/pals.json`.
 | Mira default entry | Verify ordinary user prompts enter through Mira and stay user-friendly | 3 |
 | Faye / Delivery Pack | Verify business delivery decomposition without connector creation | 3 |
 | PalSmith Pal creation | Verify Pal asset classification and public/private boundary | 3 |
-| Official Pal participation | Verify Atlas, Nova, Vega, Quinn, Morgan, Harper, Rhea roles by case-specific judgement | 7 |
+| Official Pal participation | Verify Atlas, Nova, Faye, Vega, Quinn, Morgan, Harper, Rhea roles by case-specific judgement | 8 |
 | Capability / runtime | Verify unknown, manual profile, and subagent availability boundaries | 3 |
 | Writeback classification | Verify memory / knowledge / workflow / private project candidate split | 3 |
 | Deep Conductor modes | Verify Fast Route, Owner + Verifier, Plan-Execute-Verify, Sequential Chain, Parallel Review, External Agent handoff, Fallback | 7 |
@@ -94,7 +95,7 @@ Recommended R150+ order:
 | --- | --- | --- |
 | R150 | Initialization entry + Mira default entry | validates the first user contact before deeper flows |
 | R151 | Faye / Delivery Pack + PalSmith Pal creation | validates business-to-Pal and asset governance flows |
-| R152 | Atlas / Nova / Quinn / Morgan / Vega / Harper / Rhea professional role tests | validates current central-contact Pal coverage |
+| R152 | Atlas / Nova / Faye / Quinn / Morgan / Vega / Harper / Rhea professional role tests | validates current central-contact Pal coverage |
 | R153 | Capability / Writeback / Thin Binding | validates capability unknown, privacy, and project-root boundaries |
 | R154 | Deep Conductor + E2E chain | validates staged collaboration after basic role tests pass |
 | R155 | Manual test summary and fix decision | consolidates evidence and decides repair scope |
@@ -115,7 +116,7 @@ Manual tests must keep `not-run`, `unknown`, `missing`, and `blocked` visible. A
 Stop and record an issue before continuing when:
 
 - AgentPal claims automatic runtime scanning or host capability without evidence.
-- AgentPal treats Faye as a registered direct-call Pal when the current central contacts do not list Faye.
+- AgentPal fails to treat Faye as a registered direct-call Pal after the current central contacts list Faye.
 - AgentPal copies Pal Packs, memory, knowledge, workflows, reports, governance, examples, evals, or release files into an external project.
 - AgentPal writes customer-private data into a public reusable example or Pal Pack.
 - AgentPal treats Pal capability notes as deterministic routes.
@@ -127,4 +128,3 @@ Stop and record an issue before continuing when:
 Stop R150+ execution and prepare a fix round if any Blocker appears, if a High issue appears in privacy / route / capability / project-root boundary, or if the same Medium issue appears in two or more host runtimes.
 
 Low and Note findings may continue through the current round if the tester records evidence and the issue does not hide a boundary failure.
-

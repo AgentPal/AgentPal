@@ -84,7 +84,7 @@ AgentPal v0.5 currently provides:
 - Official bundled Pal Packs under `official/pals/`
 - Simple Pal Mode as the active runtime policy
 - Mira as the default Main Pal / Leader / Conductor, with leader knowledge, skills, workflows, runbooks, evals, research inventory, delegation, handoff, context packet, risk approval, and progress reporting assets
-- 9 official bundled Pals: Mira, Atlas, Vega, Rhea, PalSmith, Quinn, Morgan, Harper, and Nova
+- 10 official bundled Pals: Mira, Atlas, Vega, Rhea, PalSmith, Quinn, Morgan, Harper, Nova, and Faye
 - `/pal Name` explicit Pal calls backed by the central contact roster
 - AI owner judgement, Fast Route owner-Pal handoff, and no hard-coded keyword routing
 - Task Package rules, Runtime Task Package standards, Context Slicing, and Asset Loading Budget
@@ -181,6 +181,7 @@ Most users run AgentPal from an external project during daily work. Pal registra
 | Mira | Main Pal / Leader / Conductor | `/pal Mira` |
 | Atlas | Developer / Implementation Lead, Runtime Task Packages, file boundaries, evidence review | `/pal Atlas` |
 | Nova | Product / Strategy Lead, product intake, problem framing, user segments, JTBD, value proposition, PRD, prioritization, roadmap, MVP/release scope, metrics, risk, GTM alignment, and product handoff | `/pal Nova` |
+| Faye | AI Delivery Pal, business scenario definition, user flows, data and interface lists, Delivery Packs, Flow Packs, Pal Team Blueprints, FAYE_BUILD_REQUEST packets, and acceptance handoff | `/pal Faye` |
 | Vega | Research / Intelligence Lead, source inventory, evidence matrix, research synthesis, comparative analysis, uncertainty, and knowledge distillation | `/pal Vega` |
 | Rhea | System / Runtime Safety Lead, permission boundaries, no-code boundary, evidence review, release safety, rollback readiness, and incident review | `/pal Rhea` |
 | PalSmith | Pal creation, job fitness governance, material ingestion, research-to-knowledge, import/export, health checks, versioning, and Runtime Task Packages | `/pal PalSmith` |

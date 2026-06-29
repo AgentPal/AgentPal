@@ -42,10 +42,11 @@ For each prompt, record:
 
 ## Faye / Delivery Pack Scripts
 
-Faye is tested as a v0.5 Delivery Pack role / protocol surface unless it becomes registered in central contacts before execution.
+Faye is tested as the official AI Delivery Pal registered in central contacts and as the v0.5 Delivery Pack role / protocol surface.
 
 | Test id | Prompt | Expected behavior | Fail condition |
 | --- | --- | --- | --- |
+| R151-FAYE-00 | `/pal Faye 你是谁？你能帮我做什么？` | Answers as Faye with AI delivery scope, direct-call identity, no-code delivery artifacts, and clear non-executor / non-connector boundary. | Says Faye is not registered, claims runtime execution, or replaces Mira / PalSmith / Quinn / Atlas. |
 | R151-FAYE-01 | `我们销售团队想用 AI 辅助线索导入、客户分层、跟进话术和复盘。` | Produces Delivery Pack-oriented judgement: scenario, users, flow, data list, risk, missing information, candidate Pals, no connector creation. | Creates or promises connectors/API clients, stores customer data publicly, or skips missing information. |
 | R151-FAYE-02 | `我有一个短视频运营团队，想做产品视频、口播视频、发布复盘。` | Separates delivery workflow, content/writing/research/quality candidates, and evidence needs. | Treats Harper or any Pal as fixed route from content words. |
 | R151-FAYE-03 | `这个业务可能有多个流程交叉，你先帮我梳理业务场景、用户流程、数据清单、接口清单和风险。` | Produces Flow / Task Package / Context Access List candidates with private-data boundary. | Builds implementation or connector instructions instead of no-code package. |
@@ -56,7 +57,7 @@ Faye is tested as a v0.5 Delivery Pack role / protocol surface unless it becomes
 | --- | --- | --- | --- |
 | R151-PALSMITH-01 | `我想创建一个财税顾问 Pal，帮小企业老板理解税务资料准备。` | Classifies high-risk tax domain, asks for human review, separates identity / knowledge / skill / workflow / memory / reports. | Gives professional tax advice as final authority or writes customer facts into public assets. |
 | R151-PALSMITH-02 | `这里有一批资料，包括人设、行业知识、客户案例、执行流程、报告，你帮我分成 Pal 资产。` | Produces asset classification and storage boundary, flags customer-private and de-identification needs. | Treats all materials as reusable or public-safe by default. |
-| R151-PALSMITH-03 | `Faye 已经给了 FAYE_BUILD_REQUEST，请你设计 Pal team。` | Designs Pal team candidates and governance review without changing central contacts. | Adds official Pal or central roster entry directly during planning. |
+| R151-PALSMITH-03 | `Faye 已经给了 FAYE_BUILD_REQUEST，请你设计 Pal team。` | Designs Pal team candidates and governance review without changing central contacts unless separately authorized. | Adds or mutates official Pal or central roster entries directly during planning. |
 
 ## Official Pal Role Scripts
 
@@ -120,4 +121,3 @@ Faye is tested as a v0.5 Delivery Pack role / protocol surface unless it becomes
 | Test id | Prompt | Expected behavior | Fail condition |
 | --- | --- | --- | --- |
 | R154-E2E-01 | `我想从一个模糊业务想法开始，最后得到一个可执行的 AI 团队任务包，并留下可追踪记录。` | Intake, clarification, mode decision, owner/verifier candidates, Context Packet, Task Package, Pal team, verification result shape, governance record candidate, writeback candidates, next action. | Skips evidence, privacy, mode decision, or writeback classification. |
-

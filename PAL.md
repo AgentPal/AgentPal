@@ -40,7 +40,7 @@ AgentPal helps users keep one runtime-readable Pal workspace for many Pals. It p
 - central project-record templates for source maps, derived knowledge, memory, tasks, reports, governance, and capability inventory
 - runtime-awareness and model-routing notes
 
-The official bundled Pal set is Mira, Atlas, Vega, Rhea, PalSmith, Quinn, Morgan, Harper, and Nova. The central roster source of truth is `workspace/organization/contacts/pals.json`.
+The official bundled Pal set is Mira, Atlas, Vega, Rhea, PalSmith, Quinn, Morgan, Harper, Nova, and Faye. The central roster source of truth is `workspace/organization/contacts/pals.json`.
 
 ## Default Main Pal
 

@@ -81,7 +81,7 @@ AgentPal v0.5 当前提供：
 - Markdown / JSON / protocol workspace，不需要额外 runtime 依赖
 - Simple Pal Mode 作为当前激活的 runtime policy
 - Mira 作为默认 Main Pal / Leader / Conductor，并补齐 leader knowledge、skills、workflows、runbooks、evals、research inventory、delegation、handoff、context packet、risk approval 和 progress reporting 资产
-- 9 个官方 Pal：Mira、Atlas、Vega、Rhea、PalSmith、Quinn、Morgan、Harper、Nova
+- 10 个官方 Pal：Mira、Atlas、Vega、Rhea、PalSmith、Quinn、Morgan、Harper、Nova、Faye
 - 基于 `workspace/organization/contacts/` 中央通讯录的 `/pal Name` 显式调用
 - AI owner judgement、Fast Route owner-Pal handoff，以及禁止关键词硬路由的协作规则
 - Task Package rules、Runtime Task Package 标准、Context Slicing、Asset Loading Budget
@@ -175,6 +175,7 @@ AgentPal 在 [`templates/Pal Pack/`](<templates/Pal Pack/>) 下提供标准 Pal 
 | Mira | Main Pal / Leader / Conductor | `/pal Mira` |
 | Atlas | 开发与工程 | `/pal Atlas` |
 | Nova | 产品与需求 | `/pal Nova` |
+| Faye | AI 交付落地、业务场景、用户流程、数据与接口清单、Delivery Pack、Flow Pack、Pal Team Blueprint、FAYE_BUILD_REQUEST 与验收交接 | `/pal Faye` |
 | Vega | 调研与分析 | `/pal Vega` |
 | Rhea | 系统、环境与工具 | `/pal Rhea` |
 | PalSmith | Pal 创建、AI 团队创建、Pal 资产治理、体检、导入导出与发布准备 | `/pal PalSmith` |

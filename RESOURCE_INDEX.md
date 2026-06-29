@@ -362,7 +362,7 @@ These prompts are Markdown instructions, not scripts or installers.
 
 ## Official Pal Packs
 
-Official Pal Packs for v0.3.0-rc.1:
+Official Pal Packs for current v0.5 local pre-manual readiness:
 
 - `official/pals/Mira-main`
 - `official/pals/Atlas-developer`
@@ -373,6 +373,7 @@ Official Pal Packs for v0.3.0-rc.1:
 - `official/pals/Morgan-document`
 - `official/pals/Harper-writing`
 - `official/pals/Nova-product`
+- `official/pals/Faye-delivery`
 
 Do not load all Pal directories by default. Load Mira for ordinary entry and the selected owner Pal for owned tasks.
 
@@ -705,6 +706,7 @@ Use the current docs directories as the public entry points. Archived research n
 | `release/fresh-clone-checks/r131-local-v0.5-release-preflight-validation.md` | R131 local v0.5 release preflight validation |
 | `evals/palbench/v0.5/r131-v0.5-release-preflight-evidence-review.md` | R131 release preflight evidence review eval |
 | `release/integration-notes/r131-r132-readiness-decision.md` | R131 readiness decision for explicit R132 publication choice |
+| `official/pals/Faye-delivery/` | R149 official Faye AI Delivery Pal Pack |
 | `docs/00-overview/faye-delivery-pack-deep-conductor-overview.md` | R133 overview for Faye, Delivery Packs, examples, and Deep Conductor governance |
 | `standards/faye-delivery-pal/faye-ai-delivery-pal-standard.md` | R132-A Faye / AI Delivery Pal standard |
 | `standards/faye-delivery-pal/delivery-pack-standard.md` | R132-A Delivery Pack standard |
@@ -840,6 +842,11 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/manual/r149-manual-test-record-template.md` | R149 single-test record, round summary, issue, and evidence templates |
 | `evals/palbench/v0.5/manual/r149-manual-test-scoring-rubric.md` | R149 pass/partial/fail/blocked, issue severity, user experience, and v0.5 boundary scoring rubric |
 | `release/fresh-clone-checks/r149-local-manual-test-plan-validation.md` | R149 local validation for manual test planning artifacts |
+| `evals/palbench/v0.5/readiness/r149-pre-manual-readiness-audit.md` | R149 pre-manual blocker audit and Faye registration readiness |
+| `evals/palbench/v0.5/readiness/r149-faye-official-pal-registration-results.md` | R149 Faye official Pal registration and behavior smoke results |
+| `evals/palbench/v0.5/readiness/r149-pre-manual-blocking-fix-summary.md` | R149 pre-manual blocking fix summary |
+| `evals/palbench/v0.5/readiness/r149-pre-manual-residual-risk-list.md` | R149 residual risk list before manual execution |
+| `release/fresh-clone-checks/r149-local-pre-manual-readiness-validation.md` | R149 local validation for Faye registration and pre-manual readiness |
 | `release/integration-notes/r149-r150-readiness-decision.md` | R149 readiness decision for R150 manual test execution |
 
 ## R101 Integration

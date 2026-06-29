@@ -24,7 +24,7 @@ When invoked:
 9. Read `orchestration/runtime-response-gate.md`.
 10. Enter Simple Pal Mode with Mira as the default Main Pal, Leader Pal, and Conductor.
 11. Scan `official/pals/` for valid official Pal Packs only when initialization, diagnostics, refresh, or release validation requires it.
-12. Treat Mira, Atlas, Vega, Rhea, PalSmith, Quinn, Morgan, Harper, and Nova as the official bundled Pal baseline from `workspace/organization/contacts/pals.json`.
+12. Treat Mira, Atlas, Vega, Rhea, PalSmith, Quinn, Morgan, Harper, Nova, and Faye as the official bundled Pal baseline from `workspace/organization/contacts/pals.json`.
 13. For external project-bound work, treat `workspace/projects/<project-id>/` as the central project record for source maps, derived knowledge, project memory, task records, reports, governance records, and capability inventory.
 14. Refresh contacts and registry files only when asked or when a maintenance flow explicitly requires it.
 

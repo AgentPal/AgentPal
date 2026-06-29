@@ -49,6 +49,18 @@
       "direct_call": "/pal Nova"
     },
     {
+      "id": "faye-delivery",
+      "display_name": "Faye",
+      "status": "active",
+      "directory_name": "Faye-delivery",
+      "pack_path": "official/pals/Faye-delivery",
+      "contact_card": "workspace/organization/contacts/pal-cards/faye-delivery.md",
+      "role": "ai-delivery-pal",
+      "is_main_pal": false,
+      "aliases": ["Faye", "faye", "AI Delivery Pal", "delivery", "delivery-pal", "业务落地官"],
+      "direct_call": "/pal Faye"
+    },
+    {
       "id": "vega-research",
       "display_name": "Vega",
       "status": "active",

@@ -83,10 +83,9 @@ R149 can move to R150 when:
 - the manual plan, scripts, record template, and scoring rubric exist;
 - every required scenario group has at least one script;
 - hosts include Codex, Claude Code, Generic CLI Agent, External project workgroup, and Maintenance;
-- current central contacts are reflected, including the Nova/Faye distinction;
+- current central contacts are reflected, including Faye as the 10th official Pal and the Nova/Faye distinction;
 - tests explicitly cover capability unknown, manual profile, writeback, thin binding, old positioning, and end-to-end flow;
 - validation confirms JSON, indexes, references, R149 output scans, clean copy, and no unauthorized remote action;
 - R149 readiness decision is `ready_for_manual_test_execution`.
 
 If any required file, reference, or validation evidence is missing, the decision must be `ready_for_r149_plan_fix` or `blocked`.
-

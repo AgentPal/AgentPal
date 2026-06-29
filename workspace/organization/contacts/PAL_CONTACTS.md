@@ -13,6 +13,7 @@ Source of truth:
 | Mira | active | `official/pals/Mira-main` | `/pal Mira` | Main Pal, leader, conductor |
 | Atlas | active | `official/pals/Atlas-developer` | `/pal Atlas` | Developer / implementation lead |
 | Nova | active | `official/pals/Nova-product` | `/pal Nova` | Product / strategy lead |
+| Faye | active | `official/pals/Faye-delivery` | `/pal Faye` | AI delivery Pal |
 | Vega | active | `official/pals/Vega-research` | `/pal Vega` | Research / intelligence lead |
 | Quinn | active | `official/pals/Quinn-quality` | `/pal Quinn` | Quality / verification lead |
 | Morgan | active | `official/pals/Morgan-document` | `/pal Morgan` | Document / file workflow lead |
