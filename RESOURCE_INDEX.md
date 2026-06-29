@@ -835,6 +835,12 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/cleanup/r148-legacy-entry-wording-file-deletion-manifest.md` | R148 deletion manifest for legacy cleanup |
 | `evals/palbench/v0.5/cleanup/r148-legacy-entry-wording-file-residual-review-list.md` | R148 residual review list for ambiguous legacy files |
 | `release/fresh-clone-checks/r148-local-legacy-cleanup-validation.md` | R148 local validation for legacy cleanup |
+| `evals/palbench/v0.5/manual/r149-manual-test-plan.md` | R149 manual test goals, scope, hosts, roles, scenario groups, order, policy, and risk handling |
+| `evals/palbench/v0.5/manual/r149-manual-test-scripts.md` | R149 copyable manual test prompts, expected behavior, fail conditions, and recording notes |
+| `evals/palbench/v0.5/manual/r149-manual-test-record-template.md` | R149 single-test record, round summary, issue, and evidence templates |
+| `evals/palbench/v0.5/manual/r149-manual-test-scoring-rubric.md` | R149 pass/partial/fail/blocked, issue severity, user experience, and v0.5 boundary scoring rubric |
+| `release/fresh-clone-checks/r149-local-manual-test-plan-validation.md` | R149 local validation for manual test planning artifacts |
+| `release/integration-notes/r149-r150-readiness-decision.md` | R149 readiness decision for R150 manual test execution |
 
 ## R101 Integration
 
