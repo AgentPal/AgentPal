@@ -15,7 +15,7 @@ connector, marketplace, keyword router, or official Pal bulk-upgrade task.
   Metadata Upgrade Preparation, Pal Asset Index Templates, and R101 Integration.
 - `agentpal.json` exposes a `pal_metadata_v0_5` metadata index with false safety
   flags.
-- `docs/09-roadmap/v0.5-local-development-scope.md` names Pal Metadata v0.5 as
+- `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.5-local-development-scope.md` names Pal Metadata v0.5 as
   a local no-code development scope.
 - `docs/00-overview/pal-metadata-v0.5-upgrade-path.md` exists.
 - R101 integration notes and validation records exist.

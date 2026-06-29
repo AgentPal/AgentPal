@@ -6,7 +6,7 @@ Current local completion evidence:
 
 - `release/current/v0.4-local-completion-report.md`
 - `release/current/v0.4-local-completion-evidence-index.md`
-- `docs/08-release-and-maintenance/v0.4-local-completion-summary.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-and-maintenance/v0.4-local-completion-summary.md`
 
 These files describe local v0.4 worktree completion only. They are not a GitHub Release, tag, or remote publication record.
 

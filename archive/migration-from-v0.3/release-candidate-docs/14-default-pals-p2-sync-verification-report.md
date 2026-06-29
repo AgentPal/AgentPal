@@ -20,8 +20,8 @@ Modified JSON:
 
 Added Markdown:
 
-- `docs/08-release-candidate/13-default-pals-p2-sync-plan.md`
-- `docs/08-release-candidate/14-default-pals-p2-sync-verification-report.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/13-default-pals-p2-sync-plan.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/14-default-pals-p2-sync-verification-report.md`
 - `pals/PalSmith-pal-governor/research/source-inventory.md`
 - `pals/PalSmith-pal-governor/research/source-coverage-matrix.md`
 
@@ -144,8 +144,8 @@ This is the known documentation-resource path. R11 did not add a tool implementa
 - `pals/Morgan-document/pal.json`
 - `pals/Harper-writing/pal.json`
 - `pals/Nova-product/pal.json`
-- `docs/08-release-candidate/13-default-pals-p2-sync-plan.md`
-- `docs/08-release-candidate/14-default-pals-p2-sync-verification-report.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/13-default-pals-p2-sync-plan.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/14-default-pals-p2-sync-verification-report.md`
 - `pals/PalSmith-pal-governor/research/`
 
 No files were staged or committed.

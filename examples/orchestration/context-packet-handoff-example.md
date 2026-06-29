@@ -34,7 +34,7 @@ constraints:
   - "No publishing."
   - "No unverified pass."
 relevant_files:
-  - path: "docs/09-roadmap/v0.3-task-pool.md"
+  - path: "evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.3-task-pool.md"
     purpose: "public release planning context"
 can_read:
   - "release evidence summary"

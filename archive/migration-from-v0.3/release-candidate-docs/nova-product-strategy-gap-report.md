@@ -59,9 +59,9 @@ Allowed files:
 - `pals/Nova-product/pal.json`
 - `README.md`
 - `docs/README.md`
-- `docs/08-release-candidate/README.md`
-- `docs/08-release-candidate/nova-product-strategy-gap-report.md`
-- `docs/08-release-candidate/nova-self-health-report.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/README.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/nova-product-strategy-gap-report.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/nova-self-health-report.md`
 - `agentpal.json`
 - `contacts/pals.json`
 - `registry/pal.index.json`

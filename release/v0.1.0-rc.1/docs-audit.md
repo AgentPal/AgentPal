@@ -13,9 +13,9 @@ Primary files reviewed:
 - root release notes, GitHub release draft, release checklist, contribution guide, third-party notices, and `.gitignore`
 - `docs/03-pal-pack-standard/01-pal-pack-structure.md`
 - `docs/03-pal-pack-standard/11-public-private-boundary.md`
-- `docs/08-release-and-maintenance/00-release-process.md`
-- `docs/08-release-and-maintenance/01-release-checklist.md`
-- `docs/08-release-and-maintenance/02-public-safe-checklist.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-and-maintenance/00-release-process.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-and-maintenance/01-release-checklist.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-and-maintenance/02-public-safe-checklist.md`
 - `docs/99-reference/known-limitations.md`
 
 ## Checks Performed
@@ -31,9 +31,9 @@ Primary files reviewed:
 
 The release-facing docs now have a clear public-safe maintenance path:
 
-- [Release process](../../docs/08-release-and-maintenance/00-release-process.md)
-- [Release checklist](../../docs/08-release-and-maintenance/01-release-checklist.md)
-- [Public-safe checklist](../../docs/08-release-and-maintenance/02-public-safe-checklist.md)
+- [Release process](../../evals/palbench/v0.5/documentation/archive/docs/08-release-and-maintenance/00-release-process.md)
+- [Release checklist](../../evals/palbench/v0.5/documentation/archive/docs/08-release-and-maintenance/01-release-checklist.md)
+- [Public-safe checklist](../../evals/palbench/v0.5/documentation/archive/docs/08-release-and-maintenance/02-public-safe-checklist.md)
 - [Known limitations](../../docs/99-reference/known-limitations.md)
 
 The root docs and release notes checked during this pass are consistent with the v0.1.0-rc.1 boundary: Pal Workspace, Simple Pal Mode only, no active multi-agent runtime, no desktop app, no marketplace, and no active deep runtime adapters.

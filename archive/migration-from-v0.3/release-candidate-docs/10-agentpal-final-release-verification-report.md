@@ -13,7 +13,7 @@ Checked release-facing workspace assets:
 - root identity and initialization files: `README.md`, `AGENTS.md`, `PAL.md`, `SKILL.md`, and `agentpal.json`
 - contacts and registry: `contacts/pals.json` and `registry/pal.index.json`
 - release docs: `RELEASE_NOTES.md`, `CHANGELOG.md`, `GITHUB_RELEASE_DRAFT.md`, `RELEASE_CHECKLIST.md`, `RELEASE_MANIFEST.md`, and `release/v0.1.0-rc.1/release-notes-draft.md`
-- release candidate docs under `docs/08-release-candidate/`
+- release candidate docs under `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/`
 - official Pal reference: `docs/99-reference/official-pals.md`
 - PalSmith public docs, Pal Pack files, task package templates, examples, Markdown evals, and PalSmith delegation / handoff note
 - local Git evidence for tag, remote, tracked changes, untracked files, and ignored runtime output directories

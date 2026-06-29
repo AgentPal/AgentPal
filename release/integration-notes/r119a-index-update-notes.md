@@ -36,7 +36,7 @@ Suggested surfaces, if separately approved:
 - `RESOURCE_INDEX.md`
 - `README.md`
 - `README.zh-CN.md`
-- `docs/09-roadmap/v0.5-local-development-scope.md`
+- `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.5-local-development-scope.md`
 
 ## Boundary Confirmed
 

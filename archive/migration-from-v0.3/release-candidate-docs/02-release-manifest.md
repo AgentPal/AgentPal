@@ -36,7 +36,7 @@ This page gives a public-readable manifest for v0.1.0-rc.1. The root [Release Ma
 - `release/v0.1.0-rc.1/pal-pack-audit.md`
 - `release/v0.1.0-rc.1/public-safe-audit.md`
 - `release/v0.1.0-rc.1/release-notes-draft.md`
-- `docs/06-validation-and-evidence/01-palbench-small-sample-report.md`
+- `evals/palbench/v0.5/documentation/archive/docs/06-validation-and-evidence/01-palbench-small-sample-report.md`
 
 ## Publication State
 

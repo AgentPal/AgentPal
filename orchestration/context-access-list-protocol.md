@@ -101,7 +101,7 @@ Synthetic access list:
 
 - `recipient_id`: `Quinn-quality`
 - `task`: recheck whether an R30 Claude Code project binding test passed
-- `can_read_paths`: `reports/R30-ClaudeCode-binding-report.md`, `evals/claude-code-one-prompt-install-self-test.md`, `docs/10-using-agentpal-with-claude-code.md`
+- `can_read_paths`: `reports/R30-ClaudeCode-binding-report.md`, `evals/claude-code-one-prompt-install-self-test.md`, `docs/04-runtime-guides/02-use-with-claude-code.md`
 - `can_read_summaries`: recent project-binding memory summary, if public-safe
 - `cannot_read`: private user memory, unrelated Pal persona files, unauthorized external directories, raw local credentials, all project files
 - `need_output`: pass/fail, failure points, evidence gaps, files requiring rework

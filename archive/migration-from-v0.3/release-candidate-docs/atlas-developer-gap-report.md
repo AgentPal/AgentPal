@@ -168,7 +168,7 @@ Upgrade Atlas into AgentPal's official Developer / Implementation Lead Pal with 
 - `pals/Atlas-developer/**`
 - `README.md`
 - `docs/README.md`
-- `docs/08-release-candidate/atlas-developer-gap-report.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/atlas-developer-gap-report.md`
 - `agentpal.json`
 - `registry/pal.index.json`
 - `contacts/pals.json`

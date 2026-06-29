@@ -73,7 +73,7 @@ Suggested include buckets:
 - `registry/`
 - `docs/03-pal-pack-standard/`
 - `docs/07-authoring-pals/`
-- `docs/08-release-candidate/`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/`
 - `docs/99-reference/`
 - `release/v0.1.0-rc.1/`
 - 9 official `pals/` directories

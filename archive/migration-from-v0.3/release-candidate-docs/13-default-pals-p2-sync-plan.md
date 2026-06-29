@@ -28,7 +28,7 @@ This round may edit official Markdown and JSON assets only:
 - `pals/Nova-product/pal.json`
 - `pals/PalSmith-pal-governor/research/source-inventory.md`
 - `pals/PalSmith-pal-governor/research/source-coverage-matrix.md`
-- `docs/08-release-candidate/14-default-pals-p2-sync-verification-report.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/14-default-pals-p2-sync-verification-report.md`
 
 ## Out Of Scope
 
@@ -64,7 +64,7 @@ Do not copy:
 - internal test-only `_test*` Pal directories
 - internal test-only `Mary-design` Pal directory
 - test-only contacts or registry entries
-- `docs/08-release-candidate/test-reports/all-pals-functional-depth/` as official release content
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/test-reports/all-pals-functional-depth/` as official release content
 - temporary simulation outputs
 
 ## Acceptance Criteria

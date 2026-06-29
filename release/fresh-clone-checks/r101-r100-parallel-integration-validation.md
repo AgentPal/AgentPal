@@ -32,7 +32,7 @@ Result summary:
 - modified user guides / roadmap:
   `docs/03-user-guides/official-pal-asset-upgrade-plan.md`,
   `docs/03-user-guides/palsmith-v0.5-pal-creation-and-upgrade.md`,
-  `docs/09-roadmap/v0.5-local-development-scope.md`
+  `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.5-local-development-scope.md`
 - new R101 public files:
   `docs/00-overview/pal-metadata-v0.5-upgrade-path.md`,
   `evals/palbench/pal-asset/r101-pal-metadata-v0.5-integration-boundary.md`,

@@ -54,7 +54,7 @@ can_read_paths:
     reason: reported regression result
   - path: evals/claude-code-one-prompt-install-self-test.md
     reason: expected install behavior
-  - path: docs/10-using-agentpal-with-claude-code.md
+  - path: docs/04-runtime-guides/02-use-with-claude-code.md
     reason: public user-facing binding guidance
 can_read_summaries:
   - summary_id: project-binding-public-safe-summary

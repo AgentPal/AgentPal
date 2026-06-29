@@ -55,8 +55,8 @@ Allowed files:
 - `pals/Harper-writing/pal.json`
 - `README.md`
 - `docs/README.md`
-- `docs/08-release-candidate/harper-writing-content-gap-report.md`
-- `docs/08-release-candidate/harper-self-health-report.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/harper-writing-content-gap-report.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/harper-self-health-report.md`
 - `agentpal.json`
 - `contacts/pals.json`
 - `registry/pal.index.json`

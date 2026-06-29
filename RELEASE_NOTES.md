@@ -53,9 +53,9 @@ Deep Conductor in v0.3.0-rc.1 is a no-code orchestration protocol and task-packa
 
 1. Open the AgentPal Workspace in a Markdown/JSON-capable host Runtime.
 2. Start from `docs/README.md` or `RESOURCE_INDEX.md`.
-3. For v0.3 concepts, read `docs/09-roadmap/v0.3-public-capability-summary.md`.
+3. For v0.3 concepts, read `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.3-public-capability-summary.md`.
 4. For Deep Conductor, read `docs/05-orchestration-methodology/deep-conductor-e2e-usage-guide.md`.
-5. For release evidence, read `docs/09-roadmap/v0.3-deep-conductor-readiness.md` and `evals/v0.3-integration/v0.3-deep-conductor-integration-test-matrix.md`.
+5. For release evidence, read `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.3-deep-conductor-readiness.md` and `evals/v0.3-integration/v0.3-deep-conductor-integration-test-matrix.md`.
 6. Use the host Runtime to perform any real execution and report evidence.
 
 ## Known Limitations

@@ -34,8 +34,8 @@ Upgrade Morgan into AgentPal's official Document / File Workflow Lead Pal while 
 ### Allowed edit scope
 
 - `pals/Morgan-document/**`
-- `docs/08-release-candidate/morgan-document-workflow-gap-report.md`
-- `docs/08-release-candidate/morgan-self-health-report.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/morgan-document-workflow-gap-report.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/morgan-self-health-report.md`
 - `README.md`
 - `docs/README.md`
 - `agentpal.json`

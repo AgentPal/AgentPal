@@ -1,6 +1,6 @@
 # Quick Start
 
-Use this path when you want to try AgentPal v0.1.0-rc.1 in Codex, Claude Code, or another Markdown/JSON-capable runtime.
+Use this path when you want to try AgentPal v0.5 in Codex.
 
 For real user projects in Claude Code or generic CLI Agents, prefer the project-first workflow:
 
@@ -41,7 +41,7 @@ AgentPal initialization does not require Python, Node.js, Rust, Go, a desktop ap
 - [Install or download](01-install-or-download.md)
 - [Use with Codex](02-open-in-codex.md)
 - [Use with Claude Code](03-open-in-claude-code.md)
-- [Claude Code project install](../10-using-agentpal-with-claude-code.md)
-- [Generic CLI Agent project install](../11-using-agentpal-with-cli-agents.md)
+- [Claude Code project install](../04-runtime-guides/02-use-with-claude-code.md)
+- [Generic CLI Agent project install](../04-runtime-guides/03-use-with-generic-cli-agent.md)
 - [Initialize AgentPal](04-initialize-agentpal.md)
 - [Call your first Pal](05-call-your-first-pal.md)

@@ -11,7 +11,7 @@ This validation does not record GitHub sync, tag creation, GitHub Release creati
 | Check | Result | Evidence |
 | --- | --- | --- |
 | Actual working directory | pass | `J:\开发\AgentPal`. |
-| v0.5 scope exists | pass | `docs/09-roadmap/v0.5-local-development-scope.md`. |
+| v0.5 scope exists | pass | `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.5-local-development-scope.md`. |
 | Org Pack standard exists | pass | `standards/org-pack/org-pack-standard.md`. |
 | Base Org Pack template exists | pass | `templates/org-pack/base-org-pack/`. |
 | Base Org Pack example exists | pass | `examples/org-packs/base-agentpal-org-pack/`. |
@@ -36,7 +36,7 @@ This validation does not record GitHub sync, tag creation, GitHub Release creati
 
 | Path | Status |
 | --- | --- |
-| `docs/09-roadmap/v0.5-local-development-scope.md` | present |
+| `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.5-local-development-scope.md` | present |
 | `standards/org-pack/org-pack-standard.md` | present |
 | `templates/org-pack/base-org-pack/README.md` | present |
 | `templates/org-pack/base-org-pack/ORG.md` | present |

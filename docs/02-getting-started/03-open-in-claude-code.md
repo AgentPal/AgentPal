@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This document explains the basic Claude Code path for AgentPal v0.1.0-rc.1.
+This document points to the current Claude Code compatibility path for AgentPal v0.5.
 
 ## Recommended Project Path
 
@@ -36,4 +36,4 @@ Opening the AgentPal directory directly is still useful for maintaining AgentPal
 - [Quick start](00-quick-start.md)
 - [Initialize AgentPal](04-initialize-agentpal.md)
 - [Runtime compatibility](../04-runtime-guides/00-runtime-compatibility.md)
-- [Claude Code project install](../10-using-agentpal-with-claude-code.md)
+- [Claude Code project install](../04-runtime-guides/02-use-with-claude-code.md)

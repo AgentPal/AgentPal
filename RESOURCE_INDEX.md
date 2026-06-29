@@ -56,8 +56,8 @@ Use:
 | `release/current/v0.5-fresh-clone-usability-checklist.md` | v0.5 fresh-clone usability checklist | onboarding validation |
 | `release/current/v0.4-local-completion-report.md` | v0.4 local completion report | local completion review; not remote release proof |
 | `release/current/v0.4-local-completion-evidence-index.md` | v0.4 local completion evidence index | evidence lookup for local completion |
-| `docs/08-release-and-maintenance/v0.4-local-completion-summary.md` | user-facing v0.4 local completion summary | contributor and user orientation |
-| `docs/09-roadmap/v0.5-local-development-scope.md` | v0.5 local development scope freeze | v0.5 planning and boundary checks |
+| `evals/palbench/v0.5/documentation/archive/docs/08-release-and-maintenance/v0.4-local-completion-summary.md` | archived v0.4 local completion summary | evidence/history lookup |
+| `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.5-local-development-scope.md` | archived v0.5 local development scope freeze | evidence/history lookup |
 | `standards/org-pack/org-pack-standard.md` | Org Pack standard | reusable no-code organization package work |
 | `templates/org-pack/base-org-pack/` | base Org Pack template | creating public-safe reusable organization packages |
 | `examples/org-packs/base-agentpal-org-pack/` | public-safe base Org Pack example | examples and Org Pack boundary checks |
@@ -171,25 +171,25 @@ Use:
 | `docs/` | user documentation and reference material | docs work or user questions |
 | `docs/01-concepts/07-why-pal.md` | why AgentPal uses the Pal concept between Skills and Agent teams | concept questions and onboarding |
 | `docs/05-orchestration-methodology/` | current AgentPal Pal orchestration methodology | methodology questions and docs navigation |
-| `docs/09-roadmap/` | v0.2 roadmap and task pool | v0.2 planning and development sequencing |
-| `docs/09-roadmap/v0.2-release-readiness.md` | v0.2 release readiness assessment | R46 first-phase integrated readiness and rc preparation recommendation |
-| `docs/09-roadmap/v0.2-public-capability-summary.md` | v0.2 public capability summary | restrained public claims for v0.2 first phase |
-| `docs/09-roadmap/no-code-future-boundary.md` | no-code future boundary | default v0.3/v0.4/v0.5 boundary: AgentPal remains Pal layer, not runtime program |
+| `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/` | archived roadmap and task pool docs | evidence/history lookup |
+| `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.2-release-readiness.md` | archived v0.2 release readiness assessment | evidence/history lookup |
+| `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.2-public-capability-summary.md` | archived v0.2 public capability summary | evidence/history lookup |
+| `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/no-code-future-boundary.md` | archived no-code future boundary | evidence/history lookup |
 | `docs/00-overview/capability-inventory-migration-plan.md` | capability/runtime/model/plugin migration plan | R77 high-risk reference directory planning |
 | `docs/00-overview/orchestration-migration-plan.md` | orchestration migration plan | R77 high-risk protocol surface planning |
 | `docs/00-overview/prompts-migration-plan.md` | prompts migration plan | R77 copyable prompt family planning |
-| `docs/09-roadmap/v0.3-development-plan.md` | v0.3 no-code orchestration prototype plan | Multi-Pal Collaboration, Deep Conductor prototype, Context Packet, Owner + Verifier, Plan -> Execute -> Verify, Parallel Review, and Routing Memory planning |
-| `docs/09-roadmap/v0.3-task-pool.md` | v0.3 execution task pool | P0/P1/P2 task packages for collaboration protocol work |
-| `docs/09-roadmap/v0.3-deep-conductor-readiness.md` | v0.3 Deep Conductor readiness | R63 readiness decision for entering v0.3.0-rc.1 release preparation |
-| `docs/09-roadmap/v0.3-public-capability-summary.md` | v0.3 public capability summary | public-safe current capability and forbidden claim summary |
-| `docs/09-roadmap/v0.3-release-checklist.md` | v0.3 release preparation checklist | checks before tag, push, or GitHub Release work |
-| `docs/09-roadmap/v0.3-release-preparation-audit.md` | v0.3 release preparation audit | R64 release-facing package audit before tag / push / release work |
+| `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.3-development-plan.md` | archived v0.3 no-code orchestration prototype plan | evidence/history lookup |
+| `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.3-task-pool.md` | archived v0.3 execution task pool | evidence/history lookup |
+| `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.3-deep-conductor-readiness.md` | archived v0.3 Deep Conductor readiness | evidence/history lookup |
+| `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.3-public-capability-summary.md` | archived v0.3 public capability summary | evidence/history lookup |
+| `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.3-release-checklist.md` | archived v0.3 release preparation checklist | evidence/history lookup |
+| `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.3-release-preparation-audit.md` | archived v0.3 release preparation audit | evidence/history lookup |
 | `evals/v0.3-integration/v0.3-deep-conductor-integration-test-matrix.md` | v0.3 Deep Conductor integration matrix | integrated pass / partial / unavailable readiness matrix |
 | `docs/05-orchestration-methodology/deep-conductor-master-goal.md` | Deep Conductor master goal | no-code 12-step conductor loop and executor boundary |
 | `docs/05-orchestration-methodology/deep-conductor-master-loop-usage-guide.md` | Deep Conductor master loop usage guide | project goal to task map, Runtime packages, verification, synthesis, and memory writeback |
 | `docs/05-orchestration-methodology/deep-conductor-e2e-usage-guide.md` | Deep Conductor E2E usage guide | full no-code loop from goal through memory, capability, context budget, topology, Runtime Skill-aware packages, verification, synthesis, routing memory, and next-round recommendation |
-| `docs/research/deep-conductor-real-runtime-replay-gap-analysis.md` | Deep Conductor real replay gap analysis | R61 real host replay pass / partial / unavailable / fail classification and R62 repair targets |
-| `docs/research/deep-conductor-real-runtime-replay-report.md` | Deep Conductor real Runtime replay report | R61 manual host Runtime replay report and boundary evidence |
+| `evals/palbench/v0.5/documentation/archive/docs/research/deep-conductor-real-runtime-replay-gap-analysis.md` | archived Deep Conductor real replay gap analysis | evidence/history lookup |
+| `evals/palbench/v0.5/documentation/archive/docs/research/deep-conductor-real-runtime-replay-report.md` | archived Deep Conductor real Runtime replay report | evidence/history lookup |
 | `docs/05-orchestration-methodology/cross-runtime-pal-memory.md` | Cross-Runtime Pal Memory usage guide | no-code continuity across Codex, Claude Code, generic CLI, and other host Runtimes |
 | `docs/05-orchestration-methodology/runtime-installed-skill-orchestration-guide.md` | Runtime-installed Skill Orchestration guide | no-code Runtime Skill candidate selection, availability checks, fallback, verification, and usage memory |
 | `docs/05-orchestration-methodology/token-cost-aware-deep-conductor.md` | Token / Cost-aware Deep Conductor guide | no-code Context Budget, read tier, prompt shaping, verification cost, and usage report guidance |
@@ -229,9 +229,9 @@ Use:
 | `evals/capability-inventory/` | Capability Inventory self-tests | R43 profile structure, loading budget, and no fixed route checks |
 | `examples/orchestration/capability-inventory-task-judgement-example.md` | Capability Inventory successful use example | profile-as-judgement-input example |
 | `examples/failures/capability-profile-used-as-fixed-route.md` | Capability Inventory failure example | profile-as-route regression example |
-| `docs/research/palbench-light-suite-plan.md` | PalBench Light suite plan | v0.2 R44 release regression suite design |
-| `docs/research/palbench-collaboration-suite-plan.md` | PalBench Collaboration suite plan | v0.3 qualitative regression suite for no-code multi-Pal collaboration |
-| `docs/research/palbench-collaboration-coverage-audit.md` | PalBench Collaboration coverage audit | R63 coverage audit for 87 v0.3 no-code regression cases |
+| `evals/palbench/v0.5/documentation/archive/docs/research/palbench-light-suite-plan.md` | archived PalBench Light suite plan | evidence/history lookup |
+| `evals/palbench/v0.5/documentation/archive/docs/research/palbench-collaboration-suite-plan.md` | archived PalBench Collaboration suite plan | evidence/history lookup |
+| `evals/palbench/v0.5/documentation/archive/docs/research/palbench-collaboration-coverage-audit.md` | archived PalBench Collaboration coverage audit | evidence/history lookup |
 | `evals/palbench-light/README.md` | PalBench Light eval entry | v0.2 release regression suite navigation |
 | `evals/palbench-light/task-index.md` | PalBench Light task index | R44 first 24 case index |
 | `evals/palbench-light/scoring-rubric.md` | PalBench Light scoring rubric | 0 / 1 / 2 release regression scoring |
@@ -242,14 +242,14 @@ Use:
 | `docs/04-runtime-guides/runtime-adapter-troubleshooting-prompt-cards.md` | Runtime Adapter troubleshooting cards | R45 copyable bounded troubleshooting prompts |
 | `docs/04-runtime-guides/upgrade-existing-binding-to-thin-binding.md` | existing binding upgrade runbook | R45 upgrade path for old copied bindings |
 | `evals/runtime-adapters/runtime-adapter-regression-suite.md` | Runtime Adapter regression suite | R45 12-scenario adapter regression checklist |
-| `docs/09-roadmap/v0.2-release-readiness.md` | v0.2 release readiness assessment | R46 integrated readiness conclusion |
-| `docs/09-roadmap/v0.2-public-capability-summary.md` | v0.2 public capability summary | public-safe capability summary |
+| `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.2-release-readiness.md` | v0.2 release readiness assessment | R46 integrated readiness conclusion |
+| `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.2-public-capability-summary.md` | v0.2 public capability summary | public-safe capability summary |
 | `evals/v0.2-integration/v0.2-integration-test-matrix.md` | v0.2 integration matrix | first-phase integration test matrix |
 | `docs/05-orchestration-methodology/11-pal-teams-and-deep-conductor.md` | Pal Team, runtime-layer agent execution, and future Deep Conductor boundaries | Pal Team and orchestration questions |
-| `docs/06-validation-and-evidence/` | current PalBench and evidence interpretation | validation, PalBench, and evidence questions |
-| `docs/08-release-candidate/README.md` | pointer to archived historical release-candidate documents | legacy release-candidate path questions |
+| `evals/palbench/v0.5/documentation/archive/docs/06-validation-and-evidence/` | archived PalBench and evidence interpretation docs | evidence/history lookup |
+| `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/README.md` | archived historical release-candidate pointer | evidence/history lookup |
 | `archive/migration-from-v0.3/release-candidate-docs/` | historical v0.3 release-candidate documents | historical traceability only |
-| `docs/research/` | archived research notes | historical traceability only; not a primary entry point |
+| `evals/palbench/v0.5/documentation/archive/docs/research/` | archived research notes | historical traceability only; not a primary entry point |
 | `examples/` | public-safe examples and failure examples | examples, evals, or regression checks |
 | `evals/` | self-tests and release checks | eval or release validation only |
 | `workspace/organization/memory/` | public-safe memory placeholders | not ordinary task context |
@@ -477,10 +477,10 @@ Use the current docs directories as the public entry points. Archived research n
 | `release/fresh-clone-checks/r95-v0.4-full-regression-validation.md` | R95 full regression validation record |
 | `release/current/v0.4-local-completion-report.md` | R96 v0.4 local completion report |
 | `release/current/v0.4-local-completion-evidence-index.md` | R96 v0.4 local completion evidence index |
-| `docs/08-release-and-maintenance/v0.4-local-completion-summary.md` | R96 user-facing v0.4 local completion summary |
+| `evals/palbench/v0.5/documentation/archive/docs/08-release-and-maintenance/v0.4-local-completion-summary.md` | R96 user-facing v0.4 local completion summary |
 | `evals/palbench/v0.4/r96-v0.4-completion-evidence-review.md` | R96 evidence review for v0.4 local completion |
 | `release/fresh-clone-checks/r96-v0.4-local-completion-validation.md` | R96 local completion validation record |
-| `docs/09-roadmap/v0.5-local-development-scope.md` | R97 v0.5 local development scope and no-code boundary freeze |
+| `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.5-local-development-scope.md` | R97 v0.5 local development scope and no-code boundary freeze |
 | `standards/org-pack/org-pack-standard.md` | R97 Org Pack standard |
 | `templates/org-pack/base-org-pack/` | R97 base Org Pack template |
 | `examples/org-packs/base-agentpal-org-pack/` | R97 public-safe base AgentPal Org Pack example |
@@ -860,22 +860,22 @@ Use the current docs directories as the public entry points. Archived research n
 | `docs/05-orchestration-methodology/deep-conductor-master-goal.md` | Deep Conductor master goal and no-code 12-step loop |
 | `docs/05-orchestration-methodology/deep-conductor-master-loop-usage-guide.md` | Deep Conductor usage guide for project-level no-code coordination |
 | `docs/05-orchestration-methodology/deep-conductor-e2e-usage-guide.md` | Deep Conductor E2E usage guide for integrated no-code project-level closure |
-| `docs/09-roadmap/v0.3-deep-conductor-readiness.md` | v0.3 Deep Conductor readiness assessment for rc.1 preparation |
-| `docs/09-roadmap/v0.3-public-capability-summary.md` | public-safe v0.3 capability summary |
-| `docs/09-roadmap/v0.3-release-checklist.md` | v0.3 release preparation checklist |
-| `docs/09-roadmap/v0.3-release-preparation-audit.md` | R64 release preparation audit |
+| `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.3-deep-conductor-readiness.md` | v0.3 Deep Conductor readiness assessment for rc.1 preparation |
+| `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.3-public-capability-summary.md` | public-safe v0.3 capability summary |
+| `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.3-release-checklist.md` | v0.3 release preparation checklist |
+| `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.3-release-preparation-audit.md` | R64 release preparation audit |
 | `evals/v0.3-integration/v0.3-deep-conductor-integration-test-matrix.md` | v0.3 integration readiness matrix |
 | `docs/05-orchestration-methodology/cross-runtime-pal-memory.md` | Cross-Runtime Pal Memory guide for preserving Pal/project/routing continuity across host Runtimes |
 | `docs/05-orchestration-methodology/token-cost-aware-deep-conductor.md` | Token / Cost-aware Deep Conductor guide for qualitative Context Budget planning |
 | `docs/05-orchestration-methodology/00-methodology-overview.md` | current methodology overview |
 | `docs/05-orchestration-methodology/11-pal-teams-and-deep-conductor.md` | Pal Team and future Deep Conductor relationship |
-| `docs/06-validation-and-evidence/README.md` | current validation and PalBench entry |
-| `docs/06-validation-and-evidence/01-palbench-small-sample-report.md` | current R33 PalBench small-sample report |
-| `docs/06-validation-and-evidence/05-future-palbench-design.md` | current future PalBench design notes |
-| `docs/08-release-candidate/README.md` | historical release-candidate pointer |
+| `evals/palbench/v0.5/documentation/archive/docs/06-validation-and-evidence/README.md` | current validation and PalBench entry |
+| `evals/palbench/v0.5/documentation/archive/docs/06-validation-and-evidence/01-palbench-small-sample-report.md` | current R33 PalBench small-sample report |
+| `evals/palbench/v0.5/documentation/archive/docs/06-validation-and-evidence/05-future-palbench-design.md` | current future PalBench design notes |
+| `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/README.md` | historical release-candidate pointer |
 | `archive/migration-from-v0.3/release-candidate-docs/02-release-manifest.md` | historical release-candidate manifest |
-| `docs/research/README.md` | archive status note; not a primary docs entry |
-| `docs/research/archive/` | historical research notes retained for traceability |
+| `evals/palbench/v0.5/documentation/archive/docs/research/README.md` | archive status note; not a primary docs entry |
+| `evals/palbench/v0.5/documentation/archive/docs/research/archive/` | historical research notes retained for traceability |
 | `orchestration/fast-route-protocol.md` | current Simple Pal Mode clear-task handoff pattern |
 | `orchestration/deep-conductor-protocol.md` | no-code Deep Conductor complex-workflow pattern |
 | `orchestration/project-conductor-workflow.md` | project-level no-code conductor workflow |
@@ -996,8 +996,6 @@ Use the current docs directories as the public entry points. Archived research n
 
 ## Runtime Guides
 
-- `docs/10-using-agentpal-with-claude-code.md`
-- `docs/11-using-agentpal-with-cli-agents.md`
 - `docs/04-runtime-guides/runtime-adapter-stability-guide.md`
 - `docs/04-runtime-guides/runtime-adapter-troubleshooting-prompt-cards.md`
 - `docs/04-runtime-guides/upgrade-existing-binding-to-thin-binding.md`
@@ -1102,6 +1100,18 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/documentation/r162-readme-claim-guard.md` | R162 public README claim guard |
 | `release/fresh-clone-checks/r162-local-public-docs-validation.md` | R162 local public docs validation |
 | `release/integration-notes/r162-r163-docs-restructure-readiness-decision.md` | R162 to R163 docs restructure readiness decision |
+
+## R163 Docs Restructure Evidence
+
+| Path | Purpose |
+| --- | --- |
+| `evals/palbench/v0.5/documentation/archive/docs/` | R163 archived docs evidence/history tree moved out of the user docs path |
+| `evals/palbench/v0.5/documentation/r163-docs-directory-restructure-summary.md` | R163 docs restructure summary |
+| `evals/palbench/v0.5/documentation/r163-docs-move-manifest.md` | R163 docs move manifest |
+| `evals/palbench/v0.5/documentation/r163-docs-restructure-deletion-manifest.md` | R163 deletion manifest |
+| `evals/palbench/v0.5/documentation/r163-docs-link-and-claim-check.md` | R163 link and claim check |
+| `release/fresh-clone-checks/r163-local-docs-restructure-validation.md` | R163 local docs restructure validation |
+| `release/integration-notes/r163-r164-docs-content-rewrite-readiness-decision.md` | R163 to R164 docs content rewrite readiness decision |
 
 ## Do Not Load By Default
 

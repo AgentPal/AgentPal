@@ -73,7 +73,7 @@ validation.
 - `README.zh-CN.md`
 - `RESOURCE_INDEX.md`
 - `agentpal.json`
-- `docs/09-roadmap/v0.5-local-development-scope.md`
+- `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.5-local-development-scope.md`
 
 ## Remaining Gaps
 

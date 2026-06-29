@@ -28,17 +28,17 @@ Release-operation caveats remain:
 
 ## Reports Created
 
-- `docs/08-release-candidate/15-agentpal-release-review-baseline.md`
-- `docs/08-release-candidate/16-agentpal-commit-review-report.md`
-- `docs/08-release-candidate/17-default-pals-official-consistency-report.md`
-- `docs/08-release-candidate/18-no-code-boundary-release-review.md`
-- `docs/08-release-candidate/19-agentpal-release-review-final-report.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/15-agentpal-release-review-baseline.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/16-agentpal-commit-review-report.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/17-default-pals-official-consistency-report.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/18-no-code-boundary-release-review.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/19-agentpal-release-review-final-report.md`
 
 ## Release Docs Updated
 
 - `RELEASE_MANIFEST.md`
 - `RELEASE_CHECKLIST.md`
-- `docs/08-release-candidate/README.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/README.md`
 
 ## Final Local Verification Snapshot
 

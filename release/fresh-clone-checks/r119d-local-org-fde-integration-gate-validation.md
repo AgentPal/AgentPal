@@ -87,7 +87,7 @@ At final R119-D commit time, some R119-B FDE files were already staged by anothe
 - `private completion report outside the public repository`
 - `release/integration-notes/r118-pal-metadata-pause-and-org-pack-return-decision.md`
 - `release/integration-notes/r118-r119-readiness-decision.md`
-- `docs/09-roadmap/v0.5-local-development-scope.md`
+- `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.5-local-development-scope.md`
 - `standards/org-pack/org-pack-standard.md`
 - `standards/pal-asset/pal-asset-standard.md`
 

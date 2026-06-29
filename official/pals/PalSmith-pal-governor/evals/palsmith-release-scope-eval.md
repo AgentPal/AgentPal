@@ -23,8 +23,8 @@ This is a Markdown evaluation checklist, not a script.
 ## Documentation
 
 - `docs/03-pal-pack-standard/14-runtime-task-package.md` exists.
-- `docs/08-release-candidate/05-no-code-release-checklist.md` exists.
-- `docs/08-release-candidate/06-palsmith-release-scope-review.md` exists.
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/05-no-code-release-checklist.md` exists.
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/06-palsmith-release-scope-review.md` exists.
 - Task package templates have `templates/task-packages/README.md`.
 - Example task packages have `examples/task-packages/README.md`.
 - PalSmith delegation and handoff guidance has few-shot examples.

@@ -127,7 +127,7 @@ Not releaseable:
 
 R09 local checks to record:
 
-- Required file presence: all required R09 files exist; optional `docs/08-release-candidate/07-palsmith-release-notes.md` and `08-palsmith-final-release-checklist.md` do not exist because release notes are in `RELEASE_NOTES.md` and final checklist is in `05-no-code-release-checklist.md`.
+- Required file presence: all required R09 files exist; optional `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/07-palsmith-release-notes.md` and `08-palsmith-final-release-checklist.md` do not exist because release notes are in `RELEASE_NOTES.md` and final checklist is in `05-no-code-release-checklist.md`.
 - JSON parse: `agentpal.json`, `contacts/pals.json`, `registry/pal.index.json`, and `pals/PalSmith-pal-governor/pal.json` parse successfully.
 - Registration consistency: id/path/direct call/no-code fields are aligned across AgentPal manifest, registry, contacts, and PalSmith `pal.json`.
 - Forbidden file check: no forbidden code or package files found outside `.git/`.

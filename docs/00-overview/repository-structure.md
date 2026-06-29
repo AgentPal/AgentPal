@@ -116,7 +116,7 @@ Current Org Pack foundations:
 
 | Path | Role |
 | --- | --- |
-| `docs/09-roadmap/v0.5-local-development-scope.md` | v0.5 local development scope and boundary freeze. |
+| `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.5-local-development-scope.md` | v0.5 local development scope and boundary freeze. |
 | `standards/org-pack/org-pack-standard.md` | Org Pack standard. |
 | `templates/org-pack/base-org-pack/` | Minimal reusable Org Pack template. |
 | `examples/org-packs/base-agentpal-org-pack/` | Public-safe Org Pack example. |

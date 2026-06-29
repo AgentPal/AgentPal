@@ -42,13 +42,13 @@ Docs entry points:
 - `docs/03-pal-pack-standard/14-runtime-task-package.md`
 - `docs/07-authoring-pals/12-use-palsmith.md`
 - `docs/07-authoring-pals/13-palsmith-end-to-end-workflows.md`
-- `docs/08-release-candidate/05-no-code-release-checklist.md`
-- `docs/08-release-candidate/06-palsmith-release-scope-review.md`
-- `docs/08-release-candidate/11-palsmith-e2e-test-summary.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/05-no-code-release-checklist.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/06-palsmith-release-scope-review.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/11-palsmith-e2e-test-summary.md`
 - `docs/07-authoring-pals/14-palsmith-pal-lifecycle.md`
 - `docs/07-authoring-pals/15-palsmith-quickstart-ai-team.md`
 - `docs/07-authoring-pals/16-palsmith-demo-script.md`
-- `docs/08-release-candidate/12-palsmith-v0.4-regression-test-plan.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/12-palsmith-v0.4-regression-test-plan.md`
 - `pals/PalSmith-pal-governor/examples/ai-team-blueprints/README.md`
 - `pals/PalSmith-pal-governor/core/pal-readiness-matrix.md`
 - `pals/PalSmith-pal-governor/core/pal-quality-inspection-protocol.md`

@@ -41,7 +41,7 @@ It is not GitHub sync, not a tag, and not a GitHub Release.
 | `RESOURCE_INDEX.md` has Pal Asset / Org Pack Integration section | pass |
 | `agentpal.json` contains Pal Asset key paths and false boundary flags | pass |
 | `agentpal.json` contains PalSmith key paths and false boundary flags | pass |
-| `docs/09-roadmap/v0.5-local-development-scope.md` includes Pal Asset / PalSmith / Resolver scope | pass |
+| `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.5-local-development-scope.md` includes Pal Asset / PalSmith / Resolver scope | pass |
 
 ## New R99 Files
 

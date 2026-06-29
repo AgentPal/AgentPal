@@ -27,9 +27,9 @@ AgentPal does not automatically execute Deep Conductor packages, launch Subagent
 
 - Documentation home: `docs/README.md`
 - Resource index: `RESOURCE_INDEX.md`
-- Public v0.3 capability summary: `docs/09-roadmap/v0.3-public-capability-summary.md`
+- Public v0.3 capability summary: `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.3-public-capability-summary.md`
 - Deep Conductor E2E guide: `docs/05-orchestration-methodology/deep-conductor-e2e-usage-guide.md`
-- v0.3 readiness: `docs/09-roadmap/v0.3-deep-conductor-readiness.md`
+- v0.3 readiness: `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.3-deep-conductor-readiness.md`
 - v0.3 integration matrix: `evals/v0.3-integration/v0.3-deep-conductor-integration-test-matrix.md`
 - PalBench Collaboration: `evals/palbench-collaboration/README.md`
 

@@ -82,7 +82,7 @@ Include:
 - `CHANGELOG.md`
 - `GITHUB_RELEASE_DRAFT.md`
 - `release/v0.1.0-rc.1/release-notes-draft.md`
-- `docs/08-release-candidate/`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/`
 - `docs/99-reference/official-pals.md`
 
 ## Recommendation

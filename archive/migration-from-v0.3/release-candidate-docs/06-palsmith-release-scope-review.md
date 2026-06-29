@@ -74,7 +74,7 @@ Do not publish runtime-private or generated state as PalSmith release content:
 - `docs/03-pal-pack-standard/14-runtime-task-package.md`
 - `docs/07-authoring-pals/12-use-palsmith.md`
 - `docs/07-authoring-pals/13-palsmith-end-to-end-workflows.md`
-- `docs/08-release-candidate/05-no-code-release-checklist.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/05-no-code-release-checklist.md`
 - this release-scope review
 - `RELEASE_NOTES.md`
 - `CHANGELOG.md`

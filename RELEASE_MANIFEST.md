@@ -40,14 +40,14 @@ Core v0.3 assets:
 - `docs/05-orchestration-methodology/token-cost-aware-deep-conductor.md`
 - `orchestration/context-budget-protocol.md`
 - `docs/05-orchestration-methodology/cross-runtime-pal-memory.md`
-- `docs/research/deep-conductor-real-runtime-replay-report.md`
-- `docs/research/deep-conductor-real-runtime-replay-gap-analysis.md`
+- `evals/palbench/v0.5/documentation/archive/docs/research/deep-conductor-real-runtime-replay-report.md`
+- `evals/palbench/v0.5/documentation/archive/docs/research/deep-conductor-real-runtime-replay-gap-analysis.md`
 - `evals/palbench-collaboration/task-index.md`
 - `evals/v0.3-integration/v0.3-deep-conductor-integration-test-matrix.md`
-- `docs/09-roadmap/v0.3-deep-conductor-readiness.md`
-- `docs/09-roadmap/v0.3-public-capability-summary.md`
-- `docs/09-roadmap/v0.3-release-checklist.md`
-- `docs/09-roadmap/v0.3-release-preparation-audit.md`
+- `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.3-deep-conductor-readiness.md`
+- `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.3-public-capability-summary.md`
+- `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.3-release-checklist.md`
+- `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.3-release-preparation-audit.md`
 
 Not included:
 
@@ -177,24 +177,24 @@ R38 / R09 / R10 local checks:
 - Official Pal directory count: 9.
 - Contacts count: 9.
 - Registry count: 9.
-- PalSmith final verification report: `docs/08-release-candidate/09-palsmith-final-verification-report.md`.
-- AgentPal final release verification report: `docs/08-release-candidate/10-agentpal-final-release-verification-report.md`.
-- R11 default Pal P2 sync plan: `docs/08-release-candidate/13-default-pals-p2-sync-plan.md`.
-- R11 default Pal P2 sync verification report: `docs/08-release-candidate/14-default-pals-p2-sync-verification-report.md`.
-- R12 release review baseline: `docs/08-release-candidate/15-agentpal-release-review-baseline.md`.
-- R12 commit review report: `docs/08-release-candidate/16-agentpal-commit-review-report.md`.
-- R12 default Pal official consistency report: `docs/08-release-candidate/17-default-pals-official-consistency-report.md`.
-- R12 no-code boundary release review: `docs/08-release-candidate/18-no-code-boundary-release-review.md`.
-- R12 final release review report: `docs/08-release-candidate/19-agentpal-release-review-final-report.md`.
+- PalSmith final verification report: `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/09-palsmith-final-verification-report.md`.
+- AgentPal final release verification report: `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/10-agentpal-final-release-verification-report.md`.
+- R11 default Pal P2 sync plan: `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/13-default-pals-p2-sync-plan.md`.
+- R11 default Pal P2 sync verification report: `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/14-default-pals-p2-sync-verification-report.md`.
+- R12 release review baseline: `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/15-agentpal-release-review-baseline.md`.
+- R12 commit review report: `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/16-agentpal-commit-review-report.md`.
+- R12 default Pal official consistency report: `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/17-default-pals-official-consistency-report.md`.
+- R12 no-code boundary release review: `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/18-no-code-boundary-release-review.md`.
+- R12 final release review report: `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/19-agentpal-release-review-final-report.md`.
 - R13 formal Skill asset standard: `docs/03-pal-pack-standard/15-formal-skill-assets.md`.
-- R13 formal Skill assets audit: `docs/08-release-candidate/20-formal-skill-assets-audit.md`.
-- R13 formal Skill assets fix report: `docs/08-release-candidate/21-formal-skill-assets-fix-report.md`.
-- R13 official Pal field strategy decision: `docs/08-release-candidate/official-pal-field-strategy-decision.md`.
+- R13 formal Skill assets audit: `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/20-formal-skill-assets-audit.md`.
+- R13 formal Skill assets fix report: `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/21-formal-skill-assets-fix-report.md`.
+- R13 official Pal field strategy decision: `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/official-pal-field-strategy-decision.md`.
 - R13 official Pal formal Skill result: 219 listed formal Skills map to 219 actual assets under the Flat Skill Card / Directory Skill Package standard.
-- R14 dirty worktree stage review: `docs/08-release-candidate/22-dirty-worktree-stage-review.md`.
-- R14 commit grouping plan: `docs/08-release-candidate/23-commit-grouping-plan.md`.
-- R14 maintainer release handoff: `docs/08-release-candidate/24-maintainer-release-handoff.md`.
-- R14 final maintainer stage readiness report: `docs/08-release-candidate/25-final-maintainer-stage-readiness-report.md`.
+- R14 dirty worktree stage review: `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/22-dirty-worktree-stage-review.md`.
+- R14 commit grouping plan: `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/23-commit-grouping-plan.md`.
+- R14 maintainer release handoff: `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/24-maintainer-release-handoff.md`.
+- R14 final maintainer stage readiness report: `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/25-final-maintainer-stage-readiness-report.md`.
 - R14 handoff result: maintainer stage review yes, commit review yes, tag review yes after human decision, GitHub Release draft review yes, publish-ready no until maintainer performs Git and GitHub Release operations manually.
 - R10 official Pal consistency: `agentpal.json`, `workspace/organization/contacts/pals.json`, and `workspace/resources/registry/pal.index.json` each list 9 official bundled Pal Packs and include PalSmith as `palsmith-pal-governor`.
 - R10 JSON parse check passed for `agentpal.json`, `workspace/organization/contacts/pals.json`, `workspace/resources/registry/pal.index.json`, and all Pal `pal.json` files under `official/pals/`.

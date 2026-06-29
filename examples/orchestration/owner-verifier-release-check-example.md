@@ -64,7 +64,7 @@ evidence_to_check:
     expected_signal: "clean or honestly reported"
 allowed_files:
   - "release/"
-  - "docs/08-release-candidate/"
+  - "evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/"
 cannot_read:
   - private_user_memory
   - secrets

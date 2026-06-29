@@ -47,7 +47,7 @@ Core release assets:
 - workspace metadata: `agentpal.json`
 - contacts and registry: `contacts/pals.json`, `registry/pal.index.json`
 - release note draft: `release/v0.1.0-rc.1/release-notes-draft.md`
-- public docs under `docs/03-pal-pack-standard/`, `docs/07-authoring-pals/`, `docs/08-release-candidate/`, and `docs/99-reference/`
+- public docs under `docs/03-pal-pack-standard/`, `docs/07-authoring-pals/`, `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/`, and `docs/99-reference/`
 - 9 official bundled Pal directories:
   - `pals/Mira-main/`
   - `pals/PalSmith-pal-governor/`
@@ -62,14 +62,14 @@ Core release assets:
 R13/R14-specific include:
 
 - `docs/03-pal-pack-standard/15-formal-skill-assets.md`
-- `docs/08-release-candidate/20-formal-skill-assets-audit.md`
-- `docs/08-release-candidate/21-formal-skill-assets-fix-report.md`
-- `docs/08-release-candidate/official-pal-field-strategy-decision.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/20-formal-skill-assets-audit.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/21-formal-skill-assets-fix-report.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/official-pal-field-strategy-decision.md`
 - all 9 `skills/skill-asset-map.md` files
-- `docs/08-release-candidate/22-dirty-worktree-stage-review.md`
-- `docs/08-release-candidate/23-commit-grouping-plan.md`
-- `docs/08-release-candidate/24-maintainer-release-handoff.md`
-- `docs/08-release-candidate/25-final-maintainer-stage-readiness-report.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/22-dirty-worktree-stage-review.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/23-commit-grouping-plan.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/24-maintainer-release-handoff.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/25-final-maintainer-stage-readiness-report.md`
 
 ## B. Include After Quick Maintainer Sweep
 
@@ -90,7 +90,7 @@ No dirty entries matched the current test-asset exclusion patterns:
 - `exports/_test*`
 - `snapshots/_test*`
 - `reports/_test*`
-- `docs/08-release-candidate/test-reports/*`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/test-reports/*`
 
 If such files appear before maintainer staging, exclude them unless the maintainer deliberately chooses a summary-only release evidence file.
 

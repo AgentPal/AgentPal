@@ -61,9 +61,9 @@ Edited release maintenance docs and release audit files passed whitespace valida
 
 During this audit pass, the release maintenance docs were expanded to make the public-safe boundary explicit:
 
-- `docs/08-release-and-maintenance/00-release-process.md`
-- `docs/08-release-and-maintenance/01-release-checklist.md`
-- `docs/08-release-and-maintenance/02-public-safe-checklist.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-and-maintenance/00-release-process.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-and-maintenance/01-release-checklist.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-and-maintenance/02-public-safe-checklist.md`
 - `docs/99-reference/known-limitations.md`
 
 Versioned release audit files were added under `release/v0.1.0-rc.1/`.

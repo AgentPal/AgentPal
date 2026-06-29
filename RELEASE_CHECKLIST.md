@@ -6,8 +6,8 @@ Use this checklist before publishing AgentPal v0.3.0-rc.1 as a public MIT GitHub
 
 Use this section before entering `v0.2.0-rc.1` tag / push / GitHub Release work. It supplements the v0.1 release checklist below and does not authorize tag, push, or release creation by itself.
 
-- [ ] `docs/09-roadmap/v0.2-release-readiness.md` recommends entering `v0.2.0-rc.1` release preparation.
-- [ ] `docs/09-roadmap/v0.2-public-capability-summary.md` states supported and unsupported v0.2 claims without presenting future design as current behavior.
+- [ ] `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.2-release-readiness.md` recommends entering `v0.2.0-rc.1` release preparation.
+- [ ] `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.2-public-capability-summary.md` states supported and unsupported v0.2 claims without presenting future design as current behavior.
 - [ ] `evals/v0.2-integration/v0.2-integration-test-matrix.md` records pass / candidate integrated readiness.
 - [ ] JSON parse check passes for `agentpal.json`, contacts, registry, Pal `pal.json`, templates, and capability profiles; `agentpal.json` uses version `v0.2.0-rc.1`.
 - [ ] no-runtime check confirms no scripts, package manifests, UI, installer, daemon, scanner, or validator were added.
@@ -30,12 +30,12 @@ Use this section before entering `v0.2.0-rc.1` tag / push / GitHub Release work.
 
 Use this section before entering `v0.3.0-rc.1` tag / push / GitHub Release work. It supplements the v0.1 and v0.2 checklists and does not authorize tag, push, or release creation by itself.
 
-- [ ] `docs/09-roadmap/v0.3-deep-conductor-readiness.md` recommends entering `v0.3.0-rc.1` release preparation.
+- [ ] `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.3-deep-conductor-readiness.md` recommends entering `v0.3.0-rc.1` release preparation.
 - [ ] `evals/v0.3-integration/v0.3-deep-conductor-integration-test-matrix.md` records `pass`, `partial`, `unavailable`, `blocked`, and `not-run` status honestly.
-- [ ] `docs/09-roadmap/v0.3-public-capability-summary.md` states allowed public claims and forbidden claims.
-- [ ] `docs/09-roadmap/v0.3-release-checklist.md` is complete.
-- [ ] `docs/09-roadmap/v0.3-release-preparation-audit.md` records the final release-prep audit.
-- [ ] `docs/research/palbench-collaboration-coverage-audit.md` confirms qualitative PalBench Collaboration coverage and states remaining gaps.
+- [ ] `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.3-public-capability-summary.md` states allowed public claims and forbidden claims.
+- [ ] `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.3-release-checklist.md` is complete.
+- [ ] `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/v0.3-release-preparation-audit.md` records the final release-prep audit.
+- [ ] `evals/palbench/v0.5/documentation/archive/docs/research/palbench-collaboration-coverage-audit.md` confirms qualitative PalBench Collaboration coverage and states remaining gaps.
 - [ ] `CHANGELOG.md`, `RELEASE_NOTES.md`, `RELEASE_MANIFEST.md`, and `GITHUB_RELEASE_DRAFT.md` have `v0.3.0-rc.1` release-candidate wording.
 - [ ] Deep Conductor remains documented as no-code coordination methodology, not an executor, scheduler, background workflow, CLI, scanner, validator, service, daemon, database, desktop app, web app, token meter, or cost calculator.
 - [ ] Runtime-installed Skill Orchestration remains host Runtime candidate handling with current availability evidence, fallback, verification, and usage-memory records; it is not described as AgentPal executing Skills.
@@ -95,19 +95,19 @@ Use this section before entering `v0.3.0-rc.1` tag / push / GitHub Release work.
 - [ ] PalSmith is registered as `palsmith-pal-governor` in `agentpal.json`, `workspace/resources/registry/pal.index.json`, and `workspace/organization/contacts/pals.json`.
 - [ ] PalSmith release docs link to `docs/PalSmith.md`, Runtime Task Package standard, import/export standard, end-to-end workflows, task package templates, examples, Markdown evals, no-code release checklist, and release-scope review.
 - [ ] PalSmith is documented as no-code Pal governance content, not a CLI, scanner, validator, installer, importer program, exporter program, UI, daemon, service, or runtime dependency.
-- [ ] PalSmith final verification report exists at `docs/08-release-candidate/09-palsmith-final-verification-report.md`.
-- [ ] AgentPal final release verification report exists at `docs/08-release-candidate/10-agentpal-final-release-verification-report.md`.
-- [ ] Default Pal P2 sync plan exists at `docs/08-release-candidate/13-default-pals-p2-sync-plan.md`.
-- [ ] Default Pal P2 sync verification report exists at `docs/08-release-candidate/14-default-pals-p2-sync-verification-report.md`.
-- [ ] R12 release / commit review reports exist at `docs/08-release-candidate/15-agentpal-release-review-baseline.md` through `docs/08-release-candidate/19-agentpal-release-review-final-report.md`.
-- [ ] R14 maintainer handoff reports exist at `docs/08-release-candidate/22-dirty-worktree-stage-review.md` through `docs/08-release-candidate/25-final-maintainer-stage-readiness-report.md`.
+- [ ] PalSmith final verification report exists at `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/09-palsmith-final-verification-report.md`.
+- [ ] AgentPal final release verification report exists at `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/10-agentpal-final-release-verification-report.md`.
+- [ ] Default Pal P2 sync plan exists at `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/13-default-pals-p2-sync-plan.md`.
+- [ ] Default Pal P2 sync verification report exists at `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/14-default-pals-p2-sync-verification-report.md`.
+- [ ] R12 release / commit review reports exist at `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/15-agentpal-release-review-baseline.md` through `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/19-agentpal-release-review-final-report.md`.
+- [ ] R14 maintainer handoff reports exist at `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/22-dirty-worktree-stage-review.md` through `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/25-final-maintainer-stage-readiness-report.md`.
 - [ ] Formal Skill asset standard exists at `docs/03-pal-pack-standard/15-formal-skill-assets.md`.
 - [ ] Each official Pal has `skills/skill-asset-map.md` or an equivalent formal skill map.
 - [ ] Flat Skill Cards are accepted when mapped, substantive, and named `skills/<formal-skill-id>.md`.
 - [ ] Directory Skill Packages are accepted when mapped and backed by `skills/<formal-skill-id>/SKILL.md` or `README.md`.
 - [ ] No formal Skill is represented only by `pal.json` or an index mention.
 - [ ] No empty Skill directories or empty README files were created to satisfy release checks.
-- [ ] Official Pal field strategy decision exists at `docs/08-release-candidate/official-pal-field-strategy-decision.md`.
+- [ ] Official Pal field strategy decision exists at `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/official-pal-field-strategy-decision.md`.
 
 ## Contacts And Registry
 
@@ -187,9 +187,9 @@ Use this section before entering `v0.3.0-rc.1` tag / push / GitHub Release work.
 - [ ] Confirm the intended remote URL is `https://github.com/AgentPal/AgentPal.git`.
 - [ ] Confirm whether existing local tags `v0.1.0-rc.1` and `v0.1.0-rc.2` are both intentional before creating, moving, or publishing any release tag.
 - [ ] Review the full dirty worktree and stage only maintainer-approved release content.
-- [ ] Review `docs/08-release-candidate/22-dirty-worktree-stage-review.md` before staging.
-- [ ] Choose single release commit or split commit plan from `docs/08-release-candidate/23-commit-grouping-plan.md`.
-- [ ] Review `docs/08-release-candidate/24-maintainer-release-handoff.md` before any tag or push.
+- [ ] Review `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/22-dirty-worktree-stage-review.md` before staging.
+- [ ] Choose single release commit or split commit plan from `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/23-commit-grouping-plan.md`.
+- [ ] Review `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/24-maintainer-release-handoff.md` before any tag or push.
 - [ ] Push the final release commit.
 - [ ] Push tag `v0.1.0-rc.1`.
 - [ ] Create the GitHub Release from tag `v0.1.0-rc.1`.

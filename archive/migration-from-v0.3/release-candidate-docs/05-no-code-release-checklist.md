@@ -13,8 +13,8 @@ Use this checklist before public release work that touches PalSmith, Pal import/
 - PalSmith direct call is `/pal PalSmith`.
 - `docs/PalSmith.md`, `docs/07-authoring-pals/12-use-palsmith.md`, and `docs/07-authoring-pals/13-palsmith-end-to-end-workflows.md` are linked from docs navigation.
 - `docs/03-pal-pack-standard/13-pal-import-export.md` and `docs/03-pal-pack-standard/14-runtime-task-package.md` are linked from docs navigation.
-- `docs/08-release-candidate/06-palsmith-release-scope-review.md` exists and records releaseable / not releaseable PalSmith content.
-- `docs/08-release-candidate/09-palsmith-final-verification-report.md` exists and records the R09 final verification result.
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/06-palsmith-release-scope-review.md` exists and records releaseable / not releaseable PalSmith content.
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/09-palsmith-final-verification-report.md` exists and records the R09 final verification result.
 - `RELEASE_NOTES.md`, `CHANGELOG.md`, and release candidate notes mention PalSmith as a no-code Pal asset governance Pal.
 - Task package template and example indexes exist at `pals/PalSmith-pal-governor/templates/task-packages/README.md` and `pals/PalSmith-pal-governor/examples/task-packages/README.md`.
 - `pals/PalSmith-pal-governor/evals/palsmith-release-scope-eval.md` is present as a Markdown eval, not a script.

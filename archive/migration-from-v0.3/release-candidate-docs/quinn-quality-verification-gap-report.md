@@ -159,8 +159,8 @@ Allowed read paths:
 
 Allowed write paths:
 - `pals/Quinn-quality/**`
-- `docs/08-release-candidate/quinn-quality-verification-gap-report.md`
-- `docs/08-release-candidate/quinn-self-health-report.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/quinn-quality-verification-gap-report.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/quinn-self-health-report.md`
 - `README.md`
 - `docs/README.md`
 - `agentpal.json`

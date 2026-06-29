@@ -22,7 +22,7 @@ Recommended maintainer review buckets:
 | Bucket | Suggested handling |
 | --- | --- |
 | Root release docs | Review as release-facing documentation changes. |
-| `docs/08-release-candidate/` | Review as release evidence and maintenance reports. |
+| `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/` | Review as release evidence and maintenance reports. |
 | `docs/03-pal-pack-standard/` and `docs/07-authoring-pals/` | Review as PalSmith / Pal authoring documentation. |
 | `agentpal.json`, `contacts/pals.json`, `registry/pal.index.json` | Review together as the official Pal registration surface. |
 | `pals/Mira-main` and specialist Pal assets | Review as official bundled Pal deepening and consistency work. |
@@ -58,9 +58,9 @@ No content-level P0/P1 blocker was found by the local release review. The correc
 R13 adds formal Skill asset release-readiness fixes:
 
 - `docs/03-pal-pack-standard/15-formal-skill-assets.md`
-- `docs/08-release-candidate/20-formal-skill-assets-audit.md`
-- `docs/08-release-candidate/21-formal-skill-assets-fix-report.md`
-- `docs/08-release-candidate/official-pal-field-strategy-decision.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/20-formal-skill-assets-audit.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/21-formal-skill-assets-fix-report.md`
+- `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/official-pal-field-strategy-decision.md`
 - 9 official Pal `skills/skill-asset-map.md` files
 - 9 official Pal skill index / README entries pointing to the map
 - PalSmith source lineage updates for the formal Skill asset standard

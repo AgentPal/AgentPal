@@ -71,7 +71,7 @@ PalSmith's formal skills for job fitness, content preservation, user-material in
 
 ## Official Field Strategy
 
-R13 adds `docs/08-release-candidate/official-pal-field-strategy-decision.md`.
+R13 adds `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/official-pal-field-strategy-decision.md`.
 
 Decision: for v0.1.0-rc.1, the official bundled Pal set is determined by `agentpal.json`, `registry/pal.index.json`, and `contacts/pals.json`. Individual Pal `pal.json` files may keep existing `official` metadata, but R13 does not perform broad schema churn.
 

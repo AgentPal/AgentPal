@@ -26,17 +26,17 @@
 | `docs/05-orchestration-methodology/` | 23 | rewrite_required | Keep methodology, but separate current no-code protocols from future/runtime claims. |
 | `docs/06-collaboration/` | 7 | keep_current | Keep as collaboration docs. |
 | `docs/06-palsmith/` | 2 | keep_current | Keep. |
-| `docs/06-validation-and-evidence/` | 7 | move_to_evidence_archive | Move away from first-entry user docs. |
+| `evals/palbench/v0.5/documentation/archive/docs/06-validation-and-evidence/` | 7 | move_to_evidence_archive | Move away from first-entry user docs. |
 | `docs/07-authoring-pals/` | 18 | keep_current | Keep as authoring docs. |
 | `docs/07-memory-and-learning/` | 6 | keep_current | Keep, with future privacy wording pass. |
 | `docs/07-official-pals/` | 2 | keep_current | Keep and align with 10-Pal current roster. |
-| `docs/08-release-and-maintenance/` | 7 | move_to_evidence_archive | Keep as maintenance/release evidence. |
-| `docs/08-release-candidate/` | 1 | move_to_evidence_archive | Archive or merge into release evidence. |
-| `docs/09-roadmap/` | 13 | move_to_evidence_archive | Keep as roadmap/history, not current behavior. |
+| `evals/palbench/v0.5/documentation/archive/docs/08-release-and-maintenance/` | 7 | move_to_evidence_archive | Keep as maintenance/release evidence. |
+| `evals/palbench/v0.5/documentation/archive/docs/08-release-candidate/` | 1 | move_to_evidence_archive | Archive or merge into release evidence. |
+| `evals/palbench/v0.5/documentation/archive/docs/09-roadmap/` | 13 | move_to_evidence_archive | Keep as roadmap/history, not current behavior. |
 | `docs/99-reference/` | 11 | rewrite_required | Rewrite or split reference vs historical compatibility. |
 | `docs/archive/` | 5 | move_to_evidence_archive | Keep as archive. |
 | `docs/` root files | 4 | rewrite_required | Normalize or move duplicate runtime docs. |
-| `docs/research/` | 6 | move_to_evidence_archive | Keep as research, not user-facing current docs. |
+| `evals/palbench/v0.5/documentation/archive/docs/research/` | 6 | move_to_evidence_archive | Keep as research, not user-facing current docs. |
 
 ## R162 Restructure Principle
 
