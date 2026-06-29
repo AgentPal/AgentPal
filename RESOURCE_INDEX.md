@@ -820,6 +820,11 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/behavior/r146-deep-conductor-e2e-behavior-issues.md` | R146 Deep Conductor / E2E behavior issue table |
 | `release/fresh-clone-checks/r146-local-deep-conductor-e2e-behavior-validation.md` | R146 local validation for Deep Conductor / E2E behavior tests |
 | `release/integration-notes/r146-r147-readiness-decision.md` | R146 readiness decision for R147 automatic test summary and fix decision |
+| `evals/palbench/v0.5/behavior/r147-auto-behavior-test-summary.md` | R147 automatic behavior test summary across R142-R146 |
+| `evals/palbench/v0.5/behavior/r147-auto-behavior-test-issue-rollup.md` | R147 automatic behavior test issue rollup and R148 input |
+| `release/integration-notes/r147-auto-test-fix-decision.md` | R147 decision on whether an R148 targeted fix round is required |
+| `release/fresh-clone-checks/r147-local-auto-test-summary-validation.md` | R147 local validation for automatic test summary and fix decision |
+| `release/integration-notes/r147-r149-readiness-decision.md` | R147 readiness decision for R149 manual test plan preparation |
 
 ## R101 Integration
 
