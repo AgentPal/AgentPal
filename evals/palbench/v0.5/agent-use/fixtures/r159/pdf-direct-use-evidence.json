@@ -1,0 +1,9 @@
+{
+  "directive_source": "user_directive",
+  "specified_skill": "pdf",
+  "direct_use_allowed": "yes",
+  "pages": 1,
+  "summary": "Public R158 PDF fixture states that the goal is local PDF verification without private data.",
+  "privacy_boundary": "public fixture only",
+  "result_status": "pass"
+}

@@ -1,0 +1,8 @@
+{
+  "directive_source": "workflow",
+  "specified_skill": "product-design:audit",
+  "source_screenshot": "evals/palbench/v0.5/agent-use/fixtures/r159/product-design-audit-source.png",
+  "direct_use_allowed": "yes",
+  "safety_gate_result": "pass public local screenshot",
+  "result_status": "pass"
+}

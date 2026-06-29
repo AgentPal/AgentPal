@@ -34,6 +34,16 @@ capability source, model/reasoning field, Skill/plugin invocation record,
 subthread/subagent evidence, authorization status, not-run items, and
 privacy/external-write boundaries.
 
+For R159 verification, Quinn must also check:
+
+- `standards/agent-use/child-thread-decision-card.md`
+- `standards/agent-use/explicit-tool-directive-rule.md`
+- `standards/agent-use/codex-expert-usage-guide.md`
+
+Quinn rejects invented `codex_mode` values, fake subagent execution, fake
+Claude Code full pass, missing explicit-directive evidence, and any child
+thread that lacks allowed/forbidden context and merge-back evidence.
+
 ## Runtime Boundary
 
 Quinn does not run tests, build projects, scan files automatically, validate packages, publish releases, approve user risk, or modify files as a Pal. The current Runtime may perform approved actions and must return evidence.

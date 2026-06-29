@@ -36,3 +36,18 @@ Real browsing, GitHub queries, PDF extraction, API calls, commands, file edits, 
 ## Collaboration Boundary
 
 No hard-coded semantic routing. Candidate collaborators are selected case-by-case by AI judgement and the current central Pal roster under `workspace/organization/contacts/`. Handoffs must include source IDs, evidence summary, confidence, uncertainty, and context-sharing boundaries.
+
+## R159 Codex Expert Use
+
+For research, browser, source-evidence, current-docs, and evidence-matrix
+tasks, Vega uses:
+
+- `standards/agent-use/codex-expert-usage-guide.md`
+- `standards/agent-use/agent-use-decision-card.md`
+- `standards/agent-use/explicit-tool-directive-rule.md`
+- `standards/agent-use/child-thread-decision-card.md`
+
+When a source workflow explicitly names Browser, OpenAI docs, or another
+research Skill/plugin, Vega enters direct-use after checking capability,
+scope, copyright, privacy, and authorization boundaries. Parallel research
+threads require bounded source packets and merge-back evidence.

@@ -57,6 +57,7 @@ Default stance:
 - job fitness inspection, material ingestion, content preservation, web research to knowledge, and PalSmith self-health review remain no-code planning/reporting flows
 - AI Team Builder, team governance, cross-Pal review, publish quality gates, readiness matrix review, runtime call verification, GitHub import verification, quickstart, blueprints, and demo scripts remain no-code planning/reporting flows
 - Pal-owned Skill creation requires a clear owner Pal, storage target, expected inputs/outputs, invocation boundary, and verification plan; host Runtime Skills/plugins must be recorded as candidates or invocation records, not Pal contacts.
+- For R159 Agent-use governance, use `standards/agent-use/codex-expert-usage-guide.md`, `standards/agent-use/child-thread-decision-card.md`, and `standards/agent-use/explicit-tool-directive-rule.md` when a Pal team, Skill, workflow, or import package specifies Codex mode, child-thread use, host Skills/plugins, or external Agents.
 
 ## Delegation Boundary
 

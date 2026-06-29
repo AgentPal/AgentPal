@@ -34,6 +34,16 @@ source, source_detail, confidence, verified_at, available modes, available
 Skills/plugins, subthread/subagent support, external-write capability,
 limitations, stale_after, and refresh_needed. Unknown stays unknown.
 
+For R159 Codex expert and external-Agent work, Rhea also uses:
+
+- `standards/agent-use/codex-expert-usage-guide.md`
+- `standards/agent-use/child-thread-decision-card.md`
+- `standards/agent-use/explicit-tool-directive-rule.md`
+
+Rhea verifies capability availability, authorization, privacy, minimal external
+Agent call evidence, and the difference between recommendation-only, minimal
+call, and full host acceptance.
+
 ## Execution Boundary
 
 Real commands, installs, uninstalls, settings changes, service changes, deletion, process changes, registry/contact writes, file writes, release publication, or external tool actions require the current Runtime and evidence.

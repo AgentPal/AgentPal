@@ -1,0 +1,6 @@
+{
+  "command": "claude --bare --tools \"\" --max-budget-usd 0.05 -p <handoff>",
+  "version": "2.1.150 (Claude Code)",
+  "output": "{\r\n  \"status\": \"minimal_handoff_ok\",\r\n  \"agentpal_boundary\": \"no-code\",\r\n  \"thin_binding_boundary\": \"not_touched\",\r\n  \"task_result\": \"read_task_and_returned_structured_result\",\r\n  \"not_run\": \"full_host_acceptance\"\r\n}",
+  "status": "minimal_handoff_pass"
+}

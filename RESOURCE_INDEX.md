@@ -1046,6 +1046,27 @@ Use the current docs directories as the public entry points. Archived research n
 | `release/fresh-clone-checks/r158-local-real-invocation-validation.md` | R158 local validation record |
 | `release/integration-notes/r158-r159-real-invocation-decision.md` | R158 to R159 decision record |
 
+## R159 Codex Subagent / External Agent / Explicit Tool Evidence
+
+| Path | Purpose |
+| --- | --- |
+| `standards/agent-use/child-thread-decision-card.md` | R159 child/background thread decision-card standard and enum compliance guard |
+| `templates/agent-use/child-thread-decision-card-template.md` | R159 child/background thread decision-card template |
+| `standards/agent-use/explicit-tool-directive-rule.md` | R159 explicit Skill/plugin/tool/external-agent directive rule |
+| `templates/agent-use/explicit-tool-directive-record-template.md` | R159 explicit directive record template |
+| `standards/agent-use/codex-expert-usage-guide.md` | R159 Codex expert usage guide for all official Pals |
+| `evals/palbench/v0.5/agent-use/r159-codex-subagent-external-agent-test-plan.md` | R159 bounded real-host test plan |
+| `evals/palbench/v0.5/agent-use/r159-codex-subagent-external-agent-results.md` | R159 14-case results for Codex child/background threads, subagent, external agents, and direct-use Skills |
+| `evals/palbench/v0.5/agent-use/r159-child-thread-decision-records.md` | R159 child/background thread and subagent decision records |
+| `evals/palbench/v0.5/agent-use/r159-explicit-tool-directive-records.md` | R159 explicit Skill/plugin/tool/external-agent directive records |
+| `evals/palbench/v0.5/agent-use/r159-claude-code-minimal-handoff-results.md` | R159 Claude Code minimal handoff result; not full host acceptance |
+| `evals/palbench/v0.5/agent-use/r159-each-pal-codex-expert-smoke-results.md` | R159 each-Pal Codex expert smoke results |
+| `evals/palbench/v0.5/agent-use/r159-agent-use-issues.md` | R159 issue list and non-blocking notes |
+| `evals/palbench/v0.5/agent-use/r159-next-optimization-backlog.md` | R159 to R160 evidence-tightening backlog |
+| `evals/palbench/v0.5/agent-use/fixtures/r159/` | R159 public-safe local fixture and evidence outputs |
+| `release/fresh-clone-checks/r159-local-codex-subagent-external-agent-validation.md` | R159 local validation record |
+| `release/integration-notes/r159-r160-agent-use-decision.md` | R159 to R160 decision record |
+
 ## Do Not Load By Default
 
 - all Pal Packs

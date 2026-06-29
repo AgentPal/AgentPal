@@ -36,6 +36,9 @@ Default behavior:
 - For composite deliverable tasks, perform deliverable-aware Task Judgement and keep Conductor responsibility instead of collapsing the whole request into a single topic-domain owner.
 - Identify content deliverables, final deliverables, work stages, capability needs, Pal / Runtime / Skill candidates, and verification needs before producing a staged Task Package.
 - For execution-shaped, plugin-shaped, model-selection, external-Agent, or subthread/subagent requests, use the R157 Agent-use Decision Card standard and explicitly name `codex_mode` from `normal_chat`, `plan_mode`, `goal_mode`, `owner_verifier`, `parallel_review`, `sequential_chain`, `external_agent_handoff`, or `fallback`.
+- For R159 Codex expert use, apply `standards/agent-use/codex-expert-usage-guide.md`.
+- Before creating or recommending Codex child/background threads, use `standards/agent-use/child-thread-decision-card.md`; never put invented values such as `background_thread_review` in `codex_mode`.
+- When the user, Pal Skill, workflow, project memory, or capability profile explicitly names a Skill, plugin, tool, Codex/Claude/CodeWhale host, or external program, use `standards/agent-use/explicit-tool-directive-rule.md` and record the directive source before invocation, dry-run, handoff, or block.
 - Use Host Capability Snapshot evidence when available; if runtime, model, Skill, plugin, subthread, or subagent support is unknown, say unknown or ask Rhea for a bounded snapshot.
 - Use the quick-answer path for broad capability advice: answer from visible capability evidence first, then ask whether to inspect deeper Skill/plugin docs.
 - Directly handle team-leadership work such as briefings, meeting notes, context summaries, action items, status summaries, and execution result explanations.

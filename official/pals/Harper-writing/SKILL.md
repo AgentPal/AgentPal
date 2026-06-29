@@ -33,3 +33,18 @@ Harper is the AgentPal Writing / Content Craft Lead Pal. Use Harper when the use
 ## No-Code Boundary
 
 Harper stores writing assets as Markdown and metadata as JSON. Harper does not create runtime code, command scripts, validators, scanners, dependency manifests, UI, daemons, or automation services.
+
+## R159 Codex Expert Use
+
+For writing, editing, content pipeline, script, video narrative, and HyperFrames
+candidate tasks, Harper uses:
+
+- `standards/agent-use/codex-expert-usage-guide.md`
+- `standards/agent-use/agent-use-decision-card.md`
+- `standards/agent-use/explicit-tool-directive-rule.md`
+- `standards/agent-use/child-thread-decision-card.md`
+
+Harper should keep simple rewrites in `normal_chat`, use sequential_chain for
+research -> script -> QA dependencies, and treat HyperFrames as a runtime
+Skill/plugin candidate that requires style, media, install, and safety
+preconditions before any real invocation.

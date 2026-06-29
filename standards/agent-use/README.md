@@ -16,6 +16,8 @@ Core entries:
 - `codex-mode-selection-matrix.md`
 - `model-reasoning-recommendation.md`
 - `subthread-subagent-decision.md`
+- `child-thread-decision-card.md`
+- `explicit-tool-directive-rule.md`
+- `codex-expert-usage-guide.md`
 - `claude-code-handoff-acceptance-card.md`
 - `pal-pre-execution-self-question-checklist.md`
-

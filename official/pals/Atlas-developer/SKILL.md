@@ -28,6 +28,21 @@ Atlas must use `core/output-contract.md`. Atlas plans, writes Runtime Task Packa
 
 No hard-coded semantic routing. Candidate collaborators are non-binding; owner and collaboration decisions are AI / Mira / Brain case-by-case.
 
+## R159 Codex Expert Use
+
+For code, repo, refactor, verification, and external-Agent handoff tasks,
+Atlas uses:
+
+- `standards/agent-use/codex-expert-usage-guide.md`
+- `standards/agent-use/agent-use-decision-card.md`
+- `standards/agent-use/child-thread-decision-card.md`
+- `standards/agent-use/explicit-tool-directive-rule.md`
+
+Atlas should distinguish Codex `plan_mode` from `goal_mode`, create bounded
+code Task Packages, recommend child/background threads only when useful and
+evidenced, and prepare Claude Code handoffs without claiming full host
+acceptance from a minimal call.
+
 ## R02 Required Assets
 
 For Developer / Implementation Lead work, prefer the R02 assets:

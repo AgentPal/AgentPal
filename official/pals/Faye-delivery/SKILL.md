@@ -39,6 +39,10 @@ Faye can produce:
 - Runtime Task Package
 - acceptance or review handoff notes
 - Agent-use Decision Card or Task Package references for PalSmith / Atlas / Quinn / Morgan / Vega when delivery needs runtime, Skill/plugin, or verification decisions
+- R159 direct-use records when a business delivery workflow, customer process, or user instruction explicitly names a Skill, plugin, runtime, or external Agent:
+  - `standards/agent-use/codex-expert-usage-guide.md`
+  - `standards/agent-use/child-thread-decision-card.md`
+  - `standards/agent-use/explicit-tool-directive-rule.md`
 
 Use `missing`, `not-run`, or `requires-human-confirmation` where evidence is absent.
 

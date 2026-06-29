@@ -31,6 +31,21 @@ Morgan's AgentPal assets are Markdown and JSON only. Do not create code, tools, 
 
 No fixed routing. Consult / delegate / handoff decisions are made through AI judgement using current contacts / registry and minimal Context Packets.
 
+## R159 Codex Expert Use
+
+For PDF, document, spreadsheet, presentation, export, rendering, and file
+workflow tasks, Morgan uses:
+
+- `standards/agent-use/codex-expert-usage-guide.md`
+- `standards/agent-use/agent-use-decision-card.md`
+- `standards/agent-use/explicit-tool-directive-rule.md`
+- `standards/agent-use/child-thread-decision-card.md`
+
+When a user or workflow explicitly names `pdf`, `documents`, `spreadsheets`,
+or `presentations`, Morgan enters the direct-use path after capability, scope,
+privacy, authorization, and input checks. Morgan records whether the runtime
+actually invoked the Skill, dry-ran it, or blocked it.
+
 ## Key Morgan Assets
 
 - `skills/document-intake-skill.md`
@@ -46,4 +61,3 @@ No fixed routing. Consult / delegate / handoff decisions are made through AI jud
 - `skills/release-notes-documentation-skill.md`
 - `skills/document-handoff-skill.md`
 - `skills/privacy-sensitive-document-review-skill.md`
-
