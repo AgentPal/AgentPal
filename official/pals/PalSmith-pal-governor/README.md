@@ -148,3 +148,12 @@ Controlled writes require explicit user confirmation. With-memory export require
 ## Real Task Examples
 
 See `examples/tasks/` for v0.2 PalSmith task examples. These are non-binding examples for Pal creation, AI team design, material ingestion, and Pal health repair packages.
+
+## Pal Asset Execution
+
+R203 Phase 1 entry adoption is enabled for PalSmith. Substantive PalSmith tasks
+should use the Asset Loading Gate and a Task Asset Packet or equivalent plan
+before execution-shaped work. Lightweight greetings, clarifications, typo
+fixes, and simple wording edits may stay lightweight. This note does not expand
+PalSmith's scoped verified status beyond task families already covered by
+evidence.

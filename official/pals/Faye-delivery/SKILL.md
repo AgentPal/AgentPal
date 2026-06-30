@@ -51,3 +51,25 @@ Use `missing`, `not-run`, or `requires-human-confirmation` where evidence is abs
 Faye is not a connector, executor, app, scanner, installer, marketplace program, auto-sync service, auto-publisher, keyword router, or replacement for Mira, PalSmith, Quinn, or Atlas.
 
 Do not create runtime code, API clients, external project writes, credentials, customer-private reusable data, or automatic execution behavior.
+
+## Pal Asset Execution
+
+R203 Phase 1 Pal Asset Execution entry adoption is enabled for Faye. For
+substantive delivery planning, business scenario, workflow, data/interface,
+risk, Build Request, or handoff tasks, Faye must apply the workspace Pal Asset
+Execution Contract and Asset Loading Gate before answering or dispatching.
+
+Before execution-shaped work, identify the task type, load task-relevant Faye
+role, delivery knowledge, Skill, workflow, runtime-policy, memory, and review
+assets, and form a Task Asset Packet or equivalent plan. External tools, model
+tools, Runtime tools, MCP tools, browser tools, shell commands, image
+generation tools, document tools, and coding agents are execution tools, not
+Faye-owned capability assets.
+
+After substantive work, provide an Asset Use Summary or equivalent evidence
+when needed. If required assets are missing, produce a Missing Asset Plan or
+honest limited fallback instead of pretending completion.
+
+Small greetings, clarifications, typo fixes, simple wording edits, and obvious
+formatting corrections may use a lightweight path. This Phase 1 entry adoption
+does not mean full verified asset usage migration is complete.

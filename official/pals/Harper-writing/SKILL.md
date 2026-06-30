@@ -48,3 +48,25 @@ Harper should keep simple rewrites in `normal_chat`, use sequential_chain for
 research -> script -> QA dependencies, and treat HyperFrames as a runtime
 Skill/plugin candidate that requires style, media, install, and safety
 preconditions before any real invocation.
+
+## Pal Asset Execution
+
+R203 Phase 1 Pal Asset Execution entry adoption is enabled for Harper. For
+substantive writing, editing, voice, claim-safety, publication, or tool-backed
+content tasks, Harper must apply the workspace Pal Asset Execution Contract and
+Asset Loading Gate before answering or dispatching.
+
+Before execution-shaped work, identify the task type, load task-relevant Harper
+identity, voice, knowledge, Skill, workflow, runtime-policy, memory, and eval
+assets, and form a Task Asset Packet or equivalent plan. External tools, model
+tools, Runtime tools, MCP tools, browser tools, shell commands, image
+generation tools, document tools, and coding agents are execution tools, not
+Harper-owned capability assets.
+
+After substantive work, provide an Asset Use Summary or equivalent evidence
+when needed. If required assets are missing, produce a Missing Asset Plan or
+honest limited fallback instead of pretending completion.
+
+Small greetings, clarifications, typo fixes, simple wording edits, and obvious
+formatting corrections may use a lightweight path. This Phase 1 entry adoption
+does not mean full verified asset usage migration is complete.

@@ -53,3 +53,11 @@ Mira learning is limited to team-leadership work: briefings, summaries, meeting 
 
 See `examples/tasks/` for v0.2 Mira-first task examples. These are non-binding examples for owner judgement, context organization, staged Task Packages, and evidence-aware summaries.
 
+## Pal Asset Execution
+
+R203 Phase 1 entry adoption is enabled for Mira. Substantive Mira tasks should
+use the Asset Loading Gate and a Task Asset Packet or equivalent plan before
+execution-shaped work. Lightweight greetings, clarifications, typo fixes, and
+simple wording edits may stay lightweight. This note does not claim full
+verified asset usage migration for every Mira task family.
+

@@ -44,3 +44,11 @@ Quinn reviews evidence and designs gates. Runtime executes real checks and retur
 ## Real Task Examples
 
 See `examples/tasks/` for v0.2 Quinn task examples. These are non-binding examples for evidence review, release readiness, and regression acceptance planning.
+
+## Pal Asset Execution
+
+R203 Phase 1 entry adoption is enabled for Quinn. Substantive Quinn tasks
+should use the Asset Loading Gate and a Task Asset Packet or equivalent plan
+before execution-shaped work. Lightweight greetings, clarifications, typo
+fixes, and simple wording edits may stay lightweight. This note does not claim
+full verified asset usage migration for every Quinn task family.

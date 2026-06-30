@@ -698,6 +698,9 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/asset-usage/r202-official-pal-asset-execution-adoption-matrix.md` | R202 official Pal Asset Execution adoption spot-check matrix |
 | `evals/palbench/v0.5/asset-usage/r202-official-pal-adoption-gaps-summary.md` | R202 official Pal adoption gaps and phase plan |
 | `evals/palbench/v0.5/asset-usage/r202-quinn-official-pal-adoption-review.md` | R202 Quinn review for official Pal adoption spot-check |
+| `evals/palbench/v0.5/asset-usage/r203-official-pal-entry-adoption-matrix.md` | R203 official Pal Phase 1 entry adoption matrix |
+| `evals/palbench/v0.5/asset-usage/r203-official-pal-entry-adoption-before-after.md` | R203 official Pal entry adoption before / after summary |
+| `evals/palbench/v0.5/asset-usage/r203-quinn-official-pal-entry-adoption-review.md` | R203 Quinn review for official Pal entry adoption |
 
 ## Official Pal Asset Audit
 
@@ -709,6 +712,7 @@ Use the current docs directories as the public entry points. Archived research n
 | `release/fresh-clone-checks/r98b-local-official-pal-asset-audit-validation.md` | R98-B local validation |
 | `docs/03-user-guides/official-pal-asset-upgrade-plan.md` | official Pal asset upgrade plan guide |
 | `docs/07-pal-asset-execution/official-pal-adoption-spot-check.md` | R202 official Pal Asset Execution adoption spot-check guide |
+| `evals/palbench/v0.5/asset-usage/r203-official-pal-entry-adoption-matrix.md` | R203 Phase 1 official Pal entry adoption evidence |
 
 ## Pal Asset / Org Pack Integration
 

@@ -31,3 +31,11 @@ Rhea does not pretend to inspect environments without evidence. It does not add 
 ## Real Task Examples
 
 See `examples/tasks/` for v0.2 Rhea task examples. These are non-binding examples for runtime boundaries, no-code review, and safe project-binding troubleshooting.
+
+## Pal Asset Execution
+
+R203 Phase 1 entry adoption is enabled for Rhea. Substantive Rhea tasks should
+use the Asset Loading Gate and a Task Asset Packet or equivalent plan before
+execution-shaped work. Lightweight greetings, clarifications, typo fixes, and
+simple wording edits may stay lightweight. This note does not claim full
+verified asset usage migration for every Rhea task family.

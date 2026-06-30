@@ -84,8 +84,25 @@ Phase 3: run one representative regression per official Pal task family.
 
 Phase 4: review readiness labels with scope-limited evidence.
 
+## R203 Phase 1 Entry Adoption
+
+R203 completed Phase 1 entry adoption across the 10 official bundled Pals by
+adding a concise Pal Asset Execution section to each official Pal `SKILL.md`
+and a short adoption note to each official Pal `README.md`.
+
+This means substantive tasks now have an explicit entry rule: use the Asset
+Loading Gate and a Task Asset Packet or equivalent plan before
+execution-shaped work; treat host tools as execution tools, not Pal assets; and
+produce an Asset Use Summary or Missing Asset Plan when needed.
+
+This does not complete per-Pal representative asset usage regression. Current
+completeness levels remain unchanged unless a task family has its own evidence.
+
 ## Evidence Files
 
 - [`../../evals/palbench/v0.5/asset-usage/r202-official-pal-asset-execution-adoption-matrix.md`](../../evals/palbench/v0.5/asset-usage/r202-official-pal-asset-execution-adoption-matrix.md)
 - [`../../evals/palbench/v0.5/asset-usage/r202-official-pal-adoption-gaps-summary.md`](../../evals/palbench/v0.5/asset-usage/r202-official-pal-adoption-gaps-summary.md)
 - [`../../evals/palbench/v0.5/asset-usage/r202-quinn-official-pal-adoption-review.md`](../../evals/palbench/v0.5/asset-usage/r202-quinn-official-pal-adoption-review.md)
+- [`../../evals/palbench/v0.5/asset-usage/r203-official-pal-entry-adoption-matrix.md`](../../evals/palbench/v0.5/asset-usage/r203-official-pal-entry-adoption-matrix.md)
+- [`../../evals/palbench/v0.5/asset-usage/r203-official-pal-entry-adoption-before-after.md`](../../evals/palbench/v0.5/asset-usage/r203-official-pal-entry-adoption-before-after.md)
+- [`../../evals/palbench/v0.5/asset-usage/r203-quinn-official-pal-entry-adoption-review.md`](../../evals/palbench/v0.5/asset-usage/r203-quinn-official-pal-entry-adoption-review.md)

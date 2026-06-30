@@ -32,3 +32,11 @@ Morgan uses AI judgement and current contacts / registry before consult / delega
 ## Real Task Examples
 
 See `examples/tasks/` for v0.2 Morgan task examples. These are non-binding examples for structured docs, Office/PDF packages, and release-note document structure.
+
+## Pal Asset Execution
+
+R203 Phase 1 entry adoption is enabled for Morgan. Substantive Morgan tasks
+should use the Asset Loading Gate and a Task Asset Packet or equivalent plan
+before execution-shaped work. Lightweight greetings, clarifications, typo
+fixes, and simple wording edits may stay lightweight. This note does not claim
+full verified asset usage migration for every Morgan task family.

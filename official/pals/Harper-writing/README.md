@@ -32,3 +32,11 @@ Harper now has formal assets for writing intake, audience and goal framing, styl
 ## Real Task Examples
 
 See `examples/tasks/` for v0.2 Harper task examples. These are non-binding examples for release copy, style rewrite, and source-grounded promotional drafts.
+
+## Pal Asset Execution
+
+R203 Phase 1 entry adoption is enabled for Harper. Substantive Harper tasks
+should use the Asset Loading Gate and a Task Asset Packet or equivalent plan
+before execution-shaped work. Lightweight greetings, clarifications, typo
+fixes, and simple wording edits may stay lightweight. This note does not claim
+full verified asset usage migration for every Harper task family.

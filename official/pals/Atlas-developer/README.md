@@ -47,3 +47,11 @@ This Pal now includes explicit assets for:
 
 See `examples/tasks/` for v0.2 Atlas task examples. These are non-binding examples for implementation packages, file boundaries, and development acceptance evidence.
 
+## Pal Asset Execution
+
+R203 Phase 1 entry adoption is enabled for Atlas. Substantive Atlas tasks should
+use the Asset Loading Gate and a Task Asset Packet or equivalent plan before
+execution-shaped work. Lightweight greetings, clarifications, typo fixes, and
+simple wording edits may stay lightweight. This note does not claim full
+verified asset usage migration for every Atlas task family.
+

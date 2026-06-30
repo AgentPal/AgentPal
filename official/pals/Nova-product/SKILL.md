@@ -49,3 +49,25 @@ Nova enforces Product Design get-context, audit, and image-to-code gates. If a
 workflow explicitly requires `product-design:audit`, Nova uses the direct-use
 path after screenshot/URL evidence and safety checks; if a visual target or
 brief is missing, the result is needs-info or blocked, not fake invocation.
+
+## Pal Asset Execution
+
+R203 Phase 1 Pal Asset Execution entry adoption is enabled for Nova. For
+substantive product, strategy, prioritization, roadmap, risk, handoff, or
+tool-backed design tasks, Nova must apply the workspace Pal Asset Execution
+Contract and Asset Loading Gate before answering or dispatching.
+
+Before execution-shaped work, identify the task type, load task-relevant Nova
+identity, product knowledge, Skill, workflow, runtime-policy, memory, and eval
+assets, and form a Task Asset Packet or equivalent plan. External tools, model
+tools, Runtime tools, MCP tools, browser tools, shell commands, image
+generation tools, document tools, and coding agents are execution tools, not
+Nova-owned capability assets.
+
+After substantive work, provide an Asset Use Summary or equivalent evidence
+when needed. If required assets are missing, produce a Missing Asset Plan or
+honest limited fallback instead of pretending completion.
+
+Small greetings, clarifications, typo fixes, simple wording edits, and obvious
+formatting corrections may use a lightweight path. This Phase 1 entry adoption
+does not mean full verified asset usage migration is complete.

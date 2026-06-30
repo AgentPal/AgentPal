@@ -13,3 +13,11 @@ Primary references:
 - `examples/delivery-packs/video-growth-delivery-pack/README.md`
 - `examples/delivery-packs/sales-crm-delivery-pack/README.md`
 - `standards/deep-conductor/faye-deep-conductor-protocol.md`
+
+## Pal Asset Execution
+
+R203 Phase 1 entry adoption is enabled for Faye. Substantive Faye tasks should
+use the Asset Loading Gate and a Task Asset Packet or equivalent plan before
+execution-shaped work. Lightweight greetings, clarifications, typo fixes, and
+simple wording edits may stay lightweight. This note does not claim full
+verified asset usage migration for every Faye task family.

@@ -125,6 +125,11 @@ R202 checked the 10 official bundled Pals for Pal Asset Execution adoption. The
 result is a spot-check and phased adoption plan, not a completed per-Pal
 migration.
 
+R203 completed Phase 1 entry adoption across the official bundled Pals. Each
+official Pal now has an entry note for substantive asset-grounded work and a
+lightweight path for simple cases. Full per-Pal representative regressions
+remain future work.
+
 Read:
 
 - [Official Pal adoption spot-check](official-pal-adoption-spot-check.md)
