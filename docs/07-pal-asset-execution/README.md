@@ -130,6 +130,10 @@ official Pal now has an entry note for substantive asset-grounded work and a
 lightweight path for simple cases. Full per-Pal representative regressions
 remain future work.
 
+R204 added Phase 2 Task Asset Packet and Asset Use Summary examples for five
+high-priority Pals: Mira, PalSmith, Atlas, Quinn, and Nova. These examples are
+guidance, not verified host regression results.
+
 Read:
 
 - [Official Pal adoption spot-check](official-pal-adoption-spot-check.md)

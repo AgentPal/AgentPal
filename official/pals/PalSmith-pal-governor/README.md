@@ -157,3 +157,5 @@ before execution-shaped work. Lightweight greetings, clarifications, typo
 fixes, and simple wording edits may stay lightweight. This note does not expand
 PalSmith's scoped verified status beyond task families already covered by
 evidence.
+
+Phase 2 example: [`evals/asset-execution-example.md`](evals/asset-execution-example.md).

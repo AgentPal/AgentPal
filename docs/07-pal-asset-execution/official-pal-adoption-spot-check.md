@@ -98,6 +98,26 @@ produce an Asset Use Summary or Missing Asset Plan when needed.
 This does not complete per-Pal representative asset usage regression. Current
 completeness levels remain unchanged unless a task family has its own evidence.
 
+## R204 Phase 2 High-Priority Pal Examples
+
+R204 added Task Asset Packet and Asset Use Summary examples for five
+high-priority official Pals:
+
+- Mira
+- PalSmith
+- Atlas
+- Quinn
+- Nova
+
+Each example shows an Asset Loading Gate, Task Asset Packet, expected execution
+behavior, tool boundary, Asset Use Summary, Missing Asset Plan handling,
+lightweight path, and no-overclaim note.
+
+These examples are adoption guidance. They are not full migration, not a
+verified-readiness promotion, and not representative host regression evidence.
+Phase 3 should run real or controlled host regressions for the high-priority
+examples.
+
 ## Evidence Files
 
 - [`../../evals/palbench/v0.5/asset-usage/r202-official-pal-asset-execution-adoption-matrix.md`](../../evals/palbench/v0.5/asset-usage/r202-official-pal-asset-execution-adoption-matrix.md)
@@ -106,3 +126,6 @@ completeness levels remain unchanged unless a task family has its own evidence.
 - [`../../evals/palbench/v0.5/asset-usage/r203-official-pal-entry-adoption-matrix.md`](../../evals/palbench/v0.5/asset-usage/r203-official-pal-entry-adoption-matrix.md)
 - [`../../evals/palbench/v0.5/asset-usage/r203-official-pal-entry-adoption-before-after.md`](../../evals/palbench/v0.5/asset-usage/r203-official-pal-entry-adoption-before-after.md)
 - [`../../evals/palbench/v0.5/asset-usage/r203-quinn-official-pal-entry-adoption-review.md`](../../evals/palbench/v0.5/asset-usage/r203-quinn-official-pal-entry-adoption-review.md)
+- [`../../evals/palbench/v0.5/asset-usage/r204-high-priority-pal-task-asset-packet-examples-matrix.md`](../../evals/palbench/v0.5/asset-usage/r204-high-priority-pal-task-asset-packet-examples-matrix.md)
+- [`../../evals/palbench/v0.5/asset-usage/r204-task-asset-packet-example-quality-review.md`](../../evals/palbench/v0.5/asset-usage/r204-task-asset-packet-example-quality-review.md)
+- [`../../evals/palbench/v0.5/asset-usage/r204-quinn-phase-2-example-review.md`](../../evals/palbench/v0.5/asset-usage/r204-quinn-phase-2-example-review.md)

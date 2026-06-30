@@ -701,6 +701,9 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/asset-usage/r203-official-pal-entry-adoption-matrix.md` | R203 official Pal Phase 1 entry adoption matrix |
 | `evals/palbench/v0.5/asset-usage/r203-official-pal-entry-adoption-before-after.md` | R203 official Pal entry adoption before / after summary |
 | `evals/palbench/v0.5/asset-usage/r203-quinn-official-pal-entry-adoption-review.md` | R203 Quinn review for official Pal entry adoption |
+| `evals/palbench/v0.5/asset-usage/r204-high-priority-pal-task-asset-packet-examples-matrix.md` | R204 high-priority Pal Task Asset Packet examples matrix |
+| `evals/palbench/v0.5/asset-usage/r204-task-asset-packet-example-quality-review.md` | R204 quality review for Task Asset Packet examples |
+| `evals/palbench/v0.5/asset-usage/r204-quinn-phase-2-example-review.md` | R204 Quinn review for Phase 2 examples |
 
 ## Official Pal Asset Audit
 
@@ -713,6 +716,11 @@ Use the current docs directories as the public entry points. Archived research n
 | `docs/03-user-guides/official-pal-asset-upgrade-plan.md` | official Pal asset upgrade plan guide |
 | `docs/07-pal-asset-execution/official-pal-adoption-spot-check.md` | R202 official Pal Asset Execution adoption spot-check guide |
 | `evals/palbench/v0.5/asset-usage/r203-official-pal-entry-adoption-matrix.md` | R203 Phase 1 official Pal entry adoption evidence |
+| `official/pals/Mira-main/evals/asset-execution-example.md` | R204 Mira Task Asset Packet example |
+| `official/pals/PalSmith-pal-governor/evals/asset-execution-example.md` | R204 PalSmith Task Asset Packet example |
+| `official/pals/Atlas-developer/evals/asset-execution-example.md` | R204 Atlas Task Asset Packet example |
+| `official/pals/Quinn-quality/evals/asset-execution-example.md` | R204 Quinn Task Asset Packet example |
+| `official/pals/Nova-product/evals/asset-execution-example.md` | R204 Nova Task Asset Packet example |
 
 ## Pal Asset / Org Pack Integration
 

@@ -55,3 +55,5 @@ execution-shaped work. Lightweight greetings, clarifications, typo fixes, and
 simple wording edits may stay lightweight. This note does not claim full
 verified asset usage migration for every Atlas task family.
 
+Phase 2 example: [`evals/asset-execution-example.md`](evals/asset-execution-example.md).
+
