@@ -18,4 +18,4 @@ Do not share private product strategy, customer data, or internal memory into pu
 
 ## Registration Boundary
 
-This user custom test artifact must not be added to `workspace/organization/contacts/` or official Pal registries during R181.
+This user custom test artifact must not be added to `workspace/organization/contacts/` or official Pal registries without a separate authorization and governance review.

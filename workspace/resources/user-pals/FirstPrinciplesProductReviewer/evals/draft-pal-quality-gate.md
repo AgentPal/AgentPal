@@ -17,4 +17,4 @@ This is a user custom Pal test artifact created from a PalSmith draft. It is not
 
 Use `pass`, `partial`, `fail`, or `blocked`.
 
-Passing this gate means the draft is useful as R174 evidence. It does not mean the draft is official or public-ready.
+Passing this gate means the user custom Pal test artifact preserves the source draft's quality and boundary evidence. It does not mean the Pal is official or public-ready.

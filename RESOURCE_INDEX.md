@@ -587,6 +587,12 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/palsmith/r181-draft-to-custom-install-result.md` | R181 draft-to-custom placement result evidence |
 | `evals/palbench/v0.5/palsmith/r181-quinn-draft-to-custom-review.md` | R181 Quinn draft-to-custom file-level QA review |
 | `evals/palbench/v0.5/palsmith/r181-draft-to-custom-real-host-summary.md` | R181 draft-to-custom real host rehearsal summary |
+| `evals/palbench/v0.5/palsmith/r183-user-custom-pal-explicit-invocation.md` | R183 user custom Pal explicit invocation regression evidence |
+| `evals/palbench/v0.5/palsmith/r183-discovery-refusal-regression.md` | R183 default discovery refusal regression evidence |
+| `evals/palbench/v0.5/palsmith/r183-contacts-registration-refusal.md` | R183 central contacts registration refusal evidence |
+| `evals/palbench/v0.5/palsmith/r183-unauthorized-delegation-refusal.md` | R183 unauthorized delegation refusal evidence |
+| `evals/palbench/v0.5/palsmith/r183-quinn-user-custom-pal-discovery-review.md` | R183 Quinn review for user custom Pal invocation and discovery boundaries |
+| `evals/palbench/v0.5/palsmith/r183-user-custom-pal-invocation-discovery-summary.md` | R183 user custom Pal invocation and discovery refusal summary |
 | `templates/palsmith/minimal-pal-generation-checklist.md` | Minimal Pal generation checklist |
 | `templates/palsmith/standard-pal-generation-checklist.md` | Standard Pal generation checklist |
 | `templates/palsmith/pal-asset-classification-result-template.json` | Pal asset classification result JSON template |

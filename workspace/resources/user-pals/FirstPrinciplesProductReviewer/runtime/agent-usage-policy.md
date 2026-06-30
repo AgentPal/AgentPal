@@ -13,7 +13,7 @@ Ask the host runtime only when the user explicitly approves an evidence-producin
 
 ## Forbidden Runtime Claims
 
-The draft does not contain runtime code, CLI tools, scanner logic, daemon behavior, connectors, backend services, or Marketplace backend features.
+This user custom Pal test artifact does not contain runtime code, CLI tools, scanner logic, daemon behavior, connectors, backend services, or Marketplace backend features.
 
 ## Evidence Format
 

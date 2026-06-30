@@ -1,4 +1,4 @@
-# First-Principles Product Reviewer Draft Skill Entry
+# First-Principles Product Reviewer User Custom Skill Entry
 
 This is a user custom Pal test artifact created from a PalSmith draft. It is not an official Pal.
 
