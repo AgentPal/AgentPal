@@ -611,6 +611,10 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/palsmith/r188-custom-pal-authorization-e2e-summary.md` | R188 custom Pal authorization E2E summary |
 | `evals/palbench/v0.5/palsmith/r189-custom-pal-authorization-e2e-quality-regression.md` | R189 custom Pal authorization E2E quality regression |
 | `evals/palbench/v0.5/palsmith/r189-quinn-custom-pal-authorization-e2e-quality-review.md` | R189 Quinn custom Pal authorization E2E quality review |
+| `docs/06-palsmith/custom-pal-creation-to-authorization-flow.md` | R190 PalSmith custom Pal creation to authorization flow |
+| `prompts/palsmith/revoke-user-custom-pal-discovery.md` | R190 copyable custom Pal discovery authorization revocation prompt |
+| `evals/palbench/v0.5/palsmith/r190-palsmith-custom-pal-creation-authorization-integrated-matrix.md` | R190 PalSmith custom Pal creation and authorization integrated closeout matrix |
+| `evals/palbench/v0.5/palsmith/r190-quinn-palsmith-custom-pal-authorization-closeout-review.md` | R190 Quinn closeout review for PalSmith custom Pal authorization |
 | `templates/palsmith/minimal-pal-generation-checklist.md` | Minimal Pal generation checklist |
 | `templates/palsmith/standard-pal-generation-checklist.md` | Standard Pal generation checklist |
 | `templates/palsmith/pal-asset-classification-result-template.json` | Pal asset classification result JSON template |

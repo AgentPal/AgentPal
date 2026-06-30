@@ -145,8 +145,10 @@ After install, a user custom Pal stays private by default. Discovery, unified in
 
 Use:
 
+- [`06-palsmith/custom-pal-creation-to-authorization-flow.md`](06-palsmith/custom-pal-creation-to-authorization-flow.md)
 - [`06-palsmith/user-custom-pal-discovery-authorization.md`](06-palsmith/user-custom-pal-discovery-authorization.md)
 - [`../prompts/palsmith/authorize-user-custom-pal-discovery.md`](../prompts/palsmith/authorize-user-custom-pal-discovery.md)
+- [`../prompts/palsmith/revoke-user-custom-pal-discovery.md`](../prompts/palsmith/revoke-user-custom-pal-discovery.md)
 - [`../templates/palsmith/user-custom-pal-authorization-record.md`](../templates/palsmith/user-custom-pal-authorization-record.md)
 
 PalSmith must keep the authorization auditable and revocable, and must ask for explicit approval before any write.
@@ -165,6 +167,7 @@ This is a no-code collaboration chain inside the current host runtime. It is not
 
 - [PalSmith index](06-palsmith/README.md)
 - [PalSmith end-to-end productization](06-palsmith/palsmith-end-to-end-productization.md)
+- [Custom Pal creation to authorization flow](06-palsmith/custom-pal-creation-to-authorization-flow.md)
 - [PalSmith v0.5 Pal creation and upgrade](03-user-guides/palsmith-v0.5-pal-creation-and-upgrade.md)
 - [Create your first Pal](02-getting-started/06-create-your-first-pal-in-5-minutes.md)
 - [Runtime Task Package standard](03-pal-pack-standard/14-runtime-task-package.md)

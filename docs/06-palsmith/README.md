@@ -102,8 +102,10 @@ Discovery does not imply delegation. Contacts registration and public Marketplac
 
 Read:
 
+- [`custom-pal-creation-to-authorization-flow.md`](custom-pal-creation-to-authorization-flow.md)
 - [`user-custom-pal-discovery-authorization.md`](user-custom-pal-discovery-authorization.md)
 - [`../../prompts/palsmith/authorize-user-custom-pal-discovery.md`](../../prompts/palsmith/authorize-user-custom-pal-discovery.md)
+- [`../../prompts/palsmith/revoke-user-custom-pal-discovery.md`](../../prompts/palsmith/revoke-user-custom-pal-discovery.md)
 - [`../../templates/palsmith/user-custom-pal-authorization-record.md`](../../templates/palsmith/user-custom-pal-authorization-record.md)
 - [`../../templates/palsmith/user-custom-pal-discovery-policy.md`](../../templates/palsmith/user-custom-pal-discovery-policy.md)
 
@@ -116,6 +118,7 @@ PalSmith can then turn a Faye Build Request into a Pal or Pal Team design. Quinn
 ## Next Links
 
 - [PalSmith end-to-end productization](palsmith-end-to-end-productization.md)
+- [Custom Pal creation to authorization flow](custom-pal-creation-to-authorization-flow.md)
 - [PalSmith v0.5 creation and upgrade](../03-user-guides/palsmith-v0.5-pal-creation-and-upgrade.md)
 - [Create your first Pal](../02-getting-started/06-create-your-first-pal-in-5-minutes.md)
 - [Official Pals](../99-reference/official-pals.md)
