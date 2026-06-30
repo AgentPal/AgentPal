@@ -12,6 +12,7 @@ These files are Markdown instructions, not programs. They do not install depende
 | Claude Code | `claude-code/install-agentpal-current-project.md` | You are already inside `<your-project>` in Claude Code and want project-first AgentPal binding. |
 | Generic CLI Agent | `generic-cli-agent/install-agentpal-current-project.md` | Your CLI agent can read directories, follow Markdown / JSON instructions, and maintain context. |
 | PalSmith composite Pal | `palsmith/create-composite-pal.md` | You want PalSmith to draft a composite Pal creation plan from role, thinking style, voice, knowledge, Skill / Agent needs, and publication boundary. |
+| PalSmith existing Pal upgrade | `palsmith/upgrade-existing-pal-composite-distillation.md` | You want PalSmith to judge and plan a high-impact upgrade to an existing Pal before any file writes. |
 
 ## Project Workgroup Prompts
 

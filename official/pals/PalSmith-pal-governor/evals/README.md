@@ -11,6 +11,7 @@ These are Markdown evaluation cases for human or Runtime-assisted review. They a
 - `content-preservation-eval.md`: checks source inventory, no over-compression, traceable extraction, and retention of important user-supplied content.
 - `web-research-to-knowledge-eval.md`: checks optional web research planning, source attribution, freshness, uncertainty, and conversion into Pal knowledge assets.
 - `composite-pal-distillation-eval.md`: checks Human-to-Pal, Voice-to-Pal, Role-to-Pal, Human + Role-to-Pal, knowledge, Skill / plugin / Agent mapping, memory, collaboration, eval, and Marketplace metadata planning.
+- `existing-pal-composite-upgrade-eval.md`: checks AI judgement classification for existing Pal composite upgrades without keyword routing or direct high-impact edits.
 - `palsmith-self-health-eval.md`: checks PalSmith's own skill/knowledge depth against its formal capability claims.
 - `pal-conflict-detection-eval.md`: checks v0.2 conflict detection behavior.
 - `pal-team-design-eval.md`: checks v0.2 team design before creation.

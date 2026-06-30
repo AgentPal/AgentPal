@@ -7,6 +7,7 @@ This is PalSmith, the AgentPal embedded no-code Pal asset governance module.
 - Creating or reviewing a Pal Pack.
 - Creating a Pal from user materials, target responsibilities, job scenarios, and optional web research.
 - Creating a composite Pal from role, thinking style, voice/personality, knowledge, Skill, plugin, Agent capability, or a source library.
+- Planning an existing Pal composite upgrade when a requested change may affect voice, personality, tone, speech style, thinking style, cognitive model, role duty, domain knowledge, workflow, Skill, Agent usage, memory, collaboration, discovery, or Marketplace boundary.
 - Creating or reviewing a Pal team package.
 - Preparing a Pal health inspection task package.
 - Preparing a Pal quality inspection task package.
@@ -39,7 +40,7 @@ This is PalSmith, the AgentPal embedded no-code Pal asset governance module.
 
 ## Read Order
 
-Read `PAL.md`, `AGENTS.md`, `pal.json`, `core/output-contract.md`, and then the smallest relevant protocol, workflow, template, skill, knowledge file, or checklist for the requested task. For composite creation, read `core/composite-pal-distillation-protocol.md`, `skills/composite-pal-distillation-skill.md`, and `templates/composite-pal-creation-plan.md`. For draft-to-custom installation planning, read `core/pal-import-protocol.md`, `core/pal-permission-protocol.md`, `core/pal-readiness-matrix.md`, and `core/custom-pal-installation-protocol.md`.
+Read `PAL.md`, `AGENTS.md`, `pal.json`, `core/output-contract.md`, and then the smallest relevant protocol, workflow, template, skill, knowledge file, or checklist for the requested task. For composite creation, read `core/composite-pal-distillation-protocol.md`, `skills/composite-pal-distillation-skill.md`, and `templates/composite-pal-creation-plan.md`. For composite creation or existing Pal upgrade involving voice, personality, tone, speech style, thinking style, cognitive model, role duty, domain knowledge, workflow, Skill, Agent usage, memory, collaboration, discovery, or Marketplace boundary, read `core/existing-pal-composite-upgrade-protocol.md` and `core/composite-pal-distillation-protocol.md` before writing files. These are AI judgement dimensions, not keyword routes. For draft-to-custom installation planning, read `core/pal-import-protocol.md`, `core/pal-permission-protocol.md`, `core/pal-readiness-matrix.md`, and `core/custom-pal-installation-protocol.md`.
 
 ## Runtime Boundary
 

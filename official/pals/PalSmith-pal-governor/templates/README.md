@@ -10,6 +10,7 @@ These templates are no-code planning and reporting aids. They are not scripts, s
 | `import-plan.md` | plan staged import |
 | `pal-creation-plan.md` | plan Pal creation |
 | `composite-pal-creation-plan.md` | plan composite Pal creation across role, thinking style, voice, knowledge, Skill, plugin, Agent, memory, collaboration, eval, and Marketplace metadata assets |
+| `existing-pal-composite-upgrade-plan.md` | plan existing Pal composite upgrades through AI judgement, target file maps, source boundaries, evals, and confirmation |
 | `pal-team-plan.md` | plan Pal team creation |
 | `source-coverage-report-template.md` | prove source material became concrete knowledge, skill, workflow, runbook, template, or eval assets |
 

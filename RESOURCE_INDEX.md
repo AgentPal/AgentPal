@@ -565,11 +565,14 @@ Use the current docs directories as the public entry points. Archived research n
 | `standards/palsmith/palsmith-v0.5-creation-standard.md` | R98-C PalSmith creation standard |
 | `standards/palsmith/palsmith-asset-classification-standard.md` | R98-C PalSmith asset classification standard |
 | `official/pals/PalSmith-pal-governor/core/composite-pal-distillation-protocol.md` | R168 PalSmith composite Pal creation protocol |
+| `official/pals/PalSmith-pal-governor/core/existing-pal-composite-upgrade-protocol.md` | R196 existing Pal composite upgrade protocol using AI judgement, not keyword routing |
 | `official/pals/PalSmith-pal-governor/core/custom-pal-installation-protocol.md` | R179 PalSmith draft-to-user-custom Pal installation protocol |
 | `official/pals/PalSmith-pal-governor/core/user-custom-pal-discovery-authorization-protocol.md` | R185 user custom Pal discovery authorization protocol |
 | `official/pals/PalSmith-pal-governor/skills/composite-pal-distillation-skill.md` | R168 PalSmith composite Pal distillation Skill |
 | `official/pals/PalSmith-pal-governor/templates/composite-pal-creation-plan.md` | R168 composite Pal creation plan template |
+| `official/pals/PalSmith-pal-governor/templates/existing-pal-composite-upgrade-plan.md` | R196 existing Pal composite upgrade plan template |
 | `official/pals/PalSmith-pal-governor/evals/composite-pal-distillation-eval.md` | R168 composite Pal distillation eval |
+| `official/pals/PalSmith-pal-governor/evals/existing-pal-composite-upgrade-eval.md` | R196 existing Pal composite upgrade AI judgement eval |
 | `evals/palbench/v0.5/palsmith/r169-composite-creation-real-task-tests.md` | R169 PalSmith composite creation real-task test summary |
 | `evals/palbench/v0.5/palsmith/r169-quinn-review.md` | R169 Quinn / QA review for PalSmith composite creation tests |
 | `evals/palbench/v0.5/palsmith/r170-docs-and-examples-closure.md` | R170 PalSmith docs and examples closure evidence note |
@@ -578,6 +581,7 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/palsmith/r171-manual-host-acceptance-script.md` | R171 manual real-host acceptance script |
 | `examples/palsmith/composite-pal-creation-examples.md` | R170 user-facing composite Pal creation examples |
 | `prompts/palsmith/create-composite-pal.md` | R170 copyable PalSmith composite Pal creation prompt |
+| `prompts/palsmith/upgrade-existing-pal-composite-distillation.md` | R196 copyable PalSmith existing Pal composite upgrade prompt |
 | `examples/palsmith/draft-to-custom-pal-installation-example.md` | R179 draft Pal Pack to user custom Pal installation example |
 | `prompts/palsmith/install-draft-as-custom-pal.md` | R179 copyable PalSmith draft-to-custom installation prompt |
 | `evals/palbench/v0.5/palsmith/draft-pal-packs/FirstPrinciplesProductReviewer/` | R174 non-official draft Pal Pack test artifact |
@@ -639,6 +643,9 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/palsmith/r193-release-prep-package-review.md` | R193 PalSmith release-prep package review |
 | `evals/palbench/v0.5/palsmith/r193-release-boundary-pressure-tests.md` | R193 PalSmith release boundary pressure tests |
 | `evals/palbench/v0.5/palsmith/r193-quinn-release-prep-review.md` | R193 Quinn release-prep review |
+| `evals/palbench/v0.5/palsmith/r196-existing-pal-upgrade-routing-regression.md` | R196 existing Pal upgrade routing regression |
+| `evals/palbench/v0.5/palsmith/r196-luma-upgrade-regression.md` | R196 Luma upgrade regression scenario |
+| `evals/palbench/v0.5/palsmith/r196-quinn-existing-pal-upgrade-review.md` | R196 Quinn review for existing Pal composite upgrade |
 | `templates/palsmith/minimal-pal-generation-checklist.md` | Minimal Pal generation checklist |
 | `templates/palsmith/standard-pal-generation-checklist.md` | Standard Pal generation checklist |
 | `templates/palsmith/pal-asset-classification-result-template.json` | Pal asset classification result JSON template |

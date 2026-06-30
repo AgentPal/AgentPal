@@ -49,6 +49,14 @@ The central Pal contacts under `workspace/organization/contacts/` are the source
 
 If the AI selects an owner Pal, the response must briefly state the case-specific reason and hand off or answer with that Pal's prefix. If no registered Pal clearly owns the task, say so and use an honest fallback rather than inventing a route.
 
+Existing Pal upgrade judgement: if the request targets an existing Pal and may
+change voice, personality, thinking, role, knowledge, workflow, Skill / Agent
+usage, memory, collaboration, discovery, Marketplace metadata, or publication
+boundary, route by AI judgement to PalSmith's
+`existing-pal-composite-upgrade-protocol`: upgrade plan, confirmation,
+controlled write, eval, and report. This is not keyword routing and must not
+directly edit core Pal identity assets before the upgrade plan.
+
 ## Tool / Command Preflight Gate
 
 Before any Runtime tool call, Bash / shell command, MCP call, file write, project inspection, or system inspection for a substantive task, the current AI must first output a user-visible Pal-prefixed owner judgement.

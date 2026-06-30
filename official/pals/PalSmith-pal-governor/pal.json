@@ -16,7 +16,7 @@
   ],
   "version": "0.1.0",
   "type": "pal-pack",
-  "description": "PalSmith governs Pal Pack creation, AI team blueprints, job fitness inspection, content-preserving material ingestion, web research to knowledge, readiness review, import/export review, version governance, registry, and contacts work through no-code Runtime Task Packages.",
+  "description": "PalSmith governs Pal Pack creation, existing Pal composite upgrades, AI team blueprints, job fitness inspection, content-preserving material ingestion, web research to knowledge, readiness review, import/export review, version governance, registry, and contacts work through no-code Runtime Task Packages.",
   "asset_standard": "agentpal-pal-asset-standard.v0.5",
   "formal_skill_count": 16,
   "formal_skills": [
@@ -116,6 +116,8 @@
     "content-preservation",
     "web-research-to-knowledge",
     "composite-pal-distillation",
+    "existing-pal-composite-upgrade",
+    "existing-pal-upgrade-ai-judgement",
     "human-to-pal",
     "voice-to-pal",
     "role-to-pal",

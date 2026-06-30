@@ -18,6 +18,8 @@ R168 upgrades PalSmith into a composite Pal creation architect. PalSmith can now
 
 R170 adds user-facing documentation, copyable prompts, and examples for composite Pal creation. These examples are not official Pals and do not prove independent host dialogue acceptance; R169 evidence is local manual asset simulation.
 
+R196 adds existing Pal composite upgrade routing. PalSmith now supports both creating new Pals and upgrading existing Pals. When a request may change an existing Pal's voice, personality, thinking, role, knowledge, workflow, Skill / Agent usage, memory, collaboration, discovery, or publication boundary, PalSmith must use AI judgement and produce an upgrade plan before any write. This is not keyword routing and not a direct persona-file edit path.
+
 R179 adds a no-code draft-to-user-custom Pal installation flow. This lets PalSmith plan how a reviewed draft Pal Pack can become a user custom Pal under a private-by-default user custom area, without promoting it to official Pal status, without writing central contacts, and without building an installer or runtime service.
 
 R185-R191 add user custom Pal discovery authorization, explicit invocation boundaries, revocation readiness, real host read-only regression, and external readability review. User custom Pals remain private by default and are not central contacts or official Pals.
@@ -35,6 +37,8 @@ PalSmith collaboration is selected by current Pal + current Brain / AI judgement
 Task package examples live in `examples/task-packages/`. Reusable task package templates live in `templates/task-packages/`. Their indexes are `examples/task-packages/README.md` and `templates/task-packages/README.md`.
 
 Draft-to-custom installation planning is governed by `core/custom-pal-installation-protocol.md`. The default suggested target is `workspace/resources/user-pals/<pal-id>/`, but PalSmith must present an installation plan and receive explicit user confirmation before any Runtime write.
+
+Existing Pal composite upgrade planning is governed by `core/existing-pal-composite-upgrade-protocol.md`. PalSmith must distinguish a simple existing Pal edit from a high-impact upgrade through AI judgement, then produce a target file map, eval plan, source boundary, and confirmation question before controlled writes.
 
 Release readiness is checked through Markdown evals, including `official/pals/PalSmith-pal-governor/evals/palsmith-release-scope-eval.md` and the R192 closeout reviews under `evals/palbench/v0.5/palsmith/`.
 
@@ -67,6 +71,7 @@ Docs entry points:
 - `official/pals/PalSmith-pal-governor/core/custom-pal-installation-protocol.md`
 - `official/pals/PalSmith-pal-governor/core/user-custom-pal-discovery-authorization-protocol.md`
 - `official/pals/PalSmith-pal-governor/core/composite-pal-distillation-protocol.md`
+- `official/pals/PalSmith-pal-governor/core/existing-pal-composite-upgrade-protocol.md`
 - `official/pals/PalSmith-pal-governor/skills/README.md`
 - `official/pals/PalSmith-pal-governor/knowledge/README.md`
 - `official/pals/PalSmith-pal-governor/templates/task-packages/create-first-professional-pal.md`
@@ -91,6 +96,7 @@ Docs entry points:
 /pal PalSmith 创建一个马斯克思维的产品经理 Pal，并保持公开来源边界
 /pal PalSmith 创建一个韩立性格和说话风格的风险审查 Pal，注意版权边界
 /pal PalSmith 把我们公司售前专家的经验蒸馏成售前 Pal，先判断隐私和授权
+/pal PalSmith 给 Luma 增加新的语气、性格和设计思维，先判断是不是 existing Pal composite upgrade，不要直接写 persona
 /pal PalSmith 检查 PalSmith 自己是不是技能很多但内容空
 /pal PalSmith 这几个 Pal 职责是不是重复
 /pal PalSmith 这个团队可以发布吗
@@ -110,6 +116,16 @@ User-facing entry points:
 - `prompts/palsmith/create-composite-pal.md`
 
 Composite creation keeps source boundaries clear. Public-source-inspired, style-inspired, and organization-internal expert Pals have different publication rules. Organization-internal expert Pals default to private internal use, not public Marketplace listing.
+
+## Existing Pal Composite Upgrade User Path
+
+When the user wants to change an existing Pal's voice, personality, thinking, role, knowledge, workflow, Skill / Agent usage, memory, collaboration, discovery, or publication boundary, PalSmith must first judge the request semantically. The same words can appear in a simple edit or a deep behavior change, so PalSmith must inspect intent and impact instead of routing by keywords.
+
+If the request is a high-impact upgrade, PalSmith outputs an upgrade plan before any write. The plan names the current Pal inventory, source boundary, target file map, eval plan, allowed write paths, blocked write paths, and confirmation question.
+
+Copyable prompt:
+
+- `prompts/palsmith/upgrade-existing-pal-composite-distillation.md`
 
 ## Safety Boundary
 

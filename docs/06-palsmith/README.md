@@ -8,6 +8,7 @@ In v0.5, PalSmith is a no-code Pal asset governor. It can help a user turn goals
 
 - design a single new Pal
 - design a composite Pal from role, thinking style, voice/personality, knowledge, Skill, plugin, Agent capability, or a source library
+- design an existing Pal composite upgrade when an existing Pal change may affect voice, personality, thinking, role, knowledge, workflow, Skill / Agent usage, memory, collaboration, discovery, or publication boundary
 - design a small Pal Team for a business goal
 - classify source material into identity, knowledge, Skill, workflow, runbook, example, eval, memory candidate, or report
 - prepare a bounded Runtime Task Package for approved file creation
@@ -33,6 +34,20 @@ PalSmith should produce a creation plan first. The plan separates:
 - private / public / Marketplace boundary
 
 For a first reply, PalSmith should avoid a long form and ask no more than three focused questions.
+
+## Existing Pal Composite Upgrade
+
+Use this when the user targets an existing Pal and wants to change behavior, not just fix a typo. Existing Pal upgrades that affect voice, personality, thinking, role, knowledge, workflow, Skill / Agent usage, memory, collaboration, discovery, or publication boundary must use the composite upgrade flow.
+
+PalSmith must decide this through AI judgement, not keyword routing. It should inspect the target Pal, the user's real intent, the likely file changes, source risk, and publication or discovery impact. If the change is high-impact, PalSmith outputs an upgrade plan before any file write.
+
+Copyable prompt:
+
+- [`../../prompts/palsmith/upgrade-existing-pal-composite-distillation.md`](../../prompts/palsmith/upgrade-existing-pal-composite-distillation.md)
+
+Core protocol:
+
+- [`../../official/pals/PalSmith-pal-governor/core/existing-pal-composite-upgrade-protocol.md`](../../official/pals/PalSmith-pal-governor/core/existing-pal-composite-upgrade-protocol.md)
 
 ## What PalSmith Must Not Do
 

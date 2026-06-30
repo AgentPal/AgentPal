@@ -71,6 +71,54 @@ For composite Pal creation, PalSmith must include:
 
 Composite Pal creation must not claim that a Pal is a real person, represents a rights holder, or can make commitments on behalf of a source. It must not copy long copyrighted text into public Pal assets.
 
+## Existing Pal Composite Upgrade Standard
+
+PalSmith supports both new Pal creation and existing Pal upgrades. When a user
+targets an existing Pal, PalSmith must use AI judgement to decide whether the
+request is a Simple Existing Pal Edit, an Existing Pal Composite Distillation
+Upgrade, an authorization flow, or another mode. This judgement must not be a
+keyword route or fixed domain map.
+
+Use Existing Pal Composite Distillation Upgrade when the requested change may
+materially affect Pal-defining behavior, including identity, voice, personality,
+thinking model, role duties, domain knowledge, workflows, Skill or Agent usage,
+memory behavior, collaboration, discovery, Marketplace metadata, or publication
+boundary.
+
+Simple Existing Pal Edit remains available for narrow typo, path, heading, JSON
+syntax, or clearly stale one-line corrections that do not alter Pal-defining
+behavior.
+
+Before any high-impact existing Pal write, PalSmith must produce an existing Pal
+upgrade report or plan with:
+
+- upgrade mode judgement and reason;
+- current Pal inventory;
+- source type and source boundary;
+- cognitive, voice/personality, role, knowledge, workflow, Skill / Agent,
+  memory, collaboration, discovery, and Marketplace impact as applicable;
+- required target file map;
+- write order;
+- required eval plan;
+- allowed write paths;
+- blocked write paths;
+- required confirmation question.
+
+The target file map must name concrete files and distinguish supporting assets
+from summary files. `PAL.md` and `README.md` should summarize only after the
+supporting identity, knowledge, workflow, Skill / Agent, memory, collaboration,
+or eval assets exist or are explicitly marked `missing`.
+
+Required evals should match the upgrade scope. Typical evals include semantic
+classification, role task, cognitive consistency, voice consistency, workflow,
+Skill / Agent capability claim, memory privacy, collaboration/discovery, and
+Marketplace claim tests.
+
+Existing Pal upgrades must not directly change central contacts, discovery,
+official status, or Marketplace public listing without separate authorization.
+They must not claim runtime, backend, scanner, connector, daemon, or Marketplace
+implementation.
+
 ## Minimal Pal Required Assets
 
 A Minimal Pal must generate these files or explicitly mark them `missing` in the creation or upgrade report:

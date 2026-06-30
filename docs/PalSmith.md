@@ -12,6 +12,7 @@ It can help with:
 
 - creating a draft Pal
 - creating a composite Pal from role, thinking style, voice/personality, knowledge, Skill, plugin, Agent capability, or source-library inputs
+- upgrading an existing Pal when the change may affect voice, personality, thinking, role, knowledge, workflow, Skill / Agent usage, memory, collaboration, discovery, or publication boundary
 - creating a draft Pal Team
 - classifying source material into identity, knowledge, Skill, workflow, runbook, example, eval, memory candidate, or report
 - preparing bounded Runtime Task Packages for approved file creation
@@ -39,6 +40,27 @@ PalSmith separates:
 - publication boundary: private, team-local, public-safe example, or Marketplace candidate
 
 Composite creation does not mean copying a person, character, company expert, book, or source file. PalSmith designs a bounded Pal plan with source, privacy, and publication rules.
+
+## Existing Pal Composite Upgrade
+
+PalSmith supports both creating new Pals and upgrading existing Pals. An existing Pal upgrade is not automatically a direct file edit. If the user asks to change how an existing Pal speaks, thinks, works, remembers, collaborates, uses Skills or Agents, or appears in discovery or publication, PalSmith must use AI judgement to decide the real mode and impact.
+
+This is not keyword routing. The words in the request are only clues. PalSmith should inspect the target Pal, the user's intent, the likely file surface, and the risk. If the change may affect Pal-defining behavior, PalSmith must produce a composite upgrade plan before any write.
+
+The plan should include:
+
+- upgrade mode judgement and reason
+- current Pal inventory
+- source boundary
+- cognitive distillation plan
+- voice and personality distillation plan
+- role, knowledge, workflow, Skill / Agent, memory, and collaboration impact
+- target file map
+- eval plan
+- allowed and blocked write paths
+- confirmation question
+
+Copyable prompt: [`../prompts/palsmith/upgrade-existing-pal-composite-distillation.md`](../prompts/palsmith/upgrade-existing-pal-composite-distillation.md)
 
 ## How To Call PalSmith
 
