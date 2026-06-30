@@ -673,6 +673,11 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/asset-usage/r198-luma-style-design-asset-usage-regression.md` | R198 Luma-style design task asset usage regression fixture |
 | `evals/palbench/v0.5/asset-usage/r198-generic-pal-asset-usage-regression.md` | R198 generic Pal asset usage regression matrix |
 | `evals/palbench/v0.5/asset-usage/r198-quinn-asset-execution-review.md` | R198 Quinn review for Pal asset execution contract |
+| `evals/palbench/v0.5/asset-usage/r199-user-custom-pal-product-review-host-rehearsal.md` | R199 real host user custom Pal product review rehearsal |
+| `evals/palbench/v0.5/asset-usage/r199-no-blind-tool-call-design-host-rehearsal.md` | R199 real host no blind tool call design rehearsal |
+| `evals/palbench/v0.5/asset-usage/r199-palsmith-completeness-host-rehearsal.md` | R199 real host PalSmith completeness rehearsal |
+| `evals/palbench/v0.5/asset-usage/r199-lightweight-path-contrast-host-rehearsal.md` | R199 real host lightweight path contrast rehearsal |
+| `evals/palbench/v0.5/asset-usage/r199-quinn-pal-asset-execution-host-review.md` | R199 Quinn review for real host Pal asset execution rehearsal |
 
 ## Official Pal Asset Audit
 
