@@ -104,6 +104,7 @@ Read:
 
 - [`custom-pal-creation-to-authorization-flow.md`](custom-pal-creation-to-authorization-flow.md)
 - [`user-custom-pal-discovery-authorization.md`](user-custom-pal-discovery-authorization.md)
+- [`user-custom-pal-discovery-authorization-protocol.md`](user-custom-pal-discovery-authorization-protocol.md)
 - [`../../prompts/palsmith/authorize-user-custom-pal-discovery.md`](../../prompts/palsmith/authorize-user-custom-pal-discovery.md)
 - [`../../prompts/palsmith/revoke-user-custom-pal-discovery.md`](../../prompts/palsmith/revoke-user-custom-pal-discovery.md)
 - [`../../templates/palsmith/user-custom-pal-authorization-record.md`](../../templates/palsmith/user-custom-pal-authorization-record.md)

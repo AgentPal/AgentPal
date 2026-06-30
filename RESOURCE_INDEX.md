@@ -595,6 +595,7 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/palsmith/r183-quinn-user-custom-pal-discovery-review.md` | R183 Quinn review for user custom Pal invocation and discovery boundaries |
 | `evals/palbench/v0.5/palsmith/r183-user-custom-pal-invocation-discovery-summary.md` | R183 user custom Pal invocation and discovery refusal summary |
 | `docs/06-palsmith/user-custom-pal-discovery-authorization.md` | R185 user custom Pal discovery authorization user guide |
+| `docs/06-palsmith/user-custom-pal-discovery-authorization-protocol.md` | R191 user-docs entry for the PalSmith user custom Pal authorization protocol |
 | `prompts/palsmith/authorize-user-custom-pal-discovery.md` | R185 copyable PalSmith authorization prompt |
 | `templates/palsmith/user-custom-pal-authorization-record.md` | R185 user custom Pal authorization record template |
 | `templates/palsmith/user-custom-pal-discovery-policy.md` | R185 user custom Pal discovery policy template |
@@ -615,6 +616,11 @@ Use the current docs directories as the public entry points. Archived research n
 | `prompts/palsmith/revoke-user-custom-pal-discovery.md` | R190 copyable custom Pal discovery authorization revocation prompt |
 | `evals/palbench/v0.5/palsmith/r190-palsmith-custom-pal-creation-authorization-integrated-matrix.md` | R190 PalSmith custom Pal creation and authorization integrated closeout matrix |
 | `evals/palbench/v0.5/palsmith/r190-quinn-palsmith-custom-pal-authorization-closeout-review.md` | R190 Quinn closeout review for PalSmith custom Pal authorization |
+| `evals/palbench/v0.5/palsmith/r191-custom-pal-revocation-host-regression.md` | R191 custom Pal revocation real-host and file-level regression evidence |
+| `evals/palbench/v0.5/palsmith/r191-custom-pal-revocation-boundary-results.md` | R191 custom Pal revocation boundary result matrix |
+| `evals/palbench/v0.5/palsmith/r191-external-user-readability-review.md` | R191 external user readability review for custom Pal creation and authorization |
+| `evals/palbench/v0.5/palsmith/r191-quinn-revocation-and-readability-review.md` | R191 Quinn QA review for revocation and readability |
+| `evals/palbench/v0.5/palsmith/r191-custom-pal-revocation-readability-summary.md` | R191 custom Pal revocation and readability summary |
 | `templates/palsmith/minimal-pal-generation-checklist.md` | Minimal Pal generation checklist |
 | `templates/palsmith/standard-pal-generation-checklist.md` | Standard Pal generation checklist |
 | `templates/palsmith/pal-asset-classification-result-template.json` | Pal asset classification result JSON template |

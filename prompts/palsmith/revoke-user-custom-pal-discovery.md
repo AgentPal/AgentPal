@@ -38,8 +38,52 @@ Please do the following:
 Return:
 - current status
 - scope to revoke
+- current authorization record status: `active`, `missing`, `expired`, `revoked`, or `unknown`
+- revocation record shape
 - files that would change
 - fields that remain unchanged
+- post-revocation state for discovery, invocation, delegation, contacts registration, Marketplace, and memory access
 - rollback or re-authorization path
 - Runtime Task Package, if a write is needed
+```
+
+Revocation record shape:
+
+```yaml
+revocation_status: proposed
+target_pal:
+  name:
+  path:
+previous_authorization:
+  status:
+  record_path:
+  expires_at:
+revoked_scope:
+  discovery: false
+  invocation: false
+  delegation: false
+  contacts_registration: false
+  marketplace: none
+preserved_scope:
+  discovery:
+  invocation:
+  delegation:
+  contacts_registration:
+  marketplace:
+post_revocation_state:
+  discovery:
+  invocation:
+  delegation:
+  contacts_registration:
+  marketplace:
+  memory_access: minimal
+audit:
+  preserve_history: true
+  revoked_by:
+  revoked_at:
+  reason:
+write_boundary:
+  contacts_unchanged: true
+  official_pals_unchanged: true
+  runtime_changes: false
 ```

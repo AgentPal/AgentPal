@@ -124,7 +124,9 @@ This protocol does not create a Marketplace backend, public listing, payment flo
 ## Next Reading
 
 - [PalSmith index](README.md)
+- [Full authorization protocol](user-custom-pal-discovery-authorization-protocol.md)
 - [Draft to user custom Pal installation](../../prompts/palsmith/install-draft-as-custom-pal.md)
 - [Authorization prompt](../../prompts/palsmith/authorize-user-custom-pal-discovery.md)
+- [Revocation prompt](../../prompts/palsmith/revoke-user-custom-pal-discovery.md)
 - [Authorization record template](../../templates/palsmith/user-custom-pal-authorization-record.md)
 - [Discovery policy template](../../templates/palsmith/user-custom-pal-discovery-policy.md)

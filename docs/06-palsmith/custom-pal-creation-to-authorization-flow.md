@@ -36,6 +36,9 @@ PalSmith remains a no-code Pal asset governor. It prepares plans, evidence, and 
 8. Revoke authorization when needed.
    Use [`../../prompts/palsmith/revoke-user-custom-pal-discovery.md`](../../prompts/palsmith/revoke-user-custom-pal-discovery.md). Revocation should preserve audit records, disable the selected scope, and avoid silent deletion.
 
+9. Use the protocol when the decision is sensitive.
+   The docs entry is [`user-custom-pal-discovery-authorization-protocol.md`](user-custom-pal-discovery-authorization-protocol.md). It points to the canonical PalSmith protocol under `official/pals/PalSmith-pal-governor/core/`.
+
 ## Boundaries
 
 - Do not write `workspace/organization/contacts/` unless the user gives a separate governance authorization.

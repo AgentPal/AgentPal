@@ -35,6 +35,14 @@ revocation:
   requested_by:
   revoked_at:
   evidence_path:
+  preserve_audit_history: true
+  post_revocation_state:
+    discovery: false
+    invocation: false
+    delegation: false
+    contacts_registration: false
+    marketplace: none
+    memory_access: minimal
 audit_notes:
 ```
 
@@ -50,6 +58,8 @@ audit_notes:
 - `memory_access.private_memory_allowed` starts as `false`.
 - `expires_at` or `review_after` is required before enabling any non-private scope.
 - `revocation.method` is required before enabling any non-private scope.
+- `revocation.preserve_audit_history` stays `true`.
+- revocation should update the selected scope only and should list fields that remain unchanged.
 
 ## Required Notes
 
