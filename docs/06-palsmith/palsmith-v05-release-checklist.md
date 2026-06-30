@@ -10,6 +10,8 @@ This checklist is for a local release-preparation review. It does not authorize 
 - [ ] `RESOURCE_INDEX.md` lists the PalSmith v0.5 user docs and evidence files.
 - [ ] PalSmith release-prep docs are present.
 - [ ] PalSmith R193 evidence files are present.
+- [ ] Pal Asset Execution docs are linked from `docs/README.md` and PalSmith docs.
+- [ ] Release notes include Pal Asset Execution Contract without overstating tool capability.
 - [ ] Markdown links in the added docs point to existing local files.
 - [ ] `git diff --check` has no content errors.
 
@@ -23,6 +25,9 @@ This checklist is for a local release-preparation review. It does not authorize 
 - [ ] Discovery, invocation, delegation, contacts registration, and Marketplace draft permissions remain separate.
 - [ ] No AgentPal runtime backend, CLI, installer, scanner, daemon, connector, validator program, or app runtime is introduced.
 - [ ] No Marketplace backend or public listing is claimed.
+- [ ] User custom Pal, controlled-write fixture, and official Pal statuses are not mixed.
+- [ ] R200 fixture is described as a test artifact, not a real user custom Pal upgrade.
+- [ ] No release notes claim all official Pals have been individually migrated to the Pal Asset Execution Contract.
 
 ## Remote Publication Gate
 
@@ -48,6 +53,8 @@ Before a public pre-release:
 - [ ] Release notes say AgentPal is not an Agent Runtime.
 - [ ] Release notes separate current features from future work.
 - [ ] Release notes do not claim automatic discovery, Marketplace backend, scanner, daemon, connector, app runtime, or remote publication.
+- [ ] Release notes state that tools are not Pal assets.
+- [ ] Release notes keep Luma-style evidence as fixture/example evidence, not a real Luma change.
 - [ ] Known limits are linked or summarized.
 
 ## Decision Values

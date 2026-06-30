@@ -79,6 +79,12 @@ For substantive work, a Pal should be able to produce:
 Small chat and typo fixes can stay lightweight, but creation, upgrade,
 tool-backed work, QA, release, and high-risk tasks need asset-grounded evidence.
 
+Read:
+
+- [`../07-pal-asset-execution/README.md`](../07-pal-asset-execution/README.md)
+- [`palsmith-pal-completeness-guide.md`](palsmith-pal-completeness-guide.md)
+- [`existing-pal-upgrade-asset-execution-guide.md`](existing-pal-upgrade-asset-execution-guide.md)
+
 ## Good First Prompt
 
 ```text
@@ -153,6 +159,8 @@ PalSmith can then turn a Faye Build Request into a Pal or Pal Team design. Quinn
 
 - [PalSmith v0.5 user flow](palsmith-v05-user-flow.md)
 - [PalSmith v0.5 capability summary](palsmith-v05-capability-summary.md)
+- [PalSmith Pal completeness guide](palsmith-pal-completeness-guide.md)
+- [Existing Pal upgrade asset execution guide](existing-pal-upgrade-asset-execution-guide.md)
 - [PalSmith v0.5 release prep](palsmith-v05-release-prep.md)
 - [PalSmith v0.5 known limits](palsmith-v05-known-limits.md)
 - [PalSmith v0.5 release checklist](palsmith-v05-release-checklist.md)

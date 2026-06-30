@@ -10,6 +10,7 @@ AgentPal is a no-code Pal organization layer for existing agent runtimes. It is 
 | --- | --- |
 | Understand AgentPal in 5 minutes | [`00-overview/00-what-is-agentpal.md`](00-overview/00-what-is-agentpal.md) |
 | Learn why AgentPal uses Pals | [`01-concepts/07-why-pal.md`](01-concepts/07-why-pal.md) |
+| Understand why Pals must use assets | [`07-pal-asset-execution/README.md`](07-pal-asset-execution/README.md) |
 | Initialize AgentPal in Codex | [`04-runtime-guides/01-use-with-codex.md`](04-runtime-guides/01-use-with-codex.md) |
 | See runtime support boundaries | [`04-runtime-guides/00-runtime-compatibility.md`](04-runtime-guides/00-runtime-compatibility.md) |
 | Use Mira first | [`02-getting-started/mira-first-usage.md`](02-getting-started/mira-first-usage.md) |
@@ -28,6 +29,7 @@ Useful concept docs:
 - [`01-concepts/01-what-is-a-pal.md`](01-concepts/01-what-is-a-pal.md)
 - [`01-concepts/05-simple-pal-mode.md`](01-concepts/05-simple-pal-mode.md)
 - [`01-concepts/08-pal-teams-collaboration-and-deep-conductor.md`](01-concepts/08-pal-teams-collaboration-and-deep-conductor.md)
+- [`07-pal-asset-execution/README.md`](07-pal-asset-execution/README.md)
 - [`../core/pal-asset-execution-contract.md`](../core/pal-asset-execution-contract.md)
 - [`02-concepts/central-project-record.md`](02-concepts/central-project-record.md)
 - [`02-concepts/project-memory-in-agentpal.md`](02-concepts/project-memory-in-agentpal.md)
@@ -71,6 +73,8 @@ Source of truth: [`../workspace/organization/contacts/pals.json`](../workspace/o
 Use these docs when you want your own AI team:
 
 - [`PalSmith.md`](PalSmith.md)
+- [`06-palsmith/palsmith-pal-completeness-guide.md`](06-palsmith/palsmith-pal-completeness-guide.md)
+- [`06-palsmith/existing-pal-upgrade-asset-execution-guide.md`](06-palsmith/existing-pal-upgrade-asset-execution-guide.md)
 - [`03-user-guides/palsmith-v0.5-pal-creation-and-upgrade.md`](03-user-guides/palsmith-v0.5-pal-creation-and-upgrade.md)
 - [`../examples/palsmith/composite-pal-creation-examples.md`](../examples/palsmith/composite-pal-creation-examples.md)
 - [`../prompts/palsmith/create-composite-pal.md`](../prompts/palsmith/create-composite-pal.md)
@@ -111,6 +115,9 @@ Examples are public-safe demonstrations, not customer data and not dispatch rule
 - DeepSeek / DeepSeek-TUI are experimental or version-help level only.
 - Plan Mode UI evidence is unavailable.
 - Goal Mode evidence is limited.
+- Pal Asset Execution adoption is no-code docs, templates, and eval evidence;
+  it is not a runtime loader or scanner, and it does not mean every official Pal
+  has been individually migrated.
 - External writeback to GitHub, Notion, Lark, Cloudflare, CRM, or customer systems is not generally validated.
 
 ## Evidence / Validation Archive

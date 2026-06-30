@@ -16,6 +16,8 @@ PalSmith can prepare:
 - Pal Team designs;
 - Runtime Task Packages for approved host-runtime work;
 - quality and release-readiness reviews.
+- Pal Asset Execution readiness checks, Missing Asset Plans, and Asset Use
+  Summary evidence.
 
 ## Composite Pal Creation
 
@@ -82,6 +84,15 @@ R168-R191 include:
 - external readability review;
 - resource index and no-code boundary audits.
 
+R198-R201 add Pal Asset Execution evidence:
+
+- global contract and templates;
+- real host read-only rehearsal;
+- controlled-write fixture rehearsal;
+- adoption guides and release-readiness updates.
+
+This evidence does not mean all official Pals have been individually migrated.
+
 ## Explicit Non-Capabilities
 
 PalSmith v0.5 does not include:
@@ -96,6 +107,7 @@ PalSmith v0.5 does not include:
 - automatic central contacts writes;
 - automatic official Pal promotion;
 - automatic public Marketplace listing.
+- runtime-level automatic asset loading or scanning.
 
 ## v0.5 Readiness Verdict
 

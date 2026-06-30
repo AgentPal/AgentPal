@@ -56,6 +56,37 @@ Read-only host tests, dry-run plans, and simulated records must stay labeled as 
 
 How to understand it: use `not-run`, `read-only`, `dry-run`, `partial`, or `blocked` when that is what happened.
 
+## Pal Asset Execution Adoption Is Incremental
+
+R198-R201 add the Pal Asset Execution Contract, adoption guide, templates, and
+regression evidence. This is readiness work for how Pals should prove asset use.
+It is not evidence that every official Pal has been individually rewritten or
+fully retested under the new contract.
+
+How to understand it: future Pal creation and upgrade work should adopt the
+contract step by step. Existing Pals should not be described as fully migrated
+unless their own asset inventory, Task Asset Packet, Asset Use Summary, and
+regression evidence exist.
+
+## Controlled Write Fixture Is Not A Real Pal Upgrade
+
+R200 used `FirstPrinciplesProductReviewerControlledWrite` as a controlled-write
+test fixture under `evals/`. The real user custom Pal under
+`workspace/resources/user-pals/FirstPrinciplesProductReviewer/` was not changed.
+
+How to understand it: the fixture proves the write protocol and boundary. It
+does not promote the fixture, publish it, or modify the real user custom Pal.
+
+## Tool Output Is Not Pal Capability By Itself
+
+Host tools can help execute a request, but the Pal still needs identity,
+knowledge, workflow, runtime policy, memory rules, and eval assets to make the
+request Pal-grounded.
+
+How to understand it: if a tool acts first and the Pal name is attached later,
+the result should be treated as missing asset evidence or a failed asset usage
+regression.
+
 ## Remote Publication Not Included
 
 R193 does not perform `push`, `pull`, `fetch`, tag creation, tag push, GitHub Release creation, or release asset upload.

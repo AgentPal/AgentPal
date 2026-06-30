@@ -132,6 +132,12 @@ HyperFrames, browser tools, shell commands, and MCP tools are execution tools
 used by the host runtime. The Pal must form direction and verification from its
 own assets before tool-backed work.
 
+Read next:
+
+- [`07-pal-asset-execution/README.md`](07-pal-asset-execution/README.md)
+- [`06-palsmith/palsmith-pal-completeness-guide.md`](06-palsmith/palsmith-pal-completeness-guide.md)
+- [`06-palsmith/existing-pal-upgrade-asset-execution-guide.md`](06-palsmith/existing-pal-upgrade-asset-execution-guide.md)
+
 ## What PalSmith Is Not
 
 PalSmith is not:
@@ -212,6 +218,8 @@ This is a no-code collaboration chain inside the current host runtime. It is not
 - [PalSmith index](06-palsmith/README.md)
 - [PalSmith v0.5 user flow](06-palsmith/palsmith-v05-user-flow.md)
 - [PalSmith v0.5 capability summary](06-palsmith/palsmith-v05-capability-summary.md)
+- [PalSmith Pal completeness guide](06-palsmith/palsmith-pal-completeness-guide.md)
+- [Existing Pal upgrade asset execution guide](06-palsmith/existing-pal-upgrade-asset-execution-guide.md)
 - [PalSmith v0.5 release prep](06-palsmith/palsmith-v05-release-prep.md)
 - [PalSmith v0.5 known limits](06-palsmith/palsmith-v05-known-limits.md)
 - [PalSmith v0.5 release checklist](06-palsmith/palsmith-v05-release-checklist.md)

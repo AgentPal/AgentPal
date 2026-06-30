@@ -16,6 +16,7 @@ It covers:
 - revocation planning for user custom Pal discovery
 - bounded Runtime Task Packages for approved host-runtime writes
 - Quinn-style review evidence for quality, privacy, and boundary checks
+- Pal Asset Execution Contract adoption docs and evidence from R198-R201
 
 ## What This Prep Package Does Not Claim
 
@@ -47,6 +48,16 @@ R192 closed the PalSmith v0.5 phase as `ready_for_release_prep`. R193 packages t
 
 The package is suitable for user review before any remote publishing decision.
 
+R201 adds a Pal Asset Execution adoption layer:
+
+- user guide: `docs/07-pal-asset-execution/README.md`
+- PalSmith completeness guide: `docs/06-palsmith/palsmith-pal-completeness-guide.md`
+- existing Pal upgrade guide:
+  `docs/06-palsmith/existing-pal-upgrade-asset-execution-guide.md`
+
+This remains no-code readiness documentation and evidence. It does not add a
+runtime service, scanner, backend, connector, or automatic Pal migration.
+
 ## Publication Boundary
 
 Remote publication is a separate task.
@@ -71,3 +82,5 @@ PalSmith v0.5 helps users turn goals and reviewed source material into bounded P
 - [PalSmith v0.5 capability summary](palsmith-v05-capability-summary.md)
 - [PalSmith v0.5 known limits](palsmith-v05-known-limits.md)
 - [PalSmith v0.5 release checklist](palsmith-v05-release-checklist.md)
+- [PalSmith Pal completeness guide](palsmith-pal-completeness-guide.md)
+- [Existing Pal upgrade asset execution guide](existing-pal-upgrade-asset-execution-guide.md)

@@ -82,6 +82,16 @@ PalSmith can review job fit, missing assets, knowledge quality, output contracts
 
 Quinn or another QA owner can review the evidence before the result is treated as ready.
 
+For asset execution readiness, use:
+
+- [`../07-pal-asset-execution/README.md`](../07-pal-asset-execution/README.md)
+- [`palsmith-pal-completeness-guide.md`](palsmith-pal-completeness-guide.md)
+- [`existing-pal-upgrade-asset-execution-guide.md`](existing-pal-upgrade-asset-execution-guide.md)
+
+PalSmith should not call a Pal executable only because it has a persona or can
+use a host tool. It should check assets, output a Missing Asset Plan when
+needed, and ask for confirmation before controlled writes.
+
 ## What PalSmith Does Not Do
 
 PalSmith v0.5 does not provide:

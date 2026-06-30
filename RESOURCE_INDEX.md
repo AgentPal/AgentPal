@@ -204,6 +204,8 @@ Use:
 | `docs/06-palsmith/README.md` | PalSmith v0.5 user index | PalSmith creation, Pal Team design, Task Package, and governance work |
 | `docs/06-palsmith/palsmith-v05-user-flow.md` | PalSmith v0.5 user flow | external user path for creation, draft, custom Pal, authorization, revocation, and review |
 | `docs/06-palsmith/palsmith-v05-capability-summary.md` | PalSmith v0.5 capability summary | PalSmith v0.5 capability and readiness summary |
+| `docs/06-palsmith/palsmith-pal-completeness-guide.md` | PalSmith Pal completeness guide | persona seed to verified executable Pal readiness ladder |
+| `docs/06-palsmith/existing-pal-upgrade-asset-execution-guide.md` | Existing Pal upgrade asset execution guide | plan-first upgrade boundary and asset execution evidence |
 | `docs/06-palsmith/palsmith-v05-release-prep.md` | PalSmith v0.5 release prep | local release-preparation scope and publication boundary |
 | `docs/06-palsmith/palsmith-v05-known-limits.md` | PalSmith v0.5 known limits | current limits for user custom Pal discovery, runtime, evidence, and publication claims |
 | `docs/06-palsmith/palsmith-v05-release-checklist.md` | PalSmith v0.5 release checklist | local checks before remote authorization decisions |
@@ -222,6 +224,7 @@ Use:
 | `official/pals/Mira-main/evals/mira-first-usage-self-test.md` | Mira-first self-test | ordinary, composite, direct Pal, and release-check regression |
 | `docs/07-official-pals/official-pal-examples-index.md` | Official 10 Pal real task examples index | official Pal examples and v0.5 navigation |
 | `docs/07-official-pals/official-pal-example-library-plan.md` | Official Pal example library plan | official 10 Pal examples planning and boundary rules |
+| `docs/07-pal-asset-execution/README.md` | Pal Asset Execution adoption guide | user-readable guide for asset-grounded Pal work |
 | `evals/official-pals/official-pal-example-library-self-test.md` | Official Pal example library self-test | R42 example structure and boundary checks |
 | `docs/05-orchestration-methodology/capability-inventory-minimal-usable-design.md` | Capability Inventory minimal usable design | v0.2 R43 manual profile design |
 | `docs/03-user-guides/manual-capability-profile.md` | Manual Capability Profile Guide | no-code manual or semi-manual capability profile creation |
@@ -588,6 +591,8 @@ Use the current docs directories as the public entry points. Archived research n
 | `prompts/palsmith/create-composite-pal.md` | R170 copyable PalSmith composite Pal creation prompt |
 | `prompts/palsmith/upgrade-existing-pal-composite-distillation.md` | R196 copyable PalSmith existing Pal composite upgrade prompt |
 | `prompts/palsmith/create-or-upgrade-pal-asset-execution.md` | R198 copyable PalSmith Pal asset execution readiness prompt |
+| `docs/06-palsmith/palsmith-pal-completeness-guide.md` | R201 PalSmith completeness adoption guide |
+| `docs/06-palsmith/existing-pal-upgrade-asset-execution-guide.md` | R201 existing Pal upgrade asset execution guide |
 | `examples/palsmith/draft-to-custom-pal-installation-example.md` | R179 draft Pal Pack to user custom Pal installation example |
 | `prompts/palsmith/install-draft-as-custom-pal.md` | R179 copyable PalSmith draft-to-custom installation prompt |
 | `evals/palbench/v0.5/palsmith/draft-pal-packs/FirstPrinciplesProductReviewer/` | R174 non-official draft Pal Pack test artifact |
@@ -664,6 +669,7 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/palsmith/r98c-palsmith-v0.5-asset-generation-boundary.md` | R98-C PalSmith boundary eval |
 | `release/fresh-clone-checks/r98c-local-palsmith-v0.5-template-validation.md` | R98-C local validation |
 | `docs/03-user-guides/palsmith-v0.5-pal-creation-and-upgrade.md` | PalSmith v0.5 user guide |
+| `docs/07-pal-asset-execution/README.md` | R201 Pal Asset Execution adoption guide |
 
 ## Pal Asset Usage Regression
 
@@ -685,6 +691,9 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/asset-usage/r200-controlled-write-fixture-execution-regression.md` | R200 controlled write fixture execution regression |
 | `evals/palbench/v0.5/asset-usage/r200-controlled-write-boundary-pressure-tests.md` | R200 controlled write negative boundary pressure tests |
 | `evals/palbench/v0.5/asset-usage/r200-quinn-controlled-write-review.md` | R200 Quinn controlled write review |
+| `evals/palbench/v0.5/asset-usage/r201-asset-execution-adoption-guide-review.md` | R201 Pal Asset Execution adoption guide review |
+| `evals/palbench/v0.5/asset-usage/r201-release-readiness-update-review.md` | R201 release readiness update review |
+| `evals/palbench/v0.5/asset-usage/r201-quinn-adoption-guide-review.md` | R201 Quinn adoption guide review |
 
 ## Official Pal Asset Audit
 
