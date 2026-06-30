@@ -646,6 +646,10 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/palsmith/r196-existing-pal-upgrade-routing-regression.md` | R196 existing Pal upgrade routing regression |
 | `evals/palbench/v0.5/palsmith/r196-luma-upgrade-regression.md` | R196 Luma upgrade regression scenario |
 | `evals/palbench/v0.5/palsmith/r196-quinn-existing-pal-upgrade-review.md` | R196 Quinn review for existing Pal composite upgrade |
+| `evals/palbench/v0.5/palsmith/r197-existing-pal-upgrade-host-plan.md` | R197 real Codex host existing Pal upgrade plan rehearsal |
+| `evals/palbench/v0.5/palsmith/r197-ai-judgement-no-keyword-routing-check.md` | R197 AI semantic judgement and no-keyword-routing host check |
+| `evals/palbench/v0.5/palsmith/r197-simple-edit-contrast-check.md` | R197 simple existing Pal edit contrast host check |
+| `evals/palbench/v0.5/palsmith/r197-quinn-existing-pal-upgrade-host-review.md` | R197 Quinn review for existing Pal upgrade real-host rehearsal |
 | `templates/palsmith/minimal-pal-generation-checklist.md` | Minimal Pal generation checklist |
 | `templates/palsmith/standard-pal-generation-checklist.md` | Standard Pal generation checklist |
 | `templates/palsmith/pal-asset-classification-result-template.json` | Pal asset classification result JSON template |
