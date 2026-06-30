@@ -118,6 +118,26 @@ verified-readiness promotion, and not representative host regression evidence.
 Phase 3 should run real or controlled host regressions for the high-priority
 examples.
 
+## R205 Representative Host Regressions
+
+R205 ran real Codex host regressions for the same five high-priority official
+Pals:
+
+- Mira
+- PalSmith
+- Atlas
+- Quinn
+- Nova
+
+Each representative thread recorded Asset Loading Gate evidence, a Task Asset
+Packet or equivalent plan, and an Asset Use Summary or equivalent evidence.
+Quinn reviewed the five-thread set and returned
+`quinn_high_priority_host_regression_pass_with_notes`.
+
+This remains representative task-family evidence. It does not verify all 10
+official Pals and does not change contacts, user custom Pals, runtime behavior,
+release status, or GitHub publication status.
+
 ## Evidence Files
 
 - [`../../evals/palbench/v0.5/asset-usage/r202-official-pal-asset-execution-adoption-matrix.md`](../../evals/palbench/v0.5/asset-usage/r202-official-pal-asset-execution-adoption-matrix.md)
@@ -129,3 +149,5 @@ examples.
 - [`../../evals/palbench/v0.5/asset-usage/r204-high-priority-pal-task-asset-packet-examples-matrix.md`](../../evals/palbench/v0.5/asset-usage/r204-high-priority-pal-task-asset-packet-examples-matrix.md)
 - [`../../evals/palbench/v0.5/asset-usage/r204-task-asset-packet-example-quality-review.md`](../../evals/palbench/v0.5/asset-usage/r204-task-asset-packet-example-quality-review.md)
 - [`../../evals/palbench/v0.5/asset-usage/r204-quinn-phase-2-example-review.md`](../../evals/palbench/v0.5/asset-usage/r204-quinn-phase-2-example-review.md)
+- [`../../evals/palbench/v0.5/asset-usage/r205-high-priority-host-regression-summary.md`](../../evals/palbench/v0.5/asset-usage/r205-high-priority-host-regression-summary.md)
+- [`../../evals/palbench/v0.5/asset-usage/r205-quinn-high-priority-host-regression-review.md`](../../evals/palbench/v0.5/asset-usage/r205-quinn-high-priority-host-regression-review.md)

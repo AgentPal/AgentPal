@@ -704,6 +704,13 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/asset-usage/r204-high-priority-pal-task-asset-packet-examples-matrix.md` | R204 high-priority Pal Task Asset Packet examples matrix |
 | `evals/palbench/v0.5/asset-usage/r204-task-asset-packet-example-quality-review.md` | R204 quality review for Task Asset Packet examples |
 | `evals/palbench/v0.5/asset-usage/r204-quinn-phase-2-example-review.md` | R204 Quinn review for Phase 2 examples |
+| `evals/palbench/v0.5/asset-usage/r205-mira-release-readiness-host-regression.md` | R205 Mira representative host regression |
+| `evals/palbench/v0.5/asset-usage/r205-palsmith-existing-pal-upgrade-host-regression.md` | R205 PalSmith representative host regression |
+| `evals/palbench/v0.5/asset-usage/r205-atlas-development-task-package-host-regression.md` | R205 Atlas representative host regression |
+| `evals/palbench/v0.5/asset-usage/r205-quinn-completion-report-review-host-regression.md` | R205 Quinn representative host regression |
+| `evals/palbench/v0.5/asset-usage/r205-nova-product-privacy-boundary-host-regression.md` | R205 Nova representative host regression |
+| `evals/palbench/v0.5/asset-usage/r205-quinn-high-priority-host-regression-review.md` | R205 Quinn summary review for high-priority host regressions |
+| `evals/palbench/v0.5/asset-usage/r205-high-priority-host-regression-summary.md` | R205 high-priority representative host regression summary |
 
 ## Official Pal Asset Audit
 
@@ -721,6 +728,7 @@ Use the current docs directories as the public entry points. Archived research n
 | `official/pals/Atlas-developer/evals/asset-execution-example.md` | R204 Atlas Task Asset Packet example |
 | `official/pals/Quinn-quality/evals/asset-execution-example.md` | R204 Quinn Task Asset Packet example |
 | `official/pals/Nova-product/evals/asset-execution-example.md` | R204 Nova Task Asset Packet example |
+| `evals/palbench/v0.5/asset-usage/r205-high-priority-host-regression-summary.md` | R205 representative host regression summary for five high-priority official Pals |
 
 ## Pal Asset / Org Pack Integration
 

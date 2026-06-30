@@ -134,6 +134,11 @@ R204 added Phase 2 Task Asset Packet and Asset Use Summary examples for five
 high-priority Pals: Mira, PalSmith, Atlas, Quinn, and Nova. These examples are
 guidance, not verified host regression results.
 
+R205 ran representative Codex host regressions for those same five
+high-priority Pals. The result is scoped representative task-family evidence
+with Quinn review, not a full verification of all official Pals and not a
+release or remote publication claim.
+
 Read:
 
 - [Official Pal adoption spot-check](official-pal-adoption-spot-check.md)
