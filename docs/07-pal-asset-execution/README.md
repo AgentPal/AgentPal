@@ -144,6 +144,12 @@ coverage matrix and prepares R207 to run representative host regressions for
 Faye, Harper, Morgan, Rhea, and Vega. R206 is planning evidence, not execution
 evidence.
 
+R207 ran those five remaining representative Codex host regressions and Quinn
+reviewed the set. Combined with R205, all 10 official bundled Pals now have one
+representative task-family host regression for Pal Asset Execution adoption.
+This remains scoped evidence, not a full certification of every task family and
+not a runtime, release, or contacts change.
+
 Read:
 
 - [Official Pal adoption spot-check](official-pal-adoption-spot-check.md)

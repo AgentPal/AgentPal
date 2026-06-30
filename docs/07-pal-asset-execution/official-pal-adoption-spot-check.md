@@ -152,6 +152,26 @@ R207 execution package for the remaining five official Pals:
 This is planning evidence only. It does not run the remaining host regressions
 and does not change any Pal completeness label by itself.
 
+## R207 Remaining Official Pal Host Regressions
+
+R207 ran real Codex host regressions for the remaining five official Pals:
+
+- Faye
+- Harper
+- Morgan
+- Rhea
+- Vega
+
+Each representative thread recorded Asset Loading Gate or equivalent evidence,
+a Task Asset Packet or equivalent plan, and an Asset Use Summary or equivalent
+evidence. Quinn reviewed the five-thread set and returned
+`quinn_remaining_official_pal_host_regression_pass_with_notes`.
+
+Combined with R205, each of the 10 official bundled Pals now has one scoped
+representative task-family host regression. This is not a blanket task-family
+certification, not a release-readiness promotion, and not evidence of new
+runtime or contacts behavior.
+
 ## Evidence Files
 
 - [`../../evals/palbench/v0.5/asset-usage/r202-official-pal-asset-execution-adoption-matrix.md`](../../evals/palbench/v0.5/asset-usage/r202-official-pal-asset-execution-adoption-matrix.md)
@@ -170,3 +190,11 @@ and does not change any Pal completeness label by itself.
 - [`../../evals/palbench/v0.5/asset-usage/r206-remaining-official-pal-regression-plan.md`](../../evals/palbench/v0.5/asset-usage/r206-remaining-official-pal-regression-plan.md)
 - [`../../evals/palbench/v0.5/asset-usage/r206-r207-execution-package.md`](../../evals/palbench/v0.5/asset-usage/r206-r207-execution-package.md)
 - [`../../evals/palbench/v0.5/asset-usage/r206-quinn-phase-3-plan-review.md`](../../evals/palbench/v0.5/asset-usage/r206-quinn-phase-3-plan-review.md)
+- [`../../evals/palbench/v0.5/asset-usage/r207-faye-delivery-host-regression.md`](../../evals/palbench/v0.5/asset-usage/r207-faye-delivery-host-regression.md)
+- [`../../evals/palbench/v0.5/asset-usage/r207-harper-writing-host-regression.md`](../../evals/palbench/v0.5/asset-usage/r207-harper-writing-host-regression.md)
+- [`../../evals/palbench/v0.5/asset-usage/r207-morgan-document-host-regression.md`](../../evals/palbench/v0.5/asset-usage/r207-morgan-document-host-regression.md)
+- [`../../evals/palbench/v0.5/asset-usage/r207-rhea-system-boundary-host-regression.md`](../../evals/palbench/v0.5/asset-usage/r207-rhea-system-boundary-host-regression.md)
+- [`../../evals/palbench/v0.5/asset-usage/r207-vega-research-host-regression.md`](../../evals/palbench/v0.5/asset-usage/r207-vega-research-host-regression.md)
+- [`../../evals/palbench/v0.5/asset-usage/r207-quinn-remaining-official-pal-host-regression-review.md`](../../evals/palbench/v0.5/asset-usage/r207-quinn-remaining-official-pal-host-regression-review.md)
+- [`../../evals/palbench/v0.5/asset-usage/r207-remaining-official-pal-host-regression-summary.md`](../../evals/palbench/v0.5/asset-usage/r207-remaining-official-pal-host-regression-summary.md)
+- [`../../evals/palbench/v0.5/asset-usage/r207-official-pal-representative-regression-coverage-matrix.md`](../../evals/palbench/v0.5/asset-usage/r207-official-pal-representative-regression-coverage-matrix.md)

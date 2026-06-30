@@ -25,6 +25,9 @@ Quinn, and Nova.
 R206 plans the remaining representative host regressions for Faye, Harper,
 Morgan, Rhea, and Vega.
 
+R207 executed those remaining representative host regressions in real Codex
+local project threads and recorded the results as scoped evidence.
+
 ## Why R206 Exists
 
 The official Pal roster has 10 Pals. R205 covered five high-priority task
@@ -76,6 +79,27 @@ R207 should not:
 - create remote tags;
 - claim every task family is covered.
 
+## R207 Result
+
+R207 completed representative host regressions for the remaining five official
+Pals:
+
+| Pal | Representative task family | Result |
+| --- | --- | --- |
+| Faye | delivery / handoff / user-facing delivery summary | pass_with_notes |
+| Harper | README-oriented writing / style / revision | pass_with_notes |
+| Morgan | document structure / release notes / document package | pass_with_notes |
+| Rhea | system boundary / no-code boundary / risk review | pass_with_notes |
+| Vega | research / source policy / external Skill-to-Pal evaluation | pass_with_notes |
+
+Quinn reviewed the five-thread set and returned
+`quinn_remaining_official_pal_host_regression_pass_with_notes`.
+
+Combined with R205, the official bundled Pal roster now has one representative
+task-family host regression per Pal. This is still scoped evidence. It is not a
+claim that every task family is covered, and it does not add runtime,
+publication, contacts, or backend behavior.
+
 ## Phase 4 / Certification Preconditions
 
 Phase 4 can only consider scoped completeness labels when:
@@ -93,3 +117,6 @@ Phase 4 can only consider scoped completeness labels when:
 - [`../../evals/palbench/v0.5/asset-usage/r206-remaining-official-pal-regression-plan.md`](../../evals/palbench/v0.5/asset-usage/r206-remaining-official-pal-regression-plan.md)
 - [`../../evals/palbench/v0.5/asset-usage/r206-r207-execution-package.md`](../../evals/palbench/v0.5/asset-usage/r206-r207-execution-package.md)
 - [`../../evals/palbench/v0.5/asset-usage/r206-quinn-phase-3-plan-review.md`](../../evals/palbench/v0.5/asset-usage/r206-quinn-phase-3-plan-review.md)
+- [`../../evals/palbench/v0.5/asset-usage/r207-remaining-official-pal-host-regression-summary.md`](../../evals/palbench/v0.5/asset-usage/r207-remaining-official-pal-host-regression-summary.md)
+- [`../../evals/palbench/v0.5/asset-usage/r207-official-pal-representative-regression-coverage-matrix.md`](../../evals/palbench/v0.5/asset-usage/r207-official-pal-representative-regression-coverage-matrix.md)
+- [`../../evals/palbench/v0.5/asset-usage/r207-quinn-remaining-official-pal-host-regression-review.md`](../../evals/palbench/v0.5/asset-usage/r207-quinn-remaining-official-pal-host-regression-review.md)
