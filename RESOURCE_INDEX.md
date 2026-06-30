@@ -604,6 +604,13 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/palsmith/r186-user-custom-pal-authorization-quality-regression.md` | R186 user custom Pal authorization quality regression |
 | `evals/palbench/v0.5/palsmith/r186-authorization-boundary-pressure-tests.md` | R186 authorization boundary pressure tests |
 | `evals/palbench/v0.5/palsmith/r186-quinn-authorization-regression-review.md` | R186 Quinn authorization regression review |
+| `evals/palbench/v0.5/palsmith/r188-custom-pal-authorization-host-dialogue.md` | R188 real Codex host thread custom Pal authorization dialogue |
+| `evals/palbench/v0.5/palsmith/r188-custom-pal-authorization-record-sample.md` | R188 custom Pal authorization and revocation record samples |
+| `evals/palbench/v0.5/palsmith/r188-custom-pal-authorization-boundary-results.md` | R188 custom Pal authorization boundary results |
+| `evals/palbench/v0.5/palsmith/r188-quinn-authorization-e2e-review.md` | R188 Quinn custom Pal authorization E2E review |
+| `evals/palbench/v0.5/palsmith/r188-custom-pal-authorization-e2e-summary.md` | R188 custom Pal authorization E2E summary |
+| `evals/palbench/v0.5/palsmith/r189-custom-pal-authorization-e2e-quality-regression.md` | R189 custom Pal authorization E2E quality regression |
+| `evals/palbench/v0.5/palsmith/r189-quinn-custom-pal-authorization-e2e-quality-review.md` | R189 Quinn custom Pal authorization E2E quality review |
 | `templates/palsmith/minimal-pal-generation-checklist.md` | Minimal Pal generation checklist |
 | `templates/palsmith/standard-pal-generation-checklist.md` | Standard Pal generation checklist |
 | `templates/palsmith/pal-asset-classification-result-template.json` | Pal asset classification result JSON template |
