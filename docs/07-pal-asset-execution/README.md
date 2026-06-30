@@ -118,3 +118,13 @@ It should choose one of these:
 
 R200's controlled-write fixture is a test artifact. It is not an official Pal,
 not a user-installed Pal, and not a public listing.
+
+## Official Pal Adoption Spot-Check
+
+R202 checked the 10 official bundled Pals for Pal Asset Execution adoption. The
+result is a spot-check and phased adoption plan, not a completed per-Pal
+migration.
+
+Read:
+
+- [Official Pal adoption spot-check](official-pal-adoption-spot-check.md)

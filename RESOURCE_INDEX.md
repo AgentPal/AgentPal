@@ -206,6 +206,7 @@ Use:
 | `docs/06-palsmith/palsmith-v05-capability-summary.md` | PalSmith v0.5 capability summary | PalSmith v0.5 capability and readiness summary |
 | `docs/06-palsmith/palsmith-pal-completeness-guide.md` | PalSmith Pal completeness guide | persona seed to verified executable Pal readiness ladder |
 | `docs/06-palsmith/existing-pal-upgrade-asset-execution-guide.md` | Existing Pal upgrade asset execution guide | plan-first upgrade boundary and asset execution evidence |
+| `docs/07-pal-asset-execution/official-pal-adoption-spot-check.md` | Official Pal adoption spot-check | R202 official Pal Asset Execution adoption route and limits |
 | `docs/06-palsmith/palsmith-v05-release-prep.md` | PalSmith v0.5 release prep | local release-preparation scope and publication boundary |
 | `docs/06-palsmith/palsmith-v05-known-limits.md` | PalSmith v0.5 known limits | current limits for user custom Pal discovery, runtime, evidence, and publication claims |
 | `docs/06-palsmith/palsmith-v05-release-checklist.md` | PalSmith v0.5 release checklist | local checks before remote authorization decisions |
@@ -694,6 +695,9 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/asset-usage/r201-asset-execution-adoption-guide-review.md` | R201 Pal Asset Execution adoption guide review |
 | `evals/palbench/v0.5/asset-usage/r201-release-readiness-update-review.md` | R201 release readiness update review |
 | `evals/palbench/v0.5/asset-usage/r201-quinn-adoption-guide-review.md` | R201 Quinn adoption guide review |
+| `evals/palbench/v0.5/asset-usage/r202-official-pal-asset-execution-adoption-matrix.md` | R202 official Pal Asset Execution adoption spot-check matrix |
+| `evals/palbench/v0.5/asset-usage/r202-official-pal-adoption-gaps-summary.md` | R202 official Pal adoption gaps and phase plan |
+| `evals/palbench/v0.5/asset-usage/r202-quinn-official-pal-adoption-review.md` | R202 Quinn review for official Pal adoption spot-check |
 
 ## Official Pal Asset Audit
 
@@ -704,6 +708,7 @@ Use the current docs directories as the public entry points. Archived research n
 | `release/integration-notes/r98b-official-pal-upgrade-plan.md` | R98-B official Pal upgrade plan |
 | `release/fresh-clone-checks/r98b-local-official-pal-asset-audit-validation.md` | R98-B local validation |
 | `docs/03-user-guides/official-pal-asset-upgrade-plan.md` | official Pal asset upgrade plan guide |
+| `docs/07-pal-asset-execution/official-pal-adoption-spot-check.md` | R202 official Pal Asset Execution adoption spot-check guide |
 
 ## Pal Asset / Org Pack Integration
 
