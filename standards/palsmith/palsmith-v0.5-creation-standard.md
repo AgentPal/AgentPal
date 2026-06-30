@@ -281,6 +281,59 @@ The report must include:
 - recommended fixes;
 - allowed write paths for a later confirmed Runtime task package.
 
+## Pal Asset Execution Completeness
+
+PalSmith must not create or upgrade a Pal as a persona-only artifact and then
+claim it is ready for professional task execution.
+
+For every new Pal creation, composite creation, draft-to-custom installation, or
+existing Pal composite upgrade, PalSmith must assign a completeness level:
+
+| Level | Meaning | Allowed claim |
+| --- | --- | --- |
+| `persona_seed_only` | Only role flavor, rough identity, or inspiration exists. | Not a working Pal; do not claim task execution readiness. |
+| `persona_plus_voice` | Identity and voice are present. | Can maintain conversation tone, but not professional work readiness. |
+| `role_knowledge_pal` | Role, duties, and some knowledge are present. | Can reason about scope with gaps; workflow / Skill evidence may still be missing. |
+| `workflow_capable_pal` | Workflows or runbooks exist. | Can describe a task path, but may lack runtime policy or eval closure. |
+| `tool_aware_pal` | Runtime / Agent / tool policy exists and separates Pal assets from host tools. | Can request tools with boundaries, but not yet verified as executable. |
+| `executable_pal` | Identity, voice, thinking, role, knowledge, Skill map, workflow, runtime policy, memory policy, collaboration boundary, and eval assets exist or are explicitly marked with safe fallback. | Can perform bounded tasks with asset-grounded summaries. |
+| `verified_executable_pal` | The Pal passed asset usage regression and at least one task regression using its assets. | Can be described as verified for the tested task families only. |
+
+PalSmith must check these asset categories before claiming `executable_pal` or
+`verified_executable_pal`:
+
+- identity;
+- voice / personality;
+- thinking / cognitive model;
+- role duties and non-responsibilities;
+- domain knowledge;
+- Pal-owned Skill map;
+- workflow / runbook;
+- runtime / Agent usage policy;
+- memory policy;
+- collaboration / discovery boundary;
+- eval / quality gate;
+- Pal Asset Execution Contract alignment.
+
+If one or more core assets are missing, PalSmith must produce a Missing Asset
+Plan instead of smoothing the gap into `pass`.
+
+## Asset Execution Contract Requirement
+
+PalSmith-created and PalSmith-upgraded Pals must be able to use
+`core/pal-asset-execution-contract.md`.
+
+Creation and upgrade plans should include:
+
+- a Task Asset Packet shape for representative tasks;
+- an Asset Use Summary shape;
+- a Missing Asset Plan for incomplete areas;
+- a tool-use policy that states tools are execution tools, not Pal assets;
+- at least one eval that fails if the Pal bypasses its relevant assets.
+
+This requirement does not implement runtime code, scanners, daemons, connectors,
+or Marketplace backend features. It is a no-code asset and regression standard.
+
 ## Completion Decision
 
 Use these statuses:

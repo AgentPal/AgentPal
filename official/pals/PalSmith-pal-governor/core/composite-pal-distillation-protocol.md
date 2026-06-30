@@ -335,3 +335,41 @@ A Composite Pal Creation Plan must include:
 - source / copyright / impersonation boundary
 
 PalSmith then asks for confirmation before any Runtime file writes.
+
+## Asset Execution Completeness
+
+Composite Pal creation must classify the resulting Pal's readiness with a
+completeness level:
+
+- `persona_seed_only`
+- `persona_plus_voice`
+- `role_knowledge_pal`
+- `workflow_capable_pal`
+- `tool_aware_pal`
+- `executable_pal`
+- `verified_executable_pal`
+
+The level is based on actual assets, not aspiration. Persona, tone, or a good
+name alone cannot be described as an executable Pal.
+
+Before claiming `executable_pal`, the plan must include or explicitly mark
+missing:
+
+- identity and role assets;
+- voice / personality assets;
+- thinking or cognitive-model assets when relevant;
+- domain knowledge assets;
+- Pal-owned Skill map;
+- workflow or runbook assets;
+- runtime / Agent usage policy;
+- memory policy;
+- collaboration and discovery boundary;
+- eval / quality gate;
+- alignment with `core/pal-asset-execution-contract.md`.
+
+Before claiming `verified_executable_pal`, the Pal must have asset usage
+regression evidence showing that representative tasks loaded and used its
+assets, not only its name, persona, model common sense, or host tools.
+
+If these assets are missing, PalSmith must output a Missing Asset Plan instead
+of claiming the Pal is complete.

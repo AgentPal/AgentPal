@@ -20,6 +20,12 @@ R170 adds user-facing documentation, copyable prompts, and examples for composit
 
 R196 adds existing Pal composite upgrade routing. PalSmith now supports both creating new Pals and upgrading existing Pals. When a request may change an existing Pal's voice, personality, thinking, role, knowledge, workflow, Skill / Agent usage, memory, collaboration, discovery, or publication boundary, PalSmith must use AI judgement and produce an upgrade plan before any write. This is not keyword routing and not a direct persona-file edit path.
 
+R198 adds the Pal Asset Execution Contract. PalSmith must now check whether a
+created or upgraded Pal can actually use task-relevant assets during work. A Pal
+with only a name, persona, or voice is not an executable Pal. PalSmith records
+completeness levels from `persona_seed_only` through `verified_executable_pal`
+and produces Missing Asset Plans when required assets are absent.
+
 R179 adds a no-code draft-to-user-custom Pal installation flow. This lets PalSmith plan how a reviewed draft Pal Pack can become a user custom Pal under a private-by-default user custom area, without promoting it to official Pal status, without writing central contacts, and without building an installer or runtime service.
 
 R185-R191 add user custom Pal discovery authorization, explicit invocation boundaries, revocation readiness, real host read-only regression, and external readability review. User custom Pals remain private by default and are not central contacts or official Pals.
@@ -39,6 +45,14 @@ Task package examples live in `examples/task-packages/`. Reusable task package t
 Draft-to-custom installation planning is governed by `core/custom-pal-installation-protocol.md`. The default suggested target is `workspace/resources/user-pals/<pal-id>/`, but PalSmith must present an installation plan and receive explicit user confirmation before any Runtime write.
 
 Existing Pal composite upgrade planning is governed by `core/existing-pal-composite-upgrade-protocol.md`. PalSmith must distinguish a simple existing Pal edit from a high-impact upgrade through AI judgement, then produce a target file map, eval plan, source boundary, and confirmation question before controlled writes.
+
+Pal asset execution readiness is governed by the workspace
+`core/pal-asset-execution-contract.md` and `core/asset-loading-gate.md`. Tools
+such as Codex, Claude Code, ImageGen, Product Design, HyperFrames, browser
+tools, shell commands, and MCP tools are execution tools, not Pal assets. A Pal
+should load and use its own relevant identity, knowledge, Skill, workflow,
+runtime policy, memory, and eval assets before tool-backed work, then report the
+Asset Use Summary when needed.
 
 Release readiness is checked through Markdown evals, including `official/pals/PalSmith-pal-governor/evals/palsmith-release-scope-eval.md` and the R192 closeout reviews under `evals/palbench/v0.5/palsmith/`.
 

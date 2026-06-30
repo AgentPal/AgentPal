@@ -15,6 +15,7 @@ In v0.5, PalSmith is a no-code Pal asset governor. It can help a user turn goals
 - review a Pal Pack for completeness, privacy, and job fitness
 - plan how a reviewed draft Pal Pack can become a user custom Pal
 - prepare repair steps when a draft is shallow, unsafe, or incomplete
+- check whether a Pal's task-relevant assets are loaded, used, and reflected in execution evidence
 - distinguish Pal-owned Skills from host runtime Skills
 - generate validation cases and Marketplace metadata drafts without building Marketplace runtime features
 - design explicit authorization for user custom Pal discovery, invocation, limited delegation, contacts registration, and Marketplace draft work
@@ -60,6 +61,23 @@ Core protocol:
 - create fixed keyword routing rules
 - turn private company material into a public Marketplace item by default
 - present a source-inspired Pal as the source person, source character, brand, or rights holder
+- describe a persona-only Pal as executable or verified
+- treat ImageGen, Product Design, HyperFrames, Codex, Claude Code, MCP tools, or shell commands as Pal assets by themselves
+
+## Pal Asset Execution
+
+PalSmith uses the Pal Asset Execution Contract to prevent a common failure: a
+Pal has assets on disk, but the runtime answers from the Pal name, a small
+persona, model common sense, or a direct tool call.
+
+For substantive work, a Pal should be able to produce:
+
+- Task Asset Packet before work;
+- Asset Use Summary after work;
+- Missing Asset Plan when core assets are absent.
+
+Small chat and typo fixes can stay lightweight, but creation, upgrade,
+tool-backed work, QA, release, and high-risk tasks need asset-grounded evidence.
 
 ## Good First Prompt
 

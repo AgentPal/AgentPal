@@ -118,6 +118,7 @@
     "composite-pal-distillation",
     "existing-pal-composite-upgrade",
     "existing-pal-upgrade-ai-judgement",
+    "pal-asset-execution-readiness",
     "human-to-pal",
     "voice-to-pal",
     "role-to-pal",

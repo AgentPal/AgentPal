@@ -28,6 +28,7 @@ Useful concept docs:
 - [`01-concepts/01-what-is-a-pal.md`](01-concepts/01-what-is-a-pal.md)
 - [`01-concepts/05-simple-pal-mode.md`](01-concepts/05-simple-pal-mode.md)
 - [`01-concepts/08-pal-teams-collaboration-and-deep-conductor.md`](01-concepts/08-pal-teams-collaboration-and-deep-conductor.md)
+- [`../core/pal-asset-execution-contract.md`](../core/pal-asset-execution-contract.md)
 - [`02-concepts/central-project-record.md`](02-concepts/central-project-record.md)
 - [`02-concepts/project-memory-in-agentpal.md`](02-concepts/project-memory-in-agentpal.md)
 

@@ -83,6 +83,17 @@ Before controlled writes, PalSmith must produce an upgrade plan containing:
 - blocked write paths;
 - required confirmation question.
 
+The plan must also include an asset execution impact section:
+
+- current completeness level;
+- target completeness level;
+- task-relevant assets that must be loaded before the upgraded Pal performs the
+  target task;
+- assets that are missing and require a Missing Asset Plan;
+- Task Asset Packet expectation;
+- Asset Use Summary expectation;
+- eval that fails if the upgraded Pal bypasses the new assets.
+
 ## Impact Ranges
 
 Use AI judgement to decide which ranges apply. Do not require every upgrade to
@@ -132,6 +143,11 @@ After any approved write, PalSmith must require:
 - no-code boundary scan;
 - source and impersonation boundary scan;
 - report summarizing done, not-run, risk, and next step.
+
+After any approved high-impact upgrade, PalSmith must not call the result
+`verified_executable_pal` until at least one asset usage regression confirms
+that the upgraded Pal loaded and used the changed assets during a representative
+task.
 
 ## Relationship To Other Protocols
 

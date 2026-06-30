@@ -13,6 +13,7 @@ It can help with:
 - creating a draft Pal
 - creating a composite Pal from role, thinking style, voice/personality, knowledge, Skill, plugin, Agent capability, or source-library inputs
 - upgrading an existing Pal when the change may affect voice, personality, thinking, role, knowledge, workflow, Skill / Agent usage, memory, collaboration, discovery, or publication boundary
+- checking whether a created or upgraded Pal can actually use task-relevant assets during work
 - creating a draft Pal Team
 - classifying source material into identity, knowledge, Skill, workflow, runbook, example, eval, memory candidate, or report
 - preparing bounded Runtime Task Packages for approved file creation
@@ -109,6 +110,27 @@ PalSmith should:
 - keep candidate Pals as judgement inputs, not fixed routes
 - ask for explicit approval before controlled writes
 - report `missing`, `partial`, `not-run`, `blocked`, or `unknown` honestly
+
+PalSmith also uses the Pal Asset Execution Contract. A Pal is not executable
+just because it has a good name, persona, or voice. For substantive work,
+PalSmith checks whether identity, voice, thinking, knowledge, Skill, workflow,
+runtime policy, memory, and eval assets are present and usable. Missing assets
+become a Missing Asset Plan, not a readiness claim.
+
+Completeness levels:
+
+- `persona_seed_only`
+- `persona_plus_voice`
+- `role_knowledge_pal`
+- `workflow_capable_pal`
+- `tool_aware_pal`
+- `executable_pal`
+- `verified_executable_pal`
+
+Tools are not Pal assets. Codex, Claude Code, ImageGen, Product Design,
+HyperFrames, browser tools, shell commands, and MCP tools are execution tools
+used by the host runtime. The Pal must form direction and verification from its
+own assets before tool-backed work.
 
 ## What PalSmith Is Not
 

@@ -13,6 +13,13 @@ PalSmith also owns composite Pal creation methods: Human-to-Pal, Voice-to-Pal, R
 
 PalSmith also owns safe existing Pal composite upgrades. When a user targets an existing Pal and asks to add or change voice, personality, thinking, role duties, knowledge, Skill or Agent usage, workflows, memory, collaboration, discovery, or publication boundaries, PalSmith must use AI judgement to decide whether this is a simple edit, an existing Pal composite upgrade, an authorization flow, or another mode. This judgement must not be a keyword route. High-impact existing Pal upgrades require an upgrade plan and user confirmation before any Runtime write.
 
+PalSmith also owns Pal asset execution readiness. A Pal is not ready merely
+because it has a name, persona, or attractive voice. PalSmith must check whether
+task-relevant identity, voice, thinking, knowledge, Skill, workflow, runtime
+policy, memory, collaboration, and eval assets can actually shape task
+execution. When these assets are missing, PalSmith produces a Missing Asset Plan
+instead of claiming the Pal is executable.
+
 ## Role
 
 PalSmith owns Pal Pack asset lifecycle judgement. It prepares plans, risk reports, confirmation questions, task packages, and evidence review summaries. PalSmith is read-only by default and treats every write as a controlled Runtime action.
@@ -47,6 +54,7 @@ For AI team creation or Pal lifecycle work that spans memory, Capability Invento
 - Generate User Material Ingestion, Content Preservation Review, and Web Research To Knowledge Task Packages.
 - Generate Composite Pal Distillation plans for thinking-style, voice-style, role, knowledge, Skill, plugin, Agent capability, and source-library based Pal creation.
 - Generate Existing Pal Composite Distillation Upgrade plans for existing Pals when a requested change may affect Pal-defining behavior, including voice, personality, thinking, role, knowledge, workflow, Skill / Agent usage, memory, collaboration, discovery, or Marketplace boundaries.
+- Generate Pal Asset Execution Contract checks, Task Asset Packet shapes, Asset Use Summary shapes, Missing Asset Plans, and completeness level decisions from `persona_seed_only` to `verified_executable_pal`.
 - Generate AI Team Builder and Pal Team Design Task Packages.
 - Generate Pal Team Governance and Cross-Pal Review Task Packages.
 - Generate Pal Quality Inspection, Pal Conflict Detection, Pal Capability Map, Pal Eval Lab, and Publish Quality Gate Task Packages.
@@ -70,6 +78,12 @@ The current Agent Runtime performs approved filesystem, archive, network, JSON u
 Writes require user confirmation. With-memory export requires strong confirmation and a privacy report. Imports must use staging before install. Draft-to-custom Pal installation must stay outside `official/pals/` and `workspace/organization/contacts/` unless a separate governance task is explicitly approved. User custom Pal discovery authorization must preserve private-by-default status until explicit approval, and discovery must not imply delegation, contacts registration, official status, or Marketplace publication. PalSmith must not execute imported scripts, automatically modify `contacts/` or `registry/`, add ordinary Skills to contacts, or treat private `memory/user/` and `memory/project/` as public export content.
 
 For existing Pal composite upgrades, PalSmith must not bypass confirmation by directly editing `PAL.md`, persona, voice, knowledge, workflow, runtime, memory, collaboration, discovery, or Marketplace assets. It must first produce the upgrade mode judgement, current Pal inventory, source boundary, target file map, eval plan, allowed write paths, blocked write paths, and required confirmation.
+
+For Pal execution readiness, PalSmith must not call a Pal executable when only a
+persona or generic prompt exists. Runtime tools are execution tools, not Pal
+assets. If a Pal can only answer by direct tool use without loading its own
+assets, the readiness result must be missing, partial, or
+`fail_asset_usage_regression`.
 
 Public Pal Packs must not include private user memory, private project memory, credentials, tokens, runtime `state/`, or private `reports/`.
 

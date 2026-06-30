@@ -37,10 +37,11 @@ This is PalSmith, the AgentPal embedded no-code Pal asset governance module.
 - Preparing Runtime Task Packages for the current Agent Runtime.
 - Checking whether PalSmith itself has enough actual skills and knowledge for its formal capability claims.
 - Distinguishing Pal-owned Skills, Agent/runtime Skills, plugins, workflows, standards, and task packages using the R157 Agent-use Decision Card and Skill / Plugin Invocation Record standards.
+- Checking whether a Pal can actually use its assets during task execution through the Pal Asset Execution Contract, Task Asset Packet, Asset Use Summary, Missing Asset Plan, and completeness levels.
 
 ## Read Order
 
-Read `PAL.md`, `AGENTS.md`, `pal.json`, `core/output-contract.md`, and then the smallest relevant protocol, workflow, template, skill, knowledge file, or checklist for the requested task. For composite creation, read `core/composite-pal-distillation-protocol.md`, `skills/composite-pal-distillation-skill.md`, and `templates/composite-pal-creation-plan.md`. For composite creation or existing Pal upgrade involving voice, personality, tone, speech style, thinking style, cognitive model, role duty, domain knowledge, workflow, Skill, Agent usage, memory, collaboration, discovery, or Marketplace boundary, read `core/existing-pal-composite-upgrade-protocol.md` and `core/composite-pal-distillation-protocol.md` before writing files. These are AI judgement dimensions, not keyword routes. For draft-to-custom installation planning, read `core/pal-import-protocol.md`, `core/pal-permission-protocol.md`, `core/pal-readiness-matrix.md`, and `core/custom-pal-installation-protocol.md`.
+Read `PAL.md`, `AGENTS.md`, `pal.json`, `core/output-contract.md`, and then the smallest relevant protocol, workflow, template, skill, knowledge file, or checklist for the requested task. For composite creation, read `core/composite-pal-distillation-protocol.md`, `skills/composite-pal-distillation-skill.md`, and `templates/composite-pal-creation-plan.md`. For composite creation or existing Pal upgrade involving voice, personality, tone, speech style, thinking style, cognitive model, role duty, domain knowledge, workflow, Skill, Agent usage, memory, collaboration, discovery, or Marketplace boundary, read `core/existing-pal-composite-upgrade-protocol.md` and `core/composite-pal-distillation-protocol.md` before writing files. For Pal execution readiness, read the workspace `core/pal-asset-execution-contract.md`, `core/asset-loading-gate.md`, and the relevant `templates/pal/` packet or summary template. These are AI judgement dimensions, not keyword routes. For draft-to-custom installation planning, read `core/pal-import-protocol.md`, `core/pal-permission-protocol.md`, `core/pal-readiness-matrix.md`, and `core/custom-pal-installation-protocol.md`.
 
 ## Runtime Boundary
 
@@ -62,6 +63,7 @@ Default stance:
 - AI Team Builder, team governance, cross-Pal review, publish quality gates, readiness matrix review, runtime call verification, GitHub import verification, quickstart, blueprints, and demo scripts remain no-code planning/reporting flows
 - Pal-owned Skill creation requires a clear owner Pal, storage target, expected inputs/outputs, invocation boundary, and verification plan; host Runtime Skills/plugins must be recorded as candidates or invocation records, not Pal contacts.
 - For R159 Agent-use governance, use `standards/agent-use/codex-expert-usage-guide.md`, `standards/agent-use/child-thread-decision-card.md`, and `standards/agent-use/explicit-tool-directive-rule.md` when a Pal team, Skill, workflow, or import package specifies Codex mode, child-thread use, host Skills/plugins, or external Agents.
+- Pal asset execution checks remain no-code. They define what should be loaded, used, summarized, and tested. They do not create an automatic loader, scanner, validator, daemon, connector, or runtime service.
 
 ## Delegation Boundary
 

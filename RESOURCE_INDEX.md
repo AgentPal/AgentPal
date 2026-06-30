@@ -506,6 +506,11 @@ Use the current docs directories as the public entry points. Archived research n
 | `standards/pal-asset/pal-root-entry-standard.md` | R98-A Pal root entry responsibilities |
 | `standards/pal-asset/pal-loading-order-standard.md` | R98-D Pal loading order standard |
 | `standards/pal-asset/pal-asset-resolver-standard.md` | R98-D no-code Pal Asset Resolver standard |
+| `core/pal-asset-execution-contract.md` | R198 global no-code Pal Asset Execution Contract |
+| `core/asset-loading-gate.md` | R198 global Asset Loading Gate |
+| `templates/pal/task-asset-packet.md` | R198 Task Asset Packet template |
+| `templates/pal/asset-use-summary.md` | R198 Asset Use Summary template |
+| `templates/pal/missing-asset-plan.md` | R198 Missing Asset Plan template |
 | `templates/pal-asset/README.md` | Pal Asset template index |
 | `evals/palbench/pal-asset/r98a-pal-asset-standard-boundary.md` | R98-A Pal Asset boundary eval |
 | `release/fresh-clone-checks/r98a-local-pal-asset-standard-validation.md` | R98-A local validation |
@@ -582,6 +587,7 @@ Use the current docs directories as the public entry points. Archived research n
 | `examples/palsmith/composite-pal-creation-examples.md` | R170 user-facing composite Pal creation examples |
 | `prompts/palsmith/create-composite-pal.md` | R170 copyable PalSmith composite Pal creation prompt |
 | `prompts/palsmith/upgrade-existing-pal-composite-distillation.md` | R196 copyable PalSmith existing Pal composite upgrade prompt |
+| `prompts/palsmith/create-or-upgrade-pal-asset-execution.md` | R198 copyable PalSmith Pal asset execution readiness prompt |
 | `examples/palsmith/draft-to-custom-pal-installation-example.md` | R179 draft Pal Pack to user custom Pal installation example |
 | `prompts/palsmith/install-draft-as-custom-pal.md` | R179 copyable PalSmith draft-to-custom installation prompt |
 | `evals/palbench/v0.5/palsmith/draft-pal-packs/FirstPrinciplesProductReviewer/` | R174 non-official draft Pal Pack test artifact |
@@ -650,6 +656,7 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/palsmith/r197-ai-judgement-no-keyword-routing-check.md` | R197 AI semantic judgement and no-keyword-routing host check |
 | `evals/palbench/v0.5/palsmith/r197-simple-edit-contrast-check.md` | R197 simple existing Pal edit contrast host check |
 | `evals/palbench/v0.5/palsmith/r197-quinn-existing-pal-upgrade-host-review.md` | R197 Quinn review for existing Pal upgrade real-host rehearsal |
+| `evals/palbench/v0.5/palsmith/r198-palsmith-pal-completeness-regression.md` | R198 PalSmith completeness level regression |
 | `templates/palsmith/minimal-pal-generation-checklist.md` | Minimal Pal generation checklist |
 | `templates/palsmith/standard-pal-generation-checklist.md` | Standard Pal generation checklist |
 | `templates/palsmith/pal-asset-classification-result-template.json` | Pal asset classification result JSON template |
@@ -657,6 +664,15 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/palsmith/r98c-palsmith-v0.5-asset-generation-boundary.md` | R98-C PalSmith boundary eval |
 | `release/fresh-clone-checks/r98c-local-palsmith-v0.5-template-validation.md` | R98-C local validation |
 | `docs/03-user-guides/palsmith-v0.5-pal-creation-and-upgrade.md` | PalSmith v0.5 user guide |
+
+## Pal Asset Usage Regression
+
+| Path | Purpose |
+| --- | --- |
+| `evals/palbench/v0.5/asset-usage/r198-pal-asset-execution-contract.md` | R198 Pal Asset Execution Contract eval |
+| `evals/palbench/v0.5/asset-usage/r198-luma-style-design-asset-usage-regression.md` | R198 Luma-style design task asset usage regression fixture |
+| `evals/palbench/v0.5/asset-usage/r198-generic-pal-asset-usage-regression.md` | R198 generic Pal asset usage regression matrix |
+| `evals/palbench/v0.5/asset-usage/r198-quinn-asset-execution-review.md` | R198 Quinn review for Pal asset execution contract |
 
 ## Official Pal Asset Audit
 

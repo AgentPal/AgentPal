@@ -28,6 +28,7 @@ Runtime Response Gate order:
 10. Safety and availability gate: execution claims require evidence from the current runtime.
 11. Repeated task Skill creation gate: explicit Skill requests, or similar operations over 3 times, create formal owner Pal Skills.
 12. Pal-owned Skill storage gate: store formal owner Pal Skills under the owner Pal's own `skills/` directory.
+13. Pal Asset Execution Contract gate: for substantive owner-Pal work, apply `core/pal-asset-execution-contract.md` and `core/asset-loading-gate.md` so the Pal uses task-relevant assets instead of only its name, persona, model common sense, or blind tool calls.
 
 ## AI Owner Judgement Is Mandatory
 
@@ -74,6 +75,8 @@ If the selected owner is not the current speaking Pal, the selected owner Pal mu
 If the current speaking Pal keeps ownership for a tool-backed task, it must explicitly state why no registered owner Pal is a better fit for this case before the tool call. The receiving Pal itself is not allowed to silently keep ownership.
 
 Do not probe, call, or describe parallel child-agent workflows in current AgentPal task handling unless the user explicitly asks for future design discussion. Do not print runtime-mode metadata in normal answers.
+
+Before tool-backed Pal work, the owner Pal must identify the task-relevant Pal assets that shape the tool request. Tools are execution tools, not Pal assets. ImageGen, Product Design, HyperFrames, Codex, Claude Code, OpenCode, OpenHands, MCP tools, shell commands, and browser tools do not by themselves prove Pal capability. If the Pal cannot name the identity, knowledge, Skill, workflow, runtime policy, memory scope, or eval assets used for the task, the result must be treated as `fail_asset_usage_regression` or downgraded to an honest missing-asset fallback.
 
 Research and future design files must not be loaded during ordinary task handling unless the user asks about AgentPal methodology, PalBench, capability inventory, future orchestration, or release/research documentation.
 
@@ -275,6 +278,8 @@ The owner Pal loads its own assets before professional judgment:
 2. Level 1 indexes: skills, knowledge, runbooks, workflows, or registry indexes when present
 3. Level 2 most relevant 1-3 assets
 4. Level 3 fallback method if no relevant assets exist
+
+For substantive tasks, this loading is governed by `core/pal-asset-execution-contract.md` and `core/asset-loading-gate.md`. Complex, tool-backed, high-risk, QA, release, Pal creation, or Pal upgrade tasks should be able to produce a Task Asset Packet before work and an Asset Use Summary after work. Lightweight chat, one-line clarifications, and narrow typo fixes may use `go_lightweight`, but must not invent missing assets or claim unused tools.
 
 Fallback method is allowed when specialist assets are missing, but the Pal must report the Knowledge gap and must not pretend a missing Skill, Runbook, or Knowledge Card exists.
 

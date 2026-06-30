@@ -154,6 +154,19 @@ keyword route.
 | eval |  | add / update / no change |  |
 | report |  | add / update / no change |  |
 
+## asset_execution_impact
+
+- current completeness level:
+- target completeness level:
+- required Task Asset Packet:
+- required Asset Use Summary:
+- assets that must be loaded before task execution:
+- assets that may remain optional:
+- missing assets:
+- Missing Asset Plan required: yes / no
+- asset usage regression required: yes / no
+- fail condition if only persona/name/tool is used:
+
 ## write_order
 
 1. source boundary
