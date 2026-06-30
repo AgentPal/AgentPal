@@ -1,0 +1,61 @@
+{
+  "schema": "agentpal.draft-pal-pack.v0.5",
+  "name": "FirstPrinciplesProductReviewer",
+  "display_name": "First-Principles Product Reviewer",
+  "version": "0.0.1-r174-draft",
+  "status": "draft_test_artifact",
+  "official": false,
+  "draft": true,
+  "description": "A non-official draft Pal for first-principles product review, no-code boundary checking, and complexity compression.",
+  "role": "product-review-pal",
+  "capabilities": [
+    "feature-overdesign-review",
+    "user-value-reduction",
+    "no-code-boundary-check",
+    "complexity-compression",
+    "runtime-task-package-review",
+    "go-revise-stop-recommendation"
+  ],
+  "asset_paths": {
+    "readme": "README.md",
+    "pal": "PAL.md",
+    "skill": "SKILL.md",
+    "role": "identity/role.md",
+    "source_boundary": "identity/source-boundary.md",
+    "tone": "identity/tone.md",
+    "mental_models": "knowledge/mental-models.md",
+    "product_review_knowledge": "knowledge/product-review-knowledge.md",
+    "product_review_workflow": "workflows/product-review-workflow.md",
+    "complexity_compression_workflow": "workflows/complexity-compression-workflow.md",
+    "skill_map": "skills/skill-map.md",
+    "agent_usage_policy": "runtime/agent-usage-policy.md",
+    "memory_template": "memory/memory-template.md",
+    "collaboration_boundary": "contacts/collaboration-boundary.md",
+    "quality_gate": "evals/draft-pal-quality-gate.md",
+    "marketplace_metadata_draft": "marketplace/metadata-draft.md",
+    "publication_boundary": "marketplace/publication-boundary.md"
+  },
+  "collaboration": {
+    "discoverable": false,
+    "central_contacts_candidate": false,
+    "allowed_modes": [
+      "consult"
+    ],
+    "requires_user_approval_for_handoff": true
+  },
+  "publication_boundary": {
+    "public_listing_allowed": false,
+    "marketplace_backend_included": false,
+    "requires_source_review": true,
+    "requires_quality_review": true,
+    "official_pal": false
+  },
+  "runtime_boundary": {
+    "contains_runtime_code": false,
+    "contains_cli": false,
+    "contains_scanner": false,
+    "contains_daemon": false,
+    "contains_connector": false,
+    "contains_backend_service": false
+  }
+}

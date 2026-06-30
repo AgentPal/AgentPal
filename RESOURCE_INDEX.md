@@ -568,6 +568,10 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/palsmith/r171-manual-host-acceptance-script.md` | R171 manual real-host acceptance script |
 | `examples/palsmith/composite-pal-creation-examples.md` | R170 user-facing composite Pal creation examples |
 | `prompts/palsmith/create-composite-pal.md` | R170 copyable PalSmith composite Pal creation prompt |
+| `evals/palbench/v0.5/palsmith/draft-pal-packs/FirstPrinciplesProductReviewer/` | R174 non-official draft Pal Pack test artifact |
+| `evals/palbench/v0.5/palsmith/r174-draft-pal-pack-creation.md` | R174 PalSmith draft Pal Pack creation evidence |
+| `evals/palbench/v0.5/palsmith/r174-quinn-draft-pal-pack-review.md` | R174 draft Pal Pack file-level QA review |
+| `evals/palbench/v0.5/palsmith/r175-draft-pal-pack-quality-regression.md` | R175 PalSmith draft Pal Pack quality regression and commit readiness evidence |
 | `templates/palsmith/minimal-pal-generation-checklist.md` | Minimal Pal generation checklist |
 | `templates/palsmith/standard-pal-generation-checklist.md` | Standard Pal generation checklist |
 | `templates/palsmith/pal-asset-classification-result-template.json` | Pal asset classification result JSON template |
