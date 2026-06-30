@@ -139,6 +139,12 @@ high-priority Pals. The result is scoped representative task-family evidence
 with Quinn review, not a full verification of all official Pals and not a
 release or remote publication claim.
 
+R206 adds the Phase 3 plan for all official Pals. It records the 10-Pal
+coverage matrix and prepares R207 to run representative host regressions for
+Faye, Harper, Morgan, Rhea, and Vega. R206 is planning evidence, not execution
+evidence.
+
 Read:
 
 - [Official Pal adoption spot-check](official-pal-adoption-spot-check.md)
+- [Phase 3 official Pal regression plan](phase-3-official-pal-regression-plan.md)

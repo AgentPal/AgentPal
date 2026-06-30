@@ -711,6 +711,10 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/asset-usage/r205-nova-product-privacy-boundary-host-regression.md` | R205 Nova representative host regression |
 | `evals/palbench/v0.5/asset-usage/r205-quinn-high-priority-host-regression-review.md` | R205 Quinn summary review for high-priority host regressions |
 | `evals/palbench/v0.5/asset-usage/r205-high-priority-host-regression-summary.md` | R205 high-priority representative host regression summary |
+| `evals/palbench/v0.5/asset-usage/r206-official-pal-representative-regression-coverage-matrix.md` | R206 official Pal representative regression coverage matrix |
+| `evals/palbench/v0.5/asset-usage/r206-remaining-official-pal-regression-plan.md` | R206 remaining official Pal regression plan |
+| `evals/palbench/v0.5/asset-usage/r206-r207-execution-package.md` | R206 R207 execution package for remaining official Pals |
+| `evals/palbench/v0.5/asset-usage/r206-quinn-phase-3-plan-review.md` | R206 Quinn review for Phase 3 plan |
 
 ## Official Pal Asset Audit
 
@@ -729,6 +733,8 @@ Use the current docs directories as the public entry points. Archived research n
 | `official/pals/Quinn-quality/evals/asset-execution-example.md` | R204 Quinn Task Asset Packet example |
 | `official/pals/Nova-product/evals/asset-execution-example.md` | R204 Nova Task Asset Packet example |
 | `evals/palbench/v0.5/asset-usage/r205-high-priority-host-regression-summary.md` | R205 representative host regression summary for five high-priority official Pals |
+| `docs/07-pal-asset-execution/phase-3-official-pal-regression-plan.md` | R206 Phase 3 official Pal regression plan guide |
+| `evals/palbench/v0.5/asset-usage/r206-official-pal-representative-regression-coverage-matrix.md` | R206 10-Pal representative regression coverage matrix |
 
 ## Pal Asset / Org Pack Integration
 

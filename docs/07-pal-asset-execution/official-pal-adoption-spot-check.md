@@ -138,6 +138,20 @@ This remains representative task-family evidence. It does not verify all 10
 official Pals and does not change contacts, user custom Pals, runtime behavior,
 release status, or GitHub publication status.
 
+## R206 Phase 3 Plan
+
+R206 adds the all-official-Pal representative regression coverage matrix and an
+R207 execution package for the remaining five official Pals:
+
+- Faye
+- Harper
+- Morgan
+- Rhea
+- Vega
+
+This is planning evidence only. It does not run the remaining host regressions
+and does not change any Pal completeness label by itself.
+
 ## Evidence Files
 
 - [`../../evals/palbench/v0.5/asset-usage/r202-official-pal-asset-execution-adoption-matrix.md`](../../evals/palbench/v0.5/asset-usage/r202-official-pal-asset-execution-adoption-matrix.md)
@@ -151,3 +165,8 @@ release status, or GitHub publication status.
 - [`../../evals/palbench/v0.5/asset-usage/r204-quinn-phase-2-example-review.md`](../../evals/palbench/v0.5/asset-usage/r204-quinn-phase-2-example-review.md)
 - [`../../evals/palbench/v0.5/asset-usage/r205-high-priority-host-regression-summary.md`](../../evals/palbench/v0.5/asset-usage/r205-high-priority-host-regression-summary.md)
 - [`../../evals/palbench/v0.5/asset-usage/r205-quinn-high-priority-host-regression-review.md`](../../evals/palbench/v0.5/asset-usage/r205-quinn-high-priority-host-regression-review.md)
+- [`phase-3-official-pal-regression-plan.md`](phase-3-official-pal-regression-plan.md)
+- [`../../evals/palbench/v0.5/asset-usage/r206-official-pal-representative-regression-coverage-matrix.md`](../../evals/palbench/v0.5/asset-usage/r206-official-pal-representative-regression-coverage-matrix.md)
+- [`../../evals/palbench/v0.5/asset-usage/r206-remaining-official-pal-regression-plan.md`](../../evals/palbench/v0.5/asset-usage/r206-remaining-official-pal-regression-plan.md)
+- [`../../evals/palbench/v0.5/asset-usage/r206-r207-execution-package.md`](../../evals/palbench/v0.5/asset-usage/r206-r207-execution-package.md)
+- [`../../evals/palbench/v0.5/asset-usage/r206-quinn-phase-3-plan-review.md`](../../evals/palbench/v0.5/asset-usage/r206-quinn-phase-3-plan-review.md)
