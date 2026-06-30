@@ -678,6 +678,13 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/asset-usage/r199-palsmith-completeness-host-rehearsal.md` | R199 real host PalSmith completeness rehearsal |
 | `evals/palbench/v0.5/asset-usage/r199-lightweight-path-contrast-host-rehearsal.md` | R199 real host lightweight path contrast rehearsal |
 | `evals/palbench/v0.5/asset-usage/r199-quinn-pal-asset-execution-host-review.md` | R199 Quinn review for real host Pal asset execution rehearsal |
+| `evals/palbench/v0.5/asset-usage/controlled-write-fixtures/FirstPrinciplesProductReviewerControlledWrite/` | R200 controlled write test artifact fixture; not official, not user-installed, not contacts-registered |
+| `evals/palbench/v0.5/asset-usage/r200-controlled-write-asset-inventory.md` | R200 controlled write fixture asset inventory |
+| `evals/palbench/v0.5/asset-usage/r200-palsmith-controlled-write-plan.md` | R200 PalSmith plan-first controlled write evidence |
+| `evals/palbench/v0.5/asset-usage/r200-controlled-write-result.md` | R200 controlled write result evidence |
+| `evals/palbench/v0.5/asset-usage/r200-controlled-write-fixture-execution-regression.md` | R200 controlled write fixture execution regression |
+| `evals/palbench/v0.5/asset-usage/r200-controlled-write-boundary-pressure-tests.md` | R200 controlled write negative boundary pressure tests |
+| `evals/palbench/v0.5/asset-usage/r200-quinn-controlled-write-review.md` | R200 Quinn controlled write review |
 
 ## Official Pal Asset Audit
 
