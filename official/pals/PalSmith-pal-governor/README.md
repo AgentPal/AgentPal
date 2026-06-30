@@ -6,17 +6,9 @@ Use PalSmith for no-code Pal Pack creation planning, team planning, health inspe
 
 ## Current Product Status
 
-PalSmith E2E testing passed the core functional loop in an independent test copy. v0.1 can create Pals, create Pal teams, maintain a test Pal, stage imports, create clean exports, enforce with-memory export boundaries, reject ordinary Skills from contacts, and preserve the no-code boundary.
+PalSmith has accumulated multiple local development lines from v0.1 through v0.5. The current public-facing line is v0.5 release-candidate preparation, not the older v0.1 / v0.2 publication state.
 
-PalSmith is now entering v0.2 product enhancement. v0.2 strengthens PalSmith as an AI team-building entry point and Pal quality governance Pal: Pal quality inspection, responsibility conflict detection, capability maps, team design, version governance, Eval Lab, and lifecycle workflow.
-
-R40 adds the first v0.2 end-to-end creation productization slice: copyable first-Pal and AI-team task packages, user material ingestion mapping, Pal and AI team health-check runbooks, repair package templates, realistic demos, and an expanded self-test. This is a started / first implementation state, not full v0.2 completion.
-
-This is not a final release state; v0.1 publication is paused while v0.2 is developed.
-
-v0.3 extends PalSmith into an AI Team Builder, team governance guide, cross-Pal review coordinator, publish quality gate, runtime call verification workflow, and GitHub import verification workflow. These remain no-code Runtime Task Package workflows.
-
-v0.4 improves the user-facing path with a 5-minute quickstart, quickstart cheatsheet, AI team blueprints, a 10-minute demo script, a readiness matrix, and a v0.4 regression test plan.
+Earlier lines established the core no-code loop: Pal creation, Pal team creation, health checks, import/export planning, with-memory export boundaries, contacts safety, AI team builder guidance, cross-Pal review, publish-quality gates, runtime-call verification planning, GitHub import verification planning, quickstarts, blueprints, demos, and readiness review. These remain no-code Runtime Task Package workflows.
 
 R16 v0.4-fix upgrades PalSmith from file-completeness governance to job fitness governance. PalSmith now inspects whether a Pal can do its declared job, whether its knowledge and skills match real scenarios, whether user materials were preserved without over-compression, and whether optional web research should be turned into traceable knowledge assets before creation or repair.
 
@@ -30,7 +22,7 @@ R179 adds a no-code draft-to-user-custom Pal installation flow. This lets PalSmi
 
 R185-R191 add user custom Pal discovery authorization, explicit invocation boundaries, revocation readiness, real host read-only regression, and external readability review. User custom Pals remain private by default and are not central contacts or official Pals.
 
-R192 closes the PalSmith v0.5 phase as ready for release prep. This is not remote publication, tag creation, or GitHub Release authorization.
+R192 closes the PalSmith v0.5 phase as ready for release prep. R193 adds a local release-prep package. This is not remote publication, tag creation, or GitHub Release authorization.
 
 ## Current Boundary
 

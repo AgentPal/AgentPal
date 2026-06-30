@@ -116,6 +116,7 @@ Examples are public-safe demonstrations, not customer data and not dispatch rule
 
 Evidence records are useful for maintainers and release checks, but they are not the first user path.
 
+- [`release/v0.5-release-candidate-preflight.md`](release/v0.5-release-candidate-preflight.md)
 - [`../evals/palbench/v0.5/`](../evals/palbench/v0.5/)
 - [`../evals/palbench/v0.5/documentation/archive/docs/`](../evals/palbench/v0.5/documentation/archive/docs/)
 - [`../release/fresh-clone-checks/`](../release/fresh-clone-checks/)

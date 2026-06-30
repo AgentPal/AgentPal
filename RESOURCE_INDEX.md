@@ -71,6 +71,7 @@ Use:
 | `RELEASE_NOTES.md` | user-facing release notes | release review or user onboarding |
 | `GITHUB_RELEASE_DRAFT.md` | manual GitHub Release draft | release publishing |
 | `RELEASE_CHECKLIST.md` | maintainer release checklist | release validation |
+| `docs/release/v0.5-release-candidate-preflight.md` | local v0.5 release candidate preflight | user-authorized release decision; not release completion |
 | `CONTRIBUTING.md` | contribution rules | contributor onboarding |
 | `THIRD_PARTY_NOTICES.md` | license and third-party notice policy | release validation |
 | `LICENSE` | MIT License | release validation |
@@ -1215,6 +1216,11 @@ Use the current docs directories as the public entry points. Archived research n
 | `release/integration-notes/r166-v0.5-release-candidate-evidence-summary.md` | R166 v0.5 release candidate evidence summary |
 | `release/integration-notes/r166-r167-release-preparation-readiness-decision.md` | R166 to R167 release preparation readiness decision |
 | `evals/palbench/v0.5/documentation/r166-release-candidate-docs-final-check.md` | R166 release candidate docs final check |
+| `docs/release/v0.5-release-candidate-preflight.md` | R194 local AgentPal v0.5 release candidate preflight |
+| `evals/palbench/v0.5/release/r194-agentpal-v05-release-candidate-preflight.md` | R194 full-workspace release candidate preflight evidence |
+| `evals/palbench/v0.5/release/r194-release-boundary-scan.md` | R194 release/runtime/Marketplace/contacts boundary scan |
+| `evals/palbench/v0.5/release/r194-external-readability-spot-check.md` | R194 external readability spot check |
+| `evals/palbench/v0.5/release/r194-quinn-release-candidate-review.md` | R194 Quinn release candidate review |
 
 ## Do Not Load By Default
 
