@@ -744,6 +744,19 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/asset-usage/certifications/r209-atlas-developer-docs-first-development-task-package-scoped-certification-record.md` | R209 Atlas docs-first development task package scoped certification record |
 | `evals/palbench/v0.5/asset-usage/certifications/r209-quinn-quality-completion-report-false-completion-review-scoped-certification-record.md` | R209 Quinn completion report / false completion review scoped certification record |
 | `evals/palbench/v0.5/asset-usage/certifications/r209-nova-product-privacy-authorization-boundary-decision-scoped-certification-record.md` | R209 Nova product privacy and authorization boundary scoped certification record |
+| `evals/palbench/v0.5/asset-usage/r210-faye-delivery-scoped-certification-review.md` | R210 Faye delivery handoff scoped certification review |
+| `evals/palbench/v0.5/asset-usage/r210-harper-writing-scoped-certification-review.md` | R210 Harper README writing scoped certification review |
+| `evals/palbench/v0.5/asset-usage/r210-morgan-document-scoped-certification-review.md` | R210 Morgan document package scoped certification review |
+| `evals/palbench/v0.5/asset-usage/r210-rhea-system-scoped-certification-review.md` | R210 Rhea no-code risk scoped certification review |
+| `evals/palbench/v0.5/asset-usage/r210-vega-research-scoped-certification-review.md` | R210 Vega source-policy scoped certification review |
+| `evals/palbench/v0.5/asset-usage/r210-scoped-certification-review-matrix.md` | R210 remaining Pal task-family scoped certification review matrix |
+| `evals/palbench/v0.5/asset-usage/r210-combined-scoped-certification-coverage-matrix.md` | R210 combined R209-R210 scoped representative task-family coverage matrix |
+| `evals/palbench/v0.5/asset-usage/r210-quinn-scoped-certification-review.md` | R210 Quinn review for remaining scoped certification records |
+| `evals/palbench/v0.5/asset-usage/certifications/r210-faye-delivery-handoff-user-facing-summary-scoped-certification-record.md` | R210 Faye delivery handoff scoped certification record |
+| `evals/palbench/v0.5/asset-usage/certifications/r210-harper-writing-readme-style-revision-scoped-certification-record.md` | R210 Harper README writing scoped certification record |
+| `evals/palbench/v0.5/asset-usage/certifications/r210-morgan-document-release-notes-package-scoped-certification-record.md` | R210 Morgan document package scoped certification record |
+| `evals/palbench/v0.5/asset-usage/certifications/r210-rhea-system-no-code-risk-review-scoped-certification-record.md` | R210 Rhea no-code risk scoped certification record |
+| `evals/palbench/v0.5/asset-usage/certifications/r210-vega-research-source-policy-skill-to-pal-evaluation-scoped-certification-record.md` | R210 Vega source-policy scoped certification record |
 
 ## Official Pal Asset Audit
 
@@ -770,6 +783,9 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/asset-usage/r208-scoped-certification-candidate-matrix.md` | R208 candidate matrix for official Pal task-family scoped certification review |
 | `evals/palbench/v0.5/asset-usage/r209-scoped-certification-review-matrix.md` | R209 selected high-priority Pal task-family scoped certification review matrix |
 | `evals/palbench/v0.5/asset-usage/r209-quinn-scoped-certification-review.md` | R209 Quinn review for selected high-priority scoped certification records |
+| `evals/palbench/v0.5/asset-usage/r210-scoped-certification-review-matrix.md` | R210 remaining Pal task-family scoped certification review matrix |
+| `evals/palbench/v0.5/asset-usage/r210-combined-scoped-certification-coverage-matrix.md` | R210 combined scoped representative task-family coverage matrix |
+| `evals/palbench/v0.5/asset-usage/r210-quinn-scoped-certification-review.md` | R210 Quinn review for remaining scoped certification records |
 
 ## Pal Asset / Org Pack Integration
 

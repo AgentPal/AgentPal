@@ -159,6 +159,13 @@ R205. Those selected scopes now have `scoped_certified_with_notes` records.
 This is still not all-official-Pal certification, not every task family, and not
 a runtime, release, contacts, or Marketplace change.
 
+R210 reviewed the five remaining official Pal task-family candidates from R207:
+Faye, Harper, Morgan, Rhea, and Vega. Those selected scopes now also have
+`scoped_certified_with_notes` records. Each official Pal now has one scoped
+representative task-family record after R209/R210 review. This does not certify
+all task families for any Pal and does not add runtime, backend, contacts,
+publication, or Marketplace behavior.
+
 Read:
 
 - [Official Pal adoption spot-check](official-pal-adoption-spot-check.md)

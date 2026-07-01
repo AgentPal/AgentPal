@@ -14,6 +14,8 @@ This checklist is for a local release-preparation review. It does not authorize 
 - [ ] Release notes include Pal Asset Execution Contract without overstating tool capability.
 - [ ] Release notes distinguish representative host regression evidence from scoped certification.
 - [ ] Release notes describe R209 scoped certification as selected task-family scopes only.
+- [ ] Release notes describe R210 scoped certification as selected remaining task-family scopes only.
+- [ ] Release notes say R209/R210 provide one scoped representative task-family record per official Pal only, not full Pal certification.
 - [ ] Markdown links in the added docs point to existing local files.
 - [ ] `git diff --check` has no content errors.
 
@@ -32,6 +34,7 @@ This checklist is for a local release-preparation review. It does not authorize 
 - [ ] No release notes claim all official Pals have been individually migrated to the Pal Asset Execution Contract.
 - [ ] No release notes claim official Pal task-family certification without a scoped certification record.
 - [ ] No release notes imply R209 covers every official Pal or every task family.
+- [ ] No release notes imply R210 or R209/R210 cover every task family.
 
 ## Remote Publication Gate
 

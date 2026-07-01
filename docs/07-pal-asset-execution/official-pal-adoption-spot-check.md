@@ -197,6 +197,24 @@ scope received `scoped_certified_with_notes`:
 These records are task-family scoped. They do not certify the whole official
 roster, all task families, or any runtime / contacts / publication behavior.
 
+## R210 Remaining Scoped Certification Review
+
+R210 reviewed the five R207 remaining representative task-family scopes:
+
+- Faye: delivery / handoff / user-facing delivery summary
+- Harper: README-oriented writing / style / revision
+- Morgan: document structure / release notes / doc package
+- Rhea: system boundary / no-code boundary / risk review
+- Vega: research / source policy / external Skill-to-Pal evaluation
+
+Each selected scope received `scoped_certified_with_notes`. The shared note is
+important: R207 includes equivalent documented Task Asset Packet evidence, but
+these five do not have standalone R204-style reusable examples.
+
+After R209 and R210, each official bundled Pal has one scoped-certified
+representative task-family record. This does not certify all task families for
+any Pal and does not add runtime / contacts / publication behavior.
+
 ## Evidence Files
 
 - [`../../evals/palbench/v0.5/asset-usage/r202-official-pal-asset-execution-adoption-matrix.md`](../../evals/palbench/v0.5/asset-usage/r202-official-pal-asset-execution-adoption-matrix.md)
@@ -231,3 +249,6 @@ roster, all task families, or any runtime / contacts / publication behavior.
 - [`../../evals/palbench/v0.5/asset-usage/r208-quinn-scoped-certification-plan-review.md`](../../evals/palbench/v0.5/asset-usage/r208-quinn-scoped-certification-plan-review.md)
 - [`../../evals/palbench/v0.5/asset-usage/r209-scoped-certification-review-matrix.md`](../../evals/palbench/v0.5/asset-usage/r209-scoped-certification-review-matrix.md)
 - [`../../evals/palbench/v0.5/asset-usage/r209-quinn-scoped-certification-review.md`](../../evals/palbench/v0.5/asset-usage/r209-quinn-scoped-certification-review.md)
+- [`../../evals/palbench/v0.5/asset-usage/r210-scoped-certification-review-matrix.md`](../../evals/palbench/v0.5/asset-usage/r210-scoped-certification-review-matrix.md)
+- [`../../evals/palbench/v0.5/asset-usage/r210-combined-scoped-certification-coverage-matrix.md`](../../evals/palbench/v0.5/asset-usage/r210-combined-scoped-certification-coverage-matrix.md)
+- [`../../evals/palbench/v0.5/asset-usage/r210-quinn-scoped-certification-review.md`](../../evals/palbench/v0.5/asset-usage/r210-quinn-scoped-certification-review.md)

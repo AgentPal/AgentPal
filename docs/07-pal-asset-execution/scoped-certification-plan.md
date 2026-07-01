@@ -173,3 +173,28 @@ R209 evidence:
 
 - [`../../evals/palbench/v0.5/asset-usage/r209-scoped-certification-review-matrix.md`](../../evals/palbench/v0.5/asset-usage/r209-scoped-certification-review-matrix.md)
 - [`../../evals/palbench/v0.5/asset-usage/r209-quinn-scoped-certification-review.md`](../../evals/palbench/v0.5/asset-usage/r209-quinn-scoped-certification-review.md)
+
+## R210 Result
+
+R210 reviewed the five remaining task-family candidates from R207:
+
+- Faye-delivery / delivery, handoff, and user-facing summary
+- Harper-writing / README-oriented writing, style, and revision
+- Morgan-document / document structure, release notes, and doc package
+- Rhea-system / system boundary, no-code boundary, and risk review
+- Vega-research / research, source policy, and external Skill-to-Pal evaluation
+
+Each scope received a `scoped_certified_with_notes` record after applying the
+R208 gate. The shared note is that R207 provides equivalent documented Task
+Asset Packet evidence inside the host-regression records, but these five do not
+have standalone R204-style reusable examples.
+
+After R209 and R210, each official bundled Pal has one scoped-certified
+representative task-family record. This is not full Pal certification and not
+all-task-family certification.
+
+R210 evidence:
+
+- [`../../evals/palbench/v0.5/asset-usage/r210-scoped-certification-review-matrix.md`](../../evals/palbench/v0.5/asset-usage/r210-scoped-certification-review-matrix.md)
+- [`../../evals/palbench/v0.5/asset-usage/r210-combined-scoped-certification-coverage-matrix.md`](../../evals/palbench/v0.5/asset-usage/r210-combined-scoped-certification-coverage-matrix.md)
+- [`../../evals/palbench/v0.5/asset-usage/r210-quinn-scoped-certification-review.md`](../../evals/palbench/v0.5/asset-usage/r210-quinn-scoped-certification-review.md)

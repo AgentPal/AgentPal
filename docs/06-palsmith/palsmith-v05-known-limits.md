@@ -83,6 +83,12 @@ task-family scopes. These records are limited to the named Pal plus task family
 and do not change Pal discovery, contacts, publication, runtime, or backend
 behavior.
 
+R210 adds scoped certification records for the remaining selected official Pal
+representative task-family scopes. After R209/R210, each official bundled Pal
+has one scoped-certified representative task-family record. This is not full Pal
+certification, not all-task-family certification, and not runtime/backend
+certification.
+
 ## Controlled Write Fixture Is Not A Real Pal Upgrade
 
 R200 used `FirstPrinciplesProductReviewerControlledWrite` as a controlled-write
