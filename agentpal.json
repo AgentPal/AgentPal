@@ -854,7 +854,13 @@
     "pal_asset_resolver_can_modify_central_roster": false,
     "pal_asset_resolver_can_write_external_project_agentpal_by_default": false,
     "pal_skill_is_agent_skill": false,
-    "agent_skill_stored_as_pal_skill_by_default": false
+    "agent_skill_stored_as_pal_skill_by_default": false,
+    "r217_gap_audit_matrix": "evals/palbench/v0.5/asset-usage/r217-pal-asset-execution-gap-audit-matrix.md",
+    "r217_no_blind_tool_call_regression": "evals/palbench/v0.5/asset-usage/r217-no-blind-tool-call-regression.md",
+    "r217_luma_logo_asset_usage_regression": "evals/palbench/v0.5/asset-usage/r217-luma-logo-asset-usage-regression.md",
+    "r217_luma_design_fixture": "evals/palbench/v0.5/asset-usage/r217-fixtures/LumaDesignPal/",
+    "r217_quinn_gap_closure_review": "evals/palbench/v0.5/asset-usage/r217-quinn-pal-asset-execution-gap-closure-review.md",
+    "r217_final_verdict": "all_pal_asset_execution_gap_closed"
   },
   "pal_metadata_v0_5": {
     "pal_json_standard": "standards/pal-asset/pal-json-v0.5-standard.md",
@@ -1747,7 +1753,10 @@
     "is_marketplace_program": false,
     "auto_execution": false,
     "auto_sync": false,
-    "can_modify_central_roster_by_default": false
+    "can_modify_central_roster_by_default": false,
+    "r217_generated_pal_asset_contract_inheritance_test": "evals/palbench/v0.5/palsmith/r217-generated-pal-asset-contract-inheritance-test.md",
+    "r217_create_composite_pal_inherits_asset_contract": true,
+    "r217_legacy_creation_templates_auxiliary_only": true
   },
   "capabilities": [
     "pal-discovery",
@@ -2156,4 +2165,3 @@
   },
   "license": "MIT"
 }
-

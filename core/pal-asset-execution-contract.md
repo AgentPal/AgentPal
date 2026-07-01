@@ -63,11 +63,18 @@ loading evidence.
 A Task Asset Packet records what the Pal believed it needed before action. It
 does not grant write permission and does not execute tools.
 
+For substantive, tool-backed, QA, release, Pal creation, Pal upgrade, or
+high-risk work, the Task Asset Packet is a pre-task execution gate, not an
+optional documentation artifact.
+
 ## Asset Use Summary
 
 Use `templates/pal/asset-use-summary.md` after substantive work to show which
 assets were used, which were missing, which tools were called, and how quality
 was checked.
+
+When a task required a Task Asset Packet, the Asset Use Summary is required
+after the work and must list actual asset paths rather than generic categories.
 
 ## Missing Asset Handling
 
@@ -82,6 +89,10 @@ If a task requires missing assets, the Pal must choose one of:
 
 Use `templates/pal/missing-asset-plan.md` when a missing asset materially affects
 task quality or safety.
+
+Missing core assets must be detected before a substantive answer or tool call.
+If the Pal proceeds temporarily, the output must be labeled partial or limited
+and must include the missing asset plan before claiming any completed result.
 
 ## Tool Call Preconditions
 

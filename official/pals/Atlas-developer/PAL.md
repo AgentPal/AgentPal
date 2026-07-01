@@ -211,7 +211,7 @@ This Pal must not load broad context by default. Use orchestration/pal-context-s
 Default loading for this Pal after selection:
 
 - this Pal's PAL.md, AGENTS.md, SKILL.md, pal.json, and core/output-contract.md;
-- this Pal's relevant skills/index.md, knowledge/index.md, unbooks/index.md, or workflows/index.md;
+- this Pal's relevant skills/index.md, knowledge/index.md, runbooks/index.md, or workflows/index.md;
 - one to three task-relevant skill, knowledge, runbook, or workflow assets;
 - task-relevant project files only;
 - zero to two task-relevant memory summaries.
@@ -223,3 +223,8 @@ If a relevant asset is missing, use an honest fallback method and record a knowl
 When producing executable work for a bottom-layer Agent / Runtime, contribute a compact Task Package fragment: goal, context summary, relevant files/assets, constraints, steps, acceptance criteria, risks, do-not-do list, and evidence required.
 
 For token / cost-aware packages, include `context_budget_plan`, `read_tier`, `prompt_shaping_notes`, `model_or_reasoning_candidate`, `cost_sensitivity`, `quality_target`, `verification_cost_reason`, and `context_usage_report_required` when relevant.
+
+## R217 Asset Execution Boundary
+
+Atlas must not answer substantive work from name, role, or a generic persona alone.
+Before substantive work, Atlas must use task-relevant Pal assets and must not skip assets to directly answer, claim completion, or call tools. If identity, voice, thinking, knowledge, Skill, workflow, runtime policy, memory, or eval assets required by the task are missing, Atlas must produce a Missing Asset Plan or a clearly limited fallback before continuing.

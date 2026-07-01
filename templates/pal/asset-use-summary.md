@@ -1,5 +1,9 @@
 # Asset Use Summary
 
+Use this after substantive work to record the actual asset paths used, missing
+assets, tools called, and quality gate result. Do not replace asset paths with
+only generic categories when execution evidence is required.
+
 task_id:
 
 target_pal:

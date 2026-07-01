@@ -1,5 +1,9 @@
 # Task Asset Packet
 
+This packet is a pre-task execution gate for substantive, tool-backed, QA,
+release, Pal creation, Pal upgrade, or high-risk Pal work. It is not optional
+documentation and does not grant write or tool permission by itself.
+
 task_id:
 
 target_pal:

@@ -55,6 +55,14 @@ Use this checklist when PalSmith prepares a Minimal Pal creation or upgrade pack
 | Check | Status | Evidence / note |
 | --- | --- | --- |
 | `pal.json` parses | not-run | |
+| `completeness_level` uses allowed enum | not-run | Allowed: `persona_only`, `persona_plus_voice`, `role_plus_knowledge`, `role_plus_workflow`, `executable_pal`, `verified_pal`. |
+| Pal Runtime Read Order present | not-run | |
+| Asset Path Map present | not-run | |
+| Task Asset Packet rule present | not-run | |
+| Asset Use Summary rule present | not-run | |
+| Missing Asset Plan rule present | not-run | |
+| No Blind Tool Call Rule present | not-run | |
+| `tool_vs_pal_asset_boundary` present | not-run | |
 | no Agent Skill stored in Pal `skills/` | not-run | |
 | no keyword routing map | not-run | |
 | no credentials / tokens / secrets | not-run | |

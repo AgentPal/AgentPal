@@ -218,7 +218,7 @@ Use:
 | `docs/06-palsmith/palsmith-v05-known-limits.md` | PalSmith v0.5 known limits | current limits for user custom Pal discovery, runtime, evidence, and publication claims |
 | `docs/06-palsmith/palsmith-v05-release-checklist.md` | PalSmith v0.5 release checklist | local checks before remote authorization decisions |
 | `docs/06-palsmith/palsmith-end-to-end-productization.md` | PalSmith v0.5 end-to-end user path | PalSmith creation and Pal Team productization work |
-| `official/pals/PalSmith-pal-governor/templates/task-packages/create-first-professional-pal.md` | Copyable first professional Pal creation task package | PalSmith single-Pal creation work |
+| `official/pals/PalSmith-pal-governor/templates/task-packages/create-first-professional-pal.md` | Auxiliary / legacy first professional Pal creation task package | Supporting reference only; not the R217 main implementation path |
 | `official/pals/PalSmith-pal-governor/templates/task-packages/create-ai-team-from-goal.md` | Copyable AI team creation task package | PalSmith Pal Team creation work |
 | `official/pals/PalSmith-pal-governor/runbooks/pal-health-check.md` | Pal health check runbook | PalSmith creation and repair checks |
 | `official/pals/PalSmith-pal-governor/runbooks/ai-team-health-check.md` | AI team health check runbook | PalSmith team readiness checks |
@@ -1411,6 +1411,18 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/release/r212-release-preflight-checklist-review.md` | R212 release preflight checklist review |
 | `evals/palbench/v0.5/release/r212-remote-operation-authorization-boundary-review.md` | R212 remote operation authorization boundary review |
 | `evals/palbench/v0.5/release/r212-quinn-release-package-review.md` | R212 Quinn release package review |
+
+
+## R217 Pal Asset Execution Gap Closure Evidence
+
+| Path | Purpose |
+| --- | --- |
+| `evals/palbench/v0.5/asset-usage/r217-pal-asset-execution-gap-audit-matrix.md` | R217 official Pal asset execution gap audit matrix |
+| `evals/palbench/v0.5/asset-usage/r217-no-blind-tool-call-regression.md` | R217 no blind tool call regression |
+| `evals/palbench/v0.5/asset-usage/r217-luma-logo-asset-usage-regression.md` | R217 Luma-style logo asset usage regression |
+| `evals/palbench/v0.5/asset-usage/r217-fixtures/LumaDesignPal/` | R217 fixture-only design Pal asset execution test pack |
+| `evals/palbench/v0.5/palsmith/r217-generated-pal-asset-contract-inheritance-test.md` | R217 PalSmith generated Pal asset contract inheritance test |
+| `evals/palbench/v0.5/asset-usage/r217-quinn-pal-asset-execution-gap-closure-review.md` | R217 Quinn final gap closure review |
 
 ## Do Not Load By Default
 

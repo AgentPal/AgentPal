@@ -35,6 +35,7 @@ A Standard Pal must satisfy the Minimal Pal checklist first, then add the files 
 
 | Check | Status | Evidence / note |
 | --- | --- | --- |
+| Minimal asset execution inheritance checks passed | not-run | Runtime Read Order, Asset Path Map, Task Asset Packet, Asset Use Summary, Missing Asset Plan, No Blind Tool Call Rule, and `tool_vs_pal_asset_boundary`. |
 | job expertise model present | not-run | |
 | role-specific knowledge exists beyond placeholder index | not-run | |
 | Pal-owned Skills are no-code methods | not-run | |

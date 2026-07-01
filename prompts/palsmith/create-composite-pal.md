@@ -43,6 +43,20 @@ Package。文件映射至少包含：
 - `evals/`
 - `metadata-draft.md`
 
+生成的 draft / custom Pal 必须继承 Pal Asset Execution Contract。不要只生成
+persona、role 或 voice seed。文件映射和创建计划必须包含：
+
+- `completeness_level`，只能使用 `persona_only`,
+  `persona_plus_voice`, `role_plus_knowledge`, `role_plus_workflow`,
+  `executable_pal`, `verified_pal`
+- Pal Runtime Read Order
+- Asset Path Map
+- Task Asset Packet 使用规则
+- Asset Use Summary 使用规则
+- Missing Asset Plan 规则
+- No Blind Tool Call Rule
+- `tool_vs_pal_asset_boundary`
+
 draft Pal Pack 默认必须是：
 
 - `official: false`

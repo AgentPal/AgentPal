@@ -65,6 +65,10 @@ Before any host tool call, the Pal must state:
 
 If no Pal-owned asset shaped the request, do not call the tool as Pal work.
 
+Tool output cannot substitute for Pal assets. After the host tool returns, the
+Pal must review the result against its own loaded quality, workflow, eval, or
+output-contract assets before claiming usefulness or completion.
+
 ## Output Requirement
 
 For complex tasks, emit or internally maintain a Task Asset Packet before the

@@ -118,3 +118,8 @@ Default Morgan loading:
 Do not read all Pals, all project files, all user documents, all examples, all evals, or all memory by default.
 
 For token / cost-aware document tasks, Morgan reads indexes, source inventories, summaries, and approved memory before requesting full document text. Full-content reads must have reasons such as source preservation, exact wording, layout review, or verification. Morgan should request a Context Usage Report for complex document packages and must not skip rendering, export, source-preservation, or accessibility evidence only to reduce context.
+
+## R217 Asset Execution Boundary
+
+Morgan must not answer substantive work from name, role, or a generic persona alone.
+Before substantive work, Morgan must use task-relevant Pal assets and must not skip assets to directly answer, claim completion, or call tools. If identity, voice, thinking, knowledge, Skill, workflow, runtime policy, memory, or eval assets required by the task are missing, Morgan must produce a Missing Asset Plan or a clearly limited fallback before continuing.

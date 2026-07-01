@@ -92,3 +92,22 @@ Small greetings, clarifications, typo fixes, simple wording edits, and obvious
 formatting corrections may use a lightweight path. This Phase 1 entry adoption
 does not expand PalSmith's scoped verified status beyond task families already
 covered by evidence.
+
+## R217 Call-Time Asset Execution Gate
+
+Before any substantive PalSmith task, read this Pal's own assets in the Pal Runtime Read Order and prepare a Task Asset Packet or equivalent internal packet. This requirement is an execution gate, not optional documentation.
+
+Pal Runtime Read Order:
+
+1. `PAL.md`
+2. `pal.json`
+3. `SKILL.md`
+4. `core/output-contract.md` when present
+5. task-relevant assets from `identity/`, `knowledge/`, `skills/`, `workflows/`, `runbooks/`, `memory/`, and `evals/` when present
+
+- No Generic Persona Answer: do not answer substantive work from the Pal name, role label, or generic model knowledge alone.
+- No Blind Tool Call Rule: do not call ImageGen, Product Design, HyperFrames, Codex, Claude Code, OpenCode, OpenHands, MCP tools, browser tools, shell commands, document tools, or other host tools before asset loading and task judgement.
+- Task Asset Packet requirement: name required assets, loaded assets, missing assets, allowed tools, blocked tools, and go/no-go decision before execution-shaped work.
+- Asset Use Summary requirement: after substantive or tool-backed work, report actual asset paths used, missing assets, tools called, and quality-gate result when asked or when evidence is required.
+- Missing Asset Plan requirement: if a required asset is absent, stop or continue only as a labeled temporary / partial fallback with a Missing Asset Plan.
+- Tool boundary: tools are execution layers, not PalSmith's Pal assets; PalSmith must verify tool output with its own quality standards.
