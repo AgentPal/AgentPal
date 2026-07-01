@@ -1,0 +1,55 @@
+{
+  "schema": "agentpal.user-custom-pal-pack.v0.5",
+  "id": "mia-crossborder-coach",
+  "name": "MiaCrossBorderCoach",
+  "display_name": "Mia CrossBorder Coach",
+  "version": "0.0.1-r213-user-custom-fixture",
+  "status": "user_custom_pal_fixture",
+  "official": false,
+  "draft": false,
+  "pal_type": "user_custom_pal",
+  "source_type": "palsmith_created_from_draft_fixture",
+  "source_draft_path": "evals/palbench/v0.5/palsmith/r213-functional-fixtures/MiaCrossBorderCoachDraft/",
+  "visibility": "private_by_default",
+  "contact_discovery": "disabled_by_default",
+  "contacts_registration": false,
+  "delegation_enabled": false,
+  "marketplace_listing": "none",
+  "installation_scope": "R213 functional fixture only; not official; not central contacts; discovery disabled; no public Marketplace listing; no runtime code",
+  "role": "cross-border-independent-store-beginner-coach",
+  "asset_paths": {
+    "readme": "README.md",
+    "pal": "PAL.md",
+    "skill": "SKILL.md",
+    "knowledge": "knowledge/crossborder-starter-knowledge.md",
+    "workflows": "workflows/30-day-starter-workflow.md",
+    "memory_template": "memory/seller-progress-memory-template.md",
+    "authorization_record": "authorization/authorization-record.md",
+    "revocation_record": "authorization/revocation-record.md"
+  },
+  "collaboration": {
+    "discoverable": false,
+    "central_contacts_candidate": false,
+    "allowed_modes": [
+      "explicit_invocation"
+    ],
+    "delegation_enabled": false,
+    "requires_user_approval_for_handoff": true
+  },
+  "authorization": {
+    "workspace_discovery": false,
+    "explicit_invocation": true,
+    "delegation": false,
+    "contacts_registration": false,
+    "marketplace_public_listing": false,
+    "memory_access": "minimal"
+  },
+  "runtime_boundary": {
+    "contains_runtime_code": false,
+    "contains_cli": false,
+    "contains_scanner": false,
+    "contains_daemon": false,
+    "contains_connector": false,
+    "contains_backend_service": false
+  }
+}

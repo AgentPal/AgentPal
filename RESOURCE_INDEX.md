@@ -673,6 +673,12 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/palsmith/r197-simple-edit-contrast-check.md` | R197 simple existing Pal edit contrast host check |
 | `evals/palbench/v0.5/palsmith/r197-quinn-existing-pal-upgrade-host-review.md` | R197 Quinn review for existing Pal upgrade real-host rehearsal |
 | `evals/palbench/v0.5/palsmith/r198-palsmith-pal-completeness-regression.md` | R198 PalSmith completeness level regression |
+| `evals/palbench/v0.5/palsmith/r213-primary-function-acceptance.md` | R213 PalSmith primary function acceptance summary |
+| `evals/palbench/v0.5/palsmith/r213-mia-crossborder-coach-creation-result.md` | R213 Mia CrossBorder Coach composite creation result |
+| `evals/palbench/v0.5/palsmith/r213-draft-to-custom-functional-result.md` | R213 draft-to-custom functional result |
+| `evals/palbench/v0.5/palsmith/r213-authorization-revocation-functional-result.md` | R213 discovery authorization and revocation functional result |
+| `evals/palbench/v0.5/palsmith/r213-quinn-primary-function-review.md` | R213 Quinn primary function review |
+| `evals/palbench/v0.5/palsmith/r213-functional-fixtures/` | R213 controlled MiaCrossBorderCoach draft and user custom Pal fixtures |
 | `templates/palsmith/minimal-pal-generation-checklist.md` | Minimal Pal generation checklist |
 | `templates/palsmith/standard-pal-generation-checklist.md` | Standard Pal generation checklist |
 | `templates/palsmith/pal-asset-classification-result-template.json` | Pal asset classification result JSON template |

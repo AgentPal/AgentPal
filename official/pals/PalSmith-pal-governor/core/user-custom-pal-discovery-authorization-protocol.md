@@ -89,7 +89,8 @@ I can prepare a workspace_discoverable authorization record first, limited to na
 
 ## Authorization Record
 
-Every authorization must leave a file-level record or Task Package proposal. Use:
+Every authorization must leave a file-level record or Task Package proposal.
+Use the workspace-root-relative template path:
 
 ```text
 templates/palsmith/user-custom-pal-authorization-record.md
@@ -107,7 +108,8 @@ The record must include:
 
 ## Policy File
 
-If a workspace chooses to maintain a local policy, use:
+If a workspace chooses to maintain a local policy, use the
+workspace-root-relative template path:
 
 ```text
 templates/palsmith/user-custom-pal-discovery-policy.md

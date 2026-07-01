@@ -27,6 +27,36 @@ Copy this prompt into AgentPal when you want PalSmith to design a composite Pal.
 - 隐私、授权和公开发布边界
 - eval 验证计划
 
+如果我继续要求生成 draft Pal Pack，或者当前任务明确是受控测试 /
+fixture 创建，请输出可执行的 draft Pal Pack 文件映射和 Runtime Task
+Package。文件映射至少包含：
+
+- `pal.json`
+- `PAL.md`
+- `SKILL.md`
+- `README.md`
+- `identity/`
+- `knowledge/`
+- `workflows/`
+- `memory/`
+- `prompts/`
+- `evals/`
+- `metadata-draft.md`
+
+draft Pal Pack 默认必须是：
+
+- `official: false`
+- `status: draft_test_artifact` 或 `draft`
+- 不进入 `official/pals/`
+- 不进入 `workspace/organization/contacts/`
+- 不公开 Marketplace listing
+- 不包含 runtime/backend/CLI/scanner/daemon/connector
+
+如果安装为 user custom Pal，需要先使用
+`prompts/palsmith/install-draft-as-custom-pal.md` 准备安装计划。user
+custom Pal 默认私有、discovery 关闭、delegation 关闭、contacts
+registration 关闭、Marketplace public listing 关闭。
+
 不要直接声称已经创建 official Pal。
 不要修改 central contacts。
 不要把私有资料写成公开示例或公开 Marketplace 商品。
