@@ -691,6 +691,12 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/palsmith/r215-real-host-authorization-revocation-result.md` | R215 real host authorization and revocation result |
 | `evals/palbench/v0.5/palsmith/r215-quinn-real-host-primary-function-review.md` | R215 Quinn partial review for real-host primary function walkthrough |
 | `evals/palbench/v0.5/palsmith/r215-real-host-walkthrough/` | R215 real-host walkthrough fixture-only evidence |
+| `evals/palbench/v0.5/palsmith/r216-project-registration-result.md` | R216 Codex fresh-copy project registration blocker |
+| `evals/palbench/v0.5/palsmith/r216-project-bound-real-host-walkthrough.md` | R216 project-bound host walkthrough not-run registration blocker |
+| `evals/palbench/v0.5/palsmith/r216-project-bound-mia-creation-result.md` | R216 project-bound Mia creation not-run registration blocker |
+| `evals/palbench/v0.5/palsmith/r216-project-bound-draft-to-custom-result.md` | R216 project-bound draft-to-custom not-run registration blocker |
+| `evals/palbench/v0.5/palsmith/r216-project-bound-authorization-revocation-result.md` | R216 project-bound discovery authorization/revocation not-run registration blocker |
+| `evals/palbench/v0.5/palsmith/r216-quinn-project-bound-primary-function-review.md` | R216 Quinn blocked review for project-bound primary function retry |
 | `templates/palsmith/minimal-pal-generation-checklist.md` | Minimal Pal generation checklist |
 | `templates/palsmith/standard-pal-generation-checklist.md` | Standard Pal generation checklist |
 | `templates/palsmith/pal-asset-classification-result-template.json` | Pal asset classification result JSON template |
