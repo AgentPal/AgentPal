@@ -74,6 +74,9 @@ Use:
 | `docs/release/v0.5-release-candidate-preflight.md` | local v0.5 release candidate preflight | user-authorized release decision; not release completion |
 | `docs/release/v0.5-user-authorization-decision.md` | local v0.5 user authorization decision | choose push / tag / GitHub Release scope; not release execution |
 | `docs/release/v0.5-release-notes-draft.md` | draft v0.5 release notes | user review before release publication; not published release notes |
+| `docs/release/v0.5-release-readiness-checklist.md` | R211 v0.5 release readiness checklist | release package preparation checks; not remote authorization |
+| `docs/release/v0.5-known-limits.md` | R211 v0.5 known limits | release package boundary notes |
+| `docs/release/v0.5-release-authorization-decision.md` | R211 v0.5 release authorization decision | ready_with_notes for release package preparation only |
 | `CONTRIBUTING.md` | contribution rules | contributor onboarding |
 | `THIRD_PARTY_NOTICES.md` | license and third-party notice policy | release validation |
 | `LICENSE` | MIT License | release validation |
@@ -1358,6 +1361,19 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/release/r195-release-authorization-decision-package.md` | R195 release authorization decision package evidence |
 | `evals/palbench/v0.5/release/r195-release-notes-draft-review.md` | R195 release notes draft review |
 | `evals/palbench/v0.5/release/r195-quinn-release-authorization-review.md` | R195 Quinn release authorization review |
+| `docs/release/v0.5-release-readiness-checklist.md` | R211 v0.5 release readiness checklist |
+| `docs/release/v0.5-known-limits.md` | R211 v0.5 known limits |
+| `docs/release/v0.5-release-authorization-decision.md` | R211 v0.5 release authorization decision |
+| `evals/palbench/v0.5/release/r211-subagent-a-palsmith-readiness-audit.md` | R211 PalSmith readiness audit role output |
+| `evals/palbench/v0.5/release/r211-subagent-b-official-pal-certification-readiness-audit.md` | R211 official Pal scoped certification readiness audit role output |
+| `evals/palbench/v0.5/release/r211-subagent-c-no-code-boundary-audit.md` | R211 no-code/runtime/Marketplace/contacts boundary audit role output |
+| `evals/palbench/v0.5/release/r211-subagent-d-release-docs-audit.md` | R211 release docs audit role output |
+| `evals/palbench/v0.5/release/r211-subagent-e-integrity-audit.md` | R211 integrity audit role output |
+| `evals/palbench/v0.5/release/r211-quinn-v05-release-authorization-review.md` | R211 Quinn release authorization review |
+| `evals/palbench/v0.5/release/r211-v05-release-authorization-gate-review.md` | R211 v0.5 release authorization gate review |
+| `evals/palbench/v0.5/release/r211-v05-release-boundary-scan.md` | R211 v0.5 release boundary scan |
+| `evals/palbench/v0.5/release/r211-v05-release-integrity-review.md` | R211 v0.5 release integrity review |
+| `evals/palbench/v0.5/release/r211-v05-release-readiness-verdict.md` | R211 v0.5 release readiness verdict |
 
 ## Do Not Load By Default
 
