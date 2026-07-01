@@ -226,6 +226,8 @@ Use:
 | `docs/07-official-pals/official-pal-examples-index.md` | Official 10 Pal real task examples index | official Pal examples and v0.5 navigation |
 | `docs/07-official-pals/official-pal-example-library-plan.md` | Official Pal example library plan | official 10 Pal examples planning and boundary rules |
 | `docs/07-pal-asset-execution/README.md` | Pal Asset Execution adoption guide | user-readable guide for asset-grounded Pal work |
+| `docs/07-pal-asset-execution/scoped-certification-plan.md` | Scoped Pal Asset Execution certification plan | certification levels, evidence gates, and R209 planning |
+| `docs/07-pal-asset-execution/scoped-certification-checklist.md` | Scoped certification checklist | copyable checklist for Pal plus task-family certification review |
 | `evals/official-pals/official-pal-example-library-self-test.md` | Official Pal example library self-test | R42 example structure and boundary checks |
 | `docs/05-orchestration-methodology/capability-inventory-minimal-usable-design.md` | Capability Inventory minimal usable design | v0.2 R43 manual profile design |
 | `docs/03-user-guides/manual-capability-profile.md` | Manual Capability Profile Guide | no-code manual or semi-manual capability profile creation |
@@ -515,6 +517,7 @@ Use the current docs directories as the public entry points. Archived research n
 | `templates/pal/task-asset-packet.md` | R198 Task Asset Packet template |
 | `templates/pal/asset-use-summary.md` | R198 Asset Use Summary template |
 | `templates/pal/missing-asset-plan.md` | R198 Missing Asset Plan template |
+| `templates/pal/scoped-certification-record.md` | R208 scoped certification record template |
 | `templates/pal-asset/README.md` | Pal Asset template index |
 | `evals/palbench/pal-asset/r98a-pal-asset-standard-boundary.md` | R98-A Pal Asset boundary eval |
 | `release/fresh-clone-checks/r98a-local-pal-asset-standard-validation.md` | R98-A local validation |
@@ -723,6 +726,12 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/asset-usage/r207-quinn-remaining-official-pal-host-regression-review.md` | R207 Quinn review for remaining official Pal host regressions |
 | `evals/palbench/v0.5/asset-usage/r207-remaining-official-pal-host-regression-summary.md` | R207 remaining official Pal representative host regression summary |
 | `evals/palbench/v0.5/asset-usage/r207-official-pal-representative-regression-coverage-matrix.md` | R207 10-Pal scoped representative regression coverage matrix |
+| `docs/07-pal-asset-execution/scoped-certification-plan.md` | R208 scoped certification plan |
+| `docs/07-pal-asset-execution/scoped-certification-checklist.md` | R208 scoped certification checklist |
+| `templates/pal/scoped-certification-record.md` | R208 scoped certification record template |
+| `evals/palbench/v0.5/asset-usage/r208-scoped-certification-candidate-matrix.md` | R208 scoped certification candidate matrix |
+| `evals/palbench/v0.5/asset-usage/r208-r209-scoped-certification-execution-package.md` | R208 R209 scoped certification execution package |
+| `evals/palbench/v0.5/asset-usage/r208-quinn-scoped-certification-plan-review.md` | R208 Quinn review for scoped certification plan |
 
 ## Official Pal Asset Audit
 
@@ -745,6 +754,8 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/asset-usage/r206-official-pal-representative-regression-coverage-matrix.md` | R206 10-Pal representative regression coverage matrix |
 | `evals/palbench/v0.5/asset-usage/r207-official-pal-representative-regression-coverage-matrix.md` | R207 10-Pal scoped representative regression coverage matrix |
 | `evals/palbench/v0.5/asset-usage/r207-remaining-official-pal-host-regression-summary.md` | R207 representative host regression summary for remaining five official Pals |
+| `docs/07-pal-asset-execution/scoped-certification-plan.md` | R208 scoped certification plan for official Pal task-family reviews |
+| `evals/palbench/v0.5/asset-usage/r208-scoped-certification-candidate-matrix.md` | R208 candidate matrix for official Pal task-family scoped certification review |
 
 ## Pal Asset / Org Pack Integration
 

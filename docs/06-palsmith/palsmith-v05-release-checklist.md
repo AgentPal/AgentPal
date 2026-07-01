@@ -12,6 +12,7 @@ This checklist is for a local release-preparation review. It does not authorize 
 - [ ] PalSmith R193 evidence files are present.
 - [ ] Pal Asset Execution docs are linked from `docs/README.md` and PalSmith docs.
 - [ ] Release notes include Pal Asset Execution Contract without overstating tool capability.
+- [ ] Release notes distinguish representative host regression evidence from scoped certification.
 - [ ] Markdown links in the added docs point to existing local files.
 - [ ] `git diff --check` has no content errors.
 
@@ -28,6 +29,7 @@ This checklist is for a local release-preparation review. It does not authorize 
 - [ ] User custom Pal, controlled-write fixture, and official Pal statuses are not mixed.
 - [ ] R200 fixture is described as a test artifact, not a real user custom Pal upgrade.
 - [ ] No release notes claim all official Pals have been individually migrated to the Pal Asset Execution Contract.
+- [ ] No release notes claim official Pal task-family certification without a scoped certification record.
 
 ## Remote Publication Gate
 

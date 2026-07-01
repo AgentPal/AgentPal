@@ -150,7 +150,13 @@ representative task-family host regression for Pal Asset Execution adoption.
 This remains scoped evidence, not a full certification of every task family and
 not a runtime, release, or contacts change.
 
+R208 adds a scoped certification plan. The plan explains that certification can
+only be granted for one Pal plus one task family after a separate evidence gate
+and Quinn / QA review. R208 does not certify any Pal by itself.
+
 Read:
 
 - [Official Pal adoption spot-check](official-pal-adoption-spot-check.md)
 - [Phase 3 official Pal regression plan](phase-3-official-pal-regression-plan.md)
+- [Scoped certification plan](scoped-certification-plan.md)
+- [Scoped certification checklist](scoped-certification-checklist.md)

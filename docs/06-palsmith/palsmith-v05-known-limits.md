@@ -68,6 +68,16 @@ contract step by step. Existing Pals should not be described as fully migrated
 unless their own asset inventory, Task Asset Packet, Asset Use Summary, and
 regression evidence exist.
 
+## Certification Is Scoped
+
+R205 and R207 provide representative task-family host regression evidence across
+the 10 official bundled Pals. That evidence does not certify every task family.
+
+How to understand it: a future certification must name the Pal, task family,
+evidence paths, host threads, known limits, valid scope, invalid scope, and QA
+review result. R208 defines the plan and template, not a completed
+certification.
+
 ## Controlled Write Fixture Is Not A Real Pal Upgrade
 
 R200 used `FirstPrinciplesProductReviewerControlledWrite` as a controlled-write

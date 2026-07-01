@@ -100,6 +100,16 @@ task-family host regression per Pal. This is still scoped evidence. It is not a
 claim that every task family is covered, and it does not add runtime,
 publication, contacts, or backend behavior.
 
+## R208 Certification Planning
+
+R208 introduces scoped certification planning. A future certification must be
+recorded for one Pal plus one task family, with evidence paths, host thread
+IDs, known limits, valid scope, invalid scope, and Quinn / QA review.
+
+The R208 candidate matrix recommends starting R209 with the R205 high-priority
+task families. The R207 remaining five stay at representative-regression level
+until reusable examples or equivalent checklist evidence are reviewed.
+
 ## Phase 4 / Certification Preconditions
 
 Phase 4 can only consider scoped completeness labels when:
@@ -120,3 +130,6 @@ Phase 4 can only consider scoped completeness labels when:
 - [`../../evals/palbench/v0.5/asset-usage/r207-remaining-official-pal-host-regression-summary.md`](../../evals/palbench/v0.5/asset-usage/r207-remaining-official-pal-host-regression-summary.md)
 - [`../../evals/palbench/v0.5/asset-usage/r207-official-pal-representative-regression-coverage-matrix.md`](../../evals/palbench/v0.5/asset-usage/r207-official-pal-representative-regression-coverage-matrix.md)
 - [`../../evals/palbench/v0.5/asset-usage/r207-quinn-remaining-official-pal-host-regression-review.md`](../../evals/palbench/v0.5/asset-usage/r207-quinn-remaining-official-pal-host-regression-review.md)
+- [`scoped-certification-plan.md`](scoped-certification-plan.md)
+- [`../../evals/palbench/v0.5/asset-usage/r208-scoped-certification-candidate-matrix.md`](../../evals/palbench/v0.5/asset-usage/r208-scoped-certification-candidate-matrix.md)
+- [`../../evals/palbench/v0.5/asset-usage/r208-r209-scoped-certification-execution-package.md`](../../evals/palbench/v0.5/asset-usage/r208-r209-scoped-certification-execution-package.md)

@@ -172,6 +172,17 @@ representative task-family host regression. This is not a blanket task-family
 certification, not a release-readiness promotion, and not evidence of new
 runtime or contacts behavior.
 
+## R208 Scoped Certification Plan
+
+R208 adds a certification plan, checklist, record template, candidate matrix,
+and R209 execution package. It keeps R205/R207 as representative task-family
+evidence and requires a separate gate before any Pal plus task family can be
+marked `scoped_certified`.
+
+The recommended next step is to review the five R205 high-priority task
+families first, because those rows already have entry adoption, written
+examples, host regressions, and Quinn review evidence.
+
 ## Evidence Files
 
 - [`../../evals/palbench/v0.5/asset-usage/r202-official-pal-asset-execution-adoption-matrix.md`](../../evals/palbench/v0.5/asset-usage/r202-official-pal-asset-execution-adoption-matrix.md)
@@ -198,3 +209,9 @@ runtime or contacts behavior.
 - [`../../evals/palbench/v0.5/asset-usage/r207-quinn-remaining-official-pal-host-regression-review.md`](../../evals/palbench/v0.5/asset-usage/r207-quinn-remaining-official-pal-host-regression-review.md)
 - [`../../evals/palbench/v0.5/asset-usage/r207-remaining-official-pal-host-regression-summary.md`](../../evals/palbench/v0.5/asset-usage/r207-remaining-official-pal-host-regression-summary.md)
 - [`../../evals/palbench/v0.5/asset-usage/r207-official-pal-representative-regression-coverage-matrix.md`](../../evals/palbench/v0.5/asset-usage/r207-official-pal-representative-regression-coverage-matrix.md)
+- [`scoped-certification-plan.md`](scoped-certification-plan.md)
+- [`scoped-certification-checklist.md`](scoped-certification-checklist.md)
+- [`../../templates/pal/scoped-certification-record.md`](../../templates/pal/scoped-certification-record.md)
+- [`../../evals/palbench/v0.5/asset-usage/r208-scoped-certification-candidate-matrix.md`](../../evals/palbench/v0.5/asset-usage/r208-scoped-certification-candidate-matrix.md)
+- [`../../evals/palbench/v0.5/asset-usage/r208-r209-scoped-certification-execution-package.md`](../../evals/palbench/v0.5/asset-usage/r208-r209-scoped-certification-execution-package.md)
+- [`../../evals/palbench/v0.5/asset-usage/r208-quinn-scoped-certification-plan-review.md`](../../evals/palbench/v0.5/asset-usage/r208-quinn-scoped-certification-plan-review.md)
