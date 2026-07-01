@@ -1,0 +1,21 @@
+{
+  "schema": "agentpal.pal.v0.5.fixture",
+  "id": "mia-crossborder-coach",
+  "name": "MiaCrossBorderCoach",
+  "display_name": "MiaCrossBorderCoach",
+  "type": "pal-pack",
+  "status": "user_custom_pal_fixture_only",
+  "official": false,
+  "draft": false,
+  "source_type": "palsmith_created_fixture",
+  "source_draft_path": "evals/palbench/v0.5/palsmith/r215-real-host-walkthrough/MiaCrossBorderCoachDraft/",
+  "visibility": "private_by_default",
+  "contact_discovery": "disabled_by_default",
+  "contacts_registration": false,
+  "central_contacts_candidate": false,
+  "delegation_enabled": false,
+  "marketplace_listing": "none",
+  "direct_call": "/pal MiaCrossBorderCoach",
+  "fixture_only": true,
+  "not_active_installation": true
+}

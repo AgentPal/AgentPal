@@ -1,0 +1,19 @@
+{
+  "schema": "agentpal.custom_pal.discovery_authorization.fixture.v0.1",
+  "fixture_only": true,
+  "pal_id": "mia-crossborder-coach",
+  "pal_display_name": "MiaCrossBorderCoach",
+  "source_user_custom_fixture": "evals/palbench/v0.5/palsmith/r215-real-host-walkthrough/user-pals/MiaCrossBorderCoach/",
+  "authorization_status": "authorized_fixture_only",
+  "scope": "r215_walkthrough_only",
+  "allowed_discovery": ["explicit_host_loaded_path"],
+  "allowed_modes": ["consult"],
+  "handoff_allowed": false,
+  "delegation_allowed": false,
+  "central_contacts_registration": false,
+  "official_status": false,
+  "marketplace_listing": "none",
+  "allowed_context": ["current user prompt", "provided listing text", "provided seller constraints"],
+  "blocked_context": ["private memory", "credentials", "platform account data", "unapproved project files"],
+  "revocation_record": "MiaCrossBorderCoach-discovery-revocation.fixture.json"
+}

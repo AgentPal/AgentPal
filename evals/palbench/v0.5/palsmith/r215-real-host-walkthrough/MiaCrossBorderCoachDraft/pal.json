@@ -1,0 +1,38 @@
+{
+  "schema": "agentpal.pal.v0.5.fixture",
+  "id": "mia-crossborder-coach",
+  "name": "MiaCrossBorderCoach",
+  "display_name": "MiaCrossBorderCoach",
+  "type": "pal-pack",
+  "status": "draft_fixture_only",
+  "official": false,
+  "draft": true,
+  "source_type": "palsmith_created_fixture",
+  "visibility": "private_by_default",
+  "contact_discovery": "disabled_by_default",
+  "central_contacts_candidate": false,
+  "contacts_registration": false,
+  "marketplace_listing": "none",
+  "direct_call": "/pal MiaCrossBorderCoach",
+  "aliases": ["MiaCrossBorderCoach", "Mia CrossBorder Coach", "Mia"],
+  "role": "cross_border_ecommerce_listing_and_launch_coach",
+  "no_runtime_code": true,
+  "no_backend": true,
+  "no_connector": true,
+  "no_scanner": true,
+  "no_installer": true,
+  "no_daemon": true,
+  "asset_dirs": {
+    "identity": "identity/",
+    "knowledge": "knowledge/",
+    "workflows": "workflows/",
+    "evals": "evals/",
+    "core": "core/"
+  },
+  "boundary": {
+    "not_official_pal": true,
+    "not_central_contact": true,
+    "not_active_installation": true,
+    "discovery_requires_separate_authorization_fixture": true
+  }
+}

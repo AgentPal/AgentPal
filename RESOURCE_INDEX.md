@@ -685,6 +685,12 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/palsmith/r214-fresh-copy-authorization-revocation-result.md` | R214 fresh copy authorization and revocation result |
 | `evals/palbench/v0.5/palsmith/r214-quinn-fresh-copy-primary-function-review.md` | R214 Quinn fresh copy primary function review |
 | `evals/palbench/v0.5/palsmith/r214-fresh-copy-test/` | R214 fresh copy MiaCrossBorderCoach test fixtures |
+| `evals/palbench/v0.5/palsmith/r215-real-host-user-walkthrough.md` | R215 real Codex host PalSmith user walkthrough partial summary |
+| `evals/palbench/v0.5/palsmith/r215-real-host-mia-creation-result.md` | R215 real host Mia creation result |
+| `evals/palbench/v0.5/palsmith/r215-real-host-draft-to-custom-result.md` | R215 real host draft-to-custom result |
+| `evals/palbench/v0.5/palsmith/r215-real-host-authorization-revocation-result.md` | R215 real host authorization and revocation result |
+| `evals/palbench/v0.5/palsmith/r215-quinn-real-host-primary-function-review.md` | R215 Quinn partial review for real-host primary function walkthrough |
+| `evals/palbench/v0.5/palsmith/r215-real-host-walkthrough/` | R215 real-host walkthrough fixture-only evidence |
 | `templates/palsmith/minimal-pal-generation-checklist.md` | Minimal Pal generation checklist |
 | `templates/palsmith/standard-pal-generation-checklist.md` | Standard Pal generation checklist |
 | `templates/palsmith/pal-asset-classification-result-template.json` | Pal asset classification result JSON template |
