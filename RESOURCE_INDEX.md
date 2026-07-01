@@ -732,6 +732,18 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/asset-usage/r208-scoped-certification-candidate-matrix.md` | R208 scoped certification candidate matrix |
 | `evals/palbench/v0.5/asset-usage/r208-r209-scoped-certification-execution-package.md` | R208 R209 scoped certification execution package |
 | `evals/palbench/v0.5/asset-usage/r208-quinn-scoped-certification-plan-review.md` | R208 Quinn review for scoped certification plan |
+| `evals/palbench/v0.5/asset-usage/r209-mira-main-scoped-certification-review.md` | R209 Mira scoped certification review |
+| `evals/palbench/v0.5/asset-usage/r209-palsmith-governor-scoped-certification-review.md` | R209 PalSmith scoped certification review |
+| `evals/palbench/v0.5/asset-usage/r209-atlas-developer-scoped-certification-review.md` | R209 Atlas scoped certification review |
+| `evals/palbench/v0.5/asset-usage/r209-quinn-quality-scoped-certification-review.md` | R209 Quinn scoped certification review |
+| `evals/palbench/v0.5/asset-usage/r209-nova-product-scoped-certification-review.md` | R209 Nova scoped certification review |
+| `evals/palbench/v0.5/asset-usage/r209-scoped-certification-review-matrix.md` | R209 scoped certification review matrix |
+| `evals/palbench/v0.5/asset-usage/r209-quinn-scoped-certification-review.md` | R209 Quinn scoped certification review |
+| `evals/palbench/v0.5/asset-usage/certifications/r209-mira-main-release-readiness-coordination-scoped-certification-record.md` | R209 Mira release readiness coordination scoped certification record |
+| `evals/palbench/v0.5/asset-usage/certifications/r209-palsmith-governor-existing-pal-composite-upgrade-planning-scoped-certification-record.md` | R209 PalSmith existing Pal composite upgrade planning scoped certification record |
+| `evals/palbench/v0.5/asset-usage/certifications/r209-atlas-developer-docs-first-development-task-package-scoped-certification-record.md` | R209 Atlas docs-first development task package scoped certification record |
+| `evals/palbench/v0.5/asset-usage/certifications/r209-quinn-quality-completion-report-false-completion-review-scoped-certification-record.md` | R209 Quinn completion report / false completion review scoped certification record |
+| `evals/palbench/v0.5/asset-usage/certifications/r209-nova-product-privacy-authorization-boundary-decision-scoped-certification-record.md` | R209 Nova product privacy and authorization boundary scoped certification record |
 
 ## Official Pal Asset Audit
 
@@ -756,6 +768,8 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/asset-usage/r207-remaining-official-pal-host-regression-summary.md` | R207 representative host regression summary for remaining five official Pals |
 | `docs/07-pal-asset-execution/scoped-certification-plan.md` | R208 scoped certification plan for official Pal task-family reviews |
 | `evals/palbench/v0.5/asset-usage/r208-scoped-certification-candidate-matrix.md` | R208 candidate matrix for official Pal task-family scoped certification review |
+| `evals/palbench/v0.5/asset-usage/r209-scoped-certification-review-matrix.md` | R209 selected high-priority Pal task-family scoped certification review matrix |
+| `evals/palbench/v0.5/asset-usage/r209-quinn-scoped-certification-review.md` | R209 Quinn review for selected high-priority scoped certification records |
 
 ## Pal Asset / Org Pack Integration
 

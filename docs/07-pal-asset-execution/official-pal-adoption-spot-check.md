@@ -183,6 +183,20 @@ The recommended next step is to review the five R205 high-priority task
 families first, because those rows already have entry adoption, written
 examples, host regressions, and Quinn review evidence.
 
+## R209 High-Priority Scoped Certification Review
+
+R209 reviewed the five R205 high-priority task-family scopes. Each selected
+scope received `scoped_certified_with_notes`:
+
+- Mira: release readiness coordination
+- PalSmith: existing Pal composite upgrade planning
+- Atlas: docs-first development task package
+- Quinn: completion report / false completion review
+- Nova: product privacy and authorization-boundary decision
+
+These records are task-family scoped. They do not certify the whole official
+roster, all task families, or any runtime / contacts / publication behavior.
+
 ## Evidence Files
 
 - [`../../evals/palbench/v0.5/asset-usage/r202-official-pal-asset-execution-adoption-matrix.md`](../../evals/palbench/v0.5/asset-usage/r202-official-pal-asset-execution-adoption-matrix.md)
@@ -215,3 +229,5 @@ examples, host regressions, and Quinn review evidence.
 - [`../../evals/palbench/v0.5/asset-usage/r208-scoped-certification-candidate-matrix.md`](../../evals/palbench/v0.5/asset-usage/r208-scoped-certification-candidate-matrix.md)
 - [`../../evals/palbench/v0.5/asset-usage/r208-r209-scoped-certification-execution-package.md`](../../evals/palbench/v0.5/asset-usage/r208-r209-scoped-certification-execution-package.md)
 - [`../../evals/palbench/v0.5/asset-usage/r208-quinn-scoped-certification-plan-review.md`](../../evals/palbench/v0.5/asset-usage/r208-quinn-scoped-certification-plan-review.md)
+- [`../../evals/palbench/v0.5/asset-usage/r209-scoped-certification-review-matrix.md`](../../evals/palbench/v0.5/asset-usage/r209-scoped-certification-review-matrix.md)
+- [`../../evals/palbench/v0.5/asset-usage/r209-quinn-scoped-certification-review.md`](../../evals/palbench/v0.5/asset-usage/r209-quinn-scoped-certification-review.md)

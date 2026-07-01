@@ -154,6 +154,11 @@ R208 adds a scoped certification plan. The plan explains that certification can
 only be granted for one Pal plus one task family after a separate evidence gate
 and Quinn / QA review. R208 does not certify any Pal by itself.
 
+R209 reviewed the five high-priority official Pal task-family candidates from
+R205. Those selected scopes now have `scoped_certified_with_notes` records.
+This is still not all-official-Pal certification, not every task family, and not
+a runtime, release, contacts, or Marketplace change.
+
 Read:
 
 - [Official Pal adoption spot-check](official-pal-adoption-spot-check.md)

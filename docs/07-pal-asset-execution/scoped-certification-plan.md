@@ -153,3 +153,23 @@ review:
 Alternative path: review all 10 official Pals for certification readiness, but
 write one decision per Pal plus task family and keep non-ready items at
 `representative_regression_passed`.
+
+## R209 Result
+
+R209 reviewed the five high-priority task-family candidates from R205:
+
+- Mira-main / release readiness coordination
+- PalSmith-pal-governor / existing Pal composite upgrade planning
+- Atlas-developer / docs-first development task package
+- Quinn-quality / completion report / false completion review
+- Nova-product / product privacy and authorization-boundary decision
+
+Each scope received a `scoped_certified_with_notes` record after applying the
+R208 gate. The notes matter: each certification is limited to the named Pal plus
+task family and does not cover the whole Pal, all task families, publication,
+contacts, runtime, backend, or Marketplace behavior.
+
+R209 evidence:
+
+- [`../../evals/palbench/v0.5/asset-usage/r209-scoped-certification-review-matrix.md`](../../evals/palbench/v0.5/asset-usage/r209-scoped-certification-review-matrix.md)
+- [`../../evals/palbench/v0.5/asset-usage/r209-quinn-scoped-certification-review.md`](../../evals/palbench/v0.5/asset-usage/r209-quinn-scoped-certification-review.md)

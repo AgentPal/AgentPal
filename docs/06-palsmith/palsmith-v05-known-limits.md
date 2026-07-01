@@ -78,6 +78,11 @@ evidence paths, host threads, known limits, valid scope, invalid scope, and QA
 review result. R208 defines the plan and template, not a completed
 certification.
 
+R209 adds scoped certification records for selected high-priority Pal
+task-family scopes. These records are limited to the named Pal plus task family
+and do not change Pal discovery, contacts, publication, runtime, or backend
+behavior.
+
 ## Controlled Write Fixture Is Not A Real Pal Upgrade
 
 R200 used `FirstPrinciplesProductReviewerControlledWrite` as a controlled-write
