@@ -77,6 +77,10 @@ Use:
 | `docs/release/v0.5-release-readiness-checklist.md` | R211 v0.5 release readiness checklist | release package preparation checks; not remote authorization |
 | `docs/release/v0.5-known-limits.md` | R211 v0.5 known limits | release package boundary notes |
 | `docs/release/v0.5-release-authorization-decision.md` | R211 v0.5 release authorization decision | ready_with_notes for release package preparation only |
+| `docs/release/v0.5-release-package-manifest.md` | R212 v0.5 release package manifest | local release package contents and exclusions |
+| `docs/release/v0.5-release-notes.md` | R212 final prepared v0.5 release notes | local final release notes; not published |
+| `docs/release/v0.5-release-preflight-checklist.md` | R212 v0.5 release preflight checklist | local preflight before any user-authorized remote operation |
+| `docs/release/v0.5-remote-operation-authorization-guide.md` | R212 remote operation authorization guide | future push/tag/release authorization boundary |
 | `CONTRIBUTING.md` | contribution rules | contributor onboarding |
 | `THIRD_PARTY_NOTICES.md` | license and third-party notice policy | release validation |
 | `LICENSE` | MIT License | release validation |
@@ -1374,6 +1378,15 @@ Use the current docs directories as the public entry points. Archived research n
 | `evals/palbench/v0.5/release/r211-v05-release-boundary-scan.md` | R211 v0.5 release boundary scan |
 | `evals/palbench/v0.5/release/r211-v05-release-integrity-review.md` | R211 v0.5 release integrity review |
 | `evals/palbench/v0.5/release/r211-v05-release-readiness-verdict.md` | R211 v0.5 release readiness verdict |
+| `docs/release/v0.5-release-package-manifest.md` | R212 v0.5 release package manifest |
+| `docs/release/v0.5-release-notes.md` | R212 final prepared v0.5 release notes |
+| `docs/release/v0.5-release-preflight-checklist.md` | R212 v0.5 release preflight checklist |
+| `docs/release/v0.5-remote-operation-authorization-guide.md` | R212 remote operation authorization guide |
+| `evals/palbench/v0.5/release/r212-release-package-manifest-review.md` | R212 release package manifest review |
+| `evals/palbench/v0.5/release/r212-release-notes-known-limits-review.md` | R212 release notes and known limits review |
+| `evals/palbench/v0.5/release/r212-release-preflight-checklist-review.md` | R212 release preflight checklist review |
+| `evals/palbench/v0.5/release/r212-remote-operation-authorization-boundary-review.md` | R212 remote operation authorization boundary review |
+| `evals/palbench/v0.5/release/r212-quinn-release-package-review.md` | R212 Quinn release package review |
 
 ## Do Not Load By Default
 
