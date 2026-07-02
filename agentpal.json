@@ -1352,6 +1352,30 @@
       "contacts_modified": false,
       "official_pal_count_modified": false,
       "remote_operations_performed": false
+    },
+    "r247_v06_user_testing_result_intake": {
+      "verdict": "agentpal_v06_manual_simulation_pass_with_host_integration_notes",
+      "submission_package": "J:/开发/AgentPal_dcos/测试记录/agentpal-v06-user-testing-package/manual-simulation-codex-current-thread-20260703/",
+      "background_thread_id": "019f23a6-84d2-70c2-955d-6041aec05385",
+      "background_thread_supplemental_output": "J:/开发/AgentPal_dcos/测试记录/agentpal-v06-user-testing-package/background-codex-thread-current-run/v06-current-run-full-results.md",
+      "evidence_root": "evals/palbench/v0.6/user-testing-package/r247-result-intake/",
+      "submission_intake": "evals/palbench/v0.6/user-testing-package/r247-result-intake/r247-submission-intake.md",
+      "environment_classification": "evals/palbench/v0.6/user-testing-package/r247-result-intake/r247-environment-classification.md",
+      "feature_coverage_matrix": "evals/palbench/v0.6/user-testing-package/r247-result-intake/r247-feature-coverage-matrix.md",
+      "codex_claude_binding_coverage": "evals/palbench/v0.6/user-testing-package/r247-result-intake/r247-codex-claude-binding-coverage.md",
+      "core_no_code_chain_evaluation": "evals/palbench/v0.6/user-testing-package/r247-result-intake/r247-core-no-code-chain-evaluation.md",
+      "blocker_triage": "evals/palbench/v0.6/user-testing-package/r247-result-intake/r247-blocker-triage.md",
+      "overclaim_check": "evals/palbench/v0.6/user-testing-package/r247-result-intake/r247-overclaim-check.md",
+      "quinn_final_review": "evals/palbench/v0.6/user-testing-package/r247-result-intake/r247-quinn-final-review.md",
+      "final_verdict": "evals/palbench/v0.6/user-testing-package/r247-result-intake/r247-final-verdict.md",
+      "codex_thin_binding_result": "not-run",
+      "claude_code_binding_result": "not-run",
+      "core_no_code_chain_result": "pass_with_notes",
+      "strict_project_bound_pass_claimed": false,
+      "live_external_validation_claimed": false,
+      "contacts_modified": false,
+      "official_pal_count_modified": false,
+      "remote_operations_performed": false
     }
   },
   "v0_5_faye_extension": {
