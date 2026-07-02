@@ -35,7 +35,13 @@ Keep `active_project_root` and `agentpal_workspace_root` separate.
 
 The binding metadata should include:
 
-- `binding_mode: thin`
+- `schema_version: agentpal.project_binding.v1`
+- `binding_version`
+- `binding_type: thin`
+- `runtime`
+- `agentpal_source` as a structured object
+- `enabled_runtimes`
+- `last_runtime`
 - `central_pal_contacts`
 - `agentpal_project_record`
 - `workspace/projects/<project-id>` as the central record location

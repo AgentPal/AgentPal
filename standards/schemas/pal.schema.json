@@ -20,7 +20,35 @@
       "pattern": "^[a-z0-9][a-z0-9-]*$"
     },
     "name": { "type": "string", "minLength": 1 },
+    "canonical_id": {
+      "type": "string",
+      "description": "Stable v0.6 Pal identity id. It should not change when a user renames the Pal."
+    },
     "display_name": { "type": "string" },
+    "role_title": {
+      "type": "string",
+      "description": "Human-readable job title. Role titles must not replace the Pal display name."
+    },
+    "contact_label": {
+      "type": "string",
+      "description": "Roster label used to distinguish same-name Pals, usually '<display name> · <role>'."
+    },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "user_custom_name": {
+      "type": ["string", "null"],
+      "description": "Optional user-facing rename. canonical_id remains stable."
+    },
+    "original_name": {
+      "type": ["string", "null"],
+      "description": "Original external or previous name when imported or renamed."
+    },
+    "imported_from": {
+      "type": ["string", "null"],
+      "description": "Source identifier for imported Pal Packs."
+    },
     "directory_name": { "type": "string" },
     "role": { "type": "string" },
     "type": {

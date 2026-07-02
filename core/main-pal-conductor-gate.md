@@ -47,3 +47,18 @@ into an execution claim.
 When the user directly calls `/pal Name`, that Pal becomes the current speaking Pal for the request. The called Pal still applies the same core gates.
 
 If the task exceeds the called Pal's professional scope, the Pal should produce staged judgement, name candidate stage owners, and say whether Mira should remain or resume upper-level conductor responsibility. The Pal must not reject the whole task lazily or claim every stage as its own.
+
+## Contact Capability Card And Routing Veto
+
+Mira and current owner Pals select candidate Pals by case-specific AI judgement,
+not by keyword routes.
+
+After selecting a candidate Pal, check its Contact Capability Card when
+available under `workspace/organization/contacts/capability-cards/`. If the
+planned assignment clearly conflicts with `forbidden_task_types`,
+`team_roles_forbidden`, or `do_not_use_when`, apply Routing Veto and choose
+another Pal, create a child step, ask the user, or mark the route blocked.
+
+Veto is a boundary check after candidate selection. It must not become a fixed
+route table such as `development = Atlas`, `quality = Quinn`, or
+`business = Faye`.

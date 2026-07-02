@@ -246,17 +246,32 @@ For daily use, you can start with Mira. Mira is the default Main Pal / Leader Pa
 
 ### Codex
 
-Use this path when you want to open the AgentPal Workspace directly in Codex.
+Use this path when you want AgentPal available globally in Codex, then add or remove the AgentPal team from any Codex project.
 
-1. In Codex, create a new project from the AgentPal directory.
-2. Open [`prompts/codex/initialize-agentpal-workspace.md`](prompts/codex/initialize-agentpal-workspace.md).
-3. Copy the whole prompt.
-4. Paste it into the Codex conversation for the AgentPal project to initialize AgentPal.
-5. Send ordinary tasks to Mira first, or use `/pal Name` to call a specialist Pal.
+In Codex, run the AgentPal Codex install document:
 
-The Codex initialization prompt now lives under [`prompts/codex/`](prompts/codex/). Codex Workspace initialization does not require `AGENTPAL_HOME`.
+```text
+Please execute the AgentPal Codex install document:
+https://github.com/AgentPal/AgentPal/blob/master/plugins/codex/codex-install.md
+```
 
-See: [`docs/04-runtime-guides/01-use-with-codex.md`](docs/04-runtime-guides/01-use-with-codex.md)
+The install document installs the global Codex plugin `agentpal@agentpal`.
+
+After installation, open any Codex project and say:
+
+```text
+Add AgentPal to this project
+```
+
+To remove AgentPal from the current project while keeping the global Codex plugin installed, say:
+
+```text
+Remove AgentPal from this project
+```
+
+The project binding is thin. It writes only `.agentpal/project.json`, `.agentpal/AGENTPAL.md`, and the AgentPal protected block in `AGENTS.md`.
+
+See: [`plugins/codex/codex-install.md`](plugins/codex/codex-install.md)
 
 ### Claude Code
 

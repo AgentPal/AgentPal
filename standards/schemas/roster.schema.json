@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agentpal.local/schemas/roster.schema.json",
+  "title": "AgentPal Team Roster",
+  "description": "v0.6 draft schema for Team Pack roster.json. Rosters reference Pals and team roles; they do not copy Pal assets.",
+  "type": "object",
+  "required": ["team_id", "members", "open_roles"],
+  "properties": {
+    "team_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "members": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "pal_id",
+          "display_name",
+          "team_roles",
+          "required",
+          "can_read_team_assets",
+          "can_write_team_memory"
+        ],
+        "properties": {
+          "pal_id": {
+            "type": "string",
+            "description": "Reference to a Pal identity or central contact ID. This must not point to a copied Pal asset folder inside the Team Pack."
+          },
+          "display_name": {
+            "type": "string"
+          },
+          "team_roles": {
+            "type": "array",
+            "items": { "type": "string" },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "required": {
+            "type": "boolean"
+          },
+          "required_for_task_types": {
+            "type": "array",
+            "items": { "type": "string" },
+            "uniqueItems": true
+          },
+          "required_for_risk_levels": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["low", "medium", "high"]
+            },
+            "uniqueItems": true
+          },
+          "can_read_team_assets": {
+            "type": "boolean"
+          },
+          "can_write_team_memory": {
+            "type": "boolean"
+          },
+          "notes": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "open_roles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["role_id", "required_capabilities", "selection_policy"],
+        "properties": {
+          "role_id": { "type": "string" },
+          "required_capabilities": {
+            "type": "array",
+            "items": { "type": "string" },
+            "uniqueItems": true
+          },
+          "selection_policy": {
+            "type": "string",
+            "enum": [
+              "select_from_contacts_by_capability",
+              "ask_user",
+              "leave_unfilled_until_needed"
+            ]
+          },
+          "preferred_pals": {
+            "type": "array",
+            "items": { "type": "string" },
+            "uniqueItems": true
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "selection_policy": {
+      "type": "object",
+      "properties": {
+        "team_role_is_not_pal_identity": {
+          "type": "boolean",
+          "const": true
+        },
+        "pals_may_join_multiple_teams": {
+          "type": "boolean",
+          "const": true
+        },
+        "copy_pal_assets_into_team_pack": {
+          "type": "boolean",
+          "const": false
+        },
+        "selection_requires_ai_judgement": {
+          "type": "boolean",
+          "const": true
+        },
+        "keyword_routing_allowed": {
+          "type": "boolean",
+          "const": false
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

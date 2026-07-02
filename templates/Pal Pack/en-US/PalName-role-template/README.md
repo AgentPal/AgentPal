@@ -158,7 +158,7 @@ PalName-role/
 | `PAL.md` | Yes | Identity, responsibilities, boundaries, voice, collaboration principles, and refusals. | Fixed routing tables or claims that a task type must always go to a specific Pal. |
 | `AGENTS.md` | Yes | Runtime read order, work rules, risk boundaries, and output requirements for this Pal. | Repeating global AgentPal central roster or runtime logic. |
 | `SKILL.md` | Yes | Pal Pack entry: when to load this Pal, what to read, and how to answer. | Reducing the Pal to a single small tool Skill. |
-| `pal.json` | Yes | Machine-readable metadata: `id`, `display_name`, `directory_name`, `aliases`, `role`, `capabilities`, `collaboration`. | `domain_map`, fixed owners, or hard-coded task-to-Pal routes. |
+| `pal.json` | Yes | Machine-readable metadata: `id`, human `display_name`, separate `role_title`, `contact_label`, `directory_name`, `aliases`, `role`, `capabilities`, `collaboration`. | Role-title-only `display_name`, `domain_map`, fixed owners, or hard-coded task-to-Pal routes. |
 | `README.md` | Recommended | Human guide: who this Pal is, when to use it, how to call it, and how to maintain it. | Internal logs, local paths, private data, or outdated standards. |
 
 ## `identity/`

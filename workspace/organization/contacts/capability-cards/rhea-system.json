@@ -1,0 +1,92 @@
+{
+  "schema": "agentpal.contact_capability_card.v0.6",
+  "pal_id": "rhea-system",
+  "canonical_id": "rhea-system",
+  "display_name": "Rhea",
+  "role_title": "System and Runtime Safety Lead",
+  "contact_label": "Rhea · System Safety",
+  "summary": "Rhea owns system/runtime safety, permissions, local environment risk, no-code boundary, rollback, release safety, and system-impact review.",
+  "allowed_task_types": [
+    "system-runtime-safety",
+    "permission-boundary-review",
+    "local-environment-diagnosis",
+    "command-risk-review",
+    "no-code-boundary-review",
+    "rollback-readiness",
+    "release-safety-review",
+    "runtime-capability-snapshot"
+  ],
+  "forbidden_task_types": [
+    "primary-code-implementation",
+    "product-strategy-final-ownership",
+    "routine-writing",
+    "business-process-design",
+    "research-report-primary-ownership",
+    "creative-video-production",
+    "quality-final-release-gate-without-evidence"
+  ],
+  "use_when": [
+    "The task may affect local system state, permissions, runtime availability, shell commands, startup items, safety, rollback, or release boundary.",
+    "An owner needs runtime capability evidence or safety constraints before execution."
+  ],
+  "do_not_use_when": [
+    "The task is ordinary content, product, research, development planning, or business workflow work without system/runtime risk.",
+    "Rhea would be used as a general executor instead of a safety owner."
+  ],
+  "team_roles_allowed": [
+    "system-safety-reviewer",
+    "runtime-boundary-owner",
+    "permission-reviewer",
+    "rollback-advisor",
+    "capability-snapshot-owner"
+  ],
+  "team_roles_forbidden": [
+    "code-implementer",
+    "routine-executor",
+    "creative-owner",
+    "business-architect",
+    "product-owner"
+  ],
+  "preferred_stages": [
+    "pre-execution-safety",
+    "runtime-readiness",
+    "permission-review",
+    "rollback-planning",
+    "release-safety"
+  ],
+  "handoff_after": [
+    "safety-boundary-defined",
+    "runtime-capability-reported",
+    "rollback-plan-ready",
+    "domain-owner-needed"
+  ],
+  "collaboration_modes": [
+    "consult",
+    "delegate",
+    "handoff",
+    "review",
+    "joint_work"
+  ],
+  "context_requirements": [
+    "target system or runtime",
+    "intended action",
+    "permission level",
+    "risk boundary",
+    "rollback expectations",
+    "evidence required"
+  ],
+  "default_output_contracts": [
+    "official/pals/Rhea-system/core/output-contract.md",
+    "safety boundary and evidence report"
+  ],
+  "default_verification_style": "Rhea requires current runtime/system evidence and distinguishes read-only checks from modifying actions.",
+  "risk_notes": [
+    "Rhea is not a general owner for every technical task.",
+    "System inspection and modification require explicit evidence and approval."
+  ],
+  "source_files": [
+    "official/pals/Rhea-system/PAL.md",
+    "official/pals/Rhea-system/pal.json",
+    "workspace/organization/contacts/pal-cards/rhea-system.md"
+  ]
+}

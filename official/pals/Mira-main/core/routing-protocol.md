@@ -43,6 +43,58 @@ Pal capability reference is not a route map.
 
 Capability summaries from contacts / registry are orientation only. They do not force future requests to fixed Pals and must not be copied into this file as a local route table.
 
+## v0.6 Team Pack Routing Entry
+
+### Team Pack First Discovery For Natural-Language Team Requests
+
+When a user asks in ordinary language to form, build, assemble, use, find, or "get a team" for a goal, Mira must run Team Pack discovery before PalSmith creation planning.
+
+Mira checks whether the AgentPal source has a fitting Team Pack by comparing the user goal with available `TEAM.md`, `team.json`, `roster.json`, workflow, eval, and routing-card summaries. Current non-exclusive judgement anchors include `marketing-growth-team` for AgentPal promotion / weekly content planning, `research-team` for source-grounded research, `fde-business-team` for from-zero business process discovery, and the R220A rehearsal `after-sales-service-team` for bounded after-sales feedback handling when that fixture is available.
+
+If a fitting Team Pack exists, Mira selects it, states `selected_team`, explains the case-specific fit, records missing seats as `open_roles`, and produces a Workflow Execution Contract plus Closure Gate. Mira must not hand off to PalSmith to redesign an already fitting Team Pack.
+
+Mira consults or hands off to PalSmith only after discovery shows no fitting Team Pack, the user explicitly asks for a new durable Team Pack, or the existing Team Pack needs governance, repair, upgrade, or open-role gap planning. If PalSmith participates, the handoff Context Packet must include the Team Pack discovery result.
+
+Team Pack selection is an additional AI judgement option, not a replacement for
+owner Pal judgement.
+
+Mira should consider a Team Pack when:
+
+- the user explicitly asks to use a named team;
+- the work needs a stable shared workflow, shared team eval, or several Pal
+  roles;
+- team memory, team knowledge, or team runbooks are more relevant than one Pal's
+  personal assets;
+- the task is recurring enough that a reusable Team Pack gives better quality
+  than an ad hoc handoff.
+
+Mira should consider PalSmith when:
+
+- the user asks to create, assemble, import, repair, publish, or govern a team;
+- the user asks for new Pal roles that do not already exist in contacts;
+- the requested team needs a Team Pack plan, roster, workflow, eval, memory, or
+  routing-card placeholder;
+- a proposed member would need a new Pal Pack or an existing Pal upgrade.
+
+Mira may consult Faye when the task is about discovering, interviewing,
+modeling, or restructuring a business process, or translating a complex business
+operation into a team workflow. Mira must not keep assigning Faye to ordinary
+business execution after the team, workflow, and handoff point are established,
+unless the current task is explicitly to redesign or reframe the process.
+
+When a Team Pack is selected for a substantive task, Mira or the owner Pal must
+apply these current v0.6 protocols:
+
+- workspace `core/team-asset-preflight-protocol.md`;
+- workspace `core/team-pal-asset-priority-protocol.md`;
+- workspace `orchestration/workflow-execution-contract-protocol.md`;
+- workspace `orchestration/workflow-closure-gate-protocol.md`;
+- workspace `core/pal-asset-preflight-protocol.md` for selected member Pals.
+
+This does not claim background orchestration, automatic parallel execution, or
+runtime-level team dispatch. The current host runtime remains the execution
+layer and must provide evidence for file, tool, or system operations.
+
 ## Before Choosing An Owner
 
 Check:
@@ -51,6 +103,7 @@ Check:
 - current context and active project
 - whether the user wants answer, review, execution, handoff, or simple explanation
 - whether the requested work belongs to a registered Pal's ownership scope
+- whether a named or suitable Team Pack is relevant
 - risk, privacy, and approval boundaries
 - available Pal contacts and assets from the current AgentPal source of truth
 - expected output and evidence

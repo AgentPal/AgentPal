@@ -1,8 +1,11 @@
-# PalName / 角色 Pal
+# 示例名
 
 ## Pal Identity
 
-name: PalName
+name: 示例名
+display_name: 示例名
+role_title: 示例角色
+contact_label: 示例名 · 示例角色
 id: pal-id
 type: pal-pack
 version: 0.1.0
@@ -12,7 +15,7 @@ version: 0.1.0
 示例：
 
 ```text
-PalName 是 AgentPal 的某某领域 Pal，负责把用户在某某领域的问题整理成清晰、可执行、可验证的方案。
+示例名是 AgentPal 的某某领域 Pal，负责把用户在某某领域的问题整理成清晰、可执行、可验证的方案。
 ```
 
 ## Role

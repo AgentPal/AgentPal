@@ -13,9 +13,9 @@ The install prompt replaces the whole `CLAUDE.md` file with AgentPal instruction
 Preserve all existing content and replace only:
 
 ```text
-<!-- BEGIN AGENTPAL WORKGROUP -->
+<!-- BEGIN AGENTPAL BINDING: claude-code -->
 ...
-<!-- END AGENTPAL WORKGROUP -->
+<!-- END AGENTPAL BINDING: claude-code -->
 ```
 
 If no block exists, append one lightweight AgentPal block.

@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agentpal.local/schemas/contact-capability-card.schema.json",
+  "title": "AgentPal Contact Capability Card",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "schema",
+    "pal_id",
+    "canonical_id",
+    "display_name",
+    "role_title",
+    "contact_label",
+    "summary",
+    "allowed_task_types",
+    "forbidden_task_types",
+    "use_when",
+    "do_not_use_when",
+    "team_roles_allowed",
+    "team_roles_forbidden",
+    "preferred_stages",
+    "handoff_after",
+    "collaboration_modes",
+    "context_requirements",
+    "default_output_contracts",
+    "default_verification_style",
+    "risk_notes",
+    "source_files"
+  ],
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "agentpal.contact_capability_card.v0.6"
+    },
+    "pal_id": { "type": "string", "minLength": 1 },
+    "canonical_id": { "type": "string", "minLength": 1 },
+    "display_name": { "type": "string", "minLength": 1 },
+    "role_title": { "type": "string", "minLength": 1 },
+    "contact_label": { "type": "string", "minLength": 1 },
+    "summary": { "type": "string", "minLength": 1 },
+    "allowed_task_types": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1
+    },
+    "forbidden_task_types": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1
+    },
+    "use_when": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1
+    },
+    "do_not_use_when": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1
+    },
+    "team_roles_allowed": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1
+    },
+    "team_roles_forbidden": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1
+    },
+    "preferred_stages": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "handoff_after": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "collaboration_modes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["consult", "delegate", "handoff", "review", "joint_work"]
+      },
+      "minItems": 1
+    },
+    "context_requirements": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "default_output_contracts": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "default_verification_style": { "type": "string", "minLength": 1 },
+    "risk_notes": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "source_files": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1
+    }
+  }
+}

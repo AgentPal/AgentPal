@@ -1,8 +1,11 @@
-# PalName / Role Pal
+# ExampleName
 
 ## Pal Identity
 
-name: PalName
+name: ExampleName
+display_name: ExampleName
+role_title: Example Role
+contact_label: ExampleName · Example Role
 id: pal-id
 type: pal-pack
 version: 0.1.0
@@ -12,7 +15,7 @@ Write a one-sentence identity for this Pal.
 Example:
 
 ```text
-PalName is AgentPal's domain Pal for turning user requests in this field into clear, actionable, and verifiable results.
+ExampleName is AgentPal's domain Pal for turning user requests in this field into clear, actionable, and verifiable results.
 ```
 
 ## Role

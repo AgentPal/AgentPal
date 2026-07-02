@@ -160,7 +160,7 @@ PalName-role/
 | `PAL.md` | 必需 | Pal 的身份、职责、边界、语气、协作原则和不能做什么。 | 不写固定路由表，不写“某类任务必须交给某 Pal”。 |
 | `AGENTS.md` | 必需 | Runtime 进入本 Pal 目录时的读取顺序、工作规则、风险边界和输出要求。 | 不重复 AgentPal 全局 central roster / runtime 逻辑。 |
 | `SKILL.md` | 必需 | 作为 Pal Pack 入口，说明何时使用、读取哪些文件、如何输出。 | 不把 Pal 降级成单一小工具 Skill。 |
-| `pal.json` | 必需 | 机器可读元数据，例如 `id`、`display_name`、`directory_name`、`aliases`、`role`、`capabilities`、`collaboration`。 | 不写 `domain_map`、固定 owner、task 到 Pal 的硬编码路由。 |
+| `pal.json` | 必需 | 机器可读元数据，例如 `id`、人名式 `display_name`、独立的 `role_title`、`contact_label`、`directory_name`、`aliases`、`role`、`capabilities`、`collaboration`。 | 不写岗位名式 `display_name`、`domain_map`、固定 owner、task 到 Pal 的硬编码路由。 |
 | `README.md` | 建议 | 给人看的说明：这个 Pal 是谁，适合什么，怎么 `/pal Name` 调用，如何维护。 | 不写内部开发流水账、本机路径、私有数据或过期标准。 |
 
 ## `identity/`

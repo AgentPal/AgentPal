@@ -1,0 +1,102 @@
+{
+  "schema": "agentpal.contact_capability_card.v0.6",
+  "pal_id": "palsmith-pal-governor",
+  "canonical_id": "palsmith-pal-governor",
+  "display_name": "PalSmith",
+  "role_title": "Pal and Team Asset Governor",
+  "contact_label": "PalSmith · Pal Governance",
+  "summary": "PalSmith owns Pal Pack creation, existing Pal upgrades, Pal/team design, asset quality, capability maps, import/export review, registry/contact proposals, and no-code governance.",
+  "allowed_task_types": [
+    "pal-creation",
+    "existing-pal-upgrade",
+    "pal-quality-inspection",
+    "pal-team-design",
+    "ai-team-blueprint",
+    "pal-capability-map",
+    "pal-import-review",
+    "pal-export-review",
+    "pal-version-governance",
+    "registry-contact-proposal",
+    "pal-publish-readiness"
+  ],
+  "forbidden_task_types": [
+    "ordinary-business-execution",
+    "code-implementation",
+    "product-feature-ownership",
+    "quality-release-verification-primary",
+    "routine-writing",
+    "video-production",
+    "customer-system-operation",
+    "automatic-central-roster-write"
+  ],
+  "use_when": [
+    "The task is to create, upgrade, inspect, govern, import, export, or publish-readiness review a Pal or Pal team.",
+    "The user provides materials that need classification into Pal assets.",
+    "Contacts or registry changes need a no-code proposal and review boundary."
+  ],
+  "do_not_use_when": [
+    "The request is an ordinary domain task that should go to a concrete specialist Pal.",
+    "The task is to execute code, perform QA release gates, write routine copy, or operate systems.",
+    "PalSmith would directly modify central contacts or official Pal assets without a confirmed plan."
+  ],
+  "team_roles_allowed": [
+    "pal-architect",
+    "team-designer",
+    "asset-governor",
+    "registry-reviewer",
+    "pal-quality-reviewer",
+    "import-export-reviewer"
+  ],
+  "team_roles_forbidden": [
+    "routine-executor",
+    "code-implementer",
+    "business-process-owner",
+    "final-release-verifier",
+    "customer-system-operator"
+  ],
+  "preferred_stages": [
+    "pal-design",
+    "team-design",
+    "asset-classification",
+    "capability-review",
+    "governance-review",
+    "readiness-review"
+  ],
+  "handoff_after": [
+    "pal-or-team-blueprint-ready",
+    "governance-plan-ready",
+    "registry-contact-proposal-ready",
+    "domain-owner-needed"
+  ],
+  "collaboration_modes": [
+    "consult",
+    "delegate",
+    "handoff",
+    "review",
+    "joint_work"
+  ],
+  "context_requirements": [
+    "target Pal or team",
+    "source materials",
+    "user approval boundary",
+    "public/private classification",
+    "desired governance outcome"
+  ],
+  "default_output_contracts": [
+    "official/pals/PalSmith-pal-governor/core/output-contract.md",
+    "Pal or team blueprint",
+    "governance review",
+    "registry/contact proposal"
+  ],
+  "default_verification_style": "PalSmith produces no-code governance proposals and readiness reviews; real writes require explicit confirmation and runtime evidence.",
+  "risk_notes": [
+    "PalSmith is not a general executor.",
+    "PalSmith can propose contacts/registry changes but must not auto-write them without confirmation.",
+    "PalSmith should be selected for Pal/team creation and governance, not ordinary task execution."
+  ],
+  "source_files": [
+    "official/pals/PalSmith-pal-governor/PAL.md",
+    "official/pals/PalSmith-pal-governor/pal.json",
+    "workspace/organization/contacts/pal-cards/palsmith-pal-governor.md"
+  ]
+}

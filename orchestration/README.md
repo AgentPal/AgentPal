@@ -21,6 +21,9 @@ AgentPal shared gates live under `core/`. Orchestration-specific protocols live 
 | Pal context slicing | `pal-context-slicing-protocol.md` | active v0.1 |
 | Asset loading budget | `pal-asset-loading-budget.md` | active v0.1 |
 | Task package output | `task-package-output-contract.md` | active v0.1 |
+| Workflow Execution Contract | `workflow-execution-contract-protocol.md` | v0.6 no-code execution ledger and closure obligation |
+| Workflow Step State Machine | `workflow-step-state-machine.md` | v0.6 Step status and final-report closure rules |
+| Workflow Closure Gate | `workflow-closure-gate-protocol.md` | v0.6 final-report gate for Steps, verifiers, child Steps, and writeback |
 | Context Access List | `context-access-list-protocol.md` | design foundation; usable as documentation/template |
 | Context Packet | `context-packet-protocol.md` | v0.3 no-code handoff prototype |
 | Mention / Direct Pal | `mention-and-direct-pal-protocol.md` | v0.3 no-code collaboration prototype |

@@ -1,24 +1,31 @@
 # Project JSON Template
 
+Use this template for new AgentPal thin project bindings.
+
 ```json
 {
-  "schema": "agentpal.external_project_binding.v0.4",
-  "binding_version": "0.4-foundation",
-  "binding_created_at": "REPLACE_WITH_ISO_TIMESTAMP",
-  "project_id": "REPLACE_WITH_PROJECT_ID",
+  "schema_version": "agentpal.project_binding.v1",
+  "binding_version": "1.0",
+  "binding_type": "thin",
   "project_name": "REPLACE_WITH_EXTERNAL_PROJECT_NAME",
+  "project_root_hint": "REPLACE_WITH_EXTERNAL_PROJECT_ROOT",
+  "default_pal": "Mira",
+  "runtime": "REPLACE_WITH_RUNTIME",
+  "agentpal_source": {
+    "type": "central_path",
+    "value": "REPLACE_WITH_AGENTPAL_WORKSPACE_PATH_OR_SOURCE_URL",
+    "workspace_root": "REPLACE_WITH_AGENTPAL_WORKSPACE_PATH_WHEN_LOCAL"
+  },
+  "enabled_at": "REPLACE_WITH_ISO_TIMESTAMP",
+  "updated_at": "REPLACE_WITH_ISO_TIMESTAMP",
+  "status": "enabled",
+  "last_runtime": "REPLACE_WITH_RUNTIME",
+  "enabled_runtimes": [
+    "REPLACE_WITH_RUNTIME"
+  ],
   "active_project_root": "REPLACE_WITH_EXTERNAL_PROJECT_ROOT",
-  "active_project_role": "user_project",
-  "agentpal_workspace_root": "REPLACE_WITH_AGENTPAL_WORKSPACE_PATH",
-  "agentpal_workspace_role": "pal_workspace_reference",
+  "agentpal_workspace_root": "REPLACE_WITH_AGENTPAL_WORKSPACE_PATH_WHEN_LOCAL",
   "agentpal_project_record": "workspace/projects/REPLACE_WITH_PROJECT_ID",
-  "runtime_hint": "REPLACE_WITH_RUNTIME_HINT",
-  "active_mode": "simple-pal-mode-only",
-  "agentpal_enabled": true,
-  "project_bound_mode": true,
-  "binding_mode": "thin",
-  "binding_style": "thin-binding",
-  "read_core_from_agentpal_workspace": true,
   "core_gate_paths": [
     "core/agentpal-core-gate.md",
     "core/first-pal-gate.md",
@@ -38,27 +45,8 @@
     "workspace/organization/contacts/PAL_CONTACTS.md",
     "workspace/organization/contacts/aliases.json"
   ],
-  "central_contacts_are_not_copied": true,
-  "project_knowledge_policy": {
-    "read_current_project_materials_from": "active_project_root",
-    "write_source_map_to": "agentpal_project_record/source-map",
-    "write_derived_knowledge_to": "agentpal_project_record/derived-knowledge",
-    "write_project_memory_to": "agentpal_project_record/memory",
-    "write_tasks_and_reports_to": "agentpal_project_record/tasks and agentpal_project_record/reports",
-    "write_governance_to": "agentpal_project_record/governance",
-    "write_capability_inventory_to": "agentpal_project_record/capability-inventory",
-    "do_not_create_thick_agentpal_dirs_in_external_project": true
-  },
   "routing_policy": "ai_judgement_only",
   "keyword_routing_allowed": false,
-  "default_main_pal": {
-    "id": "mira-main",
-    "display_name": "Mira",
-    "paths": [
-      "official/pals/Mira-main/PAL.md",
-      "official/pals/Mira-main/core/output-contract.md"
-    ]
-  },
   "forbidden_default_project_binding_dirs": [
     ".agentpal/memory",
     ".agentpal/state",
@@ -79,25 +67,11 @@
     ".agentpal/governance-decisions",
     ".agentpal/change-ledger",
     ".agentpal/change-review"
-  ],
-  "root_instruction_blocks": {
-    "begin_marker": "<!-- BEGIN AGENTPAL WORKGROUP -->",
-    "end_marker": "<!-- END AGENTPAL WORKGROUP -->"
-  },
-  "claude_code_binding": {
-    "project_instruction_file": "CLAUDE.md",
-    "local_settings_file": ".claude/settings.local.json",
-    "additional_directories_setting": "permissions.additionalDirectories"
-  },
-  "remove_policy": {
-    "delete_agentpal_dir": true,
-    "remove_root_instruction_blocks_only": true,
-    "remove_claude_additional_directory_entry": true,
-    "do_not_delete_agentpal_workspace": true,
-    "do_not_delete_project_source": true
-  }
+  ]
 }
 ```
+
+Canonical runtime-qualified protected block markers are defined in [`docs/04-runtime-guides/project-thin-binding.md`](../../docs/04-runtime-guides/project-thin-binding.md).
 
 This file is binding metadata only. It is not a copied Pal roster or a copied protocol bundle.
 
@@ -110,4 +84,4 @@ Project record source of truth remains in the AgentPal workspace:
 
 - `workspace/projects/<project-id>/`
 
-Runtime adapters should read current core gates from `agentpal_workspace_root`.
+Runtime adapters should read current core gates from `agentpal_workspace_root` when a local AgentPal workspace is available.

@@ -1,7 +1,9 @@
 {
   "schema": "agentpal.pal-asset-manifest.v0.5",
   "pal_id": "example-pal",
-  "display_name": "ExamplePal / Example Role Pal",
+  "display_name": "ExamplePal",
+  "role_title": "Example Role",
+  "contact_label": "ExamplePal · Example Role",
   "asset_standard": "agentpal-pal-asset-standard.v0.5",
   "manifest_version": "0.5.0-local-template",
   "generated_at": "not-run",

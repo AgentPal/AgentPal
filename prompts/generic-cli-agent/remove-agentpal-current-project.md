@@ -10,11 +10,12 @@ This removes only the AgentPal project binding. It must not delete project sourc
 Before changing files, confirm the current project root and ask me to confirm removal.
 
 After confirmation:
-1. Delete this project's `.agentpal/` directory.
-2. Remove only the block between `<!-- BEGIN AGENTPAL WORKGROUP -->` and `<!-- END AGENTPAL WORKGROUP -->` from `AGENTS.md`.
-3. Preserve all other `AGENTS.md` content.
-4. Do not modify Claude Code `.claude/settings.local.json` unless I explicitly ask.
-5. Do not delete AgentPal workspace files.
+1. Remove the current runtime entry from `.agentpal/project.json` `enabled_runtimes` if `.agentpal/project.json` exists.
+2. Delete this project's `.agentpal/` directory only if no runtime binding remains.
+3. Remove only the block between `<!-- BEGIN AGENTPAL BINDING: codex -->` and `<!-- END AGENTPAL BINDING: codex -->` from `AGENTS.md` for Codex-style generic bindings.
+4. Preserve all other `AGENTS.md` content.
+5. Do not modify Claude Code `.claude/settings.local.json` unless I explicitly ask.
+6. Do not delete AgentPal workspace files.
 
 Report briefly:
 - `.agentpal/` removed or was absent

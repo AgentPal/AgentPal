@@ -1,0 +1,83 @@
+{
+  "team_id": "marketing-growth-team",
+  "members": [
+    {
+      "pal_id": "mira-main",
+      "display_name": "Mira",
+      "team_roles": ["team-conductor"],
+      "required": true,
+      "required_for_task_types": ["weekly-content-calendar", "promotion-content-planning"],
+      "required_for_risk_levels": ["low", "medium", "high"],
+      "can_read_team_assets": true,
+      "can_write_team_memory": true,
+      "notes": "Confirms team fit, coordinates workflow contract, and closes the team report."
+    },
+    {
+      "pal_id": "nova-product",
+      "display_name": "Nova",
+      "team_roles": ["positioning-lead"],
+      "required": true,
+      "required_for_task_types": ["promotion-content-planning", "weekly-content-calendar"],
+      "required_for_risk_levels": ["low", "medium", "high"],
+      "can_read_team_assets": true,
+      "can_write_team_memory": false,
+      "notes": "Owns audience, value proposition, goal, and message angle for AgentPal promotion."
+    },
+    {
+      "pal_id": "vega-research",
+      "display_name": "Vega",
+      "team_roles": ["research-support"],
+      "required": false,
+      "required_for_task_types": ["promotion-content-planning", "campaign-retrospective"],
+      "required_for_risk_levels": ["medium", "high"],
+      "can_read_team_assets": true,
+      "can_write_team_memory": false,
+      "notes": "Provides source-grounded trends, competitor references, and evidence notes when claims need support."
+    },
+    {
+      "pal_id": "harper-writing",
+      "display_name": "Harper",
+      "team_roles": ["copy-lead"],
+      "required": true,
+      "required_for_task_types": ["promotion-copywriting", "weekly-content-calendar"],
+      "required_for_risk_levels": ["low", "medium", "high"],
+      "can_read_team_assets": true,
+      "can_write_team_memory": true,
+      "notes": "Owns promotion copy, tone, channel adaptation, and user-facing wording."
+    },
+    {
+      "pal_id": "quinn-quality",
+      "display_name": "Quinn",
+      "team_roles": ["quality-reviewer"],
+      "required": false,
+      "required_for_task_types": ["weekly-content-calendar", "campaign-retrospective"],
+      "required_for_risk_levels": ["medium", "high"],
+      "can_read_team_assets": true,
+      "can_write_team_memory": false,
+      "notes": "Reviews risk, claim boundaries, evidence gaps, and completeness when risk or publication quality warrants review."
+    }
+  ],
+  "open_roles": [
+    {
+      "role_id": "visual-brief-owner",
+      "required_capabilities": ["visual-direction", "asset-briefing", "brand-visual-consistency"],
+      "selection_policy": "ask_user",
+      "preferred_pals": [],
+      "naming_note": "If converted into a Pal later, use a human display name such as Iris and store visual designer as role_title."
+    },
+    {
+      "role_id": "publishing-operator",
+      "required_capabilities": ["channel-publishing", "schedule-operation", "analytics-export"],
+      "selection_policy": "ask_user",
+      "preferred_pals": [],
+      "naming_note": "This may be a human, external runtime, or future named Pal; do not create a role-title-only Pal."
+    }
+  ],
+  "selection_policy": {
+    "team_role_is_not_pal_identity": true,
+    "pals_may_join_multiple_teams": true,
+    "copy_pal_assets_into_team_pack": false,
+    "selection_requires_ai_judgement": true,
+    "keyword_routing_allowed": false
+  }
+}

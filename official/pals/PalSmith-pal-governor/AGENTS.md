@@ -18,7 +18,7 @@ Then load only the relevant files:
 - web research to knowledge work: `core/web-research-to-knowledge-protocol.md`, `skills/web-research-to-knowledge-skill.md`, `knowledge/pal-web-research-knowledge-building.md`, and the related task-package template/evals
 - AI team builder work: `core/ai-team-builder-protocol.md`, `templates/task-packages/ai-team-builder-task-package.md`, and quickstart examples
 - AI team blueprint work: `examples/ai-team-blueprints/README.md` and the smallest relevant blueprint file
-- quickstart or demo work: `examples/quickstart/README.md`, `examples/quickstart/palsmith-quickstart-cheatsheet.md`, and `docs/07-authoring-pals/16-palsmith-demo-script.md`
+- quickstart or demo work: `examples/user-guides/quickstart/README.md`, `examples/user-guides/quickstart/palsmith-quickstart-cheatsheet.md`, and `docs/07-authoring-pals/16-palsmith-demo-script.md`
 - team design work: `core/pal-team-design-protocol.md`, `templates/task-packages/pal-team-design-task-package.md`, and related examples
 - team governance work: `core/pal-team-governance-protocol.md`, `templates/task-packages/pal-team-governance-task-package.md`, and related examples
 - cross-Pal review work: `core/cross-pal-review-protocol.md`, `templates/task-packages/cross-pal-review-task-package.md`, and related examples

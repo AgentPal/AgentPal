@@ -1,0 +1,74 @@
+{
+  "schema": "agentpal.team-pack.v0.6",
+  "type": "team-pack",
+  "team_id": "research-team",
+  "display_name": "Research Team",
+  "version": "0.6.0",
+  "status": "draft",
+  "description": "A lightweight Team Pack example for source-grounded research tasks.",
+  "discoverable": true,
+  "contactable": true,
+  "team_modes": ["consult", "delegate", "joint_work", "review"],
+  "default_owner_role": "lead-researcher",
+  "default_entry_pal": "mira-main",
+  "supported_task_types": [
+    "market-research",
+    "competitor-research",
+    "source-grounded-brief",
+    "evidence-synthesis"
+  ],
+  "forbidden_task_types": [
+    "code-implementation",
+    "legal-final-advice",
+    "medical-final-advice",
+    "financial-final-advice"
+  ],
+  "asset_priority": {
+    "team_workflow_priority": "high",
+    "team_eval_priority": "high",
+    "team_assets_override_pal_assets": false,
+    "pal_boundary_overrides_team_role": true
+  },
+  "collaboration_policy": {
+    "selection_requires_ai_judgement": true,
+    "keyword_routing_allowed": false,
+    "copy_pal_assets_into_team": false,
+    "copy_team_pack_to_external_project": false
+  },
+  "memory_policy": {
+    "team_memory_enabled": true,
+    "private_memory_allowed_in_public_pack": false,
+    "writeback_requires_review": true,
+    "external_project_memory_write_default": false
+  },
+  "eval_policy": {
+    "team_eval_required_for_team_tasks": true,
+    "definition_of_done": "evals/definition-of-done.md",
+    "quality_gates": [
+      "source-boundary-stated",
+      "unsupported-claims-flagged",
+      "research-gaps-reported"
+    ]
+  },
+  "entry": {
+    "team": "TEAM.md",
+    "roster": "roster.json",
+    "contacts": "TEAM_CONTACTS.md",
+    "resource_index": "RESOURCE_INDEX.md"
+  },
+  "asset_dirs": {
+    "identity": "identity/",
+    "roles": "roles/",
+    "knowledge": "knowledge/",
+    "skills": "skills/",
+    "workflows": "workflows/",
+    "runbooks": "runbooks/",
+    "memory": "memory/",
+    "evals": "evals/",
+    "routing": "routing/",
+    "reports": "reports/",
+    "imports": "imports/",
+    "registry": "registry/",
+    "state": "state/"
+  }
+}

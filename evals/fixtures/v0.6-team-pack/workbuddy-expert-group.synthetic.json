@@ -1,0 +1,93 @@
+{
+  "fixture_id": "v0.6-workbuddy-expert-group-synthetic",
+  "fixture_type": "research_subject_profile",
+  "source_type": "synthetic",
+  "status": "fixture-only",
+  "notice": "This is a synthetic local fixture for AgentPal Research Team validation. It is not a live web source.",
+  "source_boundary": {
+    "not_live_web_source": true,
+    "not_current_product_claim": true,
+    "intended_use": "Use as a local sample / user-provided-like fixture for validating Research Team workflow handling without network access."
+  },
+  "intended_scenarios": [
+    "evals/session-validation/v0.6-mira-palsmith/scenarios/05-research-team-workbuddy-expert-group.md",
+    "evals/runtime-validation/v0.6-team-pack/scenario-05-research-team-workbuddy-fixture.md"
+  ],
+  "plugin_manifest_summary": {
+    "name": "WorkBuddy Expert Group",
+    "fixture_description": "A hypothetical plugin-style expert group for producing research reports through multiple specialized roles.",
+    "declared_entry": "research_planner",
+    "declared_output": "source-aware research brief with draft, review, revision, and publish steps",
+    "declared_runtime_shape": "multi-role workflow hosted by an external runtime or plugin host",
+    "source_note": "Synthetic summary written for local AgentPal validation only."
+  },
+  "expert_roles": [
+    {
+      "role_id": "research_planner",
+      "summary": "Frames the research question, scope, success criteria, and source plan."
+    },
+    {
+      "role_id": "topic_researcher",
+      "summary": "Collects and organizes supplied or accessible source notes for the topic."
+    },
+    {
+      "role_id": "draft_writer",
+      "summary": "Turns source notes into a structured draft with claims separated from uncertainty."
+    },
+    {
+      "role_id": "draft_reviewer",
+      "summary": "Reviews claim support, logical flow, and missing evidence."
+    },
+    {
+      "role_id": "draft_reviser",
+      "summary": "Reworks the draft based on review feedback and marks unresolved gaps."
+    },
+    {
+      "role_id": "report_publisher",
+      "summary": "Packages the final report for handoff or publication, without claiming external publication in this fixture."
+    }
+  ],
+  "agentpal_comparison_points": [
+    {
+      "axis": "basic_unit",
+      "fixture_workbuddy_side": "expert role in an external plugin-style workflow",
+      "agentpal_side": "Pal or Team Pack role in a Markdown / JSON organization layer"
+    },
+    {
+      "axis": "execution_boundary",
+      "fixture_workbuddy_side": "assumes a host can execute or expose role workflow behavior",
+      "agentpal_side": "does not provide an automatic runtime; host runtime executes with evidence"
+    },
+    {
+      "axis": "source_handling",
+      "fixture_workbuddy_side": "topic researcher is expected to collect or receive sources",
+      "agentpal_side": "Research Team must mark source collection not-run if no source is available"
+    },
+    {
+      "axis": "closure",
+      "fixture_workbuddy_side": "review/revise/publish roles imply a workflow sequence",
+      "agentpal_side": "Workflow Execution Contract and Closure Gate require every planned step to close"
+    },
+    {
+      "axis": "identity_assets",
+      "fixture_workbuddy_side": "roles may be defined by plugin manifest responsibilities",
+      "agentpal_side": "Pals have identity, knowledge, skills, memory rules, and output contracts"
+    },
+    {
+      "axis": "validation",
+      "fixture_workbuddy_side": "fixture cannot prove actual WorkBuddy behavior",
+      "agentpal_side": "fixture validates Research Team handling only, not external factual claims"
+    }
+  ],
+  "permitted_claims": [
+    "This fixture describes a synthetic WorkBuddy-like expert group for local validation.",
+    "The Research Team can compare the fixture's stated role structure to AgentPal Team Pack concepts.",
+    "Any conclusion must label WorkBuddy-side facts as fixture-derived, not live-source-derived."
+  ],
+  "forbidden_claims": [
+    "Do not claim this fixture is a real WorkBuddy webpage.",
+    "Do not claim current WorkBuddy product behavior from this fixture.",
+    "Do not cite this fixture as independent market evidence.",
+    "Do not use this fixture to make live competitive claims."
+  ]
+}

@@ -2,6 +2,8 @@
 
 These templates are for thin AgentPal bindings in external user projects.
 
+Canonical protocol: [`docs/04-runtime-guides/project-thin-binding.md`](../../docs/04-runtime-guides/project-thin-binding.md).
+
 Use:
 
 - `generic-codex/` for Codex-style or generic `AGENTS.md` runtimes.

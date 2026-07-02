@@ -1,0 +1,992 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AgentPal - Pal Team Workbench</title>
+  <meta name="description" content="AgentPal 是给现有 Agent 增加 Pal 团队组织层的 no-code AI 工作区。">
+  <style>
+    :root {
+      --ink: #1b1712;
+      --ink-soft: #51473d;
+      --paper: #f7efe0;
+      --paper-deep: #ead8bd;
+      --bench: #c7834d;
+      --bench-dark: #6d4228;
+      --clay: #a5523d;
+      --moss: #51644b;
+      --brass: #c99a45;
+      --blueprint: #263d4d;
+      --card: rgba(255, 250, 239, 0.82);
+      --card-solid: #fff8ea;
+      --line: rgba(75, 53, 33, 0.2);
+      --shadow: 0 24px 70px rgba(53, 35, 17, 0.18);
+      --radius-xl: 34px;
+      --radius-lg: 24px;
+      --radius-md: 16px;
+      --mono: "Cascadia Code", "IBM Plex Mono", "SFMono-Regular", monospace;
+      --display: "Fraunces", "Iowan Old Style", "Georgia", "Songti SC", serif;
+      --body: "Aptos", "Trebuchet MS", "PingFang SC", "Microsoft YaHei", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: var(--body);
+      background:
+        radial-gradient(circle at 15% 15%, rgba(201, 154, 69, 0.3), transparent 28rem),
+        radial-gradient(circle at 88% 2%, rgba(81, 100, 75, 0.28), transparent 30rem),
+        linear-gradient(135deg, #f9f0dd 0%, #e9d3af 48%, #c58a56 100%);
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(67, 45, 25, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(67, 45, 25, 0.045) 1px, transparent 1px);
+      background-size: 34px 34px;
+      mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent 88%);
+      z-index: -2;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .shell {
+      width: min(1180px, calc(100% - 36px));
+      margin: 0 auto;
+    }
+
+    .nav {
+      position: sticky;
+      top: 16px;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin-top: 16px;
+      padding: 12px 14px 12px 18px;
+      border: 1px solid rgba(70, 45, 25, 0.18);
+      border-radius: 999px;
+      background: rgba(255, 248, 234, 0.72);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 12px 34px rgba(56, 36, 16, 0.12);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 14px;
+      color: #fff7e5;
+      background:
+        linear-gradient(135deg, var(--blueprint), #1b2730),
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.35), transparent 50%);
+      box-shadow: inset 0 -8px 18px rgba(0, 0, 0, 0.2);
+      font-family: var(--display);
+      font-size: 19px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      color: var(--ink-soft);
+      font-size: 14px;
+    }
+
+    .nav-links a {
+      padding: 9px 12px;
+      border-radius: 999px;
+    }
+
+    .nav-links a:hover {
+      background: rgba(109, 66, 40, 0.09);
+      color: var(--ink);
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 44px;
+      padding: 0 18px;
+      border: 1px solid rgba(46, 31, 20, 0.18);
+      border-radius: 999px;
+      font-weight: 800;
+      box-shadow: 0 14px 26px rgba(67, 41, 22, 0.16);
+      transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 20px 36px rgba(67, 41, 22, 0.2);
+    }
+
+    .button.primary {
+      color: #fff8ea;
+      background: linear-gradient(135deg, #263d4d, #18252d);
+    }
+
+    .button.secondary {
+      background: rgba(255, 248, 234, 0.7);
+    }
+
+    .hero {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1.02fr) minmax(330px, 0.98fr);
+      gap: 36px;
+      align-items: center;
+      min-height: 780px;
+      padding: 68px 0 42px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 12px;
+      border: 1px solid rgba(46, 31, 20, 0.16);
+      border-radius: 999px;
+      color: var(--ink-soft);
+      background: rgba(255, 248, 234, 0.62);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--moss);
+      box-shadow: 0 0 0 6px rgba(81, 100, 75, 0.14);
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      font-family: var(--display);
+      letter-spacing: -0.055em;
+      line-height: 0.98;
+    }
+
+    h1 {
+      max-width: 780px;
+      margin-top: 24px;
+      font-size: clamp(58px, 9vw, 124px);
+    }
+
+    h2 {
+      font-size: clamp(38px, 6vw, 76px);
+    }
+
+    h3 {
+      font-size: 26px;
+    }
+
+    .hero-copy {
+      max-width: 650px;
+      margin: 24px 0 0;
+      color: var(--ink-soft);
+      font-size: clamp(18px, 2vw, 23px);
+      line-height: 1.55;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 34px;
+    }
+
+    .micro-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+      color: var(--ink-soft);
+      font-size: 14px;
+    }
+
+    .micro-row span {
+      padding: 8px 11px;
+      border: 1px solid rgba(46, 31, 20, 0.12);
+      border-radius: 999px;
+      background: rgba(255, 248, 234, 0.46);
+    }
+
+    .workbench {
+      position: relative;
+      min-height: 610px;
+      border: 1px solid rgba(69, 42, 23, 0.22);
+      border-radius: var(--radius-xl);
+      background:
+        linear-gradient(145deg, rgba(255, 248, 234, 0.82), rgba(236, 210, 171, 0.78)),
+        radial-gradient(circle at 80% 10%, rgba(197, 82, 61, 0.18), transparent 22rem);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      transform: rotate(1deg);
+      animation: benchIn 820ms cubic-bezier(0.2, 0.9, 0.25, 1) both;
+    }
+
+    @keyframes benchIn {
+      from {
+        opacity: 0;
+        transform: translateY(22px) rotate(4deg) scale(0.98);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) rotate(1deg) scale(1);
+      }
+    }
+
+    .workbench::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(90deg, rgba(69, 42, 23, 0.08) 1px, transparent 1px),
+        linear-gradient(rgba(69, 42, 23, 0.08) 1px, transparent 1px);
+      background-size: 28px 28px;
+      opacity: 0.7;
+    }
+
+    .board-label {
+      position: absolute;
+      top: 22px;
+      left: 22px;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 13px;
+      border-radius: 14px;
+      color: #fff8ea;
+      background: var(--blueprint);
+      font-family: var(--mono);
+      font-size: 12px;
+      box-shadow: 0 12px 24px rgba(31, 40, 45, 0.25);
+    }
+
+    .bench-card {
+      position: absolute;
+      z-index: 3;
+      width: 212px;
+      padding: 18px;
+      border: 1px solid rgba(58, 36, 19, 0.16);
+      border-radius: 22px;
+      background: var(--card-solid);
+      box-shadow: 0 18px 40px rgba(57, 35, 18, 0.18);
+    }
+
+    .bench-card strong {
+      display: block;
+      margin-bottom: 8px;
+      font-family: var(--display);
+      font-size: 25px;
+      letter-spacing: -0.04em;
+    }
+
+    .bench-card p {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .bench-card.mira {
+      top: 96px;
+      left: 54px;
+      transform: rotate(-7deg);
+    }
+
+    .bench-card.palsmith {
+      top: 212px;
+      right: 48px;
+      transform: rotate(6deg);
+    }
+
+    .bench-card.faye {
+      bottom: 62px;
+      left: 88px;
+      transform: rotate(4deg);
+    }
+
+    .bench-card.runtime {
+      bottom: 112px;
+      right: 86px;
+      transform: rotate(-5deg);
+      background: #263d4d;
+      color: #fff8ea;
+    }
+
+    .bench-card.runtime p {
+      color: rgba(255, 248, 234, 0.74);
+    }
+
+    .thread {
+      position: absolute;
+      z-index: 1;
+      inset: 0;
+    }
+
+    .thread svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .pin {
+      position: absolute;
+      z-index: 4;
+      width: 16px;
+      height: 16px;
+      border-radius: 999px;
+      background: var(--clay);
+      box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.14), 0 5px 11px rgba(112, 58, 39, 0.22);
+    }
+
+    .pin.one { top: 83px; left: 77px; }
+    .pin.two { top: 202px; right: 85px; background: var(--brass); }
+    .pin.three { bottom: 72px; left: 124px; background: var(--moss); }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.7fr);
+      gap: 28px;
+      align-items: end;
+      margin-bottom: 32px;
+    }
+
+    .section-head p {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
+      background: rgba(255, 248, 234, 0.66);
+      box-shadow: 0 18px 52px rgba(67, 41, 22, 0.12);
+      backdrop-filter: blur(18px);
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      overflow: hidden;
+    }
+
+    .layer {
+      min-height: 310px;
+      padding: 30px;
+      border-right: 1px solid var(--line);
+    }
+
+    .layer:last-child {
+      border-right: 0;
+    }
+
+    .layer .tag,
+    .pal-card .tag,
+    .timeline .tag {
+      display: inline-flex;
+      margin-bottom: 18px;
+      padding: 7px 10px;
+      border: 1px solid rgba(46, 31, 20, 0.14);
+      border-radius: 999px;
+      color: var(--ink-soft);
+      background: rgba(255, 255, 255, 0.33);
+      font-family: var(--mono);
+      font-size: 12px;
+    }
+
+    .layer p,
+    .pal-card p,
+    .timeline p,
+    .boundary p {
+      color: var(--ink-soft);
+      line-height: 1.58;
+    }
+
+    .layer.skill { background: linear-gradient(160deg, rgba(255, 248, 234, 0.7), rgba(201, 154, 69, 0.11)); }
+    .layer.pal { background: linear-gradient(160deg, rgba(255, 248, 234, 0.78), rgba(81, 100, 75, 0.14)); }
+    .layer.agent { background: linear-gradient(160deg, rgba(255, 248, 234, 0.72), rgba(38, 61, 77, 0.16)); }
+
+    .pal-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .pal-card {
+      position: relative;
+      min-height: 212px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: var(--card);
+      box-shadow: 0 16px 40px rgba(67, 41, 22, 0.1);
+      overflow: hidden;
+      transition: transform 180ms ease, box-shadow 180ms ease;
+    }
+
+    .pal-card:hover {
+      transform: translateY(-5px) rotate(-0.5deg);
+      box-shadow: 0 24px 58px rgba(67, 41, 22, 0.16);
+    }
+
+    .pal-card::after {
+      content: attr(data-initial);
+      position: absolute;
+      right: 14px;
+      bottom: -18px;
+      color: rgba(109, 66, 40, 0.08);
+      font-family: var(--display);
+      font-size: 96px;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .pal-card h3 {
+      position: relative;
+      z-index: 1;
+      margin-bottom: 10px;
+    }
+
+    .pal-card p {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      font-size: 15px;
+    }
+
+    .timeline {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 24px;
+      padding: 28px;
+    }
+
+    .timeline-rail {
+      display: grid;
+      gap: 12px;
+    }
+
+    .step {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: rgba(255, 248, 234, 0.62);
+    }
+
+    .step strong {
+      display: block;
+      margin-bottom: 6px;
+      font-family: var(--display);
+      font-size: 21px;
+      letter-spacing: -0.035em;
+    }
+
+    .boundary-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .boundary {
+      padding: 28px;
+      border-radius: var(--radius-lg);
+      background: rgba(255, 248, 234, 0.72);
+      border: 1px solid var(--line);
+    }
+
+    .boundary.no {
+      background: linear-gradient(150deg, rgba(38, 61, 77, 0.95), rgba(24, 37, 45, 0.94));
+      color: #fff8ea;
+    }
+
+    .boundary.no p,
+    .boundary.no li {
+      color: rgba(255, 248, 234, 0.78);
+    }
+
+    .boundary ul {
+      margin: 18px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .boundary li {
+      margin: 10px 0;
+      color: var(--ink-soft);
+      line-height: 1.45;
+    }
+
+    .boundary li::before {
+      content: "—";
+      margin-right: 8px;
+      color: var(--clay);
+    }
+
+    .cta {
+      position: relative;
+      margin: 70px 0 38px;
+      padding: 44px;
+      overflow: hidden;
+      color: #fff8ea;
+      background:
+        radial-gradient(circle at 84% 15%, rgba(201, 154, 69, 0.36), transparent 22rem),
+        linear-gradient(135deg, #243b49, #17252d 62%, #5d3826);
+    }
+
+    .cta p {
+      max-width: 760px;
+      color: rgba(255, 248, 234, 0.76);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+
+    .cta .button.secondary {
+      color: var(--ink);
+      background: #fff8ea;
+    }
+
+    .footer {
+      padding: 28px 0 54px;
+      color: rgba(27, 23, 18, 0.64);
+      font-size: 14px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      border-top: 1px solid rgba(70, 45, 25, 0.16);
+      padding-top: 22px;
+    }
+
+    .reveal {
+      animation: rise 720ms cubic-bezier(0.2, 0.9, 0.25, 1) both;
+    }
+
+    .reveal.delay-1 { animation-delay: 100ms; }
+    .reveal.delay-2 { animation-delay: 180ms; }
+    .reveal.delay-3 { animation-delay: 260ms; }
+
+    @keyframes rise {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 980px) {
+      .nav {
+        align-items: flex-start;
+        border-radius: 24px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero,
+      .section-head,
+      .timeline {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+        padding-top: 52px;
+      }
+
+      .workbench {
+        min-height: 560px;
+      }
+
+      .split,
+      .pal-grid,
+      .boundary-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .layer:nth-child(2) {
+        border-right: 0;
+      }
+
+      .layer:last-child {
+        grid-column: 1 / -1;
+        border-top: 1px solid var(--line);
+      }
+    }
+
+    @media (max-width: 680px) {
+      .shell {
+        width: min(100% - 22px, 1180px);
+      }
+
+      .nav {
+        top: 8px;
+        margin-top: 8px;
+      }
+
+      .brand span:last-child {
+        display: none;
+      }
+
+      h1 {
+        font-size: clamp(48px, 16vw, 72px);
+      }
+
+      section {
+        padding: 58px 0;
+      }
+
+      .split,
+      .pal-grid,
+      .boundary-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .layer {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .layer:last-child {
+        border-bottom: 0;
+      }
+
+      .bench-card {
+        width: 178px;
+        padding: 15px;
+      }
+
+      .bench-card.mira {
+        top: 86px;
+        left: 24px;
+      }
+
+      .bench-card.palsmith {
+        top: 220px;
+        right: 20px;
+      }
+
+      .bench-card.faye {
+        left: 28px;
+        bottom: 70px;
+      }
+
+      .bench-card.runtime {
+        right: 18px;
+        bottom: 156px;
+      }
+
+      .cta {
+        padding: 30px 22px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav shell" aria-label="主导航">
+    <a class="brand" href="#top" aria-label="AgentPal 首页">
+      <span class="brand-mark">A</span>
+      <span>AgentPal Workbench</span>
+    </a>
+    <div class="nav-links" aria-label="页面栏目">
+      <a href="#layer">组织层</a>
+      <a href="#team">Pal 团队</a>
+      <a href="#workflow">工作方式</a>
+      <a href="#boundary">边界</a>
+    </div>
+    <a class="button primary" href="#start">开始使用</a>
+  </nav>
+
+  <main id="top">
+    <header class="hero shell">
+      <div class="reveal">
+        <span class="eyebrow">No-code AI organization layer</span>
+        <h1>给现有 Agent，装上一支会协作的 Pal 团队。</h1>
+        <p class="hero-copy">
+          AgentPal 是一个 Markdown / JSON / protocol 工作区。它不替代 Codex、Claude Code 或 OpenCode，而是给这些 Runtime 加上一层可维护的团队组织：角色、知识、Skill、流程、上下文、记忆边界和验收习惯。
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#workflow">看看怎么工作</a>
+          <a class="button secondary" href="#team">认识 Pal 团队</a>
+        </div>
+        <div class="micro-row" aria-label="AgentPal 关键词">
+          <span>Mira first</span>
+          <span>Pal Pack</span>
+          <span>Thin binding</span>
+          <span>Runtime evidence</span>
+        </div>
+      </div>
+
+      <div class="workbench reveal delay-1" aria-label="AgentPal 工作台视觉示意">
+        <div class="board-label">WORKBENCH / PAL LAYER</div>
+        <div class="thread" aria-hidden="true">
+          <svg viewBox="0 0 560 610" fill="none" preserveAspectRatio="none">
+            <path d="M118 144 C245 160 302 232 430 254" stroke="#6d4228" stroke-width="3" stroke-dasharray="9 10" opacity=".45"/>
+            <path d="M430 296 C332 364 236 386 154 474" stroke="#51644b" stroke-width="3" stroke-dasharray="9 10" opacity=".45"/>
+            <path d="M182 180 C258 296 366 378 448 430" stroke="#263d4d" stroke-width="3" stroke-dasharray="9 10" opacity=".4"/>
+          </svg>
+        </div>
+        <span class="pin one"></span>
+        <span class="pin two"></span>
+        <span class="pin three"></span>
+        <article class="bench-card mira">
+          <strong>Mira</strong>
+          <p>默认入口。理解目标，判断直接回答、补问、交给专业 Pal，或准备任务包。</p>
+        </article>
+        <article class="bench-card palsmith">
+          <strong>PalSmith</strong>
+          <p>创建、升级、体检和治理 Pal Pack，让 AI 团队不是一次性提示词。</p>
+        </article>
+        <article class="bench-card faye">
+          <strong>Faye</strong>
+          <p>把业务目标整理成流程、数据、接口、风险、验收和交付路径。</p>
+        </article>
+        <article class="bench-card runtime">
+          <strong>Runtime</strong>
+          <p>真实执行仍由 Codex、Claude Code、OpenCode 等 host runtime 完成。</p>
+        </article>
+      </div>
+    </header>
+
+    <section id="layer" class="shell">
+      <div class="section-head reveal">
+        <h2>不是更多按钮，是更清楚的分工。</h2>
+        <p>
+          AgentPal 把“能力”“角色”和“执行层”拆开。Skill 让 AI 会做某类事，Pal 让 AI 知道自己是谁、负责什么、该如何协作，Agent Runtime 负责真实读写和工具调用。
+        </p>
+      </div>
+
+      <div class="panel split reveal delay-1">
+        <article class="layer skill">
+          <span class="tag">01 / SKILL</span>
+          <h3>能力包</h3>
+          <p>可复用的提示词、流程、工具说明或专业方法。它让 AI 更会做某类任务，但通常不承担长期职责、记忆和团队分工。</p>
+        </article>
+        <article class="layer pal">
+          <span class="tag">02 / PAL</span>
+          <h3>工作伙伴</h3>
+          <p>带身份、职责、知识、Skill、流程、记忆边界和输出契约的团队成员。Pal 会判断自己该做什么，也知道什么时候该交给别人。</p>
+        </article>
+        <article class="layer agent">
+          <span class="tag">03 / AGENT</span>
+          <h3>执行运行层</h3>
+          <p>Codex、Claude Code、OpenCode、OpenHands 等 Runtime 执行真实文件操作、命令、工具调用和外部系统动作。AgentPal 不假装替它们执行。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="team" class="shell">
+      <div class="section-head reveal">
+        <h2>一支默认可用的 Pal 团队。</h2>
+        <p>
+          日常工作先找 Mira。需要专业判断时，Mira 或被直接调用的 Pal 会按当前任务、边界、资料和风险做 AI judgement，而不是靠关键词硬路由。
+        </p>
+      </div>
+
+      <div class="pal-grid">
+        <article class="pal-card reveal" data-initial="M">
+          <span class="tag">Leader</span>
+          <h3>Mira</h3>
+          <p>默认 Main Pal / Leader / Conductor，负责入口、判断、协调和总结。</p>
+        </article>
+        <article class="pal-card reveal delay-1" data-initial="P">
+          <span class="tag">Governor</span>
+          <h3>PalSmith</h3>
+          <p>负责 Pal 创建、升级、体检、治理和 Pal Pack 边界。</p>
+        </article>
+        <article class="pal-card reveal delay-2" data-initial="F">
+          <span class="tag">Delivery</span>
+          <h3>Faye</h3>
+          <p>把业务目标整理成交付包、流程、风险、验收和下一步任务。</p>
+        </article>
+        <article class="pal-card reveal delay-3" data-initial="A">
+          <span class="tag">Build</span>
+          <h3>Atlas</h3>
+          <p>负责工程任务拆解、实现边界、测试计划和执行证据审查。</p>
+        </article>
+        <article class="pal-card reveal" data-initial="N">
+          <span class="tag">Product</span>
+          <h3>Nova</h3>
+          <p>负责产品策略、需求、用户体验、范围取舍和路线判断。</p>
+        </article>
+        <article class="pal-card reveal delay-1" data-initial="Q">
+          <span class="tag">Quality</span>
+          <h3>Quinn</h3>
+          <p>负责验收标准、质量门、回归检查和完成证据复核。</p>
+        </article>
+        <article class="pal-card reveal delay-2" data-initial="V">
+          <span class="tag">Research</span>
+          <h3>Vega</h3>
+          <p>负责调研问题、来源策略、证据矩阵和不确定性说明。</p>
+        </article>
+        <article class="pal-card reveal delay-3" data-initial="M">
+          <span class="tag">Docs</span>
+          <h3>Morgan</h3>
+          <p>负责文档结构、文件工作流、Markdown、Office 和 PDF 任务包。</p>
+        </article>
+        <article class="pal-card reveal" data-initial="H">
+          <span class="tag">Writing</span>
+          <h3>Harper</h3>
+          <p>负责文案、叙事、语气、编辑、声明边界和内容质量。</p>
+        </article>
+        <article class="pal-card reveal delay-1" data-initial="R">
+          <span class="tag">Safety</span>
+          <h3>Rhea</h3>
+          <p>负责系统、Runtime、权限、no-code 安全和发布边界。</p>
+        </article>
+        <article class="pal-card reveal delay-2" data-initial="L">
+          <span class="tag">Visual</span>
+          <h3>Luma</h3>
+          <p>负责品牌视觉、Logo、UI 方向、页面美术和设计审查。</p>
+        </article>
+        <article class="pal-card reveal delay-3" data-initial="R">
+          <span class="tag">Video</span>
+          <h3>Reel</h3>
+          <p>负责视频剪辑、制作方向、成片结构和视频交付规划。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="workflow" class="shell">
+      <div class="section-head reveal">
+        <h2>从一句目标，到一个可交付工作组。</h2>
+        <p>
+          AgentPal 的重点不是让所有角色都变成独立运行的 Agent，而是先把团队角色、上下文、任务边界和验收方式组织清楚。复杂任务再按需要交给 Runtime 或外部工具执行。
+        </p>
+      </div>
+
+      <div class="panel timeline reveal delay-1">
+        <div>
+          <span class="tag">MIRA FIRST</span>
+          <h3>你只需要先说目标。</h3>
+          <p>
+            Mira 会判断这是普通回答、专业 Pal 任务、复合交付，还是需要 Task Package。你也可以直接用 <code>/pal Name</code> 调用专业 Pal。
+          </p>
+        </div>
+        <div class="timeline-rail">
+          <article class="step">
+            <strong>1. 判断任务形状</strong>
+            <p>明确目标、交付物、缺失信息、风险、上下文和候选 owner Pal。</p>
+          </article>
+          <article class="step">
+            <strong>2. 装载相关资产</strong>
+            <p>只读取当前任务需要的 Pal 身份、知识、Skill、Workflow、输出契约或 fallback 方法。</p>
+          </article>
+          <article class="step">
+            <strong>3. 形成执行边界</strong>
+            <p>把任务包、验收标准、禁止事项和证据要求交给当前 Runtime，而不是让 Pal 冒充执行层。</p>
+          </article>
+          <article class="step">
+            <strong>4. 回收结果与学习</strong>
+            <p>由 owner Pal 汇总执行证据、风险和下一步；必要时把可复用经验沉淀为 Pal 资产。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="boundary" class="shell">
+      <div class="section-head reveal">
+        <h2>轻量，也要诚实。</h2>
+        <p>
+          AgentPal 的价值来自组织层，而不是伪装成全能后台。它让现有 Runtime 更会协作，但不会隐式扫描机器、安装工具、连接外部系统或自动发布。
+        </p>
+      </div>
+
+      <div class="boundary-grid">
+        <article class="boundary reveal">
+          <h3>AgentPal 提供什么</h3>
+          <ul>
+            <li>Pal 身份、职责、知识、Skill 和 Workflow。</li>
+            <li>Mira-first 协调、直接 Pal 调用和复合任务判断。</li>
+            <li>Context slicing、Task Package、验证习惯和边界声明。</li>
+            <li>PalSmith / Faye 支持自定义 Pal 团队和交付包设计。</li>
+            <li>Thin binding，把真实项目轻量接入 AgentPal Workspace。</li>
+          </ul>
+        </article>
+        <article class="boundary no reveal delay-1">
+          <h3>AgentPal 不声称什么</h3>
+          <ul>
+            <li>不是独立 App、CLI、daemon、scanner 或 connector backend。</li>
+            <li>不自动修改 contacts，不自动发布 Marketplace，不自动推送 Git。</li>
+            <li>不替代 Codex、Claude Code、OpenCode 等执行层。</li>
+            <li>不在没有证据时声称工具、插件、MCP 或外部 Agent 可用。</li>
+            <li>不把私有项目记忆写进公开 Pal Pack 或示例资料。</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="start" class="shell">
+      <div class="panel cta reveal">
+        <span class="eyebrow">Start small, grow into a team</span>
+        <h2>先从 Mira 开始。</h2>
+        <p>
+          打开 AgentPal Workspace，把你的目标告诉 Mira。等你准备把工作组接入真实项目时，再用 thin binding：项目只拿到小型指针和受保护说明，Pal 资产仍留在 AgentPal Workspace。
+        </p>
+        <div class="hero-actions">
+          <a class="button secondary" href="#top">回到顶部</a>
+          <a class="button primary" href="../templates/project-binding/README.md">准备接入项目</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <div class="footer-inner">
+      <span>AgentPal v0.5 · Pal team organization layer for existing Agent runtimes.</span>
+      <span>Static Workbench Studio concept · no remote publication performed.</span>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,75 @@
+{
+  "team_id": "video-production-team",
+  "members": [
+    {
+      "pal_id": "mira-main",
+      "display_name": "Mira",
+      "team_roles": ["video-coordinator"],
+      "required": true,
+      "required_for_task_types": ["video-production-plan", "storyboard-outline"],
+      "required_for_risk_levels": ["low", "medium", "high"],
+      "can_read_team_assets": true,
+      "can_write_team_memory": true,
+      "notes": "Clarifies the user goal, delivery boundary, and whether a real editing runtime is available."
+    },
+    {
+      "pal_id": "nova-product",
+      "display_name": "Nova",
+      "team_roles": ["message-strategist"],
+      "required": false,
+      "required_for_task_types": ["video-production-plan", "claim-reviewed-video-brief"],
+      "required_for_risk_levels": ["medium", "high"],
+      "can_read_team_assets": true,
+      "can_write_team_memory": false,
+      "notes": "Frames audience, value proposition, and message priority."
+    },
+    {
+      "pal_id": "harper-writing",
+      "display_name": "Harper",
+      "team_roles": ["script-lead"],
+      "required": true,
+      "required_for_task_types": ["short-video-script", "storyboard-outline"],
+      "required_for_risk_levels": ["low", "medium", "high"],
+      "can_read_team_assets": true,
+      "can_write_team_memory": true,
+      "notes": "Owns script structure, narration, and language quality."
+    },
+    {
+      "pal_id": "vega-research",
+      "display_name": "Vega",
+      "team_roles": ["research-support"],
+      "required": false,
+      "required_for_task_types": ["claim-reviewed-video-brief"],
+      "required_for_risk_levels": ["medium", "high"],
+      "can_read_team_assets": true,
+      "can_write_team_memory": false,
+      "notes": "Supplies source notes when factual claims are part of the video."
+    },
+    {
+      "pal_id": "quinn-quality",
+      "display_name": "Quinn",
+      "team_roles": ["production-reviewer"],
+      "required": false,
+      "required_for_task_types": ["video-publishing-checklist", "claim-reviewed-video-brief"],
+      "required_for_risk_levels": ["medium", "high"],
+      "can_read_team_assets": true,
+      "can_write_team_memory": false,
+      "notes": "Reviews completion, claim risk, and readiness before publishing."
+    }
+  ],
+  "open_roles": [
+    {
+      "role_id": "production-executor",
+      "required_capabilities": ["video-editing", "rendering", "asset-assembly"],
+      "selection_policy": "ask_user",
+      "preferred_pals": []
+    }
+  ],
+  "selection_policy": {
+    "team_role_is_not_pal_identity": true,
+    "pals_may_join_multiple_teams": true,
+    "copy_pal_assets_into_team_pack": false,
+    "selection_requires_ai_judgement": true,
+    "keyword_routing_allowed": false
+  }
+}

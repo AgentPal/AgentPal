@@ -1,0 +1,175 @@
+{
+  "fixture_id": "v0.6-after-sales-feedback-20-synthetic",
+  "fixture_type": "after_sales_feedback_batch",
+  "source_type": "synthetic",
+  "status": "fixture-only",
+  "notice": "This is a synthetic local fixture for AgentPal Team Pack validation. It is not real customer data.",
+  "intended_scenarios": [
+    "evals/session-validation/v0.6-mira-palsmith/scenarios/04-existing-after-sales-team-handle-feedback.md",
+    "evals/runtime-validation/v0.6-team-pack/scenario-04-existing-after-sales-team-feedback.md"
+  ],
+  "team_pack_reference": "evals/team-workflows/r220a-v0.6-closure-rehearsals/simulated-team-packs/after-sales-service-team",
+  "expected_workflow": "daily-feedback-triage",
+  "items": [
+    {
+      "id": "FB-001",
+      "channel": "email",
+      "customer_message": "I downloaded the installer, but Windows blocked it and I am not sure what to do next.",
+      "category_hint": "installation",
+      "urgency": "medium",
+      "expected_team_handling": "Explain safe install steps, ask for OS/version if needed, and mark documentation improvement."
+    },
+    {
+      "id": "FB-002",
+      "channel": "in-app",
+      "customer_message": "The app says my login code expired even though I entered it right away.",
+      "category_hint": "login",
+      "urgency": "high",
+      "expected_team_handling": "Request timestamp and account email, suggest retry, and escalate if repeated."
+    },
+    {
+      "id": "FB-003",
+      "channel": "support_chat",
+      "customer_message": "I paid for the monthly plan but my account still shows free tier.",
+      "category_hint": "payment",
+      "urgency": "high",
+      "expected_team_handling": "Escalate to billing review, ask for order id, and avoid promising refund without evidence."
+    },
+    {
+      "id": "FB-004",
+      "channel": "community",
+      "customer_message": "I cannot find where to import a CSV file. The menu labels are confusing.",
+      "category_hint": "product_usage",
+      "urgency": "low",
+      "expected_team_handling": "Provide navigation steps and mark onboarding/help-text improvement."
+    },
+    {
+      "id": "FB-005",
+      "channel": "email",
+      "customer_message": "The data import failed at 73 percent and only says unknown error.",
+      "category_hint": "data_import_failure",
+      "urgency": "high",
+      "expected_team_handling": "Ask for file format/size and error time, provide retry guidance, and escalate if reproducible."
+    },
+    {
+      "id": "FB-006",
+      "channel": "in-app",
+      "customer_message": "The dashboard takes more than 20 seconds to load after I add many records.",
+      "category_hint": "performance",
+      "urgency": "medium",
+      "expected_team_handling": "Collect record count/browser/device context and tag performance investigation."
+    },
+    {
+      "id": "FB-007",
+      "channel": "support_chat",
+      "customer_message": "Your support reply last week did not solve anything. I am very disappointed.",
+      "category_hint": "complaint",
+      "urgency": "high",
+      "expected_team_handling": "Acknowledge frustration, review prior ticket context, and escalate to human follow-up."
+    },
+    {
+      "id": "FB-008",
+      "channel": "community",
+      "customer_message": "Could you add a way to save response templates for repeated support answers?",
+      "category_hint": "feature_request",
+      "urgency": "low",
+      "expected_team_handling": "Log as feature request and ask for example workflow."
+    },
+    {
+      "id": "FB-009",
+      "channel": "email",
+      "customer_message": "I have asked three times how to change my workspace owner and still cannot do it.",
+      "category_hint": "repeat_issue",
+      "urgency": "medium",
+      "expected_team_handling": "Provide ownership-transfer steps, check if permission issue exists, and flag repeated documentation gap."
+    },
+    {
+      "id": "FB-010",
+      "channel": "support_chat",
+      "customer_message": "A teammate accidentally deleted a project. Can you restore it?",
+      "category_hint": "human_escalation",
+      "urgency": "critical",
+      "expected_team_handling": "Escalate to authorized recovery path and avoid claiming restore without runtime evidence."
+    },
+    {
+      "id": "FB-011",
+      "channel": "in-app",
+      "customer_message": "The update keeps restarting and never finishes installation.",
+      "category_hint": "installation",
+      "urgency": "medium",
+      "expected_team_handling": "Collect version and logs if available, provide safe restart/reinstall guidance, and tag installer loop."
+    },
+    {
+      "id": "FB-012",
+      "channel": "email",
+      "customer_message": "I reset my password but the reset link opens a blank page.",
+      "category_hint": "login",
+      "urgency": "high",
+      "expected_team_handling": "Ask browser/device context, provide alternate reset path, and escalate if link issue repeats."
+    },
+    {
+      "id": "FB-013",
+      "channel": "support_chat",
+      "customer_message": "The invoice address is wrong and I need it corrected before finance closes this week.",
+      "category_hint": "payment",
+      "urgency": "high",
+      "expected_team_handling": "Escalate billing metadata update and ask for authorized company details."
+    },
+    {
+      "id": "FB-014",
+      "channel": "community",
+      "customer_message": "The export button works, but I do not understand what each export format means.",
+      "category_hint": "product_usage",
+      "urgency": "low",
+      "expected_team_handling": "Explain formats and mark help/documentation improvement."
+    },
+    {
+      "id": "FB-015",
+      "channel": "email",
+      "customer_message": "Importing Excel with Chinese column names maps several columns incorrectly.",
+      "category_hint": "data_import_failure",
+      "urgency": "medium",
+      "expected_team_handling": "Request sample schema without private data and tag localization/import mapping issue."
+    },
+    {
+      "id": "FB-016",
+      "channel": "in-app",
+      "customer_message": "Search is slow when I filter by date range and owner at the same time.",
+      "category_hint": "performance",
+      "urgency": "medium",
+      "expected_team_handling": "Collect approximate dataset size and filter details, then tag search performance."
+    },
+    {
+      "id": "FB-017",
+      "channel": "support_chat",
+      "customer_message": "I was charged twice and nobody has answered my last message.",
+      "category_hint": "complaint",
+      "urgency": "critical",
+      "expected_team_handling": "Escalate billing and service recovery, acknowledge urgency, and avoid refund promise without evidence."
+    },
+    {
+      "id": "FB-018",
+      "channel": "community",
+      "customer_message": "It would help if each project had a checklist view for onboarding new teammates.",
+      "category_hint": "feature_request",
+      "urgency": "low",
+      "expected_team_handling": "Log as product suggestion and ask for desired checklist fields."
+    },
+    {
+      "id": "FB-019",
+      "channel": "email",
+      "customer_message": "The same notification keeps appearing after I dismiss it.",
+      "category_hint": "repeat_issue",
+      "urgency": "medium",
+      "expected_team_handling": "Ask for notification text and account context, tag duplicate notification defect."
+    },
+    {
+      "id": "FB-020",
+      "channel": "support_chat",
+      "customer_message": "We may need to cancel our account if no one can help migrate our data this week.",
+      "category_hint": "human_escalation",
+      "urgency": "critical",
+      "expected_team_handling": "Escalate to human success/support owner, collect migration scope, and avoid unsupported commitments."
+    }
+  ]
+}

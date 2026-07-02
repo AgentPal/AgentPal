@@ -1,0 +1,20 @@
+{
+  "name": "agentpal",
+  "interface": {
+    "displayName": "AgentPal"
+  },
+  "plugins": [
+    {
+      "name": "agentpal",
+      "source": {
+        "source": "local",
+        "path": "./plugins/agentpal"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

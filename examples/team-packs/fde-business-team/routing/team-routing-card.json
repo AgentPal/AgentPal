@@ -1,0 +1,22 @@
+{
+  "team_id": "fde-business-team",
+  "use_when": [
+    "The user needs to discover or design a business process from unclear requirements.",
+    "The task asks for business interviews, process mapping, operating model, role design, or Workflow blueprint.",
+    "The user needs to turn a complex business need into a team or Pal Team structure."
+  ],
+  "do_not_use_when": [
+    "The business team already exists and the task is routine execution.",
+    "The request is to publish five weekly marketing posts for an existing promotion team.",
+    "The request is ordinary copywriting, video editing, code implementation, release verification, or simple testing.",
+    "Faye would be used as a general business executor instead of a discovery and setup owner."
+  ],
+  "preferred_entry": "mira-main",
+  "selection_policy": "AI judgement using current user goal, team.json, roster.json, Faye capability boundaries, and available runtime evidence.",
+  "keyword_routing_allowed": false,
+  "routing_veto_notes": [
+    "If Faye is selected for routine execution after the workflow is already defined, veto and choose the concrete execution team or ask the user for the owner.",
+    "If the request is 'the promotion team should publish five posts this week', the correct path is the promotion/content team or current project owner, not Faye.",
+    "Faye exits after solution, team setup, and workflow blueprint are confirmed."
+  ]
+}

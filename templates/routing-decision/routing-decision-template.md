@@ -12,6 +12,18 @@ REPLACE_WITH_ROUTE
 
 REPLACE_WITH_OWNER_PAL
 
+## Capability Card Check
+
+- card_checked: yes/no
+- card_path:
+- allowed_task_type_match:
+- forbidden_task_type_match:
+- do_not_use_match:
+- team_role_allowed:
+- team_role_forbidden:
+- routing_veto_triggered: yes/no
+- veto_reason_or_none:
+
 ## Consultant Pal(s)
 
 - REPLACE_WITH_CONSULTANT_OR_NONE

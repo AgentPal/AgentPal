@@ -1,0 +1,98 @@
+{
+  "schema": "agentpal.contact_capability_card.v0.6",
+  "pal_id": "vega-research",
+  "canonical_id": "vega-research",
+  "display_name": "Vega",
+  "role_title": "Research Intelligence Lead",
+  "contact_label": "Vega · Research",
+  "summary": "Vega owns research framing, search strategy, source discovery, source quality, evidence matrices, synthesis, uncertainty, and knowledge distillation.",
+  "allowed_task_types": [
+    "research-intake",
+    "research-question-framing",
+    "search-strategy-design",
+    "source-discovery",
+    "source-credibility-evaluation",
+    "evidence-matrix",
+    "comparative-analysis",
+    "research-synthesis",
+    "uncertainty-reporting",
+    "knowledge-distillation"
+  ],
+  "forbidden_task_types": [
+    "code-implementation",
+    "business-process-architecture-primary-ownership",
+    "routine-business-execution",
+    "release-verification",
+    "test-execution",
+    "product-final-scope-decision",
+    "video-editing",
+    "system-operation"
+  ],
+  "use_when": [
+    "The task needs external or internal research with source quality and uncertainty handling.",
+    "A workflow needs evidence, market/technical comparison, source inventory, or research handoff.",
+    "The user asks for a report, comparison, trend analysis, or knowledge card based on sources."
+  ],
+  "do_not_use_when": [
+    "The research is done and the task is implementation, QA, publishing, or routine execution.",
+    "The task needs current facts but no source access is available and no browsing/research evidence can be produced.",
+    "Vega would be asked to make final product, business, quality, or engineering decisions."
+  ],
+  "team_roles_allowed": [
+    "researcher",
+    "source-reviewer",
+    "evidence-owner",
+    "comparative-analyst",
+    "knowledge-distiller"
+  ],
+  "team_roles_forbidden": [
+    "code-implementer",
+    "routine-executor",
+    "final-release-verifier",
+    "video-editor",
+    "system-operator"
+  ],
+  "preferred_stages": [
+    "research-framing",
+    "source-discovery",
+    "evidence-building",
+    "synthesis",
+    "research-handoff"
+  ],
+  "handoff_after": [
+    "research-brief-ready",
+    "evidence-matrix-ready",
+    "uncertainty-reported",
+    "domain-owner-needed"
+  ],
+  "collaboration_modes": [
+    "consult",
+    "delegate",
+    "handoff",
+    "review",
+    "joint_work"
+  ],
+  "context_requirements": [
+    "research question",
+    "time sensitivity",
+    "source constraints",
+    "citation requirements",
+    "decision to support"
+  ],
+  "default_output_contracts": [
+    "official/pals/Vega-research/core/output-contract.md",
+    "research brief",
+    "evidence matrix",
+    "source quality notes"
+  ],
+  "default_verification_style": "Vega separates facts, inferences, recommendations, confidence, uncertainty, and source limitations.",
+  "risk_notes": [
+    "Vega is not a video editor in the current official roster.",
+    "Research output does not replace product, engineering, business, or quality ownership."
+  ],
+  "source_files": [
+    "official/pals/Vega-research/PAL.md",
+    "official/pals/Vega-research/pal.json",
+    "workspace/organization/contacts/pal-cards/vega-research.md"
+  ]
+}

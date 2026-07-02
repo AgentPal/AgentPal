@@ -28,16 +28,40 @@ PalSmith must not create an empty shell from one sentence. A v0.5 Pal creation p
 
 Required flow:
 
-1. Capture Pal name, id, intended users, responsibilities, goals, usage scenarios, and non-responsibilities.
+1. Capture Pal human name, stable id, role title, contact label, intended users, responsibilities, goals, usage scenarios, and non-responsibilities.
 2. Identify source materials, privacy level, intended publication status, and whether optional external research is allowed.
 3. Build a job expertise model: recurring tasks, decisions, knowledge needs, workflow needs, risk cases, output needs, and acceptance evidence.
 4. For composite creation, separate role architecture, cognitive distillation, voice/personality distillation, knowledge curation, Skill / plugin / Agent capability mapping, memory design, collaboration boundary, evals, and Marketplace metadata.
-5. Decide Minimal Pal or Standard Pal target.
-6. Classify user material into asset types before writing.
-7. Produce a target file checklist and allowed write paths.
-8. Ask user confirmation before Runtime file writes.
-9. Runtime writes approved files and returns evidence.
-10. PalSmith reviews evidence and produces a readiness or upgrade report.
+5. Run Pal naming and import conflict checks using `standards/pal-asset/pal-naming-and-import-conflict-protocol.md`.
+6. Decide Minimal Pal or Standard Pal target.
+7. Classify user material into asset types before writing.
+8. Produce a target file checklist and allowed write paths.
+9. Include Pal Asset Preflight inheritance from `core/pal-asset-preflight-protocol.md`.
+10. Ask user confirmation before Runtime file writes.
+11. Runtime writes approved files and returns evidence.
+12. PalSmith reviews evidence and produces a readiness or upgrade report.
+
+## v0.6 Naming Requirement
+
+PalSmith must not create a Pal whose `display_name` is only a job title, capability label, or generic function label.
+
+PalSmith-created Pal manifests should include:
+
+- `canonical_id`;
+- `display_name`;
+- `role_title`;
+- `contact_label`;
+- `aliases`;
+- `user_custom_name`;
+- `original_name`;
+- `imported_from`;
+- `name` and `role` compatibility fields for older readers.
+
+If the user asks for "方案定制 Pal", "外部调研 Pal", "视频剪辑 Pal", "产品经理 Pal", or "测试 Pal", PalSmith treats that phrase as role intent. It must propose or generate a human name and use the phrase as `role_title`, not as `display_name`.
+
+User renames must update user-facing display and aliases while preserving `canonical_id`.
+
+External imports with same-name conflicts must remain staged until PalSmith records the conflict decision and contact label.
 
 ## Composite Pal Creation
 
@@ -142,6 +166,9 @@ A Minimal Pal must generate these files or explicitly mark them `missing` in the
 - `evals/definition-of-done.md`
 - `reports/README.md`
 - `state/README.md`
+- Contact Capability Card placeholder or complete card
+- Pal Asset Preflight template or inheritance note
+- naming conflict check result
 
 Minimal Pal assets may use public-safe placeholder indexes when the user has not provided enough domain material yet. Placeholders must name the gap honestly and must not claim job readiness.
 
@@ -333,6 +360,26 @@ Creation and upgrade plans should include:
 
 This requirement does not implement runtime code, scanners, daemons, connectors,
 or Marketplace backend features. It is a no-code asset and regression standard.
+
+## v0.6 Team Creation Increment
+
+If PalSmith is planning a team, it must produce a team design plan first. It must not imply a full Team Pack runtime or Workflow state machine exists unless another thread has provided evidence.
+
+The team creation plan must include or explicitly mark `missing`:
+
+- `TEAM.md`;
+- `team.json`;
+- `roster.json`;
+- team roles;
+- team workflow placeholder;
+- team eval placeholder;
+- team memory placeholder;
+- team routing card placeholder;
+- Team Asset Preflight requirement;
+- Workflow Execution Contract placeholder;
+- member Pal Asset Preflight requirement.
+
+Team creation must follow `core/team-asset-preflight-protocol.md` and `core/team-pal-asset-priority-protocol.md` as no-code planning rules.
 
 ## Completion Decision
 

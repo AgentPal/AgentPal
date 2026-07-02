@@ -53,9 +53,11 @@ Verify:
 6. The AgentPal workspace central contacts are readable and are the Pal source of truth. If project files contain a copied roster, report it as stale or non-authoritative.
 6a. `agentpal_project_record` points to `workspace/projects/<project-id>` and project memory, source maps, derived knowledge, tasks, reports, governance records, and capability inventory are not stored in project-local `.agentpal/`.
 7. `CLAUDE.md` contains exactly one AgentPal block between:
-   - `<!-- BEGIN AGENTPAL WORKGROUP -->`
-   - `<!-- END AGENTPAL WORKGROUP -->`
-8. `AGENTS.md` contains exactly one AgentPal block between the same markers.
+   - `<!-- BEGIN AGENTPAL BINDING: claude-code -->`
+   - `<!-- END AGENTPAL BINDING: claude-code -->`
+8. If Codex is also enabled, `AGENTS.md` contains exactly one AgentPal block between:
+   - `<!-- BEGIN AGENTPAL BINDING: codex -->`
+   - `<!-- END AGENTPAL BINDING: codex -->`
 9. Both blocks point to AgentPal core gates and do not embed a full Pal roster or full protocols.
 10. `.claude/settings.local.json` exists and is valid JSON.
 11. `permissions.additionalDirectories` contains the AgentPal workspace path, merged with any unrelated existing entries.

@@ -2,6 +2,8 @@
 
 External project binding should be thin.
 
+Canonical project thin binding protocol: `docs/04-runtime-guides/project-thin-binding.md`.
+
 The external project is the active user project. The AgentPal workspace is only a Pal source and routing reference.
 
 ## Required Files

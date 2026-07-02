@@ -1,5 +1,0 @@
-{
-  "command": "codewhale -C J:\\开发\\AgentPal exec --auto <minimal no-write prompt>",
-  "output": "\u001b]9;4;1\u0007\u001b]0;🐳 CodeWhale\u0007\u001b]0;🐋 CodeWhale\u0007\u001b]0;🐳 CodeWhale\u0007\u001b]0;🐋 CodeWhale\u0007\u001b]0;🐳 CodeWhale\u0007\u001b]0;🐋 CodeWhale\u0007\u001b]0;🐳 CodeWhale\u0007\u001b]0;🐋 CodeWhale\u0007\u001b]0;🐳 CodeWhale\u0007\u001b]0;🐋 CodeWhale\u0007\u001b]0;🐳 CodeWhale\u0007\u001b]0;🐋 CodeWhale\u0007\u001b]0;🐳 CodeWhale\u0007\u001b]0;🐋 CodeWhale\u0007\u001b]0;🐳 CodeWhale\u0007\u001b]0;🐋 CodeWhale\u0007\u001b]0;🐳 CodeWhale\u0007\u001b]0;🐋 CodeWhale\u0007\u001b]0;🐳 CodeWhale\u0007\u001b]0;🐋 CodeWhale\u0007\u001b]0;🐳 CodeWhale\u0007\u001b]0;🐋 CodeWhale\u0007CodeWhale minimal startup ok.",
-  "status": "minimal_prompt_pass"
-}

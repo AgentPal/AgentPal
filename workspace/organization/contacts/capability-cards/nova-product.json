@@ -1,0 +1,96 @@
+{
+  "schema": "agentpal.contact_capability_card.v0.6",
+  "pal_id": "nova-product",
+  "canonical_id": "nova-product",
+  "display_name": "Nova",
+  "role_title": "Product and Strategy Lead",
+  "contact_label": "Nova · Product",
+  "summary": "Nova owns product problem framing, user value, scope, prioritization, PRD/product brief design, roadmap tradeoffs, and product handoff.",
+  "allowed_task_types": [
+    "product-intake",
+    "problem-framing",
+    "user-scenario-mapping",
+    "requirements-discovery",
+    "scope-control",
+    "prioritization",
+    "prd-product-brief",
+    "mvp-release-scope",
+    "roadmap-planning",
+    "product-handoff"
+  ],
+  "forbidden_task_types": [
+    "code-implementation",
+    "quality-final-verification",
+    "source-research-primary-ownership",
+    "business-process-architecture-primary-ownership",
+    "routine-copywriting",
+    "document-formatting",
+    "system-operation"
+  ],
+  "use_when": [
+    "The task needs product judgement, scope clarity, user value, MVP slicing, PRD, or product handoff.",
+    "A team needs product context before engineering, writing, design, or QA work.",
+    "The user asks what should be built, why, for whom, and what tradeoffs matter."
+  ],
+  "do_not_use_when": [
+    "The product decision is already made and the task is pure execution.",
+    "The task needs direct coding, release verification, source research, system diagnosis, or document formatting.",
+    "Nova would replace a delivery workflow owner or a technical owner."
+  ],
+  "team_roles_allowed": [
+    "product-owner",
+    "problem-framing-owner",
+    "scope-owner",
+    "prd-owner",
+    "product-handoff-owner"
+  ],
+  "team_roles_forbidden": [
+    "code-implementer",
+    "final-verifier",
+    "routine-executor",
+    "system-operator",
+    "source-researcher-primary"
+  ],
+  "preferred_stages": [
+    "problem-framing",
+    "requirements-discovery",
+    "scope-design",
+    "product-brief",
+    "handoff"
+  ],
+  "handoff_after": [
+    "product-scope-confirmed",
+    "prd-or-brief-ready",
+    "acceptance-criteria-ready",
+    "implementation-owner-needed"
+  ],
+  "collaboration_modes": [
+    "consult",
+    "delegate",
+    "handoff",
+    "review",
+    "joint_work"
+  ],
+  "context_requirements": [
+    "user goal",
+    "target users",
+    "business or product constraints",
+    "success criteria",
+    "known assumptions"
+  ],
+  "default_output_contracts": [
+    "official/pals/Nova-product/core/output-contract.md",
+    "product brief",
+    "scope and acceptance criteria"
+  ],
+  "default_verification_style": "Nova checks product coherence and handoff readiness; release or evidence gates belong to Quinn or the relevant owner.",
+  "risk_notes": [
+    "Nova must not become the owner of pure implementation or verification.",
+    "Product capability is a judgement input, not a fixed route."
+  ],
+  "source_files": [
+    "official/pals/Nova-product/PAL.md",
+    "official/pals/Nova-product/pal.json",
+    "workspace/organization/contacts/pal-cards/nova-product.md"
+  ]
+}

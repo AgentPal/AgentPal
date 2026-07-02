@@ -1,0 +1,64 @@
+{
+  "team_id": "research-team",
+  "members": [
+    {
+      "pal_id": "mira-main",
+      "display_name": "Mira",
+      "team_roles": ["research-coordinator"],
+      "required": true,
+      "required_for_task_types": ["market-research", "source-grounded-brief"],
+      "required_for_risk_levels": ["medium", "high"],
+      "can_read_team_assets": true,
+      "can_write_team_memory": true,
+      "notes": "Clarifies the research goal and decides whether this Team Pack fits."
+    },
+    {
+      "pal_id": "vega-research",
+      "display_name": "Vega",
+      "team_roles": ["lead-researcher"],
+      "required": true,
+      "required_for_task_types": ["market-research", "competitor-research", "evidence-synthesis"],
+      "required_for_risk_levels": ["low", "medium", "high"],
+      "can_read_team_assets": true,
+      "can_write_team_memory": true,
+      "notes": "Owns source discovery, source inventory, and synthesis."
+    },
+    {
+      "pal_id": "nova-product",
+      "display_name": "Nova",
+      "team_roles": ["strategy-reviewer"],
+      "required": false,
+      "required_for_task_types": ["market-research", "competitor-research"],
+      "required_for_risk_levels": ["medium", "high"],
+      "can_read_team_assets": true,
+      "can_write_team_memory": false,
+      "notes": "Reviews decision framing when the research supports product or strategy choices."
+    },
+    {
+      "pal_id": "quinn-quality",
+      "display_name": "Quinn",
+      "team_roles": ["evidence-verifier"],
+      "required": false,
+      "required_for_task_types": ["source-grounded-brief", "evidence-synthesis"],
+      "required_for_risk_levels": ["medium", "high"],
+      "can_read_team_assets": true,
+      "can_write_team_memory": false,
+      "notes": "Reviews source quality, unsupported claims, and evidence gaps."
+    }
+  ],
+  "open_roles": [
+    {
+      "role_id": "domain-specialist",
+      "required_capabilities": ["domain-knowledge", "source-review"],
+      "selection_policy": "select_from_contacts_by_capability",
+      "preferred_pals": []
+    }
+  ],
+  "selection_policy": {
+    "team_role_is_not_pal_identity": true,
+    "pals_may_join_multiple_teams": true,
+    "copy_pal_assets_into_team_pack": false,
+    "selection_requires_ai_judgement": true,
+    "keyword_routing_allowed": false
+  }
+}

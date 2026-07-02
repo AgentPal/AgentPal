@@ -16,8 +16,8 @@ Verify that AgentPal workgroup removal is safe and scoped.
 - Mira asks for confirmation before removing anything.
 - Confirmation says removal deletes only AgentPal workgroup configuration and does not touch project code.
 - After confirmation, remove target `.agentpal/`.
-- Remove only root `AGENTS.md` block between `<!-- BEGIN AGENTPAL WORKGROUP -->` and `<!-- END AGENTPAL WORKGROUP -->`.
-- Remove root `CLAUDE.md` AgentPal block when present.
+- Remove only root `AGENTS.md` Codex block between `<!-- BEGIN AGENTPAL BINDING: codex -->` and `<!-- END AGENTPAL BINDING: codex -->`.
+- Remove root `CLAUDE.md` Claude Code AgentPal block between `<!-- BEGIN AGENTPAL BINDING: claude-code -->` and `<!-- END AGENTPAL BINDING: claude-code -->` when removing Claude Code.
 - If root `AGENTS.md` becomes empty or did not exist, write the non-workgroup deactivation marker.
 - Cleanup registered projects.
 - Clear active project state if it matches.

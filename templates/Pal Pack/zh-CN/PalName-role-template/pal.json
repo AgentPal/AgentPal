@@ -2,7 +2,9 @@
   "schema": "agentpal.pal-pack.v0.1",
   "id": "pal-id",
   "name": "PalName",
-  "display_name": "PalName / 角色 Pal",
+  "display_name": "示例名",
+  "role_title": "示例角色",
+  "contact_label": "示例名 · 示例角色",
   "directory_name": "PalName-role",
   "role": "role",
   "direct_call": "/pal PalName",
@@ -68,4 +70,3 @@
     "refresh_on_runtime_change": true
   }
 }
-

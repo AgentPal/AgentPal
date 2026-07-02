@@ -29,8 +29,7 @@ Step 1 - Confirm current project root:
 Step 2 - Detect binding:
 Check whether the current project has any of:
 - .agentpal/
-- AGENTS.md block between <!-- BEGIN AGENTPAL WORKGROUP --> and <!-- END AGENTPAL WORKGROUP -->
-- CLAUDE.md block between <!-- BEGIN AGENTPAL WORKGROUP --> and <!-- END AGENTPAL WORKGROUP -->
+- AGENTS.md block between <!-- BEGIN AGENTPAL BINDING: codex --> and <!-- END AGENTPAL BINDING: codex -->
 
 If none exist, report that no AgentPal project binding was found and do not change files.
 
@@ -39,12 +38,12 @@ Before changing files, ask me to confirm removal.
 
 Step 4 - Remove only the binding:
 After confirmation:
-1. Delete this project's .agentpal/ directory if it exists.
-2. Remove only the block between <!-- BEGIN AGENTPAL WORKGROUP --> and <!-- END AGENTPAL WORKGROUP --> from AGENTS.md.
-3. Preserve all other AGENTS.md content.
-4. If CLAUDE.md contains an AgentPal workgroup block, remove only that protected block.
-5. Preserve all other CLAUDE.md content.
-6. Do not modify .claude/settings.local.json unless I explicitly ask, because this is the Codex project-local removal path.
+1. Remove the `codex` entry from `.agentpal/project.json` `enabled_runtimes` if `.agentpal/project.json` exists.
+2. Delete this project's .agentpal/ directory only if no runtime binding remains.
+3. Remove only the block between <!-- BEGIN AGENTPAL BINDING: codex --> and <!-- END AGENTPAL BINDING: codex --> from AGENTS.md.
+4. Preserve all other AGENTS.md content.
+5. Do not remove any Claude Code block from CLAUDE.md unless I explicitly ask, because this is the Codex project-local removal path.
+6. Do not modify .claude/settings.local.json unless I explicitly ask.
 7. Do not delete AgentPal workspace files.
 
 Step 5 - Report:
@@ -52,7 +51,7 @@ Report briefly:
 - current project root
 - .agentpal/ removed or was absent
 - AGENTS.md AgentPal block removed or was absent
-- CLAUDE.md AgentPal block removed or was absent
+- CLAUDE.md was not touched by this Codex removal path
 - no project source files were deleted
 - AgentPal Workspace was not deleted
 

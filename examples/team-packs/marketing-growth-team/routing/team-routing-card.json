@@ -1,0 +1,23 @@
+{
+  "team_id": "marketing-growth-team",
+  "use_when": [
+    "The user asks for AgentPal promotion themes, content calendars, short-form copy, visual requirements, publishing plans, or campaign retrospectives.",
+    "The task needs product positioning, research support, copywriting, visual brief, and quality review in one stable workflow.",
+    "The user names the promotion or marketing team for recurring content work."
+  ],
+  "do_not_use_when": [
+    "The user needs business process discovery or workflow redesign before a promotion team exists.",
+    "The user asks for actual platform publishing or ad account operation without an authorized execution layer.",
+    "The task is code implementation, release verification, private analytics analysis, or routine business execution outside promotion.",
+    "The route would assign Faye or PalSmith as daily promotion executors."
+  ],
+  "preferred_entry": "mira-main",
+  "selection_policy": "AI judgement using the current user goal, team.json, roster.json, capability cards, and available runtime evidence.",
+  "keyword_routing_allowed": false,
+  "routing_veto_notes": [
+    "Faye may consult only for promotion workflow discovery or redesign, not weekly content execution.",
+    "PalSmith may consult only if the Team Pack is missing, broken, or needs governance review.",
+    "Quinn is not a fixed verifier for every content item; use Quinn when publication risk, feature claims, or quality stakes justify review.",
+    "Open roles must stay open until the user confirms a human, runtime, or named Pal."
+  ]
+}

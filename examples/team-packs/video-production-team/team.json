@@ -1,0 +1,74 @@
+{
+  "schema": "agentpal.team-pack.v0.6",
+  "type": "team-pack",
+  "team_id": "video-production-team",
+  "display_name": "Video Production Team",
+  "version": "0.6.0",
+  "status": "draft",
+  "description": "A public-safe Team Pack example for video planning, script structure, visual direction, production review, and publishing readiness.",
+  "discoverable": true,
+  "contactable": true,
+  "team_modes": ["consult", "delegate", "joint_work", "review"],
+  "default_owner_role": "video-coordinator",
+  "default_entry_pal": "mira-main",
+  "supported_task_types": [
+    "video-production-plan",
+    "short-video-script",
+    "storyboard-outline",
+    "video-publishing-checklist",
+    "claim-reviewed-video-brief"
+  ],
+  "forbidden_task_types": [
+    "automatic-video-rendering",
+    "deepfake-generation",
+    "private-footage-processing-without-authorization",
+    "code-implementation",
+    "fde-business-process-discovery"
+  ],
+  "asset_priority": {
+    "team_workflow_priority": "high",
+    "team_eval_priority": "high",
+    "team_assets_override_pal_assets": false,
+    "pal_boundary_overrides_team_role": true
+  },
+  "collaboration_policy": {
+    "selection_requires_ai_judgement": true,
+    "keyword_routing_allowed": false,
+    "copy_pal_assets_into_team": false,
+    "copy_team_pack_to_external_project": false
+  },
+  "memory_policy": {
+    "team_memory_enabled": true,
+    "private_memory_allowed_in_public_pack": false,
+    "writeback_requires_review": true,
+    "external_project_memory_write_default": false
+  },
+  "eval_policy": {
+    "team_eval_required_for_team_tasks": true,
+    "definition_of_done": "evals/definition-of-done.md",
+    "quality_gates": [
+      "audience-and-format-stated",
+      "script-matches-goal",
+      "asset-needs-listed",
+      "claims-reviewed",
+      "rendering-not-claimed-without-evidence"
+    ]
+  },
+  "entry": {
+    "team": "TEAM.md",
+    "roster": "roster.json",
+    "contacts": "TEAM_CONTACTS.md",
+    "resource_index": "RESOURCE_INDEX.md"
+  },
+  "asset_dirs": {
+    "roles": "roles/",
+    "knowledge": "knowledge/",
+    "skills": "skills/",
+    "workflows": "workflows/",
+    "runbooks": "runbooks/",
+    "memory": "memory/",
+    "evals": "evals/",
+    "routing": "routing/",
+    "reports": "reports/"
+  }
+}

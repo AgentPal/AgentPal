@@ -30,7 +30,7 @@ Status: PalSmith v0.3 Markdown eval.
 - `examples/task-packages/example-pal-publish-quality-gate.md`
 - `examples/task-packages/example-pal-runtime-call-verification.md`
 - `examples/task-packages/example-github-import-verification.md`
-- `examples/quickstart/README.md`
+- `examples/user-guides/quickstart/README.md`
 - `docs/07-authoring-pals/15-palsmith-quickstart-ai-team.md`
 
 ## Required Delegation Wording

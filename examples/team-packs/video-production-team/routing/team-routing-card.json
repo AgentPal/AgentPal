@@ -1,0 +1,21 @@
+{
+  "team_id": "video-production-team",
+  "use_when": [
+    "The user needs a video concept, script, storyboard outline, or production brief.",
+    "The task needs message strategy, script writing, visual direction, and review.",
+    "The user needs a handoff package for a human editor or runtime video tool."
+  ],
+  "do_not_use_when": [
+    "The user asks for business process discovery or FDE team setup.",
+    "The user expects actual rendered media but no execution layer or human editor is available.",
+    "The request is only a source-grounded research report without video production needs.",
+    "The task would assign Faye to ordinary video execution."
+  ],
+  "preferred_entry": "mira-main",
+  "selection_policy": "AI judgement using current user goal, team.json, roster.json, available runtime evidence, and Pal capability boundaries.",
+  "keyword_routing_allowed": false,
+  "routing_veto_notes": [
+    "Do not select this team just because the word video appears if the real task is business process design, release verification, or code work.",
+    "If actual editing is requested, select or ask for an execution layer; do not pretend the Team Pack rendered media."
+  ]
+}

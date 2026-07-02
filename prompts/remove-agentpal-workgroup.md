@@ -29,16 +29,14 @@ Mira：
 可以移除。这个操作只会删掉这个项目里的 AgentPal 工作组配置，不会动你的项目代码。确认要移除吗？
 
 After user confirmation, remove only:
-1. The target project's `.agentpal/` directory.
-2. The target root `AGENTS.md` block from `<!-- BEGIN AGENTPAL WORKGROUP -->` to `<!-- END AGENTPAL WORKGROUP -->`.
-3. If present in a Claude Code project, the target root `CLAUDE.md` block from `<!-- BEGIN AGENTPAL WORKGROUP -->` to `<!-- END AGENTPAL WORKGROUP -->`.
-4. Legacy bindings may use `BEGIN AGENTPAL WORKGROUP` / `END AGENTPAL WORKGROUP`; remove that protected block only if the HTML marker block is not present.
-5. If root `AGENTS.md` becomes empty or did not exist, write the non-workgroup deactivation marker from `templates/project-binding/agentpal-removed-agents-template.md`.
-6. For Claude Code, remove the AgentPal workspace path from `.claude/settings.local.json` `permissions.additionalDirectories`, preserving all other settings.
-7. The matching record in AgentPal `projects/registered-projects.json`.
-8. The matching entry in `projects/registered-projects.md`, or mark it removed.
-9. The matching AgentPal project memory under `memory/projects/`, archived by default.
-10. The matching `state/active-project.md` state if it is the active project.
+1. The current runtime's protected block only:
+   - Codex: `<!-- BEGIN AGENTPAL BINDING: codex -->` to `<!-- END AGENTPAL BINDING: codex -->` in `AGENTS.md`
+   - Claude Code: `<!-- BEGIN AGENTPAL BINDING: claude-code -->` to `<!-- END AGENTPAL BINDING: claude-code -->` in `CLAUDE.md`
+2. The current runtime entry from `.agentpal/project.json` `enabled_runtimes`.
+3. The target project's `.agentpal/` directory only when `enabled_runtimes` is empty.
+4. If root `AGENTS.md` becomes empty or did not exist after full project disconnection, write the non-workgroup deactivation marker from `templates/project-binding/agentpal-removed-agents-template.md`.
+5. For Claude Code, remove the AgentPal workspace path from `.claude/settings.local.json` `permissions.additionalDirectories`, preserving all other settings.
+6. The matching record in AgentPal `workspace/projects/` only when the user asks for full project disconnection and record cleanup.
 
 Do not delete:
 - external project source

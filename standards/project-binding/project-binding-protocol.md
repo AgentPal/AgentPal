@@ -71,14 +71,21 @@ The protected root block and `.agentpal/AGENTPAL.md` must tell runtimes to read 
 
 `.agentpal/project.json` should store:
 
-- schema
+- schema_version: `agentpal.project_binding.v1`
 - binding_version
-- binding_created_at
+- binding_type: `thin`
+- project_name
+- project_root_hint
+- default_pal: `Mira`
+- runtime
+- agentpal_source as a structured object
+- enabled_at
+- updated_at
+- status
+- last_runtime
+- enabled_runtimes
 - active_project_root
-- agentpal_workspace_root
-- runtime_hint
-- active_mode
-- read_core_from_agentpal_workspace
+- agentpal_workspace_root, when a local AgentPal workspace is available
 - core_gate_paths
 - pal_source_of_truth
 
@@ -96,9 +103,9 @@ Claude Code requires `.claude/settings.local.json` with `permissions.additionalD
 
 Removing AgentPal from a project should:
 
-- delete `.agentpal/`
-- remove only the protected AgentPal block from `AGENTS.md`
-- remove only the protected AgentPal block from `CLAUDE.md` when present
+- remove only the current runtime's protected AgentPal block from `AGENTS.md` or `CLAUDE.md`
+- remove only the current runtime from `enabled_runtimes`
+- delete `.agentpal/` only when no runtime binding remains
 - remove the AgentPal workspace path from `.claude/settings.local.json` when present
 - leave the AgentPal workspace untouched
 - leave project source files untouched

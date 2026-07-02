@@ -7,6 +7,10 @@ A Standard Pal must satisfy the Minimal Pal checklist first, then add the files 
 ## Target
 
 - target Pal name:
+- target human display name:
+- role title:
+- contact label:
+- canonical id:
 - target Pal id:
 - target path:
 - intended users:
@@ -45,6 +49,10 @@ A Standard Pal must satisfy the Minimal Pal checklist first, then add the files 
 | research gap is explicit | not-run | |
 | user material gap is explicit | not-run | |
 | collaboration / handoff boundaries are explicit | not-run | |
+| suitable team recommendations are explicit | not-run | |
+| unsuitable team boundaries are explicit | not-run | |
+| Contact Capability Card is complete or intentionally placeholder | not-run | |
+| Pal Asset Preflight inheritance is explicit | not-run | |
 
 ## Boundary Checks
 

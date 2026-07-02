@@ -23,7 +23,7 @@ review_evidence:
 
 - `evals/palbench/v0.5/palsmith/r175-draft-pal-pack-quality-regression.md`
 - `evals/palbench/v0.5/palsmith/r177-draft-pal-usage-regression-summary.md`
-- `J:\开发\AgentPal_dcos\开发记录\R178-FirstPrinciplesProductReviewerR177UsageRegressionLocalCommit完成报告.md`
+- `<agentpal-workspace-root>_dcos\开发记录\R178-FirstPrinciplesProductReviewerR177UsageRegressionLocalCommit完成报告.md`
 
 ## User Confirmation
 

@@ -1,0 +1,8 @@
+{
+  "name": "agentpal",
+  "description": "Thin AgentPal binder for Claude Code projects. Adds enable, init, status, repair, and disable skills for current-project bindings.",
+  "version": "0.1.0",
+  "author": {
+    "name": "AgentPal"
+  }
+}

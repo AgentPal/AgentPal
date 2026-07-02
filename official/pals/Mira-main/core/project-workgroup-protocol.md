@@ -31,12 +31,12 @@ Mira：
 
 After confirmation, remove only:
 
-1. Target project `.agentpal/`.
-2. Target root `AGENTS.md` block from `BEGIN AGENTPAL WORKGROUP` to `END AGENTPAL WORKGROUP`.
-3. Matching AgentPal `projects/registered-projects.json` record.
-4. Matching `projects/registered-projects.md` entry, or mark removed.
-5. Matching `memory/projects/` binding memory, archived by default.
-6. `state/active-project.md` if it points to the target.
+1. The current runtime's protected block:
+   - Codex: `BEGIN AGENTPAL BINDING: codex` to `END AGENTPAL BINDING: codex` in `AGENTS.md`.
+   - Claude Code: `BEGIN AGENTPAL BINDING: claude-code` to `END AGENTPAL BINDING: claude-code` in `CLAUDE.md`.
+2. The current runtime entry from `.agentpal/project.json` `enabled_runtimes`.
+3. Target project `.agentpal/` only when no runtime binding remains.
+4. Matching central project records only when the user asks for full project disconnection and record cleanup.
 
 Do not delete project source, project docs, project package files, `.git`, AgentPal Workspace, AgentPal `pals/`, other projects' `.agentpal/`, or user-authored AGENTS content outside the protected AgentPal block.
 
@@ -112,7 +112,7 @@ External `.agentpal/` should describe:
 
 External project root `AGENTS.md` should include:
 
-- `BEGIN AGENTPAL WORKGROUP`
+- `BEGIN AGENTPAL BINDING: codex`
 - the current external project directory is the active user project
 - the AgentPal workspace is only a Pal source and routing reference
 - do not treat the AgentPal workspace as part of this project

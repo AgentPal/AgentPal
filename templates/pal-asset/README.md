@@ -5,18 +5,14 @@ Date: 2026-06-28
 This directory is reserved for reusable Pal Asset templates aligned with
 `standards/pal-asset/`.
 
-## Current Template Status
+## Current Templates
 
-R98-A adds only the template index. It does not generate or upgrade specific
-Pals and does not modify PalSmith.
-
-Future template files may include:
-
-- minimal Pal Pack root entry template
-- Pal Skill package template
-- Pal asset manifest template
-- directory index template
-- Pal asset health report template
+- `pal-json-template.json`: v0.5 / v0.6-compatible `pal.json` starter with
+  stable identity, human display name, role title, contact label, aliases, and
+  no-code runtime boundaries.
+- `asset-manifest-template.json`: optional Pal asset manifest starter.
+- `index-templates/`: reusable index templates for knowledge, Skills,
+  workflows, runbooks, memory, learning, evals, examples, and research.
 
 ## Template Boundary
 

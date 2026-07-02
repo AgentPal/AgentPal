@@ -1,0 +1,183 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agentpal.local/schemas/team.schema.json",
+  "title": "AgentPal Team Pack Manifest",
+  "description": "v0.6 draft schema for Team Pack team.json metadata. A Team Pack is an organization asset that references Pals and shared assets without copying Pal Packs.",
+  "type": "object",
+  "required": [
+    "schema",
+    "type",
+    "team_id",
+    "display_name",
+    "version",
+    "status",
+    "description",
+    "discoverable",
+    "contactable",
+    "team_modes",
+    "default_owner_role",
+    "default_entry_pal",
+    "supported_task_types",
+    "forbidden_task_types",
+    "asset_priority",
+    "collaboration_policy",
+    "memory_policy",
+    "eval_policy"
+  ],
+  "not": {
+    "anyOf": [
+      { "required": ["keyword_map"] },
+      { "required": ["domain_map"] },
+      { "required": ["route_map"] }
+    ]
+  },
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "agentpal.team-pack.v0.6"
+    },
+    "type": {
+      "type": "string",
+      "const": "team-pack"
+    },
+    "team_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "display_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "active", "deprecated", "archived"]
+    },
+    "description": {
+      "type": "string"
+    },
+    "discoverable": {
+      "type": "boolean"
+    },
+    "contactable": {
+      "type": "boolean"
+    },
+    "team_modes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["consult", "delegate", "handoff", "joint_work", "review"]
+      },
+      "uniqueItems": true
+    },
+    "default_owner_role": {
+      "type": "string"
+    },
+    "default_entry_pal": {
+      "type": "string"
+    },
+    "supported_task_types": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "forbidden_task_types": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "asset_priority": {
+      "type": "object",
+      "required": [
+        "team_workflow_priority",
+        "team_eval_priority",
+        "team_assets_override_pal_assets"
+      ],
+      "properties": {
+        "team_workflow_priority": {
+          "type": "string",
+          "enum": ["low", "medium", "high"]
+        },
+        "team_eval_priority": {
+          "type": "string",
+          "enum": ["low", "medium", "high"]
+        },
+        "team_assets_override_pal_assets": {
+          "type": "boolean"
+        },
+        "pal_boundary_overrides_team_role": {
+          "type": "boolean",
+          "const": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "collaboration_policy": {
+      "type": "object",
+      "properties": {
+        "selection_requires_ai_judgement": {
+          "type": "boolean",
+          "const": true
+        },
+        "keyword_routing_allowed": {
+          "type": "boolean",
+          "const": false
+        },
+        "copy_pal_assets_into_team": {
+          "type": "boolean",
+          "const": false
+        },
+        "copy_team_pack_to_external_project": {
+          "type": "boolean",
+          "const": false
+        }
+      },
+      "additionalProperties": true
+    },
+    "memory_policy": {
+      "type": "object",
+      "properties": {
+        "team_memory_enabled": { "type": "boolean" },
+        "private_memory_allowed_in_public_pack": {
+          "type": "boolean",
+          "const": false
+        },
+        "writeback_requires_review": { "type": "boolean" },
+        "external_project_memory_write_default": {
+          "type": "boolean",
+          "const": false
+        }
+      },
+      "additionalProperties": true
+    },
+    "eval_policy": {
+      "type": "object",
+      "properties": {
+        "team_eval_required_for_team_tasks": { "type": "boolean" },
+        "definition_of_done": { "type": "string" },
+        "quality_gates": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "additionalProperties": true
+    },
+    "entry": {
+      "type": "object",
+      "properties": {
+        "team": { "type": "string" },
+        "roster": { "type": "string" },
+        "contacts": { "type": "string" },
+        "resource_index": { "type": "string" }
+      },
+      "additionalProperties": { "type": "string" }
+    },
+    "asset_dirs": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,20 +1,26 @@
 {
-  "schema": "agentpal.external_project_binding.v0.4",
-  "binding_version": "0.4-foundation",
-  "binding_created_at": "REPLACE_WITH_ISO_TIMESTAMP",
+  "schema_version": "agentpal.project_binding.v1",
+  "binding_version": "1.0",
+  "binding_type": "thin",
   "project_name": "REPLACE_WITH_EXTERNAL_PROJECT_NAME",
+  "project_root_hint": "REPLACE_WITH_EXTERNAL_PROJECT_ROOT",
+  "default_pal": "Mira",
+  "runtime": "codex",
+  "agentpal_source": {
+    "type": "central_path",
+    "value": "REPLACE_WITH_AGENTPAL_WORKSPACE_PATH",
+    "workspace_root": "REPLACE_WITH_AGENTPAL_WORKSPACE_PATH"
+  },
+  "enabled_at": "REPLACE_WITH_ISO_TIMESTAMP",
+  "updated_at": "REPLACE_WITH_ISO_TIMESTAMP",
+  "status": "enabled",
+  "last_runtime": "codex",
+  "enabled_runtimes": [
+    "codex"
+  ],
   "active_project_root": "REPLACE_WITH_EXTERNAL_PROJECT_ROOT",
-  "active_project_role": "user_project",
   "agentpal_workspace_root": "REPLACE_WITH_AGENTPAL_WORKSPACE_PATH",
-  "agentpal_workspace_role": "pal_workspace_reference",
   "agentpal_project_record": "workspace/projects/REPLACE_WITH_PROJECT_ID",
-  "runtime_hint": "generic-codex",
-  "active_mode": "simple-pal-mode-only",
-  "agentpal_enabled": true,
-  "project_bound_mode": true,
-  "binding_mode": "thin",
-  "binding_style": "thin-binding",
-  "read_core_from_agentpal_workspace": true,
   "core_gate_paths": [
     "core/agentpal-core-gate.md",
     "core/first-pal-gate.md",
@@ -33,17 +39,13 @@
     "workspace/organization/contacts/pals.json",
     "workspace/organization/contacts/PAL_CONTACTS.md"
   ],
-  "central_contacts_are_not_copied": true,
   "routing_policy": "ai_judgement_only",
   "keyword_routing_allowed": false,
-  "default_main_pal": {
-    "id": "mira-main",
-    "display_name": "Mira",
-    "paths": [
-      "official/pals/Mira-main/PAL.md",
-      "official/pals/Mira-main/core/output-contract.md"
-    ]
-  },
+  "allowed_project_binding_files": [
+    ".agentpal/project.json",
+    ".agentpal/AGENTPAL.md",
+    "AGENTS.md codex runtime-qualified protected block"
+  ],
   "forbidden_default_project_binding_dirs": [
     ".agentpal/memory",
     ".agentpal/state",

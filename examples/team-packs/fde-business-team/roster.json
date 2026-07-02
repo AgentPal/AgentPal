@@ -1,0 +1,81 @@
+{
+  "team_id": "fde-business-team",
+  "members": [
+    {
+      "pal_id": "mira-main",
+      "display_name": "Mira",
+      "team_roles": ["fde-coordinator"],
+      "required": true,
+      "required_for_task_types": ["business-process-discovery", "workflow-blueprint"],
+      "required_for_risk_levels": ["low", "medium", "high"],
+      "can_read_team_assets": true,
+      "can_write_team_memory": true,
+      "notes": "Confirms whether the request needs FDE discovery or should go to an existing execution team."
+    },
+    {
+      "pal_id": "faye-delivery",
+      "display_name": "Faye",
+      "team_roles": ["business-discovery-lead", "workflow-blueprint-lead"],
+      "required": true,
+      "required_for_task_types": ["business-process-discovery", "business-requirement-interview", "workflow-blueprint", "business-team-design"],
+      "required_for_risk_levels": ["low", "medium", "high"],
+      "can_read_team_assets": true,
+      "can_write_team_memory": true,
+      "notes": "Owns business flow discovery, solution shaping, and team setup; exits after workflow and team handoff are defined."
+    },
+    {
+      "pal_id": "nova-product",
+      "display_name": "Nova",
+      "team_roles": ["operating-model-reviewer"],
+      "required": false,
+      "required_for_task_types": ["fde-solution-planning", "business-team-design"],
+      "required_for_risk_levels": ["medium", "high"],
+      "can_read_team_assets": true,
+      "can_write_team_memory": false,
+      "notes": "Reviews value, scope, target users, and operating assumptions."
+    },
+    {
+      "pal_id": "palsmith-pal-governor",
+      "display_name": "PalSmith",
+      "team_roles": ["team-governance-reviewer"],
+      "required": false,
+      "required_for_task_types": ["business-team-design"],
+      "required_for_risk_levels": ["medium", "high"],
+      "can_read_team_assets": true,
+      "can_write_team_memory": false,
+      "notes": "Reviews Pal/team design, governance, and publication boundaries; does not perform ordinary business execution."
+    },
+    {
+      "pal_id": "quinn-quality",
+      "display_name": "Quinn",
+      "team_roles": ["risk-and-closure-reviewer"],
+      "required": false,
+      "required_for_task_types": ["workflow-blueprint", "fde-solution-planning"],
+      "required_for_risk_levels": ["medium", "high"],
+      "can_read_team_assets": true,
+      "can_write_team_memory": false,
+      "notes": "Reviews acceptance criteria, risk coverage, and Closure Gate completeness."
+    }
+  ],
+  "open_roles": [
+    {
+      "role_id": "execution-team-owner",
+      "required_capabilities": ["domain-execution", "operational-ownership"],
+      "selection_policy": "ask_user",
+      "preferred_pals": []
+    },
+    {
+      "role_id": "marketing-or-content-team",
+      "required_capabilities": ["content-calendar", "campaign-execution", "publication-operations"],
+      "selection_policy": "ask_user",
+      "preferred_pals": []
+    }
+  ],
+  "selection_policy": {
+    "team_role_is_not_pal_identity": true,
+    "pals_may_join_multiple_teams": true,
+    "copy_pal_assets_into_team_pack": false,
+    "selection_requires_ai_judgement": true,
+    "keyword_routing_allowed": false
+  }
+}

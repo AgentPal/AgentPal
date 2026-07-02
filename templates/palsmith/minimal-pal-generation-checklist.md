@@ -5,6 +5,11 @@ Use this checklist when PalSmith prepares a Minimal Pal creation or upgrade pack
 ## Target
 
 - target Pal name:
+- target human display name:
+- role title:
+- contact label:
+- canonical id:
+- user custom name:
 - target Pal id:
 - target path:
 - intended users:
@@ -49,11 +54,19 @@ Use this checklist when PalSmith prepares a Minimal Pal creation or upgrade pack
 | `evals/definition-of-done.md` | missing | |
 | `reports/README.md` | missing | |
 | `state/README.md` | missing | |
+| Contact Capability Card placeholder or complete card | missing | |
+| Pal Asset Preflight template or inheritance note | missing | |
 
 ## Boundary Checks
 
 | Check | Status | Evidence / note |
 | --- | --- | --- |
+| display name is a human name, not role-only label | not-run | |
+| role title is separate from display name | not-run | |
+| `canonical_id` is stable and unique | not-run | |
+| `contact_label` distinguishes role / conflict context | not-run | |
+| aliases preserve historical names | not-run | |
+| naming conflict check completed | not-run | |
 | `pal.json` parses | not-run | |
 | `completeness_level` uses allowed enum | not-run | Allowed: `persona_only`, `persona_plus_voice`, `role_plus_knowledge`, `role_plus_workflow`, `executable_pal`, `verified_pal`. |
 | Pal Runtime Read Order present | not-run | |

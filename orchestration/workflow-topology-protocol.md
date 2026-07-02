@@ -8,6 +8,10 @@ See also:
 
 - `orchestration/fast-route-protocol.md`
 - `orchestration/deep-conductor-protocol.md`
+- `orchestration/workflow-execution-contract-protocol.md`
+- `orchestration/workflow-closure-gate-protocol.md`
+
+When a topology names actual participants, child Steps, or verifiers for the current task, represent it with a Workflow Execution Contract. A topology suggestion alone is not evidence that the participant acted.
 
 ## Topologies
 
@@ -92,7 +96,7 @@ Suitable when:
 - false completion risk is meaningful
 - release, safety, or quality gate review is needed
 
-v0.1 active: no. It can be described as a future workflow or represented manually in a Task Package.
+v0.1 active: no automated workflow. It can be described as a future workflow or represented manually in a Task Package. In v0.6 no-code coordination, if a verifier is written into a current Execution Contract, the verifier Step must close through the Closure Gate.
 
 ## Plan -> Execute -> Verify
 
@@ -101,7 +105,7 @@ Suitable when:
 - work requires file edits, commands, or external execution
 - planning and execution evidence should be separated
 
-v0.1 active: no automated topology. The plan can be written as a Task Package.
+v0.1 active: no automated topology. The plan can be written as a Task Package. In v0.6 no-code coordination, if execution and verification are tracked for the current task, they must be represented as Steps in a Workflow Execution Contract.
 
 ## Parallel Independent Review
 
@@ -115,6 +119,7 @@ Context isolation:
 
 - each reviewer receives its own Context Access List
 - reviewers do not read each other's drafts before submission
+- each reviewer Step must close before the summary claims that reviewer participated
 
 v0.1 active: no.
 

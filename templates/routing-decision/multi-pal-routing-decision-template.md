@@ -20,6 +20,15 @@ REPLACE_WITH_OWNER_PAL
 
 - REPLACE_WITH_REVIEWER
 
+## Capability Card And Veto Checks
+
+- owner card:
+- consultant cards:
+- reviewer cards:
+- vetoed candidate(s):
+- veto reason(s):
+- replacement or child step:
+
 ## Final summarizer
 
 Mira

@@ -1,0 +1,16 @@
+{
+  "team_id": "research-team",
+  "use_when": [
+    "The user asks for source-grounded research.",
+    "The user needs findings, evidence boundaries, and uncertainty.",
+    "The task benefits from lead research plus evidence review."
+  ],
+  "do_not_use_when": [
+    "The task is a direct implementation task.",
+    "The user only needs a small wording edit.",
+    "The task requires a final regulated-domain judgement."
+  ],
+  "preferred_entry": "mira-main",
+  "selection_policy": "AI judgement using current user goal, team.json, roster.json, and available runtime evidence.",
+  "keyword_routing_allowed": false
+}

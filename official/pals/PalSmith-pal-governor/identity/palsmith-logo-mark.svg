@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">PalSmith logo mark</title>
+  <desc id="desc">A black and white shield-forge mark for the PalSmith Pal asset governor.</desc>
+  <path fill="#050505" d="M512 72 804 232v246c0 179-107 325-292 464-185-139-292-285-292-464V232L512 72Z"/>
+  <path fill="#fff" d="M512 156 728 276v194c0 132-72 242-216 354-144-112-216-222-216-354V276l216-120Z"/>
+  <path fill="#050505" d="M512 216 676 306v160c0 104-52 190-164 282-112-92-164-178-164-282V306l164-90Z"/>
+  <path fill="#fff" d="M388 330h248v54H388zM424 416h176v48H424z"/>
+  <path fill="#fff" d="M352 586h320l-42 76H394l-42-76Z"/>
+  <path fill="#fff" d="M430 510h164l48 48H382l48-48Z"/>
+  <path fill="#fff" d="M462 704 350 592l44-44 68 68 168-168 44 44-212 212Z"/>
+</svg>

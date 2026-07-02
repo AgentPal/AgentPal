@@ -1,11 +1,12 @@
 # Root AGENTS.md / CLAUDE.md AgentPal Block Template
 
-Use this protected block in an external project root `AGENTS.md`. The same thin block may be used in `CLAUDE.md` for Claude Code.
+Use this protected block in an external project root runtime instruction file.
 
-Replace `<runtime-hint>` with `codex`, `claude-code`, `generic-cli`, `codewhale`, `gemini-cli`, or `unknown`.
+Replace `<runtime>` with `codex`, `claude-code`, `generic-cli`, `codewhale`, `gemini-cli`, or `unknown`.
+Use runtime-qualified markers. For Codex use `<!-- BEGIN AGENTPAL BINDING: codex -->` / `<!-- END AGENTPAL BINDING: codex -->`; for Claude Code use `<!-- BEGIN AGENTPAL BINDING: claude-code -->` / `<!-- END AGENTPAL BINDING: claude-code -->`.
 
 ```text
-<!-- BEGIN AGENTPAL WORKGROUP -->
+<!-- BEGIN AGENTPAL BINDING: <runtime> -->
 This project is connected to AgentPal.
 
 When this file is loaded, enter AgentPal project-bound mode for this project.
@@ -15,7 +16,7 @@ This block is managed by AgentPal.
 When removing the AgentPal workgroup, delete only this block.
 Do not delete user-authored AGENTS.md or CLAUDE.md content outside this block.
 
-Runtime hint: <runtime-hint>
+Runtime: <runtime>
 
 AgentPal workspace root is recorded in `.agentpal/project.json`.
 The central project record path is recorded as `agentpal_project_record` and points to `workspace/projects/<project-id>` inside the AgentPal workspace.
@@ -68,7 +69,7 @@ Only explicit handoff, takeover, or owner-transfer wording changes the mode to `
 `/pal` and `@Pal` are AgentPal plain-text protocols in this binding, not required native Runtime or CLI commands.
 
 Claude Code access to the AgentPal workspace is configured in `.claude/settings.local.json` when Claude Code is used.
-<!-- END AGENTPAL WORKGROUP -->
+<!-- END AGENTPAL BINDING: <runtime> -->
 ```
 
 Use this block as a lightweight binding only. Do not copy AgentPal Pal Packs into the external project.

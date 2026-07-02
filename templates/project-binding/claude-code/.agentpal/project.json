@@ -1,18 +1,39 @@
 {
-  "schema": "agentpal.external_project_binding.v0.4",
-  "binding_style": "thin-binding",
-  "active_project_root": "<absolute external project root>",
-  "agentpal_workspace_root": "<absolute AgentPal workspace root>",
-  "agentpal_project_record": "workspace/projects/<project-id>",
-  "runtime_hint": "claude-code",
-  "ordinary_messages_go_to": "Mira",
-  "project_context_policy": "active_project_root_only",
+  "schema_version": "agentpal.project_binding.v1",
+  "binding_version": "1.0",
+  "binding_type": "thin",
+  "project_name": "REPLACE_WITH_EXTERNAL_PROJECT_NAME",
+  "project_root_hint": "REPLACE_WITH_EXTERNAL_PROJECT_ROOT",
+  "default_pal": "Mira",
+  "runtime": "claude-code",
+  "agentpal_source": {
+    "type": "central_path",
+    "value": "REPLACE_WITH_AGENTPAL_WORKSPACE_PATH",
+    "workspace_root": "REPLACE_WITH_AGENTPAL_WORKSPACE_PATH"
+  },
+  "enabled_at": "REPLACE_WITH_ISO_TIMESTAMP",
+  "updated_at": "REPLACE_WITH_ISO_TIMESTAMP",
+  "status": "enabled",
+  "last_runtime": "claude-code",
+  "enabled_runtimes": [
+    "claude-code"
+  ],
+  "active_project_root": "REPLACE_WITH_EXTERNAL_PROJECT_ROOT",
+  "agentpal_workspace_root": "REPLACE_WITH_AGENTPAL_WORKSPACE_PATH",
+  "agentpal_project_record": "workspace/projects/REPLACE_WITH_PROJECT_ID",
+  "core_gate_paths": [
+    "core/agentpal-core-gate.md",
+    "core/first-pal-gate.md",
+    "core/deliverable-aware-task-judgement-gate.md",
+    "core/project-binding-thin-contract.md",
+    "core/runtime-response-gate.md"
+  ],
   "central_contacts": "workspace/organization/contacts/pals.json",
   "central_contacts_are_not_copied": true,
   "allowed_project_binding_files": [
     ".agentpal/project.json",
     ".agentpal/AGENTPAL.md",
-    "CLAUDE.md protected block",
+    "CLAUDE.md claude-code runtime-qualified protected block",
     ".claude/settings.local.json",
     ".gitignore entry for .claude/settings.local.json"
   ],

@@ -26,6 +26,19 @@ with only a name, persona, or voice is not an executable Pal. PalSmith records
 completeness levels from `persona_seed_only` through `verified_executable_pal`
 and produces Missing Asset Plans when required assets are absent.
 
+R218D adds the v0.6 Pal / Team asset preflight and naming increment. PalSmith
+must create Pals as human-name + role-title identities, not role-only labels. It
+must support user renames through stable canonical ids, stage same-name imports
+with contact labels, and include Pal Asset Preflight, Team Asset Preflight, and
+Workflow Execution Contract placeholders in relevant creation plans.
+
+R219D connects PalSmith to Mira's v0.6 team entry path. When Mira judges that a
+user wants a durable team, PalSmith plans the Team Pack: `TEAM.md`, `team.json`,
+`roster.json`, team roles, workflow placeholder, eval placeholder, memory
+placeholder, routing-card placeholder, and member Pal preflight requirements.
+PalSmith still produces plans and Runtime Task Packages; it does not become a
+background creator, scanner, installer, or team runtime.
+
 R179 adds a no-code draft-to-user-custom Pal installation flow. This lets PalSmith plan how a reviewed draft Pal Pack can become a user custom Pal under a private-by-default user custom area, without promoting it to official Pal status, without writing central contacts, and without building an installer or runtime service.
 
 R185-R191 add user custom Pal discovery authorization, explicit invocation boundaries, revocation readiness, real host read-only regression, and external readability review. User custom Pals remain private by default and are not central contacts or official Pals.
@@ -53,6 +66,25 @@ tools, shell commands, and MCP tools are execution tools, not Pal assets. A Pal
 should load and use its own relevant identity, knowledge, Skill, workflow,
 runtime policy, memory, and eval assets before tool-backed work, then report the
 Asset Use Summary when needed.
+
+v0.6 preflight references:
+
+- `core/pal-asset-preflight-protocol.md`
+- `core/team-asset-preflight-protocol.md`
+- `core/team-pal-asset-priority-protocol.md`
+- `standards/pal-asset/pal-naming-and-import-conflict-protocol.md`
+- `templates/pal/pal-asset-preflight.md`
+- `templates/team/team-asset-preflight.md`
+- `templates/team/workflow-execution-contract.md`
+
+v0.6 Team Pack creation references:
+
+- `docs/03-pal-pack-standard/16-team-pack-standard.md`
+- `templates/team-pack/standard-team-pack/`
+- `official/pals/PalSmith-pal-governor/core/pal-team-creation-protocol.md`
+- `official/pals/PalSmith-pal-governor/core/ai-team-builder-protocol.md`
+- `official/pals/PalSmith-pal-governor/templates/pal-team-plan.md`
+- `official/pals/PalSmith-pal-governor/templates/task-packages/create-ai-team-from-goal.md`
 
 Release readiness is checked through Markdown evals, including `official/pals/PalSmith-pal-governor/evals/palsmith-release-scope-eval.md` and the R192 closeout reviews under `evals/palbench/v0.5/palsmith/`.
 
@@ -107,7 +139,7 @@ Docs entry points:
 /pal PalSmith 这个 Pal 怎么感觉不好用
 /pal PalSmith 用这些资料创建一个可实际工作的私域运营 Pal
 /pal PalSmith 给这个 Pal 补行业知识，但保留来源和不确定性
-/pal PalSmith 创建一个马斯克思维的产品经理 Pal，并保持公开来源边界
+/pal PalSmith 创建一个名叫 Evan、岗位是产品经理的 Pal，并保持公开来源边界
 /pal PalSmith 创建一个韩立性格和说话风格的风险审查 Pal，注意版权边界
 /pal PalSmith 把我们公司售前专家的经验蒸馏成售前 Pal，先判断隐私和授权
 /pal PalSmith 给 Luma 增加新的语气、性格和设计思维，先判断是不是 existing Pal composite upgrade，不要直接写 persona
@@ -126,7 +158,7 @@ User-facing entry points:
 
 - `docs/PalSmith.md`
 - `docs/06-palsmith/README.md`
-- `examples/palsmith/composite-pal-creation-examples.md`
+- `examples/user-guides/palsmith/composite-pal-creation-examples.md`
 - `prompts/palsmith/create-composite-pal.md`
 
 Composite creation keeps source boundaries clear. Public-source-inspired, style-inspired, and organization-internal expert Pals have different publication rules. Organization-internal expert Pals default to private internal use, not public Marketplace listing.

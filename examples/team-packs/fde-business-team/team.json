@@ -1,0 +1,75 @@
+{
+  "schema": "agentpal.team-pack.v0.6",
+  "type": "team-pack",
+  "team_id": "fde-business-team",
+  "display_name": "FDE Business Team",
+  "version": "0.6.0",
+  "status": "draft",
+  "description": "A public-safe Team Pack example for business flow discovery, process blueprinting, team role design, and workflow setup before daily execution begins.",
+  "discoverable": true,
+  "contactable": true,
+  "team_modes": ["consult", "delegate", "joint_work", "review"],
+  "default_owner_role": "business-discovery-lead",
+  "default_entry_pal": "mira-main",
+  "supported_task_types": [
+    "business-process-discovery",
+    "business-requirement-interview",
+    "workflow-blueprint",
+    "business-team-design",
+    "fde-solution-planning"
+  ],
+  "forbidden_task_types": [
+    "established-team-daily-execution",
+    "routine-content-production",
+    "video-editing",
+    "code-implementation",
+    "release-gate-verification",
+    "simple-testing"
+  ],
+  "asset_priority": {
+    "team_workflow_priority": "high",
+    "team_eval_priority": "high",
+    "team_assets_override_pal_assets": false,
+    "pal_boundary_overrides_team_role": true
+  },
+  "collaboration_policy": {
+    "selection_requires_ai_judgement": true,
+    "keyword_routing_allowed": false,
+    "copy_pal_assets_into_team": false,
+    "copy_team_pack_to_external_project": false
+  },
+  "memory_policy": {
+    "team_memory_enabled": true,
+    "private_memory_allowed_in_public_pack": false,
+    "writeback_requires_review": true,
+    "external_project_memory_write_default": false
+  },
+  "eval_policy": {
+    "team_eval_required_for_team_tasks": true,
+    "definition_of_done": "evals/definition-of-done.md",
+    "quality_gates": [
+      "business-goal-stated",
+      "current-process-mapped",
+      "roles-and-data-listed",
+      "risk-and-assumption-boundary-stated",
+      "faye-exit-condition-recorded"
+    ]
+  },
+  "entry": {
+    "team": "TEAM.md",
+    "roster": "roster.json",
+    "contacts": "TEAM_CONTACTS.md",
+    "resource_index": "RESOURCE_INDEX.md"
+  },
+  "asset_dirs": {
+    "roles": "roles/",
+    "knowledge": "knowledge/",
+    "skills": "skills/",
+    "workflows": "workflows/",
+    "runbooks": "runbooks/",
+    "memory": "memory/",
+    "evals": "evals/",
+    "routing": "routing/",
+    "reports": "reports/"
+  }
+}

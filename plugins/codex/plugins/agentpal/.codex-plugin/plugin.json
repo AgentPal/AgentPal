@@ -1,0 +1,40 @@
+{
+  "name": "agentpal",
+  "version": "0.1.0",
+  "description": "Codex host plugin for installing AgentPal project thin bindings.",
+  "author": {
+    "name": "AgentPal"
+  },
+  "homepage": "https://github.com/AgentPal/AgentPal",
+  "repository": "https://github.com/AgentPal/AgentPal",
+  "license": "MIT",
+  "keywords": [
+    "agentpal",
+    "codex",
+    "thin-binding",
+    "pal",
+    "ai-team"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "AgentPal for Codex",
+    "shortDescription": "Add AgentPal to the current Codex project.",
+    "longDescription": "AgentPal for Codex installs a host-level Codex plugin that can create, inspect, repair, and remove project-local AgentPal thin bindings without copying Pal assets or starting background services.",
+    "developerName": "AgentPal",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/AgentPal/AgentPal",
+    "privacyPolicyURL": "https://github.com/AgentPal/AgentPal",
+    "termsOfServiceURL": "https://github.com/AgentPal/AgentPal",
+    "defaultPrompt": [
+      "Add AgentPal to this project",
+      "Check AgentPal status",
+      "Repair AgentPal"
+    ],
+    "brandColor": "#2563EB"
+  }
+}

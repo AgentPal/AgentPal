@@ -10,7 +10,7 @@
 ```text
 # 线程 2：执行层交接
 负责完善 Codex / Claude Code 任务提示词和仓库交接格式。
-只修改 skills/requirement-to-agent-task/、skills/repository-handoff/ 和 examples/usage/。
+只修改 skills/requirement-to-agent-task/、skills/repository-handoff/ 和 examples/user-guides/usage/。
 不要修改通讯录或 runtime 文件。
 ```
 

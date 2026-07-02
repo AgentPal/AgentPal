@@ -1,0 +1,13 @@
+{
+  "team_id": "example-team",
+  "use_when": [
+    "The user names this team directly.",
+    "The task matches a stable team workflow."
+  ],
+  "do_not_use_when": [
+    "A single owner Pal can handle the task clearly.",
+    "The task belongs to a forbidden task type."
+  ],
+  "selection_policy": "AI judgement using team.json, roster.json, current contacts, and current task context.",
+  "keyword_routing_allowed": false
+}

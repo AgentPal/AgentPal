@@ -1,7 +1,9 @@
 {
   "schema": "agentpal.pal-asset-manifest.v0.5",
   "pal_id": "palsmith-pal-governor",
-  "display_name": "PalSmith / Pal Asset Governor",
+  "display_name": "PalSmith",
+  "role_title": "Pal and Team Asset Governor",
+  "contact_label": "PalSmith · Pal Governance",
   "asset_standard": "agentpal-pal-asset-standard.v0.5",
   "manifest_version": "0.5.0-official-palsmith-manifest",
   "generated_at": "2026-06-28",

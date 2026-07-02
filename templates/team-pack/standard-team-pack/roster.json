@@ -1,0 +1,37 @@
+{
+  "team_id": "example-team",
+  "members": [
+    {
+      "pal_id": "mira-main",
+      "display_name": "Mira",
+      "team_roles": ["coordinator"],
+      "required": true,
+      "required_for_task_types": ["example-task"],
+      "required_for_risk_levels": ["medium", "high"],
+      "can_read_team_assets": true,
+      "can_write_team_memory": true,
+      "notes": "Entry and coordination Pal. This is a reference, not a copied Pal asset."
+    }
+  ],
+  "open_roles": [
+    {
+      "role_id": "owner",
+      "required_capabilities": ["own-task-family", "use-team-workflow"],
+      "selection_policy": "select_from_contacts_by_capability",
+      "preferred_pals": []
+    },
+    {
+      "role_id": "verifier",
+      "required_capabilities": ["quality-review", "definition-of-done-review"],
+      "selection_policy": "select_from_contacts_by_capability",
+      "preferred_pals": []
+    }
+  ],
+  "selection_policy": {
+    "team_role_is_not_pal_identity": true,
+    "pals_may_join_multiple_teams": true,
+    "copy_pal_assets_into_team_pack": false,
+    "selection_requires_ai_judgement": true,
+    "keyword_routing_allowed": false
+  }
+}

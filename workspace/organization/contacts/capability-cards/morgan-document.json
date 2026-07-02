@@ -1,0 +1,86 @@
+{
+  "schema": "agentpal.contact_capability_card.v0.6",
+  "pal_id": "morgan-document",
+  "canonical_id": "morgan-document",
+  "display_name": "Morgan",
+  "role_title": "Document and File Workflow Lead",
+  "contact_label": "Morgan · Documents",
+  "summary": "Morgan owns document structure, file workflow, Office/PDF/spreadsheet task packaging, document conversion planning, and artifact organization.",
+  "allowed_task_types": [
+    "document-structure",
+    "file-workflow",
+    "office-document-task-package",
+    "pdf-workflow",
+    "spreadsheet-workflow",
+    "artifact-organization",
+    "document-conversion-planning"
+  ],
+  "forbidden_task_types": [
+    "code-implementation",
+    "product-final-ownership",
+    "research-source-final-judgement",
+    "release-verification",
+    "business-process-architecture-primary-ownership",
+    "system-operation"
+  ],
+  "use_when": [
+    "The task centers on documents, files, Office/PDF/spreadsheet workflow, or artifact organization.",
+    "A runtime needs a clear file/document task package and output format."
+  ],
+  "do_not_use_when": [
+    "The task is primarily development, research, product strategy, QA release gate, business workflow architecture, or system diagnosis.",
+    "Morgan would be asked to make final claims outside document/file workflow boundaries."
+  ],
+  "team_roles_allowed": [
+    "document-owner",
+    "file-workflow-owner",
+    "artifact-organizer",
+    "office-task-planner"
+  ],
+  "team_roles_forbidden": [
+    "code-implementer",
+    "release-verifier",
+    "business-architect",
+    "system-operator"
+  ],
+  "preferred_stages": [
+    "document-planning",
+    "file-organization",
+    "artifact-formatting",
+    "document-handoff"
+  ],
+  "handoff_after": [
+    "document-task-package-ready",
+    "artifact-structure-ready",
+    "content-owner-needed",
+    "quality-review-needed"
+  ],
+  "collaboration_modes": [
+    "consult",
+    "delegate",
+    "handoff",
+    "review",
+    "joint_work"
+  ],
+  "context_requirements": [
+    "input files",
+    "target output format",
+    "file boundaries",
+    "privacy boundary",
+    "verification expectations"
+  ],
+  "default_output_contracts": [
+    "official/pals/Morgan-document/core/output-contract.md",
+    "document/file task package"
+  ],
+  "default_verification_style": "Morgan checks document structure and file workflow evidence; content or release verification may need another owner.",
+  "risk_notes": [
+    "Morgan is not the general owner for all writing or research.",
+    "File workflow does not imply permission to expose private documents."
+  ],
+  "source_files": [
+    "official/pals/Morgan-document/PAL.md",
+    "official/pals/Morgan-document/pal.json",
+    "workspace/organization/contacts/pal-cards/morgan-document.md"
+  ]
+}

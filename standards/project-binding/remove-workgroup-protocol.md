@@ -41,24 +41,26 @@ Do not remove anything until the user confirms.
 
 After confirmation:
 
-1. Delete the target project's `.agentpal/` directory.
-2. Remove only the target root `AGENTS.md` block between `<!-- BEGIN AGENTPAL WORKGROUP -->` and `<!-- END AGENTPAL WORKGROUP -->`.
-3. If present in a Claude Code project, remove only the root `CLAUDE.md` AgentPal block between the same markers.
-4. Legacy bindings may use `BEGIN AGENTPAL WORKGROUP` and `END AGENTPAL WORKGROUP`; remove that legacy block only when no HTML marker block is present.
-5. If `AGENTS.md` is empty or blank after removing the block, replace it with the non-workgroup deactivation marker from `templates/project-binding/agentpal-removed-agents-template.md`.
-6. If root `AGENTS.md` did not exist, create that same non-workgroup deactivation marker.
-7. For Claude Code, remove the AgentPal workspace path from `.claude/settings.local.json` `permissions.additionalDirectories`, preserving all other settings.
-8. Remove or mark removed the matching central project record under `workspace/projects/<project-id>/` and `workspace/projects/projects.index.json` when such a public/approved record exists.
-9. If a legacy registry entry exists under `archive/migration-from-v0.3/root-legacy/projects/registered-projects.json` or `.md`, mark it as historical rather than treating it as current truth.
-10. Archive matching AgentPal binding memory under `workspace/organization/memory/projects/` or the selected central project record by default.
-11. Clear ignored local runtime state under `.agentpal/local/state/` only if it points to the removed project.
-12. Generate a concise removal summary that warns about old runtime thread context.
+1. Identify the runtime binding being removed: `codex`, `claude-code`, or full project disconnection.
+2. For Codex removal, remove only the target root `AGENTS.md` block between `<!-- BEGIN AGENTPAL BINDING: codex -->` and `<!-- END AGENTPAL BINDING: codex -->`.
+3. For Claude Code removal, remove only the root `CLAUDE.md` block between `<!-- BEGIN AGENTPAL BINDING: claude-code -->` and `<!-- END AGENTPAL BINDING: claude-code -->`.
+4. Legacy bindings may use `<!-- AGENTPAL:BEGIN -->` / `<!-- AGENTPAL:END -->` or `<!-- BEGIN AGENTPAL WORKGROUP -->` / `<!-- END AGENTPAL WORKGROUP -->`; remove that legacy block only from the current runtime's instruction file during migration or cleanup.
+5. Remove the current runtime from `.agentpal/project.json` `enabled_runtimes` and update `last_runtime`, `runtime`, `updated_at`, and `status`.
+6. Delete the target project's `.agentpal/` directory only when `enabled_runtimes` is empty.
+7. If another runtime remains enabled, preserve `.agentpal/project.json` and `.agentpal/AGENTPAL.md`.
+8. If `AGENTS.md` is empty or blank after removing the Codex block in a full project disconnection, replace it with the non-workgroup deactivation marker from `templates/project-binding/agentpal-removed-agents-template.md`.
+9. If root `AGENTS.md` did not exist and this is a full project disconnection, create that same non-workgroup deactivation marker.
+10. For Claude Code, remove the AgentPal workspace path from `.claude/settings.local.json` `permissions.additionalDirectories`, preserving all other settings.
+11. Remove or mark removed the matching central project record under `workspace/projects/<project-id>/` and `workspace/projects/projects.index.json` only when such a public/approved record exists and the user asked for full project disconnection.
+12. If a legacy registry entry exists under `archive/migration-from-v0.3/root-legacy/projects/registered-projects.json` or `.md`, mark it as historical rather than treating it as current truth.
+13. Archive matching AgentPal binding memory under `workspace/organization/memory/projects/` or the selected central project record by default only for full project disconnection.
+14. Clear ignored local runtime state under `.agentpal/local/state/` only if it points to the removed project.
+15. Generate a concise removal summary that warns about old runtime thread context.
 
 Keyword rules:
 
-- delete .agentpal
-- remove AGENTS.md AgentPal block
-- remove CLAUDE.md AgentPal block when present
+- delete `.agentpal/` only when no runtime binding remains
+- remove only the current runtime's AGENTS.md or CLAUDE.md AgentPal block
 - remove only AgentPal path from Claude Code additionalDirectories when present
 - leave deactivation marker if AGENTS.md would otherwise be empty or missing
 - do not delete user AGENTS content
@@ -82,9 +84,9 @@ Remove AgentPal workgroup does not delete:
 
 Only delete:
 
-- target project `.agentpal/`
-- target project `AGENTS.md` AgentPal block
-- target project `CLAUDE.md` AgentPal block when present
+- target project `.agentpal/` only when `enabled_runtimes` is empty
+- target project `AGENTS.md` Codex AgentPal block when removing Codex
+- target project `CLAUDE.md` Claude Code AgentPal block when removing Claude Code
 - target project `.claude/settings.local.json` AgentPal additionalDirectories entry when present
 - AgentPal central project record for that target, when present and approved for cleanup
 - AgentPal ignored local active project state for that target

@@ -1,5 +1,7 @@
 # External Project Mira Default Self-Test
 
+Legacy archive note: this file documents the old pre-runtime-qualified marker format for migration history only. New bindings must use runtime-qualified markers.
+
 ## Purpose
 
 Verify that an external project connected to AgentPal defaults ordinary conversation to Mira.

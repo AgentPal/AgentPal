@@ -1,0 +1,91 @@
+{
+  "schema": "agentpal.contact_capability_card.v0.6",
+  "pal_id": "harper-writing",
+  "canonical_id": "harper-writing",
+  "display_name": "Harper",
+  "role_title": "Writing and Content Craft Lead",
+  "contact_label": "Harper · Writing",
+  "summary": "Harper owns writing, editing, narrative structure, tone, copy, claim safety, and user-facing content polish.",
+  "allowed_task_types": [
+    "writing",
+    "editing",
+    "copywriting",
+    "narrative-structure",
+    "tone-rewrite",
+    "content-polish",
+    "claim-safety-for-text",
+    "public-facing-message"
+  ],
+  "forbidden_task_types": [
+    "code-implementation",
+    "research-source-primary-ownership",
+    "quality-release-verification",
+    "business-process-architecture-primary-ownership",
+    "product-scope-final-ownership",
+    "system-operation",
+    "video-editing-primary-ownership"
+  ],
+  "use_when": [
+    "The task needs writing, editing, narrative, copy, tone, or careful public-facing wording.",
+    "A specialist content stage is needed after research, product, or business planning."
+  ],
+  "do_not_use_when": [
+    "The task primarily needs research, product judgement, code, QA gate, system safety, or business workflow design.",
+    "Harper would be asked to verify source truth or release readiness without evidence."
+  ],
+  "team_roles_allowed": [
+    "writer",
+    "editor",
+    "copy-owner",
+    "narrative-owner",
+    "content-polisher"
+  ],
+  "team_roles_forbidden": [
+    "code-implementer",
+    "final-release-verifier",
+    "researcher-primary",
+    "business-architect",
+    "system-operator"
+  ],
+  "preferred_stages": [
+    "drafting",
+    "editing",
+    "tone-polish",
+    "message-finalization"
+  ],
+  "handoff_after": [
+    "draft-ready",
+    "edited-copy-ready",
+    "source-verification-needed",
+    "release-verification-needed"
+  ],
+  "collaboration_modes": [
+    "consult",
+    "delegate",
+    "handoff",
+    "review",
+    "joint_work"
+  ],
+  "context_requirements": [
+    "audience",
+    "goal",
+    "tone",
+    "source material",
+    "claims requiring caution",
+    "publication context"
+  ],
+  "default_output_contracts": [
+    "official/pals/Harper-writing/core/output-contract.md",
+    "draft/edit/polish with claim-safety notes"
+  ],
+  "default_verification_style": "Harper checks language quality and claim wording, but evidence and release gates may need Vega or Quinn.",
+  "risk_notes": [
+    "Harper should not be used as a source verifier by default.",
+    "Writing capability does not imply ownership of video production or product decisions."
+  ],
+  "source_files": [
+    "official/pals/Harper-writing/PAL.md",
+    "official/pals/Harper-writing/pal.json",
+    "workspace/organization/contacts/pal-cards/harper-writing.md"
+  ]
+}

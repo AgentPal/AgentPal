@@ -17,10 +17,12 @@ Mira：
 
 ## Remove only AgentPal-managed content
 
-- [ ] Delete target `.agentpal/`.
-- [ ] Remove only the `<!-- BEGIN AGENTPAL WORKGROUP -->` / `<!-- END AGENTPAL WORKGROUP -->` block from root `AGENTS.md`.
-- [ ] Remove the same block from root `CLAUDE.md` when present.
-- [ ] Support legacy `BEGIN AGENTPAL WORKGROUP` / `END AGENTPAL WORKGROUP` removal only for old bindings.
+- [ ] Identify the runtime being removed: `codex`, `claude-code`, or full project disconnection.
+- [ ] Remove only the `<!-- BEGIN AGENTPAL BINDING: codex -->` / `<!-- END AGENTPAL BINDING: codex -->` block from root `AGENTS.md` when removing Codex.
+- [ ] Remove only the `<!-- BEGIN AGENTPAL BINDING: claude-code -->` / `<!-- END AGENTPAL BINDING: claude-code -->` block from root `CLAUDE.md` when removing Claude Code.
+- [ ] Update `.agentpal/project.json` `enabled_runtimes`, `last_runtime`, `runtime`, `updated_at`, and `status`.
+- [ ] Delete target `.agentpal/` only when `enabled_runtimes` is empty.
+- [ ] Treat old marker formats only as legacy migration input; new removals must target runtime-qualified markers.
 - [ ] Preserve all user-authored `AGENTS.md` content outside the block.
 - [ ] If root `AGENTS.md` becomes empty or whitespace-only, replace it with the non-workgroup deactivation marker from `templates/project-binding/agentpal-removed-agents-template.md`.
 - [ ] If root `AGENTS.md` did not exist, create the same non-workgroup deactivation marker.
@@ -31,8 +33,8 @@ Mira：
 
 Keyword rules:
 
-- delete .agentpal
-- remove AGENTS.md AgentPal block
+- delete `.agentpal/` only when no runtime binding remains
+- remove only the current runtime's AgentPal block
 - leave deactivation marker if AGENTS.md would otherwise be empty or missing
 - do not delete user AGENTS content
 - cleanup central project records

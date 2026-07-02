@@ -25,6 +25,8 @@ Each step produces no-code artifacts that a host Runtime may read, execute, or v
 
 For end-to-end work, the complete output shape is `templates/orchestration/deep-conductor-e2e-package.md` plus `templates/orchestration/deep-conductor-e2e-synthesis-report.md`. The E2E package integrates memory, Capability Inventory, Context Budget, topology, Context Packets, Runtime Skill-aware packages, verification, synthesis, Routing Memory, and next-round recommendation.
 
+When Deep Conductor names actual current-task participants, child Steps, or verifiers, create a Workflow Execution Contract and close it through the Closure Gate before claiming the workflow completed.
+
 ## Step 1: Goal Intake
 
 Purpose: capture the user's goal and decide whether it is an ordinary task, a composite task, or a project-level continuing task.
@@ -215,6 +217,7 @@ Purpose: choose the simplest topology that can satisfy the goal and evidence nee
 Read:
 
 - `orchestration/workflow-topology-protocol.md`;
+- `orchestration/workflow-execution-contract-protocol.md`;
 - `orchestration/owner-verifier-workflow-protocol.md`;
 - `orchestration/parallel-independent-review-protocol.md`;
 - `orchestration/plan-execute-verify-protocol.md`;
@@ -225,7 +228,8 @@ Output:
 - selected topology;
 - alternatives rejected;
 - topology reason;
-- owner/verifier/reviewer candidate boundaries.
+- owner/verifier/reviewer candidate boundaries;
+- whether the plan must become a Workflow Execution Contract.
 
 Do not:
 
@@ -236,6 +240,7 @@ Do not:
 Templates:
 
 - `templates/orchestration/deep-conductor-plan.md`
+- `templates/orchestration/workflow-execution-contract.md`
 - `templates/orchestration/conductor-decision-record.md`
 
 Eval:
@@ -364,6 +369,7 @@ Purpose: define how completion will be checked before the Runtime executes.
 Read:
 
 - `orchestration/owner-verifier-workflow-protocol.md`;
+- `orchestration/workflow-step-state-machine.md`;
 - `templates/orchestration/verifier-context-packet.md`;
 - `templates/orchestration/verification-result-record.md`;
 - selected verifier Pal profile or `PAL.md` when needed.
@@ -373,7 +379,8 @@ Output:
 - verification plan;
 - evidence requirements;
 - verifier candidate;
-- pass / fail / blocked criteria.
+- pass / fail / blocked criteria;
+- verifier Step closure requirement when verification is written into the contract.
 
 Do not:
 
@@ -397,6 +404,7 @@ Purpose: explain the plan, candidates, evidence needs, and next step to the user
 Read:
 
 - owner / reviewer / verifier final reports when they exist;
+- `orchestration/workflow-closure-gate-protocol.md`;
 - `pals/Mira-main/core/output-contract.md`;
 - synthesis templates relevant to the selected topology.
 
@@ -405,6 +413,7 @@ Output:
 - user-facing explanation;
 - selected topology and reason;
 - E2E synthesis report when the complete end-to-end package was used;
+- Workflow Closure Gate outcome when a Workflow Execution Contract exists;
 - candidate resources and boundaries;
 - next-round package summary;
 - user decisions needed.
@@ -419,6 +428,7 @@ Templates:
 
 - `templates/orchestration/deep-conductor-plan.md`
 - `templates/orchestration/deep-conductor-e2e-synthesis-report.md`
+- `templates/orchestration/workflow-final-report.md`
 - `templates/orchestration/parallel-review-synthesis-summary.md`
 
 Eval:

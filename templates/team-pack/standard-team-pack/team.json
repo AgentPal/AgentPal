@@ -1,0 +1,60 @@
+{
+  "schema": "agentpal.team-pack.v0.6",
+  "type": "team-pack",
+  "team_id": "example-team",
+  "display_name": "Example Team",
+  "version": "0.6.0",
+  "status": "draft",
+  "description": "A reusable Team Pack template that references Pals and stores shared team assets.",
+  "discoverable": true,
+  "contactable": true,
+  "team_modes": ["consult", "delegate", "joint_work", "review"],
+  "default_owner_role": "owner",
+  "default_entry_pal": "mira-main",
+  "supported_task_types": ["example-task"],
+  "forbidden_task_types": ["unrelated-task"],
+  "asset_priority": {
+    "team_workflow_priority": "high",
+    "team_eval_priority": "high",
+    "team_assets_override_pal_assets": false,
+    "pal_boundary_overrides_team_role": true
+  },
+  "collaboration_policy": {
+    "selection_requires_ai_judgement": true,
+    "keyword_routing_allowed": false,
+    "copy_pal_assets_into_team": false,
+    "copy_team_pack_to_external_project": false
+  },
+  "memory_policy": {
+    "team_memory_enabled": true,
+    "private_memory_allowed_in_public_pack": false,
+    "writeback_requires_review": true,
+    "external_project_memory_write_default": false
+  },
+  "eval_policy": {
+    "team_eval_required_for_team_tasks": true,
+    "definition_of_done": "evals/definition-of-done.md",
+    "quality_gates": ["team-output-complete", "role-boundaries-respected"]
+  },
+  "entry": {
+    "team": "TEAM.md",
+    "roster": "roster.json",
+    "contacts": "TEAM_CONTACTS.md",
+    "resource_index": "RESOURCE_INDEX.md"
+  },
+  "asset_dirs": {
+    "identity": "identity/",
+    "roles": "roles/",
+    "knowledge": "knowledge/",
+    "skills": "skills/",
+    "workflows": "workflows/",
+    "runbooks": "runbooks/",
+    "memory": "memory/",
+    "evals": "evals/",
+    "routing": "routing/",
+    "reports": "reports/",
+    "imports": "imports/",
+    "registry": "registry/",
+    "state": "state/"
+  }
+}

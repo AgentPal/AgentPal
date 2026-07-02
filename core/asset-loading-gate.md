@@ -6,6 +6,10 @@ Use this gate before substantive Pal-owned work. It keeps Pal work grounded in
 assets instead of names, persona-only prompts, generic model knowledge, or blind
 tool calls.
 
+For v0.6 pre-task evidence, use `core/pal-asset-preflight-protocol.md` and
+`templates/pal/pal-asset-preflight.md`. When a Team Pack governs the task, run
+`core/team-asset-preflight-protocol.md` before the individual Pal preflight.
+
 ## Gate Questions
 
 Before acting, answer these questions:
@@ -76,3 +80,10 @@ work and an Asset Use Summary after the work.
 
 For lightweight tasks, a concise one-sentence asset note is sufficient when the
 user asks.
+
+## Team Task Note
+
+When the task is governed by a Team Pack, the Team Asset Preflight selects the
+team workflow, team eval, team knowledge, and member steps first. Each assigned
+member Pal then runs this gate for its own step. Team assignment cannot override
+the Pal's own responsibility boundary.

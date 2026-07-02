@@ -1,4 +1,0 @@
-paragraphs=4
-tables=1
-contains_title=True
-render_qa=not-run

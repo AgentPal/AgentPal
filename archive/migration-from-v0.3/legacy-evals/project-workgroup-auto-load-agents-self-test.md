@@ -1,5 +1,7 @@
 # Project Workgroup Auto Load AGENTS Self-Test
 
+Legacy archive note: this file documents the old pre-runtime-qualified marker format for migration history only. New bindings must use runtime-qualified markers.
+
 ## Purpose
 
 Verify that external project binding tells Codex how to enter AgentPal project-bound mode.

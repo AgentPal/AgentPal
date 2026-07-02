@@ -214,7 +214,7 @@ discovery, or publish Marketplace metadata until you approve the exact scope.
 
 ## allowed_write_paths
 
-- 
+-
 
 ## blocked_write_paths
 

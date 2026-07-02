@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">PalSmith app icon</title>
+  <desc id="desc">A black app icon with a white shield-forge mark for PalSmith.</desc>
+  <rect width="1024" height="1024" rx="184" fill="#050505"/>
+  <path fill="#fff" d="M512 112 768 252v220c0 160-94 292-256 414-162-122-256-254-256-414V252l256-140Z"/>
+  <path fill="#050505" d="M512 194 690 292v172c0 114-60 210-178 306-118-96-178-192-178-306V292l178-98Z"/>
+  <path fill="#fff" d="M398 340h228v50H398zM432 420h160v44H432z"/>
+  <path fill="#fff" d="M370 586h284l-38 70H408l-38-70Z"/>
+  <path fill="#fff" d="M436 508h152l44 46H392l44-46Z"/>
+  <path fill="#fff" d="M468 694 366 592l42-42 60 60 150-150 42 42-192 192Z"/>
+</svg>

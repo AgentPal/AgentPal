@@ -1,0 +1,54 @@
+{
+  "schema": "agentpal.contact_capability_card.v0.6",
+  "pal_id": "replace-with-pal-id",
+  "canonical_id": "replace-with-canonical-id",
+  "display_name": "ReplaceName",
+  "role_title": "Replace role title",
+  "contact_label": "ReplaceName · Replace Role",
+  "summary": "One or two sentences describing what this Pal can responsibly own.",
+  "allowed_task_types": [
+    "specific-task-type-this-pal-can-own"
+  ],
+  "forbidden_task_types": [
+    "specific-task-type-this-pal-must-not-own"
+  ],
+  "use_when": [
+    "Use when the current request needs this Pal's actual responsibility and assets."
+  ],
+  "do_not_use_when": [
+    "Do not use when the task is only loosely related to this Pal's title."
+  ],
+  "team_roles_allowed": [
+    "role-this-pal-may-hold"
+  ],
+  "team_roles_forbidden": [
+    "role-this-pal-must-not-hold"
+  ],
+  "preferred_stages": [
+    "stage-name"
+  ],
+  "handoff_after": [
+    "condition-when-this-pal-should-stop-owning-the-task"
+  ],
+  "collaboration_modes": [
+    "consult",
+    "delegate",
+    "handoff",
+    "review",
+    "joint_work"
+  ],
+  "context_requirements": [
+    "minimum context required before this Pal can accept ownership"
+  ],
+  "default_output_contracts": [
+    "path/to/output-contract.md or short output shape"
+  ],
+  "default_verification_style": "How this Pal normally validates or hands off verification.",
+  "risk_notes": [
+    "Important routing or boundary risk for Mira and owner Pals."
+  ],
+  "source_files": [
+    "official/pals/ReplaceName/PAL.md",
+    "official/pals/ReplaceName/pal.json"
+  ]
+}

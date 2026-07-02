@@ -8,24 +8,23 @@ They are documentation only. They do not claim commands were executed, files wer
 
 Start here for the three current user paths:
 
-- `quickstart/codex.md`
-- `quickstart/claude-code.md`
-- `quickstart/generic-cli-agent.md`
+- `user-guides/quickstart/codex.md`
+- `user-guides/quickstart/claude-code.md`
+- `user-guides/quickstart/generic-cli-agent.md`
 
 ## Main Example Areas
 
 | Area | Purpose |
 | --- | --- |
-| `quickstart/` | Copyable examples for Codex, Claude Code, and Generic CLI Agent paths. |
+| `user-guides/` | User-readable examples and future Wiki/docs material, including quickstart, walkthroughs, Pal collaboration, PalSmith, and common usage examples. |
+| `team-packs/` | Team Pack standard examples retained in the main project for discovery, validation, and user inspection. |
 | `capability-inventory/` | Capability Inventory examples for runtime, model, skill, plugin, MCP, and Pal profiles. |
 | `project-records/` | Public-safe central project record examples; these are not real private `workspace/projects/<project-id>` records. |
-| `runtime-adapters/` | Runtime adapter and thin-binding examples for Codex, Claude Code, and generic CLI paths. |
-| `usage/` | Simple Pal Mode, direct Pal calls, handoff, Task Package, and project binding examples. |
-| `palsmith/` | PalSmith composite Pal creation examples and public-safe sample plans. |
-| `pal-collaboration/` | Navigation for `/pal Mira`, `/pal Atlas`, and owner handoff examples. |
-| `project-workgroup/` | External project binding examples. |
-| `failures/` | Failure cases and corrected behavior. |
-| `orchestration/` | Current/future orchestration methodology examples, including Owner + Verifier no-code workflow examples. Future examples do not activate runtime behavior. |
+| `user-guides/usage/` | User-readable Simple Pal Mode, direct Pal calls, handoff, Task Package, and ordinary usage examples. |
+| `boundary-and-regression/usage/` | Internal usage boundary, runtime availability, asset-proof, and regression guard examples. |
+| `failures/` | Internal failure cases and corrected behavior; these are regression and guard materials, not user onboarding tutorials. |
+| `orchestration/` | Internal current/future orchestration methodology examples, including Owner + Verifier no-code workflow examples. Future examples do not activate runtime behavior. |
+| `asset-boundary/`, `pal-asset/` | Boundary and asset-use examples for review and regression work, not user onboarding tutorials. |
 
 ## Public-Safe Rules
 

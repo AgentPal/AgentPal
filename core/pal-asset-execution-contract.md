@@ -6,6 +6,11 @@ This contract defines when a Pal is actually working as a Pal during a task.
 It applies to official Pals, user custom Pals, draft Pals used in tests, and
 PalSmith-created or upgraded Pal Packs.
 
+For v0.6, explicit pre-task asset checks are documented in
+`core/pal-asset-preflight-protocol.md`. Team-governed tasks run
+`core/team-asset-preflight-protocol.md` first, then each assigned member Pal
+runs Pal Asset Preflight for its own step.
+
 ## Core Principle
 
 Pal is not a name.
@@ -35,6 +40,10 @@ Pal 不是直接调用工具。
 Before substantive Pal-owned work, the current Pal must pass the Asset Loading
 Gate in `core/asset-loading-gate.md` or explicitly state why the task is a
 lightweight case that can proceed with a smaller asset set.
+
+For complex, team-governed, tool-backed, QA, release, Pal creation, Pal upgrade,
+or high-risk tasks, the Pal should create or internally maintain a Pal Asset
+Preflight record before the Task Asset Packet.
 
 The Pal must identify:
 

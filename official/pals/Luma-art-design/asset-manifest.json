@@ -1,0 +1,132 @@
+{
+  "schema": "agentpal.asset-manifest.v0.5",
+  "owner_pal": "luma-art-design",
+  "asset_standard": "agentpal-pal-asset-standard.v0.5",
+  "generated_at": "2026-07-01",
+  "status": "draft",
+  "assets": [
+    {
+      "path": "PAL.md",
+      "type": "root-entry",
+      "status": "draft"
+    },
+    {
+      "path": "SKILL.md",
+      "type": "root-entry",
+      "status": "draft"
+    },
+    {
+      "path": "AGENTS.md",
+      "type": "root-entry",
+      "status": "draft"
+    },
+    {
+      "path": "core/output-contract.md",
+      "type": "core-contract",
+      "status": "draft"
+    },
+    {
+      "path": "knowledge/",
+      "type": "knowledge-directory",
+      "status": "draft"
+    },
+    {
+      "path": "skills/",
+      "type": "pal-skill-directory",
+      "status": "draft"
+    },
+    {
+      "path": "workflows/",
+      "type": "workflow-directory",
+      "status": "draft"
+    },
+    {
+      "path": "evals/",
+      "type": "eval-directory",
+      "status": "draft"
+    },
+    {
+      "path": "identity/personality.md",
+      "type": "identity",
+      "status": "draft"
+    },
+    {
+      "path": "identity/tone.md",
+      "type": "identity",
+      "status": "draft"
+    },
+    {
+      "path": "identity/speech-patterns.md",
+      "type": "identity",
+      "status": "draft"
+    },
+    {
+      "path": "identity/voice-boundary.md",
+      "type": "identity-boundary",
+      "status": "draft"
+    },
+    {
+      "path": "identity/source-boundary.md",
+      "type": "source-boundary",
+      "status": "draft"
+    },
+    {
+      "path": "identity/role.md",
+      "type": "role-architecture",
+      "status": "draft"
+    },
+    {
+      "path": "knowledge/mental-models.md",
+      "type": "knowledge",
+      "status": "draft"
+    },
+    {
+      "path": "knowledge/decision-heuristics.md",
+      "type": "knowledge",
+      "status": "draft"
+    },
+    {
+      "path": "knowledge/anti-patterns.md",
+      "type": "knowledge",
+      "status": "draft"
+    },
+    {
+      "path": "evals/cognitive-distillation-tests.md",
+      "type": "eval",
+      "status": "draft"
+    },
+    {
+      "path": "evals/voice-consistency-tests.md",
+      "type": "eval",
+      "status": "draft"
+    },
+    {
+      "path": "evals/role-task-tests.md",
+      "type": "eval",
+      "status": "draft"
+    },
+    {
+      "path": "evals/boundary-tests.md",
+      "type": "eval",
+      "status": "draft"
+    },
+    {
+      "path": "evals/marketplace-claim-tests.md",
+      "type": "eval",
+      "status": "draft"
+    }
+  ],
+  "privacy": {
+    "private_memory_included": false,
+    "credentials_included": false,
+    "customer_private_assets_included": false
+  },
+  "verification": {
+    "json_parse": "pass",
+    "required_files_exist": "pass",
+    "contact_registration_checked": "pass",
+    "composite_distillation_upgrade_assets": "pass",
+    "source_boundary_included": "pass",
+    "eval_assets_included": "pass"
+  }
+}

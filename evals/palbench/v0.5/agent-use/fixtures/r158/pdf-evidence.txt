@@ -1,6 +1,0 @@
-pages=1
-contains_public_fixture=True
-text=R158 Public PDF Fixture
-Goal: verify local PDF creation and extraction without private data.
-Boundary: no customer-private data, no external writes.
-

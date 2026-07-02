@@ -6,7 +6,7 @@ Verify that an AgentPal-bound external project treats only `active_project_root`
 
 ## Preconditions
 
-- External project root `AGENTS.md` includes `<!-- BEGIN AGENTPAL WORKGROUP -->` and `<!-- END AGENTPAL WORKGROUP -->`.
+- External project root `AGENTS.md` includes `<!-- BEGIN AGENTPAL BINDING: codex -->` and `<!-- END AGENTPAL BINDING: codex -->`.
 - `.agentpal/project.json` contains `active_project_root` and `agentpal_workspace_root`.
 - `current_project_semantics` is `active_project_root_only`.
 
