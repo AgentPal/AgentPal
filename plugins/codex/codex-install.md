@@ -90,7 +90,8 @@ The workspace path may be customized, but the config file path stays fixed.
 3. Wait for the user's choice. Do not continue automatically.
 4. Clone or update the public AgentPal repository at that workspace path.
 5. Write `%USERPROFILE%\.agentpal\config.json` with the selected workspace path.
-6. Register the Codex marketplace package from GitHub.
+6. Register the Codex marketplace package from the downloaded local workspace:
+   `<AgentPal workspace>\plugins\codex`.
 7. Install the Codex plugin.
 8. Verify that `agentpal@agentpal` is available.
 9. Print the post-install usage message from this document.
@@ -156,7 +157,14 @@ if (Test-Path (Join-Path $agentpalWorkspace ".git")) {
   installed_at = (Get-Date).ToUniversalTime().ToString("o")
 } | ConvertTo-Json | Set-Content -Encoding UTF8 (Join-Path $agentpalConfigRoot "config.json")
 
-codex plugin marketplace add AgentPal/AgentPal --ref master --sparse plugins/codex
+$agentpalMarketplaceRoot = Join-Path $agentpalWorkspace "plugins\codex"
+if (-not (Test-Path (Join-Path $agentpalMarketplaceRoot ".agents\plugins\marketplace.json"))) {
+  throw "AgentPal Codex marketplace root is invalid: $agentpalMarketplaceRoot"
+}
+
+codex plugin remove agentpal@agentpal 2>$null | Out-Null
+codex plugin marketplace remove agentpal 2>$null | Out-Null
+codex plugin marketplace add $agentpalMarketplaceRoot
 codex plugin add agentpal@agentpal
 codex plugin list --available --json
 

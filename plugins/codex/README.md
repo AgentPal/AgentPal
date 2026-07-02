@@ -59,10 +59,12 @@ By default, the full public AgentPal workspace is downloaded to:
 %USERPROFILE%\.agentpal\workspace
 ```
 
-The direct marketplace commands used by the install document are:
+The install document downloads the public AgentPal workspace, then registers the
+local marketplace package from the downloaded workspace:
 
 ```powershell
-codex plugin marketplace add AgentPal/AgentPal --ref master --sparse plugins/codex
+$agentpalMarketplaceRoot = Join-Path $agentpalWorkspace "plugins\codex"
+codex plugin marketplace add $agentpalMarketplaceRoot
 codex plugin add agentpal@agentpal
 ```
 
