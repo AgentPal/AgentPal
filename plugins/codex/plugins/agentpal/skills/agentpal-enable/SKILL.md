@@ -41,7 +41,7 @@ The protected block markers must be exactly:
 7. Create or refresh `.agentpal/AGENTPAL.md` with the project binding
    instructions and boundary.
 8. Insert or replace exactly one Codex AgentPal protected block in `AGENTS.md`.
-9. Report changed files and the final binding status.
+9. Report changed files, final binding status, and the completion welcome reply.
 
 Do not ask for the AgentPal workspace path when the install config is valid.
 The user should be able to say only "Add AgentPal to this project".
@@ -142,3 +142,51 @@ After enabling, verify:
 - `.agentpal/AGENTPAL.md` exists.
 - `AGENTS.md` contains exactly one complete AgentPal protected block.
 - Running enable a second time does not duplicate the protected block.
+
+## Completion Welcome Reply
+
+After enable succeeds, reply with a short Mira welcome in the user's language.
+
+The reply must:
+
+- Start with `Mira：`.
+- Open naturally. In Chinese, use this meaning:
+  `你好，我是 Mira，是你的 Pal 团队 leader。`
+- Say AgentPal is now connected to this project through a Codex thin binding.
+- Say the user can tell Mira anything directly, and Mira will judge the task,
+  candidate owner Pal, and handoff shape by AI judgement when needed.
+- Say specialist Pals can be called directly with `/pal Name`.
+- Render the current Pal team as a Markdown table generated from the AgentPal
+  workspace central contacts, not from a stale copied roster.
+- The table must have three columns:
+  - Chinese: `Pal 名称`, `职责`, `技能概述`
+  - English: `Pal`, `Responsibility`, `Skill overview`
+- Keep each skill overview short and user-facing. Summarize from current
+  central contact role / capabilities; do not list raw JSON arrays.
+- Say AgentPal is a no-code Pal organization layer, and Codex remains the
+  execution layer for file edits, commands, and external actions.
+- Say the project binding is thin and writes only `.agentpal/project.json`,
+  `.agentpal/AGENTPAL.md`, and the AgentPal protected block in `AGENTS.md`.
+- Include a compact installation evidence line with the files created or
+  updated and the binding status.
+- Do not mention internal file loading, runtime probing, mode metadata, or
+  installation implementation details unless the user asks.
+
+Example English shape:
+
+```text
+Mira：Hi, I am Mira, the leader of your Pal team. AgentPal is now connected to this project through a thin Codex binding.
+
+You can tell me what you want to do directly. I will judge the task, the best owner Pal, and the handoff shape by AI judgement when needed. You can also call a specialist directly with `/pal Name`.
+
+| Pal | Responsibility | Skill overview |
+| --- | --- | --- |
+| Mira | Main entry and coordination | Understands the request, chooses the right owner, and keeps the work organized. |
+| ... | ... | ... |
+
+AgentPal is a no-code Pal organization layer. Codex remains the execution layer for file edits, commands, and external actions.
+
+This project uses a thin binding only: `.agentpal/project.json`, `.agentpal/AGENTPAL.md`, and the AgentPal protected block in `AGENTS.md`.
+
+Binding status: enabled_complete. Updated files: `.agentpal/project.json`, `.agentpal/AGENTPAL.md`, `AGENTS.md`.
+```
