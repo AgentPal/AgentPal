@@ -54,9 +54,11 @@ Rules:
 - Do not write anything into a user project during this host-level install.
 - Install the Codex plugin globally for the current Codex user, not inside a
   project repository.
-- If the user wants a custom AgentPal workspace directory, ask once before
-  running commands.
-- If the user does not choose a custom directory, use the default path.
+- Ask the user to choose the AgentPal workspace directory with a simple
+  numbered choice:
+  `1` means use the default path, and `2` means enter a custom path.
+- If the user chooses `1` or presses Enter, use the default path.
+- If the user chooses `2`, ask for the custom AgentPal workspace path.
 - Always write the install pointer to `%USERPROFILE%\.agentpal\config.json`.
   This lets the plugin remember the workspace location across Codex restarts.
 
@@ -79,15 +81,14 @@ The workspace path may be customized, but the config file path stays fixed.
 ## Install Steps
 
 1. Confirm `git` and `codex` are available.
-2. Choose the AgentPal workspace path:
-   `%USERPROFILE%\.agentpal\workspace` by default, or the user's custom path.
+2. Ask the user to choose the AgentPal workspace path:
+   `1` for `%USERPROFILE%\.agentpal\workspace`, or `2` for a custom path.
 3. Clone or update the public AgentPal repository at that workspace path.
 4. Write `%USERPROFILE%\.agentpal\config.json` with the selected workspace path.
 5. Register the Codex marketplace package from GitHub.
 6. Install the Codex plugin.
 7. Verify that `agentpal@agentpal` is available.
-8. Report that the user can now open any Codex project and say
-   `Add AgentPal to this project`.
+8. Print the post-install usage message from this document.
 
 ## PowerShell Reference
 
@@ -95,8 +96,26 @@ Codex may run this reference implementation on Windows PowerShell.
 
 ```powershell
 $agentpalConfigRoot = Join-Path $env:USERPROFILE ".agentpal"
-$agentpalWorkspace = Join-Path $agentpalConfigRoot "workspace"
+$defaultAgentPalWorkspace = Join-Path $agentpalConfigRoot "workspace"
 $agentpalRepo = "https://github.com/AgentPal/AgentPal.git"
+
+Write-Host ""
+Write-Host "Choose AgentPal workspace install directory:"
+Write-Host "1. Use default: $defaultAgentPalWorkspace"
+Write-Host "2. Enter custom path"
+$agentpalInstallChoice = Read-Host "Select 1 or 2 [1]"
+
+if ([string]::IsNullOrWhiteSpace($agentpalInstallChoice) -or $agentpalInstallChoice -eq "1") {
+  $agentpalWorkspace = $defaultAgentPalWorkspace
+} elseif ($agentpalInstallChoice -eq "2") {
+  $agentpalWorkspace = Read-Host "Enter AgentPal workspace path"
+  if ([string]::IsNullOrWhiteSpace($agentpalWorkspace)) {
+    throw "Custom AgentPal workspace path cannot be empty."
+  }
+  $agentpalWorkspace = [Environment]::ExpandEnvironmentVariables($agentpalWorkspace)
+} else {
+  throw "Invalid selection. Please rerun the install and choose 1 or 2."
+}
 
 New-Item -ItemType Directory -Force $agentpalConfigRoot | Out-Null
 
@@ -119,6 +138,35 @@ if (Test-Path (Join-Path $agentpalWorkspace ".git")) {
 codex plugin marketplace add AgentPal/AgentPal --ref main --sparse plugins/codex
 codex plugin add agentpal@agentpal
 codex plugin list --available --json
+
+Write-Host ""
+Write-Host "AgentPal for Codex is installed."
+Write-Host ""
+Write-Host "After installation, open any Codex project and say:"
+Write-Host ""
+Write-Host "Add AgentPal to this project"
+Write-Host ""
+Write-Host "To remove AgentPal from the current project while keeping the global Codex plugin installed, say:"
+Write-Host ""
+Write-Host "Remove AgentPal from this project"
+Write-Host ""
+Write-Host "The project binding is thin. It writes only .agentpal/project.json, .agentpal/AGENTPAL.md, and the AgentPal protected block in AGENTS.md."
+```
+
+## Post-Install Message
+
+After installation, print this message for the user:
+
+```text
+After installation, open any Codex project and say:
+
+Add AgentPal to this project
+
+To remove AgentPal from the current project while keeping the global Codex plugin installed, say:
+
+Remove AgentPal from this project
+
+The project binding is thin. It writes only .agentpal/project.json, .agentpal/AGENTPAL.md, and the AgentPal protected block in AGENTS.md.
 ```
 
 ## Upgrade
