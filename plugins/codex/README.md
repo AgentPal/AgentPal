@@ -62,7 +62,7 @@ By default, the full public AgentPal workspace is downloaded to:
 The direct marketplace commands used by the install document are:
 
 ```powershell
-codex plugin marketplace add AgentPal/AgentPal --ref main --sparse plugins/codex
+codex plugin marketplace add AgentPal/AgentPal --ref master --sparse plugins/codex
 codex plugin add agentpal@agentpal
 ```
 

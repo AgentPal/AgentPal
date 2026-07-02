@@ -54,10 +54,14 @@ Rules:
 - Do not write anything into a user project during this host-level install.
 - Install the Codex plugin globally for the current Codex user, not inside a
   project repository.
-- Ask the user to choose the AgentPal workspace directory with a simple
-  numbered choice:
+- Before running clone, pull, marketplace, plugin, or config-write commands,
+  stop and ask the user to choose the AgentPal workspace directory with a
+  simple numbered choice:
   `1` means use the default path, and `2` means enter a custom path.
-- If the user chooses `1` or presses Enter, use the default path.
+- Do not infer the choice from an existing `%USERPROFILE%\.agentpal`
+  directory, an existing `config.json`, or a previous install attempt.
+- Wait for the user's explicit answer before continuing.
+- If the user chooses `1`, use the default path.
 - If the user chooses `2`, ask for the custom AgentPal workspace path.
 - Always write the install pointer to `%USERPROFILE%\.agentpal\config.json`.
   This lets the plugin remember the workspace location across Codex restarts.
@@ -81,14 +85,31 @@ The workspace path may be customized, but the config file path stays fixed.
 ## Install Steps
 
 1. Confirm `git` and `codex` are available.
-2. Ask the user to choose the AgentPal workspace path:
+2. Stop and ask the user to choose the AgentPal workspace path:
    `1` for `%USERPROFILE%\.agentpal\workspace`, or `2` for a custom path.
-3. Clone or update the public AgentPal repository at that workspace path.
-4. Write `%USERPROFILE%\.agentpal\config.json` with the selected workspace path.
-5. Register the Codex marketplace package from GitHub.
-6. Install the Codex plugin.
-7. Verify that `agentpal@agentpal` is available.
-8. Print the post-install usage message from this document.
+3. Wait for the user's choice. Do not continue automatically.
+4. Clone or update the public AgentPal repository at that workspace path.
+5. Write `%USERPROFILE%\.agentpal\config.json` with the selected workspace path.
+6. Register the Codex marketplace package from GitHub.
+7. Install the Codex plugin.
+8. Verify that `agentpal@agentpal` is available.
+9. Print the post-install usage message from this document.
+
+## Required User Prompt
+
+Before continuing, ask exactly this kind of short question:
+
+```text
+请选择 AgentPal 工作区安装目录：
+1. 使用默认目录：%USERPROFILE%\.agentpal\workspace
+2. 自定义目录
+
+请输入 1 或 2：
+```
+
+If the user selects `2`, ask for the custom path before running install
+commands. Do not skip this prompt just because an old AgentPal directory already
+exists.
 
 ## PowerShell Reference
 
@@ -135,7 +156,7 @@ if (Test-Path (Join-Path $agentpalWorkspace ".git")) {
   installed_at = (Get-Date).ToUniversalTime().ToString("o")
 } | ConvertTo-Json | Set-Content -Encoding UTF8 (Join-Path $agentpalConfigRoot "config.json")
 
-codex plugin marketplace add AgentPal/AgentPal --ref main --sparse plugins/codex
+codex plugin marketplace add AgentPal/AgentPal --ref master --sparse plugins/codex
 codex plugin add agentpal@agentpal
 codex plugin list --available --json
 
