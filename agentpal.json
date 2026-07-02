@@ -1196,6 +1196,28 @@
       "contacts_modified": false,
       "official_pal_count_modified": false,
       "remote_operations_performed": false
+    },
+    "r240_real_user_scenario_acceptance": {
+      "verdict": "deep_conductor_real_user_scenario_acceptance_pass",
+      "evidence_root": "evals/palbench/v0.6/deep-conductor/",
+      "task_intake": "evals/palbench/v0.6/deep-conductor/r240-real-user-scenario-task-intake.md",
+      "team_first_discovery": "evals/palbench/v0.6/deep-conductor/r240-team-first-discovery.md",
+      "pal_selection_and_routing_correction": "evals/palbench/v0.6/deep-conductor/r240-pal-selection-and-routing-correction.md",
+      "execution_graph": "evals/palbench/v0.6/deep-conductor/r240-execution-graph.md",
+      "pal_work_plans_and_asset_preflight": "evals/palbench/v0.6/deep-conductor/r240-pal-work-plans-and-asset-preflight.md",
+      "execution_trace": "evals/palbench/v0.6/deep-conductor/r240-execution-trace.md",
+      "owner_assignment_integrity_result": "evals/palbench/v0.6/deep-conductor/r240-owner-assignment-integrity-result.md",
+      "closure_gate_result": "evals/palbench/v0.6/deep-conductor/r240-closure-gate-result.md",
+      "quinn_final_verification": "evals/palbench/v0.6/deep-conductor/r240-quinn-final-verification.md",
+      "summary": "evals/palbench/v0.6/deep-conductor/r240-real-user-scenario-summary.md",
+      "team_pack_reused": "marketing-growth-team",
+      "boundary_pressure_corrected": true,
+      "owner_assignment_integrity_passed": true,
+      "subagent_used": false,
+      "no_code_boundary_preserved": true,
+      "contacts_modified": false,
+      "official_pal_count_modified": false,
+      "remote_operations_performed": false
     }
   },
   "v0_5_faye_extension": {
