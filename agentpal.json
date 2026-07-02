@@ -1276,6 +1276,33 @@
       "contacts_modified": false,
       "official_pal_count_modified": false,
       "remote_operations_performed": false
+    },
+    "r244_manual_user_test_execution_package": {
+      "verdict": "manual_user_test_execution_package_ready",
+      "manual_run_package": "docs/user-tests/deep-conductor/manual-run-package/",
+      "readme": "docs/user-tests/deep-conductor/manual-run-package/README.md",
+      "setup_project": "docs/user-tests/deep-conductor/manual-run-package/01-setup-project.md",
+      "run_main_test": "docs/user-tests/deep-conductor/manual-run-package/02-run-main-test.md",
+      "run_routing_pressure_test": "docs/user-tests/deep-conductor/manual-run-package/03-run-routing-pressure-test.md",
+      "capture_results": "docs/user-tests/deep-conductor/manual-run-package/04-capture-results.md",
+      "fill_report": "docs/user-tests/deep-conductor/manual-run-package/05-fill-report.md",
+      "submit_results_to_codex": "docs/user-tests/deep-conductor/manual-run-package/06-submit-results-to-codex.md",
+      "manual_test_result_form": "docs/user-tests/deep-conductor/manual-run-package/manual-test-result-form.md",
+      "copy_paste_test_prompts": "docs/user-tests/deep-conductor/manual-run-package/copy-paste-test-prompts.md",
+      "expected_artifacts_checklist": "docs/user-tests/deep-conductor/manual-run-package/expected-artifacts-checklist.md",
+      "evidence_root": "evals/palbench/v0.6/deep-conductor/r244-manual-user-test-execution-package/",
+      "package_readiness_check": "evals/palbench/v0.6/deep-conductor/r244-manual-user-test-execution-package/r244-package-readiness-check.md",
+      "copy_paste_prompts_review": "evals/palbench/v0.6/deep-conductor/r244-manual-user-test-execution-package/r244-copy-paste-prompts-review.md",
+      "required_return_materials": "evals/palbench/v0.6/deep-conductor/r244-manual-user-test-execution-package/r244-required-return-materials.md",
+      "quinn_package_review": "evals/palbench/v0.6/deep-conductor/r244-manual-user-test-execution-package/r244-quinn-package-review.md",
+      "final_status": "evals/palbench/v0.6/deep-conductor/r244-manual-user-test-execution-package/r244-final-status.md",
+      "does_not_judge_manual_user_test_pass": true,
+      "r241_r242_project_bound_note_preserved": true,
+      "next_required_input": "user raw outputs, screenshots, checklist, and manual-test-result-form for R245",
+      "no_code_boundary_preserved": true,
+      "contacts_modified": false,
+      "official_pal_count_modified": false,
+      "remote_operations_performed": false
     }
   },
   "v0_5_faye_extension": {
