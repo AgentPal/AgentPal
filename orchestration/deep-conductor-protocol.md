@@ -25,7 +25,7 @@ Each step produces no-code artifacts that a host Runtime may read, execute, or v
 
 For end-to-end work, the complete output shape is `templates/orchestration/deep-conductor-e2e-package.md` plus `templates/orchestration/deep-conductor-e2e-synthesis-report.md`. The E2E package integrates memory, Capability Inventory, Context Budget, topology, Context Packets, Runtime Skill-aware packages, verification, synthesis, Routing Memory, and next-round recommendation.
 
-When Deep Conductor names actual current-task participants, child Steps, or verifiers, create a Workflow Execution Contract and close it through the Closure Gate before claiming the workflow completed.
+When Deep Conductor names actual current-task participants, child Steps, or verifiers, create a Workflow Execution Contract and close it through the Closure Gate before claiming the workflow completed. The contract must include the Owner Assignment Integrity check from `core/owner-assignment-integrity-gate.md`: selected owners, named participants, verifiers, Team roles, open roles, Runtime / Skill / plugin / MCP candidates, and promised outputs must be closed as output, evidence, blocker, skip reason, failure, cancellation, or replan records before the workflow can be reported as complete.
 
 ## Step 1: Goal Intake
 

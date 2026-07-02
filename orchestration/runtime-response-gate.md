@@ -18,12 +18,13 @@ Do not probe, call, or describe parallel child-agent workflows in the current ru
 6. Tool / command preflight gate.
 7. Mira owner-routing gate.
 8. AI routing judgement gate.
-9. Owner Pal immediate answer gate.
-10. Output contract gate.
-11. Response language gate.
-12. Safety and availability gate.
-13. Repeated task Skill creation gate.
-14. Pal-owned Skill storage gate.
+9. Owner Assignment Integrity gate.
+10. Owner Pal immediate answer gate.
+11. Output contract gate.
+12. Response language gate.
+13. Safety and availability gate.
+14. Repeated task Skill creation gate.
+15. Pal-owned Skill storage gate.
 
 ## 1. Codex Generic Gate
 
@@ -167,7 +168,28 @@ A system-risk or system-state diagnostic does not become Mira-owned just because
 
 In external project-bound mode, "current contacts / registry" means the contacts / registry under the bound `agentpal_workspace_root`. If that source cannot be read, Mira must report Pal discovery unavailable and must not silently answer a specialist work product herself.
 
-## 9. Owner Pal Immediate Answer Gate
+## 9. Owner Assignment Integrity Gate
+
+Apply `core/owner-assignment-integrity-gate.md`.
+
+If the selected owner is not the current speaking Pal, the next substantive
+block must start with the selected owner Pal prefix. The current Pal must not
+continue by writing the selected owner's professional body.
+
+Any named actual participant creates a closure obligation. A Pal, Team role,
+verifier, Runtime, Skill, plugin, MCP tool, or human role may be reported as an
+actual participant only when it produced output, evidence, blocker, skip reason,
+failure reason, cancellation reason, or replan record.
+
+Candidates and provisional options must be labeled as candidates. They must not
+be reported as actual participants later unless they produced a closure record.
+
+Before a final report, check that selected owners, promised outputs, named
+participants, verifier steps, and child tasks are closed. If anything is
+missing, mark it `blocked`, `skipped`, `failed`, `cancelled`, or `replanned`;
+do not claim complete workflow closure.
+
+## 10. Owner Pal Immediate Answer Gate
 
 After Mira hands off, the next substantive block must start with the owner Pal prefix, for example:
 
@@ -179,7 +201,7 @@ Atlas：我接手。
 
 The owner Pal becomes the active speaker for that task.
 
-## 10. Output Contract Gate
+## 11. Output Contract Gate
 
 A Pal answer is valid only when it uses:
 
@@ -193,7 +215,7 @@ If no Pal asset or fallback method is used, label the result as `Codex generic a
 
 Do not fake a Pal by only changing the name prefix.
 
-## 11. Response Language Gate
+## 12. Response Language Gate
 
 Default response language follows the user's latest instruction language.
 
@@ -206,7 +228,7 @@ Default response language follows the user's latest instruction language.
 - Completion reports, task reports, release gate reports, verification reports, blocker reports, and handoff summaries must follow this policy.
 - The Pal name prefix may stay as the Pal display name, for example `Quinn：` or `Quinn:`, but the natural-language body follows the user's language.
 
-## 12. Safety And Availability Gate
+## 13. Safety And Availability Gate
 
 High-risk actions require user confirmation before execution.
 
@@ -214,13 +236,13 @@ Do not claim files, commands, tools, external systems, payment, publishing, memo
 
 When real files, commands, systems, or tools were involved, the active Pal reports the execution layer explicitly and briefly.
 
-## 13. Repeated Task Skill Creation Gate
+## 14. Repeated Task Skill Creation Gate
 
 If the user explicitly asks to save a method as a Skill, create a formal owner Pal Skill.
 
 If similar operations happen more than 3 times, create a formal owner Pal Skill unless required inputs are missing, the content is unsafe/private, or a high-risk write needs approval.
 
-## 14. Pal-Owned Skill Storage Gate
+## 15. Pal-Owned Skill Storage Gate
 
 Formal Pal-owned Skills must be stored under the owner Pal's own `skills/` directory:
 

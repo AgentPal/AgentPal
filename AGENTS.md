@@ -25,13 +25,14 @@ Runtime Response Gate order:
 4. First Pal composite deliverable judgement gate: the first Pal that receives or decomposes a composite task identifies domain focus, final deliverables, work stages, capability needs, selected or provisional stage owner Pals, Runtime / Skill candidates, and verification needs before single-owner routing or clarification.
 5. Mira owner-routing gate: for any substantive request, Mira must judge whether the work belongs to a currently registered Pal's ownership scope.
 6. AI routing judgement gate: owner selection is case-by-case; no hard-coded semantic routing.
-7. Owner Pal immediate answer gate: after Mira handoff, the owner Pal must answer immediately in the same response.
-8. Output contract gate: owner Pal must use its Output Contract and relevant assets or an honest fallback method.
-9. Response language gate: natural-language body follows the user's latest instruction language unless the user explicitly requests another language.
-10. Safety and availability gate: execution claims require evidence from the current runtime.
-11. Repeated task Skill creation gate: explicit Skill requests, or similar operations over 3 times, create formal owner Pal Skills.
-12. Pal-owned Skill storage gate: store formal owner Pal Skills under the owner Pal's own `skills/` directory.
-13. Pal Asset Execution Contract gate: for substantive owner-Pal work, apply `core/pal-asset-execution-contract.md` and `core/asset-loading-gate.md` so the Pal uses task-relevant assets instead of only its name, persona, model common sense, or blind tool calls.
+7. Owner Assignment Integrity gate: apply `core/owner-assignment-integrity-gate.md`; the selected owner, named participants, verifiers, Team roles, Runtime, Skills, plugins, MCP tools, and promised outputs must actually produce output, blocker, skip reason, failure, cancellation, or replan records before they can be reported as completed participation.
+8. Owner Pal immediate answer gate: after Mira handoff, the owner Pal must answer immediately in the same response.
+9. Output contract gate: owner Pal must use its Output Contract and relevant assets or an honest fallback method.
+10. Response language gate: natural-language body follows the user's latest instruction language unless the user explicitly requests another language.
+11. Safety and availability gate: execution claims require evidence from the current runtime.
+12. Repeated task Skill creation gate: explicit Skill requests, or similar operations over 3 times, create formal owner Pal Skills.
+13. Pal-owned Skill storage gate: store formal owner Pal Skills under the owner Pal's own `skills/` directory.
+14. Pal Asset Execution Contract gate: for substantive owner-Pal work, apply `core/pal-asset-execution-contract.md` and `core/asset-loading-gate.md` so the Pal uses task-relevant assets instead of only its name, persona, model common sense, or blind tool calls.
 
 ## AI Owner Judgement Is Mandatory
 
@@ -52,6 +53,8 @@ The receiving Pal itself is only one candidate. It must ask, through AI judgemen
 The central Pal contacts under `workspace/organization/contacts/` are the source of truth for who can be considered. Pal capability notes, examples, templates, eval cases, and previous routing memories are judgement inputs only; they must never become routes.
 
 If the AI selects an owner Pal, the response must briefly state the case-specific reason and hand off or answer with that Pal's prefix. If no registered Pal clearly owns the task, say so and use an honest fallback rather than inventing a route.
+
+Owner judgement is incomplete until owner execution is visible. If Mira or any current Pal says another Pal should own the task, the next substantive block must come from that selected owner Pal with its own prefix, or the response must mark the handoff as `blocked`, `skipped`, or `not_run`. A Pal must not say "this belongs to X" and then continue writing X's professional body itself.
 
 Existing Pal upgrade judgement: if the request targets an existing Pal and may
 change voice, personality, thinking, role, knowledge, workflow, Skill / Agent
@@ -100,11 +103,12 @@ When Codex opens this workspace or when the user runs `prompts/codex/initialize-
 5. `core/simple-pal-mode-runtime-contract.md`
 6. `core/deliverable-aware-task-judgement-gate.md`
 7. `core/main-pal-conductor-gate.md`
-8. `core/runtime-adapter-shared-contract.md`
-9. `workspace/organization/contacts/pals.json`
-10. `workspace/organization/contacts/PAL_CONTACTS.md`
-11. `official/pals/Mira-main/PAL.md`
-12. `official/pals/Mira-main/core/output-contract.md`
+8. `core/owner-assignment-integrity-gate.md`
+9. `core/runtime-adapter-shared-contract.md`
+10. `workspace/organization/contacts/pals.json`
+11. `workspace/organization/contacts/PAL_CONTACTS.md`
+12. `official/pals/Mira-main/PAL.md`
+13. `official/pals/Mira-main/core/output-contract.md`
 
 If the current session is bound to an external project, the project-side `.agentpal/` binding files may be read first, but only if they exist and only as binding context.
 

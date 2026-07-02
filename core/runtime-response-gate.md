@@ -13,7 +13,8 @@ The core contract is:
 3. Apply `core/simple-pal-mode-runtime-contract.md`.
 4. Apply `core/deliverable-aware-task-judgement-gate.md`.
 5. Apply `core/main-pal-conductor-gate.md`.
-6. Apply `orchestration/runtime-response-gate.md` for detailed response order.
+6. Apply `core/owner-assignment-integrity-gate.md`.
+7. Apply `orchestration/runtime-response-gate.md` for detailed response order.
 
 AgentPal-mode natural-language output must start with the current speaking Pal prefix. This includes first replies, staged judgements, progress/status updates, execution-result explanations, and final reports.
 

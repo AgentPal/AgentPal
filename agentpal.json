@@ -1162,7 +1162,26 @@
     "auto_execution_included": false,
     "auto_execution": false,
     "auto_sync": false,
-    "requires_human_review": true
+    "requires_human_review": true,
+    "r238_e2e_trace": {
+      "verdict": "deep_conductor_e2e_ready_with_notes",
+      "evidence_root": "evals/palbench/v0.6/deep-conductor/",
+      "task_intake": "evals/palbench/v0.6/deep-conductor/r238-deep-conductor-e2e-task-intake.md",
+      "team_first_discovery": "evals/palbench/v0.6/deep-conductor/r238-team-first-discovery-result.md",
+      "pal_selection_and_participation_lock": "evals/palbench/v0.6/deep-conductor/r238-pal-selection-and-participation-lock.md",
+      "execution_graph_and_subagent_decision": "evals/palbench/v0.6/deep-conductor/r238-execution-graph-and-subagent-decision.md",
+      "pal_work_plans_and_asset_preflight": "evals/palbench/v0.6/deep-conductor/r238-pal-work-plans-and-asset-preflight.md",
+      "workflow_execution_trace": "evals/palbench/v0.6/deep-conductor/r238-workflow-execution-trace.md",
+      "closure_gate_result": "evals/palbench/v0.6/deep-conductor/r238-closure-gate-result.md",
+      "quinn_final_verification": "evals/palbench/v0.6/deep-conductor/r238-quinn-final-verification.md",
+      "summary": "evals/palbench/v0.6/deep-conductor/r238-deep-conductor-e2e-summary.md",
+      "team_pack_reused": "marketing-growth-team",
+      "subagent_used": false,
+      "no_code_boundary_preserved": true,
+      "contacts_modified": false,
+      "official_pal_count_modified": false,
+      "remote_operations_performed": false
+    }
   },
   "v0_5_faye_extension": {
     "scope_update": "release/current/v0.5-faye-extension-scope-update.md",

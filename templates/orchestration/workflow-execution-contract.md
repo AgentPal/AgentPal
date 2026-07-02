@@ -78,6 +78,15 @@ closure_gate:
   child_steps_not_returned: []
   blocked_steps_reported_to_user: false
   final_report_ref: null
+assignment_integrity:
+  protocol: "core/owner-assignment-integrity-gate.md"
+  selected_owner_spoke: true | false
+  named_participants_closed: true | false
+  promised_outputs_closed: true | false
+  verifier_outputs_closed_or_skipped: true | false
+  open_roles_recorded: true | false
+  fake_handoff_detected: true | false
+  missing_records: []
 memory_writeback:
   pal_memory: none | candidate | written | blocked
   team_memory: none | candidate | written | blocked

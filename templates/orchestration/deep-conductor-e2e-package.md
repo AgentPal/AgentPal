@@ -6,6 +6,44 @@ package_id: e2e-<short-id>
 user_goal: <user goal in the user's language>
 project_or_single_task: <project | single_task | mixed | unknown>
 
+task_intake:
+  user_goal: <original or summarized goal>
+  deliverables: []
+  constraints: []
+  risk_flags: []
+  requires_team_discovery: <true | false>
+  requires_parallel_work: <true | false>
+  requires_verification: <true | false>
+
+team_first_discovery:
+  available_team_packs_checked: []
+  candidate_teams: []
+  selected_team: <team_id | none>
+  reuse_reason: <why selected team fits>
+  rejected_teams: []
+  reason_not_creating_new_team: <why PalSmith creation is not needed>
+  open_roles_needed: []
+  handoff_to_palsmith_for_team_creation:
+    required: <true | false>
+    reason: <reason or not_needed>
+
+pal_role_selection:
+  selected_participants:
+    - pal_name: <display name>
+      canonical_id: <pal id>
+      role_title: <role>
+      why_selected: <case-specific reason>
+      capability_card_evidence: []
+      team_roster_source: <path or none>
+      task_scope: <bounded scope>
+      not_responsible_for: []
+      participation_required: <true | false>
+  rejected_or_not_selected:
+    why_not_faye: <reason>
+    why_not_palsmith_for_execution: <reason>
+    why_not_atlas_if_no_dev_task: <reason>
+    why_not_quinn_for_execution: <reason>
+
 memory_used:
   status: <used | missing | not_approved | stale | not_needed>
   sources: []
@@ -114,6 +152,65 @@ runtime_task_packages:
     forbidden_actions: []
     evidence_required: []
     final_report_fields: []
+
+workflow_execution_contract:
+  template: templates/orchestration/workflow-execution-contract.md
+  workflow_id: <id>
+  selected_team: <team_id | none>
+  owner: <Pal or team role>
+  steps: []
+  assignment_integrity:
+    selected_owner_spoke: <true | false>
+    named_participants_closed: <true | false>
+    promised_outputs_closed: <true | false>
+    verifier_outputs_closed_or_skipped: <true | false>
+    open_roles_recorded: <true | false>
+    fake_handoff_detected: <true | false>
+    missing_records: []
+
+pal_work_plans:
+  - pal: <display name>
+    assigned_step: <step id>
+    what_i_will_do: <bounded work>
+    tone_and_voice: <brief style note>
+    thinking_basis: []
+    knowledge_assets: []
+    skill_assets: []
+    workflow_assets: []
+    memory_assets: []
+    team_assets: []
+    runtime_or_agent_usage: <none | candidate | used-with-evidence>
+    model_choice: <current host | not_selected>
+    reasoning_strength: <low | medium | high | host_default>
+    expected_output: <output>
+    handoff_target: <next step or none>
+
+asset_preflight_records:
+  pal_asset_preflight: []
+  team_asset_preflight: []
+
+execution_trace:
+  - step_id: <step id>
+    owner: <Pal or role>
+    planned_assets: []
+    actual_assets_used: []
+    output_path_or_summary: <path or summary>
+    status: <done | verified | blocked | skipped | failed | cancelled | replanned>
+    deviation_from_plan: <none or description>
+    if_deviation_why: <reason or none>
+
+closure_gate_result:
+  required_steps_total: <number>
+  required_steps_completed: <number>
+  skipped_steps: []
+  skip_reasons: []
+  blocked_steps: []
+  block_reasons: []
+  verifiers_required: <number>
+  verifiers_completed: <number>
+  child_steps_returned: <true | false>
+  memory_or_asset_writeback: <none | candidate | written | blocked>
+  final_delivery_ready: <true | false>
 
 verification_plan:
   acceptance_criteria: []

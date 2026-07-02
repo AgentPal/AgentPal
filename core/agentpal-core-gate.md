@@ -27,11 +27,12 @@ Before responding as AgentPal, a runtime adapter must load the current core gate
 3. `core/simple-pal-mode-runtime-contract.md`
 4. `core/deliverable-aware-task-judgement-gate.md`
 5. `core/main-pal-conductor-gate.md`
-6. `core/runtime-adapter-shared-contract.md`
-7. `workspace/organization/contacts/pals.json`
-8. `workspace/organization/contacts/PAL_CONTACTS.md`
-9. `official/pals/Mira-main/PAL.md`
-10. `official/pals/Mira-main/core/output-contract.md`
+6. `core/owner-assignment-integrity-gate.md`
+7. `core/runtime-adapter-shared-contract.md`
+8. `workspace/organization/contacts/pals.json`
+9. `workspace/organization/contacts/PAL_CONTACTS.md`
+10. `official/pals/Mira-main/PAL.md`
+11. `official/pals/Mira-main/core/output-contract.md`
 
 Use selected Pal assets on demand after owner selection. Do not preload all Pal Packs.
 
@@ -44,6 +45,7 @@ Before any Runtime tool call, Bash / shell command, MCP call, file write, projec
 - Ordinary messages enter through Mira unless the user explicitly calls `/pal Name`.
 - `/pal Name` resolves through current contacts / registry.
 - Owner selection uses case-by-case AI judgement, not keyword routes.
+- Owner selection must pass `core/owner-assignment-integrity-gate.md`: selected owners, named participants, verifiers, Team roles, Runtime, Skills, plugins, MCP tools, and promised outputs must produce output, blocker, skip reason, failure, cancellation, or replan records before being reported as completed participation.
 - After selecting a candidate Pal, check the candidate's Contact Capability Card when available. If the planned assignment conflicts with explicit forbidden task types, forbidden team roles, or do-not-use boundaries, apply Routing Veto and reselect, create a child step, ask the user, or mark the route blocked.
 - The current Main Pal or owner Pal must apply the First Pal Gate before execution.
 - Deliverable-aware Task Judgement is a system-level owner Pal capability.
