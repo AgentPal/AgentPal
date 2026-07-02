@@ -1250,6 +1250,32 @@
       "contacts_modified": false,
       "official_pal_count_modified": false,
       "remote_operations_performed": false
+    },
+    "r242_user_facing_manual_test_package": {
+      "verdict": "deep_conductor_user_facing_manual_test_ready_with_notes",
+      "user_test_package": "docs/user-tests/deep-conductor/",
+      "evidence_root": "evals/palbench/v0.6/deep-conductor/r242-user-facing-final-manual-run/",
+      "manual_test_readme": "docs/user-tests/deep-conductor/README.md",
+      "manual_test_checklist": "docs/user-tests/deep-conductor/deep-conductor-manual-test-checklist.md",
+      "test_script": "docs/user-tests/deep-conductor/deep-conductor-test-script.md",
+      "expected_output": "docs/user-tests/deep-conductor/deep-conductor-expected-output.md",
+      "pass_fail_rubric": "docs/user-tests/deep-conductor/deep-conductor-pass-fail-rubric.md",
+      "known_limits": "docs/user-tests/deep-conductor/deep-conductor-known-limits.md",
+      "user_report_template": "docs/user-tests/deep-conductor/deep-conductor-user-report-template.md",
+      "final_manual_run_mode": "evidence_replay_with_current_host_limit",
+      "final_manual_run_request": "evals/palbench/v0.6/deep-conductor/r242-user-facing-final-manual-run/r242-final-manual-run-request.md",
+      "final_manual_run_trace": "evals/palbench/v0.6/deep-conductor/r242-user-facing-final-manual-run/r242-final-manual-run-trace.md",
+      "final_manual_run_deliverable": "evals/palbench/v0.6/deep-conductor/r242-user-facing-final-manual-run/r242-final-manual-run-deliverable.md",
+      "final_manual_run_pass_fail": "evals/palbench/v0.6/deep-conductor/r242-user-facing-final-manual-run/r242-final-manual-run-pass-fail.md",
+      "quinn_final_manual_run_review": "evals/palbench/v0.6/deep-conductor/r242-user-facing-final-manual-run/r242-quinn-final-manual-run-review.md",
+      "readiness_summary": "evals/palbench/v0.6/deep-conductor/r242-user-facing-final-manual-run/r242-user-test-readiness-summary.md",
+      "r241_project_bound_note_preserved": true,
+      "next_recommended_step": "R243 - User runs DeepConductor manual test and reports results",
+      "minimal_fix_performed": false,
+      "no_code_boundary_preserved": true,
+      "contacts_modified": false,
+      "official_pal_count_modified": false,
+      "remote_operations_performed": false
     }
   },
   "v0_5_faye_extension": {
