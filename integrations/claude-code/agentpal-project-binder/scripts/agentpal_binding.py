@@ -49,6 +49,8 @@ CONFIG = RUNTIME_BINDINGS["claude-code"]
 RUNTIME_TEMPLATE_ANCHORS = [
     ("workflow_execution_contract", "Workflow Execution Contract"),
     ("closure_gate", "Closure Gate"),
+    ("owner_assignment_integrity", "Owner Assignment Integrity"),
+    ("team_label_not_participant", "Team label is not participant"),
     ("open_role", "open role"),
     ("pal_naming", "Pal naming"),
     ("faye_boundary", "Faye"),

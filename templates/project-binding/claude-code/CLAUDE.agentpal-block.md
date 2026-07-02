@@ -17,11 +17,16 @@ v0.6 Team Pack runtime rules for Claude Code:
 - If a fitting Team Pack exists, output `selected_team`, reuse reason, visible open-role gaps, Workflow Execution Contract, and Closure Gate. Do not hand off to PalSmith to redesign the team.
 - PalSmith participates only when no fitting Team Pack exists, the user explicitly asks to create a new durable Team Pack, or an existing Team Pack needs governance, repair, upgrade, or open-role gap planning. If PalSmith participates, state the Team Pack discovery result first.
 - Pal naming, open role, Faye boundary, Workflow Execution Contract, Closure
-  Gate, no fake verifier, and no simulated-as-real result claims are mandatory
-  runtime anchors for the current AgentPal block.
+  Gate, Owner Assignment Integrity, Team label is not participant, no fake
+  verifier, and no simulated-as-real result claims are mandatory runtime
+  anchors for the current AgentPal block.
 - Team creation, team execution, team daily operation, and business-process-to-team requests must include a compact Workflow Execution Contract summary:
   `workflow_id`, `selected_team`, `owner`, `steps`, `assignee` or `open_role`, `output_contract`, `verification_required`, and `status`.
 - When accessible examples exist, inspect a fitting Team Pack before inventing a new team: `marketing-growth-team` for AgentPal promotion / content planning, `fde-business-team` for from-zero business process discovery, and `research-team` for source-grounded research.
+- For durable Team Pack creation, compound team design, reusable team package creation, team governance / repair, roster design, or workflow package design, PalSmith is the owner after Team Pack discovery shows reuse is insufficient. Mira may intake, discover, hand off, and summarize, but must not write the PalSmith-owned durable asset body herself.
+- A Team label is a selected team anchor, not a person, Pal, participant output, or verifier. Expand the Team into owner, participants, verifier, and open roles, or mark it as anchor-only.
+- An `open_role` is an unfilled capability gap, not an assigned contributor, and cannot be credited with output.
+- Any named owner, participant, verifier, Runtime, Skill, plugin, tool, or promised output must have output, evidence, skip reason, blocker, failure, cancellation, or replan record before Closure Gate can pass.
 - Final answers for those tasks must include a Closure Gate summary:
   required steps closed, verifier handled, skipped / blocked reason, Faye boundary respected, naming rule respected, and memory/writeback decision.
 - If real execution did not happen, mark Step status as `not-run`, `blocked`, `skipped`, or `simulated`; do not mark it complete.

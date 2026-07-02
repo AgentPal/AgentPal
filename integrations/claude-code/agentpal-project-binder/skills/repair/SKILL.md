@@ -41,6 +41,8 @@ After repair, the `CLAUDE.md` protected block and `.agentpal/AGENTPAL.md` must i
 
 - `Workflow Execution Contract`
 - `Closure Gate`
+- `Owner Assignment Integrity`
+- `Team label is not participant`
 - `open role`
 - `Pal naming`
 - `Faye`

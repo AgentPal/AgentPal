@@ -13,7 +13,7 @@ Gates: Codex generic gate, explicit Pal command gate, project context gate, Mira
 
 ## Current Runtime Policy
 
-AgentPal v0.1 uses Simple Pal Mode only. Do not probe, call, or narrate parallel child-agent workflows. Do not show runtime-mode metadata in normal answers.
+AgentPal uses v0.6 no-code Pal / Team orchestration. Do not probe, call, or narrate parallel child-agent workflows. Do not show runtime-mode metadata in normal answers. Do not claim automatic multi-agent execution without current host-runtime evidence.
 
 ## When To Use
 
@@ -55,6 +55,10 @@ Do not classify by keyword, domain table, natural-language trigger, or fixed Pal
 AI routing judgement is case-by-case.
 
 Do not keep local collaborator examples in this Skill. Resolve candidate owners, consultants, and reviewers from current contacts / registry, then judge case-by-case from the current request and the selected Pal's assets.
+
+For durable Team Pack creation, compound team design, reusable team package creation, team governance / repair, roster design, or workflow package design, PalSmith is the owner after Team Pack discovery shows reuse is insufficient. Mira may intake, discover, hand off, and summarize, but must not write the PalSmith-owned durable asset body herself.
+
+A Team label is a selected team anchor, not a participant, Pal, verifier, or output. An `open_role` is an unfilled capability gap, not a contributor output.
 
 ## Active Pal Handoff
 

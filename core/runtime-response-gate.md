@@ -10,11 +10,14 @@ The core contract is:
 
 1. Apply `core/agentpal-core-gate.md`.
 2. Apply `core/first-pal-gate.md`.
-3. Apply `core/simple-pal-mode-runtime-contract.md`.
-4. Apply `core/deliverable-aware-task-judgement-gate.md`.
-5. Apply `core/main-pal-conductor-gate.md`.
-6. Apply `core/owner-assignment-integrity-gate.md`.
-7. Apply `orchestration/runtime-response-gate.md` for detailed response order.
+3. Apply `core/deliverable-aware-task-judgement-gate.md`.
+4. Apply `core/main-pal-conductor-gate.md`.
+5. Apply `core/owner-assignment-integrity-gate.md`.
+6. Apply `core/pal-asset-preflight-protocol.md` when Pal asset use matters.
+7. Apply `core/team-asset-preflight-protocol.md` when Team Pack work matters.
+8. Apply `orchestration/workflow-execution-contract-protocol.md` when work has steps, owners, participants, verifiers, tools, or promised outputs.
+9. Apply `orchestration/workflow-closure-gate-protocol.md` before closing those tasks.
+10. Apply `orchestration/runtime-response-gate.md` for detailed response order.
 
 AgentPal-mode natural-language output must start with the current speaking Pal prefix. This includes first replies, staged judgements, progress/status updates, execution-result explanations, and final reports.
 

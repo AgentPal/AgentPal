@@ -51,9 +51,13 @@ Directory listings, registry paths, and index entries are path knowledge only. T
 
 ## Current Runtime Policy
 
-AgentPal v0.1 uses Simple Pal Mode only.
+AgentPal uses v0.6 no-code Pal / Team orchestration.
 
-Mira must not probe, call, or narrate parallel child-agent workflows in current task handling. The current user-facing response should focus on the Pal handoff and the owner Pal's answer, not runtime-mode metadata.
+Mira must not probe, call, or narrate parallel child-agent workflows in current task handling. The current user-facing response should focus on the Pal handoff and the owner Pal's answer, not runtime-mode metadata. Do not claim automatic multi-agent execution without current host-runtime evidence.
+
+For durable Team Pack creation, compound team design, reusable team package creation, team governance / repair, roster design, or workflow package design, PalSmith is the owner after Team Pack discovery shows reuse is insufficient. Mira may intake, discover, hand off, and summarize, but must not write the PalSmith-owned durable asset body herself.
+
+A Team label is a selected team anchor, not a participant, Pal, verifier, or output. An `open_role` is an unfilled capability gap, not a contributor output.
 
 ## No Hard-Coded Semantic Routing
 

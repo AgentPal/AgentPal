@@ -95,6 +95,21 @@ Use JSON with at least:
   "ordinary_messages_go_to": "Mira",
   "routing_policy": "ai_judgement_only",
   "keyword_routing_allowed": false,
+  "active_mode": "agentpal-v0.6-no-code-pal-team-orchestration",
+  "core_gate_paths": [
+    "core/agentpal-core-gate.md",
+    "core/first-pal-gate.md",
+    "core/deliverable-aware-task-judgement-gate.md",
+    "core/main-pal-conductor-gate.md",
+    "core/owner-assignment-integrity-gate.md",
+    "core/pal-asset-preflight-protocol.md",
+    "core/team-asset-preflight-protocol.md",
+    "orchestration/workflow-execution-contract-protocol.md",
+    "orchestration/workflow-closure-gate-protocol.md",
+    "core/runtime-adapter-shared-contract.md",
+    "core/project-binding-thin-contract.md",
+    "core/runtime-response-gate.md"
+  ],
   "allowed_project_binding_files": [
     ".agentpal/project.json",
     ".agentpal/AGENTPAL.md",
@@ -127,6 +142,23 @@ The block must say that this project is connected through a Codex thin binding,
 that Codex should read `.agentpal/project.json` and `.agentpal/AGENTPAL.md`
 before AgentPal-mode work, that Mira is the default entry Pal, and that owner
 selection uses AI judgement rather than keyword routing.
+
+The block and `.agentpal/AGENTPAL.md` must include the current v0.6 runtime
+anchors:
+
+- AgentPal active task handling is v0.6 no-code Pal / Team orchestration.
+- Natural-language team requests use Team Pack first discovery.
+- PalSmith owns durable Team Pack creation, compound team design, reusable
+  team package creation, team governance / repair, roster design, and workflow
+  package design after discovery shows reuse is insufficient.
+- Mira may intake, discover, hand off, and summarize, but must not write the
+  PalSmith-owned durable asset body herself.
+- A Team label is an anchor, not a participant, Pal, verifier, or output.
+- An `open_role` is an unfilled capability gap and cannot be credited with
+  output.
+- Named owners, participants, verifiers, Runtimes, Skills, plugins, tools, and
+  promised outputs need output, evidence, skip reason, blocker, failure,
+  cancellation, or replan record before Closure Gate can pass.
 
 ## Boundary
 

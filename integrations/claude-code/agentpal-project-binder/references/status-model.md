@@ -15,7 +15,7 @@ All of these are true:
 - `.agentpal/project.json` includes the canonical project thin-binding fields
 - `.agentpal/AGENTPAL.md` exists
 - root `CLAUDE.md` contains exactly one runtime-qualified Claude Code AgentPal block
-- `.agentpal/AGENTPAL.md` and the runtime-qualified Claude Code block contain the current v0.6 runtime anchors: `Workflow Execution Contract`, `Closure Gate`, `open role`, `Pal naming`, `Faye`, `no fake verifier`, and `simulated-as-real`
+- `.agentpal/AGENTPAL.md` and the runtime-qualified Claude Code block contain the current v0.6 runtime anchors: `Workflow Execution Contract`, `Closure Gate`, `Owner Assignment Integrity`, `Team label is not participant`, `open role`, `Pal naming`, `Faye`, `no fake verifier`, and `simulated-as-real`
 
 ## `partial`
 

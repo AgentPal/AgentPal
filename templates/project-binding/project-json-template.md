@@ -29,9 +29,13 @@ Use this template for new AgentPal thin project bindings.
   "core_gate_paths": [
     "core/agentpal-core-gate.md",
     "core/first-pal-gate.md",
-    "core/simple-pal-mode-runtime-contract.md",
     "core/deliverable-aware-task-judgement-gate.md",
     "core/main-pal-conductor-gate.md",
+    "core/owner-assignment-integrity-gate.md",
+    "core/pal-asset-preflight-protocol.md",
+    "core/team-asset-preflight-protocol.md",
+    "orchestration/workflow-execution-contract-protocol.md",
+    "orchestration/workflow-closure-gate-protocol.md",
     "core/runtime-adapter-shared-contract.md",
     "core/project-binding-thin-contract.md",
     "core/runtime-response-gate.md"
@@ -71,7 +75,7 @@ Use this template for new AgentPal thin project bindings.
 }
 ```
 
-Canonical runtime-qualified protected block markers are defined in [`docs/04-runtime-guides/project-thin-binding.md`](../../docs/04-runtime-guides/project-thin-binding.md).
+Canonical runtime-qualified protected block markers are defined in [`core/project-binding-thin-contract.md`](../../core/project-binding-thin-contract.md).
 
 This file is binding metadata only. It is not a copied Pal roster or a copied protocol bundle.
 

@@ -19,9 +19,7 @@ Gate order:
 
 ## Current Runtime Policy
 
-AgentPal v0.1 uses Simple Pal Mode only.
-
-Mira must not probe, call, or narrate parallel child-agent workflows during current task handling. Mira must not output runtime-mode metadata in ordinary answers.
+AgentPal uses v0.6 no-code Pal / Team orchestration. Mira must not probe, call, or narrate parallel child-agent workflows during current task handling. Mira must not output runtime-mode metadata in ordinary answers or claim automatic execution without current host-runtime evidence.
 
 ## Default Route
 
@@ -53,7 +51,9 @@ Mira checks whether the AgentPal source has a fitting Team Pack by comparing the
 
 If a fitting Team Pack exists, Mira selects it, states `selected_team`, explains the case-specific fit, records missing seats as `open_roles`, and produces a Workflow Execution Contract plus Closure Gate. Mira must not hand off to PalSmith to redesign an already fitting Team Pack.
 
-Mira consults or hands off to PalSmith only after discovery shows no fitting Team Pack, the user explicitly asks for a new durable Team Pack, or the existing Team Pack needs governance, repair, upgrade, or open-role gap planning. If PalSmith participates, the handoff Context Packet must include the Team Pack discovery result.
+Mira consults or hands off to PalSmith only after discovery shows no fitting Team Pack, the user explicitly asks for a new durable Team Pack, or the existing Team Pack needs governance, repair, upgrade, roster design, workflow package design, or open-role gap planning. If PalSmith participates, the handoff Context Packet must include the Team Pack discovery result. Mira may intake, discover, hand off, and summarize, but must not write the PalSmith-owned durable asset body herself.
+
+A Team label is a selected team anchor, not a participant, Pal, verifier, or output. `open_role` is an unfilled capability gap, not a contributor output.
 
 Team Pack selection is an additional AI judgement option, not a replacement for
 owner Pal judgement.
@@ -178,7 +178,7 @@ Correct flow:
 
 ## Pal Mode Validity
 
-`/pal Name` enters Pal work mode, not an independent runtime process. AgentPal v0.1 is file-driven: the active Pal must use its Pal Pack files, Response Fingerprint, Output Contract, and at least one asset or fallback method.
+`/pal Name` enters Pal work mode, not an independent runtime process. AgentPal is asset-driven: the active Pal must use its Pal Pack files, Response Fingerprint, Output Contract, and at least one asset or fallback method.
 
 A valid Pal response must include or internally track:
 

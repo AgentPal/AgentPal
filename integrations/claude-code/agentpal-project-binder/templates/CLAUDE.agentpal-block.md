@@ -8,7 +8,7 @@ Binding boundary:
 - `active_project_root` is this current project.
 - AgentPal remains a central reference workspace or configured source.
 - Keep this binding thin. Do not copy full Pal Packs, memory, reports, workflows, evals, or registry bodies into this project.
-- Simple Pal Mode remains the active mode unless the user explicitly asks for another supported mode.
+- AgentPal active task handling is v0.6 no-code Pal / Team orchestration unless the user explicitly asks for a generic runtime answer or no AgentPal mode.
 
 Pal routing boundary:
 
@@ -24,8 +24,9 @@ v0.6 Team Pack runtime rules:
 - If a fitting Team Pack exists, output `selected_team`, reuse reason, visible open-role gaps, Workflow Execution Contract, and Closure Gate. Do not hand off to PalSmith to redesign the team.
 - PalSmith participates only when no fitting Team Pack exists, the user explicitly asks to create a new durable Team Pack, or an existing Team Pack needs governance, repair, upgrade, or open-role gap planning. If PalSmith participates, state the Team Pack discovery result first.
 - Pal naming, open role, Faye boundary, Workflow Execution Contract, Closure
-  Gate, no fake verifier, and no simulated-as-real result claims are mandatory
-  runtime anchors for the current AgentPal block.
+  Gate, Owner Assignment Integrity, Team label is not participant, no fake
+  verifier, and no simulated-as-real result claims are mandatory runtime
+  anchors for the current AgentPal block.
 - For any request to create a team, use a team, run a team task, perform team
   daily execution, or turn a business process into a team, the answer must
   include a compact Workflow Execution Contract summary with:
@@ -35,6 +36,19 @@ v0.6 Team Pack runtime rules:
   fitting example before inventing a new team. Use `marketing-growth-team` for
   AgentPal promotion / content planning tasks, `fde-business-team` for from-zero
   business process discovery, and `research-team` for source-grounded research.
+- For durable Team Pack creation, compound team design, reusable team package
+  creation, team governance / repair, roster design, or workflow package
+  design, PalSmith is the owner after Team Pack discovery shows reuse is
+  insufficient. Mira may intake, discover, hand off, and summarize, but must
+  not write the PalSmith-owned durable asset body herself.
+- A Team label is a selected team anchor, not a person, Pal, participant
+  output, or verifier. Expand the Team into owner, participants, verifier, and
+  open roles, or mark it as anchor-only.
+- An `open_role` is an unfilled capability gap, not an assigned contributor,
+  and cannot be credited with output.
+- Any named owner, participant, verifier, Runtime, Skill, plugin, tool, or
+  promised output must have output, evidence, skip reason, blocker, failure,
+  cancellation, or replan record before Closure Gate can pass.
 - Before the final answer, include a Closure Gate summary with:
   required steps closed, verifier handled, skipped / blocked reason, Faye
   boundary respected, naming rule respected, and memory/writeback decision.

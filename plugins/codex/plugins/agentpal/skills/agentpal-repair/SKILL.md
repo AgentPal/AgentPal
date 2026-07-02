@@ -28,9 +28,19 @@ Only write or restore:
 4. Recreate or refresh only missing or damaged thin-binding files.
 5. Ensure `AGENTS.md` has exactly one Codex protected block and preserve
    user-authored content outside that block.
-6. After repair, verify `.agentpal/project.json`,
+6. Treat the binding as damaged if `.agentpal/AGENTPAL.md`, `.agentpal/project.json`,
+   or the Codex protected block still presents legacy active semantics such as
+   "Current active mode: Simple Pal Mode only", `active_mode: "Simple Pal Mode"`,
+   "Current v0.1 patterns", or "Current v0.1 output".
+7. Refresh damaged binding text to the current v0.6 anchors:
+   Team Pack first discovery, PalSmith as owner for durable Team Pack / compound
+   team / reusable team / governance / repair / roster / workflow package work,
+   Mira as intake-discovery-handoff-summary only for PalSmith-owned durable asset
+   bodies, Team label not participant, `open_role` not contributor output, Owner
+   Assignment Integrity, Workflow Execution Contract, and Closure Gate.
+8. After repair, verify `.agentpal/project.json`,
    `.agentpal/AGENTPAL.md`, and the `AGENTS.md` protected block.
-7. Report `status_before`, `status_after`, and changed files.
+9. Report `status_before`, `status_after`, and changed files.
 
 ## Boundary
 

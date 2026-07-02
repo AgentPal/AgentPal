@@ -69,6 +69,8 @@ protected block or `.agentpal/AGENTPAL.md` is missing any of:
 
 - `Workflow Execution Contract`
 - `Closure Gate`
+- `Owner Assignment Integrity`
+- `Team label is not participant`
 - `open role`
 - `Pal naming`
 - `Faye`

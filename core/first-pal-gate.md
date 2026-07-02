@@ -29,7 +29,7 @@ Before any Runtime command, shell command, MCP call, file write, or system inspe
 
 This judgement must be user-visible before the tool call. It must start with the current speaking Pal prefix and either hand off to the selected owner Pal or explain the owner gap / why the current Pal remains owner for this case.
 
-If the AI judges that the request involves local system/app state, permission or safety boundaries, runtime/environment readiness, command failure recovery, system-impact risk, or evidence from execution-layer system inspection, the task needs a system-owner judgement before execution. In the bundled v0.1 Pal pool, Rhea is the registered system Pal. Rhea may be selected only by case-specific AI judgement from the current request, context, registry, risk, and user constraints; this is not a keyword route or fixed task-domain map.
+If the AI judges that the request involves local system/app state, permission or safety boundaries, runtime/environment readiness, command failure recovery, system-impact risk, or evidence from execution-layer system inspection, the task needs a system-owner judgement before execution. In the bundled Pal pool, Rhea is the registered system Pal. Rhea may be selected only by case-specific AI judgement from the current request, context, registry, risk, and user constraints; this is not a keyword route or fixed task-domain map.
 
 Read-only does not remove owner judgement. A safe diagnostic can still be specialist-owned.
 

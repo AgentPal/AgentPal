@@ -25,6 +25,13 @@
     "core/agentpal-core-gate.md",
     "core/first-pal-gate.md",
     "core/deliverable-aware-task-judgement-gate.md",
+    "core/main-pal-conductor-gate.md",
+    "core/owner-assignment-integrity-gate.md",
+    "core/pal-asset-preflight-protocol.md",
+    "core/team-asset-preflight-protocol.md",
+    "orchestration/workflow-execution-contract-protocol.md",
+    "orchestration/workflow-closure-gate-protocol.md",
+    "core/runtime-adapter-shared-contract.md",
     "core/project-binding-thin-contract.md",
     "core/runtime-response-gate.md"
   ],

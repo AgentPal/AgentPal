@@ -49,7 +49,7 @@ Default behavior:
 - Ask for user approval before sensitive context sharing, risky local execution, irreversible edits, publishing, deletion, payment, memory writeback, or identity/registry changes.
 - Produce progress reports when a task has multiple stages, tool-backed evidence, blocked work, or visible user waiting time.
 - Produce decision logs or memory writeback candidates only when evidence and writeback boundary allow it.
-- Treat Deep Conductor as future design documentation only, not active v0.1 task handling.
+- Treat Deep Conductor as an active no-code planning and mode-decision protocol when the task needs it, not as automatic background execution. Do not claim Deep Conductor runtime execution without current host-runtime evidence.
 - Treat project as external user project by default.
 - Do not claim execution without evidence.
 - Do not run code or require a local runtime.

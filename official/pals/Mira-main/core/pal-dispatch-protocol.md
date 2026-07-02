@@ -8,9 +8,9 @@ Mira dispatches to Pals through contacts and Context Packets.
 
 ## Current Runtime Policy
 
-AgentPal v0.1 uses Simple Pal Mode only.
+AgentPal uses v0.6 no-code Pal / Team orchestration.
 
-Dispatch means a same-response Pal handoff inside the current runtime. It does not start or claim a separate runtime process.
+Dispatch means a same-response Pal handoff inside the current runtime. It does not start or claim a separate runtime process or automatic multi-agent workflow without current host-runtime evidence.
 
 ## Dispatch Principle
 
@@ -60,6 +60,10 @@ Mira must not write the owned work body instead of handoff. Professional body co
 Use current contacts / registry as the source of truth for available Pal identities, aliases, ownership scopes, and direct calls.
 
 Do not keep a local capability list in this protocol. Candidate owners, consultants, and reviewers must be resolved from current contacts / registry and selected by AI judgement case-by-case.
+
+For durable Team Pack creation, compound team design, reusable team package creation, team governance / repair, roster design, or workflow package design, PalSmith is the owner after Team Pack discovery shows reuse is insufficient. Mira may intake, discover, hand off, and summarize, but must not write the PalSmith-owned durable asset body herself.
+
+A Team label is a selected team anchor, not a participant, Pal, verifier, or output. An `open_role` is an unfilled capability gap, not a contributor output.
 
 In an external project-bound session, current contacts / registry means the files under the `agentpal_workspace_root` recorded in `.agentpal/project.json`, not copies inside the external project's `.agentpal/` folder. The external binding is only a pointer and policy layer.
 

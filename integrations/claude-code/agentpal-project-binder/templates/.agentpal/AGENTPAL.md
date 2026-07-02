@@ -49,6 +49,8 @@ Mandatory runtime anchors for the Claude Code binding:
 - Pal naming
 - open role
 - Faye boundary
+- Owner Assignment Integrity
+- Team label is not participant
 - Workflow Execution Contract
 - Closure Gate
 - no fake verifier
@@ -84,6 +86,23 @@ example before inventing a new team:
 - `marketing-growth-team` for AgentPal promotion / content planning.
 - `fde-business-team` for from-zero business process discovery.
 - `research-team` for source-grounded research.
+
+Durable team assets:
+
+- For durable Team Pack creation, compound team design, reusable team package
+  creation, team governance / repair, roster design, or workflow package
+  design, PalSmith is the owner after Team Pack discovery shows reuse is
+  insufficient.
+- Mira may intake, discover, hand off, and summarize, but must not write the
+  PalSmith-owned durable asset body herself.
+- A Team label is a selected team anchor, not a person, Pal, participant
+  output, or verifier. Expand the Team into owner, participants, verifier, and
+  open roles, or mark it as anchor-only.
+- An `open_role` is an unfilled capability gap, not an assigned contributor,
+  and cannot be credited with output.
+- Any named owner, participant, verifier, Runtime, Skill, plugin, tool, or
+  promised output must have output, evidence, skip reason, blocker, failure,
+  cancellation, or replan record before Closure Gate can pass.
 
 ## Pal Naming And Open Roles
 

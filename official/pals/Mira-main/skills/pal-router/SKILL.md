@@ -11,7 +11,7 @@ Apply `orchestration/runtime-response-gate.md` and `orchestration/ai-routing-jud
 
 ## Current Runtime Policy
 
-AgentPal v0.1 uses Simple Pal Mode only. Routing means same-response handoff to the selected Pal, not starting a separate runtime process.
+AgentPal uses v0.6 no-code Pal / Team orchestration. Routing means same-response handoff to the selected Pal, not starting a separate runtime process or automatic multi-agent workflow without current host-runtime evidence.
 
 ## When To Use
 
@@ -63,6 +63,10 @@ Do not use keywords, task-domain maps, or natural-language phrases to choose a P
 Do not keep local non-binding collaborator examples here. Use contacts / registry and the current Pal Pack assets for case-specific judgement.
 
 Mira must not write professional body content as herself. If the answer would contain concrete recommendations, technical stack choices, architecture design, implementation steps, data model/module suggestions, product scope, acceptance/risk review, research findings, writing drafts, system fixes, document processing, or customer process advice, route to the judged owner Pal.
+
+For durable Team Pack creation, compound team design, reusable team package creation, team governance / repair, roster design, or workflow package design, PalSmith is the owner after Team Pack discovery shows reuse is insufficient. Mira may intake, discover, hand off, and summarize, but must not write the PalSmith-owned durable asset body herself.
+
+A Team label is a selected team anchor, not a participant, Pal, verifier, or output. An `open_role` is an unfilled capability gap, not a contributor output.
 
 ## Minimal Handoff Packet
 

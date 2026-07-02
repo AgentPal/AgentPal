@@ -1,28 +1,31 @@
-# Simple Pal Mode Runtime Contract
+# Legacy Conservative Pal Path Contract
 
-AgentPal active task handling is host-runtime executed and no-code governed. Simple Pal Mode remains the conservative default path.
+Status: legacy compatibility reference only.
 
-## Current Practical Patterns
+This file is not a current fresh-install runtime gate and must not be loaded as
+the active AgentPal runtime contract. Current fresh installs use the v0.6
+no-code Pal / Team orchestration gates listed in `core/agentpal-core-gate.md`.
 
-Current v0.1 patterns:
+## Legacy Conservative Patterns
 
 - Fast Route for clear single-owner tasks
 - Single Owner answer with immediate owner Pal response
 - compact Task Package
 - staged Task Package for composite deliverables
 
-## Future Design Only
+## Current Boundary
 
-The following are not active v0.1 behavior:
+The legacy path remains useful as a fallback when a host cannot support a richer
+no-code plan, but it does not override current v0.6 requirements:
 
-- Deep Conductor execution
-- Subagent Mode as AgentPal behavior
-- parallel child workflows
-- external Agent orchestration
-- multi-runtime automatic scheduling
-- MCP-hosted Agent execution
-
-Future design documents may exist in the repository, but they do not activate current runtime behavior.
+- Team-first discovery for natural-language team requests.
+- Owner Assignment Integrity for selected owners, participants, verifiers, Team
+  roles, Runtime tools, Skills, plugins, and promised outputs.
+- Pal / Team asset preflight.
+- Workflow Execution Contract.
+- Closure Gate.
+- PalSmith ownership for durable Pal / Team Pack creation, repair, governance,
+  roster design, and workflow package design.
 
 ## Runtime Boundary
 

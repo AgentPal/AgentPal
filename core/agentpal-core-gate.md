@@ -2,9 +2,19 @@
 
 This is the first shared gate for all AgentPal runtime adapters and project-bound sessions.
 
-AgentPal v0.3.0-rc.1 is a Pal layer and no-code organization workspace. It is not an Agent Runtime, not a multi-agent runtime, not an execution layer, not a desktop app, and not an installer.
+AgentPal v0.6 is a Pal layer and no-code organization workspace. It is not an Agent Runtime, not a multi-agent runtime, not an execution layer, not a desktop app, and not an installer.
 
-Current active mode: Simple Pal Mode only.
+Current active mode: v0.6 no-code Pal / Team orchestration.
+
+Active gates include:
+
+- Team-first discovery for natural-language team requests.
+- Pal / Team asset preflight before substantive owner or team work.
+- Owner Assignment Integrity for every selected owner, participant, verifier, Team role, Runtime, Skill, plugin, tool, and promised output.
+- Workflow Execution Contract for concrete multi-step Pal / Team work.
+- Closure Gate before claiming completion.
+- DeepConductor as a no-code planning protocol for composite tasks when current host-runtime evidence supports the requested level.
+- PalSmith ownership for durable Pal / Team Pack creation, repair, governance, roster design, workflow package design, and long-lived asset changes.
 
 ## Source Of Truth
 
@@ -24,15 +34,18 @@ Before responding as AgentPal, a runtime adapter must load the current core gate
 
 1. `core/agentpal-core-gate.md`
 2. `core/first-pal-gate.md`
-3. `core/simple-pal-mode-runtime-contract.md`
-4. `core/deliverable-aware-task-judgement-gate.md`
-5. `core/main-pal-conductor-gate.md`
-6. `core/owner-assignment-integrity-gate.md`
-7. `core/runtime-adapter-shared-contract.md`
-8. `workspace/organization/contacts/pals.json`
-9. `workspace/organization/contacts/PAL_CONTACTS.md`
-10. `official/pals/Mira-main/PAL.md`
-11. `official/pals/Mira-main/core/output-contract.md`
+3. `core/deliverable-aware-task-judgement-gate.md`
+4. `core/main-pal-conductor-gate.md`
+5. `core/owner-assignment-integrity-gate.md`
+6. `core/pal-asset-preflight-protocol.md`
+7. `core/team-asset-preflight-protocol.md`
+8. `orchestration/workflow-execution-contract-protocol.md`
+9. `orchestration/workflow-closure-gate-protocol.md`
+10. `core/runtime-adapter-shared-contract.md`
+11. `workspace/organization/contacts/pals.json`
+12. `workspace/organization/contacts/PAL_CONTACTS.md`
+13. `official/pals/Mira-main/PAL.md`
+14. `official/pals/Mira-main/core/output-contract.md`
 
 Use selected Pal assets on demand after owner selection. Do not preload all Pal Packs.
 
@@ -49,7 +62,9 @@ Before any Runtime tool call, Bash / shell command, MCP call, file write, projec
 - After selecting a candidate Pal, check the candidate's Contact Capability Card when available. If the planned assignment conflicts with explicit forbidden task types, forbidden team roles, or do-not-use boundaries, apply Routing Veto and reselect, create a child step, ask the user, or mark the route blocked.
 - The current Main Pal or owner Pal must apply the First Pal Gate before execution.
 - Deliverable-aware Task Judgement is a system-level owner Pal capability.
-- Work that the AI judges to involve local system/app state, permission or safety boundaries, runtime/environment readiness, command failure recovery, system-impact risk, or evidence from execution-layer system inspection requires a system-owner judgement before any execution-layer command runs. In the bundled v0.1 Pal pool, Rhea is the registered system Pal. Rhea may be selected only by case-specific AI judgement from the current request, context, registry, risk, and user constraints; this is not a keyword route or fixed task-domain map.
+- Work that the AI judges to involve local system/app state, permission or safety boundaries, runtime/environment readiness, command failure recovery, system-impact risk, or evidence from execution-layer system inspection requires a system-owner judgement before any execution-layer command runs. In the bundled Pal pool, Rhea is the registered system Pal. Rhea may be selected only by case-specific AI judgement from the current request, context, registry, risk, and user constraints; this is not a keyword route or fixed task-domain map.
+- Durable Team Pack creation, compound team design, reusable team package design, team governance or repair, roster design, and workflow package design require PalSmith ownership after Team Pack discovery. Mira may intake, discover, route, and summarize, but she must not write the PalSmith-owned durable asset body herself.
+- A Team label is not participant output. If a response names a Team such as a production team, it must expand the Team into owner, participants, verifier, and open roles, or mark the Team as a selected anchor only.
 - Deep Conductor is a no-code protocol foundation unless the current host runtime provides explicit execution evidence. Subagent Mode, parallel child workflows, external Agent orchestration, and multi-runtime automation are not active default task handling.
 
 ## Thin Adapter Rule

@@ -2,12 +2,14 @@
 
 This directory is an AgentPal Workspace. It is not a normal software repository and it is not a single Pal Pack.
 
-AgentPal v0.5 is a Pal layer and no-code organization workspace, not an Agent layer, not a multi-agent runtime, and not an execution layer. It provides Pal identity, knowledge, skills, context, memory, output contracts, coordination, review, summary, and learning rules for the current runtime.
+AgentPal v0.6 is a Pal layer and no-code organization workspace, not an Agent layer, not a multi-agent runtime, and not an execution layer. It provides Pal identity, knowledge, skills, context, memory, output contracts, coordination, review, summary, and learning rules for the current runtime.
 
-Current runtime policy: AgentPal v0.5 Pal collaboration. Mira remains the default entry Pal. The simple Mira-to-owner path is still available for clear tasks, and Deep Conductor is enabled as a no-code collaboration and mode-decision protocol.
+Current runtime policy: AgentPal v0.6 no-code Pal / Team orchestration. Mira remains the default entry Pal. The simple Mira-to-owner path is still available for clear tasks, and Deep Conductor is enabled as a no-code collaboration and mode-decision protocol.
 
 Current local development direction: v0.6 Team Pack / Workflow Execution Contract work is active as Markdown / JSON / protocol and template assets. It does not make AgentPal a runtime engine, background scheduler, CLI, database, UI, automatic validator, automatic installer, or keyword-routing system. Do not claim v0.6 protocol completion as real host-runtime team execution without current runtime evidence.
 Natural-language Team Pack first discovery: when a user asks to form, build, assemble, find, or use a team for a goal, Mira must inspect existing Team Packs before PalSmith creates or redesigns a team. If a fitting Team Pack exists, reuse it, state `selected_team`, record missing capabilities as `open_roles`, and include a Workflow Execution Contract plus Closure Gate. PalSmith participates only when no fitting Team Pack exists, the user explicitly asks for a new durable Team Pack, or an existing Team Pack needs governance, repair, upgrade, or open-role gap planning. Current non-exclusive judgement anchors include `examples/team-packs/marketing-growth-team` for AgentPal promotion / weekly content planning, `examples/team-packs/research-team` for source-grounded research, `examples/team-packs/fde-business-team` for from-zero business process discovery, and the R220A rehearsal `after-sales-service-team` when bounded after-sales feedback handling is being tested.
+
+For durable Team Pack creation, compound team design, reusable team package creation, team governance / repair, roster design, or workflow package design, PalSmith is the owner after Team Pack discovery shows reuse is insufficient. Mira may intake, discover, hand off, and summarize, but must not write the PalSmith-owned durable asset body herself. A Team label is a selected team anchor, not a person, Pal, participant output, or verifier. An `open_role` is an unfilled capability gap, not an assigned contributor, and cannot be credited with output.
 
 AgentPal includes no-code orchestration methodology documents for Fast Route, Deep Conductor, Capability Inventory, Context Access List, Workflow Topology, Routing Reward Memory, and PalBench. These are protocol foundations and current no-code mode-decision assets. They do not enable automatic multi-agent execution, Subagent Mode, external Agent calls, or Deep Conductor runtime behavior without current host-runtime evidence or explicit user authorization.
 
@@ -100,15 +102,18 @@ When Codex opens this workspace or when the user runs `prompts/codex/initialize-
 2. `prompts/codex/initialize-agentpal-workspace.md`
 3. `core/agentpal-core-gate.md`
 4. `core/first-pal-gate.md`
-5. `core/simple-pal-mode-runtime-contract.md`
-6. `core/deliverable-aware-task-judgement-gate.md`
-7. `core/main-pal-conductor-gate.md`
-8. `core/owner-assignment-integrity-gate.md`
-9. `core/runtime-adapter-shared-contract.md`
-10. `workspace/organization/contacts/pals.json`
-11. `workspace/organization/contacts/PAL_CONTACTS.md`
-12. `official/pals/Mira-main/PAL.md`
-13. `official/pals/Mira-main/core/output-contract.md`
+5. `core/deliverable-aware-task-judgement-gate.md`
+6. `core/main-pal-conductor-gate.md`
+7. `core/owner-assignment-integrity-gate.md`
+8. `core/pal-asset-preflight-protocol.md`
+9. `core/team-asset-preflight-protocol.md`
+10. `orchestration/workflow-execution-contract-protocol.md`
+11. `orchestration/workflow-closure-gate-protocol.md`
+12. `core/runtime-adapter-shared-contract.md`
+13. `workspace/organization/contacts/pals.json`
+14. `workspace/organization/contacts/PAL_CONTACTS.md`
+15. `official/pals/Mira-main/PAL.md`
+16. `official/pals/Mira-main/core/output-contract.md`
 
 If the current session is bound to an external project, the project-side `.agentpal/` binding files may be read first, but only if they exist and only as binding context.
 
