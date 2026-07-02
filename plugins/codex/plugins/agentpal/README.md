@@ -9,7 +9,7 @@ AgentPal binding.
 Install from the AgentPal GitHub install document:
 
 ```text
-https://github.com/AgentPal/AgentPal/blob/master/plugins/codex/codex-install.md
+https://raw.githubusercontent.com/AgentPal/AgentPal/master/plugins/codex/codex-install.md
 ```
 
 Users can ask Codex to execute that document. It prepares the local AgentPal

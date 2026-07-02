@@ -8,7 +8,7 @@ they can say:
 
 ```text
 Please execute the AgentPal Codex install document:
-https://github.com/AgentPal/AgentPal/blob/master/plugins/codex/codex-install.md
+https://raw.githubusercontent.com/AgentPal/AgentPal/master/plugins/codex/codex-install.md
 ```
 
 ## Mandatory First Reply
@@ -103,6 +103,22 @@ Default full public AgentPal workspace:
 ```
 
 The workspace path may be customized, but the config file path stays fixed.
+
+## Marketplace Registration Rule
+
+Do not register AgentPal for Codex directly from the GitHub sparse path.
+
+Do not run, suggest, or repair the install by using GitHub sparse marketplace
+registration. The installer must not explain or compare repository branch names
+as part of marketplace registration. The branch name is not part of the
+marketplace registration step in this install flow.
+
+The correct flow is:
+
+1. Clone or update the full public AgentPal workspace.
+2. Register the local Codex marketplace root:
+   `<AgentPal workspace>\plugins\codex`.
+3. Install `agentpal@agentpal` from that local marketplace.
 
 ## Install Steps
 

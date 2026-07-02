@@ -5,7 +5,7 @@ This directory is the Codex marketplace package for AgentPal.
 It is installed through the public no-code install runbook:
 
 ```text
-https://github.com/AgentPal/AgentPal/blob/master/plugins/codex/codex-install.md
+https://raw.githubusercontent.com/AgentPal/AgentPal/master/plugins/codex/codex-install.md
 ```
 
 Users can ask Codex to execute that document. The document prepares a local

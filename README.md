@@ -252,7 +252,7 @@ In Codex, run the AgentPal Codex install document:
 
 ```text
 Please execute the AgentPal Codex install document:
-https://github.com/AgentPal/AgentPal/blob/master/plugins/codex/codex-install.md
+https://raw.githubusercontent.com/AgentPal/AgentPal/master/plugins/codex/codex-install.md
 ```
 
 The install document installs the global Codex plugin `agentpal@agentpal`.
